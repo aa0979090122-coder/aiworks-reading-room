@@ -1,31 +1,34 @@
 <!doctype html>
 <html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#fff9f4" />
-    <meta name="description" content="Aiworks 洞察選讀：X 原文、Podcast 導讀與企業 AI 新聞。" />
-    <title>洞察選讀｜Aiworks</title>
-    <link rel="icon" type="image/svg+xml" href="./assets/aiworks-logo.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script type="module" src="./main.js"></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="#top" aria-label="Aiworks 洞察選讀，回到頂端"><img src="./assets/aiworks-logo.svg" alt="Aiworks" /><span>洞察選讀</span></a>
-        <nav aria-label="頁面導覽"><a href="#x-posts">X 貼文</a><a href="#podcasts">Podcast</a><a href="#news">新聞</a></nav>
-      </div>
-    </header>
-    <main id="top">
-      <div class="intro wrap"><p class="eyebrow">AIWORKS READING ROOM</p><h1>值得停下來看的內容</h1><p id="edition-date" class="edition-date"></p></div>
-      <section id="x-posts" class="section wrap" aria-labelledby="x-title"><div class="section-heading"><div><p class="eyebrow">01 / X</p><h2 id="x-title">X 貼文</h2></div><span id="x-count" class="section-count"></span></div><div id="posts-list" class="posts-list"></div></section>
-      <section id="podcasts" class="section section-tinted" aria-labelledby="podcast-title"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">02 / LISTEN</p><h2 id="podcast-title">Podcast 導讀</h2></div><span id="podcast-count" class="section-count"></span></div><div id="podcasts-list" class="podcasts-list"></div></div></section>
-      <section id="news" class="section wrap" aria-labelledby="news-title"><div class="section-heading"><div><p class="eyebrow">03 / READ</p><h2 id="news-title">企業 AI 新聞</h2></div><span id="news-count" class="section-count"></span></div><div id="news-list" class="news-list"></div></section>
-    </main>
-    <footer class="site-footer"><div class="wrap"><span>Aiworks</span><a href="#top">回到頂端 ↑</a></div></footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fffdfb" />
+  <meta name="description" content="Aiworks 資訊情報站：近期 X 貼文、Podcast 導讀與企業 AI 新聞。" />
+  <title>資訊情報站｜Aiworks</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/aiworks-logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="#top" aria-label="Aiworks 資訊情報站，回到頂端"><img src="./assets/aiworks-logo.svg" alt="Aiworks" /></a></div></header>
+  <main id="top">
+    <div class="intro wrap"><h1>資訊情報站</h1><p id="edition-date" class="edition-date"></p></div>
+    <div class="tabs-shell"><nav class="tabs wrap" aria-label="內容分類">
+      <button id="tab-x-posts" aria-pressed="true" aria-controls="x-posts" data-tab="x-posts">X 貼文 <span id="x-count"></span></button>
+      <button id="tab-podcasts" aria-pressed="false" aria-controls="podcasts" data-tab="podcasts">Podcast <span id="podcast-count"></span></button>
+      <button id="tab-news" aria-pressed="false" aria-controls="news" data-tab="news">新聞 <span id="news-count"></span></button>
+    </div></div>
+    <section class="notes-section wrap" aria-labelledby="notes-title"><div class="notes-heading"><h2 id="notes-title">我的筆記</h2><button id="copy-feedback" class="text-button">複製回饋</button></div><textarea id="reading-notes" placeholder="看到什麼值得追、想寫的公司或買方問題，都可以先記在這裡。" aria-label="我的筆記"></textarea><p id="save-status" class="save-status" role="status"></p><details class="feedback-details"><summary>查看已記錄的判斷與筆記</summary><div id="feedback-list" class="feedback-list"></div></details></section>
+    <div class="content wrap">
+      <section id="x-posts" class="panel" aria-labelledby="tab-x-posts"><div class="list-toolbar"><span>近 14 天，最新在前</span><button class="text-button" data-view="x-posts">查看已讀與略過</button></div><div id="posts-list" class="posts-list"></div></section>
+      <section id="podcasts" class="panel" aria-labelledby="tab-podcasts" hidden><div class="list-toolbar"><span>單集重點與原始節目</span><button class="text-button" data-view="podcasts">查看已讀與略過</button></div><div id="podcasts-list" class="podcasts-list"></div></section>
+      <section id="news" class="panel" aria-labelledby="tab-news" hidden><div class="list-toolbar"><span>近 14 天，最新在前</span><button class="text-button" data-view="news">查看已讀與略過</button></div><div id="news-list" class="news-list"></div></section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="wrap"><span>Aiworks</span><a href="#top">回到頂端 ↑</a></div></footer>
+</body>
 </html>
