@@ -1,0 +1,121 @@
+{
+  "editionDate": "2026-09-30",
+  "posts": [
+    {
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "date": "2026.04.07",
+      "url": "https://x.com/emollick/status/2041520467450765504",
+      "excerpt": "Its an important time for the AI labs to build interfaces around the goal of job augmentation through AI.",
+      "kind": "translation",
+      "zh": "現在是 AI 實驗室設計介面的重要時刻：目標應是用 AI 增強人的工作，而非用 AI 取代工作。聊天機器人大多是輔助工具，需要人參與工作。Agent 的工作方式仍在形成，也可以把人放在中心。"
+    },
+    {
+      "author": "a16z",
+      "handle": "@a16z",
+      "date": "2026.04.09",
+      "url": "https://x.com/a16z/status/2042394735814562033",
+      "excerpt": "Both the AI utopians and the AI doomers are far too optimistic. Technology making something possible does not change behavior overnight.",
+      "kind": "summary",
+      "zh": "Marc Andreessen 的觀點是，技術可行不代表企業和個人的行為會立刻改變。現有工作方式與制度有慣性，因此 AI 採用需要時間；他同時擔心採用過慢會拖累成長。"
+    },
+    {
+      "author": "Aaron Levie",
+      "handle": "@levie",
+      "date": "2026.03.29",
+      "url": "https://x.com/levie/status/2038468564500537416",
+      "excerpt": "Agents running 24/7 and in parallel modify these requirements meaningfully. Here are just a few examples: sandboxes, search, payments, file systems.",
+      "kind": "summary",
+      "zh": "Box 執行長 Aaron Levie 認為，Agent 若能持續並行工作，既有的搜尋、檔案、付款與沙盒系統都要重新考慮速度、權限和規模。這篇是在談底層條件，並非宣稱企業現在都已完成這種轉型。"
+    }
+  ],
+  "podcasts": [
+    {
+      "series": "a16z Show",
+      "date": "2026.04.24",
+      "title": "AI Inside the Enterprise",
+      "url": "https://a16z.com/podcast/ai-inside-the-enterprise/",
+      "context": "Box 執行長 Aaron Levie 與 a16z 團隊談大型企業裡的 AI 導入。節目從矽谷期待與企業現場的落差切入。",
+      "points": [
+        "大型組織的 AI 計畫為何常難以推進；技術之外，原有流程與基礎設施同樣影響結果。",
+        "Agent 要進入日常工作，需與企業既有系統及人員分工接合。",
+        "適合拿來比較產品發布時的承諾，與企業真正能部署的條件。"
+      ]
+    },
+    {
+      "series": "Invest Like the Best",
+      "date": "2026.08.11",
+      "title": "Sandcastles & Silicon",
+      "url": "https://colossus.com/episode/sandcastles-and-silicon/",
+      "context": "主持人 Patrick O’Shaughnessy 訪談 Benchmark 投資人 Eric Vishria，討論雲端與 AI 採用的差異，以及企業轉型時舊做法的限制。",
+      "points": [
+        "這集將雲端轉型與 AI 採用放在一起比較，可以觀察兩者的節奏是否真的相似。",
+        "討論誰能在企業採用 AI 的過程中提供持續支援，以及企業需要什麼樣的協助。",
+        "後段延伸至投資與基礎設施；如果想先了解企業採用，可從前段開始。"
+      ],
+      "chapters": ["09:01 雲端與 AI 採用", "11:03 企業的 AI 引路人", "22:10 舊做法的限制"]
+    },
+    {
+      "series": "硅谷101",
+      "date": "2026.08.10",
+      "title": "一個「催發貨」AI 要跑通 260 步",
+      "url": "https://sv101.fireside.fm/261",
+      "context": "訪談阿里瓴羊執行長朋新宇，談企業級 Agent 如何從複雜流程、既有資料與成本出發部署。",
+      "points": [
+        "節目以客服催發貨的 260 步流程，說明一個看似簡單的任務包含多少實際工作。",
+        "訪談涵蓋部署分工、業務人員如何教 Agent，以及如何計算模型與導入成本。",
+        "案例來自受訪者自己的團隊，聽取成果時仍要留意適用情境。"
+      ],
+      "chapters": ["06:33 催發貨流程", "19:39 部署方式", "36:06 部署週期", "47:00 成本與模型"]
+    },
+    {
+      "series": "MIT Sloan · Me, Myself, and AI",
+      "date": "2025.04.15",
+      "title": "Overcoming AI Hallucinations: Truist’s Chandra Kapireddy",
+      "url": "https://sloanreview.mit.edu/audio/overcoming-ai-hallucinations-truists-chandra-kapireddy/",
+      "context": "Truist 銀行的 AI 負責人談金融機構如何決定用途、驗證輸出，以及讓員工在工作中使用生成式 AI。原始頁面附完整英文逐字稿。",
+      "points": [
+        "Truist 把策略與政策、平台能力、應用開發分成不同職責；用途從構想到上線後監測都有檢查步驟。",
+        "高風險決策保留人工審核；查詢帳戶餘額等精確資料，則應呼叫確定性的系統 API。",
+        "員工即使已有工具，也可能因不了解能力與限制而放棄使用或用得很淺，培訓因此是導入的一部分。"
+      ]
+    }
+  ],
+  "news": [
+    {
+      "date": "2026.09.24",
+      "source": "OpenAI／Ringg",
+      "title": "Ringg 以小流量試行客服 Agent",
+      "summary": "Ringg 先用歷史對話與模擬流程評估，再逐步接入正式客服流量，持續檢查回應品質、延遲與人工轉接。案例提供了擴大部署前的實際檢查方式。",
+      "url": "https://openai.com/index/ringg/"
+    },
+    {
+      "date": "2026.09.17",
+      "source": "Microsoft",
+      "title": "Microsoft 分享內部 AI 轉型：先整理流程與資料",
+      "summary": "Microsoft 的供應鏈案例先簡化流程、統一資料，再部署 Agent。官方公布特定規劃流程的週期縮短，但這項成效不能單獨歸因於模型。",
+      "url": "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/"
+    },
+    {
+      "date": "2026.09.22",
+      "source": "Gallup／Microsoft",
+      "title": "員工使用 AI 與信任 AI，可以是兩件事",
+      "summary": "37 國調查顯示，使用 AI 的人仍可能擔心其準確度與影響。企業若只看使用率，很難知道員工是否有信心把工具帶入工作。",
+      "url": "https://news.gallup.com/poll/714593/optimism-globally-widespread-despite-uneven.aspx"
+    },
+    {
+      "date": "2026.09.21",
+      "source": "OpenAI",
+      "title": "OpenAI Academy 增加職務導向課程",
+      "summary": "新路徑涵蓋領導者、開發者等不同角色，組織可依工作需要安排學習與評量。課程設計本身仍需接上工作成果，才能判斷培訓是否有效。",
+      "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths/"
+    },
+    {
+      "date": "2026.09.28",
+      "source": "Meta",
+      "title": "Meta 整合企業 AI 產品方向",
+      "summary": "Meta 宣布成立企業平台，將 Agent、模型與開發工具納入同一方向。現階段仍須逐項核對產品供應、權限和整合方式。",
+      "url": "https://about.fb.com/news/2026/09/launching-meta-enterprise-platform/"
+    }
+  ]
+}
