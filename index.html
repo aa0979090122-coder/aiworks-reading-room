@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=20261001-2" />
-  <script type="module" src="./main.js?v=20261001-2"></script>
+  <link rel="stylesheet" href="./styles.css?v=20261001-3" />
+  <script type="module" src="./main.js?v=20261001-3"></script>
 </head>
 <body>
   <header class="site-header"><div class="header-inner"><a class="brand" href="#top" aria-label="Aiworks 資訊情報站，回到頂端"><img src="./assets/aiworks-logo.svg" alt="Aiworks" /></a></div></header>
@@ -24,9 +24,9 @@
     </nav></div>
     <section class="notes-section wrap" aria-labelledby="notes-title"><div class="notes-heading"><h2 id="notes-title">我的筆記</h2><button id="copy-feedback" class="text-button">複製回饋</button></div><textarea id="reading-notes" aria-label="我的筆記"></textarea><p id="save-status" class="save-status" role="status"></p><details class="feedback-details"><summary>查看已記錄的判斷與筆記</summary><div id="feedback-list" class="feedback-list"></div></details></section>
     <div class="content wrap">
-      <section id="x-posts" class="panel" aria-labelledby="tab-x-posts"><div class="list-toolbar"><button class="text-button" data-view="x-posts">查看已讀與略過</button></div><div id="posts-list" class="posts-list"></div></section>
-      <section id="podcasts" class="panel" aria-labelledby="tab-podcasts" hidden><div class="list-toolbar"><button class="text-button" data-view="podcasts">查看已讀與略過</button></div><div id="podcasts-list" class="podcasts-list"></div></section>
-      <section id="news" class="panel" aria-labelledby="tab-news" hidden><div class="list-toolbar"><button class="text-button" data-view="news">查看已讀與略過</button></div><div id="news-list" class="news-list"></div></section>
+      <section id="x-posts" class="panel" aria-labelledby="tab-x-posts"><div class="list-toolbar"><div class="topic-filters" data-topics="x-posts" aria-label="X 貼文主題篩選"></div><button class="text-button" data-view="x-posts">查看已讀與略過</button></div><div id="posts-list" class="posts-list"></div></section>
+      <section id="podcasts" class="panel" aria-labelledby="tab-podcasts" hidden><div class="list-toolbar"><div class="topic-filters" data-topics="podcasts" aria-label="Podcast 主題篩選"></div><button class="text-button" data-view="podcasts">查看已讀與略過</button></div><div id="podcasts-list" class="podcasts-list"></div></section>
+      <section id="news" class="panel" aria-labelledby="tab-news" hidden><div class="list-toolbar"><div class="topic-filters" data-topics="news" aria-label="新聞主題篩選"></div><button class="text-button" data-view="news">查看已讀與略過</button></div><div id="news-list" class="news-list"></div></section>
     </div>
   </main>
   <footer class="site-footer"><div class="wrap"><span>Aiworks</span><a href="#top">回到頂端 ↑</a></div></footer>
