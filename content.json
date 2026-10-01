@@ -6,20 +6,38 @@
       "handle": "@emollick",
       "date": "2026-10-01",
       "url": "https://x.com/emollick/status/2105370153466863709",
-      "excerpt": "Every firm’s customer service agents are about to be overwhelmed with Dots & Muses & etc. negotiating for better deals",
+      "excerpt": "Every firm's customer service agents are about to be overwhelmed with Dots & Muses & etc. negotiating for better deals using voice/chat.",
       "kind": "summary",
       "zh": "Mollick 預測，個人 Agent 透過語音或聊天替使用者爭取優惠，可能改變企業客服的工作量與談判方式。他提到已有節省費用的個人故事，但貼文未提供發生規模或企業成效數據。",
-      "topic": "trend"
+      "topic": "trend",
+      "replyObservation": {
+        "count": 2,
+        "summary": "作者補充說，個人 Agent 可以替人走完電話選單、等待與反覆協商；另一位回覆者推演，企業也可能用 Agent 反向談判。這兩則回覆都在討論交易流程會怎麼改變。",
+        "checkedAt": "2026-10-01",
+        "urls": [
+          "https://x.com/emollick/status/2105370848060469460",
+          "https://x.com/NickADobos/status/2105371858199777564"
+        ]
+      }
     },
     {
       "author": "Aaron Levie",
       "handle": "@levie",
       "date": "2026-10-01",
       "url": "https://x.com/levie/status/2105354449795621179",
-      "excerpt": "The amount of work it takes to change out workflows in enterprises tends to be far greater than anyone realizes",
+      "excerpt": "The amount of work it takes to change out workflows in enterprises tends to be far greater than anyone realizes or would prefer.",
       "kind": "summary",
       "zh": "Box 執行長 Aaron Levie 認為，企業部署 Agent 需要處理舊系統上雲、資料存取、流程重設、人工審核與持續評測。這是他對導入服務市場的觀察，重點在 AI 產出要進入實際工作，後續仍需維護。",
-      "topic": "trend"
+      "topic": "trend",
+      "replyObservation": {
+        "count": 2,
+        "summary": "兩則可見回覆對導入分工看法不同：一則認為熟悉業務又懂 AI 的專家可能承擔部分部署工作；另一則把人工審核視為可以簡化成審查佇列與通知的步驟。",
+        "checkedAt": "2026-10-01",
+        "urls": [
+          "https://x.com/eddienasser/status/2105372037518909627",
+          "https://x.com/Avery_Coree/status/2105356339501310390"
+        ]
+      }
     },
     {
       "author": "Ethan Mollick",
@@ -46,30 +64,50 @@
       "handle": "@OpenAI",
       "date": "2026-09-30",
       "url": "https://x.com/OpenAI/status/2104986129686741046",
-      "excerpt": "GPT-6.1 Sol: near-Astra intelligence for a fifth of the price.",
+      "excerpt": "GPT-6.1 Sol: near-Astra intelligence for a fifth of the price. It’s the most cost-efficient model for its performance available today.",
       "kind": "translation",
       "zh": "OpenAI 宣稱 GPT-6.1 Sol 的能力接近 Astra，價格約為五分之一。這是供應商的價格與效能主張，採購時仍應以自己的任務測試。",
-      "topic": "product"
+      "topic": "product",
+      "originalIsFull": true
     },
     {
       "author": "Andrew Ng",
       "handle": "@AndrewYNg",
       "date": "2026-09-30",
       "url": "https://x.com/AndrewYNg/status/2104967263757713432",
-      "excerpt": "With recent advances in AI, rigorous skills measurements are now more true than ever.",
+      "excerpt": "Back in 2019, Kian had the insight that rigorous skills measurements would be important.",
       "kind": "summary",
       "zh": "Andrew Ng 談 Workera 被 Pearson 收購，主張企業需要更嚴謹地衡量員工在不同工作上的能力，才知道培訓與職務發展該往哪裡走。",
-      "topic": "trend"
+      "topic": "trend",
+      "replyObservation": {
+        "count": 2,
+        "summary": "可見回覆以祝賀為主；一位教育工作者補充，測驗分數不容易反映學生真正會做什麼。這些回覆還不足以判斷企業對技能衡量的整體態度。",
+        "checkedAt": "2026-10-01",
+        "urls": [
+          "https://x.com/kiankatan/status/2105032487235940488",
+          "https://x.com/leopardracer/status/2104967707854581893"
+        ]
+      }
     },
     {
       "author": "Ethan Mollick",
       "handle": "@emollick",
       "date": "2026-09-30",
       "url": "https://x.com/emollick/status/2104965679971709108",
-      "excerpt": "AI is evolving quite quickly. The AI labs aren't always anticipating how fast in the products they make.",
+      "excerpt": "1) AI is evolving quite quickly 2) The AI labs aren't always anticipating how fast in the products they make",
       "kind": "translation",
       "zh": "他指出去年 DevDay 描繪的 Agent 方式很快被後續發展改寫；AI 變化快，連模型公司也不一定能預測自家產品的演進。",
-      "topic": "trend"
+      "topic": "trend",
+      "replyObservation": {
+        "count": 3,
+        "summary": "可見回覆指出，有些職場仍使用較舊的 Agent 流程；也有人認為固定的路由圖可能限制模型自行判斷。另有回覆感嘆，一年前的設計已顯得很久遠。",
+        "checkedAt": "2026-10-01",
+        "urls": [
+          "https://x.com/archedark_/status/2104975282247806994",
+          "https://x.com/bryanpatricca/status/2104976860841193775",
+          "https://x.com/johnroodepic/status/2104978451652649319"
+        ]
+      }
     },
     {
       "author": "ClaudeDevs",
@@ -132,6 +170,24 @@
       "topic": "case"
     },
     {
+      "author": "Decagon · Rituals",
+      "handle": "@DecagonAI",
+      "date": "2026-09-22",
+      "url": "https://x.com/DecagonAI/status/2102070801747124305",
+      "excerpt": "We launched its AI concierge, Ray, across 19 countries and 15 languages in just two months.",
+      "zh": "Decagon 表示，Rituals 的 AI 禮賓服務 Ray 在兩個月內部署到 19 個國家、支援 15 種語言。這則可看跨市場擴張的速度與範圍；貼文沒有提供解決率、顧客滿意度或導入成本，不能直接推論成效。",
+      "topic": "case"
+    },
+    {
+      "author": "Cresta · Home Care Delivered",
+      "handle": "@cresta",
+      "date": "2026-09-16",
+      "url": "https://x.com/cresta/status/2099929000751603868",
+      "excerpt": "With Cresta, the team gained broader visibility, identified coaching opportunities faster, and achieved measurable results in just two months:",
+      "zh": "居家醫療用品供應商 Home Care Delivered 把 AI 用在客服品質管理與教練回饋。Cresta 稱兩個月內，確認地址的行為增加 34%、客服整體表現改善近 10%，特定問題行為最多下降 90%。這些是供應商公布的指標；要判斷可複製性，還需看各指標定義與導入前基準。",
+      "topic": "case"
+    },
+    {
       "author": "Romain Huet",
       "handle": "@romainhuet",
       "date": "2026-09-12",
@@ -139,6 +195,36 @@
       "excerpt": "I sat down with AI leaders from Figma, Box, Cognition, Ramp and others to hear how they’re using Astra.",
       "kind": "summary",
       "zh": "Romain Huet 訪談多家公司的 AI 團隊，展示 GPU 核心最佳化、電腦操作工作流程與設計畫面等應用。影片中的實例可當作尋找訪談對象與案例的線索。",
+      "topic": "case"
+    },
+    {
+      "author": "Jeffrey Lee Funk · Canva",
+      "handle": "@jeffreyleefunk",
+      "date": "2026-08-13",
+      "url": "https://x.com/jeffreyleefunk/status/2087685197605343615",
+      "excerpt": "Canva cut expected revenue growth rate by a third to 20% after unexpectedly high cost of delivering AI features",
+      "zh": "Canva 的 AI 功能需求高於預期，單次任務成本也超出原先可承受範圍，因此放慢廣泛推出、重建架構並調整商業模式。CEO Melanie Perkins 向 Fortune 說，這是先處理單位經濟，再擴大供應。貼文作者把它解讀為 AI 成本可能侵蝕軟體公司的經濟性；此處應區分 Canva 的回應與作者的延伸評論。",
+      "topic": "case",
+      "evidenceUrl": "https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third/",
+      "evidenceLabel": "Canva CEO 訪談",
+      "replyObservation": {
+        "count": 3,
+        "summary": "目前可見的三則回覆裡，有人質疑使用者是否真想要這些 AI 功能，也有人認為 AI 會衝擊 Canva 既有業務。這是讀者反應；其中對使用者需求和設計次數的推論沒有附證據，不能當成 Canva 的已確認問題。",
+        "checkedAt": "2026-10-01",
+        "urls": [
+          "https://x.com/The_Great_Null/status/2087817446619288014",
+          "https://x.com/ParrotLegal/status/2088189199987998982",
+          "https://x.com/ChaoticEwil/status/2087908057049174059"
+        ]
+      }
+    },
+    {
+      "author": "Decagon · ClassPass",
+      "handle": "@DecagonAI",
+      "date": "2026-05-15",
+      "url": "https://x.com/DecagonAI/status/2055012715802833317",
+      "excerpt": "Live at Decagon Dialogues: Sarah Vanden Broek from @classpass on how her team is using Duet ↓",
+      "zh": "ClassPass 的 Sarah Vanden Broek 分享客服團隊使用 Decagon Duet：技術產品經理全數採用，調查客服轉接率下滑的時間從數小時縮至數分鐘，推出時的自助解決率是原估的 10 倍，並擴大到全天候支援。這些是供應商在活動中轉述的客戶成果，需留意原始基準與衡量方式。",
       "topic": "case"
     },
     {
@@ -194,7 +280,9 @@
       "originalTitle": "Instinct: The Personal Agent",
       "originalExcerpt": "how long it takes users to trust an agent with their credit cards",
       "originalLanguage": "en",
-      "topic": "case"
+      "topic": "case",
+      "transcriptUrl": "https://colossus.com/episode/instinct-the-personal-agent/",
+      "transcriptNote": "官方頁面有英文逐字稿，但全文需登入 Colossus 帳號。這裡的導讀只依公開節目介紹與章節整理。"
     },
     {
       "series": "Invest Like the Best",
@@ -217,7 +305,9 @@
       "originalTitle": "Building Investing Superintelligence",
       "originalExcerpt": "We cover why plumbing constrains the investment ideas a model produces more than its intelligence does.",
       "originalLanguage": "en",
-      "topic": "case"
+      "topic": "case",
+      "transcriptUrl": "https://colossus.com/episode/building-investing-superintelligence/",
+      "transcriptNote": "官方頁面有英文逐字稿，但全文需登入 Colossus 帳號。這裡的導讀只依公開節目介紹與章節整理。"
     },
     {
       "series": "硅谷101",
@@ -262,7 +352,9 @@
       "originalTitle": "Sandcastles & Silicon",
       "originalExcerpt": "We cover the AWS call almost every investor got wrong and what it means for who wins in AI.",
       "originalLanguage": "en",
-      "topic": "trend"
+      "topic": "trend",
+      "transcriptUrl": "https://colossus.com/episode/sandcastles-and-silicon/",
+      "transcriptNote": "官方頁面有英文逐字稿，但全文需登入 Colossus 帳號。這裡的導讀只依公開節目介紹與章節整理。"
     },
     {
       "series": "硅谷101",
@@ -339,7 +431,9 @@
       "originalTitle": "Overcoming AI Hallucinations: Truist’s Chandra Kapireddy",
       "originalExcerpt": "The financial services executive shares how his organization implements traditional and generative AI.",
       "originalLanguage": "en",
-      "topic": "case"
+      "topic": "case",
+      "transcriptUrl": "https://sloanreview.mit.edu/audio/overcoming-ai-hallucinations-truists-chandra-kapireddy/",
+      "transcriptNote": "原始節目頁公開完整英文逐字稿；可直接開啟閱讀，不必播放音訊。"
     }
   ],
   "news": [
