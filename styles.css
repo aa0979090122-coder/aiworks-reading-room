@@ -17,6 +17,18 @@
 .post-open{display:inline-flex;align-items:center;gap:8px;margin-top:18px;color:#a94706;font-size:15px;font-weight:700;text-decoration:none}
 .post-open:hover{text-decoration:underline}
 .post-open span{font-size:19px;line-height:1}
+.post-original{padding:2px 0 18px;border-bottom:1px solid #eee7e1}
+.post-original .column-label,.post-reading .column-label,.reply-observation .column-label{margin-bottom:10px}
+.post-original blockquote{margin:0;color:#292522;font-family:Inter,"Noto Sans TC",sans-serif;font-size:17px;line-height:1.75;white-space:pre-line}
+.post-original blockquote p{margin:0}
+.post-original blockquote small{display:block;margin-top:9px;color:#857970;font-family:"Noto Sans TC",sans-serif;font-size:12px}
+.post-original blockquote small:empty{display:none}
+.post-original blockquote>a{display:none}
+.post-original iframe{display:block;max-width:100%;margin:0 auto!important}
+.post-reading{padding-top:18px}
+.reply-observation{margin-top:20px;padding:18px 20px;border-radius:12px;background:#fff8f2;border:1px solid #f1e1d4}
+.reply-observation p{margin:0;color:#403730;font-size:14px;line-height:1.75}
+.reply-observation .reply-limit{margin-top:9px;color:#857970;font-size:12px}
 .podcasts-list,.news-list{max-width:1120px}
 .podcast-media{width:100%;height:390px;max-height:none;aspect-ratio:auto}
 .video-trigger{position:relative;display:block;width:100%;height:100%;border:0;padding:0;background:#eee7df;overflow:hidden}
@@ -46,6 +58,8 @@
   .meta-right{width:100%;justify-content:space-between}
   .post-card{padding:20px 19px}
   .post-summary{font-size:15px}
+  .post-original blockquote{font-size:15px}
+  .reply-observation{padding:15px 16px}
   .post-open{font-size:14px}
   .podcast-media{height:auto;aspect-ratio:16/9}
   .reading-columns{grid-template-columns:1fr;margin-top:21px}
@@ -54,3 +68,13 @@
   .reading-columns .original-pane h3{font-size:19px}
   .original-pane blockquote{font-size:15px}
 }
+
+/* Keep the reading list close to the top of the page. */
+.intro{padding:24px 0 18px}
+.intro h1{font-size:clamp(30px,3vw,42px);line-height:1.18}
+.edition-date{margin-top:7px;font-size:13px}
+.transcript-access{margin-top:20px;padding:17px 19px;border:1px solid #eadbd0;border-radius:12px;background:#fffaf6}
+.transcript-access strong{display:block;margin-bottom:6px;color:#a44a0d;font-size:14px}
+.transcript-access p{margin:0 0 10px;color:#5d534b;font-size:14px;line-height:1.7}
+.post-evidence{margin-top:11px}
+@media(max-width:760px){.intro{padding:17px 0 13px}.intro h1{font-size:30px}}
