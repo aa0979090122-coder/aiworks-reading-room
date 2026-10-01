@@ -76,5 +76,6 @@
 .transcript-access{margin-top:20px;padding:17px 19px;border:1px solid #eadbd0;border-radius:12px;background:#fffaf6}
 .transcript-access strong{display:block;margin-bottom:6px;color:#a44a0d;font-size:14px}
 .transcript-access p{margin:0 0 10px;color:#5d534b;font-size:14px;line-height:1.7}
+.transcript-access>div+div{margin-top:8px}
 .post-evidence{margin-top:11px}
 @media(max-width:760px){.intro{padding:17px 0 13px}.intro h1{font-size:30px}}
