@@ -44,7 +44,8 @@ function actions(item) {
 function postCard(post) {
   const replies = post.replyObservation ? `<div class="reply-observation"><div class="column-label">留言觀察 · 公開可見 ${post.replyObservation.count} 則</div><p>${esc(post.replyObservation.summary)}</p><p class="reply-limit">只根據目前可見的回覆整理，完整討論請開啟 X。</p></div>` : "";
   const evidence = post.evidenceUrl ? `<div class="post-evidence">${link(post.evidenceUrl,post.evidenceLabel || "參考原始資料")}</div>` : "";
-  return `<article class="post-card"><div class="post-meta"><span>${esc(post.author)} <span class="handle">${esc(post.handle)}</span></span><span class="meta-right">${topicTag(post)}<time datetime="${esc(post.date)}">${dateLabel(post.date)}</time></span></div><div class="post-original"><div class="column-label">英文原文</div><blockquote class="twitter-tweet" data-conversation="none" data-dnt="true" lang="en"><p lang="en">${esc(post.excerpt)}</p><small>${post.originalIsFull ? "" : "節錄，完整原文請開啟 X。"}</small><a href="${esc(post.url)}">在 X 閱讀完整原文</a></blockquote></div><div class="post-reading"><div class="column-label">中文重點</div><p class="post-summary">${esc(post.zh)}</p>${evidence}</div>${replies}<a class="post-open" href="${esc(post.url)}" target="_blank" rel="noopener noreferrer">開啟 X 貼文與留言 <span aria-hidden="true">↗</span></a>${actions(post)}</article>`;
+  const details = post.caseDetails?.length ? `<dl class="case-details">${post.caseDetails.map(({label,text})=>`<div><dt>${esc(label)}</dt><dd>${esc(text)}</dd></div>`).join("")}</dl>` : "";
+  return `<article class="post-card"><div class="post-meta"><span>${esc(post.author)} <span class="handle">${esc(post.handle)}</span></span><span class="meta-right">${topicTag(post)}<time datetime="${esc(post.date)}">${dateLabel(post.date)}</time></span></div><div class="post-original"><div class="column-label">英文原文</div><blockquote class="twitter-tweet" data-conversation="none" data-dnt="true" lang="en"><p lang="en">${esc(post.excerpt)}</p><small>${post.originalIsFull ? "" : "節錄，完整原文請開啟 X。"}</small><a href="${esc(post.url)}">在 X 閱讀完整原文</a></blockquote></div><div class="post-reading"><div class="column-label">中文重點</div><p class="post-summary">${esc(post.zh)}</p>${details}${evidence}</div>${replies}<a class="post-open" href="${esc(post.url)}" target="_blank" rel="noopener noreferrer">開啟 X 貼文與留言 <span aria-hidden="true">↗</span></a>${actions(post)}</article>`;
 }
 function loadXEmbeds() { window.twttr?.widgets?.load?.(document.getElementById("posts-list")); }
 function podcastCard(show) {
@@ -114,7 +115,7 @@ async function copyFeedback() {
 }
 async function init() {
   try {
-    const response = await fetch('./content.json?v=20261001-7',{cache:'no-store'});
+    const response = await fetch('./content.json?v=20261001-8',{cache:'no-store'});
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     content = await response.json();
     document.getElementById('edition-date').textContent = `內容更新 ${dateLabel(content.editionDate)}`;
