@@ -8,7 +8,8 @@
       "url": "https://x.com/emollick/status/2105370153466863709",
       "excerpt": "Every firm’s customer service agents are about to be overwhelmed with Dots & Muses & etc. negotiating for better deals",
       "kind": "summary",
-      "zh": "Mollick 預測，個人 Agent 透過語音或聊天替使用者爭取優惠，可能改變企業客服的工作量與談判方式。他提到已有節省費用的個人故事，但貼文未提供發生規模或企業成效數據。"
+      "zh": "Mollick 預測，個人 Agent 透過語音或聊天替使用者爭取優惠，可能改變企業客服的工作量與談判方式。他提到已有節省費用的個人故事，但貼文未提供發生規模或企業成效數據。",
+      "topic": "trend"
     },
     {
       "author": "Aaron Levie",
@@ -17,7 +18,8 @@
       "url": "https://x.com/levie/status/2105354449795621179",
       "excerpt": "The amount of work it takes to change out workflows in enterprises tends to be far greater than anyone realizes",
       "kind": "summary",
-      "zh": "Box 執行長 Aaron Levie 認為，企業部署 Agent 需要處理舊系統上雲、資料存取、流程重設、人工審核與持續評測。這是他對導入服務市場的觀察，重點在 AI 產出要進入實際工作，後續仍需維護。"
+      "zh": "Box 執行長 Aaron Levie 認為，企業部署 Agent 需要處理舊系統上雲、資料存取、流程重設、人工審核與持續評測。這是他對導入服務市場的觀察，重點在 AI 產出要進入實際工作，後續仍需維護。",
+      "topic": "trend"
     },
     {
       "author": "Ethan Mollick",
@@ -26,7 +28,8 @@
       "url": "https://x.com/emollick/status/2105042717432799701",
       "excerpt": "It does feel like every year OpenAI releases a variation on the same third-party ecosystem only to semi-abandon it…",
       "kind": "summary",
-      "zh": "他回顧 OpenAI 從 Plugins、GPT Store 到 Apps 的第三方生態，質疑產品反覆推出後又轉向。這是評論者的觀察，適合用來思考企業對平台延續性的疑慮。"
+      "zh": "他回顧 OpenAI 從 Plugins、GPT Store 到 Apps 的第三方生態，質疑產品反覆推出後又轉向。這是評論者的觀察，適合用來思考企業對平台延續性的疑慮。",
+      "topic": "trend"
     },
     {
       "author": "OpenAI Developers",
@@ -35,7 +38,8 @@
       "url": "https://x.com/OpenAIDevs/status/2105003318917697873",
       "excerpt": "Define questions and possible answers to classify content, route requests, or choose an agent’s next action.",
       "kind": "translation",
-      "zh": "OpenAI 宣布 Decisions API 有限預覽，讓應用能按預先定義的問題與選項分類內容、分流請求或決定 Agent 下一步。現階段仍是有限預覽。"
+      "zh": "OpenAI 宣布 Decisions API 有限預覽，讓應用能按預先定義的問題與選項分類內容、分流請求或決定 Agent 下一步。現階段仍是有限預覽。",
+      "topic": "product"
     },
     {
       "author": "OpenAI",
@@ -44,7 +48,8 @@
       "url": "https://x.com/OpenAI/status/2104986129686741046",
       "excerpt": "GPT-6.1 Sol: near-Astra intelligence for a fifth of the price.",
       "kind": "translation",
-      "zh": "OpenAI 宣稱 GPT-6.1 Sol 的能力接近 Astra，價格約為五分之一。這是供應商的價格與效能主張，採購時仍應以自己的任務測試。"
+      "zh": "OpenAI 宣稱 GPT-6.1 Sol 的能力接近 Astra，價格約為五分之一。這是供應商的價格與效能主張，採購時仍應以自己的任務測試。",
+      "topic": "product"
     },
     {
       "author": "Andrew Ng",
@@ -53,7 +58,8 @@
       "url": "https://x.com/AndrewYNg/status/2104967263757713432",
       "excerpt": "With recent advances in AI, rigorous skills measurements are now more true than ever.",
       "kind": "summary",
-      "zh": "Andrew Ng 談 Workera 被 Pearson 收購，主張企業需要更嚴謹地衡量員工在不同工作上的能力，才知道培訓與職務發展該往哪裡走。"
+      "zh": "Andrew Ng 談 Workera 被 Pearson 收購，主張企業需要更嚴謹地衡量員工在不同工作上的能力，才知道培訓與職務發展該往哪裡走。",
+      "topic": "trend"
     },
     {
       "author": "Ethan Mollick",
@@ -62,7 +68,8 @@
       "url": "https://x.com/emollick/status/2104965679971709108",
       "excerpt": "AI is evolving quite quickly. The AI labs aren't always anticipating how fast in the products they make.",
       "kind": "translation",
-      "zh": "他指出去年 DevDay 描繪的 Agent 方式很快被後續發展改寫；AI 變化快，連模型公司也不一定能預測自家產品的演進。"
+      "zh": "他指出去年 DevDay 描繪的 Agent 方式很快被後續發展改寫；AI 變化快，連模型公司也不一定能預測自家產品的演進。",
+      "topic": "trend"
     },
     {
       "author": "ClaudeDevs",
@@ -71,7 +78,8 @@
       "url": "https://x.com/ClaudeDevs/status/2104676099083190435",
       "excerpt": "Claude can now help you build evaluations and hillclimb on them.",
       "kind": "translation",
-      "zh": "ClaudeDevs 分享讓 Claude Code 協助設計評測，並依評測結果反覆改善應用的方法。重點在建立可檢驗的改善循環。"
+      "zh": "ClaudeDevs 分享讓 Claude Code 協助設計評測，並依評測結果反覆改善應用的方法。重點在建立可檢驗的改善循環。",
+      "topic": "product"
     },
     {
       "author": "Aaron Levie",
@@ -80,7 +88,8 @@
       "url": "https://x.com/levie/status/2104648654074343480",
       "excerpt": "At Box, we've been testing Sonnet 5.5 in early access on our complex work eval with the Box Agent…",
       "kind": "summary",
-      "zh": "Box 在自己的複雜工作評測中，報告 Sonnet 5.5 的整體表現、速度和 token 使用有改善，並列出金融、法律、生命科學等任務的例子。數字來自 Box 自家測試，應按測試範圍解讀。"
+      "zh": "Box 在自己的複雜工作評測中，報告 Sonnet 5.5 的整體表現、速度和 token 使用有改善，並列出金融、法律、生命科學等任務的例子。數字來自 Box 自家測試，應按測試範圍解讀。",
+      "topic": "case"
     },
     {
       "author": "Aaron Levie",
@@ -89,7 +98,8 @@
       "url": "https://x.com/levie/status/2104350592290406849",
       "excerpt": "Interesting to think about all the implications in a world where agents begin to make the best or most efficient choice for their users.",
       "kind": "summary",
-      "zh": "他推演 Agent 代替使用者做選擇後，原本靠轉換摩擦留住顧客的業務可能面臨更激烈競爭；另一些市場則可能因購買流程變簡單而擴大。這是前瞻推論。"
+      "zh": "他推演 Agent 代替使用者做選擇後，原本靠轉換摩擦留住顧客的業務可能面臨更激烈競爭；另一些市場則可能因購買流程變簡單而擴大。這是前瞻推論。",
+      "topic": "trend"
     },
     {
       "author": "Aaron Levie",
@@ -98,7 +108,8 @@
       "url": "https://x.com/levie/status/2103629073595728372",
       "excerpt": "You can’t automate what you can’t measure. This means that evals are one of the gates to diffusion of AI in the enterprise.",
       "kind": "summary",
-      "zh": "Levie 主張企業需要持續評測 Agent 在自身環境裡的工作，才能判斷哪裡有效、哪裡退步，以及模型更新後是否仍能交付結果。這是他對企業評測需求的觀點。"
+      "zh": "Levie 主張企業需要持續評測 Agent 在自身環境裡的工作，才能判斷哪裡有效、哪裡退步，以及模型更新後是否仍能交付結果。這是他對企業評測需求的觀點。",
+      "topic": "trend"
     },
     {
       "author": "ClaudeDevs",
@@ -107,7 +118,8 @@
       "url": "https://x.com/ClaudeDevs/status/2103577007938228300",
       "excerpt": "Plugins package MCP and skills, and are becoming the way to build for Claude.",
       "kind": "summary",
-      "zh": "ClaudeDevs 宣布新的外掛提交入口，並稱 Claude 產品中的 MCP 使用量今年成長 110 倍。可以觀察企業系統整合需求，但成長倍數缺少基期。"
+      "zh": "ClaudeDevs 宣布新的外掛提交入口，並稱 Claude 產品中的 MCP 使用量今年成長 110 倍。可以觀察企業系統整合需求，但成長倍數缺少基期。",
+      "topic": "product"
     },
     {
       "author": "Boris Cherny",
@@ -116,7 +128,8 @@
       "url": "https://x.com/bcherny/status/2103538666597691552",
       "excerpt": "Tag writes >50% of my PRs every day. It also does ~100% of my data analysis…",
       "kind": "summary",
-      "zh": "Boris Cherny 分享自己如何用內部 Agent 處理程式修改、資料分析和回饋修正。他描述的比例是個人工作方式，並列出具體指令；不能直接當作一般企業的平均成效。"
+      "zh": "Boris Cherny 分享自己如何用內部 Agent 處理程式修改、資料分析和回饋修正。他描述的比例是個人工作方式，並列出具體指令；不能直接當作一般企業的平均成效。",
+      "topic": "case"
     },
     {
       "author": "Romain Huet",
@@ -125,7 +138,8 @@
       "url": "https://x.com/romainhuet/status/2098446125925888150",
       "excerpt": "I sat down with AI leaders from Figma, Box, Cognition, Ramp and others to hear how they’re using Astra.",
       "kind": "summary",
-      "zh": "Romain Huet 訪談多家公司的 AI 團隊，展示 GPU 核心最佳化、電腦操作工作流程與設計畫面等應用。影片中的實例可當作尋找訪談對象與案例的線索。"
+      "zh": "Romain Huet 訪談多家公司的 AI 團隊，展示 GPU 核心最佳化、電腦操作工作流程與設計畫面等應用。影片中的實例可當作尋找訪談對象與案例的線索。",
+      "topic": "case"
     },
     {
       "author": "a16z",
@@ -134,7 +148,8 @@
       "url": "https://x.com/a16z/status/2042394735814562033",
       "excerpt": "Both the AI utopians and the AI doomers are far too optimistic. Technology making something possible does not change behavior overnight.",
       "kind": "summary",
-      "zh": "Marc Andreessen 的觀點是，技術可行不代表企業和個人的行為會立刻改變。現有工作方式與制度有慣性，因此 AI 採用需要時間；他同時擔心採用過慢會拖累成長。"
+      "zh": "Marc Andreessen 的觀點是，技術可行不代表企業和個人的行為會立刻改變。現有工作方式與制度有慣性，因此 AI 採用需要時間；他同時擔心採用過慢會拖累成長。",
+      "topic": "trend"
     },
     {
       "author": "Ethan Mollick",
@@ -143,7 +158,8 @@
       "url": "https://x.com/emollick/status/2041520467450765504",
       "excerpt": "Its an important time for the AI labs to build interfaces around the goal of job augmentation through AI.",
       "kind": "translation",
-      "zh": "現在是 AI 實驗室設計介面的重要時刻：目標應是用 AI 增強人的工作，而非用 AI 取代工作。聊天機器人大多是輔助工具，需要人參與工作。Agent 的工作方式仍在形成，也可以把人放在中心。"
+      "zh": "現在是 AI 實驗室設計介面的重要時刻：目標應是用 AI 增強人的工作，而非用 AI 取代工作。聊天機器人大多是輔助工具，需要人參與工作。Agent 的工作方式仍在形成，也可以把人放在中心。",
+      "topic": "trend"
     },
     {
       "author": "Aaron Levie",
@@ -152,7 +168,8 @@
       "url": "https://x.com/levie/status/2038468564500537416",
       "excerpt": "Agents running 24/7 and in parallel modify these requirements meaningfully. Here are just a few examples: sandboxes, search, payments, file systems.",
       "kind": "summary",
-      "zh": "Box 執行長 Aaron Levie 認為，Agent 若能持續並行工作，既有的搜尋、檔案、付款與沙盒系統都要重新考慮速度、權限和規模。這篇是在談底層條件，並非宣稱企業現在都已完成這種轉型。"
+      "zh": "Box 執行長 Aaron Levie 認為，Agent 若能持續並行工作，既有的搜尋、檔案、付款與沙盒系統都要重新考慮速度、權限和規模。這篇是在談底層條件，並非宣稱企業現在都已完成這種轉型。",
+      "topic": "trend"
     }
   ],
   "podcasts": [
@@ -176,7 +193,8 @@
       ],
       "originalTitle": "Instinct: The Personal Agent",
       "originalExcerpt": "how long it takes users to trust an agent with their credit cards",
-      "originalLanguage": "en"
+      "originalLanguage": "en",
+      "topic": "case"
     },
     {
       "series": "Invest Like the Best",
@@ -198,7 +216,8 @@
       ],
       "originalTitle": "Building Investing Superintelligence",
       "originalExcerpt": "We cover why plumbing constrains the investment ideas a model produces more than its intelligence does.",
-      "originalLanguage": "en"
+      "originalLanguage": "en",
+      "topic": "case"
     },
     {
       "series": "硅谷101",
@@ -219,7 +238,8 @@
       ],
       "originalTitle": "外滩大会线下圆桌｜敢把钱包交给AI吗？聊聊Agent交易爆发前夜的信任基建",
       "originalExcerpt": "当Agent从对话走向办事、从推荐走向交易，“信任”成了绕不开的关键词。",
-      "originalLanguage": "zh"
+      "originalLanguage": "zh",
+      "topic": "trend"
     },
     {
       "series": "Invest Like the Best",
@@ -241,7 +261,8 @@
       "cover": "https://colossus.com/wp-content/uploads/2026/08/Eric-Vishria-2-ramp-1-scaled.jpg",
       "originalTitle": "Sandcastles & Silicon",
       "originalExcerpt": "We cover the AWS call almost every investor got wrong and what it means for who wins in AI.",
-      "originalLanguage": "en"
+      "originalLanguage": "en",
+      "topic": "trend"
     },
     {
       "series": "硅谷101",
@@ -264,7 +285,8 @@
       "cover": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover_medium.jpg?v=6",
       "originalTitle": "E248｜一个“催发货”AI要跑通260步，和阿里瓴羊朋新宇聊聊中国式FDE",
       "originalExcerpt": "一个催发货流程，客服agent需要跑通260步流程。",
-      "originalLanguage": "zh"
+      "originalLanguage": "zh",
+      "topic": "case"
     },
     {
       "series": "a16z Show",
@@ -281,7 +303,8 @@
       ],
       "originalTitle": "How Enterprise AI Really Gets Deployed",
       "originalExcerpt": "how latency, evaluation, and fine-tuning shape production AI systems",
-      "originalLanguage": "en"
+      "originalLanguage": "en",
+      "topic": "case"
     },
     {
       "series": "a16z Show",
@@ -297,7 +320,8 @@
       "cover": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/03/a16z-Show-Backup-Yoast-Facebook-1.png",
       "originalTitle": "AI Inside the Enterprise",
       "originalExcerpt": "They cover the gap between Silicon Valley and the rest of the world, why most AI initiatives fail in large organizations.",
-      "originalLanguage": "en"
+      "originalLanguage": "en",
+      "topic": "trend"
     },
     {
       "series": "MIT Sloan · Me, Myself, and AI",
@@ -314,7 +338,8 @@
       "cover": "https://sloanreview.mit.edu/wp-content/uploads/2025/03/MMAI-S11-E3-Kapireddy-Truist-headshot-1200x627-1.png",
       "originalTitle": "Overcoming AI Hallucinations: Truist’s Chandra Kapireddy",
       "originalExcerpt": "The financial services executive shares how his organization implements traditional and generative AI.",
-      "originalLanguage": "en"
+      "originalLanguage": "en",
+      "topic": "case"
     }
   ],
   "news": [
@@ -330,7 +355,8 @@
         "合作計畫預計先培訓約 150 名地方顧問，透過實作工作坊接觸至少 1,000 家小企業，並追蹤哪些用法能持續留下來。"
       ],
       "originalTitle": "Helping small businesses put AI to work",
-      "originalExcerpt": "Partnership with America’s SBDC will expand hands-on training and local guidance, while a new report explores what small teams are accomplishing with AI."
+      "originalExcerpt": "Partnership with America’s SBDC will expand hands-on training and local guidance, while a new report explores what small teams are accomplishing with AI.",
+      "topic": "case"
     },
     {
       "date": "2026-09-28",
@@ -344,7 +370,8 @@
       ],
       "url": "https://a16z.com/openai-understands-something-important-and-rare/",
       "originalTitle": "OpenAI Understands Something Important and Rare",
-      "originalExcerpt": "We think that OpenAI will win because they are so good at creating new kinds of customers."
+      "originalExcerpt": "We think that OpenAI will win because they are so good at creating new kinds of customers.",
+      "topic": "trend"
     },
     {
       "date": "2026-09-28",
@@ -357,7 +384,8 @@
         "採購前仍需逐項確認可用範圍、權限、整合能力和時間表。"
       ],
       "originalTitle": "Launching Meta Enterprise Platform",
-      "originalExcerpt": "Meta Enterprise Platform will focus on turning its AI stack into products and services that companies can deploy for their own businesses."
+      "originalExcerpt": "Meta Enterprise Platform will focus on turning its AI stack into products and services that companies can deploy for their own businesses.",
+      "topic": "product"
     },
     {
       "date": "2026-09-28",
@@ -371,7 +399,8 @@
         "Basis 也依任務難度調整推理量，希望控制長流程 Agent 的時間與成本。這是供應商公布的單一客戶案例，不能直接當成所有會計工作的成效。"
       ],
       "originalTitle": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-      "originalExcerpt": "GPT-6 Astra took 50% less time to finish complex tasks vs. GPT-5.6 Sol and showed a deeper understanding of user intent."
+      "originalExcerpt": "GPT-6 Astra took 50% less time to finish complex tasks vs. GPT-5.6 Sol and showed a deeper understanding of user intent.",
+      "topic": "case"
     },
     {
       "date": "2026-09-25",
@@ -385,7 +414,8 @@
         "案例的做法是先用客戶自己的車輛、資料和流程呈現可行方案，再讓客戶與團隊一起修正；正式產品仍需工程師完成。"
       ],
       "originalTitle": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-      "originalExcerpt": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
+      "originalExcerpt": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
+      "topic": "case"
     },
     {
       "date": "2026-09-23",
@@ -399,7 +429,8 @@
         "這是供應商發布的客戶案例，成效需按案例自身的測量方式解讀。"
       ],
       "originalTitle": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "originalExcerpt": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
+      "originalExcerpt": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+      "topic": "case"
     },
     {
       "date": "2026-09-22",
@@ -412,7 +443,8 @@
         "只看使用率不足以知道員工是否願意在重要工作上依賴 AI。"
       ],
       "originalTitle": "AI Optimism Globally Widespread Despite Uneven Use",
-      "originalExcerpt": "Positive emotions toward AI outweigh negative ones in 34 out of 37 countries."
+      "originalExcerpt": "Positive emotions toward AI outweigh negative ones in 34 out of 37 countries.",
+      "topic": "trend"
     },
     {
       "date": "2026-09-21",
@@ -425,7 +457,8 @@
         "企業導入時可將課程對應到實際工作任務，再檢查學習後的成果。"
       ],
       "originalTitle": "Expanding OpenAI Academy with new learning paths",
-      "originalExcerpt": "Role-based learning helps employees, developers, leaders, educators, and students build practical AI skills and demonstrate what they’ve learned."
+      "originalExcerpt": "Role-based learning helps employees, developers, leaders, educators, and students build practical AI skills and demonstrate what they’ve learned.",
+      "topic": "product"
     },
     {
       "date": "2026-09-17",
@@ -439,7 +472,8 @@
         "文中列出的銷售與供應鏈改善屬於 Microsoft 選定流程的自家數據。閱讀時可參考其測量方式與適用範圍，不宜直接當成其他企業的預期成效。"
       ],
       "originalTitle": "What we’ve learned from Microsoft’s own AI transformation",
-      "originalExcerpt": "We initially treated AI like a traditional technology rollout: deploy the tools, provide training, drive adoption."
+      "originalExcerpt": "We initially treated AI like a traditional technology rollout: deploy the tools, provide training, drive adoption.",
+      "topic": "case"
     },
     {
       "date": "2026-09-16",
@@ -453,7 +487,8 @@
       ],
       "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value/",
       "originalTitle": "How to connect AI usage to business value",
-      "originalExcerpt": "Understand how teams use ChatGPT Work and Codex, see the work behind the spend, and connect it to measurable outcomes."
+      "originalExcerpt": "Understand how teams use ChatGPT Work and Codex, see the work behind the spend, and connect it to measurable outcomes.",
+      "topic": "product"
     },
     {
       "date": "2026-09-16",
@@ -466,7 +501,8 @@
       ],
       "url": "https://openai.com/index/unlocking-new-ways-of-working/",
       "originalTitle": "How workers are unlocking new ways of working",
-      "originalExcerpt": "New OpenAI Economic Research shows how workers use AI to do tasks outside their typical occupation and which new tasks they build into their workflow."
+      "originalExcerpt": "New OpenAI Economic Research shows how workers use AI to do tasks outside their typical occupation and which new tasks they build into their workflow.",
+      "topic": "trend"
     }
   ]
 }
