@@ -131,7 +131,7 @@
       "excerpt": "At Box, we've been testing Sonnet 5.5 in early access on our complex work eval with the Box Agent…",
       "kind": "summary",
       "zh": "Box 在自己的複雜工作評測中，報告 Sonnet 5.5 的整體表現、速度和 token 使用有改善，並列出金融、法律、生命科學等任務的例子。數字來自 Box 自家測試，應按測試範圍解讀。",
-      "topic": "case"
+      "topic": "trend"
     },
     {
       "author": "Aaron Levie",
@@ -171,7 +171,7 @@
       "excerpt": "Tag writes >50% of my PRs every day. It also does ~100% of my data analysis…",
       "kind": "summary",
       "zh": "Boris Cherny 分享自己如何用內部 Agent 處理程式修改、資料分析和回饋修正。他描述的比例是個人工作方式，並列出具體指令；不能直接當作一般企業的平均成效。",
-      "topic": "case"
+      "topic": "trend"
     },
     {
       "author": "Decagon · Rituals",
@@ -179,8 +179,24 @@
       "date": "2026-09-22",
       "url": "https://x.com/DecagonAI/status/2102070801747124305",
       "excerpt": "We launched its AI concierge, Ray, across 19 countries and 15 languages in just two months.",
-      "zh": "Decagon 表示，Rituals 的 AI 禮賓服務 Ray 在兩個月內部署到 19 個國家、支援 15 種語言。這則可看跨市場擴張的速度與範圍；貼文沒有提供解決率、顧客滿意度或導入成本，不能直接推論成效。",
-      "topic": "case"
+      "zh": "這則貼文公布 Rituals 的跨國部署成果；更值得看的是它怎麼處理前一次 chatbot 導入留下的品質與信任問題。Decagon 的完整案例交代了試行順序、人工檢查和擴張條件。",
+      "topic": "case",
+      "evidenceUrl": "https://decagon.ai/case-studies/rituals",
+      "evidenceLabel": "Rituals 完整導入案例",
+      "caseDetails": [
+        {
+          "label": "原本卡在哪",
+          "text": "前一套加上 AI 的舊式 chatbot 回答品質和品牌語氣不穩，後續支援也有限。Rituals 當時只讓員工內部使用，這段經驗削弱了團隊對客服自動化的信心。"
+        },
+        {
+          "label": "實際怎麼做",
+          "text": "團隊用 Agent Operating Procedures 規定回覆方式，先在波蘭、英國上線，逐則人工檢查 Ray 的回答；確認可靠且符合品牌語氣後，才進入荷蘭等市場。Watchtower 讓客服團隊檢查對話，並把顧客問題回饋給產品主管。"
+        },
+        {
+          "label": "結果與界線",
+          "text": "Decagon 與 Rituals 稱，兩個月後擴至 19 國、15 種語言；黑色星期五至 12 月 26 日旺季，在每日最多約 9,000 件需求下沒有待處理積案。這是雙方公開的單一案例，沒有公布獨立對照或導入成本。"
+        }
+      ]
     },
     {
       "author": "Cresta · Home Care Delivered",
@@ -188,8 +204,24 @@
       "date": "2026-09-16",
       "url": "https://x.com/cresta/status/2099929000751603868",
       "excerpt": "With Cresta, the team gained broader visibility, identified coaching opportunities faster, and achieved measurable results in just two months:",
-      "zh": "居家醫療用品供應商 Home Care Delivered 把 AI 用在客服品質管理與教練回饋。Cresta 稱兩個月內，確認地址的行為增加 34%、客服整體表現改善近 10%，特定問題行為最多下降 90%。這些是供應商公布的指標；要判斷可複製性，還需看各指標定義與導入前基準。",
-      "topic": "case"
+      "zh": "Home Care Delivered 的難題是客服教練花大量時間抽聽、評分，卻很少有時間真正指導人。Cresta 的完整案例顯示，他們先把單一行為轉成可檢查的規則，再依全量通話結果調整教練回饋。",
+      "topic": "case",
+      "evidenceUrl": "https://cresta.com/blog/how-home-care-delivered-modernized-quality-management-and-coaching",
+      "evidenceLabel": "查看 Home Care Delivered 導入細節",
+      "caseDetails": [
+        {
+          "label": "原本卡在哪",
+          "text": "主管估計教練約 90% 的時間用在聽錄音、評分與反覆播放，只能抽查少量通話；傳統品管結果也高估了某些基本行為的實際執行率。"
+        },
+        {
+          "label": "實際怎麼做",
+          "text": "先轉錄重複訂單與新客通話，原定從較單純的地址確認開始，臨上線時轉以新客通話建立評分規則，之後再擴回重複訂單。營運分析師把業務要求寫成規則與評分表；兩名客服先學，再帶其他同事。未通過規則的通話用來判斷是規則需修正，還是教練需調整指導。"
+        },
+        {
+          "label": "結果與界線",
+          "text": "Cresta 報告兩個月內，地址確認行為依規則追蹤提高 34%，整體客服表現提高近 10%；部分問題行為最多下降 90%。指標與改善幅度來自供應商和客戶訪談，原文沒有提供獨立對照組。"
+        }
+      ]
     },
     {
       "author": "Romain Huet",
@@ -199,7 +231,7 @@
       "excerpt": "I sat down with AI leaders from Figma, Box, Cognition, Ramp and others to hear how they’re using Astra.",
       "kind": "summary",
       "zh": "Romain Huet 訪談多家公司的 AI 團隊，展示 GPU 核心最佳化、電腦操作工作流程與設計畫面等應用。影片中的實例可當作尋找訪談對象與案例的線索。",
-      "topic": "case"
+      "topic": "trend"
     },
     {
       "author": "Jeffrey Lee Funk · Canva",
@@ -220,7 +252,21 @@
           "https://x.com/ParrotLegal/status/2088189199987998982",
           "https://x.com/ChaoticEwil/status/2087908057049174059"
         ]
-      }
+      },
+      "caseDetails": [
+        {
+          "label": "失敗發生在哪",
+          "text": "AI 功能需求與單次任務成本高於 Canva 預期，原本的推出速度和訂價假設因而受壓。"
+        },
+        {
+          "label": "公司如何調整",
+          "text": "CEO 在受訪時談到放慢廣泛推出、重建架構與調整商業模式，先處理每次使用的成本，再擴大供應。來源未公開具體架構改法或單位成本。"
+        },
+        {
+          "label": "閱讀界線",
+          "text": "這是成本與擴張決策的失敗案例，不能據此推論所有 Canva AI 功能的使用量或獲利情況；貼文作者的產業推論也不是 Canva 官方結論。"
+        }
+      ]
     },
     {
       "author": "OpenAI · 內部導入",
@@ -229,7 +275,7 @@
       "url": "https://x.com/OpenAI/status/2070196105745518913",
       "excerpt": "Across our entire company, people are using Codex to do work that is more complex, longer-running, and increasingly cross-functional.",
       "zh": "OpenAI 分享自己在工程、法務、財務與招募等部門的 Codex 使用情況。官方研究指出，法務、財務與招募約在 2026 年 4 月轉為以 Codex 作為主要 AI 工具；內部員工平均超過 85% 的 AI 輸出 token 來自 Codex。這反映一間 AI 原生公司的使用轉移，並非一般企業的平均採用率，也不能由 token 占比直接推算節省工時或投資報酬。",
-      "topic": "case",
+      "topic": "trend",
       "evidenceUrl": "https://openai.com/index/how-agents-are-transforming-work/",
       "evidenceLabel": "OpenAI 內部使用研究"
     },
@@ -239,8 +285,24 @@
       "date": "2026-05-15",
       "url": "https://x.com/DecagonAI/status/2055012715802833317",
       "excerpt": "Live at Decagon Dialogues: Sarah Vanden Broek from @classpass on how her team is using Duet ↓",
-      "zh": "ClassPass 的 Sarah Vanden Broek 分享客服團隊使用 Decagon Duet：技術產品經理全數採用，調查客服轉接率下滑的時間從數小時縮至數分鐘，推出時的自助解決率是原估的 10 倍，並擴大到全天候支援。這些是供應商在活動中轉述的客戶成果，需留意原始基準與衡量方式。",
-      "topic": "case"
+      "zh": "ClassPass 面對客服量起伏與既有系統難以自動處理高量工單的問題。這篇 X 貼文談成果；Decagon 的客戶頁補足評選條件、客服系統接法和人工團隊如何使用。",
+      "topic": "case",
+      "evidenceUrl": "https://decagon.ai/case-studies/classpass",
+      "evidenceLabel": "ClassPass 完整導入案例",
+      "caseDetails": [
+        {
+          "label": "原本卡在哪",
+          "text": "客服需求有週期性高峰，維持大團隊成本高；既有客服系統缺少整合，許多高量工單仍靠人工處理。"
+        },
+        {
+          "label": "實際怎麼做",
+          "text": "ClassPass 以正式 RFP 比較 13 個 AI 方案，檢查回覆準確度的 QA 分數、客服團隊能否自行管理內容與分析、供應商回應速度及成本。上線後讓 Agent 處理聊天與電郵，依會員帳戶和預訂歷史回答；另把 Agent Assist 接進 Zendesk，供數百位客服人員使用。"
+        },
+        {
+          "label": "結果與界線",
+          "text": "Decagon 稱聊天服務由每週 5 天、每天 16 小時擴至全天候；客戶在活動中談到推出時的自助解決率高於預估。供應商網站另列成本與轉接率改善，但沒有公開完整基準和外部驗證。"
+        }
+      ]
     },
     {
       "author": "a16z",
@@ -275,8 +337,24 @@
         "count": 1,
         "summary": "目前核對到一則具體回覆，留言者說自己花六個月建的編排層在新模型推出後變成技術負債。這是另一位開發者的個人經驗，不能視為 Box 的情況或整體市場風向。",
         "checkedAt": "2026-10-01",
-        "urls": ["https://x.com/PsudoMike/status/2040999328475431137"]
-      }
+        "urls": [
+          "https://x.com/PsudoMike/status/2040999328475431137"
+        ]
+      },
+      "caseDetails": [
+        {
+          "label": "失敗發生在哪",
+          "text": "Box Agent 曾為搜尋資料與長上下文限制加入額外的編排步驟；模型進步後，部分步驟反而妨礙 Agent 表現，甚至讓系統過度配合既有評測。"
+        },
+        {
+          "label": "團隊如何調整",
+          "text": "Aaron Levie 說團隊在推出前重新評測架構，移除不再有幫助的補丁。這提醒產品團隊把編排層也放進模型升級後的回歸測試。"
+        },
+        {
+          "label": "閱讀界線",
+          "text": "原貼分享的是 Box Agent 的開發經驗，沒有量化各步驟移除後的改善幅度；不能把它直接套成所有 Agent 應簡化架構的規則。"
+        }
+      ]
     },
     {
       "author": "Aaron Levie",
@@ -311,7 +389,7 @@
       "originalTitle": "Instinct: The Personal Agent",
       "originalExcerpt": "how long it takes users to trust an agent with their credit cards",
       "originalLanguage": "en",
-      "topic": "case",
+      "topic": "trend",
       "transcriptUrl": "https://colossus.com/episode/instinct-the-personal-agent/",
       "altTranscriptUrl": "https://www.youtube.com/watch?v=Am7IWP8IpEc",
       "transcriptNote": "YouTube 原片提供可直接閱讀的英文自動轉錄稿：展開影片說明後點選「顯示轉錄稿」。自動字幕可能有辨識錯誤；節目官方逐字稿仍需登入 Colossus 帳號。這裡的導讀只依公開節目介紹與章節整理。"
@@ -337,7 +415,7 @@
       "originalTitle": "Building Investing Superintelligence",
       "originalExcerpt": "We cover why plumbing constrains the investment ideas a model produces more than its intelligence does.",
       "originalLanguage": "en",
-      "topic": "case",
+      "topic": "trend",
       "transcriptUrl": "https://colossus.com/episode/building-investing-superintelligence/",
       "transcriptNote": "官方頁面有英文逐字稿，但全文需登入 Colossus 帳號。這裡的導讀只依公開節目介紹與章節整理。"
     },
@@ -393,12 +471,12 @@
       "date": "2026-08-10",
       "title": "一個「催發貨」AI 要跑通 260 步",
       "url": "https://sv101.fireside.fm/261",
-      "context": "訪談阿里瓴羊執行長朋新宇，談企業級 Agent 如何從複雜流程、既有資料與成本出發部署。",
+      "context": "阿里瓴羊執行長朋新宇談企業 Agent 的部署方法。公開節目介紹與章節列出「催發貨」流程、廣告調價、團隊分工與成本；以下僅整理這些可核對資訊，沒有把未公開的執行細節寫成已查證事實。",
       "points": [
-        "節目以客服「催發貨」的 260 步流程，說明一個看似簡單的請求，實際會跨越資料查詢、狀態判斷與後續回覆。若沒有拆清楚工作，Agent 示範很難變成正式流程。",
-        "受訪者談部署分工：業務分析決定方向、架構師選模型，熟悉業務的人則教 Agent 做判斷。節目章節也提到部署時間分配與調教過程。",
-        "討論最後回到成本與模型選擇。企業要能算清楚每個流程的效益與 token 成本，才知道應該擴大使用，還是先修正資料與流程。",
-        "案例來自受訪者的團隊與客戶經驗，聽取成果時仍要留意產業、資料基礎及部署條件。"
+        "「催發貨」看似單一客服請求，受訪者說背後要跑通約 260 步。若只用一段模型回答取代客服，資料查詢、狀態判斷和後續操作仍無人承接。",
+        "另一個例子是廣告投手在 90 天內調價約一萬次。受訪者要團隊學的是每次調價背後的判斷條件，而非單純模仿操作次數。節目介紹未公開決策規則或客戶成效的驗證方式。",
+        "部署分工由業務分析人員定方向、AI 架構師選模型、業務負責人教 Agent；章節把週期概括為熟悉崗位、建模、調教 AI 各約三分之一。正式擴大前還要算清流程效益與 token 成本。",
+        "這些例子來自阿里瓴羊受訪者的敘述。若要寫成單一企業客戶的成效案例，仍需另找具名客戶、上線條件與基準數據。"
       ],
       "chapters": [
         "06:33 催發貨流程",
@@ -428,7 +506,7 @@
       "originalTitle": "How Enterprise AI Really Gets Deployed",
       "originalExcerpt": "how latency, evaluation, and fine-tuning shape production AI systems",
       "originalLanguage": "en",
-      "topic": "case"
+      "topic": "trend"
     },
     {
       "series": "a16z Show",
@@ -454,10 +532,10 @@
       "url": "https://sloanreview.mit.edu/audio/overcoming-ai-hallucinations-truists-chandra-kapireddy/",
       "context": "Truist 銀行的 AI 負責人談金融機構如何決定用途、驗證輸出，以及讓員工在工作中使用生成式 AI。原始頁面附完整英文逐字稿。",
       "points": [
-        "Truist 把策略與政策、平台能力、應用開發分成不同職責。用途從構想到上線後監測都有檢查步驟，讓模型風險有明確負責人。",
-        "生成式 AI 的彈性增加了輸出驗證難度。高風險決策保留人工審核；查詢帳戶餘額等精確資料，則應呼叫確定性的系統 API。",
-        "員工已有工具仍可能因不了解能力與限制而用得很淺，或過度依賴錯誤答案。節目因此把培訓與風險認知視為導入的一部分。",
-        "原始節目頁附英文逐字稿；若要追查金融機構如何設計審核責任，可直接對照逐字稿中的具體說法。"
+        "Truist 把 AI 策略與政策、平台能力、應用開發分給不同團隊，讓從用途提案到上線監測的責任有歸屬。這是銀行面對模型風險時的組織設計。",
+        "受訪者區分兩類工作：需要查詢精確帳戶資料時，讓系統呼叫確定性的 API；生成式 AI 的開放回答則設計驗證與人工審核，尤其在高風險決策中保留人的判斷。",
+        "導入還包括員工培訓：有人因不了解限制而用得過淺，也有人過度相信模型答案。節目把使用方法與風險認知放進同一套推廣工作。",
+        "原始頁面公開英文逐字稿，可直接追查各責任分工與防止幻覺的細節。受訪者沒有把它描述成所有金融流程都能自動完成。"
       ],
       "cover": "https://sloanreview.mit.edu/wp-content/uploads/2025/03/MMAI-S11-E3-Kapireddy-Truist-headshot-1200x627-1.png",
       "originalTitle": "Overcoming AI Hallucinations: Truist’s Chandra Kapireddy",
@@ -482,7 +560,7 @@
       ],
       "originalTitle": "Helping small businesses put AI to work",
       "originalExcerpt": "Partnership with America’s SBDC will expand hands-on training and local guidance, while a new report explores what small teams are accomplishing with AI.",
-      "topic": "case"
+      "topic": "trend"
     },
     {
       "date": "2026-09-28",
@@ -518,11 +596,11 @@
       "source": "OpenAI／Basis",
       "title": "Basis 如何評估會計 Agent 的長流程工作",
       "url": "https://openai.com/index/basis-tax-workbook-with-astra/",
-      "what": "會計軟體公司 Basis 用 50 個工作表的稅務任務比較模型，並說明它如何評測 Agent 的過程與答案。這篇案例的價值在於把「準確」拆成可檢查的行為。",
+      "what": "Basis 把一份 50 工作表的稅務文件當成長流程測試，檢查模型是否能按會計工作要求完成資料查核、填表與自我檢查。文章說明評測方法及成本取捨；數字來自 Basis 內部測試。",
       "points": [
-        "Basis 自家測試顯示，GPT-6 Astra 完成 50 個工作表任務的時間比 GPT-5.6 Sol 少約一半，內部評測分數約提高 20%；文章沒有提供外部獨立驗證。",
-        "評測涵蓋是否遵守範本、查閱稅務原始資料、檢查自己的工作，以及遇到不明確需求時會不會提問或標出假設。",
-        "Basis 也依任務難度調整推理量，希望控制長流程 Agent 的時間與成本。這是供應商公布的單一客戶案例，不能直接當成所有會計工作的成效。"
+        "起點問題是長流程會計工作需要遵守範本、查閱稅務原始資料，遇到含糊指示還要提問或標明假設；只看最後答案對不對，會漏掉過程中的風險。",
+        "Basis 同時評估 Agent 的工作過程和最終答案，包括範本遵循、原始資料引用與自我檢查。它也讓模型在困難步驟提高推理量、簡單步驟降低推理量，並保留快取以控制長任務的時間與成本。",
+        "在 Basis 的 50 工作表測試中，OpenAI 稱 GPT-6 Astra 比 GPT-5.6 Sol 少花約一半時間，Basis 內部評測分數約高 20%。文章沒有公開完整題組、成本或獨立驗證；這不是整個會計部門的投資報酬。"
       ],
       "originalTitle": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
       "originalExcerpt": "GPT-6 Astra took 50% less time to finish complex tasks vs. GPT-5.6 Sol and showed a deeper understanding of user intent.",
@@ -535,9 +613,9 @@
       "url": "https://openai.com/index/proaction/",
       "what": "車隊管理軟體公司 Proaction 把銷售通話、郵件和客戶試算表交給 Codex，產生貼近客戶車隊的互動示範。客戶能直接指出要調整的流程，工程師之後也能用示範確認需求。",
       "points": [
-        "共同創辦人表示，每月製作 4 至 6 個客製示範，每個約 30 至 45 分鐘；估計省下每月 40 至 60 小時的工程工作。",
-        "他估計，採用客製示範後，從初次接觸進入方案開發的案件比例提高約 50% 至 60%。這是當事人的估計，文章未提供獨立對照或營收歸因。",
-        "案例的做法是先用客戶自己的車輛、資料和流程呈現可行方案，再讓客戶與團隊一起修正；正式產品仍需工程師完成。"
+        "原本每個潛在客戶都需要不同的車隊示範，工程師卻無法為每筆商機手作。共同創辦人先把 Granola 銷售通話錄音、往來電郵和客戶試算表交給 Codex，生成包含對方車輛與工作流程的 HTML 示範。",
+        "示範時讓客戶直接指出要改的地方；成交後把同一份示範交給工程師當成視覺需求說明。團隊另外把通話、郵件、Linear 和 HubSpot 串成後續追蹤流程，減少資訊在工具間重複搬運。",
+        "創辦人說每月做 4 至 6 個示範，每個約 30 至 45 分鐘，估計省下每月 40 至 60 小時工程工作；由初談進入方案開發的比例估計提高 50% 至 60%。這是當事人估算，文章沒有獨立對照或營收歸因。"
       ],
       "originalTitle": "Proaction boosts sales 60% and saves 75+ hours with Codex",
       "originalExcerpt": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
@@ -546,13 +624,14 @@
     {
       "date": "2026-09-23",
       "source": "OpenAI／Ringg",
-      "title": "Ringg 以小流量試行客服 Agent",
+      "title": "Ringg 如何把客服 Agent 接進企業系統並逐步放量",
       "url": "https://openai.com/index/ringg/",
-      "what": "Ringg 先用歷史對話與模擬流程評估，再逐步接入正式客服流量，持續檢查回應品質、延遲與人工轉接。案例提供了擴大部署前的實際檢查方式。",
+      "what": "Ringg 面對印度大型消費企業的客服量與系統分散問題，建立能在語音、聊天、WhatsApp 和網頁執行任務的 Agent 平台。案例值得看的是資料與工具整合、模型分工、離線評測到小流量上線的完整流程。",
       "points": [
-        "先用歷史對話與模擬流程評測，再小比例接入正式流量。",
-        "正式上線後持續看回應品質、延遲與人工轉接，而非只看自動化比例。",
-        "這是供應商發布的客戶案例，成效需按案例自身的測量方式解讀。"
+        "Agent 先讀取客戶資料、知識庫和對話脈絡，再由編排層操作 CRM、工單、付款、排程及內部 API；需要人工處理時，連同對話摘要轉交。資料查找結合結構化篩選與語意搜尋，避免只靠模型記憶回答。",
+        "Ringg 按任務分配模型：GPT-4.1 處理多數即時語音與聊天，GPT-5.6 Luna 用於適合其效能、延遲或價格的請求，Terra 做通話後摘要與情緒分類，Sol 用於評測與提示改善。約 8 萬 token 的長對話會先做結構化摘要。",
+        "上線前用歷史對話、模擬流程和混用語言的情境測試；通過後先接少量正式流量。正式環境持續看延遲、端點健康與回覆品質，透過版本化部署和流量切換限制問題影響。",
+        "OpenAI 與 Ringg 稱，選定工作負載的模型成本約降 90%；平台客戶的例子包括 Policybazaar 67% 來電無需人工，以及 Practo 85% 首通解決率。這些是不同客戶、不同指標，原文未提供同一套獨立評測或因果對照。"
       ],
       "originalTitle": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
       "originalExcerpt": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
@@ -589,13 +668,14 @@
     {
       "date": "2026-09-17",
       "source": "Microsoft",
-      "title": "Microsoft 分享內部 AI 轉型：先整理流程與資料",
+      "title": "Microsoft 的兩個導入失敗與修正：銷售、供應鏈",
       "url": "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
-      "what": "Microsoft 回顧自己的 AI 轉型，承認初期把 AI 當成一般工具導入：發授權、做培訓、推使用率，卻不足以改變工作。文章接著說明如何改從業務結果與流程重設出發。這是公司對內部經驗的自述。",
+      "what": "Microsoft 回顧自家導入時發現，發授權與培訓後，銷售部門使用量停滯，業務影響也不明顯。文章進一步交代銷售團隊如何重選使用場景、供應鏈如何先修流程與資料，再評估成效。這是公司的內部經驗。",
       "points": [
-        "最值得看的失敗模式是「有使用，卻沒有轉型」。Microsoft 表示，早期以工具部署和採用率為主的做法，沒有回答實際工作如何改變；授權給大量員工也不等於創造了成果。",
-        "後續做法先定義要改善的業務結果，再讓熟悉現場流程的員工參與重設。團隊需要一併決定 Agent 能讀取哪些資料、可以執行哪些動作，以及哪一步必須由人審核。",
-        "文中列出的銷售與供應鏈改善屬於 Microsoft 選定流程的自家數據。閱讀時可參考其測量方式與適用範圍，不宜直接當成其他企業的預期成效。"
+        "銷售起點：工具授權超過 20 萬人仍未改變工作。團隊改為描出客戶經理每週工作，挑出管線分析、交易資料包與客戶研究三個時刻，再用每週同儕討論把做法傳給團隊。Microsoft 稱指定場景使用量增加三倍；687 位業務人員的內部比較顯示，每位客戶經理營收高 9.4%、成交率高 20%，屬觀察性比較。",
+        "供應鏈起點：只把 Agent 加到既有步驟，會讓下一個瓶頸更塞。團隊先由業務專家與工程師梳理、簡化端到端流程，建立共同資料來源，才部署逾 100 個專用 Agent 到規劃、採購、履約與物流。",
+        "Agent 在權限與核准門檻內調查需求變化、比較運輸方案，也能協助更新或取消採購單。Microsoft 公布五個月度規劃週期的平均時間由約 10 個工作天降至不到 2.5 天；需求變化調查由 5 至 7 天縮至數小時。這些結果限於指定流程與期間。",
+        "文章沒有證明單靠授權或模型就能產生上述成效；修正涉及流程、資料、員工分工與審核責任，值得拿來檢查自己公司的導入計畫。"
       ],
       "originalTitle": "What we’ve learned from Microsoft’s own AI transformation",
       "originalExcerpt": "We initially treated AI like a traditional technology rollout: deploy the tools, provide training, drive adoption.",
