@@ -163,17 +163,20 @@
       "url": "https://colossus.com/episode/instinct-the-personal-agent/",
       "youtubeId": "Am7IWP8IpEc",
       "cover": "https://colossus.com/wp-content/uploads/2026/09/Noah-Shinn-ramp-1-scaled.jpg",
-      "context": "主持人訪談 Instinct 創辦人 Noah Shinn，談個人 Agent 代辦訂位、旅行與付款時，使用者如何逐步建立信任。",
+      "context": "主持人訪談 Instinct 創辦人 Noah Shinn，從個人 Agent 代辦任務的產品設計，談到使用者何時願意交出付款權限。以下依節目介紹與章節整理。",
       "points": [
-        "節目從產品能替使用者完成哪些任務切入，再談 Agent 如何改變交易入口。",
-        "付款、信用卡與敏感資料使「授權到哪一步」成為產品採用的核心問題。",
-        "後段討論成長速度、運算成本與 Agent 的商業模式。"
+        "節目先討論軟體功能逐漸集中到單一介面後，個人 Agent 能替使用者完成哪些預訂、旅行與交易任務。這有助於理解品牌網站與客服的入口可能怎麼改變。",
+        "使用者願意授權搜尋資訊，不代表會立即交出信用卡。節目把信任建立的時間、授權範圍與付款責任放在同一個產品問題裡討論。",
+        "當服務快速成長，Agent 每完成一個任務都會消耗運算資源。後段轉向運算成本、供給限制與商業模式，適合接著思考產品能否持續提供服務。"
       ],
       "chapters": [
         "21:00 使用者如何開始信任 Agent",
         "23:25 敏感資料",
         "40:46 企業如何準備"
-      ]
+      ],
+      "originalTitle": "Instinct: The Personal Agent",
+      "originalExcerpt": "how long it takes users to trust an agent with their credit cards",
+      "originalLanguage": "en"
     },
     {
       "series": "Invest Like the Best",
@@ -182,17 +185,20 @@
       "url": "https://colossus.com/episode/building-investing-superintelligence/",
       "youtubeId": "B0illwrqUG0",
       "cover": "https://colossus.com/wp-content/uploads/2026/09/Stengel-ramp-scaled.jpg",
-      "context": "Rogo 創辦人 Gabe Stengel 談投資與金融工作中的 AI。訪談不只談模型，也談資料、流程、採購與可稽核性。",
+      "context": "Rogo 共同創辦人 Gabe Stengel 談投資與金融機構如何把 AI 放進研究和交易團隊。原始節目介紹特別指出：資料與系統的「管線」可能比模型智力更限制產出。",
       "points": [
-        "模型的能力要轉成工作成果，仍受資料與系統整合限制。",
-        "討論企業如何購買 AI 軟體，以及從席次走向成果計價的可能性。",
-        "在金融工作裡，可追溯與可稽核性可能比單一準確率數字更影響採用。"
+        "訪談從資料接入談起：若模型無法取得可靠的內部資料或追溯資料來處，生成的投資想法很難直接進入金融工作。",
+        "團隊如何把資深員工的判斷與作業方法轉成可重複使用的軟體，是節目另一條主線。這涉及流程設計，也涉及誰檢查最後的結果。",
+        "節目延伸到企業軟體採購與定價：買方會衡量整合成本、可稽核性及工作成果，不能只根據模型示範決定是否擴大使用。"
       ],
       "chapters": [
         "04:15 最後一哩路",
         "22:00 企業怎麼買 AI 軟體",
         "31:19 可稽核性與準確率"
-      ]
+      ],
+      "originalTitle": "Building Investing Superintelligence",
+      "originalExcerpt": "We cover why plumbing constrains the investment ideas a model produces more than its intelligence does.",
+      "originalLanguage": "en"
     },
     {
       "series": "硅谷101",
@@ -202,15 +208,18 @@
       "cover": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover_medium.jpg?v=6",
       "context": "外灘大會的圓桌訪談，從 Agent 代人下單延伸到身份、授權、付款權限與責任歸屬。",
       "points": [
-        "當 Agent 從推薦走向交易，誰能證明它有使用者授權？",
-        "支付網路與手機入口可能需要配合 Agent 對 Agent 的交易方式調整。",
-        "這集提供買方對自動執行的信任問題，但對未來市場規模的描述屬於與談者預測。"
+        "節目先從 Agent 幫人完成叫車、點餐等任務談起，接著轉向 Agent 與 Agent 之間的交易。對企業來說，交易入口改變後，原本設計給人的結帳流程也可能需要調整。",
+        "與談者把信任拆成授權、身分、付款權限及出錯後的責任。若 Agent 要替人花錢，買方需要能追溯每一步是誰授權、執行了什麼。",
+        "後段談支付網路、手機入口與未來市場機會。這些規模想像屬於與談者的預測；可先把具體的授權與安全執行問題帶回現有產品檢查。"
       ],
       "chapters": [
         "04:25 Agent 商業卡點",
         "16:00 身份與授權",
         "22:55 安全執行"
-      ]
+      ],
+      "originalTitle": "外滩大会线下圆桌｜敢把钱包交给AI吗？聊聊Agent交易爆发前夜的信任基建",
+      "originalExcerpt": "当Agent从对话走向办事、从推荐走向交易，“信任”成了绕不开的关键词。",
+      "originalLanguage": "zh"
     },
     {
       "series": "Invest Like the Best",
@@ -219,9 +228,9 @@
       "url": "https://colossus.com/episode/sandcastles-and-silicon/",
       "context": "主持人 Patrick O’Shaughnessy 訪談 Benchmark 投資人 Eric Vishria，討論雲端與 AI 採用的差異，以及企業轉型時舊做法的限制。",
       "points": [
-        "這集將雲端轉型與 AI 採用放在一起比較，可以觀察兩者的節奏是否真的相似。",
-        "討論誰能在企業採用 AI 的過程中提供持續支援，以及企業需要什麼樣的協助。",
-        "後段延伸至投資與基礎設施；如果想先了解企業採用，可從前段開始。"
+        "Vishria 回顧許多投資人當年看錯 AWS 的判斷，藉此討論企業如何辨認新技術的真正採用路徑。這是受訪者的投資觀點。",
+        "節目也談到領導者沿用舊軟體時代的經營方法，可能錯過 AI 帶來的工作方式變化；值得把「過去有效」當成需要重新驗證的假設。",
+        "後段轉向創辦人與基礎設施投資。若想先找導入失敗模式，可從 AWS 類比及舊方法失效的段落開始。"
       ],
       "chapters": [
         "09:01 雲端與 AI 採用",
@@ -229,7 +238,10 @@
         "22:10 舊做法的限制"
       ],
       "youtubeId": "0e7aG_MIHlQ",
-      "cover": "https://colossus.com/wp-content/uploads/2026/08/Eric-Vishria-2-ramp-1-scaled.jpg"
+      "cover": "https://colossus.com/wp-content/uploads/2026/08/Eric-Vishria-2-ramp-1-scaled.jpg",
+      "originalTitle": "Sandcastles & Silicon",
+      "originalExcerpt": "We cover the AWS call almost every investor got wrong and what it means for who wins in AI.",
+      "originalLanguage": "en"
     },
     {
       "series": "硅谷101",
@@ -238,9 +250,10 @@
       "url": "https://sv101.fireside.fm/261",
       "context": "訪談阿里瓴羊執行長朋新宇，談企業級 Agent 如何從複雜流程、既有資料與成本出發部署。",
       "points": [
-        "節目以客服催發貨的 260 步流程，說明一個看似簡單的任務包含多少實際工作。",
-        "訪談涵蓋部署分工、業務人員如何教 Agent，以及如何計算模型與導入成本。",
-        "案例來自受訪者自己的團隊，聽取成果時仍要留意適用情境。"
+        "節目以客服「催發貨」的 260 步流程，說明一個看似簡單的請求，實際會跨越資料查詢、狀態判斷與後續回覆。若沒有拆清楚工作，Agent 示範很難變成正式流程。",
+        "受訪者談部署分工：業務分析決定方向、架構師選模型，熟悉業務的人則教 Agent 做判斷。節目章節也提到部署時間分配與調教過程。",
+        "討論最後回到成本與模型選擇。企業要能算清楚每個流程的效益與 token 成本，才知道應該擴大使用，還是先修正資料與流程。",
+        "案例來自受訪者的團隊與客戶經驗，聽取成果時仍要留意產業、資料基礎及部署條件。"
       ],
       "chapters": [
         "06:33 催發貨流程",
@@ -248,7 +261,10 @@
         "36:06 部署週期",
         "47:00 成本與模型"
       ],
-      "cover": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover_medium.jpg?v=6"
+      "cover": "https://media24.fireside.fm/file/fireside-images-2024/podcasts/images/f/f0f20376-8faf-4940-b920-84af6c734e2d/cover_medium.jpg?v=6",
+      "originalTitle": "E248｜一个“催发货”AI要跑通260步，和阿里瓴羊朋新宇聊聊中国式FDE",
+      "originalExcerpt": "一个催发货流程，客服agent需要跑通260步流程。",
+      "originalLanguage": "zh"
     },
     {
       "series": "a16z Show",
@@ -258,23 +274,30 @@
       "cover": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/03/a16z-Show-Backup-Yoast-Facebook-1.png",
       "context": "a16z 訪談 Decagon 創辦人，談客服 Agent 如何從模型示範走到企業正式環境。",
       "points": [
-        "延遲、評測與微調等要求，會改變正式系統的模型選擇。",
-        "討論前線部署工程師如何接上企業流程，以及為什麼應用公司仍有角色。",
-        "案例來自 Decagon 的經營者，可作為部署方法的第一手觀點。"
-      ]
+        "Decagon 創辦人以客服 Agent 為例，說明正式部署要處理延遲、評測、微調及持續維運。這些條件會影響模型選擇，不能只看一次示範的表現。",
+        "節目談到團隊為何把多數推論工作轉向開源模型，以及如何在品質、速度與成本之間取捨。這是 Decagon 當時的產品與營運選擇。",
+        "前線部署工程師需要把 Agent 接入企業的客服、銷售及營運流程。真正耗時的部分包括資料、權限和人員分工，而非只接上一個模型 API。",
+        "訪談也談企業採購和應用公司的角色。若要寫採購疑慮，可從買方上線後需要誰負責品質與維護切入。"
+      ],
+      "originalTitle": "How Enterprise AI Really Gets Deployed",
+      "originalExcerpt": "how latency, evaluation, and fine-tuning shape production AI systems",
+      "originalLanguage": "en"
     },
     {
       "series": "a16z Show",
       "date": "2026-04-24",
       "title": "AI Inside the Enterprise",
       "url": "https://a16z.com/podcast/ai-inside-the-enterprise/",
-      "context": "Box 執行長 Aaron Levie 與 a16z 團隊談大型企業裡的 AI 導入。節目從矽谷期待與企業現場的落差切入。",
+      "context": "Box 執行長 Aaron Levie 與 a16z 團隊談大型企業 AI 計畫常見的失敗原因。原始節目介紹把矽谷的期待、企業現場的流程與基礎設施落差列為討論主軸。",
       "points": [
-        "大型組織的 AI 計畫為何常難以推進；技術之外，原有流程與基礎設施同樣影響結果。",
-        "Agent 要進入日常工作，需與企業既有系統及人員分工接合。",
-        "適合拿來比較產品發布時的承諾，與企業真正能部署的條件。"
+        "大型組織即使買了工具，仍要處理資料權限、既有系統、審核責任及跨部門工作流程；只完成試用或示範，未必能讓日常工作改變。",
+        "這集值得用來整理失敗模式：專案從技術能力出發，卻沒有明確工作負責人、可接入的資料，以及上線後持續評測的方式。這是根據節目議題整理的研究切入點，不是受訪者逐字結論。",
+        "討論也涵蓋 Agent、基礎設施與企業軟體如何演變。聽的時候可對照買方究竟在哪一環停下來，避免把所有未採用都歸因於模型不夠好。"
       ],
-      "cover": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/03/a16z-Show-Backup-Yoast-Facebook-1.png"
+      "cover": "https://d1lamhf6l6yk6d.cloudfront.net/uploads/2026/03/a16z-Show-Backup-Yoast-Facebook-1.png",
+      "originalTitle": "AI Inside the Enterprise",
+      "originalExcerpt": "They cover the gap between Silicon Valley and the rest of the world, why most AI initiatives fail in large organizations.",
+      "originalLanguage": "en"
     },
     {
       "series": "MIT Sloan · Me, Myself, and AI",
@@ -283,11 +306,15 @@
       "url": "https://sloanreview.mit.edu/audio/overcoming-ai-hallucinations-truists-chandra-kapireddy/",
       "context": "Truist 銀行的 AI 負責人談金融機構如何決定用途、驗證輸出，以及讓員工在工作中使用生成式 AI。原始頁面附完整英文逐字稿。",
       "points": [
-        "Truist 把策略與政策、平台能力、應用開發分成不同職責；用途從構想到上線後監測都有檢查步驟。",
-        "高風險決策保留人工審核；查詢帳戶餘額等精確資料，則應呼叫確定性的系統 API。",
-        "員工即使已有工具，也可能因不了解能力與限制而放棄使用或用得很淺，培訓因此是導入的一部分。"
+        "Truist 把策略與政策、平台能力、應用開發分成不同職責。用途從構想到上線後監測都有檢查步驟，讓模型風險有明確負責人。",
+        "生成式 AI 的彈性增加了輸出驗證難度。高風險決策保留人工審核；查詢帳戶餘額等精確資料，則應呼叫確定性的系統 API。",
+        "員工已有工具仍可能因不了解能力與限制而用得很淺，或過度依賴錯誤答案。節目因此把培訓與風險認知視為導入的一部分。",
+        "原始節目頁附英文逐字稿；若要追查金融機構如何設計審核責任，可直接對照逐字稿中的具體說法。"
       ],
-      "cover": "https://sloanreview.mit.edu/wp-content/uploads/2025/03/MMAI-S11-E3-Kapireddy-Truist-headshot-1200x627-1.png"
+      "cover": "https://sloanreview.mit.edu/wp-content/uploads/2025/03/MMAI-S11-E3-Kapireddy-Truist-headshot-1200x627-1.png",
+      "originalTitle": "Overcoming AI Hallucinations: Truist’s Chandra Kapireddy",
+      "originalExcerpt": "The financial services executive shares how his organization implements traditional and generative AI.",
+      "originalLanguage": "en"
     }
   ],
   "news": [
@@ -301,7 +328,9 @@
         "OpenAI 統計，9 月 9 至 15 日的一週，全球約 400 萬名少於 500 人企業的員工使用其工具；其中近五分之一在少於 10 人的企業。這是 OpenAI 產品內的使用數據。",
         "報告案例包括餐廳用 ChatGPT Work 比較競品菜單價格，以及培訓業者研究學區後，由本人審閱並寄出客製化開發信。案例成效由受訪企業主敘述。",
         "合作計畫預計先培訓約 150 名地方顧問，透過實作工作坊接觸至少 1,000 家小企業，並追蹤哪些用法能持續留下來。"
-      ]
+      ],
+      "originalTitle": "Helping small businesses put AI to work",
+      "originalExcerpt": "Partnership with America’s SBDC will expand hands-on training and local guidance, while a new report explores what small teams are accomplishing with AI."
     },
     {
       "date": "2026-09-28",
@@ -313,7 +342,9 @@
         "對想賣更多帳戶的團隊，文章提供了從行為改變與導入門檻看市場的方法。",
         "論證帶有明確的 OpenAI 看多立場，閱讀時可分辨事實與預測。"
       ],
-      "url": "https://a16z.com/openai-understands-something-important-and-rare/"
+      "url": "https://a16z.com/openai-understands-something-important-and-rare/",
+      "originalTitle": "OpenAI Understands Something Important and Rare",
+      "originalExcerpt": "We think that OpenAI will win because they are so good at creating new kinds of customers."
     },
     {
       "date": "2026-09-28",
@@ -324,7 +355,9 @@
       "points": [
         "Meta 宣布整合企業 Agent、模型與開發工具的產品方向。",
         "採購前仍需逐項確認可用範圍、權限、整合能力和時間表。"
-      ]
+      ],
+      "originalTitle": "Launching Meta Enterprise Platform",
+      "originalExcerpt": "Meta Enterprise Platform will focus on turning its AI stack into products and services that companies can deploy for their own businesses."
     },
     {
       "date": "2026-09-28",
@@ -336,7 +369,9 @@
         "Basis 自家測試顯示，GPT-6 Astra 完成 50 個工作表任務的時間比 GPT-5.6 Sol 少約一半，內部評測分數約提高 20%；文章沒有提供外部獨立驗證。",
         "評測涵蓋是否遵守範本、查閱稅務原始資料、檢查自己的工作，以及遇到不明確需求時會不會提問或標出假設。",
         "Basis 也依任務難度調整推理量，希望控制長流程 Agent 的時間與成本。這是供應商公布的單一客戶案例，不能直接當成所有會計工作的成效。"
-      ]
+      ],
+      "originalTitle": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+      "originalExcerpt": "GPT-6 Astra took 50% less time to finish complex tasks vs. GPT-5.6 Sol and showed a deeper understanding of user intent."
     },
     {
       "date": "2026-09-25",
@@ -348,10 +383,12 @@
         "共同創辦人表示，每月製作 4 至 6 個客製示範，每個約 30 至 45 分鐘；估計省下每月 40 至 60 小時的工程工作。",
         "他估計，採用客製示範後，從初次接觸進入方案開發的案件比例提高約 50% 至 60%。這是當事人的估計，文章未提供獨立對照或營收歸因。",
         "案例的做法是先用客戶自己的車輛、資料和流程呈現可行方案，再讓客戶與團隊一起修正；正式產品仍需工程師完成。"
-      ]
+      ],
+      "originalTitle": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+      "originalExcerpt": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
     },
     {
-      "date": "2026-09-24",
+      "date": "2026-09-23",
       "source": "OpenAI／Ringg",
       "title": "Ringg 以小流量試行客服 Agent",
       "url": "https://openai.com/index/ringg/",
@@ -360,7 +397,9 @@
         "先用歷史對話與模擬流程評測，再小比例接入正式流量。",
         "正式上線後持續看回應品質、延遲與人工轉接，而非只看自動化比例。",
         "這是供應商發布的客戶案例，成效需按案例自身的測量方式解讀。"
-      ]
+      ],
+      "originalTitle": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "originalExcerpt": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1."
     },
     {
       "date": "2026-09-22",
@@ -371,7 +410,9 @@
       "points": [
         "跨國調查顯示，接觸或使用 AI 的人仍可能對準確度及影響有疑慮。",
         "只看使用率不足以知道員工是否願意在重要工作上依賴 AI。"
-      ]
+      ],
+      "originalTitle": "AI Optimism Globally Widespread Despite Uneven Use",
+      "originalExcerpt": "Positive emotions toward AI outweigh negative ones in 34 out of 37 countries."
     },
     {
       "date": "2026-09-21",
@@ -382,19 +423,23 @@
       "points": [
         "OpenAI Academy 新增依職務設計的學習路徑。",
         "企業導入時可將課程對應到實際工作任務，再檢查學習後的成果。"
-      ]
+      ],
+      "originalTitle": "Expanding OpenAI Academy with new learning paths",
+      "originalExcerpt": "Role-based learning helps employees, developers, leaders, educators, and students build practical AI skills and demonstrate what they’ve learned."
     },
     {
       "date": "2026-09-17",
       "source": "Microsoft",
       "title": "Microsoft 分享內部 AI 轉型：先整理流程與資料",
       "url": "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
-      "what": "Microsoft 的供應鏈案例先簡化流程、統一資料，再部署 Agent。官方公布特定規劃流程的週期縮短，但這項成效不能單獨歸因於模型。",
+      "what": "Microsoft 回顧自己的 AI 轉型，承認初期把 AI 當成一般工具導入：發授權、做培訓、推使用率，卻不足以改變工作。文章接著說明如何改從業務結果與流程重設出發。這是公司對內部經驗的自述。",
       "points": [
-        "Microsoft 回顧先部署工具、培訓、推動採用的做法，後來更重視重新設計工作。",
-        "供應鏈團隊先整理流程與資料，再讓 Agent 進入跨系統工作。",
-        "文中週期縮短的數字限於特定流程與測量期間，不能直接推廣到所有部門。"
-      ]
+        "最值得看的失敗模式是「有使用，卻沒有轉型」。Microsoft 表示，早期以工具部署和採用率為主的做法，沒有回答實際工作如何改變；授權給大量員工也不等於創造了成果。",
+        "後續做法先定義要改善的業務結果，再讓熟悉現場流程的員工參與重設。團隊需要一併決定 Agent 能讀取哪些資料、可以執行哪些動作，以及哪一步必須由人審核。",
+        "文中列出的銷售與供應鏈改善屬於 Microsoft 選定流程的自家數據。閱讀時可參考其測量方式與適用範圍，不宜直接當成其他企業的預期成效。"
+      ],
+      "originalTitle": "What we’ve learned from Microsoft’s own AI transformation",
+      "originalExcerpt": "We initially treated AI like a traditional technology rollout: deploy the tools, provide training, drive adoption."
     },
     {
       "date": "2026-09-16",
@@ -406,7 +451,9 @@
         "可以從具體工作流程建立指標，例如客戶對話、合格商機或銷售結果。",
         "這篇介紹 OpenAI 自家管理工具；衡量方法仍須依組織目標調整。"
       ],
-      "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value/"
+      "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value/",
+      "originalTitle": "How to connect AI usage to business value",
+      "originalExcerpt": "Understand how teams use ChatGPT Work and Codex, see the work behind the spend, and connect it to measurable outcomes."
     },
     {
       "date": "2026-09-16",
@@ -417,7 +464,9 @@
         "文章區分一次性的跨職務嘗試，和逐漸變成例行工作的任務。",
         "如果工作內容擴大，培訓、職責與績效衡量也可能需要重新設計。"
       ],
-      "url": "https://openai.com/index/unlocking-new-ways-of-working/"
+      "url": "https://openai.com/index/unlocking-new-ways-of-working/",
+      "originalTitle": "How workers are unlocking new ways of working",
+      "originalExcerpt": "New OpenAI Economic Research shows how workers use AI to do tasks outside their typical occupation and which new tasks they build into their workflow."
     }
   ]
 }
