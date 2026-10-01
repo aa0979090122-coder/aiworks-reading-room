@@ -1,6 +1,24 @@
 {
-  "editionDate": "2026-09-30",
+  "editionDate": "2026-10-01",
   "posts": [
+    {
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "date": "2026-10-01",
+      "url": "https://x.com/emollick/status/2105370153466863709",
+      "excerpt": "Every firm’s customer service agents are about to be overwhelmed with Dots & Muses & etc. negotiating for better deals",
+      "kind": "summary",
+      "zh": "Mollick 預測，個人 Agent 透過語音或聊天替使用者爭取優惠，可能改變企業客服的工作量與談判方式。他提到已有節省費用的個人故事，但貼文未提供發生規模或企業成效數據。"
+    },
+    {
+      "author": "Aaron Levie",
+      "handle": "@levie",
+      "date": "2026-10-01",
+      "url": "https://x.com/levie/status/2105354449795621179",
+      "excerpt": "The amount of work it takes to change out workflows in enterprises tends to be far greater than anyone realizes",
+      "kind": "summary",
+      "zh": "Box 執行長 Aaron Levie 認為，企業部署 Agent 需要處理舊系統上雲、資料存取、流程重設、人工審核與持續評測。這是他對導入服務市場的觀察，重點在 AI 產出要進入實際工作，後續仍需維護。"
+    },
     {
       "author": "Ethan Mollick",
       "handle": "@emollick",
@@ -9,24 +27,6 @@
       "excerpt": "It does feel like every year OpenAI releases a variation on the same third-party ecosystem only to semi-abandon it…",
       "kind": "summary",
       "zh": "他回顧 OpenAI 從 Plugins、GPT Store 到 Apps 的第三方生態，質疑產品反覆推出後又轉向。這是評論者的觀察，適合用來思考企業對平台延續性的疑慮。"
-    },
-    {
-      "author": "Ethan Mollick",
-      "handle": "@emollick",
-      "date": "2026-09-30",
-      "url": "https://x.com/emollick/status/2104965679971709108",
-      "excerpt": "AI is evolving quite quickly. The AI labs aren't always anticipating how fast in the products they make.",
-      "kind": "translation",
-      "zh": "他指出去年 DevDay 描繪的 Agent 方式很快被後續發展改寫；AI 變化快，連模型公司也不一定能預測自家產品的演進。"
-    },
-    {
-      "author": "Andrew Ng",
-      "handle": "@AndrewYNg",
-      "date": "2026-09-30",
-      "url": "https://x.com/AndrewYNg/status/2104967263757713432",
-      "excerpt": "With recent advances in AI, rigorous skills measurements are now more true than ever.",
-      "kind": "summary",
-      "zh": "Andrew Ng 談 Workera 被 Pearson 收購，主張企業需要更嚴謹地衡量員工在不同工作上的能力，才知道培訓與職務發展該往哪裡走。"
     },
     {
       "author": "OpenAI Developers",
@@ -47,13 +47,22 @@
       "zh": "OpenAI 宣稱 GPT-6.1 Sol 的能力接近 Astra，價格約為五分之一。這是供應商的價格與效能主張，採購時仍應以自己的任務測試。"
     },
     {
-      "author": "Aaron Levie",
-      "handle": "@levie",
-      "date": "2026-09-29",
-      "url": "https://x.com/levie/status/2104648654074343480",
-      "excerpt": "At Box, we've been testing Sonnet 5.5 in early access on our complex work eval with the Box Agent…",
+      "author": "Andrew Ng",
+      "handle": "@AndrewYNg",
+      "date": "2026-09-30",
+      "url": "https://x.com/AndrewYNg/status/2104967263757713432",
+      "excerpt": "With recent advances in AI, rigorous skills measurements are now more true than ever.",
       "kind": "summary",
-      "zh": "Box 在自己的複雜工作評測中，報告 Sonnet 5.5 的整體表現、速度和 token 使用有改善，並列出金融、法律、生命科學等任務的例子。數字來自 Box 自家測試，應按測試範圍解讀。"
+      "zh": "Andrew Ng 談 Workera 被 Pearson 收購，主張企業需要更嚴謹地衡量員工在不同工作上的能力，才知道培訓與職務發展該往哪裡走。"
+    },
+    {
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "date": "2026-09-30",
+      "url": "https://x.com/emollick/status/2104965679971709108",
+      "excerpt": "AI is evolving quite quickly. The AI labs aren't always anticipating how fast in the products they make.",
+      "kind": "translation",
+      "zh": "他指出去年 DevDay 描繪的 Agent 方式很快被後續發展改寫；AI 變化快，連模型公司也不一定能預測自家產品的演進。"
     },
     {
       "author": "ClaudeDevs",
@@ -67,6 +76,15 @@
     {
       "author": "Aaron Levie",
       "handle": "@levie",
+      "date": "2026-09-29",
+      "url": "https://x.com/levie/status/2104648654074343480",
+      "excerpt": "At Box, we've been testing Sonnet 5.5 in early access on our complex work eval with the Box Agent…",
+      "kind": "summary",
+      "zh": "Box 在自己的複雜工作評測中，報告 Sonnet 5.5 的整體表現、速度和 token 使用有改善，並列出金融、法律、生命科學等任務的例子。數字來自 Box 自家測試，應按測試範圍解讀。"
+    },
+    {
+      "author": "Aaron Levie",
+      "handle": "@levie",
       "date": "2026-09-28",
       "url": "https://x.com/levie/status/2104350592290406849",
       "excerpt": "Interesting to think about all the implications in a world where agents begin to make the best or most efficient choice for their users.",
@@ -74,13 +92,13 @@
       "zh": "他推演 Agent 代替使用者做選擇後，原本靠轉換摩擦留住顧客的業務可能面臨更激烈競爭；另一些市場則可能因購買流程變簡單而擴大。這是前瞻推論。"
     },
     {
-      "author": "Boris Cherny",
-      "handle": "@bcherny",
+      "author": "Aaron Levie",
+      "handle": "@levie",
       "date": "2026-09-26",
-      "url": "https://x.com/bcherny/status/2103538666597691552",
-      "excerpt": "Tag writes >50% of my PRs every day. It also does ~100% of my data analysis…",
+      "url": "https://x.com/levie/status/2103629073595728372",
+      "excerpt": "You can’t automate what you can’t measure. This means that evals are one of the gates to diffusion of AI in the enterprise.",
       "kind": "summary",
-      "zh": "Boris Cherny 分享自己如何用內部 Agent 處理程式修改、資料分析和回饋修正。他描述的比例是個人工作方式，並列出具體指令；不能直接當作一般企業的平均成效。"
+      "zh": "Levie 主張企業需要持續評測 Agent 在自身環境裡的工作，才能判斷哪裡有效、哪裡退步，以及模型更新後是否仍能交付結果。這是他對企業評測需求的觀點。"
     },
     {
       "author": "ClaudeDevs",
@@ -92,6 +110,15 @@
       "zh": "ClaudeDevs 宣布新的外掛提交入口，並稱 Claude 產品中的 MCP 使用量今年成長 110 倍。可以觀察企業系統整合需求，但成長倍數缺少基期。"
     },
     {
+      "author": "Boris Cherny",
+      "handle": "@bcherny",
+      "date": "2026-09-26",
+      "url": "https://x.com/bcherny/status/2103538666597691552",
+      "excerpt": "Tag writes >50% of my PRs every day. It also does ~100% of my data analysis…",
+      "kind": "summary",
+      "zh": "Boris Cherny 分享自己如何用內部 Agent 處理程式修改、資料分析和回饋修正。他描述的比例是個人工作方式，並列出具體指令；不能直接當作一般企業的平均成效。"
+    },
+    {
       "author": "Romain Huet",
       "handle": "@romainhuet",
       "date": "2026-09-12",
@@ -101,15 +128,6 @@
       "zh": "Romain Huet 訪談多家公司的 AI 團隊，展示 GPU 核心最佳化、電腦操作工作流程與設計畫面等應用。影片中的實例可當作尋找訪談對象與案例的線索。"
     },
     {
-      "author": "Ethan Mollick",
-      "handle": "@emollick",
-      "date": "2026-04-07",
-      "url": "https://x.com/emollick/status/2041520467450765504",
-      "excerpt": "Its an important time for the AI labs to build interfaces around the goal of job augmentation through AI.",
-      "kind": "translation",
-      "zh": "現在是 AI 實驗室設計介面的重要時刻：目標應是用 AI 增強人的工作，而非用 AI 取代工作。聊天機器人大多是輔助工具，需要人參與工作。Agent 的工作方式仍在形成，也可以把人放在中心。"
-    },
-    {
       "author": "a16z",
       "handle": "@a16z",
       "date": "2026-04-09",
@@ -117,6 +135,15 @@
       "excerpt": "Both the AI utopians and the AI doomers are far too optimistic. Technology making something possible does not change behavior overnight.",
       "kind": "summary",
       "zh": "Marc Andreessen 的觀點是，技術可行不代表企業和個人的行為會立刻改變。現有工作方式與制度有慣性，因此 AI 採用需要時間；他同時擔心採用過慢會拖累成長。"
+    },
+    {
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "date": "2026-04-07",
+      "url": "https://x.com/emollick/status/2041520467450765504",
+      "excerpt": "Its an important time for the AI labs to build interfaces around the goal of job augmentation through AI.",
+      "kind": "translation",
+      "zh": "現在是 AI 實驗室設計介面的重要時刻：目標應是用 AI 增強人的工作，而非用 AI 取代工作。聊天機器人大多是輔助工具，需要人參與工作。Agent 的工作方式仍在形成，也可以把人放在中心。"
     },
     {
       "author": "Aaron Levie",
@@ -265,6 +292,18 @@
   ],
   "news": [
     {
+      "date": "2026-09-30",
+      "source": "OpenAI",
+      "title": "小企業怎麼用 AI：從比價、開發客戶到後續輔導",
+      "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work/",
+      "what": "OpenAI 發布小企業使用報告，並宣布與美國小企業發展中心合作，讓顧問陪企業主把 AI 用在具體任務上。報告結合 OpenAI 自家使用數據與企業主案例，顯示有些工作因人力不足而原本沒有做。",
+      "points": [
+        "OpenAI 統計，9 月 9 至 15 日的一週，全球約 400 萬名少於 500 人企業的員工使用其工具；其中近五分之一在少於 10 人的企業。這是 OpenAI 產品內的使用數據。",
+        "報告案例包括餐廳用 ChatGPT Work 比較競品菜單價格，以及培訓業者研究學區後，由本人審閱並寄出客製化開發信。案例成效由受訪企業主敘述。",
+        "合作計畫預計先培訓約 150 名地方顧問，透過實作工作坊接觸至少 1,000 家小企業，並追蹤哪些用法能持續留下來。"
+      ]
+    },
+    {
       "date": "2026-09-28",
       "source": "a16z",
       "title": "OpenAI 的成長優勢，可能來自創造新需求",
@@ -285,6 +324,30 @@
       "points": [
         "Meta 宣布整合企業 Agent、模型與開發工具的產品方向。",
         "採購前仍需逐項確認可用範圍、權限、整合能力和時間表。"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "source": "OpenAI／Basis",
+      "title": "Basis 如何評估會計 Agent 的長流程工作",
+      "url": "https://openai.com/index/basis-tax-workbook-with-astra/",
+      "what": "會計軟體公司 Basis 用 50 個工作表的稅務任務比較模型，並說明它如何評測 Agent 的過程與答案。這篇案例的價值在於把「準確」拆成可檢查的行為。",
+      "points": [
+        "Basis 自家測試顯示，GPT-6 Astra 完成 50 個工作表任務的時間比 GPT-5.6 Sol 少約一半，內部評測分數約提高 20%；文章沒有提供外部獨立驗證。",
+        "評測涵蓋是否遵守範本、查閱稅務原始資料、檢查自己的工作，以及遇到不明確需求時會不會提問或標出假設。",
+        "Basis 也依任務難度調整推理量，希望控制長流程 Agent 的時間與成本。這是供應商公布的單一客戶案例，不能直接當成所有會計工作的成效。"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "source": "OpenAI／Proaction",
+      "title": "Proaction 用客戶資料做互動示範，縮短銷售需求確認",
+      "url": "https://openai.com/index/proaction/",
+      "what": "車隊管理軟體公司 Proaction 把銷售通話、郵件和客戶試算表交給 Codex，產生貼近客戶車隊的互動示範。客戶能直接指出要調整的流程，工程師之後也能用示範確認需求。",
+      "points": [
+        "共同創辦人表示，每月製作 4 至 6 個客製示範，每個約 30 至 45 分鐘；估計省下每月 40 至 60 小時的工程工作。",
+        "他估計，採用客製示範後，從初次接觸進入方案開發的案件比例提高約 50% 至 60%。這是當事人的估計，文章未提供獨立對照或營收歸因。",
+        "案例的做法是先用客戶自己的車輛、資料和流程呈現可行方案，再讓客戶與團隊一起修正；正式產品仍需工程師完成。"
       ]
     },
     {
