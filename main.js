@@ -7,6 +7,9 @@ let content;
 let feedback = {items:{}, generalNote:""};
 let activeTab = "x-posts";
 const historyView = {"x-posts":false,"podcasts":false,"news":false};
+const topicView = {"x-posts":"all","podcasts":"all","news":"all"};
+const topicLabels = {all:"全部",case:"公司案例",product:"新功能",trend:"趨勢與新詞"};
+const topicTag = item => `<span class="topic-tag">${esc(topicLabels[item.topic] || topicLabels.trend)}</span>`;
 try { feedback = {...feedback, ...JSON.parse(localStorage.getItem(storageKey) || "{}")}; } catch { /* The page remains readable without storage. */ }
 feedback.items ||= {};
 
@@ -33,7 +36,7 @@ function actions(item) {
   </div>`;
 }
 function postCard(post) {
-  return `<article class="post-card"><div class="post-meta"><span>${esc(post.author)} <span class="handle">${esc(post.handle)}</span></span><time datetime="${esc(post.date)}">${dateLabel(post.date)}</time></div><p class="post-summary">${esc(post.zh)}</p><a class="post-open" href="${esc(post.url)}" target="_blank" rel="noopener noreferrer">開啟 X 貼文與留言 <span aria-hidden="true">↗</span></a>${actions(post)}</article>`;
+  return `<article class="post-card"><div class="post-meta"><span>${esc(post.author)} <span class="handle">${esc(post.handle)}</span></span><span class="meta-right">${topicTag(post)}<time datetime="${esc(post.date)}">${dateLabel(post.date)}</time></span></div><p class="post-summary">${esc(post.zh)}</p><a class="post-open" href="${esc(post.url)}" target="_blank" rel="noopener noreferrer">開啟 X 貼文與留言 <span aria-hidden="true">↗</span></a>${actions(post)}</article>`;
 }
 function podcastCard(show) {
   const media = show.youtubeId
@@ -41,10 +44,10 @@ function podcastCard(show) {
     : `<a class="podcast-art" href="${esc(show.url)}" target="_blank" rel="noopener noreferrer"><img src="${esc(show.cover)}" alt="${esc(show.series)} 節目封面" loading="lazy" /><span>開啟原始節目 ↗</span></a>`;
   const originalLanguage = show.originalLanguage === "zh" ? "zh-Hant" : "en";
   const originalLabel = show.originalLanguage === "zh" ? "原始節目資訊（中文）" : "原始節目資訊（英文）";
-  return `<article class="podcast-card"><div class="podcast-media">${media}</div><div class="podcast-body"><div class="item-meta">${esc(show.series)} · ${dateLabel(show.date)}</div><h2>${esc(show.title)}</h2><div class="reading-columns"><div class="original-pane"><div class="column-label">${originalLabel}</div>${show.originalTitle && show.originalTitle !== show.title ? `<h3 lang="${originalLanguage}">${esc(show.originalTitle)}</h3>` : ""}${show.originalExcerpt ? `<blockquote lang="${originalLanguage}">${esc(show.originalExcerpt)}</blockquote>` : ""}${link(show.url,"閱讀原始節目頁")}</div><div class="summary-pane"><div class="column-label">中文導讀</div><p class="context">${esc(show.context)}</p><h3>內容重點摘要</h3><ul>${show.points.map(point=>`<li>${esc(point)}</li>`).join("")}</ul>${show.chapters?.length ? `<h3>可以從這裡聽</h3><div class="chapters">${show.chapters.map(chapter=>`<span>${esc(chapter)}</span>`).join("")}</div>` : ""}</div></div>${show.youtubeId ? `<div class="item-links">${link(`https://www.youtube.com/watch?v=${show.youtubeId}`,"到 YouTube 觀看")}</div>` : ""}${actions(show)}</div></article>`;
+  return `<article class="podcast-card"><div class="podcast-media">${media}</div><div class="podcast-body"><div class="item-meta">${esc(show.series)} · ${dateLabel(show.date)} ${topicTag(show)}</div><h2>${esc(show.title)}</h2><div class="reading-columns"><div class="original-pane"><div class="column-label">${originalLabel}</div>${show.originalTitle && show.originalTitle !== show.title ? `<h3 lang="${originalLanguage}">${esc(show.originalTitle)}</h3>` : ""}${show.originalExcerpt ? `<blockquote lang="${originalLanguage}">${esc(show.originalExcerpt)}</blockquote>` : ""}${link(show.url,"閱讀原始節目頁")}</div><div class="summary-pane"><div class="column-label">中文導讀</div><p class="context">${esc(show.context)}</p><h3>內容重點摘要</h3><ul>${show.points.map(point=>`<li>${esc(point)}</li>`).join("")}</ul>${show.chapters?.length ? `<h3>可以從這裡聽</h3><div class="chapters">${show.chapters.map(chapter=>`<span>${esc(chapter)}</span>`).join("")}</div>` : ""}</div></div>${show.youtubeId ? `<div class="item-links">${link(`https://www.youtube.com/watch?v=${show.youtubeId}`,"到 YouTube 觀看")}</div>` : ""}${actions(show)}</div></article>`;
 }
 function newsCard(item) {
-  return `<article class="news-card"><div class="item-meta">${esc(item.source)} · ${dateLabel(item.date)}</div><h2>${esc(item.title)}</h2><div class="reading-columns"><div class="original-pane"><div class="column-label">原始英文資訊</div><h3 lang="en">${esc(item.originalTitle || item.title)}</h3>${item.originalExcerpt ? `<blockquote lang="en">${esc(item.originalExcerpt)}</blockquote>` : ""}${link(item.url,"閱讀英文原文")}</div><div class="summary-pane"><div class="column-label">中文摘要</div><h3>這篇在談什麼</h3><p>${esc(item.what)}</p><h3>主要內容</h3><ul>${item.points.map(point=>`<li>${esc(point)}</li>`).join("")}</ul></div></div>${actions(item)}</article>`;
+  return `<article class="news-card"><div class="item-meta">${esc(item.source)} · ${dateLabel(item.date)} ${topicTag(item)}</div><h2>${esc(item.title)}</h2><div class="reading-columns"><div class="original-pane"><div class="column-label">原始英文資訊</div><h3 lang="en">${esc(item.originalTitle || item.title)}</h3>${item.originalExcerpt ? `<blockquote lang="en">${esc(item.originalExcerpt)}</blockquote>` : ""}${link(item.url,"閱讀英文原文")}</div><div class="summary-pane"><div class="column-label">中文摘要</div><h3>這篇在談什麼</h3><p>${esc(item.what)}</p><h3>主要內容</h3><ul>${item.points.map(point=>`<li>${esc(point)}</li>`).join("")}</ul></div></div>${actions(item)}</article>`;
 }
 const categories = {"x-posts":["posts","posts-list","x-count",postCard],"podcasts":["podcasts","podcasts-list","podcast-count",podcastCard],"news":["news","news-list","news-count",newsCard]};
 function render(type) {
@@ -56,10 +59,13 @@ function render(type) {
     const bId = BigInt(b.url.match(/status\/(\d+)/)?.[1] || 0);
     return aId === bId ? 0 : aId > bId ? -1 : 1;
   });
-  const items = selectedItems(type, sorted);
+  const available = selectedItems(type, sorted);
+  const items = available.filter(item => topicView[type] === "all" || item.topic === topicView[type]);
+  const topicHost = document.querySelector(`[data-topics="${type}"]`);
+  topicHost.innerHTML = Object.entries(topicLabels).filter(([topic]) => topic === "all" || content[key].some(item => item.topic === topic)).map(([topic,label]) => `<button type="button" class="topic-button" data-topic="${topic}" data-topic-tab="${type}" aria-pressed="${topicView[type] === topic}">${esc(label)}</button>`).join("");
   const list = document.getElementById(listId);
-  list.innerHTML = items.length ? items.map(card).join("") : `<div class="empty-state">${historyView[type] ? "這裡還沒有其他內容。" : "目前沒有待閱讀內容。收藏的內容會保留在這裡。"}</div>`;
-  document.getElementById(countId).textContent = selectedItems(type, sorted).length;
+  list.innerHTML = items.length ? items.map(card).join("") : `<div class="empty-state">${topicView[type] !== "all" ? "這個主題目前沒有待閱讀內容。" : historyView[type] ? "這裡還沒有其他內容。" : "目前沒有待閱讀內容。收藏的內容會保留在這裡。"}</div>`;
+  document.getElementById(countId).textContent = available.length;
   const button = document.querySelector(`[data-view="${type}"]`);
   button.textContent = historyView[type] ? "返回待閱讀" : "查看已讀與其他內容";
 }
@@ -97,7 +103,7 @@ async function copyFeedback() {
 }
 async function init() {
   try {
-    const response = await fetch('./content.json?v=20261001-2',{cache:'no-store'});
+    const response = await fetch('./content.json?v=20261001-3',{cache:'no-store'});
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     content = await response.json();
     document.getElementById('edition-date').textContent = `內容更新 ${dateLabel(content.editionDate)}`;
@@ -114,6 +120,7 @@ async function init() {
       activateTab(keys[(keys.indexOf(activeTab)+shift+keys.length)%keys.length],true);
     });
     document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{historyView[button.dataset.view]=!historyView[button.dataset.view];render(button.dataset.view)}));
+    document.querySelector('.content').addEventListener('click',event=>{const topic=event.target.closest('[data-topic]');if(topic){topicView[topic.dataset.topicTab]=topic.dataset.topic;render(topic.dataset.topicTab)}});
     document.querySelector('.content').addEventListener('click',event=>{
       const video = event.target.closest('[data-video]');
       if (video) {
