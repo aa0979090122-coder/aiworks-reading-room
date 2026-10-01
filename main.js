@@ -7,12 +7,11 @@ let content;
 let feedback = {items:{}, generalNote:""};
 let activeTab = "x-posts";
 const historyView = {"x-posts":false,"podcasts":false,"news":false};
-let widgetsReady = false;
 try { feedback = {...feedback, ...JSON.parse(localStorage.getItem(storageKey) || "{}")}; } catch { /* The page remains readable without storage. */ }
 feedback.items ||= {};
 
 function save() {
-  try { localStorage.setItem(storageKey, JSON.stringify(feedback)); document.getElementById("save-status").textContent = "已儲存在這台裝置"; }
+  try { localStorage.setItem(storageKey, JSON.stringify(feedback)); document.getElementById("save-status").textContent = ""; }
   catch { document.getElementById("save-status").textContent = "這個瀏覽器目前無法儲存筆記"; }
 }
 function stateFor(url) { return feedback.items[url] || {}; }
@@ -34,28 +33,20 @@ function actions(item) {
   </div>`;
 }
 function postCard(post) {
-  const quote = `<blockquote class="twitter-tweet" data-dnt="true" data-theme="light" data-conversation="none"><p lang="en">${esc(post.excerpt)}</p>&mdash; ${esc(post.author)} (${esc(post.handle)}) <a href="${esc(post.url)}">${esc(post.date)}</a></blockquote>`;
-  return `<article class="post-card"><div class="post-meta"><span>${esc(post.author)} <span class="handle">${esc(post.handle)}</span></span><time datetime="${esc(post.date)}">${dateLabel(post.date)}</time></div><div class="post-embed">${quote}</div><div class="post-tools"><details class="translation"><summary>${post.kind === "translation" ? "看中文翻譯" : "看中文重點"}</summary><p>${esc(post.zh)}</p></details>${link(post.url,"到 X 看原文與留言")}</div>${actions(post)}</article>`;
+  return `<article class="post-card"><div class="post-meta"><span>${esc(post.author)} <span class="handle">${esc(post.handle)}</span></span><time datetime="${esc(post.date)}">${dateLabel(post.date)}</time></div><p class="post-summary">${esc(post.zh)}</p><a class="post-open" href="${esc(post.url)}" target="_blank" rel="noopener noreferrer">開啟 X 貼文與留言 <span aria-hidden="true">↗</span></a>${actions(post)}</article>`;
 }
 function podcastCard(show) {
   const media = show.youtubeId
-    ? `<iframe class="podcast-video" src="https://www.youtube-nocookie.com/embed/${esc(show.youtubeId)}" title="${esc(show.title)} 影片" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+    ? `<button type="button" class="video-trigger" data-video="${esc(show.youtubeId)}" data-video-title="${esc(show.title)}" aria-label="播放 ${esc(show.title)} 影片"><img src="https://i.ytimg.com/vi/${esc(show.youtubeId)}/hqdefault.jpg" alt="" loading="lazy" /><span><i aria-hidden="true">▶</i> 播放影片</span></button>`
     : `<a class="podcast-art" href="${esc(show.url)}" target="_blank" rel="noopener noreferrer"><img src="${esc(show.cover)}" alt="${esc(show.series)} 節目封面" loading="lazy" /><span>開啟原始節目 ↗</span></a>`;
-  return `<article class="podcast-card"><div class="podcast-media">${media}</div><div class="podcast-body"><div class="item-meta">${esc(show.series)} · ${dateLabel(show.date)}</div><h2>${esc(show.title)}</h2><p class="context">${esc(show.context)}</p><h3>這集談什麼</h3><ul>${show.points.map(point=>`<li>${esc(point)}</li>`).join("")}</ul>${show.chapters?.length ? `<h3>可以從這裡聽</h3><div class="chapters">${show.chapters.map(chapter=>`<span>${esc(chapter)}</span>`).join("")}</div>` : ""}<div class="item-links">${link(show.url,"開啟單集")}${show.youtubeId ? link(`https://www.youtube.com/watch?v=${show.youtubeId}`,"到 YouTube 觀看") : ""}</div>${actions(show)}</div></article>`;
+  const originalLanguage = show.originalLanguage === "zh" ? "zh-Hant" : "en";
+  const originalLabel = show.originalLanguage === "zh" ? "原始節目資訊（中文）" : "原始節目資訊（英文）";
+  return `<article class="podcast-card"><div class="podcast-media">${media}</div><div class="podcast-body"><div class="item-meta">${esc(show.series)} · ${dateLabel(show.date)}</div><h2>${esc(show.title)}</h2><div class="reading-columns"><div class="original-pane"><div class="column-label">${originalLabel}</div>${show.originalTitle && show.originalTitle !== show.title ? `<h3 lang="${originalLanguage}">${esc(show.originalTitle)}</h3>` : ""}${show.originalExcerpt ? `<blockquote lang="${originalLanguage}">${esc(show.originalExcerpt)}</blockquote>` : ""}${link(show.url,"閱讀原始節目頁")}</div><div class="summary-pane"><div class="column-label">中文導讀</div><p class="context">${esc(show.context)}</p><h3>內容重點摘要</h3><ul>${show.points.map(point=>`<li>${esc(point)}</li>`).join("")}</ul>${show.chapters?.length ? `<h3>可以從這裡聽</h3><div class="chapters">${show.chapters.map(chapter=>`<span>${esc(chapter)}</span>`).join("")}</div>` : ""}</div></div>${show.youtubeId ? `<div class="item-links">${link(`https://www.youtube.com/watch?v=${show.youtubeId}`,"到 YouTube 觀看")}</div>` : ""}${actions(show)}</div></article>`;
 }
 function newsCard(item) {
-  return `<article class="news-card"><div class="item-meta">${esc(item.source)} · ${dateLabel(item.date)}</div><h2>${esc(item.title)}</h2><h3>這篇在談什麼</h3><p>${esc(item.what)}</p><h3>主要內容</h3><ul>${item.points.map(point=>`<li>${esc(point)}</li>`).join("")}</ul>${link(item.url,"閱讀原始來源")}${actions(item)}</article>`;
+  return `<article class="news-card"><div class="item-meta">${esc(item.source)} · ${dateLabel(item.date)}</div><h2>${esc(item.title)}</h2><div class="reading-columns"><div class="original-pane"><div class="column-label">原始英文資訊</div><h3 lang="en">${esc(item.originalTitle || item.title)}</h3>${item.originalExcerpt ? `<blockquote lang="en">${esc(item.originalExcerpt)}</blockquote>` : ""}${link(item.url,"閱讀英文原文")}</div><div class="summary-pane"><div class="column-label">中文摘要</div><h3>這篇在談什麼</h3><p>${esc(item.what)}</p><h3>主要內容</h3><ul>${item.points.map(point=>`<li>${esc(point)}</li>`).join("")}</ul></div></div>${actions(item)}</article>`;
 }
 const categories = {"x-posts":["posts","posts-list","x-count",postCard],"podcasts":["podcasts","podcasts-list","podcast-count",podcastCard],"news":["news","news-list","news-count",newsCard]};
-function loadWidgets() {
-  if (window.twttr?.widgets) { window.twttr.widgets.load(document.getElementById("posts-list")); return; }
-  if (widgetsReady) return;
-  widgetsReady = true;
-  const script = document.createElement("script");
-  script.async = true; script.src = "https://platform.x.com/widgets.js"; script.charset = "utf-8";
-  script.onload = () => window.twttr?.widgets?.load(document.getElementById("posts-list"));
-  document.body.append(script);
-}
 function render(type) {
   const [key, listId, countId, card] = categories[type];
   const sorted = [...content[key]].sort((a,b) => {
@@ -71,7 +62,6 @@ function render(type) {
   document.getElementById(countId).textContent = selectedItems(type, sorted).length;
   const button = document.querySelector(`[data-view="${type}"]`);
   button.textContent = historyView[type] ? "返回待閱讀" : "查看已讀與其他內容";
-  if (type === "x-posts") loadWidgets();
 }
 function renderFeedback() {
   const all = [...content.posts, ...content.podcasts, ...content.news];
@@ -107,7 +97,7 @@ async function copyFeedback() {
 }
 async function init() {
   try {
-    const response = await fetch('./content.json?v=20261001-1',{cache:'no-store'});
+    const response = await fetch('./content.json?v=20261001-2',{cache:'no-store'});
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     content = await response.json();
     document.getElementById('edition-date').textContent = `內容更新 ${dateLabel(content.editionDate)}`;
@@ -124,7 +114,15 @@ async function init() {
       activateTab(keys[(keys.indexOf(activeTab)+shift+keys.length)%keys.length],true);
     });
     document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{historyView[button.dataset.view]=!historyView[button.dataset.view];render(button.dataset.view)}));
-    document.querySelector('.content').addEventListener('click',event=>{const button=event.target.closest('[data-action]');if(button)updateItem(button.dataset.url,button.dataset.action)});
+    document.querySelector('.content').addEventListener('click',event=>{
+      const video = event.target.closest('[data-video]');
+      if (video) {
+        video.closest('.podcast-media').innerHTML = `<iframe class="podcast-video" src="https://www.youtube-nocookie.com/embed/${esc(video.dataset.video)}?autoplay=1" title="${esc(video.dataset.videoTitle)} 影片" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+        return;
+      }
+      const button=event.target.closest('[data-action]');
+      if(button)updateItem(button.dataset.url,button.dataset.action);
+    });
     document.querySelector('.content').addEventListener('input',event=>{if(!event.target.matches('[data-note-url]'))return;const s=feedback.items[event.target.dataset.noteUrl] ||= {};s.note=event.target.value;s.updatedAt=new Date().toISOString();save();renderFeedback()});
     document.getElementById('reading-notes').addEventListener('input',event=>{feedback.generalNote=event.target.value;save()});
     document.getElementById('copy-feedback').addEventListener('click',copyFeedback);
