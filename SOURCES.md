@@ -32,7 +32,7 @@ X 從使用者最初提供的帳號與具名企業／執行者開始，並搜尋
 | Reuters Technology | https://www.reuters.com/technology/ | 跨公司事實核對 |
 | The Register AI | https://www.theregister.com/software/ai_ml/headlines.atom | 企業技術實施與限制 |
 
-Podcast 從 Invest Like the Best／Colossus、a16z Show、All-In、硅谷101及 MIT Sloan Me, Myself, and AI 的原始單集頁檢查。先找公開章節與英文逐字稿；若逐字稿需要登入，清楚標示，不把節目簡介寫成已讀全文。逐字稿只連到官方原文，不在本站複製全文。
+Podcast 從 Invest Like the Best／Colossus、a16z Show、All-In、硅谷101及 MIT Sloan Me, Myself, and AI 的原始單集頁檢查。先找公開章節與英文逐字稿；若官方逐字稿需要登入，再查 YouTube 原片是否有可直接閱讀的英文自動轉錄稿，並標示自動字幕可能有辨識誤差。不把節目簡介寫成已讀全文，也不在本站複製逐字稿全文。
 
 ## 選文與保存
 
