@@ -78,4 +78,5 @@
 .transcript-access p{margin:0 0 10px;color:#5d534b;font-size:14px;line-height:1.7}
 .transcript-access>div+div{margin-top:8px}
 .post-evidence{margin-top:11px}
+.case-details{margin:17px 0 0;padding:15px 17px;border:1px solid #eee4dc;border-radius:12px;background:#fffaf6}.case-details>div+div{margin-top:13px;padding-top:13px;border-top:1px solid #eee4dc}.case-details dt{color:#a34b13;font-size:13px;font-weight:700}.case-details dd{margin:5px 0 0;color:#403933;font-size:15px;line-height:1.75}
 @media(max-width:760px){.intro{padding:17px 0 13px}.intro h1{font-size:30px}}
