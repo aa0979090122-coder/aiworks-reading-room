@@ -223,6 +223,17 @@
       }
     },
     {
+      "author": "OpenAI · 內部導入",
+      "handle": "@OpenAI",
+      "date": "2026-06-26",
+      "url": "https://x.com/OpenAI/status/2070196105745518913",
+      "excerpt": "Across our entire company, people are using Codex to do work that is more complex, longer-running, and increasingly cross-functional.",
+      "zh": "OpenAI 分享自己在工程、法務、財務與招募等部門的 Codex 使用情況。官方研究指出，法務、財務與招募約在 2026 年 4 月轉為以 Codex 作為主要 AI 工具；內部員工平均超過 85% 的 AI 輸出 token 來自 Codex。這反映一間 AI 原生公司的使用轉移，並非一般企業的平均採用率，也不能由 token 占比直接推算節省工時或投資報酬。",
+      "topic": "case",
+      "evidenceUrl": "https://openai.com/index/how-agents-are-transforming-work/",
+      "evidenceLabel": "OpenAI 內部使用研究"
+    },
+    {
       "author": "Decagon · ClassPass",
       "handle": "@DecagonAI",
       "date": "2026-05-15",
@@ -250,6 +261,22 @@
       "kind": "translation",
       "zh": "現在是 AI 實驗室設計介面的重要時刻：目標應是用 AI 增強人的工作，而非用 AI 取代工作。聊天機器人大多是輔助工具，需要人參與工作。Agent 的工作方式仍在形成，也可以把人放在中心。",
       "topic": "trend"
+    },
+    {
+      "author": "Aaron Levie · Box Agent",
+      "handle": "@levie",
+      "date": "2026-04-03",
+      "url": "https://x.com/levie/status/2039931799414194621",
+      "excerpt": "One of the biggest lessons thus far in building AI agents is you have to be brutally unsentimental in your architecture.",
+      "kind": "summary",
+      "zh": "Box 執行長 Aaron Levie 回顧 Box Agent 的開發：團隊曾為資料查找與長文脈限制加入額外的處理步驟，但模型能力提升後，部分步驟反而限制 Agent，造成結果品質下降或過度貼合特定任務。團隊在正式推出前調整架構、移除不再有用的補丁。這是具體的導入失敗模式：原本有效的防護或繞路，需隨模型升級重新評測。",
+      "topic": "case",
+      "replyObservation": {
+        "count": 1,
+        "summary": "目前核對到一則具體回覆，留言者說自己花六個月建的編排層在新模型推出後變成技術負債。這是另一位開發者的個人經驗，不能視為 Box 的情況或整體市場風向。",
+        "checkedAt": "2026-10-01",
+        "urls": ["https://x.com/PsudoMike/status/2040999328475431137"]
+      }
     },
     {
       "author": "Aaron Levie",
