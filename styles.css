@@ -2,7 +2,14 @@
 
 /* Source on the left, Chinese reading notes on the right. */
 .save-status:empty{display:none}
-.list-toolbar{justify-content:flex-end}
+.list-toolbar{justify-content:space-between;align-items:center;flex-wrap:wrap}
+.topic-filters{display:flex;flex-wrap:wrap;gap:7px}
+.topic-button{padding:8px 13px;border:1px solid #e5d8ce;border-radius:999px;background:#fff;color:#5f554d;font-size:13px;font-weight:600}
+.topic-button[aria-pressed="true"]{background:#fff0e5;border-color:#ffb680;color:#aa4500}
+.topic-button:hover{border-color:#ff9c54}
+.topic-tag{display:inline-block;vertical-align:middle;margin-left:8px;padding:3px 8px;border-radius:6px;background:#f6efe9;color:#8c522d;font-size:11px;font-weight:700;line-height:1.3;white-space:nowrap}
+.meta-right{display:inline-flex;align-items:center;gap:10px}
+.post-meta .topic-tag{margin-left:0}
 .posts-list{max-width:860px;gap:17px}
 .post-card{padding:25px 30px 21px}
 .post-meta{margin-bottom:15px}
@@ -32,6 +39,11 @@
 .news-card .reading-columns .source-link{margin:0}
 .podcast-body>.item-links{margin-top:20px}
 @media(max-width:760px){
+  .list-toolbar{gap:10px}
+  .topic-filters{gap:5px}
+  .topic-button{padding:7px 10px;font-size:12px}
+  .post-meta{flex-wrap:wrap;gap:7px}
+  .meta-right{width:100%;justify-content:space-between}
   .post-card{padding:20px 19px}
   .post-summary{font-size:15px}
   .post-open{font-size:14px}
