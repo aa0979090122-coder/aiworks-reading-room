@@ -53,7 +53,7 @@ function podcastCard(show) {
     : `<a class="podcast-art" href="${esc(show.url)}" target="_blank" rel="noopener noreferrer"><img src="${esc(show.cover)}" alt="${esc(show.series)} 節目封面" loading="lazy" /><span>開啟原始節目 ↗</span></a>`;
   const originalLanguage = show.originalLanguage === "zh" ? "zh-Hant" : "en";
   const originalLabel = show.originalLanguage === "zh" ? "原始節目資訊（中文）" : "原始節目資訊（英文）";
-  const transcript = show.transcriptUrl ? `<div class="transcript-access"><strong>英文逐字稿</strong><p>${esc(show.transcriptNote || "可在原始節目頁閱讀英文逐字稿。")}</p>${link(show.transcriptUrl,"閱讀官方英文逐字稿")}</div>` : "";
+  const transcript = show.transcriptUrl ? `<div class="transcript-access"><strong>英文逐字稿</strong><p>${esc(show.transcriptNote || "可在原始節目頁閱讀英文逐字稿。")}</p>${show.altTranscriptUrl ? `<div>${link(show.altTranscriptUrl,"在 YouTube 閱讀英文自動轉錄稿")}</div>` : ""}<div>${link(show.transcriptUrl,"閱讀節目官方英文逐字稿")}</div></div>` : "";
   return `<article class="podcast-card"><div class="podcast-media">${media}</div><div class="podcast-body"><div class="item-meta">${esc(show.series)} · ${dateLabel(show.date)} ${topicTag(show)}</div><h2>${esc(show.title)}</h2><div class="reading-columns"><div class="original-pane"><div class="column-label">${originalLabel}</div>${show.originalTitle && show.originalTitle !== show.title ? `<h3 lang="${originalLanguage}">${esc(show.originalTitle)}</h3>` : ""}${show.originalExcerpt ? `<blockquote lang="${originalLanguage}">${esc(show.originalExcerpt)}</blockquote>` : ""}${link(show.url,"閱讀原始節目頁")}${transcript}</div><div class="summary-pane"><div class="column-label">中文導讀</div><p class="context">${esc(show.context)}</p><h3>內容重點摘要</h3><ul>${show.points.map(point=>`<li>${esc(point)}</li>`).join("")}</ul>${show.chapters?.length ? `<h3>可以從這裡聽</h3><div class="chapters">${show.chapters.map(chapter=>`<span>${esc(chapter)}</span>`).join("")}</div>` : ""}</div></div>${show.youtubeId ? `<div class="item-links">${link(`https://www.youtube.com/watch?v=${show.youtubeId}`,"到 YouTube 觀看")}</div>` : ""}${actions(show)}</div></article>`;
 }
 function newsCard(item) {
@@ -114,7 +114,7 @@ async function copyFeedback() {
 }
 async function init() {
   try {
-    const response = await fetch('./content.json?v=20261001-5',{cache:'no-store'});
+    const response = await fetch('./content.json?v=20261001-6',{cache:'no-store'});
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     content = await response.json();
     document.getElementById('edition-date').textContent = `內容更新 ${dateLabel(content.editionDate)}`;
