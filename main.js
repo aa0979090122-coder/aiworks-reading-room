@@ -107,7 +107,7 @@ async function copyFeedback() {
 }
 async function init() {
   try {
-    const response = await fetch('./content.json?v=20260930-2',{cache:'no-store'});
+    const response = await fetch('./content.json?v=20261001-1',{cache:'no-store'});
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     content = await response.json();
     document.getElementById('edition-date').textContent = `內容更新 ${dateLabel(content.editionDate)}`;
