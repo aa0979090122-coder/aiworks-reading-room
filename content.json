@@ -699,10 +699,12 @@
           "workflow"
         ],
         "concepts": [
+          "真實業務資料",
           "評估與現場落差",
-          "人工校準"
+          "原始資料追溯"
         ],
-        "outcome": "case"
+        "outcome": "case",
+        "limit": "供應商與客戶的內部測試，未公開完整題組、成本或獨立驗證；不能推論為整個部門的投資報酬。"
       }
     },
     {
@@ -718,7 +720,28 @@
       ],
       "originalTitle": "Proaction boosts sales 60% and saves 75+ hours with Codex",
       "originalExcerpt": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
-      "topic": "case"
+      "topic": "case",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "真實業務資料",
+          "需求驗證"
+        ],
+        "outcome": "case",
+        "summary": "Proaction 將銷售現場取得的資料做成可修改的客戶示範，並沿用為工程交接文件；可觀察 AI 是否減少需求確認與資訊搬運。",
+        "question": "示範變快之後，需求誤解、返工與成交品質是否也有改善？",
+        "limit": "成效由創辦人估算，未提供獨立對照或營收歸因。",
+        "related": [
+          {
+            "url": "https://openai.com/index/basis-tax-workbook-with-astra/",
+            "reason": "兩者都用真實業務資料檢查成果；一篇看客戶需求驗證，一篇看長流程評測。"
+          }
+        ]
+      }
     },
     {
       "date": "2026-09-23",
