@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#fffdfb" />
-  <meta name="description" content="Aiworks 資訊情報站：近期 X 貼文、Podcast 導讀與企業 AI 新聞。" />
+  <meta name="description" content="Aiworks 資訊情報站：近期 X 貼文、Podcast 導讀、企業 AI 新聞與深度選題。" />
   <title>資訊情報站｜Aiworks</title>
   <link rel="icon" type="image/svg+xml" href="./assets/aiworks-logo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=20261001-8" />
-  <script type="module" src="./main.js?v=20261002-1"></script>
+  <link rel="stylesheet" href="./styles.css?v=20261002-3" />
+  <script type="module" src="./main.js?v=20261002-3"></script>
 </head>
 <body>
   <header class="site-header"><div class="header-inner"><a class="brand" href="#top" aria-label="Aiworks 資訊情報站，回到頂端"><img src="./assets/aiworks-logo.svg" alt="Aiworks" /></a></div></header>
@@ -21,12 +21,24 @@
       <button id="tab-x-posts" aria-pressed="true" aria-controls="x-posts" data-tab="x-posts">X 貼文 <span id="x-count"></span></button>
       <button id="tab-podcasts" aria-pressed="false" aria-controls="podcasts" data-tab="podcasts">Podcast <span id="podcast-count"></span></button>
       <button id="tab-news" aria-pressed="false" aria-controls="news" data-tab="news">新聞 <span id="news-count"></span></button>
+      <button id="tab-deep-dives" aria-pressed="false" aria-controls="deep-dives" data-tab="deep-dives">深度選題 <span id="deep-count"></span></button>
+      <button id="tab-knowledge" aria-pressed="false" aria-controls="knowledge" data-tab="knowledge">我的知識庫 <span id="knowledge-count"></span></button>
     </nav></div>
-    <section class="notes-section wrap" aria-labelledby="notes-title"><div class="notes-heading"><h2 id="notes-title">我的筆記</h2><button id="copy-feedback" class="text-button">複製回饋</button></div><textarea id="reading-notes" aria-label="我的筆記"></textarea><p id="save-status" class="save-status" role="status"></p><details class="feedback-details"><summary>查看已記錄的判斷與筆記</summary><div id="feedback-list" class="feedback-list"></div></details></section>
+
+    <div id="reading-status" class="reading-status wrap" role="status" aria-live="polite"></div>
     <div class="content wrap">
       <section id="x-posts" class="panel" aria-labelledby="tab-x-posts"><div class="list-toolbar"><div class="topic-filters" data-topics="x-posts" aria-label="X 貼文主題篩選"></div><button class="text-button" data-view="x-posts">查看已讀與略過</button></div><div id="posts-list" class="posts-list"></div></section>
       <section id="podcasts" class="panel" aria-labelledby="tab-podcasts" hidden><div class="list-toolbar"><div class="topic-filters" data-topics="podcasts" aria-label="Podcast 主題篩選"></div><button class="text-button" data-view="podcasts">查看已讀與略過</button></div><div id="podcasts-list" class="podcasts-list"></div></section>
       <section id="news" class="panel" aria-labelledby="tab-news" hidden><div class="list-toolbar"><div class="topic-filters" data-topics="news" aria-label="新聞主題篩選"></div><button class="text-button" data-view="news">查看已讀與略過</button></div><div id="news-list" class="news-list"></div></section>
+      <section id="deep-dives" class="panel" aria-labelledby="tab-deep-dives" hidden><div class="deep-intro"><h2>先讀來源，再決定文章角度</h2><p>這裡收錄可延伸成深度文章的企業實例與研究報告。每題列出閱讀順序、可追問的問題，以及公開資料尚未回答的部分。</p></div><div class="list-toolbar"><div class="topic-filters"><button class="topic-button" data-deep-filter="all" aria-pressed="true">全部</button><button class="topic-button" data-deep-filter="failure" aria-pressed="false">失敗與修正</button><button class="topic-button" data-deep-filter="research" aria-pressed="false">研究與報告</button><button class="topic-button" data-deep-filter="case" aria-pressed="false">實作案例</button></div><button class="text-button" data-view="deep-dives">查看已讀與其他內容</button></div><div id="deep-list" class="deep-list"></div></section>
+      <section id="knowledge" class="panel" aria-labelledby="tab-knowledge" hidden>
+        <div class="knowledge-heading"><div><h2>我的知識庫</h2><p id="knowledge-summary"></p></div><div class="knowledge-tools"><button id="export-notes" class="text-button">匯出筆記</button><button id="export-backup" class="text-button">備份收藏</button><label class="text-button import-label">匯入備份<input id="import-backup" type="file" accept="application/json,.json" hidden></label></div></div>
+        <p class="storage-note">收藏後自動整理重點、來源與相關筆記，並從待讀列表移出。紀錄儲存在這個瀏覽器；換裝置時可匯入備份。</p>
+        <details class="general-notes"><summary>整體閱讀筆記與回饋</summary>    <section class="notes-section" aria-labelledby="notes-title"><div class="notes-heading"><h2 id="notes-title">我的筆記</h2><button id="copy-feedback" class="text-button">複製回饋</button></div><textarea id="reading-notes" aria-label="我的筆記"></textarea><p id="save-status" class="save-status" role="status"></p><details class="feedback-details"><summary>查看已記錄的判斷與筆記</summary><div id="feedback-list" class="feedback-list"></div></details></section></details>
+        <div class="knowledge-controls"><input id="knowledge-search" type="search" placeholder="搜尋收藏、概念或自己的筆記" aria-label="搜尋知識庫"><select id="knowledge-outcome" aria-label="依資料類型篩選"><option value="all">所有資料</option><option value="failure">失敗與修正</option><option value="case">實作案例</option><option value="research">研究與報告</option><option value="mixed">結果與限制</option><option value="perspective">觀點與新知</option></select></div>
+        <div class="knowledge-layout"><nav id="knowledge-nav" class="knowledge-nav" aria-label="知識庫章節"></nav><div id="knowledge-list" class="knowledge-list"></div></div>
+        <p id="knowledge-status" role="status" class="save-status"></p>
+      </section>
     </div>
   </main>
   <footer class="site-footer"><div class="wrap"><span>Aiworks</span><a href="#top">回到頂端 ↑</a></div></footer>
