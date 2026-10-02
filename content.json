@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-01",
+  "editionDate": "2026-10-02",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -547,6 +547,21 @@
     }
   ],
   "news": [
+    {
+      "date": "2026-10-01",
+      "source": "Anthropic／Barclays",
+      "title": "Barclays 已上線兩個 Claude 工作流程：內部查找與郵件分流",
+      "url": "https://www.anthropic.com/news/barclays-scales-claude",
+      "what": "Barclays 擴大與 Anthropic 的合作，公開兩項已運作的流程：英國零售銀行員工用內部助理查找客服資訊，Global Markets 團隊用模型整理與分流客戶郵件。文章提供系統做法與使用量，但沒有公布處理時間或客戶滿意度的對照結果。",
+      "points": [
+        "內部知識助理自 2025 年上線，透過檢索增強生成（RAG）先找銀行內部資料，再協助員工回答客戶問題。Anthropic 稱已有超過 1.6 萬名 Barclays 員工使用，累計搜尋超過 100 萬次；這是使用量，尚不能直接換算成服務品質改善。",
+        "Global Markets 的模型先為進來的客戶郵件分類、補充處理所需資訊，再決定送往哪個作業路徑，讓營運人員接手。Anthropic 稱平台每天處理約 12 萬封郵件；原文沒有說明其中多少封可免人工處理。",
+        "銀行表示會在這些流程保留安全控制、治理與人工監督。Claude Code 預計到 2026 年底覆蓋一半開發者、2027 年擴至多數工程師；這兩個是尚未達成的目標，不能和已上線的知識助理及郵件流程混算。"
+      ],
+      "originalTitle": "Barclays scales Claude to upgrade operations and improve client experience",
+      "originalExcerpt": "More than 16,000 colleagues have adopted the assistant, and it has handled over one million searches.",
+      "topic": "case"
+    },
     {
       "date": "2026-09-30",
       "source": "OpenAI",
