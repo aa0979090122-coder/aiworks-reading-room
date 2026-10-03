@@ -1,250 +1,73 @@
-import {chapters, outcomeLabels, allItems, itemTitle, classify, savedItems, relatedTo, exportMarkdown, mergeBackup, noteFor, readingItems} from "./knowledge.js?v=20261003-2";
-const esc = value => String(value ?? "").replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
-const dataUrl = value => esc(value);
-const safeUrl = url => /^https?:\/\//i.test(String(url)) ? String(url) : "#";
-const link = (url, label) => `<a class="source-link" href="${esc(safeUrl(url))}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`;
-const dateLabel = value => new Intl.DateTimeFormat("zh-TW", {year:"numeric",month:"long",day:"numeric",timeZone:"Asia/Taipei"}).format(new Date(`${value}T12:00:00+08:00`));
-const storageKey = "aiworks-reading-room-feedback-v1";
-let content;
-let feedback = {items:{}, generalNote:""};
-let activeTab = "reading";
-let readingChapter="all";
-let readingQuery="";
-let readingHistory=false;
-let knowledgeChapter="all";
-let knowledgeQuery="";
-let knowledgeOutcome="all";
-let deepFilter="all";
-const historyView = {"x-posts":false,"podcasts":false,"news":false,"deep-dives":false};
-const topicView = {"x-posts":"all","podcasts":"all","news":"all"};
-const topicLabels = {all:"全部",case:"公司案例",product:"新功能",trend:"趨勢與新詞"};
-const topicTag = item => `<span class="topic-tag">${esc(topicLabels[item.topic] || topicLabels.trend)}</span>`;
-try { feedback = {...feedback, ...JSON.parse(localStorage.getItem(storageKey) || "{}")}; } catch { /* The page remains readable without storage. */ }
-feedback.items ||= {};
-feedback.chapterNotes ||= {};
-
-function save() {
-  try { localStorage.setItem(storageKey, JSON.stringify(feedback)); document.getElementById("save-status").textContent = ""; }
-  catch { document.getElementById("save-status").textContent = "這個瀏覽器目前無法儲存筆記"; }
+import {chapters,outcomeLabels,allItems,itemTitle,classify,savedItems,relatedTo,exportMarkdown,mergeBackup,noteFor} from './knowledge.js?v=20261003-4';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl=v=>/^https?:\/\//i.test(String(v))?String(v):'#';
+const link=(url,label)=>`<a class="source-link" href="${esc(safeUrl(url))}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`;
+const dateLabel=v=>v?String(v).replace(/^2026-/,'2026/').replace(/-(\d{2})$/,'/$1'):'';
+const storageKey='aiworks-reading-room-feedback-v1';
+const knowledgeId=url=>{let h=2166136261;for(const c of url)h=Math.imul(h^c.charCodeAt(0),16777619);return 'note-'+(h>>>0).toString(36)};
+let content,feedback={items:{},generalNote:'',chapterNotes:{}},activeTab='x-posts',socialQuery='',knowledgeQuery='',knowledgeChapter='all',knowledgeOutcome='all',deepFilter='all',rejectUrl='',rejectTrigger;
+let localToken='',localBase='',localTimer,pairWindow,localDocuments={},syncPending=false,syncAgain=false,pollTimer;
+const historyView={'x-posts':false,podcasts:false,news:false,'deep-dives':false};
+const topicLabels={case:'企業案例',product:'功能更新',trend:'觀點與趨勢',research:'研究報告'};
+try{feedback={...feedback,...JSON.parse(localStorage.getItem(storageKey)||'{}')}}catch{}
+feedback.items||={};feedback.chapterNotes||={};
+const stateFor=url=>feedback.items[url]||{};
+function saveLocalStorage(){try{localStorage.setItem(storageKey,JSON.stringify(feedback))}catch{document.getElementById('save-status').textContent='瀏覽器無法儲存筆記'}}
+function save(){saveLocalStorage();clearTimeout(localTimer);localTimer=setTimeout(()=>localToken?syncLocal(true):sendInbox(),450)}
+const tags=item=>`<span class="topic-tag">${esc(topicLabels[item.topic]||outcomeLabels[classify(item).outcome]||'觀點')}</span>${classify(item).concepts.slice(0,3).map(t=>`<span class="concept-tag">${esc(t)}</span>`).join('')}`;
+function socialItems(){const items=[...(content.posts||[]),...(content.deepDives||[]).filter(x=>/https?:\/\/(www\.)?(x\.com|twitter\.com|linkedin\.com)\//.test(x.url)).map(x=>({...x,date:x.date||x.publishedAt?.slice(0,10)||x.sourceDate,highLevel:true,zh:x.lead,excerpt:x.originalExcerpt||'',author:x.author||x.source||'LinkedIn',topic:x.topic||'case'}))];return items.filter((x,i,a)=>a.findIndex(y=>y.url===x.url)===i)}
+function dateMs(item){if(item.publishedAt)return Date.parse(item.publishedAt);if(/^\d{4}-\d{2}-\d{2}$/.test(item.date))return Date.parse(item.date+'T12:00:00+08:00');const m=(item.sourceDate||'').match(/(\d{4}) 年 (\d{1,2}) 月/);if(m)return Date.parse(`${m[1]}-${m[2].padStart(2,'0')}-01T00:00:00+08:00`);return 0}
+function current(type,item){const age=(Date.now()-dateMs(item))/86400000;if(type==='podcasts')return true;const rich=item.topic==='case'||item.retention==='six-months'||item.highLevel;return type==='x-posts'&&rich?age>=-1&&age<184:age>=-1&&age<14}
+function selected(type,items){return items.filter(x=>{const s=stateFor(x.url);return !s.saved&&(historyView[type]?s.read||s.rejected||!current(type,x):!s.read&&!s.rejected&&current(type,x))})}
+function actions(item){const s=stateFor(item.url),url=esc(item.url);return `<div class="actions"><button data-action="read" data-url="${url}" class="action-button ${s.read?'is-active':''}" aria-pressed="${!!s.read}">✓ 已讀</button><button data-action="reject" data-url="${url}" class="action-button ${s.rejected?'is-active':''}" aria-pressed="${!!s.rejected}">${s.rejected?'↶ 取消沒幫助':'✕ 沒幫助'}</button><button data-action="save" data-url="${url}" class="action-button ${s.saved?'is-saved':''}" aria-pressed="${!!s.saved}">${s.saved?'★ 移回待讀':'☆ 收藏'}</button><details class="item-note"><summary>我的想法</summary><textarea data-note-url="${url}" aria-label="這篇的筆記">${esc(s.note||'')}</textarea></details>${s.rejectReason?`<details class="reject-note"><summary>略過理由</summary><p>${esc(s.rejectReason)}</p><button class="text-button" data-edit-reason="${url}">修改理由</button></details>`:''}</div>`}
+function originalText(item){return item.originalExcerpt||item.excerpt||item.englishSummary||''}
+function originalPane(item,{embed=false,media=''}={}){
+ const text=originalText(item),x=/https?:\/\/(?:www\.)?(?:x|twitter)\.com\/[^/]+\/status\/\d+/.test(item.url);
+ const body=embed&&x?`<div class="x-preview"><blockquote class="x-tweet-pending" data-conversation="none" data-dnt="true" lang="en"><p lang="en">${esc(text)}</p><a href="${esc(safeUrl(item.url))}">${esc(item.author||'X')} · ${esc(item.date||'')}</a></blockquote></div>`:`${media}${item.originalTitle?`<h3 lang="en">${esc(item.originalTitle)}</h3>`:''}${text?`<blockquote lang="${item.originalLanguage==='zh'?'zh-Hant':'en'}">${esc(text)}</blockquote>`:''}`;
+ const kind=x?'X':/linkedin\.com/.test(item.url)?'LinkedIn':item.series||item.source||'原始資料';
+ return `<div class="original-pane"><div class="pane-label">${esc(kind)}${item.englishSummary?' · English brief':item.originalIsFull?'':text?' · 原文節錄':''}</div>${body}${!text&&!media?'<p class="source-placeholder">'+esc(item.originalTitle||item.title||'')+'</p>':''}<div class="original-links">${link(item.url,'原文')}${item.evidenceUrl?link(item.evidenceUrl,item.evidenceLabel||'案例詳文'):''}</div></div>`;
 }
-function stateFor(url) { return feedback.items[url] || {}; }
-function ageInDays(date) { return Math.floor((Date.now() - new Date(`${date}T00:00:00+08:00`).getTime()) / 86400000); }
-function withinSixMonths(date) {
-  const cutoff = new Date();
-  cutoff.setMonth(cutoff.getMonth() - 6);
-  cutoff.setHours(0,0,0,0);
-  return new Date(`${date}T00:00:00+08:00`) >= cutoff;
+function postCard(item){const detail=item.caseDetails?.length?`<details class="reading-detail"><summary>案例細節</summary><dl>${item.caseDetails.map(x=>`<div><dt>${esc(x.label)}</dt><dd>${esc(x.text)}</dd></div>`).join('')}</dl></details>`:'';const replies=item.replyObservation?`<details class="reading-detail"><summary>留言觀察 · ${item.replyObservation.count} 則</summary><p>${esc(item.replyObservation.summary)}</p><small>僅整理已核對的公開回覆。</small></details>`:'';return `<article class="post-card" id="social-${knowledgeId(item.url)}"><div class="card-meta"><span>${esc(item.author||item.source||'LinkedIn')} <span class="handle">${esc(item.handle||'')}</span></span><span>${esc(item.date||item.sourceDate||'')} ${tags(item)}</span></div><div class="reading-columns">${originalPane(item,{embed:true})}<div class="summary-pane"><h2>${esc(itemTitle(item))}</h2><p>${esc(item.zh||item.lead||'')}</p>${detail}${replies}${actions(item)}</div></div></article>`}
+function podcastCard(item){const media=item.youtubeId?`<div class="podcast-media"><button class="video-trigger" data-video="${esc(item.youtubeId)}" data-video-title="${esc(item.title)}" aria-label="播放 ${esc(item.title)}"><img src="https://i.ytimg.com/vi/${esc(item.youtubeId)}/hqdefault.jpg" loading="lazy" alt=""><span>▶ 播放</span></button></div>`:item.cover?`<a class="podcast-art" href="${esc(safeUrl(item.url))}" target="_blank" rel="noopener noreferrer"><img src="${esc(item.cover)}" alt="${esc(item.series)}" loading="lazy"></a>`:'';return `<article class="podcast-card"><div class="card-meta"><span>${esc(item.series)}</span><span>${esc(item.date)} ${tags(item)}</span></div><div class="reading-columns">${originalPane(item,{media})}<div class="summary-pane"><h2>${esc(item.title)}</h2><p>${esc(item.context)}</p><ul>${(item.points||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${item.chapters?.length?`<details class="reading-detail"><summary>章節</summary><ul>${item.chapters.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></details>`:''}${item.transcriptUrl?`<div class="transcript-access">${link(item.transcriptUrl,'英文逐字稿')}${item.altTranscriptUrl?link(item.altTranscriptUrl,'自動字幕'):''}<small>${esc(item.transcriptNote||'')}</small></div>`:''}${actions(item)}</div></div></article>`}
+function newsCard(item){return `<article class="news-card"><div class="card-meta"><span>${esc(item.source)}</span><span>${esc(item.date)} ${tags(item)}</span></div><div class="reading-columns">${originalPane(item)}<div class="summary-pane"><h2>${esc(item.title)}</h2><p>${esc(item.what)}</p><ul>${(item.points||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${actions(item)}</div></div></article>`}
+const categories={'x-posts':['posts-list','x-count',postCard],podcasts:['podcasts-list','podcast-count',podcastCard],news:['news-list','news-count',newsCard]};
+function render(type){const [host,count,card]=categories[type];const pool=type==='x-posts'?socialItems():content[type]||[];let items=selected(type,[...pool].sort((a,b)=>dateMs(b)-dateMs(a)));document.getElementById(count).textContent=selected(type,pool).length;if(type==='x-posts'&&socialQuery)items=items.filter(x=>[itemTitle(x),x.zh,x.author,x.excerpt,...classify(x).concepts].join(' ').toLowerCase().includes(socialQuery.toLowerCase()));document.getElementById(host).innerHTML=items.length?items.map(card).join(''):'<div class="empty-state">沒有符合條件的內容。</div>';document.querySelector(`[data-view="${type}"]`).textContent=historyView[type]?'返回待讀':'已讀與歷史';if(type==='x-posts'){renderDigest();if(activeTab===type)loadXEmbeds()}}
+let embedScriptLoaded=false,xObserver;const observedTweets=new WeakSet();
+function observeX(){if(!window.twttr?.widgets?.load)return;xObserver||=new IntersectionObserver(entries=>entries.forEach(e=>{if(!e.isIntersecting)return;const quote=e.target;quote.classList.replace('x-tweet-pending','twitter-tweet');window.twttr.widgets.load(quote.parentElement);xObserver.unobserve(quote)}),{rootMargin:'350px'});document.querySelectorAll('#posts-list .x-tweet-pending').forEach(node=>{if(!observedTweets.has(node)){observedTweets.add(node);xObserver.observe(node)}})}
+function loadXEmbeds(){if(!document.querySelector('#posts-list .x-tweet-pending'))return;if(window.twttr?.widgets?.load){observeX();return}if(embedScriptLoaded)return;embedScriptLoaded=true;const script=document.createElement('script');script.src='https://platform.twitter.com/widgets.js';script.async=true;script.onload=observeX;document.head.append(script)}
+function renderDigest(){const base=Date.now(),items=socialItems().filter(x=>{const s=stateFor(x.url),ts=x.publishedAt?Date.parse(x.publishedAt):0;return ts&&base-ts>=0&&base-ts<=86400000&&!s.saved&&!s.read&&!s.rejected});const d=content.digest;const checked=d?.checkedAt?new Date(d.checkedAt):null;const valid=checked&&base-checked.getTime()<86400000;document.getElementById('daily-digest').innerHTML=`<div class="digest-heading"><h2>過去 24 小時</h2><time>${valid?new Intl.DateTimeFormat('zh-TW',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Taipei'}).format(checked)+' 更新':''}</time></div>${valid&&d.points?.length?`<ul>${d.points.map(p=>`<li>${esc(p.text)} ${p.url?`<button class="inline-link" data-source-jump="${esc(p.url)}">${esc(p.label||'查看貼文')}</button>`:''}</li>`).join('')}</ul>`:items.length?`<ul>${items.slice(0,4).map(x=>`<li><button class="inline-link" data-source-jump="${esc(x.url)}">${esc(itemTitle(x))}</button> <span>${esc(x.zh||'')}</span></li>`).join('')}</ul>`:`<p class="digest-empty">${valid?esc(d.emptyMessage||'這次未找到符合條件的新貼文。'):'目前沒有已核對的 24 小時摘要。'}</p>`}`}
+function deepCard(item){return `<article class="deep-card" id="deep-${knowledgeId(item.url)}"><div class="card-meta"><span>${esc(item.type||item.source||'')}</span><time>${esc(item.sourceDate||item.date||'')}</time></div><div class="reading-columns">${originalPane(item)}<div class="summary-pane"><h2>${esc(item.title)}</h2><p>${esc(item.lead||item.what||item.context||item.zh||'')}</p>${(item.takeaways||item.points)?.length?`<ul>${(item.takeaways||item.points).map(p=>`<li>${esc(p)}</li>`).join('')}</ul>`:''}${item.caveat?`<p class="evidence-limit">${esc(item.caveat)}</p>`:''}${item.sources?`<div>${item.sources.map(s=>link(s.url,s.label)).join('')}</div>`:''}${actions(item)}</div></div></article>`}
+function renderDeep(){const pool=content.deepDives||[],all=allItems(content);const available=pool.filter(x=>{const s=stateFor(x.url);return !s.saved&&(historyView['deep-dives']?s.read||s.rejected:!s.read&&!s.rejected)});const items=available.filter(x=>deepFilter==='all'||classify(x).outcome===deepFilter);document.getElementById('deep-count').textContent=available.length;document.querySelector('[data-view="deep-dives"]').textContent=historyView['deep-dives']?'返回待讀':'已讀與歷史';document.querySelectorAll('[data-deep-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.deepFilter===deepFilter)));const sets=deepFilter==='all'&&!historyView['deep-dives']?(content.readingSets||[]).map(set=>{const sources=set.urls.map(u=>all.find(x=>x.url===u)).filter(x=>x&&!stateFor(x.url).saved&&!stateFor(x.url).read&&!stateFor(x.url).rejected);if(sources.length<2)return '';return `<section class="reading-set"><h2>${esc(set.title)}</h2><p class="set-context">${esc(set.summary)}</p>${sources.map(x=>`<div class="set-source"><span>${esc(x.sourceDate||x.date||'')}</span><button class="inline-link" data-source-jump="${esc(x.url)}">${esc(itemTitle(x))}</button><p>${esc(noteFor(x).summary)}</p></div>`).join('')}</section>`}).join(''):'';document.getElementById('deep-list').innerHTML=sets+items.map(deepCard).join('')||'<div class="empty-state">沒有符合條件的內容。</div>'}
+function renderAll(){Object.keys(categories).forEach(render);renderDeep();renderKnowledge();renderFeedback()}
+function activateTab(type,focus=false){if(!categories[type]&&!['deep-dives','knowledge'].includes(type))type='x-posts';activeTab=type;document.querySelectorAll('.tabs button').forEach(t=>{const on=t.dataset.tab===type;t.setAttribute('aria-pressed',String(on));if(on&&focus)t.focus()});document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!==type);if(type==='x-posts')loadXEmbeds();if(type==='knowledge')renderKnowledge();if(location.hash!==`#view-${type}`)history.replaceState(null,'',`#view-${type}`)}
+function updateItem(url,action,reason){const s=feedback.items[url]||={};if(action==='read'){s.read=!s.read;if(s.read)s.rejected=false}if(action==='reject'){if(!s.rejected&&!reason?.trim())return false;s.rejected=!s.rejected;if(s.rejected){s.rejectReason=reason.trim();s.read=false}}if(action==='reason'){if(!reason?.trim())return false;s.rejectReason=reason.trim()}if(action==='save'){s.saved=!s.saved;if(!s.saved){s.read=false;s.rejected=false}else{s.savedAt=new Date().toISOString();s.snapshot=allItems(content).find(x=>x.url===url)||s.snapshot;s.enrichmentStatus||='pending'}document.getElementById('reading-status').innerHTML=s.saved?'<button class="text-button" data-open-knowledge>已收藏 →</button>':'已移回待讀'}s.updatedAt=new Date().toISOString();save();renderAll();return true}
+function openReject(url,trigger){rejectUrl=url;rejectTrigger=trigger;document.getElementById('reject-reason').value=stateFor(url).rejectReason||'';document.getElementById('reject-error').textContent='';document.getElementById('reject-dialog').showModal();document.getElementById('reject-reason').focus()}
+function openKnowledgeItem(url){knowledgeChapter='all';knowledgeQuery='';knowledgeOutcome='all';document.getElementById('knowledge-search').value='';document.getElementById('knowledge-outcome').value='all';activateTab('knowledge');requestAnimationFrame(()=>document.getElementById(knowledgeId(url))?.scrollIntoView({block:'start',behavior:'auto'}))}
+function openSource(url){if(stateFor(url).saved){openKnowledgeItem(url);return}let type,target;if(socialItems().some(x=>x.url===url)){type='x-posts';socialQuery='';document.getElementById('social-search').value='';historyView[type]=!current(type,socialItems().find(x=>x.url===url))||!!(stateFor(url).read||stateFor(url).rejected);render(type);target='social-'+knowledgeId(url)}else if((content.deepDives||[]).some(x=>x.url===url)){type='deep-dives';deepFilter='all';historyView[type]=!!(stateFor(url).read||stateFor(url).rejected);renderDeep();target='deep-'+knowledgeId(url)}else{const item=allItems(content).find(x=>x.url===url);if(!item)return;type=item.kind;historyView[type]=!current(type,item)||!!(stateFor(url).read||stateFor(url).rejected);render(type)}activateTab(type);requestAnimationFrame(()=>{const node=target?document.getElementById(target):[...document.querySelectorAll(`#${type} article`)].find(x=>x.querySelector('[data-url]')?.dataset.url===url);node?.scrollIntoView({block:'start',behavior:'auto'})})}
+function markdown(text){
+ const cleaned=String(text).replace(/<!--[\s\S]*?-->/g,'');
+ const inline=value=>esc(value).replace(/\[([^\]]+)\]\(([^)]+)\)/g,(match,label,url)=>{let source=null;try{source=url.startsWith('note:')?decodeURIComponent(url.slice(5)):Object.entries(localDocuments).find(([,d])=>url.replace(/^\.\//,'')===d.file)?.[0]}catch{};return source?`<button class="inline-link" data-related="${esc(source)}">${label}</button>`:/^https?:\/\//.test(url)?`<a href="${url}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`:match}).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+ return cleaned.split(/\n\s*\n/).filter(p=>p.trim()).map(p=>{const lines=p.trim().split('\n');if(/^#{1,4} /.test(lines[0]))return `<h4>${inline(lines[0].replace(/^#{1,4} /,''))}</h4>`+(lines.length>1?markdown(lines.slice(1).join('\n')):'');if(lines.every(l=>/^- /.test(l)))return '<ul>'+lines.map(l=>`<li>${inline(l.slice(2))}</li>`).join('')+'</ul>';return '<p>'+lines.map(inline).join('<br>')+'</p>'}).join('');
 }
-function isCurrent(type, item) {
-  const state = stateFor(item.url);
-  const withinWindow = type === "podcasts" || (type === "x-posts" && item.topic === "case" ? ageInDays(item.date) >= 0 && withinSixMonths(item.date) : ageInDays(item.date) >= 0 && ageInDays(item.date) < 14);
-  return withinWindow && !state.saved && !state.read && !state.rejected;
-}
-function selectedItems(type, items) { return items.filter(item => !stateFor(item.url).saved && (historyView[type] ? !isCurrent(type,item) : isCurrent(type,item))); }
-function actions(item) {
-  const s = stateFor(item.url);
-  const url = dataUrl(item.url);
-  return `<div class="actions" aria-label="閱讀狀態">
-    <button type="button" data-action="read" data-url="${url}" class="action-button ${s.read?'is-active':''}" aria-pressed="${!!s.read}" title="標記已讀"><span aria-hidden="true">✓</span> 已讀</button>
-    <button type="button" data-action="reject" data-url="${url}" class="action-button ${s.rejected?'is-active':''}" aria-pressed="${!!s.rejected}" title="這篇沒有幫助"><span aria-hidden="true">✕</span> 沒幫助</button>
-    <button type="button" data-action="save" data-url="${url}" class="action-button ${s.saved?'is-saved':''}" aria-pressed="${!!s.saved}" title="收藏"><span aria-hidden="true">${s.saved?'★':'☆'}</span> ${s.saved?'移回閱讀列表':'收藏'}</button>
-    <details class="item-note"><summary>寫筆記</summary><textarea data-note-url="${url}" aria-label="這篇的筆記" placeholder="想法、問題、文章角度…">${esc(s.note || "")}</textarea></details>
-  </div>`;
-}
-function originalPanel(body,label="閱讀原文與詳細資料") {return `<details class="source-details"><summary>${label}</summary><div class="source-body">${body}</div></details>`;}
-function postCard(post) {
-  const replies=post.replyObservation?`<div class="reply-observation"><h3>留言觀察 · 公開可見 ${post.replyObservation.count} 則</h3><p>${esc(post.replyObservation.summary)}</p><p class="reply-limit">只根據目前可見的回覆整理，完整討論請開啟 X。</p></div>`:"";
-  const details=post.caseDetails?.length?`<dl class="case-details">${post.caseDetails.map(({label,text})=>`<div><dt>${esc(label)}</dt><dd>${esc(text)}</dd></div>`).join("")}</dl>`:"";
-  return `<article class="post-card"><div class="item-meta">${esc(post.author)} <span class="handle">${esc(post.handle)}</span><span>${topicTag(post)} · <time datetime="${esc(post.date)}">${dateLabel(post.date)}</time></span></div><h2>${esc(itemTitle(post))}</h2><p class="post-summary">${esc(post.zh)}</p>${originalPanel(`<div class="column-label">${post.originalIsFull?"英文原文":"英文原文節錄"}</div><blockquote lang="en">${esc(post.excerpt)}</blockquote>${link(post.url,"閱讀 X 原文與留言")}${details}${post.evidenceUrl?link(post.evidenceUrl,post.evidenceLabel||"參考原始資料"):""}${replies}`)}${actions(post)}</article>`;
-}
-function podcastCard(show) {
-  const media=show.youtubeId?`<button type="button" class="video-trigger" data-video="${esc(show.youtubeId)}" data-video-title="${esc(show.title)}" aria-label="播放 ${esc(show.title)} 影片"><img src="https://i.ytimg.com/vi/${esc(show.youtubeId)}/hqdefault.jpg" alt="" loading="lazy"><span>▶ 播放影片</span></button>`:`<a class="podcast-art" href="${esc(safeUrl(show.url))}" target="_blank" rel="noopener noreferrer"><img src="${esc(show.cover)}" alt="${esc(show.series)} 節目封面" loading="lazy"><span>開啟原始節目 ↗</span></a>`;
-  return `<article class="podcast-card"><div class="podcast-body"><div class="item-meta">${esc(show.series)} · ${dateLabel(show.date)} ${topicTag(show)}</div><h2>${esc(show.title)}</h2><p class="context">${esc(show.context)}</p><ul>${show.points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>${originalPanel(`<div class="podcast-media">${media}</div>${show.originalTitle?`<h3>${esc(show.originalTitle)}</h3>`:""}${show.originalExcerpt?`<blockquote lang="${show.originalLanguage==="zh"?"zh-Hant":"en"}">${esc(show.originalExcerpt)}</blockquote>`:""}${link(show.url,"閱讀原始節目頁")}${show.transcriptUrl?`<p>${esc(show.transcriptNote||"可在原始節目頁閱讀英文逐字稿。")}</p>${link(show.transcriptUrl,"官方逐字稿")}${show.altTranscriptUrl?link(show.altTranscriptUrl,"YouTube 自動轉錄稿"):""}`:""}${show.chapters?.length?`<h3>可以從這裡聽</h3><ul>${show.chapters.map(c=>`<li>${esc(c)}</li>`).join("")}</ul>`:""}`,"節目原文、影片與逐字稿")}${actions(show)}</div></article>`;
-}
-function newsCard(item) {
-  return `<article class="news-card"><div class="item-meta">${esc(item.source)} · ${dateLabel(item.date)} ${topicTag(item)}</div><h2>${esc(item.title)}</h2><p>${esc(item.what)}</p><ul>${item.points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>${originalPanel(`<h3 lang="en">${esc(item.originalTitle||item.title)}</h3>${item.originalExcerpt?`<blockquote lang="en">${esc(item.originalExcerpt)}</blockquote>`:""}${link(item.url,"閱讀原始來源")}`)}${actions(item)}</article>`;
-}
-function deepCard(item) {
-  return `<article class="deep-card"><div class="deep-meta"><span>${esc(item.type)}</span><span>${esc(item.sourceDate)}</span></div><h2>${esc(item.title)}</h2><p class="deep-lead">${esc(item.lead)}</p><div class="deep-sections"><section><h3>流程與證據</h3><ul>${item.takeaways.map(p=>`<li>${esc(p)}</li>`).join("")}</ul></section><section><h3>文章角度</h3><p>${esc(item.angle)}</p><h3>資料限制</h3><p>${esc(item.caveat)}</p></section></div><div class="deep-sources">${item.sources.map(s=>link(s.url,s.label)).join("")}</div>${actions(item)}</article>`;
-}
-const kindLabels={posts:"X 觀點",podcasts:"Podcast",news:"新聞",deepDives:"深度選題"};
-function readingPool() {return readingItems(content,feedback,{history:readingHistory,current:isCurrent});}
-function briefCard(item,index,featured=false) {
-  const n=noteFor(item), info=classify(item);
-  return `<article class="brief-card ${featured?"is-featured":""}" id="${featured?"featured":"reading"}-${knowledgeId(item.url)}"><div class="brief-meta"><span>${featured?String(index+1).padStart(2,"0"):kindLabels[item.kind]}</span><span>${esc(item.sourceDate||item.date||"")}</span></div><h3><button data-open-reading="${esc(item.url)}">${esc(itemTitle(item))}<span aria-hidden="true">↗</span></button></h3><p class="brief-summary">${esc(n.summary)}</p><div class="concepts">${(info.concepts.length?info.concepts:[chapters.find(c=>c.id===info.primary)?.title]).map(c=>`<span>${esc(c)}</span>`).join("")}</div>${featured&&n.limit?`<p class="brief-limit"><strong>資料限制</strong>${esc(n.limit)}</p>`:""}<div class="brief-bottom">${link(item.url,item.source||item.author||item.series||"原始來源")}${actions(item)}</div></article>`;
-}
-function renderReading() {
-  const pool=readingPool(), deep=pool.filter(x=>x.kind==='deepDives');
-  const featured=deep.slice(0,3);
-  document.getElementById('featured-list').innerHTML=featured.length?featured.map((x,i)=>briefCard(x,i,true)).join(''):'<div class="empty-state">這次精選已讀完，可探索其他來源或查看收藏。</div>';
-  document.getElementById('reading-count').textContent=pool.length;
-  const q=readingQuery.trim().toLocaleLowerCase();
-  const items=pool.filter(x=>(readingChapter==='all'||classify(x).themes.includes(readingChapter))&&(!q||[itemTitle(x),...Object.values(noteFor(x)).flat().filter(v=>typeof v==='string'),...classify(x).concepts,x.source,x.author,x.series].join(' ').toLocaleLowerCase().includes(q)));
-  document.getElementById('reading-nav').innerHTML=`<button data-reading-chapter="all" aria-pressed="${readingChapter==='all'}">全部資料 <span>${pool.length}</span></button>`+chapters.filter(c=>c.id!=='other'||pool.some(x=>classify(x).primary==='other')).map(c=>`<button data-reading-chapter="${c.id}" aria-pressed="${readingChapter===c.id}">${esc(c.title)}<span>${pool.filter(x=>classify(x).themes.includes(c.id)).length}</span></button>`).join('');
-  document.getElementById('explore-summary').textContent=`${items.length} 篇${readingHistory?'（含歷史與已讀）':'待讀資料'}${readingChapter==='all'?'':' · '+chapters.find(c=>c.id===readingChapter).title}`;
-  document.getElementById('explore-list').innerHTML=items.length?items.map((x,i)=>briefCard(x,i)).join(''):'<div class="empty-state">沒有符合條件的資料。可更換主題、搜尋詞，或納入歷史與已讀。</div>';
-  const linked=items.map(x=>({item:x,relation:x.knowledge?.related?.find(r=>pool.some(y=>y.url===r.url))})).find(x=>x.relation);
-  document.getElementById('reading-connections').innerHTML=linked&&readingChapter!=='all'&&!q?`<aside class="connection"><p class="eyebrow">READ TOGETHER</p><h3>把兩份證據放在一起讀</h3><p>${esc(linked.relation.reason)}</p><div><button data-open-reading="${esc(linked.item.url)}">${esc(itemTitle(linked.item))} ↗</button><button data-open-reading="${esc(linked.relation.url)}">${esc(itemTitle(pool.find(x=>x.url===linked.relation.url)))} ↗</button></div></aside>`:'';
-}
-function openReadingItem(url) {
-  if(stateFor(url).saved){openKnowledgeItem(url);return;}
-  const item=readingItems(content,feedback,{history:true,current:isCurrent}).find(x=>x.url===url);
-  if(!item)return;
-  const type={posts:'x-posts',podcasts:'podcasts',news:'news',deepDives:'deep-dives'}[item.kind];
-  if(type==='deep-dives'){deepFilter='all';historyView[type]=!!(stateFor(url).read||stateFor(url).rejected);renderDeep();}
-  else{topicView[type]='all';historyView[type]=!isCurrent(type,item);render(type);}
-  activateTab(type);
-  requestAnimationFrame(()=>{const target=[...document.querySelectorAll(`#${type} article`)].find(a=>a.querySelector('[data-url]')?.dataset.url===url);target?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});});
-}
-const categories = {"x-posts":["posts","posts-list","x-count",postCard],"podcasts":["podcasts","podcasts-list","podcast-count",podcastCard],"news":["news","news-list","news-count",newsCard]};
-function render(type) {
-  const [key, listId, countId, card] = categories[type];
-  const sorted = [...content[key]].sort((a,b) => {
-    const byDate = b.date.localeCompare(a.date);
-    if (byDate || type !== 'x-posts') return byDate;
-    const aId = BigInt(a.url.match(/status\/(\d+)/)?.[1] || 0);
-    const bId = BigInt(b.url.match(/status\/(\d+)/)?.[1] || 0);
-    return aId === bId ? 0 : aId > bId ? -1 : 1;
-  });
-  const available = selectedItems(type, sorted);
-  const items = available.filter(item => topicView[type] === "all" || item.topic === topicView[type]);
-  const topicHost = document.querySelector(`[data-topics="${type}"]`);
-  topicHost.innerHTML = Object.entries(topicLabels).filter(([topic]) => topic === "all" || content[key].some(item => item.topic === topic)).map(([topic,label]) => `<button type="button" class="topic-button" data-topic="${topic}" data-topic-tab="${type}" aria-pressed="${topicView[type] === topic}">${esc(label)}</button>`).join("");
-  const list = document.getElementById(listId);
-  list.innerHTML = items.length ? items.map(card).join("") : `<div class="empty-state">${topicView[type] !== "all" ? "這個主題目前沒有待閱讀內容。" : historyView[type] ? "這裡還沒有其他內容。" : "目前沒有待閱讀內容。收藏可在「我的知識庫」閱讀。"}</div>`;
-
-  document.getElementById(countId).textContent = available.length;
-  const button = document.querySelector(`[data-view="${type}"]`);
-  button.textContent = historyView[type] ? "返回待閱讀" : "查看已讀與其他內容";
-}
-function renderFeedback() {
-  const all = [...content.posts, ...content.podcasts, ...content.news, ...(content.deepDives || [])];
-  const changed = Object.entries(feedback.items).filter(([,s]) => s.read || s.rejected || s.saved || s.note?.trim());
-  const host = document.getElementById("feedback-list");
-  host.innerHTML = changed.length ? `<h3>已記錄的判斷與筆記</h3>${changed.map(([url,s]) => { const item = all.find(x=>x.url===url); return `<div class="feedback-item"><strong>${esc(item?.title || item?.author || url)}</strong><span>${[s.read?'已讀':'',s.rejected?'沒幫助':'',s.saved?'已收藏':''].filter(Boolean).join(' · ')}</span>${s.note ? `<p>${esc(s.note)}</p>`:''}</div>`; }).join('')}` : "";
-}
-function activateTab(type, focus=false) {
-  if (!categories[type] && !['reading','deep-dives','knowledge'].includes(type)) type = "reading";
-  activeTab = type;
-  document.querySelectorAll('.tabs button').forEach(tab => { const on=tab.dataset.tab===type; tab.setAttribute("aria-pressed",String(on)); if(on&&focus)tab.focus(); });
-  document.querySelectorAll('.panel').forEach(panel=>{panel.hidden=panel.id!==type});
-  if (type === 'knowledge') renderKnowledge();
-  if (type === 'reading') renderReading();
-  if (location.hash !== `#view-${type}`) history.replaceState(null,"",`#view-${type}`);
-}
-function updateItem(url, action) {
-  const s = feedback.items[url] ||= {};
-  if (action === "read") {s.read=!s.read; if(s.read)s.rejected=false;}
-  if (action === "reject") {s.rejected=!s.rejected; if(s.rejected)s.read=false;}
-  if (action === "save") {
-    s.saved=!s.saved;
-    if(!s.saved){s.read=false;s.rejected=false;}
-    if(s.saved){s.savedAt=new Date().toISOString();s.snapshot=allItems(content).find(x=>x.url===url)||s.snapshot;}
-    document.getElementById('reading-status').innerHTML=s.saved?'已整理到 <button type="button" class="text-button" data-open-knowledge>我的知識庫 →</button>':'已移回閱讀列表，筆記仍保留。';
-  }
-  s.updatedAt = new Date().toISOString();
-  save(); Object.keys(categories).forEach(render); renderDeep(); renderReading(); renderKnowledge(); renderFeedback();
-}
-function renderDeep() {
-  const available = (content.deepDives || []).filter(item=>{const s=stateFor(item.url);return !s.saved && (historyView['deep-dives'] ? s.read||s.rejected : !s.read&&!s.rejected)});
-  const items=available.filter(item=>deepFilter==='all'||classify(item).outcome===deepFilter);
-  document.querySelector('[data-view="deep-dives"]').textContent=historyView['deep-dives']?'返回待閱讀':'查看已讀與其他內容';
-  document.querySelectorAll('[data-deep-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.deepFilter===deepFilter)));
-  document.getElementById('deep-list').innerHTML = items.length ? items.map(deepCard).join('') : '<div class="empty-state">目前沒有深度選題。</div>';
-  document.getElementById('deep-count').textContent = available.length;
-}
-async function copyFeedback() {
-  const all=[...content.posts,...content.podcasts,...content.news,...(content.deepDives || [])];
-  const lines=["Aiworks 資訊情報站回饋",`日期：${new Date().toLocaleDateString('zh-TW')}`,`總筆記：${feedback.generalNote || '（無）'}`];
-  for (const [url,s] of Object.entries(feedback.items)) {
-    if (!s.read && !s.rejected && !s.saved && !s.note?.trim()) continue;
-    const item=all.find(x=>x.url===url);
-    lines.push('',`${item?.title || item?.author || '內容'}｜${item?.date || ''}`,`狀態：${[s.read?'已讀':'',s.rejected?'沒幫助':'',s.saved?'收藏':''].filter(Boolean).join('、') || '有筆記'}`,`連結：${url}`,`筆記：${s.note || '（無）'}`);
-  }
-  try { await navigator.clipboard.writeText(lines.join('\n')); document.getElementById('save-status').textContent='回饋已複製，可貼到對話中'; }
-  catch { document.getElementById('save-status').textContent='瀏覽器未允許複製，筆記仍保存在這台裝置'; }
-}
-function download(name,text,type) {
-  const url=URL.createObjectURL(new Blob([text],{type}));
-  const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
-}
-function knowledgeId(url) { let hash=2166136261;for(const c of url)hash=Math.imul(hash^c.charCodeAt(0),16777619);return 'note-'+(hash>>>0).toString(36); }
-function openKnowledgeItem(url) {
-  knowledgeChapter='all';knowledgeQuery='';knowledgeOutcome='all';
-  document.getElementById('knowledge-search').value='';document.getElementById('knowledge-outcome').value='all';
-  activateTab('knowledge');
-  requestAnimationFrame(()=>{const target=document.getElementById(knowledgeId(url));target?.scrollIntoView({behavior:'smooth',block:'start'});target?.focus({preventScroll:true})});
-}
-function knowledgeCard(item,all) {
-  const related=relatedTo(item,all);
-  return `<article id="${knowledgeId(item.url)}" class="knowledge-card" tabindex="-1"><div class="knowledge-meta"><span>${esc(outcomeLabels[item.info.outcome])}</span><span>${esc(item.date || item.sourceDate || '')}</span></div><h3>${esc(itemTitle(item))}</h3><p class="knowledge-abstract">${esc(item.note.summary)}</p>${item.note.points.length?`<ul>${item.note.points.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>`:''}${item.note.limit?`<p class="knowledge-limit"><strong>資料限制</strong> ${esc(item.note.limit)}</p>`:''}${item.note.question?`<details class="knowledge-question"><summary>值得追問</summary><p>${esc(item.note.question)}</p></details>`:''}<div class="knowledge-sources">${item.note.sources.map(s=>link(s.url,s.label)).join('')}</div><div class="knowledge-taxonomy"><label>收進章節 <select data-reclassify="${esc(item.url)}" aria-label="調整 ${esc(itemTitle(item))} 的章節">${chapters.map(c=>`<option value="${c.id}" ${c.id===item.info.primary?'selected':''}>${esc(c.title)}</option>`).join('')}</select></label>${item.info.concepts.map(c=>`<span>${esc(c)}</span>`).join('')}</div>${related.length?`<div class="knowledge-related"><h4>相關筆記</h4>${related.map(r=>`<button type="button" data-related="${esc(r.item.url)}"><span>${esc(itemTitle(r.item))} ↗</span><small>${esc(r.reason)}</small></button>`).join('')}</div>`:''}${actions(item)}</article>`;
-}
-function renderKnowledge() {
-  const all=savedItems(content,feedback);
-  document.getElementById('knowledge-count').textContent=all.length;
-  document.getElementById('knowledge-summary').textContent=all.length?`${all.length} 篇收藏，隨新收藏持續歸類與連結。`:'讀到值得留下的內容，按收藏就會整理到這裡。';
-  const chapterCounts=Object.fromEntries(chapters.map(c=>[c.id,all.filter(x=>x.info.primary===c.id).length]));
-  document.getElementById('knowledge-nav').innerHTML=`<button data-chapter="all" aria-pressed="${knowledgeChapter==='all'}">全部收藏 <span>${all.length}</span></button>`+chapters.filter(c=>chapterCounts[c.id]||feedback.chapterNotes[c.id]).map(c=>`<button data-chapter="${c.id}" aria-pressed="${knowledgeChapter===c.id}">${esc(c.title)} <span>${chapterCounts[c.id]}</span></button>`).join('');
-  const query=knowledgeQuery.trim().toLocaleLowerCase();
-  const filtered=all.filter(x=>(knowledgeChapter==='all'||x.info.primary===knowledgeChapter)&&(knowledgeOutcome==='all'||x.info.outcome===knowledgeOutcome)&&(!query||[itemTitle(x),x.note.summary,...x.note.points,x.state.note,...x.info.concepts].join(' ').toLocaleLowerCase().includes(query)));
-  document.getElementById('knowledge-list').innerHTML=chapters.filter(c=>filtered.some(x=>x.info.primary===c.id)||(knowledgeChapter===c.id&&feedback.chapterNotes[c.id])).map(c=>`<section class="knowledge-chapter"><header><h2>${esc(c.title)}</h2><p>${esc(c.question)}</p></header><details class="chapter-notes"><summary>我的章節筆記</summary><textarea data-chapter-note="${c.id}" aria-label="${esc(c.title)}的章節筆記" placeholder="把這一組資料串成自己的觀點…">${esc(feedback.chapterNotes[c.id]||'')}</textarea></details>${filtered.filter(x=>x.info.primary===c.id).map(x=>knowledgeCard(x,all)).join('')}</section>`).join('') || `<div class="empty-state">${all.length?'沒有符合條件的收藏。':'收藏後會自動產生閱讀筆記與來源連結；既有收藏也會移入。'}</div>`;
-}
-async function init() {
-  try {
-    const response = await fetch('./content.json?v=20261003-2',{cache:'no-store'});
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    content = await response.json();
-    for(const item of allItems(content)){const s=stateFor(item.url);if(s.saved&&!s.snapshot)s.snapshot=item;}
-    save();
-    document.getElementById('edition-date').textContent = `內容更新 ${dateLabel(content.editionDate)}`;
-    document.getElementById('reading-notes').value = feedback.generalNote || '';
-    Object.keys(categories).forEach(render);
-    renderDeep();
-    renderReading();
-    renderKnowledge();
-    renderFeedback();
-    activateTab(location.hash.slice(1).replace(/^view-/,''));
-    requestAnimationFrame(()=>window.scrollTo(0,0));
-    window.addEventListener('hashchange',()=>activateTab(location.hash.slice(1).replace(/^view-/,'')));
-    document.querySelectorAll('.tabs button').forEach(tab=>tab.addEventListener('click',()=>{activateTab(tab.dataset.tab);window.scrollTo({top:0,behavior:'auto'})}));
-    document.querySelector('.tabs').addEventListener('keydown',event=>{
-      if(!['ArrowLeft','ArrowRight'].includes(event.key))return;
-      event.preventDefault(); const keys=['reading',...Object.keys(categories),'deep-dives','knowledge']; const shift=event.key==='ArrowRight'?1:-1;
-      activateTab(keys[(keys.indexOf(activeTab)+shift+keys.length)%keys.length],true);
-    });
-    document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{historyView[button.dataset.view]=!historyView[button.dataset.view];button.dataset.view==='deep-dives'?renderDeep():render(button.dataset.view)}));
-    document.querySelector('.content').addEventListener('click',event=>{const topic=event.target.closest('[data-topic]');if(topic){topicView[topic.dataset.topicTab]=topic.dataset.topic;render(topic.dataset.topicTab)}});
-    document.querySelector('.content').addEventListener('click',event=>{
-      const readingJump=event.target.closest('[data-open-reading]');if(readingJump){openReadingItem(readingJump.dataset.openReading);return;}
-      const readingTopic=event.target.closest('[data-reading-chapter]');if(readingTopic){readingChapter=readingTopic.dataset.readingChapter;renderReading();return;}
-      const video = event.target.closest('[data-video]');
-      if (video) {
-        video.closest('.podcast-media').innerHTML = `<iframe class="podcast-video" src="https://www.youtube-nocookie.com/embed/${esc(video.dataset.video)}?autoplay=1" title="${esc(video.dataset.videoTitle)} 影片" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
-        return;
-      }
-      const deep=event.target.closest('[data-deep-filter]');if(deep){deepFilter=deep.dataset.deepFilter;renderDeep();return;}
-      const jump=event.target.closest('[data-related]'); if(jump){openKnowledgeItem(jump.dataset.related);return;}
-      const chapter=event.target.closest('[data-chapter]');if(chapter){knowledgeChapter=chapter.dataset.chapter;renderKnowledge();return;}
-      const button=event.target.closest('[data-action]');
-      if(button)updateItem(button.dataset.url,button.dataset.action);
-    });
-    document.querySelector('.content').addEventListener('input',event=>{if(!event.target.matches('[data-note-url]'))return;const s=feedback.items[event.target.dataset.noteUrl] ||= {};s.note=event.target.value;s.updatedAt=new Date().toISOString();save();renderFeedback()});
-    document.getElementById('reading-search').addEventListener('input',event=>{readingQuery=event.target.value;renderReading()});
-    document.getElementById('reading-history').addEventListener('change',event=>{readingHistory=event.target.checked;renderReading()});
-    document.getElementById('reading-notes').addEventListener('input',event=>{feedback.generalNote=event.target.value;save()});
-    document.getElementById('copy-feedback').addEventListener('click',copyFeedback);
-    document.getElementById('reading-status').addEventListener('click',event=>{if(event.target.closest('[data-open-knowledge]'))activateTab('knowledge')});
-    document.getElementById('knowledge-search').addEventListener('input',event=>{knowledgeQuery=event.target.value;renderKnowledge()});
-    document.getElementById('knowledge-outcome').addEventListener('change',event=>{knowledgeOutcome=event.target.value;renderKnowledge()});
-    document.getElementById('knowledge-list').addEventListener('input',event=>{if(event.target.matches('[data-chapter-note]')){feedback.chapterNotes[event.target.dataset.chapterNote]=event.target.value;save()}});
-    document.getElementById('knowledge-list').addEventListener('change',event=>{if(event.target.matches('[data-reclassify]')){const state=feedback.items[event.target.dataset.reclassify];state.chapter=event.target.value;state.updatedAt=new Date().toISOString();save();renderKnowledge()}});
-    document.getElementById('export-notes').addEventListener('click',()=>download('aiworks-knowledge.md',exportMarkdown(content,feedback),'text/markdown;charset=utf-8'));
-    document.getElementById('export-backup').addEventListener('click',()=>download('aiworks-reading-backup.json',JSON.stringify({version:2,exportedAt:new Date().toISOString(),...feedback},null,2),'application/json'));
-    document.getElementById('import-backup').addEventListener('change',async event=>{try{const file=event.target.files[0];if(!file)return;feedback=mergeBackup(feedback,JSON.parse(await file.text()));save();Object.keys(categories).forEach(render);renderDeep();renderReading();renderKnowledge();renderFeedback();document.getElementById('reading-notes').value=feedback.generalNote||'';document.getElementById('knowledge-status').textContent='備份已合併，較新的紀錄與既有筆記已保留。'}catch(error){document.getElementById('knowledge-status').textContent='無法匯入：'+error.message}event.target.value=''});
-    window.addEventListener('storage',event=>{if(event.key!==storageKey||!event.newValue)return;try{feedback=JSON.parse(event.newValue);feedback.items||={};feedback.chapterNotes||={};Object.keys(categories).forEach(render);renderDeep();renderReading();renderKnowledge();renderFeedback()}catch{}});
-  } catch(error) {
-    console.error('Reading room unavailable',error);
-    document.getElementById('featured-list').innerHTML='<p class="empty-state">內容暫時無法載入，請稍後重新整理。</p>';
-  }
-}
+function noteBodyMarkup(body){const parts=body.split(/^## 中文筆記\s*$/m);if(parts.length===2&&/^(## English|## 英文)/m.test(parts[0]))return markdown(parts[0])+'<details class="knowledge-chinese"><summary>中文筆記</summary>'+markdown(parts[1])+'</details>';return markdown(body)}
+function connectionParagraphs(item,all){const explicit=relatedTo(item,all).filter(r=>r.score>=20);return explicit.slice(0,2).map(r=>`<p>${esc(r.reason)}。可對照 <button class="inline-link" data-related="${esc(r.item.url)}">${esc(itemTitle(r.item))}</button> 的筆記：${esc(r.item.note.summary)}</p>`).join('')}
+function knowledgeCard(item,all){const doc=localDocuments[item.url],en=item.knowledge?.englishNote||item.englishSummary||originalText(item),body=doc?.body||item.knowledge?.noteBody||'';return `<article id="${knowledgeId(item.url)}" class="knowledge-card" tabindex="-1"><div class="knowledge-meta"><span>${esc(outcomeLabels[item.info.outcome])}</span><span>${esc(item.date||item.sourceDate||'')}</span></div><h3>${esc(itemTitle(item))}</h3>${body?`<div class="note-body">${noteBodyMarkup(body)}</div>`:`${en?`<div class="knowledge-english" lang="en">${markdown(en)}</div>`:''}<details class="knowledge-chinese" ${en?'':'open'}><summary>中文筆記</summary><p>${esc(item.note.summary)}</p>${item.note.points.length?`<ul>${item.note.points.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>`:''}${item.note.limit?`<p class="evidence-limit">${esc(item.note.limit)}</p>`:''}</details>${connectionParagraphs(item,all)?`<div class="note-connections">${connectionParagraphs(item,all)}</div>`:''}`}<div class="knowledge-sources">${item.note.sources.map(s=>link(s.url,s.label)).join('')}</div><div class="knowledge-taxonomy"><label>章節 <select data-reclassify="${esc(item.url)}" aria-label="調整章節">${chapters.map(c=>`<option value="${c.id}" ${c.id===item.info.primary?'selected':''}>${esc(c.title)}</option>`).join('')}</select></label>${item.info.concepts.map(c=>`<span>${esc(c)}</span>`).join('')}${doc?`<a href="${esc(localBase)}/api/note/${esc(knowledgeId(item.url))}?download=1" class="text-button" data-download-note="${esc(item.url)}">Markdown ↗</a>`:''}</div>${actions(item)}</article>`}
+function renderKnowledge(){const opened=new Set([...document.querySelectorAll('#knowledge-list details[open]')].map(d=>(d.closest('.knowledge-card')?.id||d.closest('.knowledge-chapter')?.querySelector('h2')?.textContent)+'|'+d.querySelector('summary')?.textContent));const all=savedItems(content,feedback);document.getElementById('knowledge-count').textContent=all.length;const counts=Object.fromEntries(chapters.map(c=>[c.id,all.filter(x=>x.info.primary===c.id).length]));document.getElementById('knowledge-nav').innerHTML='<button data-chapter="all" aria-pressed="'+(knowledgeChapter==='all')+'">全部</button>'+chapters.filter(c=>counts[c.id]||feedback.chapterNotes[c.id]).map(c=>`<button data-chapter="${c.id}" aria-pressed="${knowledgeChapter===c.id}">${esc(c.title)}</button>`).join('');const q=knowledgeQuery.trim().toLowerCase();const items=all.filter(x=>(knowledgeChapter==='all'||x.info.primary===knowledgeChapter)&&(knowledgeOutcome==='all'||x.info.outcome===knowledgeOutcome)&&(!q||[itemTitle(x),x.note.summary,...x.note.points,x.state.note,...x.info.concepts,localDocuments[x.url]?.body].join(' ').toLowerCase().includes(q)));document.getElementById('knowledge-list').innerHTML=chapters.filter(c=>items.some(x=>x.info.primary===c.id)||knowledgeChapter===c.id&&feedback.chapterNotes[c.id]).map(c=>`<section class="knowledge-chapter"><h2>${esc(c.title)}</h2><details class="chapter-notes"><summary>章節筆記</summary><textarea data-chapter-note="${c.id}" aria-label="章節筆記">${esc(feedback.chapterNotes[c.id]||'')}</textarea></details>${items.filter(x=>x.info.primary===c.id).map(x=>knowledgeCard(x,all)).join('')}</section>`).join('')||'<div class="empty-state">沒有符合條件的筆記。</div>';document.querySelectorAll('#knowledge-list details').forEach(d=>{const key=(d.closest('.knowledge-card')?.id||d.closest('.knowledge-chapter')?.querySelector('h2')?.textContent)+'|'+d.querySelector('summary')?.textContent;if(opened.has(key))d.open=true})}
+function renderFeedback(){document.getElementById('feedback-list').innerHTML=Object.entries(feedback.items).filter(([,s])=>s.read||s.rejected||s.saved||s.note).map(([url,s])=>`<div class="feedback-item"><strong>${esc(itemTitle(allItems(content).find(x=>x.url===url)||s.snapshot||{url,title:url}))}</strong><span>${[s.read?'已讀':'',s.rejected?'沒幫助':'',s.saved?'收藏':''].filter(Boolean).join(' · ')}</span>${s.rejectReason?`<p>理由：${esc(s.rejectReason)}</p>`:''}${s.note?`<p>${esc(s.note)}</p>`:''}</div>`).join('')}
+function download(name,text,type){const url=URL.createObjectURL(new Blob([text],{type})),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+async function localRequest(path,body){const r=await fetch(localBase+path,{method:body?'POST':'GET',headers:{Authorization:'Bearer '+localToken,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{}),cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);return r.json()}
+async function syncLocal(write=false){if(!localToken)return;if(syncPending){if(write)syncAgain=true;return}syncPending=true;try{const response=await localRequest('/api/library',write?feedback:undefined);const active=document.activeElement;if(!active?.matches('textarea,input,select')){const before=JSON.stringify(feedback);feedback=mergeBackup(feedback,response.feedback);feedback.chapterNotes={...feedback.chapterNotes,...response.feedback.chapterNotes};feedback.generalNote=response.feedback.generalNote??feedback.generalNote;document.getElementById('reading-notes').value=feedback.generalNote;const changed=before!==JSON.stringify(feedback);const docsChanged=JSON.stringify(localDocuments)!==JSON.stringify(response.documents);localDocuments=response.documents;saveLocalStorage();if(changed)renderAll();else if(docsChanged)renderKnowledge()}else localDocuments=response.documents;document.getElementById('local-status').textContent='本機已連結';document.getElementById('refresh-local').hidden=false;document.getElementById('connect-local').textContent='本機筆記'}catch{document.getElementById('local-status').textContent='本機暫時未連線'}finally{syncPending=false;if(syncAgain){syncAgain=false;syncLocal(true)}}}
+async function sendInbox(){if(location.hostname!=='aa0979090122-coder.github.io')return false;try{const r=await fetch('http://127.0.0.1:8766/api/inbox',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(feedback)});if(!r.ok)throw Error();document.getElementById('local-status').textContent='收藏已存到本機';return true}catch{document.getElementById('local-status').textContent='收藏已存於瀏覽器';return false}}
+async function connectLocal(){if(localToken){await syncLocal();activateTab('knowledge');return}if(await sendInbox())location.href='http://127.0.0.1:8766/#view-knowledge';else document.getElementById('local-status').innerHTML='<a href="http://127.0.0.1:8766/" target="_blank" rel="noopener">開啟本機版 ↗</a>'}
+async function initLocal(){if(['127.0.0.1','localhost'].includes(location.hostname)){try{const r=await fetch('/api/bootstrap',{cache:'no-store'});if(!r.ok)return;const data=await r.json();localBase=location.origin;localToken=data.token;await syncLocal(true);pollTimer=setInterval(()=>syncLocal(),5000)}catch{}}else await sendInbox()}
+async function init(){try{const r=await fetch('./content.json?v=20261003-4',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);content=await r.json();for(const item of allItems(content)){const s=stateFor(item.url);if(s.saved&&!s.snapshot)s.snapshot=item}document.getElementById('edition-date').textContent='更新 '+dateLabel(content.editionDate);document.getElementById('reading-notes').value=feedback.generalNote||'';
+ document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{activateTab(b.dataset.tab);window.scrollTo(0,0)}));document.querySelector('.tabs').addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();const keys=['x-posts','podcasts','news','deep-dives','knowledge'];activateTab(keys[(keys.indexOf(activeTab)+(e.key==='ArrowRight'?1:-1)+keys.length)%keys.length],true)});
+ document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{historyView[b.dataset.view]=!historyView[b.dataset.view];b.dataset.view==='deep-dives'?renderDeep():render(b.dataset.view)}));
+ document.querySelector('.content').addEventListener('click',async e=>{const edit=e.target.closest('[data-edit-reason]');if(edit){openReject(edit.dataset.editReason,edit);return}const a=e.target.closest('[data-action]');if(a){if(a.dataset.action==='reject'&&!stateFor(a.dataset.url).rejected)openReject(a.dataset.url,a);else updateItem(a.dataset.url,a.dataset.action);return}const v=e.target.closest('[data-video]');if(v){v.closest('.podcast-media').innerHTML=`<iframe class="podcast-video" src="https://www.youtube-nocookie.com/embed/${esc(v.dataset.video)}?autoplay=1" title="${esc(v.dataset.videoTitle)}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;return}const d=e.target.closest('[data-deep-filter]');if(d){deepFilter=d.dataset.deepFilter;renderDeep();return}const j=e.target.closest('[data-related]');if(j){openKnowledgeItem(j.dataset.related);return}const sj=e.target.closest('[data-source-jump]');if(sj){openSource(sj.dataset.sourceJump);return}const c=e.target.closest('[data-chapter]');if(c){knowledgeChapter=c.dataset.chapter;renderKnowledge();return}const dn=e.target.closest('[data-download-note]');if(dn){e.preventDefault();const doc=localDocuments[dn.dataset.downloadNote];if(doc)download(knowledgeId(dn.dataset.downloadNote)+'.md',doc.markdown,'text/markdown;charset=utf-8')}});
+ document.querySelector('.content').addEventListener('input',e=>{if(e.target.matches('[data-note-url]')){const s=feedback.items[e.target.dataset.noteUrl]||={};s.note=e.target.value;s.updatedAt=new Date().toISOString();save();renderFeedback()}if(e.target.matches('[data-chapter-note]')){feedback.chapterNotes[e.target.dataset.chapterNote]=e.target.value;feedback.chapterNotesUpdatedAt||={};feedback.chapterNotesUpdatedAt[e.target.dataset.chapterNote]=new Date().toISOString();save()}});
+ document.getElementById('reject-form').addEventListener('submit',e=>{e.preventDefault();const reason=document.getElementById('reject-reason').value.trim();if(!reason){document.getElementById('reject-error').textContent='請寫下理由';return}const action=stateFor(rejectUrl).rejected?'reason':'reject';if(updateItem(rejectUrl,action,reason))document.getElementById('reject-dialog').close()});document.getElementById('cancel-reject').addEventListener('click',()=>document.getElementById('reject-dialog').close());document.getElementById('reject-dialog').addEventListener('close',()=>{if(rejectTrigger?.isConnected)rejectTrigger.focus()});
+ document.getElementById('social-search').addEventListener('input',e=>{socialQuery=e.target.value;render('x-posts')});document.getElementById('knowledge-search').addEventListener('input',e=>{knowledgeQuery=e.target.value;renderKnowledge()});document.getElementById('knowledge-outcome').addEventListener('change',e=>{knowledgeOutcome=e.target.value;renderKnowledge()});document.getElementById('knowledge-list').addEventListener('change',e=>{if(e.target.matches('[data-reclassify]')){const s=feedback.items[e.target.dataset.reclassify];s.chapter=e.target.value;s.updatedAt=new Date().toISOString();save();renderKnowledge()}});
+ document.getElementById('reading-notes').addEventListener('input',e=>{feedback.generalNote=e.target.value;feedback.generalNoteUpdatedAt=new Date().toISOString();save()});document.getElementById('copy-feedback').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(JSON.stringify(feedback,null,2));document.getElementById('save-status').textContent='已複製'}catch{document.getElementById('save-status').textContent='未能複製'}});document.getElementById('reading-status').addEventListener('click',e=>{if(e.target.closest('[data-open-knowledge]'))activateTab('knowledge')});document.getElementById('export-notes').addEventListener('click',()=>download('knowledge.md',exportMarkdown(content,feedback,localDocuments),'text/markdown;charset=utf-8'));document.getElementById('export-backup').addEventListener('click',()=>download('reading-backup.json',JSON.stringify({version:3,...feedback},null,2),'application/json'));document.getElementById('import-backup').addEventListener('change',async e=>{try{const f=e.target.files[0];if(!f)return;feedback=mergeBackup(feedback,JSON.parse(await f.text()));save();renderAll();document.getElementById('knowledge-status').textContent='已合併'}catch{document.getElementById('knowledge-status').textContent='無法匯入'}e.target.value=''});
+ document.getElementById('connect-local').addEventListener('click',connectLocal);document.getElementById('refresh-local').addEventListener('click',()=>syncLocal()); window.addEventListener('storage',e=>{if(e.key===storageKey&&e.newValue){try{feedback={...feedback,...JSON.parse(e.newValue)};renderAll()}catch{}}});window.addEventListener('hashchange',()=>activateTab(location.hash.slice(1).replace(/^view-/,'')));saveLocalStorage();renderAll();activateTab(location.hash.slice(1).replace(/^view-/,''));await initLocal();
+ }catch(e){console.error(e);document.getElementById('posts-list').innerHTML='<p class="empty-state">內容載入失敗，請重新整理。</p>'}}
 init();

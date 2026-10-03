@@ -23,7 +23,8 @@
           "https://x.com/JamesC_Alpha/status/2105404282132697542"
         ]
       },
-      "title": "Mollick：個人 Agent 談判，可能增加企業客服的工作量"
+      "title": "Mollick：個人 Agent 談判，可能增加企業客服的工作量",
+      "publishedAt": "2026-09-30T18:52:15.129000Z"
     },
     {
       "author": "Aaron Levie",
@@ -43,7 +44,8 @@
           "https://x.com/Avery_Coree/status/2105356339501310390"
         ]
       },
-      "title": "Levie：企業 Agent 部署需要持續處理的工作"
+      "title": "Levie：企業 Agent 部署需要持續處理的工作",
+      "publishedAt": "2026-09-30T17:49:51.082000Z"
     },
     {
       "author": "Ethan Mollick",
@@ -54,7 +56,8 @@
       "kind": "summary",
       "zh": "他回顧 OpenAI 從 Plugins、GPT Store 到 Apps 的第三方生態，質疑產品反覆推出後又轉向。這是評論者的觀察，適合用來思考企業對平台延續性的疑慮。",
       "topic": "trend",
-      "title": "Mollick：平台反覆轉向，企業如何看待延續性"
+      "title": "Mollick：平台反覆轉向，企業如何看待延續性",
+      "publishedAt": "2026-09-29T21:11:08.295000Z"
     },
     {
       "author": "OpenAI Developers",
@@ -65,7 +68,8 @@
       "kind": "translation",
       "zh": "OpenAI 宣布 Decisions API 有限預覽，讓應用能按預先定義的問題與選項分類內容、分流請求或決定 Agent 下一步。現階段仍是有限預覽。",
       "topic": "product",
-      "title": "Decisions API 有限預覽：依固定選項分類與分流"
+      "title": "Decisions API 有限預覽：依固定選項分類與分流",
+      "publishedAt": "2026-09-29T18:34:34.957000Z"
     },
     {
       "author": "OpenAI",
@@ -77,7 +81,8 @@
       "zh": "OpenAI 宣稱 GPT-6.1 Sol 的能力接近 Astra，價格約為五分之一。這是供應商的價格與效能主張，採購時仍應以自己的任務測試。",
       "topic": "product",
       "originalIsFull": true,
-      "title": "GPT-6.1 Sol 的價格與效能：採購仍需自身任務測試"
+      "title": "GPT-6.1 Sol 的價格與效能：採購仍需自身任務測試",
+      "publishedAt": "2026-09-29T17:26:16.725000Z"
     },
     {
       "author": "Andrew Ng",
@@ -97,7 +102,8 @@
           "https://x.com/leopardracer/status/2104967707854581893"
         ]
       },
-      "title": "Andrew Ng：員工培訓需要更具體的能力評量"
+      "title": "Andrew Ng：員工培訓需要更具體的能力評量",
+      "publishedAt": "2026-09-29T16:11:18.737000Z"
     },
     {
       "author": "Ethan Mollick",
@@ -118,7 +124,8 @@
           "https://x.com/johnroodepic/status/2104978451652649319"
         ]
       },
-      "title": "Mollick：Agent 產品演進仍有不確定性"
+      "title": "Mollick：Agent 產品演進仍有不確定性",
+      "publishedAt": "2026-09-29T16:05:01.133000Z"
     },
     {
       "author": "ClaudeDevs",
@@ -129,7 +136,8 @@
       "kind": "translation",
       "zh": "ClaudeDevs 分享讓 Claude Code 協助設計評測，並依評測結果反覆改善應用的方法。重點在建立可檢驗的改善循環。",
       "topic": "product",
-      "title": "Claude Code：依評測結果反覆改善應用"
+      "title": "Claude Code：依評測結果反覆改善應用",
+      "publishedAt": "2026-09-28T20:54:19.669000Z"
     },
     {
       "author": "Aaron Levie",
@@ -140,7 +148,8 @@
       "kind": "summary",
       "zh": "Box 在自己的複雜工作評測中，報告 Sonnet 5.5 的整體表現、速度和 token 使用有改善，並列出金融、法律、生命科學等任務的例子。數字來自 Box 自家測試，應按測試範圍解讀。",
       "topic": "trend",
-      "title": "Box 的 Sonnet 5.5 測試：表現、速度與 token 使用"
+      "title": "Box 的 Sonnet 5.5 測試：表現、速度與 token 使用",
+      "publishedAt": "2026-09-28T19:05:16.269000Z"
     },
     {
       "author": "Aaron Levie",
@@ -151,7 +160,8 @@
       "kind": "summary",
       "zh": "他推演 Agent 代替使用者做選擇後，原本靠轉換摩擦留住顧客的業務可能面臨更激烈競爭；另一些市場則可能因購買流程變簡單而擴大。這是前瞻推論。",
       "topic": "trend",
-      "title": "Levie：Agent 代替顧客選擇，可能改變市場競爭"
+      "title": "Levie：Agent 代替顧客選擇，可能改變市場競爭",
+      "publishedAt": "2026-09-27T23:20:52.802000Z"
     },
     {
       "author": "Aaron Levie",
@@ -162,7 +172,8 @@
       "kind": "summary",
       "zh": "Levie 主張企業需要持續評測 Agent 在自身環境裡的工作，才能判斷哪裡有效、哪裡退步，以及模型更新後是否仍能交付結果。這是他對企業評測需求的觀點。",
       "topic": "trend",
-      "title": "Levie：模型升級後，仍需持續評測工作成果"
+      "title": "Levie：模型升級後，仍需持續評測工作成果",
+      "publishedAt": "2026-09-25T23:33:49.340000Z"
     },
     {
       "author": "ClaudeDevs",
@@ -173,7 +184,8 @@
       "kind": "summary",
       "zh": "ClaudeDevs 宣布新的外掛提交入口，並稱 Claude 產品中的 MCP 使用量今年成長 110 倍。可以觀察企業系統整合需求，但成長倍數缺少基期。",
       "topic": "product",
-      "title": "Claude 外掛入口更新：MCP 使用量與基期限制"
+      "title": "Claude 外掛入口更新：MCP 使用量與基期限制",
+      "publishedAt": "2026-09-25T20:06:55.920000Z"
     },
     {
       "author": "Boris Cherny",
@@ -184,7 +196,8 @@
       "kind": "summary",
       "zh": "Boris Cherny 分享自己如何用內部 Agent 處理程式修改、資料分析和回饋修正。他描述的比例是個人工作方式，並列出具體指令；不能直接當作一般企業的平均成效。",
       "topic": "trend",
-      "title": "Boris Cherny 的個人 Agent 工作方式與回饋修正"
+      "title": "Boris Cherny 的個人 Agent 工作方式與回饋修正",
+      "publishedAt": "2026-09-25T17:34:34.632000Z"
     },
     {
       "author": "Decagon · Rituals",
@@ -210,7 +223,8 @@
           "text": "Decagon 與 Rituals 稱，兩個月後擴至 19 國、15 種語言；黑色星期五至 12 月 26 日旺季，在每日最多約 9,000 件需求下沒有待處理積案。這是雙方公開的單一案例，沒有公布獨立對照或導入成本。"
         }
       ],
-      "title": "Rituals：前次 chatbot 經驗如何影響新一輪導入"
+      "title": "Rituals：前次 chatbot 經驗如何影響新一輪導入",
+      "publishedAt": "2026-09-21T16:21:48.380000Z"
     },
     {
       "author": "Cresta · Home Care Delivered",
@@ -236,7 +250,8 @@
           "text": "Cresta 報告兩個月內，地址確認行為依規則追蹤提高 34%，整體客服表現提高近 10%；部分問題行為最多下降 90%。指標與改善幅度來自供應商和客戶訪談，原文沒有提供獨立對照組。"
         }
       ],
-      "title": "Home Care Delivered：客服評分如何接上教練回饋"
+      "title": "Home Care Delivered：客服評分如何接上教練回饋",
+      "publishedAt": "2026-09-15T18:31:03.230000Z"
     },
     {
       "author": "Romain Huet",
@@ -247,7 +262,8 @@
       "kind": "summary",
       "zh": "Romain Huet 訪談多家公司的 AI 團隊，展示 GPU 核心最佳化、電腦操作工作流程與設計畫面等應用。影片中的實例可當作尋找訪談對象與案例的線索。",
       "topic": "trend",
-      "title": "Romain Huet：企業 AI 應用訪談與後續追查線索"
+      "title": "Romain Huet：企業 AI 應用訪談與後續追查線索",
+      "publishedAt": "2026-09-11T16:18:38.321000Z"
     },
     {
       "author": "Jeffrey Lee Funk · Canva",
@@ -283,7 +299,8 @@
           "text": "這是成本與擴張決策的失敗案例，不能據此推論所有 Canva AI 功能的使用量或獲利情況；貼文作者的產業推論也不是 Canva 官方結論。"
         }
       ],
-      "title": "Canva：單次 AI 任務成本與擴大供應的取捨"
+      "title": "Canva：單次 AI 任務成本與擴大供應的取捨",
+      "publishedAt": "2026-08-12T23:38:33.081000Z"
     },
     {
       "author": "OpenAI · 內部導入",
@@ -295,7 +312,8 @@
       "topic": "trend",
       "evidenceUrl": "https://openai.com/index/how-agents-are-transforming-work/",
       "evidenceLabel": "OpenAI 內部使用研究",
-      "title": "OpenAI 內部 Codex 採用：token 占比能說明什麼"
+      "title": "OpenAI 內部 Codex 採用：token 占比能說明什麼",
+      "publishedAt": "2026-06-25T17:23:08.650000Z"
     },
     {
       "author": "Decagon · ClassPass",
@@ -321,7 +339,8 @@
           "text": "Decagon 稱聊天服務由每週 5 天、每天 16 小時擴至全天候；客戶在活動中談到推出時的自助解決率高於預估。供應商網站另列成本與轉接率改善，但沒有公開完整基準和外部驗證。"
         }
       ],
-      "title": "ClassPass：客服量波動、系統串接與 Agent 評選"
+      "title": "ClassPass：客服量波動、系統串接與 Agent 評選",
+      "publishedAt": "2026-05-14T19:49:46.394000Z"
     },
     {
       "author": "a16z",
@@ -332,7 +351,8 @@
       "kind": "summary",
       "zh": "Marc Andreessen 的觀點是，技術可行不代表企業和個人的行為會立刻改變。現有工作方式與制度有慣性，因此 AI 採用需要時間；他同時擔心採用過慢會拖累成長。",
       "topic": "trend",
-      "title": "Andreessen：既有制度如何影響 AI 採用速度"
+      "title": "Andreessen：既有制度如何影響 AI 採用速度",
+      "publishedAt": "2026-04-10T00:10:25.534000Z"
     },
     {
       "author": "Ethan Mollick",
@@ -343,7 +363,8 @@
       "kind": "translation",
       "zh": "現在是 AI 實驗室設計介面的重要時刻：目標應是用 AI 增強人的工作，而非用 AI 取代工作。聊天機器人大多是輔助工具，需要人參與工作。Agent 的工作方式仍在形成，也可以把人放在中心。",
       "topic": "trend",
-      "title": "Mollick：Agent 介面如何保留人的參與"
+      "title": "Mollick：Agent 介面如何保留人的參與",
+      "publishedAt": "2026-04-07T14:16:23.713000Z"
     },
     {
       "author": "Aaron Levie · Box Agent",
@@ -376,7 +397,8 @@
           "text": "原貼分享的是 Box Agent 的開發經驗，沒有量化各步驟移除後的改善幅度；不能把它直接套成所有 Agent 應簡化架構的規則。"
         }
       ],
-      "title": "Box Agent：模型升級後，原有補丁如何限制品質"
+      "title": "Box Agent：模型升級後，原有補丁如何限制品質",
+      "publishedAt": "2026-04-03T05:03:35.737000Z"
     },
     {
       "author": "Aaron Levie",
@@ -387,7 +409,115 @@
       "kind": "summary",
       "zh": "Box 執行長 Aaron Levie 認為，Agent 若能持續並行工作，既有的搜尋、檔案、付款與沙盒系統都要重新考慮速度、權限和規模。這篇是在談底層條件，並非宣稱企業現在都已完成這種轉型。",
       "topic": "trend",
-      "title": "Levie：並行 Agent 對系統速度、權限和規模的要求"
+      "title": "Levie：並行 Agent 對系統速度、權限和規模的要求",
+      "publishedAt": "2026-03-30T04:09:13.348000Z"
+    },
+    {
+      "author": "Aaron Levie",
+      "handle": "@levie",
+      "date": "2026-08-26",
+      "url": "https://x.com/levie/status/2092466424694649066",
+      "title": "Levie：模型能力如何接上企業的實際工作？",
+      "excerpt": "there’s a wide gap between the AI models and the underlying workflows of an enterprise",
+      "zh": "Levie 認為，企業 AI 應用仍需處理產業情境、流程調整、模型編排、業務系統串接、使用者介面與評估。這篇可對照具體導入案例，理解應用公司的工作範圍；它是策略觀點，未提供成效數據。",
+      "topic": "trend",
+      "highLevel": true,
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "adoption",
+          "market"
+        ],
+        "concepts": [
+          "流程重設",
+          "模型編排",
+          "企業情境"
+        ],
+        "outcome": "perspective",
+        "related": [
+          {
+            "url": "https://www.linkedin.com/posts/pneppalli_agentic-ai-adoption-is-on-fire-at-uber-and-activity-7480367291851833344-6Lhm",
+            "reason": "Levie 說明應用層需要接上企業情境，Uber 的跨職能 Pods 提供現場協作的實例"
+          }
+        ]
+      },
+      "replyObservation": {
+        "count": 3,
+        "summary": "三則完整可見回覆分別提到企業內部也需要有人推動改變、例外處理的難度，以及模型更新快但流程調整慢。這些是讀者觀點，未提供可驗證的導入數據。",
+        "checkedAt": "2026-10-03",
+        "urls": [
+          "https://x.com/brianmcgrath/status/2092558656784978343",
+          "https://x.com/sebuzdugan/status/2092525222603722834",
+          "https://x.com/ajs6888/status/2092507444157222930"
+        ]
+      },
+      "checkedAt": "2026-10-03",
+      "publishedAt": "2026-08-26T04:17:26.450000Z"
+    },
+    {
+      "author": "Aaron Levie",
+      "handle": "@levie",
+      "date": "2026-08-12",
+      "url": "https://x.com/levie/status/2087385493684335064",
+      "title": "Levie：AI 能力提升後，現場導入工程仍有哪些工作？",
+      "excerpt": "the customer’s business process has to change to work with agents",
+      "zh": "Levie 討論 Forward Deployed Engineer 為何仍需要進入客戶現場：業務流程、客製化、持續評估與模型更新會一起變動；能力進步後，企業也可能交付更複雜的流程。可讀作導入工作的拆解，尚不能證明每家公司都需要相同配置。",
+      "topic": "trend",
+      "highLevel": true,
+      "knowledge": {
+        "primary": "adoption",
+        "themes": [
+          "adoption",
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "現場導入工程",
+          "持續評估",
+          "流程重設"
+        ],
+        "outcome": "perspective",
+        "related": [
+          {
+            "url": "https://a16z.com/podcast/how-enterprise-ai-really-gets-deployed/",
+            "reason": "兩份資料都討論企業 AI 的實際部署工作，Podcast 可補充導入方式的訪談脈絡"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-03",
+      "publishedAt": "2026-08-12T03:47:38.098000Z"
+    },
+    {
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "url": "https://x.com/emollick/status/2106097018129227918",
+      "date": "2026-10-03",
+      "publishedAt": "2026-10-02T19:00:33.169000Z",
+      "title": "Mollick：主管理解 AI，組織調整仍需要時間",
+      "excerpt": "They are absolutely getting AI. But changing a company is a longer process.",
+      "zh": "Mollick 提醒，已有許多主管理解業務與 AI、也能動手做應用；公司整體改變仍需要較長時間。這個觀點可對照企業採用報告，區分個人開始使用工具與組織重設流程。貼文沒有提供採用率或轉型時間的測量。",
+      "topic": "trend",
+      "highLevel": true,
+      "checkedAt": "2026-10-03",
+      "knowledge": {
+        "primary": "adoption",
+        "themes": [
+          "adoption",
+          "workflow"
+        ],
+        "concepts": [
+          "組織採用",
+          "流程重設"
+        ],
+        "outcome": "perspective",
+        "related": [
+          {
+            "url": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
+            "reason": "Mollick 討論個人理解與組織改變的時間差；BCG 員工問卷可補充工作安排與策略指導的資料"
+          }
+        ]
+      }
     }
   ],
   "podcasts": [
@@ -987,7 +1117,9 @@
           }
         ]
       },
-      "checkedAt": "2026-10-03"
+      "checkedAt": "2026-10-03",
+      "englishSummary": "Chatham breaks trade verification into required inputs, evidence collection and human decisions. Its early timing results need to be read alongside quality checks and the cost of expert review.",
+      "originalTitle": ""
     },
     {
       "type": "研究與報告 · 優先讀",
@@ -1035,7 +1167,9 @@
           }
         ]
       },
-      "checkedAt": "2026-10-03"
+      "checkedAt": "2026-10-03",
+      "englishSummary": "Shopify builds repeatable shopping-agent tests around realistic store environments. The approach highlights environment fidelity and evaluation coverage before exposing agents to live customers.",
+      "originalTitle": ""
     },
     {
       "type": "企業導入實例 · 優先讀",
@@ -1069,7 +1203,9 @@
           "人工校準"
         ],
         "outcome": "case"
-      }
+      },
+      "englishSummary": "Uber describes short collaborative deployments of AI engineers into business teams. The useful question is how teams select problems, work with process owners and decide what can move beyond a prototype.",
+      "originalTitle": ""
     },
     {
       "type": "企業實例 · 成本與規模",
@@ -1101,7 +1237,9 @@
           "生產力衡量"
         ],
         "outcome": "case"
-      }
+      },
+      "englishSummary": "Uber examines the cost of running engineering agents at greater scale. Model routing, caching and workload-level accounting help explain costs that aggregate usage totals can hide.",
+      "originalTitle": ""
     },
     {
       "type": "市場調查 · 優先讀",
@@ -1134,7 +1272,9 @@
           "經濟價值"
         ],
         "outcome": "research"
-      }
+      },
+      "englishSummary": "McKinsey examines enterprise AI adoption and reported value. Read the survey definitions and deployment stages before comparing these results with individual case studies or employee time savings.",
+      "originalTitle": ""
     },
     {
       "type": "市場報告 · 指標比較",
@@ -1171,7 +1311,9 @@
           "生產力衡量"
         ],
         "outcome": "research"
-      }
+      },
+      "englishSummary": "The AI Index collects evidence on adoption and economic change. Broad usage indicators and early agent deployments describe different levels of maturity; the report provides context for individual company cases.",
+      "originalTitle": ""
     },
     {
       "type": "企業導入實例 · 衡量方法",
@@ -1203,7 +1345,9 @@
           "評估與現場落差"
         ],
         "outcome": "case"
-      }
+      },
+      "englishSummary": "Wayfair evaluates AI outputs against expert decisions and data-quality requirements. Human agreement is tied to a particular task and validation process, rather than serving as a universal accuracy measure.",
+      "originalTitle": ""
     },
     {
       "type": "失敗與修正 · 優先讀",
@@ -1242,7 +1386,9 @@
           "url": "https://shopify.engineering/fine-tuning-agent-shopify-flow"
         }
       ],
-      "checkedAt": "2026-10-02"
+      "checkedAt": "2026-10-02",
+      "englishSummary": "Shopify reports an agent that performed well in offline evaluation but had weaker adoption in production. The case connects model evaluation with usability, workflow fit and real user behavior.",
+      "originalTitle": ""
     },
     {
       "type": "企業實作 · 持續改善",
@@ -1276,7 +1422,9 @@
           "url": "https://shopify.engineering/sidekicks-continual-learning-loop"
         }
       ],
-      "checkedAt": "2026-10-02"
+      "checkedAt": "2026-10-02",
+      "englishSummary": "Shopify describes collecting failures and turning them into further evaluation and improvement. The learning loop connects real interactions, testing and subsequent agent changes.",
+      "originalTitle": ""
     },
     {
       "type": "研究反例 · 需連同更新閱讀",
@@ -1308,7 +1456,9 @@
           "url": "https://metr.org/blog/2026-02-24-uplift-update/"
         }
       ],
-      "checkedAt": "2026-10-02"
+      "checkedAt": "2026-10-02",
+      "englishSummary": "METR revisits the challenge of measuring AI productivity. Research design, task selection and changing tool usage affect what a measured time difference can tell us.",
+      "originalTitle": ""
     },
     {
       "type": "失敗與修正 · 代理權限",
@@ -1341,7 +1491,9 @@
           "url": "https://www.anthropic.com/engineering/how-we-contain-claude"
         }
       ],
-      "checkedAt": "2026-10-02"
+      "checkedAt": "2026-10-02",
+      "englishSummary": "Anthropic describes containment for coding agents, including where approval and sandbox boundaries can fail. The discussion connects tool access with specific failure paths and mitigations.",
+      "originalTitle": ""
     },
     {
       "type": "企業年報 · 價值衡量",
@@ -1375,7 +1527,212 @@
           "url": "https://www.dbs.com/annualreports/2025/ceo-reflections.html"
         }
       ],
-      "checkedAt": "2026-10-02"
+      "checkedAt": "2026-10-02",
+      "englishSummary": "DBS places reported AI benefits within its broader operating and performance framework. Annual-report figures provide management context but need careful attribution when assessing AI-specific returns.",
+      "originalTitle": ""
+    },
+    {
+      "url": "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
+      "date": "2026-06-03",
+      "sourceDate": "2026 年 6 月 3 日",
+      "source": "Spotify Engineering",
+      "type": "企業工程實作",
+      "originalTitle": "Scaling Developer Experience to Teams and Agents at Spotify",
+      "title": "Spotify：Agent 寫得更快後，審查與團隊協調如何跟上？",
+      "englishSummary": "Spotify combines its established maintenance orchestration with coding agents, a component catalog and standardized engineering practices. Its account shifts attention toward review capacity and decisions that require people. The maintenance PR total includes earlier automation; it should not be read as a count of AI-generated changes.",
+      "lead": "Spotify 將既有維護系統接上 coding agent，並用元件目錄、標準化技術棧與測試降低代理找資料及改程式的難度。團隊也開始處理審查量與人工決策的新瓶頸。",
+      "takeaways": [
+        "Fleetshift 先負責找目標、排程與追蹤；Honk 在容器內執行代理，接上建置與測試。自動化已有長期基礎，文中逾 250 萬筆維護 PR 包含更早的自動化。",
+        "Backstage 元件目錄、共用技術棧與規則提供可查找的上下文；公司自述，異質性高的程式庫使代理較難穩定工作。",
+        "公司回報 AI 採用與 PR 頻率增加；下一步要觀察審查、錯誤與人工決策，才能判斷產出增加是否改善整體交付。"
+      ],
+      "caveat": "企業自述，沒有獨立對照或完整缺陷與覆核成本。維護 PR 總數不能全部歸因於 AI。",
+      "knowledge": {
+        "primary": "scaling",
+        "themes": [
+          "scaling",
+          "workflow",
+          "governance"
+        ],
+        "concepts": [
+          "工程標準化",
+          "審查瓶頸",
+          "Agent 編排"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://blog.cloudflare.com/ai-code-review/",
+            "reason": "Spotify 說明產出增加後的審查瓶頸，Cloudflare 提供依風險分配審查工作的具體做法"
+          },
+          {
+            "url": "https://www.uber.com/gb/en/blog/efficient-software-factory/",
+            "reason": "兩者都討論工程代理規模化；Spotify 著重標準與協調，Uber 著重成本拆解"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-03",
+      "highLevel": true
+    },
+    {
+      "url": "https://blog.cloudflare.com/ai-code-review/",
+      "date": "2026-04-20",
+      "sourceDate": "2026 年 4 月 20 日",
+      "source": "Cloudflare Engineering",
+      "type": "企業工程實作",
+      "originalTitle": "Orchestrating AI Code Review at scale",
+      "title": "Cloudflare：依風險分配 Agent 審查，減少無用建議與等待",
+      "englishSummary": "Cloudflare routes code changes to different review tiers, then consolidates findings into one decision. Its system filters speculative suggestions and reuses earlier review context. Operational counts describe throughput and overrides, but do not establish how many defects were prevented.",
+      "lead": "Cloudflare 的初版 AI 審查產生大量空泛建議。後續把工作拆成專項審查、風險分級與集中判斷，並讓重審沿用上次發現，避免每次重新檢查。",
+      "takeaways": [
+        "依修改範圍與安全敏感性決定審查組合；小改動減少代理數與推理成本，重要變更才執行完整審查。",
+        "集中判斷會合併重複問題、查證不確定的發現並移除空泛建議；重審追蹤已修正問題與人的回覆。",
+        "2026/3/10–4/9 的內部紀錄涵蓋 5,169 個倉庫、48,095 筆 merge request；審查時間中位數 3 分 39 秒。"
+      ],
+      "caveat": "數據來自公司內部紀錄。發現數與人工 override 比例不能直接證明缺陷減少或判斷準確率。",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "scaling",
+          "governance"
+        ],
+        "concepts": [
+          "審查瓶頸",
+          "風險分級",
+          "增量驗證"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
+            "reason": "Cloudflare 的風險分級審查可對照 Spotify 提到的產出增加與審查瓶頸"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-03",
+      "highLevel": true
+    },
+    {
+      "url": "https://www.bcg.com/publications/2026/the-formula-for-agentic-ai-value",
+      "date": "2026-09-30",
+      "sourceDate": "2026 年 9 月 30 日",
+      "source": "BCG",
+      "type": "研究報告",
+      "originalTitle": "The Formula for Agentic AI Value",
+      "title": "BCG Applied AI Index：企業如何定義 AI 價值與 Agent 控制？",
+      "englishSummary": "BCG surveys more than 1,300 senior executives across over 20 sectors. It associates coherent programs and financial measurement with greater reported AI value, while finding limited deployment of a complete set of agent controls. These are survey relationships, not evidence that one intervention caused the difference.",
+      "lead": "BCG 將策略、執行能力與企業回報的 AI 價值一起分析。可讀的重點是衡量方式、跨部門計畫與 Agent 控制的成熟度。",
+      "takeaways": [
+        "樣本為逾 1,300 位高階主管、涵蓋 20 多個產業；受訪者回報的價值與 BCG 成熟度分組須一起讀。",
+        "最成熟組的 95% 使用損益或 KPI 等代理指標衡量 AI；直接追蹤損益的組別回報較高價值，尚不能證明因果。",
+        "報告指出只有 5% 已部署完整的關鍵 Agent 控制；2030 年自主程度與價值占比是受訪者預期。"
+      ],
+      "caveat": "主管問卷與 BCG 分組分析；衡量定義、組別差異與未來預期不能直接當成單一企業的投資報酬。",
+      "knowledge": {
+        "primary": "market",
+        "themes": [
+          "market",
+          "evaluation",
+          "governance"
+        ],
+        "concepts": [
+          "AI 價值衡量",
+          "主管問卷",
+          "Agent 治理"
+        ],
+        "outcome": "research",
+        "related": [
+          {
+            "url": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
+            "reason": "兩份 BCG 報告分別問主管與員工，可比較企業價值與個人省時，樣本及指標不可混用"
+          },
+          {
+            "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+            "reason": "兩份企業調查都涉及 AI 採用與價值；比較前須核對樣本、成熟度與價值定義"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-03",
+      "highLevel": true
+    },
+    {
+      "url": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
+      "date": "2026-06-03",
+      "sourceDate": "2026 年 6 月 3 日",
+      "source": "BCG",
+      "type": "研究報告",
+      "originalTitle": "AI at Work: Strategy Matters More Than Tools",
+      "title": "BCG AI at Work：員工省下的時間，企業如何接續安排？",
+      "englishSummary": "This employee survey separates regular AI use and perceived time savings from organizational value. BCG argues that guidance, workforce investment and operating-model changes matter when companies want saved time to support business priorities. Time savings are self-reported.",
+      "lead": "近 12,000 位員工、管理者與領導者的問卷，呈現 AI 使用增加後，工作安排與管理方式尚未同步的問題。",
+      "takeaways": [
+        "涵蓋十多個市場；74% 前線員工回報每天或每週數次使用 AI，42% 的經常使用者回報每週省下約一個工作日。",
+        "報告指出，前線員工較少得到如何使用省下時間的指導。讀這份資料時，可追問主管是否重新安排工作與責任。",
+        "BCG 將較清楚的策略、投入人才與流程調整，連到較高的受訪者回報價值與工作感受。"
+      ],
+      "caveat": "員工與主管自述，未直接量測任務時間或建立實驗對照；個人省時不能直接相加成財務效益。",
+      "knowledge": {
+        "primary": "adoption",
+        "themes": [
+          "adoption",
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "AI 價值衡量",
+          "員工省時",
+          "流程重設"
+        ],
+        "outcome": "research",
+        "related": [
+          {
+            "url": "https://www.bcg.com/publications/2026/the-formula-for-agentic-ai-value",
+            "reason": "員工層次的省時與主管層次的 AI 價值需要不同衡量，可透過兩份 BCG 報告對照"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-03",
+      "highLevel": true
     }
-  ]
+  ],
+  "readingSets": [
+    {
+      "title": "AI 省時如何轉成企業價值？",
+      "summary": "員工回報的省時、主管回報的價值與年報效益使用不同指標。對照三種資料，檢查省下的時間是否接上工作安排、品質與財務衡量。",
+      "urls": [
+        "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
+        "https://www.bcg.com/publications/2026/the-formula-for-agentic-ai-value",
+        "https://www.dbs.com/annualreports/2025/ceo-reflections.html"
+      ]
+    },
+    {
+      "title": "Agent 規模化後，誰處理審查與成本？",
+      "summary": "Spotify 討論產出增加後的瓶頸，Cloudflare 公開風險分級審查，Uber 拆解代理成本。三者可一起看規模化的工作分配與衡量方式。",
+      "urls": [
+        "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
+        "https://blog.cloudflare.com/ai-code-review/",
+        "https://www.uber.com/gb/en/blog/efficient-software-factory/"
+      ]
+    },
+    {
+      "title": "離線評估通過，現場為什麼仍會失敗？",
+      "summary": "Shopify 的評估與採用落差、Sidekick 改善循環及 Microsoft 的修正經驗，提供不同工作場景的對照。重點放在失敗發生的環節，以及後續怎麼重新驗證。",
+      "urls": [
+        "https://shopify.engineering/fine-tuning-agent-shopify-flow",
+        "https://shopify.engineering/sidekicks-continual-learning-loop",
+        "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/"
+      ]
+    }
+  ],
+  "digest": {
+    "checkedAt": "2026-10-03T03:00:22.501627Z",
+    "points": [
+      {
+        "text": "主管開始使用 AI 後，公司流程如何接續調整？Mollick 提醒要分開看個人採用與組織改變。",
+        "url": "https://x.com/emollick/status/2106097018129227918",
+        "label": "閱讀貼文"
+      }
+    ]
+  }
 }

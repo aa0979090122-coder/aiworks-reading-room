@@ -1,3 +1,4 @@
+const hashUrl=url=>{let h=2166136261;for(const c of url)h=Math.imul(h^c.charCodeAt(0),16777619);return (h>>>0).toString(36)};
 // Source-backed organization. Editorial annotations take priority over fallback matching.
 export const chapters = [
   {id:'workflow',title:'工作流程與導入',question:'AI 放在哪一段工作？誰一起設計與驗證？',pattern:/工作流程|流程重設|導入|部署|workflow|pod|供應鏈|客服|會計/i},
@@ -50,21 +51,22 @@ export function relatedTo(item,items) {
     return {item:other,score:(explicit?20:0)+concepts.length*4+themes.length+(contrast?2:0),reason:explicit?.reason || (contrast?'對照失敗條件':concepts.length?`共同問題：${concepts.join('、')}`:`共同主題：${themes.map(t=>chapters.find(c=>c.id===t)?.title).join('、')}`)};
   }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||itemTitle(a.item).localeCompare(itemTitle(b.item))).slice(0,4);
 }
-export function exportMarkdown(content,feedback) {
+export function exportMarkdown(content,feedback,documents={}) {
   const items=savedItems(content,feedback);
-  const lines=['# 我的 Aiworks 知識庫','',`匯出日期：${new Date().toLocaleDateString('zh-TW')}`,'',feedback.generalNote||''];
+  const lines=['# 我的知識庫','',`匯出日期：${new Date().toLocaleDateString('zh-TW')}`,'',feedback.generalNote||''];
   for(const chapter of chapters){
     const group=items.filter(x=>x.info.primary===chapter.id);
     if(!group.length&&!feedback.chapterNotes?.[chapter.id])continue;
     lines.push('',`## ${chapter.title}`,'',feedback.chapterNotes?.[chapter.id]||'');
     for(const item of group){
-      lines.push('',`### ${itemTitle(item)}`,'',item.note.summary,...item.note.points.map(p=>`- ${p}`));
+      lines.push('',`<a id="${'note-'+hashUrl(item.url)}"></a>`,`### ${itemTitle(item)}`,'');
+      if(documents[item.url])lines.push(documents[item.url].body);else lines.push(item.note.summary,...item.note.points.map(p=>`- ${p}`));
       if(item.note.question)lines.push('',`待追問：${item.note.question}`);
       if(item.note.limit)lines.push('',`資料限制：${item.note.limit}`);
       if(item.state.note)lines.push('',`我的筆記：${item.state.note}`);
       lines.push('',...item.note.sources.map(s=>`- [${s.label}](${s.url})`));
-      const related=relatedTo(item,items);
-      if(related.length)lines.push('','相關收藏：',...related.map(r=>`- [${itemTitle(r.item)}](${r.item.url})：${r.reason}`));
+      const related=relatedTo(item,items).filter(r=>r.score>=20);
+      if(!documents[item.url]&&related.length)lines.push('',...related.map(r=>`${r.reason}。可對照 [${itemTitle(r.item)}](#note-${hashUrl(r.item.url)}) 的筆記：${r.item.note.summary}`));
     }
   }
   return lines.join('\n');
