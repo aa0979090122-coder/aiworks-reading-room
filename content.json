@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-02",
+  "editionDate": "2026-10-03",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -609,6 +609,42 @@
   "news": [
     {
       "date": "2026-10-01",
+      "source": "OpenAI／The Den Family Social",
+      "title": "The Den 開第二間店時，怎麼用 ChatGPT 整理跨系統資料",
+      "url": "https://openai.com/index/the-den-family-social/",
+      "what": "The Den 是丹佛一間親子社交空間。準備開第二間店時，少量管理人員要處理執照、補助申請與跨店營運資料。公司透過 ChatGPT Work 連接既有工作系統，先彙整資訊與找缺件，再由團隊審查及完成申請。這是一則中小企業的供應商案例，成果數字由創辦人估計。",
+      "points": [
+        "團隊用 Gmail、Slack 和 Google Drive 外掛收集第一間店的資料與討論，讓 ChatGPT 提出第二間店開設的下一步。執照聽證提早時，系統協助找文件、辨識缺件與轉換格式，團隊仍要核對內容並作最後決定。",
+        "OpenAI 引述創辦人說法，酒類執照材料由原本約四天的搜尋與整理，縮到三小時團隊審查與完成；補助申請由三天縮到兩小時。管理團隊每週約省 10 至 15 小時，但文章未交代追蹤期間、樣本量或核算方法。",
+        "負責合作與財務的人員也先把過往合作經驗、會計報表、銷售與庫存資料交給 ChatGPT 整理，再由管理層討論合作方式和採購。Codex 會員 App 等仍是未來計畫，不能算入已完成的成果。"
+      ],
+      "originalTitle": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+      "originalExcerpt": "the team still reviews ChatGPT Work’s output for accuracy and makes the final decisions.",
+      "topic": "case",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "adoption",
+          "evaluation"
+        ],
+        "concepts": [
+          "企業資料",
+          "人工介入",
+          "跨系統整合"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://www.anthropic.com/news/barclays-scales-claude",
+            "reason": "兩者都把既有資訊帶進工作流程；企業規模、資料權限與公布的衡量方式不同"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-03"
+    },
+    {
+      "date": "2026-10-01",
       "source": "Anthropic／Barclays",
       "title": "Barclays 已上線兩個 Claude 工作流程：內部查找與郵件分流",
       "url": "https://www.anthropic.com/news/barclays-scales-claude",
@@ -885,6 +921,99 @@
     }
   ],
   "deepDives": [
+    {
+      "type": "企業導入實例 · 優先讀",
+      "sourceDate": "2026 年 10 月 2 日",
+      "title": "Chatham：交易驗證從 30 分鐘到 4 分鐘，先如何核對品質？",
+      "lead": "金融顧問公司 Chatham 重新拆解交易驗證：先確定最低必要輸入、證據與人工判斷點，再用 Codex 建立蒐證、比對與標記差異的工具，與資深審查者的結果比較。",
+      "takeaways": [
+        "Chatham 的 Controls and Data Integrity 團隊要核對系統紀錄是否反映客戶授權及實際交易。新工具收集支持交易的證據、比對關鍵條款，將差異交給人審查；公司仍在用真實交易對照資深審查者的結果。",
+        "OpenAI 引述 Chatham 的早期測量：單筆審查約從 30 分鐘縮至不到 4 分鐘。這是初步流程時間，文章沒有交代樣本、錯誤率、人工複核比例或完整成本；擴到更多交易類型仍是計畫。",
+        "內部 Chatham Vibes 平台讓員工做自己的應用，依工作選擇預設或升級模型。面向客戶的 Onyx 把資產、債務與衍生品資料連在一起，保留回查原始資料的路徑；簡單任務與複雜任務使用不同模型。"
+      ],
+      "angle": "可寫「高風險工作如何從單純縮時，走到可稽核的流程重設」。比較交易驗證前後的人工作業、AI 蒐證與例外處理，再追問品質門檻、擴大部署條件及單筆成本。",
+      "caveat": "資料由 OpenAI 與客戶共同發布，縮時為早期測量。未公開準確率、覆核成本與不同交易類型的表現，不能把 30 分鐘到 4 分鐘直接換算成全公司的投資報酬率。",
+      "url": "https://openai.com/index/chatham-financial/",
+      "sources": [
+        {
+          "label": "OpenAI／Chatham 原始案例（英文）",
+          "url": "https://openai.com/index/chatham-financial/"
+        }
+      ],
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow",
+          "governance"
+        ],
+        "concepts": [
+          "人工校準",
+          "可稽核證據",
+          "交易驗證"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://openai.com/index/wayfair/",
+            "reason": "兩者都把人工專家的判斷放進品質檢查，但任務與驗收標準不同"
+          },
+          {
+            "url": "https://www.anthropic.com/news/barclays-scales-claude",
+            "reason": "同為金融工作流程；Chatham 公開了證據比對與人工覆核的更多步驟"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-03"
+    },
+    {
+      "type": "研究與報告 · 優先讀",
+      "sourceDate": "2026 年 10 月 1 日",
+      "title": "Shopify ShopGym：購物代理上線前，怎麼建立可重跑的測試環境？",
+      "lead": "真實商店的商品、價格與頁面隨時改變，代理每次測試很難比較。Shopify 工程團隊將真實店面轉成匿名、可重設的沙盒，再產生依商品與政策核對過的購物任務。",
+      "takeaways": [
+        "ShopArena 先探索首頁、商品、購物車、搜尋與政策頁，寫成匿名且可檢查的商店規格；後續依規格分階段生成沙盒，每階段檢查程式、頁面與視覺結果。ShopGuru 再依實際生成的商品、篩選器與政策建立短任務及多步驟任務，並驗證題目中的資料確實存在。",
+        "Shopify 用六間沙盒商店、224 項任務比較真實與合成環境，其中三間採合成商品、三間採真實商品。多步驟任務的模型排名在兩套評估系統中維持一致；部分單步任務的落差較大，沙盒仍無法完整重現真實網站。",
+        "專案頁另展示十間可瀏覽的沙盒，與論文的六間驗證樣本不可混用。這套方法衡量的是代理在可重現環境中的任務成功情形，尚未證明商家上線後的銷售、顧客滿意或投資報酬。"
+      ],
+      "angle": "可寫「企業 Agent 的測試集，怎麼接近真實工作又保有可重跑性」。先看 Shopify 如何把現場變動轉成測試環境，再對照 Shopify Flow 上線後啟用率低於離線預期的經驗，討論上線前後各要看什麼指標。",
+      "caveat": "此為 Shopify 與研究者的實驗框架；六間商店與 224 項任務是本次驗證範圍，不等於所有電商網站。作者也指出部分單步任務有差距，外部連結及行銷頁等互動未完整保留。",
+      "url": "https://shopify.engineering/shopgym",
+      "sources": [
+        {
+          "label": "Shopify Engineering 原始工程文章（英文）",
+          "url": "https://shopify.engineering/shopgym"
+        },
+        {
+          "label": "ShopGym 研究專案與實驗結果（英文）",
+          "url": "https://shopgym-research.github.io/"
+        }
+      ],
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow"
+        ],
+        "concepts": [
+          "可重現測試",
+          "評估與現場落差",
+          "長流程任務"
+        ],
+        "outcome": "research",
+        "related": [
+          {
+            "url": "https://shopify.engineering/fine-tuning-agent-shopify-flow",
+            "reason": "ShopGym 建立上線前測試環境；Shopify Flow 案例顯示離線評估與正式流量仍可能有落差"
+          },
+          {
+            "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+            "reason": "兩項研究都討論測試條件如何影響對代理能力與成效的判斷"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-03"
+    },
     {
       "type": "企業導入實例 · 優先讀",
       "sourceDate": "2026 年 7 月",
