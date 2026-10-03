@@ -36,3 +36,17 @@ assert.equal(readingItems(fixture,{items:{[same]:{read:true}}},{current:()=>fals
 assert.equal(readingItems(fixture,{items:{[same]:{read:true}}},{history:true}).length,2);
 assert.equal(fixture.posts.length,2);
 console.log('Passed: cross-source deduplication, curated priority, saved/read exclusion, historical access, source preservation.');
+
+const dailyUrls=new Set(['posts','podcasts','news'].flatMap(k=>(content[k]||[]).map(x=>x.url)));
+for(const item of content.deepDives||[])assert(dailyUrls.has(item.url),'Every deep source must have a daily reading entry');
+for(const set of content.readingSets||[]){
+ assert(set.urls.length>=2,'A deep topic must compare multiple sources');
+ for(const url of set.urls)assert(dailyUrls.has(url),'Deep source must appear in a daily category: '+url);
+}
+for(const note of content.knowledgeLibrary||[]){
+ const publicMd=await readFile(new URL('../'+note.markdownFile,import.meta.url),'utf8');
+ const item=['posts','podcasts','news'].flatMap(k=>content[k]||[]).find(x=>x.url===note.url);
+ assert.equal(item.knowledge.noteBody,publicMd.replace(/^# .+\n\s*/,'').trimEnd()+'\n');
+ assert(!publicMd.includes('personalNoteHash'));
+}
+console.log('Passed: deep topics use daily sources; public note body matches its Markdown.');
