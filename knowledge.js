@@ -82,3 +82,16 @@ export function mergeBackup(current,incoming) {
   for(const [id,note] of Object.entries(incoming.chapterNotes||{}))if(!merged.chapterNotes[id]&&typeof note==='string')merged.chapterNotes[id]=note;
   return merged;
 }
+
+// Curated deep readings win over short versions of the same source; originals remain in content.
+export function readingItems(content,feedback,{history=false,current=()=>true}={}) {
+  const byUrl=new Map();
+  const type={posts:'x-posts',podcasts:'podcasts',news:'news',deepDives:'deep-dives'};
+  for(const kind of ['deepDives','news','podcasts','posts'])for(const item of content[kind]||[]) {
+    const state=feedback.items?.[item.url]||{};
+    if(state.saved||byUrl.has(item.url))continue;
+    if(!history&&(state.read||state.rejected||(kind!=='deepDives'&&!current(type[kind],item))))continue;
+    byUrl.set(item.url,{...item,kind});
+  }
+  return [...byUrl.values()];
+}

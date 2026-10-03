@@ -32,3 +32,9 @@
 既有倉庫：`aa0979090122-coder/aiworks-reading-room`，分支 `main`。每次調整後直接檢查、更新既有倉庫，等待 GitHub Pages 完成，驗證公開頁面和內容版本，再回報完成。先比對遠端內容，避免覆蓋其他新增資料。不要建立重複網站或上傳個人閱讀紀錄。部署工具在本機 SEO 專案的 `tools/deploy_reading_room.py`；只提交明列的網站檔案，使用正常快轉更新。
 
 驗證：`node tests/knowledge.test.mjs` 檢查既有收藏、來源保留、雙向關聯、章節調整、匯入合併與匯出；再用瀏覽器確認收藏移位及桌面／窄螢幕版面。
+
+## 2026-10-03 閱讀版面更新
+
+新增精選與探索首頁、跨來源搜尋、六類工作問題導覽、附理由的關聯閱讀。X、新聞與 Podcast 改以中文導讀優先，詳細原文按需求展開。保留全部歷史內容及 `aiworks-reading-room-feedback-v1` 的收藏、筆記與手動章節。Canva 精簡與本站資料保存分開處理；本站沒有刪除歷史來源。
+
+驗證：執行 `node tests/knowledge.test.mjs`，並檢查桌面、手機、搜尋與閱讀交接。發布前比對 GitHub 最新內容，沿用既有 GitHub Pages 倉庫。

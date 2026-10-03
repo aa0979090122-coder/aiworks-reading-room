@@ -22,7 +22,8 @@
           "https://x.com/GideonSpek88096/status/2105397948267848152",
           "https://x.com/JamesC_Alpha/status/2105404282132697542"
         ]
-      }
+      },
+      "title": "Mollick：個人 Agent 談判，可能增加企業客服的工作量"
     },
     {
       "author": "Aaron Levie",
@@ -41,7 +42,8 @@
           "https://x.com/eddienasser/status/2105372037518909627",
           "https://x.com/Avery_Coree/status/2105356339501310390"
         ]
-      }
+      },
+      "title": "Levie：企業 Agent 部署需要持續處理的工作"
     },
     {
       "author": "Ethan Mollick",
@@ -51,7 +53,8 @@
       "excerpt": "It does feel like every year OpenAI releases a variation on the same third-party ecosystem only to semi-abandon it…",
       "kind": "summary",
       "zh": "他回顧 OpenAI 從 Plugins、GPT Store 到 Apps 的第三方生態，質疑產品反覆推出後又轉向。這是評論者的觀察，適合用來思考企業對平台延續性的疑慮。",
-      "topic": "trend"
+      "topic": "trend",
+      "title": "Mollick：平台反覆轉向，企業如何看待延續性"
     },
     {
       "author": "OpenAI Developers",
@@ -61,7 +64,8 @@
       "excerpt": "Define questions and possible answers to classify content, route requests, or choose an agent’s next action.",
       "kind": "translation",
       "zh": "OpenAI 宣布 Decisions API 有限預覽，讓應用能按預先定義的問題與選項分類內容、分流請求或決定 Agent 下一步。現階段仍是有限預覽。",
-      "topic": "product"
+      "topic": "product",
+      "title": "Decisions API 有限預覽：依固定選項分類與分流"
     },
     {
       "author": "OpenAI",
@@ -72,7 +76,8 @@
       "kind": "translation",
       "zh": "OpenAI 宣稱 GPT-6.1 Sol 的能力接近 Astra，價格約為五分之一。這是供應商的價格與效能主張，採購時仍應以自己的任務測試。",
       "topic": "product",
-      "originalIsFull": true
+      "originalIsFull": true,
+      "title": "GPT-6.1 Sol 的價格與效能：採購仍需自身任務測試"
     },
     {
       "author": "Andrew Ng",
@@ -91,7 +96,8 @@
           "https://x.com/kiankatan/status/2105032487235940488",
           "https://x.com/leopardracer/status/2104967707854581893"
         ]
-      }
+      },
+      "title": "Andrew Ng：員工培訓需要更具體的能力評量"
     },
     {
       "author": "Ethan Mollick",
@@ -111,7 +117,8 @@
           "https://x.com/bryanpatricca/status/2104976860841193775",
           "https://x.com/johnroodepic/status/2104978451652649319"
         ]
-      }
+      },
+      "title": "Mollick：Agent 產品演進仍有不確定性"
     },
     {
       "author": "ClaudeDevs",
@@ -121,7 +128,8 @@
       "excerpt": "Claude can now help you build evaluations and hillclimb on them.",
       "kind": "translation",
       "zh": "ClaudeDevs 分享讓 Claude Code 協助設計評測，並依評測結果反覆改善應用的方法。重點在建立可檢驗的改善循環。",
-      "topic": "product"
+      "topic": "product",
+      "title": "Claude Code：依評測結果反覆改善應用"
     },
     {
       "author": "Aaron Levie",
@@ -131,7 +139,8 @@
       "excerpt": "At Box, we've been testing Sonnet 5.5 in early access on our complex work eval with the Box Agent…",
       "kind": "summary",
       "zh": "Box 在自己的複雜工作評測中，報告 Sonnet 5.5 的整體表現、速度和 token 使用有改善，並列出金融、法律、生命科學等任務的例子。數字來自 Box 自家測試，應按測試範圍解讀。",
-      "topic": "trend"
+      "topic": "trend",
+      "title": "Box 的 Sonnet 5.5 測試：表現、速度與 token 使用"
     },
     {
       "author": "Aaron Levie",
@@ -141,7 +150,8 @@
       "excerpt": "Interesting to think about all the implications in a world where agents begin to make the best or most efficient choice for their users.",
       "kind": "summary",
       "zh": "他推演 Agent 代替使用者做選擇後，原本靠轉換摩擦留住顧客的業務可能面臨更激烈競爭；另一些市場則可能因購買流程變簡單而擴大。這是前瞻推論。",
-      "topic": "trend"
+      "topic": "trend",
+      "title": "Levie：Agent 代替顧客選擇，可能改變市場競爭"
     },
     {
       "author": "Aaron Levie",
@@ -151,7 +161,8 @@
       "excerpt": "You can’t automate what you can’t measure. This means that evals are one of the gates to diffusion of AI in the enterprise.",
       "kind": "summary",
       "zh": "Levie 主張企業需要持續評測 Agent 在自身環境裡的工作，才能判斷哪裡有效、哪裡退步，以及模型更新後是否仍能交付結果。這是他對企業評測需求的觀點。",
-      "topic": "trend"
+      "topic": "trend",
+      "title": "Levie：模型升級後，仍需持續評測工作成果"
     },
     {
       "author": "ClaudeDevs",
@@ -161,7 +172,8 @@
       "excerpt": "Plugins package MCP and skills, and are becoming the way to build for Claude.",
       "kind": "summary",
       "zh": "ClaudeDevs 宣布新的外掛提交入口，並稱 Claude 產品中的 MCP 使用量今年成長 110 倍。可以觀察企業系統整合需求，但成長倍數缺少基期。",
-      "topic": "product"
+      "topic": "product",
+      "title": "Claude 外掛入口更新：MCP 使用量與基期限制"
     },
     {
       "author": "Boris Cherny",
@@ -171,7 +183,8 @@
       "excerpt": "Tag writes >50% of my PRs every day. It also does ~100% of my data analysis…",
       "kind": "summary",
       "zh": "Boris Cherny 分享自己如何用內部 Agent 處理程式修改、資料分析和回饋修正。他描述的比例是個人工作方式，並列出具體指令；不能直接當作一般企業的平均成效。",
-      "topic": "trend"
+      "topic": "trend",
+      "title": "Boris Cherny 的個人 Agent 工作方式與回饋修正"
     },
     {
       "author": "Decagon · Rituals",
@@ -196,7 +209,8 @@
           "label": "結果與界線",
           "text": "Decagon 與 Rituals 稱，兩個月後擴至 19 國、15 種語言；黑色星期五至 12 月 26 日旺季，在每日最多約 9,000 件需求下沒有待處理積案。這是雙方公開的單一案例，沒有公布獨立對照或導入成本。"
         }
-      ]
+      ],
+      "title": "Rituals：前次 chatbot 經驗如何影響新一輪導入"
     },
     {
       "author": "Cresta · Home Care Delivered",
@@ -221,7 +235,8 @@
           "label": "結果與界線",
           "text": "Cresta 報告兩個月內，地址確認行為依規則追蹤提高 34%，整體客服表現提高近 10%；部分問題行為最多下降 90%。指標與改善幅度來自供應商和客戶訪談，原文沒有提供獨立對照組。"
         }
-      ]
+      ],
+      "title": "Home Care Delivered：客服評分如何接上教練回饋"
     },
     {
       "author": "Romain Huet",
@@ -231,7 +246,8 @@
       "excerpt": "I sat down with AI leaders from Figma, Box, Cognition, Ramp and others to hear how they’re using Astra.",
       "kind": "summary",
       "zh": "Romain Huet 訪談多家公司的 AI 團隊，展示 GPU 核心最佳化、電腦操作工作流程與設計畫面等應用。影片中的實例可當作尋找訪談對象與案例的線索。",
-      "topic": "trend"
+      "topic": "trend",
+      "title": "Romain Huet：企業 AI 應用訪談與後續追查線索"
     },
     {
       "author": "Jeffrey Lee Funk · Canva",
@@ -266,7 +282,8 @@
           "label": "閱讀界線",
           "text": "這是成本與擴張決策的失敗案例，不能據此推論所有 Canva AI 功能的使用量或獲利情況；貼文作者的產業推論也不是 Canva 官方結論。"
         }
-      ]
+      ],
+      "title": "Canva：單次 AI 任務成本與擴大供應的取捨"
     },
     {
       "author": "OpenAI · 內部導入",
@@ -277,7 +294,8 @@
       "zh": "OpenAI 分享自己在工程、法務、財務與招募等部門的 Codex 使用情況。官方研究指出，法務、財務與招募約在 2026 年 4 月轉為以 Codex 作為主要 AI 工具；內部員工平均超過 85% 的 AI 輸出 token 來自 Codex。這反映一間 AI 原生公司的使用轉移，並非一般企業的平均採用率，也不能由 token 占比直接推算節省工時或投資報酬。",
       "topic": "trend",
       "evidenceUrl": "https://openai.com/index/how-agents-are-transforming-work/",
-      "evidenceLabel": "OpenAI 內部使用研究"
+      "evidenceLabel": "OpenAI 內部使用研究",
+      "title": "OpenAI 內部 Codex 採用：token 占比能說明什麼"
     },
     {
       "author": "Decagon · ClassPass",
@@ -302,7 +320,8 @@
           "label": "結果與界線",
           "text": "Decagon 稱聊天服務由每週 5 天、每天 16 小時擴至全天候；客戶在活動中談到推出時的自助解決率高於預估。供應商網站另列成本與轉接率改善，但沒有公開完整基準和外部驗證。"
         }
-      ]
+      ],
+      "title": "ClassPass：客服量波動、系統串接與 Agent 評選"
     },
     {
       "author": "a16z",
@@ -312,7 +331,8 @@
       "excerpt": "Both the AI utopians and the AI doomers are far too optimistic. Technology making something possible does not change behavior overnight.",
       "kind": "summary",
       "zh": "Marc Andreessen 的觀點是，技術可行不代表企業和個人的行為會立刻改變。現有工作方式與制度有慣性，因此 AI 採用需要時間；他同時擔心採用過慢會拖累成長。",
-      "topic": "trend"
+      "topic": "trend",
+      "title": "Andreessen：既有制度如何影響 AI 採用速度"
     },
     {
       "author": "Ethan Mollick",
@@ -322,7 +342,8 @@
       "excerpt": "Its an important time for the AI labs to build interfaces around the goal of job augmentation through AI.",
       "kind": "translation",
       "zh": "現在是 AI 實驗室設計介面的重要時刻：目標應是用 AI 增強人的工作，而非用 AI 取代工作。聊天機器人大多是輔助工具，需要人參與工作。Agent 的工作方式仍在形成，也可以把人放在中心。",
-      "topic": "trend"
+      "topic": "trend",
+      "title": "Mollick：Agent 介面如何保留人的參與"
     },
     {
       "author": "Aaron Levie · Box Agent",
@@ -354,7 +375,8 @@
           "label": "閱讀界線",
           "text": "原貼分享的是 Box Agent 的開發經驗，沒有量化各步驟移除後的改善幅度；不能把它直接套成所有 Agent 應簡化架構的規則。"
         }
-      ]
+      ],
+      "title": "Box Agent：模型升級後，原有補丁如何限制品質"
     },
     {
       "author": "Aaron Levie",
@@ -364,7 +386,8 @@
       "excerpt": "Agents running 24/7 and in parallel modify these requirements meaningfully. Here are just a few examples: sandboxes, search, payments, file systems.",
       "kind": "summary",
       "zh": "Box 執行長 Aaron Levie 認為，Agent 若能持續並行工作，既有的搜尋、檔案、付款與沙盒系統都要重新考慮速度、權限和規模。這篇是在談底層條件，並非宣稱企業現在都已完成這種轉型。",
-      "topic": "trend"
+      "topic": "trend",
+      "title": "Levie：並行 Agent 對系統速度、權限和規模的要求"
     }
   ],
   "podcasts": [

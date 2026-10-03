@@ -10,15 +10,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=20261002-3" />
-  <script type="module" src="./main.js?v=20261003-1"></script>
+  <link rel="stylesheet" href="./styles.css?v=20261003-2" />
+  <script type="module" src="./main.js?v=20261003-2"></script>
 </head>
 <body>
-  <header class="site-header"><div class="header-inner"><a class="brand" href="#top" aria-label="Aiworks 資訊情報站，回到頂端"><img src="./assets/aiworks-logo.svg" alt="Aiworks" /></a></div></header>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="#top" aria-label="Aiworks 資訊情報站，回到頂端"><img src="./assets/aiworks-logo.svg" alt="Aiworks" /></a><span class="header-label">RESEARCH &amp; FIELD NOTES</span><a class="header-library" href="#view-knowledge">我的知識庫 ↗</a></div></header>
   <main id="top">
-    <div class="intro wrap"><h1>資訊情報站</h1><p id="edition-date" class="edition-date"></p></div>
+    <div class="intro wrap"><div class="intro-copy"><p class="eyebrow">AIWORKS READING ROOM</p><h1>資訊情報站<span>讀懂 AI 如何進入工作。</span></h1><p class="intro-description">企業實作、研究證據與現場限制。把值得追問的問題，整理成下一篇文章的起點。</p></div><div class="edition"><span class="edition-mark" aria-hidden="true">↗</span><p id="edition-date" class="edition-date"></p><span>原始資料 · 中文導讀 · 閱讀筆記</span></div></div>
     <div class="tabs-shell"><nav class="tabs wrap" aria-label="內容分類">
-      <button id="tab-x-posts" aria-pressed="true" aria-controls="x-posts" data-tab="x-posts">X 貼文 <span id="x-count"></span></button>
+      <button id="tab-reading" aria-pressed="true" aria-controls="reading" data-tab="reading">精選與探索 <span id="reading-count"></span></button>
+      <button id="tab-x-posts" aria-pressed="false" aria-controls="x-posts" data-tab="x-posts">X 貼文 <span id="x-count"></span></button>
       <button id="tab-podcasts" aria-pressed="false" aria-controls="podcasts" data-tab="podcasts">Podcast <span id="podcast-count"></span></button>
       <button id="tab-news" aria-pressed="false" aria-controls="news" data-tab="news">新聞 <span id="news-count"></span></button>
       <button id="tab-deep-dives" aria-pressed="false" aria-controls="deep-dives" data-tab="deep-dives">深度選題 <span id="deep-count"></span></button>
@@ -27,7 +28,13 @@
 
     <div id="reading-status" class="reading-status wrap" role="status" aria-live="polite"></div>
     <div class="content wrap">
-      <section id="x-posts" class="panel" aria-labelledby="tab-x-posts"><div class="list-toolbar"><div class="topic-filters" data-topics="x-posts" aria-label="X 貼文主題篩選"></div><button class="text-button" data-view="x-posts">查看已讀與略過</button></div><div id="posts-list" class="posts-list"></div></section>
+      <section id="reading" class="panel" aria-labelledby="tab-reading">
+        <div class="section-heading"><div><p class="eyebrow">EDITOR’S SELECTION</p><h2>這次先讀</h2></div><p>把做法、驗證方式和資料限制放在一起看。</p></div>
+        <div id="featured-list" class="featured-list"></div>
+        <div class="explore-heading"><div><p class="eyebrow">EXPLORE THE EVIDENCE</p><h2>依問題找資料</h2></div><label class="search-label"><span>搜尋全部來源</span><input id="reading-search" type="search" placeholder="公司、工作流程、概念…" aria-label="搜尋閱讀資料"></label></div>
+        <div class="explore-layout"><nav id="reading-nav" class="reading-nav" aria-label="閱讀主題"></nav><div><div class="explore-toolbar"><p id="explore-summary" role="status" aria-live="polite"></p><label class="history-label"><input id="reading-history" type="checkbox"> 納入歷史與已讀</label></div><div id="reading-connections" class="reading-connections"></div><div id="explore-list" class="explore-list"></div></div></div>
+      </section>
+      <section id="x-posts" class="panel" hidden aria-labelledby="tab-x-posts"><div class="list-toolbar"><div class="topic-filters" data-topics="x-posts" aria-label="X 貼文主題篩選"></div><button class="text-button" data-view="x-posts">查看已讀與略過</button></div><div id="posts-list" class="posts-list"></div></section>
       <section id="podcasts" class="panel" aria-labelledby="tab-podcasts" hidden><div class="list-toolbar"><div class="topic-filters" data-topics="podcasts" aria-label="Podcast 主題篩選"></div><button class="text-button" data-view="podcasts">查看已讀與略過</button></div><div id="podcasts-list" class="podcasts-list"></div></section>
       <section id="news" class="panel" aria-labelledby="tab-news" hidden><div class="list-toolbar"><div class="topic-filters" data-topics="news" aria-label="新聞主題篩選"></div><button class="text-button" data-view="news">查看已讀與略過</button></div><div id="news-list" class="news-list"></div></section>
       <section id="deep-dives" class="panel" aria-labelledby="tab-deep-dives" hidden><div class="deep-intro"><h2>先讀來源，再決定文章角度</h2><p>這裡收錄可延伸成深度文章的企業實例與研究報告。每題列出閱讀順序、可追問的問題，以及公開資料尚未回答的部分。</p></div><div class="list-toolbar"><div class="topic-filters"><button class="topic-button" data-deep-filter="all" aria-pressed="true">全部</button><button class="topic-button" data-deep-filter="failure" aria-pressed="false">失敗與修正</button><button class="topic-button" data-deep-filter="research" aria-pressed="false">研究與報告</button><button class="topic-button" data-deep-filter="case" aria-pressed="false">實作案例</button></div><button class="text-button" data-view="deep-dives">查看已讀與其他內容</button></div><div id="deep-list" class="deep-list"></div></section>
@@ -41,6 +48,6 @@
       </section>
     </div>
   </main>
-  <footer class="site-footer"><div class="wrap"><span>Aiworks</span><a href="#top">回到頂端 ↑</a></div></footer>
+  <footer class="site-footer"><div class="wrap"><span>Aiworks · Research &amp; field notes</span><a href="#top">回到頂端 ↑</a></div></footer>
 </body>
 </html>
