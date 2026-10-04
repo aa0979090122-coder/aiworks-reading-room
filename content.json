@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-03",
+  "editionDate": "2026-10-04",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -817,6 +817,63 @@
   ],
   "news": [
     {
+      "type": "企業導入實例 · 優先讀",
+      "sourceDate": "2026 年 10 月 2 日",
+      "title": "Chatham：交易驗證從 30 分鐘到 4 分鐘，先如何核對品質？",
+      "lead": "金融顧問公司 Chatham 重新拆解交易驗證：先確定最低必要輸入、證據與人工判斷點，再用 Codex 建立蒐證、比對與標記差異的工具，與資深審查者的結果比較。",
+      "takeaways": [
+        "Chatham 的 Controls and Data Integrity 團隊要核對系統紀錄是否反映客戶授權及實際交易。新工具收集支持交易的證據、比對關鍵條款，將差異交給人審查；公司仍在用真實交易對照資深審查者的結果。",
+        "OpenAI 引述 Chatham 的早期測量：單筆審查約從 30 分鐘縮至不到 4 分鐘。這是初步流程時間，文章沒有交代樣本、錯誤率、人工複核比例或完整成本；擴到更多交易類型仍是計畫。",
+        "內部 Chatham Vibes 平台讓員工做自己的應用，依工作選擇預設或升級模型。面向客戶的 Onyx 把資產、債務與衍生品資料連在一起，保留回查原始資料的路徑；簡單任務與複雜任務使用不同模型。"
+      ],
+      "angle": "可寫「高風險工作如何從單純縮時，走到可稽核的流程重設」。比較交易驗證前後的人工作業、AI 蒐證與例外處理，再追問品質門檻、擴大部署條件及單筆成本。",
+      "caveat": "資料由 OpenAI 與客戶共同發布，縮時為早期測量。未公開準確率、覆核成本與不同交易類型的表現，不能把 30 分鐘到 4 分鐘直接換算成全公司的投資報酬率。",
+      "url": "https://openai.com/index/chatham-financial/",
+      "sources": [
+        {
+          "label": "OpenAI／Chatham 原始案例（英文）",
+          "url": "https://openai.com/index/chatham-financial/"
+        }
+      ],
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow",
+          "governance"
+        ],
+        "concepts": [
+          "人工校準",
+          "可稽核證據",
+          "交易驗證"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://openai.com/index/wayfair/",
+            "reason": "兩者都把人工專家的判斷放進品質檢查，但任務與驗收標準不同"
+          },
+          {
+            "url": "https://www.anthropic.com/news/barclays-scales-claude",
+            "reason": "同為金融工作流程；Chatham 公開了證據比對與人工覆核的更多步驟"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-03",
+      "englishSummary": "Chatham breaks trade verification into required inputs, evidence collection and human decisions. Its early timing results need to be read alongside quality checks and the cost of expert review.",
+      "originalTitle": "",
+      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
+      "source": "OpenAI／Chatham 原始案例（英文）",
+      "date": "2026-10-02",
+      "what": "金融顧問公司 Chatham 重新拆解交易驗證：先確定最低必要輸入、證據與人工判斷點，再用 Codex 建立蒐證、比對與標記差異的工具，與資深審查者的結果比較。",
+      "points": [
+        "Chatham 的 Controls and Data Integrity 團隊要核對系統紀錄是否反映客戶授權及實際交易。新工具收集支持交易的證據、比對關鍵條款，將差異交給人審查；公司仍在用真實交易對照資深審查者的結果。",
+        "OpenAI 引述 Chatham 的早期測量：單筆審查約從 30 分鐘縮至不到 4 分鐘。這是初步流程時間，文章沒有交代樣本、錯誤率、人工複核比例或完整成本；擴到更多交易類型仍是計畫。",
+        "內部 Chatham Vibes 平台讓員工做自己的應用，依工作選擇預設或升級模型。面向客戶的 Onyx 把資產、債務與衍生品資料連在一起，保留回查原始資料的路徑；簡單任務與複雜任務使用不同模型。"
+      ],
+      "highLevel": true
+    },
+    {
       "date": "2026-10-01",
       "source": "OpenAI／The Den Family Social",
       "title": "The Den 開第二間店時，怎麼用 ChatGPT 整理跨系統資料",
@@ -880,6 +937,66 @@
       }
     },
     {
+      "type": "研究與報告 · 優先讀",
+      "sourceDate": "2026 年 10 月 1 日",
+      "title": "Shopify ShopGym：購物代理上線前，怎麼建立可重跑的測試環境？",
+      "lead": "真實商店的商品、價格與頁面隨時改變，代理每次測試很難比較。Shopify 工程團隊將真實店面轉成匿名、可重設的沙盒，再產生依商品與政策核對過的購物任務。",
+      "takeaways": [
+        "ShopArena 先探索首頁、商品、購物車、搜尋與政策頁，寫成匿名且可檢查的商店規格；後續依規格分階段生成沙盒，每階段檢查程式、頁面與視覺結果。ShopGuru 再依實際生成的商品、篩選器與政策建立短任務及多步驟任務，並驗證題目中的資料確實存在。",
+        "Shopify 用六間沙盒商店、224 項任務比較真實與合成環境，其中三間採合成商品、三間採真實商品。多步驟任務的模型排名在兩套評估系統中維持一致；部分單步任務的落差較大，沙盒仍無法完整重現真實網站。",
+        "專案頁另展示十間可瀏覽的沙盒，與論文的六間驗證樣本不可混用。這套方法衡量的是代理在可重現環境中的任務成功情形，尚未證明商家上線後的銷售、顧客滿意或投資報酬。"
+      ],
+      "angle": "可寫「企業 Agent 的測試集，怎麼接近真實工作又保有可重跑性」。先看 Shopify 如何把現場變動轉成測試環境，再對照 Shopify Flow 上線後啟用率低於離線預期的經驗，討論上線前後各要看什麼指標。",
+      "caveat": "此為 Shopify 與研究者的實驗框架；六間商店與 224 項任務是本次驗證範圍，不等於所有電商網站。作者也指出部分單步任務有差距，外部連結及行銷頁等互動未完整保留。",
+      "url": "https://shopify.engineering/shopgym",
+      "sources": [
+        {
+          "label": "Shopify Engineering 原始工程文章（英文）",
+          "url": "https://shopify.engineering/shopgym"
+        },
+        {
+          "label": "ShopGym 研究專案與實驗結果（英文）",
+          "url": "https://shopgym-research.github.io/"
+        }
+      ],
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow"
+        ],
+        "concepts": [
+          "可重現測試",
+          "評估與現場落差",
+          "長流程任務"
+        ],
+        "outcome": "research",
+        "related": [
+          {
+            "url": "https://shopify.engineering/fine-tuning-agent-shopify-flow",
+            "reason": "ShopGym 建立上線前測試環境；Shopify Flow 案例顯示離線評估與正式流量仍可能有落差"
+          },
+          {
+            "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+            "reason": "兩項研究都討論測試條件如何影響對代理能力與成效的判斷"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-03",
+      "englishSummary": "Shopify builds repeatable shopping-agent tests around realistic store environments. The approach highlights environment fidelity and evaluation coverage before exposing agents to live customers.",
+      "originalTitle": "",
+      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
+      "source": "Shopify Engineering 原始工程文章（英文）",
+      "date": "2026-10-01",
+      "what": "真實商店的商品、價格與頁面隨時改變，代理每次測試很難比較。Shopify 工程團隊將真實店面轉成匿名、可重設的沙盒，再產生依商品與政策核對過的購物任務。",
+      "points": [
+        "ShopArena 先探索首頁、商品、購物車、搜尋與政策頁，寫成匿名且可檢查的商店規格；後續依規格分階段生成沙盒，每階段檢查程式、頁面與視覺結果。ShopGuru 再依實際生成的商品、篩選器與政策建立短任務及多步驟任務，並驗證題目中的資料確實存在。",
+        "Shopify 用六間沙盒商店、224 項任務比較真實與合成環境，其中三間採合成商品、三間採真實商品。多步驟任務的模型排名在兩套評估系統中維持一致；部分單步任務的落差較大，沙盒仍無法完整重現真實網站。",
+        "專案頁另展示十間可瀏覽的沙盒，與論文的六間驗證樣本不可混用。這套方法衡量的是代理在可重現環境中的任務成功情形，尚未證明商家上線後的銷售、顧客滿意或投資報酬。"
+      ],
+      "highLevel": true
+    },
+    {
       "date": "2026-09-30",
       "source": "OpenAI",
       "title": "小企業怎麼用 AI：從比價、開發客戶到後續輔導",
@@ -893,6 +1010,56 @@
       "originalTitle": "Helping small businesses put AI to work",
       "originalExcerpt": "Partnership with America’s SBDC will expand hands-on training and local guidance, while a new report explores what small teams are accomplishing with AI.",
       "topic": "trend"
+    },
+    {
+      "url": "https://www.bcg.com/publications/2026/the-formula-for-agentic-ai-value",
+      "date": "2026-09-30",
+      "sourceDate": "2026 年 9 月 30 日",
+      "source": "BCG",
+      "type": "研究報告",
+      "originalTitle": "The Formula for Agentic AI Value",
+      "title": "BCG Applied AI Index：企業如何定義 AI 價值與 Agent 控制？",
+      "englishSummary": "BCG surveys more than 1,300 senior executives across over 20 sectors. It associates coherent programs and financial measurement with greater reported AI value, while finding limited deployment of a complete set of agent controls. These are survey relationships, not evidence that one intervention caused the difference.",
+      "lead": "BCG 將策略、執行能力與企業回報的 AI 價值一起分析。可讀的重點是衡量方式、跨部門計畫與 Agent 控制的成熟度。",
+      "takeaways": [
+        "樣本為逾 1,300 位高階主管、涵蓋 20 多個產業；受訪者回報的價值與 BCG 成熟度分組須一起讀。",
+        "最成熟組的 95% 使用損益或 KPI 等代理指標衡量 AI；直接追蹤損益的組別回報較高價值，尚不能證明因果。",
+        "報告指出只有 5% 已部署完整的關鍵 Agent 控制；2030 年自主程度與價值占比是受訪者預期。"
+      ],
+      "caveat": "主管問卷與 BCG 分組分析；衡量定義、組別差異與未來預期不能直接當成單一企業的投資報酬。",
+      "knowledge": {
+        "primary": "market",
+        "themes": [
+          "market",
+          "evaluation",
+          "governance"
+        ],
+        "concepts": [
+          "AI 價值衡量",
+          "主管問卷",
+          "Agent 治理"
+        ],
+        "outcome": "research",
+        "related": [
+          {
+            "url": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
+            "reason": "兩份 BCG 報告分別問主管與員工，可比較企業價值與個人省時，樣本及指標不可混用"
+          },
+          {
+            "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+            "reason": "兩份企業調查都涉及 AI 採用與價值；比較前須核對樣本、成熟度與價值定義"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-03",
+      "highLevel": true,
+      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
+      "what": "BCG 將策略、執行能力與企業回報的 AI 價值一起分析。可讀的重點是衡量方式、跨部門計畫與 Agent 控制的成熟度。",
+      "points": [
+        "樣本為逾 1,300 位高階主管、涵蓋 20 多個產業；受訪者回報的價值與 BCG 成熟度分組須一起讀。",
+        "最成熟組的 95% 使用損益或 KPI 等代理指標衡量 AI；直接追蹤損益的組別回報較高價值，尚不能證明因果。",
+        "報告指出只有 5% 已部署完整的關鍵 Agent 控制；2030 年自主程度與價值占比是受訪者預期。"
+      ]
     },
     {
       "date": "2026-09-28",
@@ -954,6 +1121,50 @@
         "markdownFile": "notes/note-bi8kyw.md",
         "enrichedAt": "2026-10-03T03:07:25.060295Z"
       }
+    },
+    {
+      "date": "2026-09-27",
+      "source": "Neogen Media／Rehdhil Siyad（團隊自述）",
+      "title": "四個 AI Agent 上線後，12 次失敗為何有 9 次沒有報錯？",
+      "url": "https://neogenmedia.com/blog/ai-agent-failure-modes",
+      "what": "Neogen Media 創辦人回顧四個內部 AI Agent 上線頭兩個月的 12 起事故，其中 9 起沒有系統錯誤訊息。文章按「看不到的停擺、無效的檢查、錯置的權限認知、紙面上的邊界」整理事件，並連到逐篇事後檢討。這是服務商自己的營運經驗，適合讀失敗發生在哪個環節，以及修正後如何驗證。",
+      "points": [
+        "排程器因模型設定漂移拒絕執行工作，約六天累積 2,975 次拒絕；訊息匯流排和容器健康檢查仍顯示正常。團隊查到佇列與執行紀錄後，為工作固定模型設定，另設每 15 分鐘檢查連續失敗和訊息滯留的監測。原文連到完整排查時間線。",
+        "另一次部署檢查只搜尋回應是否含有 connected，連 disconnected 都會被判定通過；WhatsApp 回覆通知的 49 項測試也只測了假資料，真實輸出格式與身分欄位不符，首兩則回覆因此沒有觸發通知。修正方向是用真實輸入驗證邊界，刻意讓檢查遇到失敗情境。",
+        "權限問題同時出現在文字指令與執行環境：33 份複製的技能檔把收入 Agent 寫成營運主管；三個 Agent 共用容器與使用者身分，讓其中一個可讀取另一個的憑證。團隊改為分開容器與身分，並全面搜尋過時指令。",
+        "這些次數、影響與修正都由 Neogen 自述，原文提供個別事故連結與部分錯誤訊息，但沒有外部審計，也沒有提供修正後的長期成效。閱讀時可把「健康檢查通過」和「工作確實完成」分開評估。"
+      ],
+      "originalTitle": "AI Agent Failure Modes: Twelve Ways Our Agents Failed in Production",
+      "originalExcerpt": "The agents reasoned fine. The boundaries, checks and instructions around them failed.",
+      "englishSummary": "Neogen Media reports twelve incidents in its first two months running four internal AI agents. Nine produced no system error. The index links each incident to a post-mortem covering what failed, how it was found, and what the team changed.",
+      "topic": "case",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance",
+          "evaluation",
+          "workflow"
+        ],
+        "concepts": [
+          "沉默失敗",
+          "健康檢查",
+          "權限邊界",
+          "失敗修正"
+        ],
+        "outcome": "failure",
+        "related": [
+          {
+            "url": "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
+            "reason": "兩者都有先上線、再從真實工作找出流程缺口的修正；Neogen 聚焦監測與權限，Microsoft 聚焦業務流程與採用"
+          },
+          {
+            "url": "https://shopify.engineering/fine-tuning-agent-shopify-flow",
+            "reason": "兩者都顯示離線測試或局部檢查通過，仍須以真實工作與輸入格式驗證"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-04",
+      "dailyBackfillAt": "2026-10-04T01:47:09Z"
     },
     {
       "date": "2026-09-25",
@@ -1135,123 +1346,6 @@
       }
     },
     {
-      "type": "企業導入實例 · 優先讀",
-      "sourceDate": "2026 年 10 月 2 日",
-      "title": "Chatham：交易驗證從 30 分鐘到 4 分鐘，先如何核對品質？",
-      "lead": "金融顧問公司 Chatham 重新拆解交易驗證：先確定最低必要輸入、證據與人工判斷點，再用 Codex 建立蒐證、比對與標記差異的工具，與資深審查者的結果比較。",
-      "takeaways": [
-        "Chatham 的 Controls and Data Integrity 團隊要核對系統紀錄是否反映客戶授權及實際交易。新工具收集支持交易的證據、比對關鍵條款，將差異交給人審查；公司仍在用真實交易對照資深審查者的結果。",
-        "OpenAI 引述 Chatham 的早期測量：單筆審查約從 30 分鐘縮至不到 4 分鐘。這是初步流程時間，文章沒有交代樣本、錯誤率、人工複核比例或完整成本；擴到更多交易類型仍是計畫。",
-        "內部 Chatham Vibes 平台讓員工做自己的應用，依工作選擇預設或升級模型。面向客戶的 Onyx 把資產、債務與衍生品資料連在一起，保留回查原始資料的路徑；簡單任務與複雜任務使用不同模型。"
-      ],
-      "angle": "可寫「高風險工作如何從單純縮時，走到可稽核的流程重設」。比較交易驗證前後的人工作業、AI 蒐證與例外處理，再追問品質門檻、擴大部署條件及單筆成本。",
-      "caveat": "資料由 OpenAI 與客戶共同發布，縮時為早期測量。未公開準確率、覆核成本與不同交易類型的表現，不能把 30 分鐘到 4 分鐘直接換算成全公司的投資報酬率。",
-      "url": "https://openai.com/index/chatham-financial/",
-      "sources": [
-        {
-          "label": "OpenAI／Chatham 原始案例（英文）",
-          "url": "https://openai.com/index/chatham-financial/"
-        }
-      ],
-      "knowledge": {
-        "primary": "evaluation",
-        "themes": [
-          "evaluation",
-          "workflow",
-          "governance"
-        ],
-        "concepts": [
-          "人工校準",
-          "可稽核證據",
-          "交易驗證"
-        ],
-        "outcome": "case",
-        "related": [
-          {
-            "url": "https://openai.com/index/wayfair/",
-            "reason": "兩者都把人工專家的判斷放進品質檢查，但任務與驗收標準不同"
-          },
-          {
-            "url": "https://www.anthropic.com/news/barclays-scales-claude",
-            "reason": "同為金融工作流程；Chatham 公開了證據比對與人工覆核的更多步驟"
-          }
-        ]
-      },
-      "checkedAt": "2026-10-03",
-      "englishSummary": "Chatham breaks trade verification into required inputs, evidence collection and human decisions. Its early timing results need to be read alongside quality checks and the cost of expert review.",
-      "originalTitle": "",
-      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
-      "source": "OpenAI／Chatham 原始案例（英文）",
-      "date": "2026-10-02",
-      "what": "金融顧問公司 Chatham 重新拆解交易驗證：先確定最低必要輸入、證據與人工判斷點，再用 Codex 建立蒐證、比對與標記差異的工具，與資深審查者的結果比較。",
-      "points": [
-        "Chatham 的 Controls and Data Integrity 團隊要核對系統紀錄是否反映客戶授權及實際交易。新工具收集支持交易的證據、比對關鍵條款，將差異交給人審查；公司仍在用真實交易對照資深審查者的結果。",
-        "OpenAI 引述 Chatham 的早期測量：單筆審查約從 30 分鐘縮至不到 4 分鐘。這是初步流程時間，文章沒有交代樣本、錯誤率、人工複核比例或完整成本；擴到更多交易類型仍是計畫。",
-        "內部 Chatham Vibes 平台讓員工做自己的應用，依工作選擇預設或升級模型。面向客戶的 Onyx 把資產、債務與衍生品資料連在一起，保留回查原始資料的路徑；簡單任務與複雜任務使用不同模型。"
-      ],
-      "highLevel": true
-    },
-    {
-      "type": "研究與報告 · 優先讀",
-      "sourceDate": "2026 年 10 月 1 日",
-      "title": "Shopify ShopGym：購物代理上線前，怎麼建立可重跑的測試環境？",
-      "lead": "真實商店的商品、價格與頁面隨時改變，代理每次測試很難比較。Shopify 工程團隊將真實店面轉成匿名、可重設的沙盒，再產生依商品與政策核對過的購物任務。",
-      "takeaways": [
-        "ShopArena 先探索首頁、商品、購物車、搜尋與政策頁，寫成匿名且可檢查的商店規格；後續依規格分階段生成沙盒，每階段檢查程式、頁面與視覺結果。ShopGuru 再依實際生成的商品、篩選器與政策建立短任務及多步驟任務，並驗證題目中的資料確實存在。",
-        "Shopify 用六間沙盒商店、224 項任務比較真實與合成環境，其中三間採合成商品、三間採真實商品。多步驟任務的模型排名在兩套評估系統中維持一致；部分單步任務的落差較大，沙盒仍無法完整重現真實網站。",
-        "專案頁另展示十間可瀏覽的沙盒，與論文的六間驗證樣本不可混用。這套方法衡量的是代理在可重現環境中的任務成功情形，尚未證明商家上線後的銷售、顧客滿意或投資報酬。"
-      ],
-      "angle": "可寫「企業 Agent 的測試集，怎麼接近真實工作又保有可重跑性」。先看 Shopify 如何把現場變動轉成測試環境，再對照 Shopify Flow 上線後啟用率低於離線預期的經驗，討論上線前後各要看什麼指標。",
-      "caveat": "此為 Shopify 與研究者的實驗框架；六間商店與 224 項任務是本次驗證範圍，不等於所有電商網站。作者也指出部分單步任務有差距，外部連結及行銷頁等互動未完整保留。",
-      "url": "https://shopify.engineering/shopgym",
-      "sources": [
-        {
-          "label": "Shopify Engineering 原始工程文章（英文）",
-          "url": "https://shopify.engineering/shopgym"
-        },
-        {
-          "label": "ShopGym 研究專案與實驗結果（英文）",
-          "url": "https://shopgym-research.github.io/"
-        }
-      ],
-      "knowledge": {
-        "primary": "evaluation",
-        "themes": [
-          "evaluation",
-          "workflow"
-        ],
-        "concepts": [
-          "可重現測試",
-          "評估與現場落差",
-          "長流程任務"
-        ],
-        "outcome": "research",
-        "related": [
-          {
-            "url": "https://shopify.engineering/fine-tuning-agent-shopify-flow",
-            "reason": "ShopGym 建立上線前測試環境；Shopify Flow 案例顯示離線評估與正式流量仍可能有落差"
-          },
-          {
-            "url": "https://metr.org/blog/2026-02-24-uplift-update/",
-            "reason": "兩項研究都討論測試條件如何影響對代理能力與成效的判斷"
-          }
-        ]
-      },
-      "checkedAt": "2026-10-03",
-      "englishSummary": "Shopify builds repeatable shopping-agent tests around realistic store environments. The approach highlights environment fidelity and evaluation coverage before exposing agents to live customers.",
-      "originalTitle": "",
-      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
-      "source": "Shopify Engineering 原始工程文章（英文）",
-      "date": "2026-10-01",
-      "what": "真實商店的商品、價格與頁面隨時改變，代理每次測試很難比較。Shopify 工程團隊將真實店面轉成匿名、可重設的沙盒，再產生依商品與政策核對過的購物任務。",
-      "points": [
-        "ShopArena 先探索首頁、商品、購物車、搜尋與政策頁，寫成匿名且可檢查的商店規格；後續依規格分階段生成沙盒，每階段檢查程式、頁面與視覺結果。ShopGuru 再依實際生成的商品、篩選器與政策建立短任務及多步驟任務，並驗證題目中的資料確實存在。",
-        "Shopify 用六間沙盒商店、224 項任務比較真實與合成環境，其中三間採合成商品、三間採真實商品。多步驟任務的模型排名在兩套評估系統中維持一致；部分單步任務的落差較大，沙盒仍無法完整重現真實網站。",
-        "專案頁另展示十間可瀏覽的沙盒，與論文的六間驗證樣本不可混用。這套方法衡量的是代理在可重現環境中的任務成功情形，尚未證明商家上線後的銷售、顧客滿意或投資報酬。"
-      ],
-      "highLevel": true
-    },
-    {
       "type": "企業實例 · 成本與規模",
       "sourceDate": "2026 年 8 月 27 日",
       "title": "Uber Software Factory：代理使用量增加後，如何拆解成本",
@@ -1341,148 +1435,6 @@
       "highLevel": true
     },
     {
-      "type": "市場報告 · 指標比較",
-      "sourceDate": "2026 年 4 月",
-      "title": "Stanford AI Index 2026：普及率很高，代理部署仍在早期",
-      "lead": "Stanford HAI 的經濟篇提供跨組織採用、業務職能與勞動市場的資料，適合替單一企業案例建立市場背景。",
-      "takeaways": [
-        "報告指出，受訪組織中 88% 已在至少一項業務職能使用 AI，70% 使用生成式 AI。",
-        "多數業務職能的 AI 代理部署率仍是個位數；一般 AI 使用與代理實際部署之間有明顯落差。",
-        "報告把投資、採用與生產力分開衡量，可作為閱讀企業宣稱成效時的指標框架。"
-      ],
-      "angle": "可寫「為何 AI 使用率高，企業代理部署仍少？」再用 Uber 之類的案例檢查資料、流程、權限與成效衡量需要哪些條件。",
-      "caveat": "88% 是受訪組織在至少一項職能使用 AI 的比例，不代表全面部署，更不能當成代理採用率。跨研究比較時需檢查樣本與定義。",
-      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy",
-      "sources": [
-        {
-          "label": "Stanford HAI 經濟篇",
-          "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy"
-        },
-        {
-          "label": "經濟篇完整 PDF",
-          "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf"
-        }
-      ],
-      "knowledge": {
-        "primary": "market",
-        "themes": [
-          "market",
-          "adoption",
-          "evaluation"
-        ],
-        "concepts": [
-          "樣本與定義",
-          "生產力衡量"
-        ],
-        "outcome": "research"
-      },
-      "englishSummary": "The AI Index collects evidence on adoption and economic change. Broad usage indicators and early agent deployments describe different levels of maturity; the report provides context for individual company cases.",
-      "originalTitle": "",
-      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
-      "source": "Stanford HAI 經濟篇",
-      "what": "Stanford HAI 的經濟篇提供跨組織採用、業務職能與勞動市場的資料，適合替單一企業案例建立市場背景。",
-      "points": [
-        "報告指出，受訪組織中 88% 已在至少一項業務職能使用 AI，70% 使用生成式 AI。",
-        "多數業務職能的 AI 代理部署率仍是個位數；一般 AI 使用與代理實際部署之間有明顯落差。",
-        "報告把投資、採用與生產力分開衡量，可作為閱讀企業宣稱成效時的指標框架。"
-      ],
-      "highLevel": true
-    },
-    {
-      "type": "企業導入實例 · 衡量方法",
-      "sourceDate": "2026 年 3 月 11 日",
-      "title": "Wayfair：用資料品質與人工決策一致率檢查 AI 成效",
-      "lead": "Wayfair 把 AI 放進供應商支援與商品資料流程；它提供了比單看省時更具體的衡量線索。",
-      "takeaways": [
-        "供應商案例介紹稱每月自動處理約 4.1 萬件供應商支援工單，並修正 250 萬個商品標籤。",
-        "零件替換流程由 AI 讀取案件歷史、建議下一步和草擬回覆，再由人工審查。",
-        "Wayfair 追蹤 AI 建議與人員最終決策的符合程度，稱為 alignment rate。"
-      ],
-      "angle": "可問「企業導入 AI 後，該用什麼指標檢查品質？」從處理量、資料正確性、人工決策一致率與例外案件切入。",
-      "caveat": "案例發布於模型供應商網站，數字來自客戶與供應商敘述；alignment rate 也不能單獨代表客戶體驗或最終業務成果。",
-      "url": "https://openai.com/index/wayfair/",
-      "sources": [
-        {
-          "label": "OpenAI 與 Wayfair 客戶案例",
-          "url": "https://openai.com/index/wayfair/"
-        }
-      ],
-      "knowledge": {
-        "primary": "evaluation",
-        "themes": [
-          "evaluation",
-          "workflow"
-        ],
-        "concepts": [
-          "人工校準",
-          "評估與現場落差"
-        ],
-        "outcome": "case"
-      },
-      "englishSummary": "Wayfair evaluates AI outputs against expert decisions and data-quality requirements. Human agreement is tied to a particular task and validation process, rather than serving as a universal accuracy measure.",
-      "originalTitle": "",
-      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
-      "source": "OpenAI 與 Wayfair 客戶案例",
-      "date": "2026-03-11",
-      "what": "Wayfair 把 AI 放進供應商支援與商品資料流程；它提供了比單看省時更具體的衡量線索。",
-      "points": [
-        "供應商案例介紹稱每月自動處理約 4.1 萬件供應商支援工單，並修正 250 萬個商品標籤。",
-        "零件替換流程由 AI 讀取案件歷史、建議下一步和草擬回覆，再由人工審查。",
-        "Wayfair 追蹤 AI 建議與人員最終決策的符合程度，稱為 alignment rate。"
-      ],
-      "highLevel": true
-    },
-    {
-      "type": "失敗與修正 · 優先讀",
-      "sourceDate": "2026 年 4 月 22 日更新",
-      "title": "Shopify：離線評估過關，上線後啟用率卻低 35%",
-      "lead": "Shopify 的 Flow 代理在小流量上線時遇到落差，團隊公開了原因與修正方法。",
-      "takeaways": [
-        "微調模型通過既有離線評估，放入 1% 正式流量後，工作流程啟用率比原本的提示詞代理低 35%。",
-        "原先資料漏掉了編輯既有流程、郵件設定與第三方整合等需求。團隊按失敗類型補資料，並以專家標註校準評分器。"
-      ],
-      "angle": "企業如何知道測試集漏了真正的工作？可對照 Wayfair 的人工決策一致率，討論評估與實際使用間的落差。",
-      "caveat": "Shopify 自述；啟用率同時受商家行為影響，不能直接等同模型正確率。",
-      "url": "https://shopify.engineering/fine-tuning-agent-shopify-flow",
-      "knowledge": {
-        "primary": "evaluation",
-        "themes": [
-          "evaluation",
-          "workflow"
-        ],
-        "concepts": [
-          "評估與現場落差",
-          "人工校準",
-          "回饋改善"
-        ],
-        "outcome": "failure",
-        "related": [
-          {
-            "url": "https://shopify.engineering/sidekicks-continual-learning-loop",
-            "reason": "同一產品的失敗復盤與後續品質改善機制"
-          }
-        ]
-      },
-      "sources": [
-        {
-          "label": "研究／企業原始說明",
-          "url": "https://shopify.engineering/fine-tuning-agent-shopify-flow"
-        }
-      ],
-      "checkedAt": "2026-10-02",
-      "englishSummary": "Shopify reports an agent that performed well in offline evaluation but had weaker adoption in production. The case connects model evaluation with usability, workflow fit and real user behavior.",
-      "originalTitle": "",
-      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
-      "source": "研究／企業原始說明",
-      "date": "2026-04-22",
-      "what": "Shopify 的 Flow 代理在小流量上線時遇到落差，團隊公開了原因與修正方法。",
-      "points": [
-        "微調模型通過既有離線評估，放入 1% 正式流量後，工作流程啟用率比原本的提示詞代理低 35%。",
-        "原先資料漏掉了編輯既有流程、郵件設定與第三方整合等需求。團隊按失敗類型補資料，並以專家標註校準評分器。"
-      ],
-      "highLevel": true
-    },
-    {
       "type": "企業實作 · 持續改善",
       "sourceDate": "2026 年 8 月 5 日",
       "title": "Shopify Sidekick：把每次失敗變成下一輪改善的資料",
@@ -1524,137 +1476,6 @@
       "points": [
         "團隊先定義完整性、執行、回應品質與安全的評分規準，並納入隨機抽樣的真實流量。",
         "由產品專家先檢查彼此的評分一致程度，再校準模型評分器；已知測試集與真實流量各有用途。"
-      ],
-      "highLevel": true
-    },
-    {
-      "type": "研究反例 · 需連同更新閱讀",
-      "sourceDate": "2026 年 2 月 24 日",
-      "title": "METR：AI 生產力研究，為什麼連衡量方法都要修改？",
-      "lead": "早期研究曾發現受試開源開發者使用 AI 後較慢；2026 年更新說明，新實驗已出現選擇偏差。",
-      "takeaways": [
-        "2025 年研究在特定開發者與任務中測得耗時增加 19%，研究者明確限制其可推廣範圍。",
-        "後續實驗遇到不願停用 AI 的開發者退出、報酬改變，以及多代理並行使工時難以衡量，因此難以可靠估計目前的加速幅度。"
-      ],
-      "angle": "可用來練習拆解「用了覺得更快」與「用實驗測得更快」的差異，以及新工具如何讓舊指標失準。",
-      "caveat": "不能拿 2025 年結果宣稱 2026 年 AI 普遍降低生產力；後續結果也不足以確定加速幅度。",
-      "url": "https://metr.org/blog/2026-02-24-uplift-update/",
-      "knowledge": {
-        "primary": "evaluation",
-        "themes": [
-          "evaluation",
-          "adoption"
-        ],
-        "concepts": [
-          "生產力衡量",
-          "樣本與定義"
-        ],
-        "outcome": "mixed"
-      },
-      "sources": [
-        {
-          "label": "研究／企業原始說明",
-          "url": "https://metr.org/blog/2026-02-24-uplift-update/"
-        }
-      ],
-      "checkedAt": "2026-10-02",
-      "englishSummary": "METR revisits the challenge of measuring AI productivity. Research design, task selection and changing tool usage affect what a measured time difference can tell us.",
-      "originalTitle": "",
-      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
-      "source": "研究／企業原始說明",
-      "date": "2026-02-24",
-      "what": "早期研究曾發現受試開源開發者使用 AI 後較慢；2026 年更新說明，新實驗已出現選擇偏差。",
-      "points": [
-        "2025 年研究在特定開發者與任務中測得耗時增加 19%，研究者明確限制其可推廣範圍。",
-        "後續實驗遇到不願停用 AI 的開發者退出、報酬改變，以及多代理並行使工時難以衡量，因此難以可靠估計目前的加速幅度。"
-      ],
-      "highLevel": true
-    },
-    {
-      "type": "失敗與修正 · 代理權限",
-      "sourceDate": "2026 年 5 月 25 日",
-      "title": "Anthropic：人工核准與安全邊界，哪些地方曾經失效？",
-      "lead": "Anthropic 公開代理產品的安全設計與修正經驗，適合研究代理取得系統存取權後的管理責任。",
-      "takeaways": [
-        "團隊發現大量權限提示造成核准疲勞；使用者經常直接允許操作。",
-        "部分漏洞發生在信任提示之前：專案設定先被解析或執行。修正方式是把相關處理延後到確認信任之後，並限制代理可觸及的環境。"
-      ],
-      "angle": "可追問企業的人工作業核准是否真正有效，以及環境限制、資料權限與人工監督應如何分工。",
-      "caveat": "這是產品工程團隊的公開復盤，包含漏洞回報與受控演練，不能全部視為已造成客戶損失的事件。",
-      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
-      "knowledge": {
-        "primary": "governance",
-        "themes": [
-          "governance",
-          "evaluation"
-        ],
-        "concepts": [
-          "人工介入",
-          "代理權限",
-          "失敗修正"
-        ],
-        "outcome": "failure"
-      },
-      "sources": [
-        {
-          "label": "研究／企業原始說明",
-          "url": "https://www.anthropic.com/engineering/how-we-contain-claude"
-        }
-      ],
-      "checkedAt": "2026-10-02",
-      "englishSummary": "Anthropic describes containment for coding agents, including where approval and sandbox boundaries can fail. The discussion connects tool access with specific failure paths and mitigations.",
-      "originalTitle": "",
-      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
-      "source": "研究／企業原始說明",
-      "date": "2026-05-25",
-      "what": "Anthropic 公開代理產品的安全設計與修正經驗，適合研究代理取得系統存取權後的管理責任。",
-      "points": [
-        "團隊發現大量權限提示造成核准疲勞；使用者經常直接允許操作。",
-        "部分漏洞發生在信任提示之前：專案設定先被解析或執行。修正方式是把相關處理延後到確認信任之後，並限制代理可觸及的環境。"
-      ],
-      "highLevel": true
-    },
-    {
-      "type": "企業年報 · 價值衡量",
-      "sourceDate": "2025 年年報，2026 年發布",
-      "title": "DBS：銀行如何把 AI 效益放進既有績效衡量？",
-      "lead": "DBS 年報把 AI 與資料分析成果放在管理與績效制度中說明，可補上科技公司以外的觀察。",
-      "takeaways": [
-        "DBS 說明沿用 Digital Value Capture 與跨部門客戶流程的績效管理架構，衡量資料分析及 AI／ML 的經濟價值。",
-        "CodeBuddy 在部分程式工作上自述節省最多 20% 時間；這種任務指標與全行經濟價值的衡量範圍不同。"
-      ],
-      "angle": "可研究企業如何把單一任務的省時連到流程與組織績效，哪些成本和產出必須另外追蹤。",
-      "caveat": "年報為企業自述；資料分析、傳統機器學習與生成式 AI 的效益不可混為代理單獨貢獻。",
-      "url": "https://www.dbs.com/annualreports/2025/ceo-reflections.html",
-      "knowledge": {
-        "primary": "evaluation",
-        "themes": [
-          "evaluation",
-          "market",
-          "adoption"
-        ],
-        "concepts": [
-          "生產力衡量",
-          "樣本與定義",
-          "經濟價值"
-        ],
-        "outcome": "case"
-      },
-      "sources": [
-        {
-          "label": "研究／企業原始說明",
-          "url": "https://www.dbs.com/annualreports/2025/ceo-reflections.html"
-        }
-      ],
-      "checkedAt": "2026-10-02",
-      "englishSummary": "DBS places reported AI benefits within its broader operating and performance framework. Annual-report figures provide management context but need careful attribution when assessing AI-specific returns.",
-      "originalTitle": "",
-      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
-      "source": "研究／企業原始說明",
-      "what": "DBS 年報把 AI 與資料分析成果放在管理與績效制度中說明，可補上科技公司以外的觀察。",
-      "points": [
-        "DBS 說明沿用 Digital Value Capture 與跨部門客戶流程的績效管理架構，衡量資料分析及 AI／ML 的經濟價值。",
-        "CodeBuddy 在部分程式工作上自述節省最多 20% 時間；這種任務指標與全行經濟價值的衡量範圍不同。"
       ],
       "highLevel": true
     },
@@ -1709,6 +1530,146 @@
       ]
     },
     {
+      "url": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
+      "date": "2026-06-03",
+      "sourceDate": "2026 年 6 月 3 日",
+      "source": "BCG",
+      "type": "研究報告",
+      "originalTitle": "AI at Work: Strategy Matters More Than Tools",
+      "title": "BCG AI at Work：員工省下的時間，企業如何接續安排？",
+      "englishSummary": "This employee survey separates regular AI use and perceived time savings from organizational value. BCG argues that guidance, workforce investment and operating-model changes matter when companies want saved time to support business priorities. Time savings are self-reported.",
+      "lead": "近 12,000 位員工、管理者與領導者的問卷，呈現 AI 使用增加後，工作安排與管理方式尚未同步的問題。",
+      "takeaways": [
+        "涵蓋十多個市場；74% 前線員工回報每天或每週數次使用 AI，42% 的經常使用者回報每週省下約一個工作日。",
+        "報告指出，前線員工較少得到如何使用省下時間的指導。讀這份資料時，可追問主管是否重新安排工作與責任。",
+        "BCG 將較清楚的策略、投入人才與流程調整，連到較高的受訪者回報價值與工作感受。"
+      ],
+      "caveat": "員工與主管自述，未直接量測任務時間或建立實驗對照；個人省時不能直接相加成財務效益。",
+      "knowledge": {
+        "primary": "adoption",
+        "themes": [
+          "adoption",
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "AI 價值衡量",
+          "員工省時",
+          "流程重設"
+        ],
+        "outcome": "research",
+        "related": [
+          {
+            "url": "https://www.bcg.com/publications/2026/the-formula-for-agentic-ai-value",
+            "reason": "員工層次的省時與主管層次的 AI 價值需要不同衡量，可透過兩份 BCG 報告對照"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-03",
+      "highLevel": true,
+      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
+      "what": "近 12,000 位員工、管理者與領導者的問卷，呈現 AI 使用增加後，工作安排與管理方式尚未同步的問題。",
+      "points": [
+        "涵蓋十多個市場；74% 前線員工回報每天或每週數次使用 AI，42% 的經常使用者回報每週省下約一個工作日。",
+        "報告指出，前線員工較少得到如何使用省下時間的指導。讀這份資料時，可追問主管是否重新安排工作與責任。",
+        "BCG 將較清楚的策略、投入人才與流程調整，連到較高的受訪者回報價值與工作感受。"
+      ]
+    },
+    {
+      "type": "失敗與修正 · 代理權限",
+      "sourceDate": "2026 年 5 月 25 日",
+      "title": "Anthropic：人工核准與安全邊界，哪些地方曾經失效？",
+      "lead": "Anthropic 公開代理產品的安全設計與修正經驗，適合研究代理取得系統存取權後的管理責任。",
+      "takeaways": [
+        "團隊發現大量權限提示造成核准疲勞；使用者經常直接允許操作。",
+        "部分漏洞發生在信任提示之前：專案設定先被解析或執行。修正方式是把相關處理延後到確認信任之後，並限制代理可觸及的環境。"
+      ],
+      "angle": "可追問企業的人工作業核准是否真正有效，以及環境限制、資料權限與人工監督應如何分工。",
+      "caveat": "這是產品工程團隊的公開復盤，包含漏洞回報與受控演練，不能全部視為已造成客戶損失的事件。",
+      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance",
+          "evaluation"
+        ],
+        "concepts": [
+          "人工介入",
+          "代理權限",
+          "失敗修正"
+        ],
+        "outcome": "failure"
+      },
+      "sources": [
+        {
+          "label": "研究／企業原始說明",
+          "url": "https://www.anthropic.com/engineering/how-we-contain-claude"
+        }
+      ],
+      "checkedAt": "2026-10-02",
+      "englishSummary": "Anthropic describes containment for coding agents, including where approval and sandbox boundaries can fail. The discussion connects tool access with specific failure paths and mitigations.",
+      "originalTitle": "",
+      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
+      "source": "研究／企業原始說明",
+      "date": "2026-05-25",
+      "what": "Anthropic 公開代理產品的安全設計與修正經驗，適合研究代理取得系統存取權後的管理責任。",
+      "points": [
+        "團隊發現大量權限提示造成核准疲勞；使用者經常直接允許操作。",
+        "部分漏洞發生在信任提示之前：專案設定先被解析或執行。修正方式是把相關處理延後到確認信任之後，並限制代理可觸及的環境。"
+      ],
+      "highLevel": true
+    },
+    {
+      "type": "失敗與修正 · 優先讀",
+      "sourceDate": "2026 年 4 月 22 日更新",
+      "title": "Shopify：離線評估過關，上線後啟用率卻低 35%",
+      "lead": "Shopify 的 Flow 代理在小流量上線時遇到落差，團隊公開了原因與修正方法。",
+      "takeaways": [
+        "微調模型通過既有離線評估，放入 1% 正式流量後，工作流程啟用率比原本的提示詞代理低 35%。",
+        "原先資料漏掉了編輯既有流程、郵件設定與第三方整合等需求。團隊按失敗類型補資料，並以專家標註校準評分器。"
+      ],
+      "angle": "企業如何知道測試集漏了真正的工作？可對照 Wayfair 的人工決策一致率，討論評估與實際使用間的落差。",
+      "caveat": "Shopify 自述；啟用率同時受商家行為影響，不能直接等同模型正確率。",
+      "url": "https://shopify.engineering/fine-tuning-agent-shopify-flow",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow"
+        ],
+        "concepts": [
+          "評估與現場落差",
+          "人工校準",
+          "回饋改善"
+        ],
+        "outcome": "failure",
+        "related": [
+          {
+            "url": "https://shopify.engineering/sidekicks-continual-learning-loop",
+            "reason": "同一產品的失敗復盤與後續品質改善機制"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "研究／企業原始說明",
+          "url": "https://shopify.engineering/fine-tuning-agent-shopify-flow"
+        }
+      ],
+      "checkedAt": "2026-10-02",
+      "englishSummary": "Shopify reports an agent that performed well in offline evaluation but had weaker adoption in production. The case connects model evaluation with usability, workflow fit and real user behavior.",
+      "originalTitle": "",
+      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
+      "source": "研究／企業原始說明",
+      "date": "2026-04-22",
+      "what": "Shopify 的 Flow 代理在小流量上線時遇到落差，團隊公開了原因與修正方法。",
+      "points": [
+        "微調模型通過既有離線評估，放入 1% 正式流量後，工作流程啟用率比原本的提示詞代理低 35%。",
+        "原先資料漏掉了編輯既有流程、郵件設定與第三方整合等需求。團隊按失敗類型補資料，並以專家標註校準評分器。"
+      ],
+      "highLevel": true
+    },
+    {
       "url": "https://blog.cloudflare.com/ai-code-review/",
       "date": "2026-04-20",
       "sourceDate": "2026 年 4 月 20 日",
@@ -1755,100 +1716,183 @@
       ]
     },
     {
-      "url": "https://www.bcg.com/publications/2026/the-formula-for-agentic-ai-value",
-      "date": "2026-09-30",
-      "sourceDate": "2026 年 9 月 30 日",
-      "source": "BCG",
-      "type": "研究報告",
-      "originalTitle": "The Formula for Agentic AI Value",
-      "title": "BCG Applied AI Index：企業如何定義 AI 價值與 Agent 控制？",
-      "englishSummary": "BCG surveys more than 1,300 senior executives across over 20 sectors. It associates coherent programs and financial measurement with greater reported AI value, while finding limited deployment of a complete set of agent controls. These are survey relationships, not evidence that one intervention caused the difference.",
-      "lead": "BCG 將策略、執行能力與企業回報的 AI 價值一起分析。可讀的重點是衡量方式、跨部門計畫與 Agent 控制的成熟度。",
+      "type": "企業導入實例 · 衡量方法",
+      "sourceDate": "2026 年 3 月 11 日",
+      "title": "Wayfair：用資料品質與人工決策一致率檢查 AI 成效",
+      "lead": "Wayfair 把 AI 放進供應商支援與商品資料流程；它提供了比單看省時更具體的衡量線索。",
       "takeaways": [
-        "樣本為逾 1,300 位高階主管、涵蓋 20 多個產業；受訪者回報的價值與 BCG 成熟度分組須一起讀。",
-        "最成熟組的 95% 使用損益或 KPI 等代理指標衡量 AI；直接追蹤損益的組別回報較高價值，尚不能證明因果。",
-        "報告指出只有 5% 已部署完整的關鍵 Agent 控制；2030 年自主程度與價值占比是受訪者預期。"
+        "供應商案例介紹稱每月自動處理約 4.1 萬件供應商支援工單，並修正 250 萬個商品標籤。",
+        "零件替換流程由 AI 讀取案件歷史、建議下一步和草擬回覆，再由人工審查。",
+        "Wayfair 追蹤 AI 建議與人員最終決策的符合程度，稱為 alignment rate。"
       ],
-      "caveat": "主管問卷與 BCG 分組分析；衡量定義、組別差異與未來預期不能直接當成單一企業的投資報酬。",
+      "angle": "可問「企業導入 AI 後，該用什麼指標檢查品質？」從處理量、資料正確性、人工決策一致率與例外案件切入。",
+      "caveat": "案例發布於模型供應商網站，數字來自客戶與供應商敘述；alignment rate 也不能單獨代表客戶體驗或最終業務成果。",
+      "url": "https://openai.com/index/wayfair/",
+      "sources": [
+        {
+          "label": "OpenAI 與 Wayfair 客戶案例",
+          "url": "https://openai.com/index/wayfair/"
+        }
+      ],
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow"
+        ],
+        "concepts": [
+          "人工校準",
+          "評估與現場落差"
+        ],
+        "outcome": "case"
+      },
+      "englishSummary": "Wayfair evaluates AI outputs against expert decisions and data-quality requirements. Human agreement is tied to a particular task and validation process, rather than serving as a universal accuracy measure.",
+      "originalTitle": "",
+      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
+      "source": "OpenAI 與 Wayfair 客戶案例",
+      "date": "2026-03-11",
+      "what": "Wayfair 把 AI 放進供應商支援與商品資料流程；它提供了比單看省時更具體的衡量線索。",
+      "points": [
+        "供應商案例介紹稱每月自動處理約 4.1 萬件供應商支援工單，並修正 250 萬個商品標籤。",
+        "零件替換流程由 AI 讀取案件歷史、建議下一步和草擬回覆，再由人工審查。",
+        "Wayfair 追蹤 AI 建議與人員最終決策的符合程度，稱為 alignment rate。"
+      ],
+      "highLevel": true
+    },
+    {
+      "type": "研究反例 · 需連同更新閱讀",
+      "sourceDate": "2026 年 2 月 24 日",
+      "title": "METR：AI 生產力研究，為什麼連衡量方法都要修改？",
+      "lead": "早期研究曾發現受試開源開發者使用 AI 後較慢；2026 年更新說明，新實驗已出現選擇偏差。",
+      "takeaways": [
+        "2025 年研究在特定開發者與任務中測得耗時增加 19%，研究者明確限制其可推廣範圍。",
+        "後續實驗遇到不願停用 AI 的開發者退出、報酬改變，以及多代理並行使工時難以衡量，因此難以可靠估計目前的加速幅度。"
+      ],
+      "angle": "可用來練習拆解「用了覺得更快」與「用實驗測得更快」的差異，以及新工具如何讓舊指標失準。",
+      "caveat": "不能拿 2025 年結果宣稱 2026 年 AI 普遍降低生產力；後續結果也不足以確定加速幅度。",
+      "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "adoption"
+        ],
+        "concepts": [
+          "生產力衡量",
+          "樣本與定義"
+        ],
+        "outcome": "mixed"
+      },
+      "sources": [
+        {
+          "label": "研究／企業原始說明",
+          "url": "https://metr.org/blog/2026-02-24-uplift-update/"
+        }
+      ],
+      "checkedAt": "2026-10-02",
+      "englishSummary": "METR revisits the challenge of measuring AI productivity. Research design, task selection and changing tool usage affect what a measured time difference can tell us.",
+      "originalTitle": "",
+      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
+      "source": "研究／企業原始說明",
+      "date": "2026-02-24",
+      "what": "早期研究曾發現受試開源開發者使用 AI 後較慢；2026 年更新說明，新實驗已出現選擇偏差。",
+      "points": [
+        "2025 年研究在特定開發者與任務中測得耗時增加 19%，研究者明確限制其可推廣範圍。",
+        "後續實驗遇到不願停用 AI 的開發者退出、報酬改變，以及多代理並行使工時難以衡量，因此難以可靠估計目前的加速幅度。"
+      ],
+      "highLevel": true
+    },
+    {
+      "type": "市場報告 · 指標比較",
+      "sourceDate": "2026 年 4 月",
+      "title": "Stanford AI Index 2026：普及率很高，代理部署仍在早期",
+      "lead": "Stanford HAI 的經濟篇提供跨組織採用、業務職能與勞動市場的資料，適合替單一企業案例建立市場背景。",
+      "takeaways": [
+        "報告指出，受訪組織中 88% 已在至少一項業務職能使用 AI，70% 使用生成式 AI。",
+        "多數業務職能的 AI 代理部署率仍是個位數；一般 AI 使用與代理實際部署之間有明顯落差。",
+        "報告把投資、採用與生產力分開衡量，可作為閱讀企業宣稱成效時的指標框架。"
+      ],
+      "angle": "可寫「為何 AI 使用率高，企業代理部署仍少？」再用 Uber 之類的案例檢查資料、流程、權限與成效衡量需要哪些條件。",
+      "caveat": "88% 是受訪組織在至少一項職能使用 AI 的比例，不代表全面部署，更不能當成代理採用率。跨研究比較時需檢查樣本與定義。",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy",
+      "sources": [
+        {
+          "label": "Stanford HAI 經濟篇",
+          "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy"
+        },
+        {
+          "label": "經濟篇完整 PDF",
+          "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026_chapter_4_economy.pdf"
+        }
+      ],
       "knowledge": {
         "primary": "market",
         "themes": [
           "market",
-          "evaluation",
-          "governance"
-        ],
-        "concepts": [
-          "AI 價值衡量",
-          "主管問卷",
-          "Agent 治理"
-        ],
-        "outcome": "research",
-        "related": [
-          {
-            "url": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
-            "reason": "兩份 BCG 報告分別問主管與員工，可比較企業價值與個人省時，樣本及指標不可混用"
-          },
-          {
-            "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
-            "reason": "兩份企業調查都涉及 AI 採用與價值；比較前須核對樣本、成熟度與價值定義"
-          }
-        ]
-      },
-      "checkedAt": "2026-10-03",
-      "highLevel": true,
-      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
-      "what": "BCG 將策略、執行能力與企業回報的 AI 價值一起分析。可讀的重點是衡量方式、跨部門計畫與 Agent 控制的成熟度。",
-      "points": [
-        "樣本為逾 1,300 位高階主管、涵蓋 20 多個產業；受訪者回報的價值與 BCG 成熟度分組須一起讀。",
-        "最成熟組的 95% 使用損益或 KPI 等代理指標衡量 AI；直接追蹤損益的組別回報較高價值，尚不能證明因果。",
-        "報告指出只有 5% 已部署完整的關鍵 Agent 控制；2030 年自主程度與價值占比是受訪者預期。"
-      ]
-    },
-    {
-      "url": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
-      "date": "2026-06-03",
-      "sourceDate": "2026 年 6 月 3 日",
-      "source": "BCG",
-      "type": "研究報告",
-      "originalTitle": "AI at Work: Strategy Matters More Than Tools",
-      "title": "BCG AI at Work：員工省下的時間，企業如何接續安排？",
-      "englishSummary": "This employee survey separates regular AI use and perceived time savings from organizational value. BCG argues that guidance, workforce investment and operating-model changes matter when companies want saved time to support business priorities. Time savings are self-reported.",
-      "lead": "近 12,000 位員工、管理者與領導者的問卷，呈現 AI 使用增加後，工作安排與管理方式尚未同步的問題。",
-      "takeaways": [
-        "涵蓋十多個市場；74% 前線員工回報每天或每週數次使用 AI，42% 的經常使用者回報每週省下約一個工作日。",
-        "報告指出，前線員工較少得到如何使用省下時間的指導。讀這份資料時，可追問主管是否重新安排工作與責任。",
-        "BCG 將較清楚的策略、投入人才與流程調整，連到較高的受訪者回報價值與工作感受。"
-      ],
-      "caveat": "員工與主管自述，未直接量測任務時間或建立實驗對照；個人省時不能直接相加成財務效益。",
-      "knowledge": {
-        "primary": "adoption",
-        "themes": [
           "adoption",
-          "workflow",
           "evaluation"
         ],
         "concepts": [
-          "AI 價值衡量",
-          "員工省時",
-          "流程重設"
+          "樣本與定義",
+          "生產力衡量"
         ],
-        "outcome": "research",
-        "related": [
-          {
-            "url": "https://www.bcg.com/publications/2026/the-formula-for-agentic-ai-value",
-            "reason": "員工層次的省時與主管層次的 AI 價值需要不同衡量，可透過兩份 BCG 報告對照"
-          }
-        ]
+        "outcome": "research"
       },
-      "checkedAt": "2026-10-03",
-      "highLevel": true,
+      "englishSummary": "The AI Index collects evidence on adoption and economic change. Broad usage indicators and early agent deployments describe different levels of maturity; the report provides context for individual company cases.",
+      "originalTitle": "",
       "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
-      "what": "近 12,000 位員工、管理者與領導者的問卷，呈現 AI 使用增加後，工作安排與管理方式尚未同步的問題。",
+      "source": "Stanford HAI 經濟篇",
+      "what": "Stanford HAI 的經濟篇提供跨組織採用、業務職能與勞動市場的資料，適合替單一企業案例建立市場背景。",
       "points": [
-        "涵蓋十多個市場；74% 前線員工回報每天或每週數次使用 AI，42% 的經常使用者回報每週省下約一個工作日。",
-        "報告指出，前線員工較少得到如何使用省下時間的指導。讀這份資料時，可追問主管是否重新安排工作與責任。",
-        "BCG 將較清楚的策略、投入人才與流程調整，連到較高的受訪者回報價值與工作感受。"
-      ]
+        "報告指出，受訪組織中 88% 已在至少一項業務職能使用 AI，70% 使用生成式 AI。",
+        "多數業務職能的 AI 代理部署率仍是個位數；一般 AI 使用與代理實際部署之間有明顯落差。",
+        "報告把投資、採用與生產力分開衡量，可作為閱讀企業宣稱成效時的指標框架。"
+      ],
+      "highLevel": true
+    },
+    {
+      "type": "企業年報 · 價值衡量",
+      "sourceDate": "2025 年年報，2026 年發布",
+      "title": "DBS：銀行如何把 AI 效益放進既有績效衡量？",
+      "lead": "DBS 年報把 AI 與資料分析成果放在管理與績效制度中說明，可補上科技公司以外的觀察。",
+      "takeaways": [
+        "DBS 說明沿用 Digital Value Capture 與跨部門客戶流程的績效管理架構，衡量資料分析及 AI／ML 的經濟價值。",
+        "CodeBuddy 在部分程式工作上自述節省最多 20% 時間；這種任務指標與全行經濟價值的衡量範圍不同。"
+      ],
+      "angle": "可研究企業如何把單一任務的省時連到流程與組織績效，哪些成本和產出必須另外追蹤。",
+      "caveat": "年報為企業自述；資料分析、傳統機器學習與生成式 AI 的效益不可混為代理單獨貢獻。",
+      "url": "https://www.dbs.com/annualreports/2025/ceo-reflections.html",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "market",
+          "adoption"
+        ],
+        "concepts": [
+          "生產力衡量",
+          "樣本與定義",
+          "經濟價值"
+        ],
+        "outcome": "case"
+      },
+      "sources": [
+        {
+          "label": "研究／企業原始說明",
+          "url": "https://www.dbs.com/annualreports/2025/ceo-reflections.html"
+        }
+      ],
+      "checkedAt": "2026-10-02",
+      "englishSummary": "DBS places reported AI benefits within its broader operating and performance framework. Annual-report figures provide management context but need careful attribution when assessing AI-specific returns.",
+      "originalTitle": "",
+      "dailyBackfillAt": "2026-10-03T03:11:40.167689Z",
+      "source": "研究／企業原始說明",
+      "what": "DBS 年報把 AI 與資料分析成果放在管理與績效制度中說明，可補上科技公司以外的觀察。",
+      "points": [
+        "DBS 說明沿用 Digital Value Capture 與跨部門客戶流程的績效管理架構，衡量資料分析及 AI／ML 的經濟價值。",
+        "CodeBuddy 在部分程式工作上自述節省最多 20% 時間；這種任務指標與全行經濟價值的衡量範圍不同。"
+      ],
+      "highLevel": true
     }
   ],
   "deepDives": [
@@ -2497,11 +2541,12 @@
     },
     {
       "title": "離線評估通過，現場為什麼仍會失敗？",
-      "summary": "Shopify 的評估與採用落差、Sidekick 改善循環及 Microsoft 的修正經驗，提供不同工作場景的對照。重點放在失敗發生的環節，以及後續怎麼重新驗證。",
+      "summary": "比較測試與現場之間的落差：Shopify 的離線評估、Neogen 的健康檢查與假資料測試都曾顯示正常，實際工作卻未完成；Microsoft 則回頭重選場景並調整流程。讀每則來源時，分別追問測試覆蓋了哪個環節、現場怎麼發現問題，以及修正後是否有持續衡量。Neogen 與 Microsoft 的事故和結果均屬公司自述。",
       "urls": [
         "https://shopify.engineering/fine-tuning-agent-shopify-flow",
         "https://shopify.engineering/sidekicks-continual-learning-loop",
-        "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/"
+        "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
+        "https://neogenmedia.com/blog/ai-agent-failure-modes"
       ],
       "origin": "daily-trend"
     },
@@ -2516,14 +2561,8 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-03T03:00:22.501627Z",
-    "points": [
-      {
-        "text": "主管開始使用 AI 後，公司流程如何接續調整？Mollick 提醒要分開看個人採用與組織改變。",
-        "url": "https://x.com/emollick/status/2106097018129227918",
-        "label": "閱讀貼文"
-      }
-    ]
+    "checkedAt": "2026-10-04T01:47:09Z",
+    "points": []
   },
   "knowledgeLibrary": [
     {
