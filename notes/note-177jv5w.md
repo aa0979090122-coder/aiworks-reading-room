@@ -23,23 +23,3 @@ Uber 技術長分享的組織做法：讓熟悉 AI 的工程師與業務專家�
 ## 來源
 [原始來源](https://www.linkedin.com/posts/pneppalli_agentic-ai-adoption-is-on-fire-at-uber-and-activity-7480367291851833344-6Lhm)
 
-<!-- my-note -->
-## 我的想法
-Sixteen functions in two months is a fast cadence for something built by pairing an engineer with a domain expert instead of a specialized automation team, which suggests the real bottleneck was domain access, not technical skill. That's usually the actual constraint on internal automation: engineers who can build agents rarely have deep context on finance or legal workflows, and domain experts rarely have the technical fluency to build agents themselves. Pairing them directly, instead of routing through a central platform team, removes a translation layer that normally loses information.
-
-This is the right way to think about agentic AI adoption.
- 
-The real unlock is not “agents replacing tasks.” It is domain experts and engineers sitting together long enough to see how work actually moves across systems, approvals, exceptions, and hidden handoffs.
- 
-That is where most automation programs miss the mark. They automate the visible task, while the real value is trapped in the workflow around it.
- 
-“Workflow as the unit of automation” is the key line here.   
-
-The line that matters most: the best opportunities weren't visible from outside the workflow. You find them by sitting next to the person doing the work — not by reading the process documentation. the shadowing-first discipline is the part every industry should be borrowing
-
-Completely agree Praveen Neppalli Naga. The next challenge won't be building more AI agents — it will be trusting, governing, and continuously verifying them at enterprise scale.  
-
-As organizations move to thousands of agents, decision lineage, context drift, policy compliance, measurable trust, and audit-ready evidence will become just as important as productivity. The winners will be those who can not only automate work, but also prove every AI decision can be trusted. : )
-
-The detail that stands out most in this case isn't the time saved, it's the shift in unit of analysis. Moving from "automate a task" to "redesign the workflow" completely changes the kind of outcome you can extract. Pairing an engineer with a domain expert for ten days is a smart way to solve the biggest bottleneck of AI outside engineering: you can't automate well what you only know from a flowchart. The lesson that stands out for any company is this, the best AI opportunities are hidden inside the real work, not in the documentation of it.
-<!-- /my-note -->
