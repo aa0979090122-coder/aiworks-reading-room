@@ -173,7 +173,32 @@
       "zh": "Levie 主張企業需要持續評測 Agent 在自身環境裡的工作，才能判斷哪裡有效、哪裡退步，以及模型更新後是否仍能交付結果。這是他對企業評測需求的觀點。",
       "topic": "trend",
       "title": "Levie：模型升級後，仍需持續評測工作成果",
-      "publishedAt": "2026-09-25T23:33:49.340000Z"
+      "publishedAt": "2026-09-25T23:33:49.340000Z",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "governance"
+        ],
+        "concepts": [
+          "企業評測",
+          "持續驗證"
+        ],
+        "outcome": "insight",
+        "related": [
+          {
+            "url": "https://openai.com/index/basis-tax-workbook-with-astra/",
+            "reason": "Levie 是評測需求的觀點；Basis 提供一個長流程任務同時檢查過程與答案的實例"
+          },
+          {
+            "url": "https://x.com/cresta/status/2099929000751603868",
+            "reason": "Levie 討論企業自身環境的評測；此客服案例將現場行為轉成可調整的評分規則"
+          }
+        ],
+        "noteBody": "## English\nYou can’t automate what you can’t measure. This means that evals are one of the gates to diffusion of AI in the enterprise.\n\nAaron Levie argues that enterprise agents need evaluations tied to the work they perform inside each organization. Without that baseline, a team cannot reliably tell whether a deployment, upgrade, or change improved the result. This is an executive viewpoint, not a reported Box deployment or a measured industry-wide finding.\n\n## 中文筆記\nLevie 主張企業需要持續評測 Agent 在自身環境裡的工作，才能判斷哪裡有效、哪裡退步，以及模型更新後是否仍能交付結果。這是他對企業評測需求的觀點。\n\n## 延伸理解\nLevie 的主張可以拆成兩個可檢查的問題：企業是否先定義 Agent 完成了哪一段工作，以及模型或流程更動後能否用同一標準重測。[Basis 的稅務工作簿](note-bi8kyw.md)同時檢查過程與最終答案；[Home Care Delivered 的客服品管](note-uk0hsi.md)把現場行為寫成可調整的評分規則。兩者提供不同形式的評測例子，並非 Levie 貼文提到的部署。\n\n這篇貼文沒有企業樣本、實驗結果或評測框架。它適合當選題問題，實際方法與成效仍要回到具體案例核對。\n\n## 來源\n[原始來源](https://x.com/levie/status/2103629073595728372)\n",
+        "markdownFile": "notes/note-wa3b7k.md",
+        "enrichedAt": "2026-10-04T13:35:37Z"
+      }
     },
     {
       "author": "ClaudeDevs",
@@ -251,7 +276,30 @@
         }
       ],
       "title": "Home Care Delivered：客服評分如何接上教練回饋",
-      "publishedAt": "2026-09-15T18:31:03.230000Z"
+      "publishedAt": "2026-09-15T18:31:03.230000Z",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow",
+          "adoption"
+        ],
+        "concepts": [
+          "客服品管",
+          "教練回饋",
+          "行為評分"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://x.com/levie/status/2103629073595728372",
+            "reason": "Levie 提出企業評測需求；此案展示如何把通話行為寫成可調整的規則，並保留供應商自述限制"
+          }
+        ],
+        "noteBody": "## English\nWith Cresta, the team gained broader visibility, identified coaching opportunities faster, and achieved measurable results in just two months:\n\nCresta and Home Care Delivered describe a contact-center rollout. Coaches had spent about 90% of their time reviewing a small sample of calls. The team transcribed both recurring-order and intake calls, built rule-based scorecards, changed its initial focus to intake, and used the resulting call data for targeted coaching. Cresta reports a 34% increase in address-confirmation behavior and nearly 10% improvement in overall agent performance after two months; the article does not provide an independent comparison group.\n\n## 中文筆記\nHome Care Delivered 的難題是客服教練花大量時間抽聽、評分，卻很少有時間真正指導人。Cresta 的完整案例顯示，他們先把單一行為轉成可檢查的規則，再依全量通話結果調整教練回饋。\n\n- 原本卡在哪：主管估計教練約 90% 的時間用在聽錄音、評分與反覆播放，只能抽查少量通話；傳統品管結果也高估了某些基本行為的實際執行率。\n- 實際怎麼做：先轉錄重複訂單與新客通話，原定從較單純的地址確認開始，臨上線時轉以新客通話建立評分規則，之後再擴回重複訂單。營運分析師把業務要求寫成規則與評分表；兩名客服先學，再帶其他同事。未通過規則的通話用來判斷是規則需修正，還是教練需調整指導。\n- 結果與界線：Cresta 報告兩個月內，地址確認行為依規則追蹤提高 34%，整體客服表現提高近 10%；部分問題行為最多下降 90%。指標與改善幅度來自供應商和客戶訪談，原文沒有提供獨立對照組。\n\n## 延伸理解\n原本的少量抽查讓管理者以為某些基本行為幾乎每通電話都做到了。改看更多通話後，受訪主管說部分行為實際可能只有約七成。團隊因此用可調整的規則找出具體通話，讓教練把時間花在回饋，也用「為什麼這通被判否」檢查規則是否寫錯。\n\n[Levie 對企業評測的觀點](note-wa3b7k.md)要求持續知道 Agent 在自身環境做得如何；Home Care Delivered 展示了較具體的做法：把業務要求轉成通話行為規則，再由現場人員檢查與修正。但 Cresta 沒有公開分母、獨立對照或長期追蹤，34% 的提升也不能直接解讀為顧客體驗改善。\n\n## 來源\n[原始來源](https://x.com/cresta/status/2099929000751603868)\n",
+        "markdownFile": "notes/note-uk0hsi.md",
+        "enrichedAt": "2026-10-04T13:35:37Z"
+      }
     },
     {
       "author": "Romain Huet",
@@ -300,7 +348,29 @@
         }
       ],
       "title": "Canva：單次 AI 任務成本與擴大供應的取捨",
-      "publishedAt": "2026-08-12T23:38:33.081000Z"
+      "publishedAt": "2026-08-12T23:38:33.081000Z",
+      "knowledge": {
+        "primary": "scaling",
+        "themes": [
+          "scaling",
+          "market"
+        ],
+        "concepts": [
+          "單次任務成本",
+          "供應擴張",
+          "成本與定價"
+        ],
+        "outcome": "failure",
+        "related": [
+          {
+            "url": "https://www.uber.com/gb/en/blog/efficient-software-factory/",
+            "reason": "兩者都追 AI 使用擴大後的成本，面向產品與內部工程流程，不能直接比較單價或成效"
+          }
+        ],
+        "noteBody": "## English\nCanva cut expected revenue growth rate by a third to 20% after unexpectedly high cost of delivering AI features\n\nFortune reported in August 2026 that Canva reduced its expected revenue growth from about 30% to 20% while slowing a broader AI-feature rollout. CEO Melanie Perkins said user demand exceeded expectations and that the company needed to lower the cost of completing an AI task. The saved X post is an outside interpretation of that interview; neither source publishes a comparable per-task cost series.\n\n## 中文筆記\nCanva 的 AI 功能需求高於預期，單次任務成本也超出原先可承受範圍，因此放慢廣泛推出、重建架構並調整商業模式。CEO Melanie Perkins 向 Fortune 說，這是先處理單位經濟，再擴大供應。貼文作者把它解讀為 AI 成本可能侵蝕軟體公司的經濟性；此處應區分 Canva 的回應與作者的延伸評論。\n\n- 失敗發生在哪：AI 功能需求與單次任務成本高於 Canva 預期，原本的推出速度和訂價假設因而受壓。\n- 公司如何調整：CEO 在受訪時談到放慢廣泛推出、重建架構與調整商業模式，先處理每次使用的成本，再擴大供應。來源未公開具體架構改法或單位成本。\n- 閱讀界線：這是成本與擴張決策的失敗案例，不能據此推論所有 Canva AI 功能的使用量或獲利情況；貼文作者的產業推論也不是 Canva 官方結論。\n\n## 延伸理解\n這個案例的關鍵指標是「完成一次 AI 任務要花多少成本」，而非功能被使用了多少次。Fortune 引述 Canva 執行長說，需求超出預期後，公司放慢廣泛推出，並調整架構與商業模式。營收成長預測由約 30% 降到 20%，反映的是公司對全年成長的預期，不能當作已實現的獲利損失。\n\n[Uber 的工程代理成本拆解](note-1jrlpan.md)也按工作負載追成本，但 Uber 討論內部工程流程，Canva 討論對外產品的大量供應。兩者都提示擴大使用時要看單次工作成本；目前公開資料不足以比較哪家公司的單位經濟較好。原始 X 貼文是第三方評論，關於 Canva 的事實以 Fortune 的受訪報導為核對依據。\n\n## 來源\n[原始 X 貼文](https://x.com/jeffreyleefunk/status/2087685197605343615)\n\n[Fortune 對 Canva 執行長的訪談](https://fortune.com/2026/08/12/canva-startup-growth-ai-costs-revenue-forecast-by-third/)\n",
+        "markdownFile": "notes/note-1hregid.md",
+        "enrichedAt": "2026-10-04T13:35:37Z"
+      }
     },
     {
       "author": "OpenAI · 內部導入",
@@ -548,9 +618,15 @@
         "concepts": [
           "現場觀察",
           "流程重設",
-          "人工校準"
+          "跨部門配對"
         ],
-        "outcome": "case"
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://www.uber.com/gb/en/blog/efficient-software-factory/",
+            "reason": "一篇解釋跨部門選題與短期驗證，另一篇拆解工程 Agent 規模化後的成本；衡量對象不同"
+          }
+        ]
       },
       "englishSummary": "Uber describes short collaborative deployments of AI engineers into business teams. The useful question is how teams select problems, work with process owners and decide what can move beyond a prototype.",
       "originalTitle": "",
@@ -1368,13 +1444,28 @@
         "primary": "scaling",
         "themes": [
           "scaling",
-          "evaluation"
+          "evaluation",
+          "workflow"
         ],
         "concepts": [
           "單位成本",
-          "生產力衡量"
+          "工作負載評測",
+          "模型選擇"
         ],
-        "outcome": "case"
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://www.linkedin.com/posts/pneppalli_agentic-ai-adoption-is-on-fire-at-uber-and-activity-7480367291851833344-6Lhm",
+            "reason": "兩篇分別處理導入時的機會辨識與擴大使用後的成本控制"
+          },
+          {
+            "url": "https://x.com/jeffreyleefunk/status/2087685197605343615",
+            "reason": "兩者都要追蹤單次工作成本，但 Uber 的內部工程代理與 Canva 的對外產品用途不同"
+          }
+        ],
+        "noteBody": "## English\nUber examines the cost of running engineering agents at greater scale. Model routing, caching and workload-level accounting help explain costs that aggregate usage totals can hide.\n\nUber reports sevenfold growth in weekly users and 9.4-fold growth in requests from February to August 2026. Holding a model fixed, it says cost per 1,000 requests fell nearly 34% from its peak; cost per session fell 52% from its June peak. For managed agents, the team builds benchmarks from real tasks, compares models on quality and cost, and monitors session-level waste. These are Uber operational measures, not an independent company-wide ROI study.\n\n## 中文筆記\nUber 工程團隊公開代理工作流程的架構與成本拆解，適合和 Agentic Pods 合讀：一篇看導入組織，一篇看規模化後的運作。\n\n- Uber 表示，2026 年 2 月至 8 月，代理產品每週活躍使用者成長 7 倍、每週請求量成長 9.4 倍。\n- 文章把成本拆成可量測的項目，討論模型選用、快取、工具與 MCP 使用、技能重用，以及使用者可見的成本資訊。\n- 管理問題從「有多少人使用」延伸到每次任務的成本、完成品質與人工審查負荷。\n\n## 資料限制\n這是 Uber 工程系統的做法與自述數字，不能直接套用到一般企業；讀者仍需按任務類型與內部系統複雜度估算成本。\n\n## 延伸理解\nUber 的 uReview 先用帶有已知錯誤的真實 pull request 建基準，分別看 precision、recall、F1、單次審查成本、延遲與雜訊，再決定模型。使用者端的成本儀表板則找出上下文膨脹、快取過期與簡單任務使用昂貴模型等浪費。這些措施讓「選便宜模型」變成有品質門檻的選擇。\n\n[Agentic Pods 的現場導入](note-177jv5w.md)說明機會如何被找出；本篇處理代理工作量增加後的執行成本。兩份資料屬 Uber 不同團隊的自述，不能將 Pods 的縮時直接歸因於這篇列出的成本措施。[Canva 的 AI 功能成本案例](note-1hregid.md)也遇到單次任務成本與擴大供應的取捨，但它面向的是對外產品，計價與品質要求不同。\n\n## 來源\n[原始來源](https://www.uber.com/gb/en/blog/efficient-software-factory/)\n",
+        "markdownFile": "notes/note-1jrlpan.md",
+        "enrichedAt": "2026-10-04T13:35:37Z"
       },
       "englishSummary": "Uber examines the cost of running engineering agents at greater scale. Model routing, caching and workload-level accounting help explain costs that aggregate usage totals can hide.",
       "originalTitle": "",
@@ -2022,9 +2113,15 @@
         "concepts": [
           "現場觀察",
           "流程重設",
-          "人工校準"
+          "跨部門配對"
         ],
-        "outcome": "case"
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://www.uber.com/gb/en/blog/efficient-software-factory/",
+            "reason": "一篇解釋跨部門選題與短期驗證，另一篇拆解工程 Agent 規模化後的成本；衡量對象不同"
+          }
+        ]
       },
       "englishSummary": "Uber describes short collaborative deployments of AI engineers into business teams. The useful question is how teams select problems, work with process owners and decide what can move beyond a prototype.",
       "originalTitle": ""
@@ -2052,13 +2149,28 @@
         "primary": "scaling",
         "themes": [
           "scaling",
-          "evaluation"
+          "evaluation",
+          "workflow"
         ],
         "concepts": [
           "單位成本",
-          "生產力衡量"
+          "工作負載評測",
+          "模型選擇"
         ],
-        "outcome": "case"
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://www.linkedin.com/posts/pneppalli_agentic-ai-adoption-is-on-fire-at-uber-and-activity-7480367291851833344-6Lhm",
+            "reason": "兩篇分別處理導入時的機會辨識與擴大使用後的成本控制"
+          },
+          {
+            "url": "https://x.com/jeffreyleefunk/status/2087685197605343615",
+            "reason": "兩者都要追蹤單次工作成本，但 Uber 的內部工程代理與 Canva 的對外產品用途不同"
+          }
+        ],
+        "noteBody": "## English\nUber examines the cost of running engineering agents at greater scale. Model routing, caching and workload-level accounting help explain costs that aggregate usage totals can hide.\n\nUber reports sevenfold growth in weekly users and 9.4-fold growth in requests from February to August 2026. Holding a model fixed, it says cost per 1,000 requests fell nearly 34% from its peak; cost per session fell 52% from its June peak. For managed agents, the team builds benchmarks from real tasks, compares models on quality and cost, and monitors session-level waste. These are Uber operational measures, not an independent company-wide ROI study.\n\n## 中文筆記\nUber 工程團隊公開代理工作流程的架構與成本拆解，適合和 Agentic Pods 合讀：一篇看導入組織，一篇看規模化後的運作。\n\n- Uber 表示，2026 年 2 月至 8 月，代理產品每週活躍使用者成長 7 倍、每週請求量成長 9.4 倍。\n- 文章把成本拆成可量測的項目，討論模型選用、快取、工具與 MCP 使用、技能重用，以及使用者可見的成本資訊。\n- 管理問題從「有多少人使用」延伸到每次任務的成本、完成品質與人工審查負荷。\n\n## 資料限制\n這是 Uber 工程系統的做法與自述數字，不能直接套用到一般企業；讀者仍需按任務類型與內部系統複雜度估算成本。\n\n## 延伸理解\nUber 的 uReview 先用帶有已知錯誤的真實 pull request 建基準，分別看 precision、recall、F1、單次審查成本、延遲與雜訊，再決定模型。使用者端的成本儀表板則找出上下文膨脹、快取過期與簡單任務使用昂貴模型等浪費。這些措施讓「選便宜模型」變成有品質門檻的選擇。\n\n[Agentic Pods 的現場導入](note-177jv5w.md)說明機會如何被找出；本篇處理代理工作量增加後的執行成本。兩份資料屬 Uber 不同團隊的自述，不能將 Pods 的縮時直接歸因於這篇列出的成本措施。[Canva 的 AI 功能成本案例](note-1hregid.md)也遇到單次任務成本與擴大供應的取捨，但它面向的是對外產品，計價與品質要求不同。\n\n## 來源\n[原始來源](https://www.uber.com/gb/en/blog/efficient-software-factory/)\n",
+        "markdownFile": "notes/note-1jrlpan.md",
+        "enrichedAt": "2026-10-04T13:35:37Z"
       },
       "englishSummary": "Uber examines the cost of running engineering agents at greater scale. Model routing, caching and workload-level accounting help explain costs that aggregate usage totals can hide.",
       "originalTitle": ""
@@ -2566,6 +2678,18 @@
   },
   "knowledgeLibrary": [
     {
+      "url": "https://x.com/jeffreyleefunk/status/2087685197605343615",
+      "chapter": "scaling",
+      "savedAt": "",
+      "markdownFile": "notes/note-1hregid.md"
+    },
+    {
+      "url": "https://www.uber.com/gb/en/blog/efficient-software-factory/",
+      "chapter": "scaling",
+      "savedAt": "2026-10-02T05:47:58.125Z",
+      "markdownFile": "notes/note-1jrlpan.md"
+    },
+    {
       "url": "https://openai.com/index/proaction/",
       "chapter": "workflow",
       "savedAt": "",
@@ -2576,6 +2700,18 @@
       "chapter": "evaluation",
       "savedAt": "",
       "markdownFile": "notes/note-bi8kyw.md"
+    },
+    {
+      "url": "https://x.com/cresta/status/2099929000751603868",
+      "chapter": "evaluation",
+      "savedAt": "",
+      "markdownFile": "notes/note-uk0hsi.md"
+    },
+    {
+      "url": "https://x.com/levie/status/2103629073595728372",
+      "chapter": "evaluation",
+      "savedAt": "",
+      "markdownFile": "notes/note-wa3b7k.md"
     }
   ]
 }
