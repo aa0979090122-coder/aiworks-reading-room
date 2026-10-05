@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-04",
+  "editionDate": "2026-10-05",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1422,6 +1422,56 @@
       }
     },
     {
+      "date": "2026-09-16",
+      "source": "Spotify Engineering／Tyson Singer",
+      "title": "Spotify：AI 讓交付加速後，品質檢查在哪裡落後？",
+      "url": "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity",
+      "what": "Spotify 工程團隊回看 AI 輔助開發期間的重大事故與程式碼品質。它發現變更量增加後，部分既有的審查、監控和回滾措施沒有同步跟上；Spotify 表示，目前的事故回顧沒有辨識出 AI 撰寫的程式碼是重大事故的直接成因。",
+      "points": [
+        "Spotify 每月回顧重大事故，新增兩個檢查問題：AI 撰寫的程式碼是否直接造成事故？更多變更是否讓審查、測試、部署或監控承受壓力？公司認為主要缺口出現在後者，因此擴充交付流程的防護。",
+        "一項自動依賴升級通過原有檢查，上線後仍影響使用者。Spotify 因而加強安全檢查、擴大回滾能力，並把自動變更安排在負責團隊的工作時段。這是自動化變更的失敗案例，原文沒有把事故歸因於 AI 生成程式碼。",
+        "Spotify 說，8 月合併的變更量年增約一倍，從約 8,100 件到 17,000 件；品質與最佳化工作占比從 27% 升至 31%。團隊同時比較重大事故、重工率與程式碼變動，尚未看到重工率同步上升，但程式碼複雜度和 PR 大小正在增加，仍持續觀察。",
+        "另一個教訓來自內容處理：批次工作與新節目競爭資源，品質改進提高單集運算需求，加上排程缺陷，使原本數分鐘完成的發布延遲數小時。Spotify 補上端到端監控、調整工作優先順序並增加容量；這些是原有系統與容量問題，不是 AI 撰寫程式碼的證據。"
+      ],
+      "originalTitle": "AI Changed How Spotify Builds. What We Learned (and Fixed) About Quality at Higher Velocity",
+      "originalExcerpt": "the volume of change increased faster than some of our verification controls could adapt.",
+      "englishSummary": "Spotify reviews incidents, rework and code-change metrics as AI-assisted development raises delivery volume. An automated dependency upgrade passed checks but failed in production; safeguards and rollback are being strengthened. The company has not found a distinct direct AI-authored incident signature.",
+      "caveat": "事故與品質數字均為 Spotify 自述；原文未公開事故樣本、獨立審計或長期比較。沒有辨識出 AI 程式碼的直接成因，不等於能排除所有間接影響。",
+      "topic": "case",
+      "highLevel": true,
+      "dailyBackfillAt": "2026-10-05T06:39:11Z",
+      "checkedAt": "2026-10-05",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "governance",
+          "workflow"
+        ],
+        "concepts": [
+          "交付速度",
+          "驗證容量",
+          "回滾",
+          "品質指標"
+        ],
+        "outcome": "failure",
+        "related": [
+          {
+            "url": "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
+            "reason": "前文討論 AI 加速後的審查瓶頸；本篇用事故回顧、重工率與回滾措施檢查交付品質"
+          },
+          {
+            "url": "https://blog.cloudflare.com/ai-code-review/",
+            "reason": "兩者都處理 AI 輔助開發後的審查負荷；Spotify 公開內部事故與品質指標，Cloudflare 公開分級審查流程"
+          },
+          {
+            "url": "https://neogenmedia.com/blog/ai-agent-failure-modes",
+            "reason": "兩者都提醒既有健康檢查可能漏掉現場問題；Spotify 為工程交付與容量控制，Neogen 為代理任務完成度"
+          }
+        ]
+      }
+    },
+    {
       "type": "企業實例 · 成本與規模",
       "sourceDate": "2026 年 8 月 27 日",
       "title": "Uber Software Factory：代理使用量增加後，如何拆解成本",
@@ -2643,9 +2693,10 @@
     },
     {
       "title": "Agent 規模化後，誰處理審查與成本？",
-      "summary": "Spotify 討論產出增加後的瓶頸，Cloudflare 公開風險分級審查，Uber 拆解代理成本。三者可一起看規模化的工作分配與衡量方式。",
+      "summary": "Spotify 先談 AI 加速後的審查瓶頸，再用事故回顧、重工率與回滾措施檢查品質；Cloudflare 公開分級審查，Uber 拆解代理成本。四份資料回答不同的規模化問題，指標不能合算。",
       "urls": [
         "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
+        "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity",
         "https://blog.cloudflare.com/ai-code-review/",
         "https://www.uber.com/gb/en/blog/efficient-software-factory/"
       ],
@@ -2673,7 +2724,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-04T01:47:09Z",
+    "checkedAt": "2026-10-05T06:39:11Z",
     "points": []
   },
   "knowledgeLibrary": [
