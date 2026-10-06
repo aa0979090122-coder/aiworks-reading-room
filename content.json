@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-05",
+  "editionDate": "2026-10-06",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -195,9 +195,9 @@
             "reason": "Levie 討論企業自身環境的評測；此客服案例將現場行為轉成可調整的評分規則"
           }
         ],
-        "noteBody": "## English\nYou can’t automate what you can’t measure. This means that evals are one of the gates to diffusion of AI in the enterprise.\n\nAaron Levie argues that enterprise agents need evaluations tied to the work they perform inside each organization. Without that baseline, a team cannot reliably tell whether a deployment, upgrade, or change improved the result. This is an executive viewpoint, not a reported Box deployment or a measured industry-wide finding.\n\n## 中文筆記\nLevie 主張企業需要持續評測 Agent 在自身環境裡的工作，才能判斷哪裡有效、哪裡退步，以及模型更新後是否仍能交付結果。這是他對企業評測需求的觀點。\n\n## 延伸理解\nLevie 的主張可以拆成兩個可檢查的問題：企業是否先定義 Agent 完成了哪一段工作，以及模型或流程更動後能否用同一標準重測。[Basis 的稅務工作簿](note-bi8kyw.md)同時檢查過程與最終答案；[Home Care Delivered 的客服品管](note-uk0hsi.md)把現場行為寫成可調整的評分規則。兩者提供不同形式的評測例子，並非 Levie 貼文提到的部署。\n\n這篇貼文沒有企業樣本、實驗結果或評測框架。它適合當選題問題，實際方法與成效仍要回到具體案例核對。\n\n## 來源\n[原始來源](https://x.com/levie/status/2103629073595728372)\n",
+        "noteBody": "## English\nYou can’t automate what you can’t measure. This means that evals are one of the gates to diffusion of AI in the enterprise.\n\nAaron Levie argues that enterprise agents need evaluations tied to the work they perform inside each organization. Without that baseline, a team cannot reliably tell whether a deployment, upgrade, or change improved the result. This is an executive viewpoint, not a reported Box deployment or a measured industry-wide finding.\n\n## 中文筆記\nLevie 主張企業需要持續評測 Agent 在自身環境裡的工作，才能判斷哪裡有效、哪裡退步，以及模型更新後是否仍能交付結果。這是他對企業評測需求的觀點。\n\n## 延伸理解\nLevie 的主張可以拆成兩個可檢查的問題：企業是否先定義 Agent 完成了哪一段工作，以及模型或流程更動後能否用同一標準重測。[Basis 的稅務工作簿](note-bi8kyw.md)同時檢查過程與最終答案；[Home Care Delivered 的客服品管](note-uk0hsi.md)把現場行為寫成可調整的評分規則。兩者提供不同形式的評測例子，並非 Levie 貼文提到的部署。\n\n這篇貼文沒有企業樣本、實驗結果或評測框架。它適合當選題問題，實際方法與成效仍要回到具體案例核對。\n\nCloudflare 的 [CryptoLabe 盤點案例](https://blog.cloudflare.com/ai-driven-cryptography-discovery/)補上一個限制：團隊尚未建立能重現比較提示版本的標準答案資料集。可追溯的證據有助於人工複查，但本身還不足以證明改版後更準確；這與 [Basis 的工作簿評測](note-bi8kyw.md)形成可追問的差異。\n\n## 來源\n[原始來源](https://x.com/levie/status/2103629073595728372)\n",
         "markdownFile": "notes/note-wa3b7k.md",
-        "enrichedAt": "2026-10-04T13:35:37Z"
+        "enrichedAt": "2026-10-06T03:28:36Z"
       }
     },
     {
@@ -2034,6 +2034,114 @@
         "CodeBuddy 在部分程式工作上自述節省最多 20% 時間；這種任務指標與全行經濟價值的衡量範圍不同。"
       ],
       "highLevel": true
+    },
+    {
+      "type": "企業工程實作 · 證據與限制",
+      "sourceDate": "2026-09-29",
+      "title": "Cloudflare：跨系統盤點先保留證據，再把未知列為待查",
+      "lead": "CryptoLabe 把程式、設定與相依套件轉成可追溯的盤點結果，協助工程與產品團隊規劃遷移。",
+      "takeaways": [
+        "先找出使用線索，再檢查實際用途與跨系統相依；缺少證據就標記待查，不強行判定。",
+        "大量掃描同時遇到流量限制時，各自重試反而加劇壅塞，團隊改用共用節流與冷卻機制。"
+      ],
+      "angle": "盤點工具需要能重跑、追溯證據並交接未知項目。",
+      "caveat": "這是仍在演進的內部工具；團隊尚無可重現比較提示版本的標準答案資料集，也未公布投資報酬。",
+      "url": "https://blog.cloudflare.com/ai-driven-cryptography-discovery/",
+      "sources": [
+        {
+          "label": "Cloudflare 工程原文",
+          "url": "https://blog.cloudflare.com/ai-driven-cryptography-discovery/"
+        }
+      ],
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance",
+          "evaluation",
+          "workflow"
+        ],
+        "concepts": [
+          "證據追溯",
+          "未知分類",
+          "協同重試"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://x.com/levie/status/2103629073595728372",
+            "reason": "把持續評測的主張對照到尚缺標準答案資料集的實作限制。"
+          },
+          {
+            "url": "https://engineering.atspotify.com/2026/6/encoding-your-domain-expert-the-context-layer-behind-spotifys-data-assistant",
+            "reason": "一篇處理跨系統證據，另一篇交代業務知識與範例由誰維護。"
+          }
+        ]
+      },
+      "englishSummary": "Cloudflare separates discovery from analysis, preserves source evidence, and flags unresolved findings. Shared throttling addresses retry bursts. The evolving tool lacks a ground-truth dataset for repeatable prompt comparisons.",
+      "originalTitle": "Using AI to chart a course for our post-quantum migration",
+      "source": "Cloudflare Engineering",
+      "author": "Sharon Goldberg、Tiago Silva",
+      "checkedAt": "2026-10-06",
+      "dailyBackfillAt": "2026-10-06T03:28:36Z",
+      "highLevel": true,
+      "what": "CryptoLabe 把程式、設定與相依套件轉成可追溯的盤點結果，協助工程與產品團隊規劃遷移。",
+      "points": [
+        "先找出使用線索，再檢查實際用途與跨系統相依；缺少證據就標記待查，不強行判定。",
+        "大量掃描同時遇到流量限制時，各自重試反而加劇壅塞，團隊改用共用節流與冷卻機制。"
+      ]
+    },
+    {
+      "type": "企業工程實作 · 知識維護",
+      "sourceDate": "2026-06-10",
+      "title": "Spotify：資料助手的知識層，誰負責挑例子與持續維護？",
+      "lead": "Spotify 的資料助手不只讀取資料表結構。每個領域由專家維護業務定義、資料集與經審核的問答範例。",
+      "takeaways": [
+        "把資料集、分析範例與業務文件整理成領域知識；各領域有具名負責人，補上資料表結構無法解釋的語意。",
+        "從真實查詢提出的問答與 SQL 範例，只有 12.5% 通過人工審核；除錯、一次性問題與不合適的查詢模式會被排除。",
+        "持續追蹤資料品質、結構變動後的範例有效性及問題覆蓋，透過使用紀錄與回饋修補知識。"
+      ],
+      "angle": "企業要估算的不只是建置助手的成本，也包括專家挑選、驗證與維護知識的時間。",
+      "caveat": "12.5% 是候選範例的接受比例，不是模型正確率；本文未提供獨立驗證的準確率或投資報酬。",
+      "url": "https://engineering.atspotify.com/2026/6/encoding-your-domain-expert-the-context-layer-behind-spotifys-data-assistant",
+      "sources": [
+        {
+          "label": "Spotify 工程原文",
+          "url": "https://engineering.atspotify.com/2026/6/encoding-your-domain-expert-the-context-layer-behind-spotifys-data-assistant"
+        }
+      ],
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "governance"
+        ],
+        "concepts": [
+          "領域知識維護",
+          "範例審核",
+          "資料語意"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://blog.cloudflare.com/ai-driven-cryptography-discovery/",
+            "reason": "都先整理可核對的證據；Spotify 另外交代知識負責人與範例維護。"
+          }
+        ]
+      },
+      "englishSummary": "Spotify curates domain-owned datasets, business context and vetted SQL examples for its assistant. Curators accept 12.5% of proposed historical-query examples. Ongoing checks monitor data quality, example validity and coverage; this acceptance rate is not model accuracy.",
+      "originalTitle": "Encoding Your Domain Expert: The Context Layer Behind Spotify's Data Assistant",
+      "source": "Spotify Engineering",
+      "author": "Pavlina Mitsou、Jonathan Warburton",
+      "checkedAt": "2026-10-06",
+      "dailyBackfillAt": "2026-10-06T03:28:36Z",
+      "highLevel": true,
+      "what": "Spotify 的資料助手不只讀取資料表結構。每個領域由專家維護業務定義、資料集與經審核的問答範例。",
+      "points": [
+        "把資料集、分析範例與業務文件整理成領域知識；各領域有具名負責人，補上資料表結構無法解釋的語意。",
+        "從真實查詢提出的問答與 SQL 範例，只有 12.5% 通過人工審核；除錯、一次性問題與不合適的查詢模式會被排除。",
+        "持續追蹤資料品質、結構變動後的範例有效性及問題覆蓋，透過使用紀錄與回饋修補知識。"
+      ]
     }
   ],
   "deepDives": [
@@ -2721,10 +2829,20 @@
         "https://openai.com/index/proaction/",
         "https://openai.com/index/basis-tax-workbook-with-astra/"
       ]
+    },
+    {
+      "title": "Agent 的知識與證據，由誰整理、驗證與維護？",
+      "summary": "Spotify 把業務語意與範例交給領域專家維護；Cloudflare 讓跨系統盤點保留證據與未知。可對照知識負責人、可追溯性，以及更動後能否重測；兩篇都不足以推算投資報酬。",
+      "origin": "daily",
+      "urls": [
+        "https://engineering.atspotify.com/2026/6/encoding-your-domain-expert-the-context-layer-behind-spotifys-data-assistant",
+        "https://blog.cloudflare.com/ai-driven-cryptography-discovery/",
+        "https://x.com/levie/status/2103629073595728372"
+      ]
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-05T06:39:11Z",
+    "checkedAt": "2026-10-06T03:28:36Z",
     "points": []
   },
   "knowledgeLibrary": [

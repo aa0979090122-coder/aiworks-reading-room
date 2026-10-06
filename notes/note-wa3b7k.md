@@ -13,5 +13,7 @@ Levie 的主張可以拆成兩個可檢查的問題：企業是否先定義 Agen
 
 這篇貼文沒有企業樣本、實驗結果或評測框架。它適合當選題問題，實際方法與成效仍要回到具體案例核對。
 
+Cloudflare 的 [CryptoLabe 盤點案例](https://blog.cloudflare.com/ai-driven-cryptography-discovery/)補上一個限制：團隊尚未建立能重現比較提示版本的標準答案資料集。可追溯的證據有助於人工複查，但本身還不足以證明改版後更準確；這與 [Basis 的工作簿評測](note-bi8kyw.md)形成可追問的差異。
+
 ## 來源
 [原始來源](https://x.com/levie/status/2103629073595728372)
