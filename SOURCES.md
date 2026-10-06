@@ -1,6 +1,6 @@
 # 情報站來源管道
 
-本表沿用本專案 `aiworks-news-research/references/sources.md` 的可用管道，供情報站每日維護時搜尋。網站是文章素材的唯一日常入口；來源頁是核對事實與閱讀原文的依據。原有新聞 Skill 與歷史新聞檔保留，但不再執行獨立的每日新聞排程，也不更新 `02-content/news/latest-news.md`。
+本表沿用本專案 `aiworks-news-research/references/sources.md` 的可用管道，供情報站每日維護時搜尋。網站是文章素材的唯一日常入口；來源頁是核對事實與閱讀原文的依據。原有新聞 Skill 與歷史新聞檔保留，但不再執行獨立的每日新聞排程，也不更新 `02_內容資料/news/latest-news.md`。
 
 ## 第一輪：當事人與原始資料
 
@@ -12,10 +12,13 @@
 | Anthropic News | https://www.anthropic.com/news | 具名客戶、部署方式與研究 |
 | Anthropic Research | https://www.anthropic.com/research | 企業使用與工作方式的證據 |
 | Claude Blog | https://claude.com/blog | 客戶訪談、工作流程與產品使用 |
+| claude.dev 開發者部落格 | https://claude.dev/ | 評測方法、Skills、Agent 工作流程與工程實作；文章原文位於 `/blog/` |
 | Google Gemini Blog | https://blog.google/products/gemini/rss/ | 具體使用案例與重要能力變化 |
 | Microsoft AI | https://news.microsoft.com/source/topics/ai/ | 企業實例與導入方式 |
 | Meta AI Blog | https://ai.meta.com/blog/ | 企業使用與研究 |
 | Perplexity Hub | https://www.perplexity.ai/hub | 客戶故事與產品變化 |
+
+Claude 來源分別檢查 `claude.com/blog` 與 `claude.dev/` 的文章列表；`claude.dev/blog/` 不是列表入口。從上次成功核對後的文章取得標題、作者、原始發布日期與原文 URL，再依本站選文規則篩選。列表無法讀取時，以 `site:claude.dev/blog` 搭配日期或主題搜尋，回到原文核對；無法核對就記錄缺口。評測、Skills 與工作流程文章依其方法與證據判斷價值，不因屬於開發者文章而直接略過。
 
 X 從使用者最初提供的帳號與具名企業／執行者開始，並搜尋案例中的供應商、客戶、前線部署人員及實際負責人。新發現的帳號只作候選，不因職銜或粉絲數自動收錄。留言觀察逐則核對可見回覆，記錄樣本數與回覆連結；看不到或沒有實質討論時不寫「風向」。
 
@@ -64,14 +67,14 @@ Podcast 從 Invest Like the Best／Colossus、a16z Show、All-In、硅谷101及 
 
 版面與文字偏好以 [DESIGN.md](./DESIGN.md) 為準。社群貼文預設首頁；X 官方原貼在左，中文摘要在右。Podcast、新聞與深度來源沿用左右閱讀，英文先呈現。保留 14 天的一般社群貼文與新聞，企業案例與高層次社群討論回看半年；深度研究和 Podcast 不以 14 天隱藏。歷史資料保留。
 
-- 每日先讀本機 `02-content/reading-knowledge/feedback.md`、`feedback.json`、`index.md` 與收藏的 `notes/*.md`，檢查略過理由、人工想法及收藏缺口。筆記不存在或尚未連線時，明確區分沒有回饋與尚未讀到回饋。
+- 每日先讀本機 `02_內容資料/reading-knowledge/feedback.md`、`feedback.json`、`index.md` 與收藏的 `notes/*.md`，檢查略過理由、人工想法及收藏缺口。筆記不存在或尚未連線時，明確區分沒有回饋與尚未讀到回饋。
 - 依沒幫助的具體理由調整查詢與排除條件。只因知名公司、職銜、模型發布或轉貼熱門，不足以收錄。優先流程、證據、衡量、限制與可用的高層次討論。
 - 社群涵蓋 X 與 LinkedIn，仍以 X 為主。半年補讀依尚未覆蓋的問題與來源找新材料，避免反覆收同一作者的相似看法。
 - 檢查發布時間，為過去 24 小時摘要記 `digest.checkedAt`、`digest.points`。每點連到已核對的資料；沒有達標新文可寫短空狀態。不要把當日新增的舊文算成當日新聞。X `publishedAt` 可從公開 status ID 時間核對，並與原貼日期交叉確認。
 - 深度選題以 `readingSets` 組織跨來源比較。報告需記樣本、期間、採用／價值定義及自述限制；企業案例要有操作流程與結果檢查。不同指標先說差異，再比較。
 - 每日深化收藏 Markdown：先讀人工內容，核對來源後補上 English、中文筆記、證據與限制。若談到另一則收藏的概念，在段落中說清具體關聯，使用相對 Markdown 檔名連結；來源 URL 另列。沒有依據時不生造關聯。
 - `notes/*.md` 頂部 reading-room 註記保存 URL、標題與深化狀態。深化完成記 `status: enriched`、`enrichedAt` 與來源核對日。修改前保存上一版到私有 `versions/`；保留 `my-note` 區段及其他人工增修。不得重置 feedback.json 的閱讀狀態、note、chapter 或時間戳。
-- 使用者已確認知識庫目前都是公開資訊。核對收藏來源後，筆記註記設 `visibility: public`；以 `tools/build_reading_knowledge.py` 從同一份 Markdown 產生公開頁內文及下載檔，不另寫公開摘要。人工內容與手動章節保留；新加入的人工內容先讀過再同步，不把憑證、私有附件或敏感資料當成公開來源內容。
+- 使用者已確認知識庫目前都是公開資訊。核對收藏來源後，筆記註記設 `visibility: public`；以 `04_維護工具/build_reading_knowledge.py` 從同一份 Markdown 產生公開頁內文及下載檔，不另寫公開摘要。人工內容與手動章節保留；新加入的人工內容先讀過再同步，不把憑證、私有附件或敏感資料當成公開來源內容。
 - 公開版可提交收藏與回饋進本機 inbox；拒絕公開 origin 讀取私人 API，不新增公開站讀取本機檔案的橋接。只部署網站明列檔案與標記 public 的筆記輸出，不上傳 feedback.json、略過理由、私有備份或整個 reading-knowledge 資料夾。
 - 一般文章不複製整篇英文或逐字稿；可讀的短節錄及 English brief 必須清楚區分。公開授權全文才可整篇保存，並保留授權來源。
 - 調整完成直接更新既有 GitHub Pages 並驗證。一次核對既有收藏、必要互動及受影響畫面即可；沒有新問題，不重複驗證相同項目。
