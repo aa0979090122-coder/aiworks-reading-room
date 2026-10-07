@@ -893,6 +893,45 @@
   ],
   "news": [
     {
+      "type": "企業案例 · 資安驗證",
+      "sourceDate": "2026-10-06",
+      "title": "Comcast／Booz Allen：AI 找到跨系統漏洞後，仍須驗證可利用性",
+      "lead": "兩家資安團隊用 Claude Mythos 追查程式、設定與執行環境之間的漏洞鏈，再交由工程師驗證和修補。",
+      "takeaways": [
+        "Comcast 在涵蓋 258 個關鍵系統、約 1.7 億行程式碼的評估中，找到跨系統互動造成的驗證漏洞；工程師在實際運作的應用程式確認問題可觸及，才追查根因並修補。",
+        "Booz Allen 追蹤開機階段的金鑰保護設定，跨兩種語言、兩個程式確認保護未啟用；其一名分析師在 12 天內檢視八個正式系統、138 個程式庫。",
+        "模型提出的線索仍需去重、驗證能否在目標環境被利用，並交給系統負責人修復。報導沒有提供全部候選漏洞的準確率或獨立成本比較。"
+      ],
+      "angle": "資安團隊應將「模型發現線索」與「工程師驗證、修補及回查」分成可追蹤的步驟，避免把發現數量當作風險降低。",
+      "caveat": "案例由模型供應商採訪發布；規模數字是檢視範圍，不代表每個系統都找到漏洞，也沒有公開誤報率或獨立成效評估。",
+      "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+      "sources": [
+        {
+          "label": "Anthropic／Comcast／Booz Allen 原始訪談",
+          "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases"
+        }
+      ],
+      "knowledge": {
+        "primary": "governance",
+        "themes": ["governance", "evaluation", "workflow"],
+        "concepts": ["跨系統漏洞鏈", "可利用性驗證", "人工修補"],
+        "outcome": "case"
+      },
+      "checkedAt": "2026-10-07",
+      "englishSummary": "Comcast engineers validated a cross-system authentication flaw in the running application before fixing it. Booz Allen traced an unprotected boot key across two programs and reports one analyst reviewing eight production systems and 138 repositories in twelve days. These are vendor-published cases; false-positive rates and independent cost comparisons are not provided.",
+      "originalTitle": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
+      "source": "Anthropic／Comcast／Booz Allen",
+      "author": "Anthropic",
+      "date": "2026-10-06",
+      "what": "兩家資安團隊用 Claude Mythos 追查程式、設定與執行環境之間的漏洞鏈，再交由工程師驗證和修補。",
+      "highLevel": true,
+      "points": [
+        "Comcast 在涵蓋 258 個關鍵系統、約 1.7 億行程式碼的評估中，找到跨系統互動造成的驗證漏洞；工程師在實際運作的應用程式確認問題可觸及，才追查根因並修補。",
+        "Booz Allen 追蹤開機階段的金鑰保護設定，跨兩種語言、兩個程式確認保護未啟用；其一名分析師在 12 天內檢視八個正式系統、138 個程式庫。",
+        "模型提出的線索仍需去重、驗證能否在目標環境被利用，並交給系統負責人修復。報導沒有提供全部候選漏洞的準確率或獨立成本比較。"
+      ]
+    },
+    {
       "type": "研究方法 · 合約流程評測",
       "sourceDate": "2026-10-06",
       "title": "Ironclad：用 11 項合約任務檢查 Agent 能否守住核准規則",
