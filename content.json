@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-06",
+  "editionDate": "2026-10-07",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -892,6 +892,106 @@
     }
   ],
   "news": [
+    {
+      "type": "研究方法 · 合約流程評測",
+      "sourceDate": "2026-10-06",
+      "title": "Ironclad：用 11 項合約任務檢查 Agent 能否守住核准規則",
+      "lead": "OpenAI 與 Ironclad 將保密協議、採購核准和條款更新拆成 11 項測試任務，逐項檢查 Agent 是否完成流程要求。",
+      "takeaways": [
+        "Ironclad 的工作專家與 OpenAI 共同選任務；每項任務依複雜度設定 8 至 50 個評分條件，涵蓋核准門檻、文件設定與例外路徑。",
+        "在這 11 項研究任務中，OpenAI 報告 GPT-6 Astra 的平均評分為 55.0%，GPT-5.6 Sol 為 41.6%；估計單次時間由 37.0 分鐘降至 19.2 分鐘。",
+        "測試時間依模型處理與生成速度推算，沒有量測客戶現場省下多少工時。評測只涵蓋這 11 項任務，不能代表所有合約流程。"
+      ],
+      "angle": "企業若要讓 Agent 設定業務流程，應先把核准條件和例外情況寫成可測試的驗收標準，再檢查整條流程是否運作。",
+      "caveat": "研究由模型供應商與軟體夥伴共同發布；評分未達滿分，時間為模擬估計，沒有公開客戶部署後的品質或成本數據。",
+      "url": "https://openai.com/index/advancing-computer-use-with-ironclad/",
+      "sources": [
+        {
+          "label": "OpenAI／Ironclad 原始研究",
+          "url": "https://openai.com/index/advancing-computer-use-with-ironclad/"
+        }
+      ],
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow",
+          "governance"
+        ],
+        "concepts": [
+          "流程驗收",
+          "核准規則",
+          "例外路徑"
+        ],
+        "outcome": "report",
+        "related": [
+          {
+            "url": "https://openai.com/index/basis-tax-workbook-with-astra/",
+            "reason": "兩者都評估長流程的過程與結果；Ironclad 另外公開每項任務的條件數與模擬時間限制。"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-07",
+      "englishSummary": "OpenAI and Ironclad built 11 contracting tasks with 8–50 criteria each. Astra scored 55.0% versus 41.6% for Sol in this research evaluation; estimated time fell from 37.0 to 19.2 minutes. The times are simulated, not observed customer savings.",
+      "originalTitle": "Advancing computer use with Ironclad",
+      "source": "OpenAI／Ironclad",
+      "author": "OpenAI",
+      "date": "2026-10-06",
+      "what": "OpenAI 與 Ironclad 將保密協議、採購核准和條款更新拆成 11 項測試任務，逐項檢查 Agent 是否完成流程要求。",
+      "highLevel": true,
+      "points": [
+        "Ironclad 的工作專家與 OpenAI 共同選任務；每項任務依複雜度設定 8 至 50 個評分條件，涵蓋核准門檻、文件設定與例外路徑。",
+        "在這 11 項研究任務中，OpenAI 報告 GPT-6 Astra 的平均評分為 55.0%，GPT-5.6 Sol 為 41.6%；估計單次時間由 37.0 分鐘降至 19.2 分鐘。",
+        "測試時間依模型處理與生成速度推算，沒有量測客戶現場省下多少工時。評測只涵蓋這 11 項任務，不能代表所有合約流程。"
+      ]
+    },
+    {
+      "type": "企業訪談 · 研究流程",
+      "sourceDate": "2026-10-06",
+      "title": "Jump Trading：長時間研究任務如何設定目標與人工審查",
+      "lead": "Jump Trading 的 LLM 研發負責人描述，量化研究員先定義問題、工作環境與結果評估方式，再讓 Agent 執行較長的分析任務。",
+      "takeaways": [
+        "研究員先設定問題、可用資料與評估標準，執行期間仍會檢查中間結果並調整方向。",
+        "團隊強調安全的執行環境、可觀察的運作方式與最後的人工審查；Agent 產生的交易訊號仍按既有流程檢查。",
+        "文章沒有公布研究成功率、誤判率、成本或投資成果。數日長任務的能力是受訪者描述，不能當作經獨立驗證的成效。"
+      ],
+      "angle": "觀察研究任務委派前需要定義哪些評估條件，以及中途與最終由誰判斷結果可用。",
+      "caveat": "這是 OpenAI 發表的客戶訪談，重點是工作方式與風險控制，未提供可重現的實驗或量化成效。",
+      "url": "https://openai.com/index/jump-trading/",
+      "sources": [
+        {
+          "label": "OpenAI／Jump Trading 訪談",
+          "url": "https://openai.com/index/jump-trading/"
+        }
+      ],
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow",
+          "governance"
+        ],
+        "concepts": [
+          "研究任務委派",
+          "中途檢查",
+          "人工審查"
+        ],
+        "outcome": "viewpoint"
+      },
+      "checkedAt": "2026-10-07",
+      "englishSummary": "Jump Trading describes defining the research question, environment and evaluation before delegating long-running analysis. Researchers still inspect intermediate results, and trading signals pass human review. The interview provides no independently measured success rate or return.",
+      "originalTitle": "How Jump Trading is scaling quant research with ChatGPT",
+      "source": "OpenAI／Jump Trading",
+      "author": "OpenAI",
+      "date": "2026-10-06",
+      "what": "Jump Trading 的 LLM 研發負責人描述，量化研究員先定義問題、工作環境與結果評估方式，再讓 Agent 執行較長的分析任務。",
+      "highLevel": true,
+      "points": [
+        "研究員先設定問題、可用資料與評估標準，執行期間仍會檢查中間結果並調整方向。",
+        "團隊強調安全的執行環境、可觀察的運作方式與最後的人工審查；Agent 產生的交易訊號仍按既有流程檢查。",
+        "文章沒有公布研究成功率、誤判率、成本或投資成果。數日長任務的能力是受訪者描述，不能當作經獨立驗證的成效。"
+      ]
+    },
     {
       "type": "企業導入實例 · 優先讀",
       "sourceDate": "2026 年 10 月 2 日",
@@ -2823,11 +2923,12 @@
     },
     {
       "title": "什麼才算完成工作？",
-      "summary": "從需求確認到執行評估：Proaction 讓客戶修正示範，Basis 檢查長流程的過程與答案。兩篇收藏呈現不同階段的驗證，不能把縮時數字直接互比。",
+      "summary": "Proaction 讓客戶修正需求，Basis 同時檢查執行過程與答案；Ironclad 把合約核准條件寫成逐項評分標準。三份資料的任務和時間算法不同，適合比較驗收方法，不能合算省時效果。",
       "origin": "knowledge",
       "urls": [
         "https://openai.com/index/proaction/",
-        "https://openai.com/index/basis-tax-workbook-with-astra/"
+        "https://openai.com/index/basis-tax-workbook-with-astra/",
+        "https://openai.com/index/advancing-computer-use-with-ironclad/"
       ]
     },
     {
@@ -2842,7 +2943,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-06T03:28:36Z",
+    "checkedAt": "2026-10-07T01:41:17.304803Z",
     "points": []
   },
   "knowledgeLibrary": [
