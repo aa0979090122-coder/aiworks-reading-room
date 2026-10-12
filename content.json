@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-11",
+  "editionDate": "2026-10-12",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -892,6 +892,56 @@
     }
   ],
   "news": [
+    {
+      "type": "原始評測 · 多 Agent 成本與品質",
+      "sourceDate": "2026-10-09",
+      "date": "2026-10-09",
+      "title": "Vals AI：多 Agent 寫程式，成本增幅換來多少品質？",
+      "lead": "Vals AI 讓兩種模型在同一組 50 個網頁應用任務上，分別由單一 Agent 或團隊開發，並用瀏覽器測試比較品質、費用與時間。團隊費用為單一 Agent 的 1.8 至 5.1 倍；四組配對只有一組的品質提升達統計顯著。",
+      "takeaways": [
+        "每個應用以瀏覽器操作測試驗收，分數是通過測試的比例。GPT-6 Sol 與 Claude Opus 5.5 各以中等、最高推理強度執行單人與團隊配置，共八組；每組在 50 個任務上各跑一次。",
+        "GPT-6 Sol 的中等推理團隊比單一 Agent 高 7.3 個百分點，平均單次費用由 1.22 美元增至 3.07 美元，完成時間中位數為 11.9 分鐘，單人為 12.4 分鐘。",
+        "其餘三組團隊與單人的分數差異未達統計顯著。最高推理強度下，Claude Opus 5.5 團隊平均每個應用花費 122 美元，單人為 23.77 美元，團隊完成時間中位數也較長。"
+      ],
+      "angle": "要決定是否分派多個 Agent，先用相同任務核對通過率、花費與完成時間，再檢查分工後的整合測試是否補上單人漏做的功能。",
+      "caveat": "這份研究只測 50 個完整網頁應用，每種配置在各任務僅跑一次；統計區間反映任務差異，沒有涵蓋重複執行的波動。兩種模型使用不同執行框架，不能把跨模型差異完全歸因於模型或團隊。",
+      "url": "https://www.vals.ai/blogs/multi-agent-vibe-code-bench",
+      "sources": [
+        {
+          "label": "Vals AI 原始評測與方法",
+          "url": "https://www.vals.ai/blogs/multi-agent-vibe-code-bench"
+        }
+      ],
+      "knowledge": {
+        "primary": "scaling",
+        "themes": [
+          "scaling",
+          "evaluation"
+        ],
+        "concepts": [
+          "多 Agent 分工",
+          "任務驗收",
+          "成本與時間"
+        ],
+        "outcome": "research",
+        "related": [
+          {
+            "url": "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests",
+            "reason": "Vals 用受控網頁應用評測比較分工成本與驗收分數；Block 描述公司遷移的實際分工及人工部署關卡，任務和衡量方式不同"
+          },
+          {
+            "url": "https://asana.com/inside-asana/cut-browsers-agent-cost",
+            "reason": "兩者都同時看品質與代理費用；Vals 比較團隊編寫應用，Asana 測瀏覽器代理的快取策略"
+          }
+        ]
+      },
+      "checkedAt": "2026-10-12",
+      "dailyBackfillAt": "2026-10-12T01:37:10Z",
+      "englishSummary": "Vals AI tested single agents and teams on 50 web-app builds with browser-based acceptance tests. Teams cost 1.8–5.1 times more; only GPT-6 Sol at medium effort had a statistically significant score gain of 7.3 points. Each setup ran once per app, and different model harnesses limit cross-model comparisons.",
+      "originalTitle": "Do Agent Teams Pay Off? A Case Study on Vibe Code Bench",
+      "source": "Vals AI",
+      "author": "Katrina Drozdov"
+    },
     {
       "type": "企業工程實作 · 代理成本與評測",
       "sourceDate": "2026-10-08",
@@ -3326,7 +3376,7 @@
     },
     {
       "title": "Agent 規模化後，誰處理審查與成本？",
-      "summary": "Spotify 追蹤產出增加後的品質與審查，Cloudflare 分級審查，Uber 拆解營運成本；Asana 以固定任務測試快取策略，Block 保留合併與部署的人工關卡。各公司的工作範圍與指標不同，不能合算。",
+      "summary": "Spotify 追蹤產出增加後的品質與審查，Uber 和 Asana 拆解實際工作成本，Block 保留部署關卡；Vals 用 50 個網頁應用測試分工對品質、時間與費用的影響。各資料的任務和指標不同，不能合算。",
       "urls": [
         "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
         "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity",
@@ -3334,7 +3384,8 @@
         "https://www.uber.com/gb/en/blog/efficient-software-factory/",
         "https://openai.com/index/legalon-halves-codex-costs/",
         "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests",
-        "https://asana.com/inside-asana/cut-browsers-agent-cost"
+        "https://asana.com/inside-asana/cut-browsers-agent-cost",
+        "https://www.vals.ai/blogs/multi-agent-vibe-code-bench"
       ],
       "origin": "daily-trend"
     },
@@ -3382,7 +3433,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-11T13:00:04Z",
+    "checkedAt": "2026-10-12T01:37:10Z",
     "points": []
   },
   "knowledgeLibrary": [
