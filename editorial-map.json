@@ -1,0 +1,1296 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-12",
+  "profileStatus": "待討論的讀者輪廓",
+  "stages": [
+    {
+      "id": "start",
+      "label": "尚未導入",
+      "caption": "找起點與共同語言",
+      "roles": "高階主管、轉型負責人、HR／IT／業務主管",
+      "task": "釐清值得投入的工作、建立共識，決定第一個試點。",
+      "worry": "不知道從哪裡開始、投入資源後是否有實際改善。",
+      "services": [
+        "AI 策略評估",
+        "人才與組織轉型"
+      ]
+    },
+    {
+      "id": "pilot",
+      "label": "剛開始導入",
+      "caption": "把試點接上日常工作",
+      "roles": "專案負責人、部門主管、內部 AI 推手",
+      "task": "驗證流程與品質、讓同事實際採用，取得後續支持。",
+      "worry": "展示有效，日常用不起來；成效零散、責任不清楚。",
+      "services": [
+        "導入陪跑計劃",
+        "人才與組織轉型",
+        "AI 治理與制度設計"
+      ]
+    },
+    {
+      "id": "scale",
+      "label": "已深入導入",
+      "caption": "讓多個團隊持續運作",
+      "roles": "轉型團隊、IT 主管、業務主管、營運管理者",
+      "task": "擴大到更多流程與團隊，管理成本、治理與持續維護。",
+      "worry": "規模擴大後成本、品質、協作與維護方式能否跟上。",
+      "services": [
+        "導入陪跑計劃",
+        "AI 治理與制度設計"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "value",
+      "label": "價值與 ROI",
+      "color": "#a46a3b",
+      "themes": [
+        "evaluation",
+        "market"
+      ],
+      "questions": [
+        {
+          "id": "value-baseline",
+          "label": "導入前，怎麼設定值得追蹤的指標？",
+          "stages": [
+            "start",
+            "pilot"
+          ],
+          "keywords": [
+            "基準",
+            "指標",
+            "KPI",
+            "衡量",
+            "評估",
+            "績效"
+          ],
+          "articleHints": [
+            "ai-evaluate",
+            "enterprise-ai-top-line-growth"
+          ]
+        },
+        {
+          "id": "value-time",
+          "label": "省下的時間，怎麼變成企業效益？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "省時",
+            "省下",
+            "AI 價值",
+            "經濟價值",
+            "業務成果",
+            "生產力"
+          ],
+          "articleHints": [
+            "tokenmaxxing",
+            "enterprise-ai-top-line-growth"
+          ]
+        },
+        {
+          "id": "value-roi",
+          "label": "大家怎麼衡量 AI 的 ROI？",
+          "stages": [
+            "start",
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "ROI",
+            "價值",
+            "效益",
+            "績效",
+            "business value"
+          ],
+          "articleHints": [
+            "enterprise-ai-cost-governance",
+            "the-genai-divide",
+            "tokenmaxxing"
+          ]
+        },
+        {
+          "id": "value-quality",
+          "label": "速度變快後，品質與返工怎麼一起量？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "品質",
+            "審查",
+            "驗收",
+            "人工校準",
+            "完成工作",
+            "返工"
+          ],
+          "articleHints": [
+            "ai-evaluate",
+            "skill-instructions-model-upgrades"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cost",
+      "label": "成本與資源",
+      "color": "#6e7698",
+      "themes": [
+        "scaling"
+      ],
+      "questions": [
+        {
+          "id": "cost-budget",
+          "label": "第一個試點需要哪些資源與成本？",
+          "stages": [
+            "start",
+            "pilot"
+          ],
+          "keywords": [
+            "成本",
+            "資源",
+            "採購",
+            "選模型",
+            "模型選擇"
+          ],
+          "articleHints": [
+            "chatgpt-business-vs-enterprise",
+            "enterprise-ai-cost-governance"
+          ]
+        },
+        {
+          "id": "cost-unit",
+          "label": "用量增加後，怎麼控制每項工作的成本？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "成本",
+            "token",
+            "快取",
+            "單位成本",
+            "模型選擇"
+          ],
+          "articleHints": [
+            "enterprise-ai-cost-governance",
+            "tokenmaxxing"
+          ]
+        },
+        {
+          "id": "cost-decision",
+          "label": "什麼條件下要擴大、調整或停止投入？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "成本",
+            "ROI",
+            "價值",
+            "限制",
+            "部署"
+          ],
+          "articleHints": [
+            "enterprise-ai-cost-governance",
+            "the-genai-divide"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workflow",
+      "label": "流程與落地",
+      "color": "#527e75",
+      "themes": [
+        "workflow"
+      ],
+      "questions": [
+        {
+          "id": "workflow-start",
+          "label": "第一個 AI 應用，該從哪段工作開始？",
+          "stages": [
+            "start",
+            "pilot"
+          ],
+          "keywords": [
+            "現場觀察",
+            "流程重設",
+            "Pods",
+            "需求",
+            "工作流程"
+          ],
+          "articleHints": [
+            "uber-agentic-pods-ai-adoption",
+            "coinbase-ai-adoption",
+            "codex-everyone"
+          ]
+        },
+        {
+          "id": "workflow-failure",
+          "label": "試點成功，正式上線為什麼仍會失敗？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "失敗",
+            "落差",
+            "修正",
+            "離線",
+            "上線",
+            "評估"
+          ],
+          "articleHints": [
+            "harness-ai-agent",
+            "the-genai-divide"
+          ]
+        },
+        {
+          "id": "workflow-handoff",
+          "label": "AI 與人怎麼交接，例外由誰處理？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "交接",
+            "核准",
+            "人工",
+            "例外",
+            "責任",
+            "驗收"
+          ],
+          "articleHints": [
+            "ai-workflow-handoff",
+            "harness-ai-agent",
+            "codex-record-replay-workflow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "team",
+      "label": "團隊與擴散",
+      "color": "#7a8652",
+      "themes": [
+        "adoption",
+        "scaling"
+      ],
+      "questions": [
+        {
+          "id": "team-training",
+          "label": "培訓後，怎麼讓 AI 進入實際工作？",
+          "stages": [
+            "start",
+            "pilot"
+          ],
+          "keywords": [
+            "培訓",
+            "學習",
+            "員工",
+            "採用",
+            "種子",
+            "工作安排"
+          ],
+          "articleHints": [
+            "coinbase-ai-adoption",
+            "sinopac-bank-ai-consulting",
+            "uber-agentic-pods-ai-adoption"
+          ]
+        },
+        {
+          "id": "team-scale",
+          "label": "從一個團隊擴大到多個團隊，怎麼分工？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "團隊",
+            "協調",
+            "跨部門",
+            "標準",
+            "維護",
+            "規模"
+          ],
+          "articleHints": [
+            "uber-agentic-pods-ai-adoption",
+            "prompt-library",
+            "agent-skills-concept"
+          ]
+        },
+        {
+          "id": "team-owner",
+          "label": "流程、範例與知識，要由誰持續維護？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "維護",
+            "領域知識",
+            "範例",
+            "標準",
+            "Skills",
+            "Skill"
+          ],
+          "articleHints": [
+            "prompt-library",
+            "skill-instructions-model-upgrades",
+            "agent-skills-concept"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "governance",
+      "label": "治理與風險",
+      "color": "#9c6b72",
+      "themes": [
+        "governance"
+      ],
+      "questions": [
+        {
+          "id": "governance-start",
+          "label": "員工開始用 AI，公司需要哪些基本規範？",
+          "stages": [
+            "start",
+            "pilot"
+          ],
+          "keywords": [
+            "治理",
+            "規範",
+            "員工",
+            "安全",
+            "資料"
+          ],
+          "articleHints": [
+            "shadow-ai-governance",
+            "chatgpt-business-vs-enterprise"
+          ]
+        },
+        {
+          "id": "governance-agent",
+          "label": "Agent 能做什麼？哪些動作要人工核准？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "權限",
+            "核准",
+            "安全",
+            "審核",
+            "處置",
+            "治理"
+          ],
+          "articleHints": [
+            "harness-ai-agent",
+            "ai-workflow-handoff",
+            "claude-tag"
+          ]
+        },
+        {
+          "id": "governance-failure",
+          "label": "失敗或越界之後，怎麼查證與修正？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "失敗",
+            "越界",
+            "證據",
+            "修正",
+            "安全"
+          ],
+          "articleHints": [
+            "openai-sandbox-escape",
+            "prompt-injection-intro",
+            "harness-ai-agent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "change",
+      "label": "新能力與趨勢",
+      "color": "#567d9d",
+      "themes": [
+        "market",
+        "workflow"
+      ],
+      "questions": [
+        {
+          "id": "change-basic",
+          "label": "還沒導入，要先理解哪些能力與限制？",
+          "stages": [
+            "start"
+          ],
+          "keywords": [
+            "能力",
+            "限制",
+            "採用",
+            "企業",
+            "策略"
+          ],
+          "articleHints": [
+            "codex-intro",
+            "aiworks-ddi-workshop",
+            "agent-skills-concept"
+          ]
+        },
+        {
+          "id": "change-feature",
+          "label": "功能更新，會改變我們哪一段工作？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "功能",
+            "更新",
+            "模型",
+            "Agent",
+            "Skills",
+            "平台"
+          ],
+          "articleHints": [
+            "gemini-recent-updates",
+            "astra-agi-criteria",
+            "chatgpt-sites-introduction",
+            "chatgpt-images-2-5"
+          ]
+        },
+        {
+          "id": "change-recheck",
+          "label": "模型升級後，原本流程需要重測什麼？",
+          "stages": [
+            "scale"
+          ],
+          "keywords": [
+            "模型",
+            "更新",
+            "評測",
+            "評估",
+            "測試",
+            "品質"
+          ],
+          "articleHints": [
+            "skill-instructions-model-upgrades",
+            "gpt-5-5-prompt-guidance"
+          ]
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "date": "2025-01-08",
+      "slug": "/blog-microsoft-copilot-studio/",
+      "title": "企業效率革命：深入解析 Microsoft Copilot Studio 的 AI 智慧應用",
+      "url": "https://aiworks.tw/blog-microsoft-copilot-studio/"
+    },
+    {
+      "date": "2025-01-21",
+      "slug": "/blog-microsoft-intelligent-apps/",
+      "title": "Low Code 時代的智慧應用：Power Apps 幫助企業加速轉型",
+      "url": "https://aiworks.tw/blog-microsoft-intelligent-apps/"
+    },
+    {
+      "date": "2025-01-21",
+      "slug": "/blog-microsoft-ai-agent-automation/",
+      "title": "數位轉型關鍵工具：為何選擇 Microsoft Copilot Studio？",
+      "url": "https://aiworks.tw/blog-microsoft-ai-agent-automation/"
+    },
+    {
+      "date": "2024-06-25",
+      "slug": "/91app-talent-matters/",
+      "title": "91APP 塑造高成長創新組織秘訣：用人唯才",
+      "url": "https://aiworks.tw/91app-talent-matters/"
+    },
+    {
+      "date": "2024-07-24",
+      "slug": "/digital-transformation-hotai-motor/",
+      "title": "傳統產業的數位轉型前沿—揭開和泰汽車的成功之道！",
+      "url": "https://aiworks.tw/digital-transformation-hotai-motor/"
+    },
+    {
+      "date": "2024-07-24",
+      "slug": "/rpai-goingbus/",
+      "title": "有效結合 RPA 和 AI 應用工具，低成本擁抱技術創新！",
+      "url": "https://aiworks.tw/rpai-goingbus/"
+    },
+    {
+      "date": "2024-08-07",
+      "slug": "/rpa-uipathvspowerautomate/",
+      "title": "RPA 軟體比較： UiPath 與 Power Automate 如何選擇？",
+      "url": "https://aiworks.tw/rpa-uipathvspowerautomate/"
+    },
+    {
+      "date": "2024-08-15",
+      "slug": "/rpa-trends-2024-ai-hyperautomation/",
+      "title": "2024 年 RPA 四大趨勢：AI 整合與超自動化引領未來",
+      "url": "https://aiworks.tw/rpa-trends-2024-ai-hyperautomation/"
+    },
+    {
+      "date": "2024-08-20",
+      "slug": "/rpa-how-to-install-uipath/",
+      "title": "RPA 軟體 UiPath： 超簡單安裝教學懶人包",
+      "url": "https://aiworks.tw/rpa-how-to-install-uipath/"
+    },
+    {
+      "date": "2024-08-22",
+      "slug": "/ai-automation-esg/",
+      "title": "自動化助力 ESG：提升合規性、永續發展與社會責任的關鍵技術",
+      "url": "https://aiworks.tw/ai-automation-esg/"
+    },
+    {
+      "date": "2024-08-28",
+      "slug": "/delta-electronics-industry-upgrade/",
+      "title": "矛與盾共舞：台達電解密數位轉型與資安雙軌策略",
+      "url": "https://aiworks.tw/delta-electronics-industry-upgrade/"
+    },
+    {
+      "date": "2024-08-29",
+      "slug": "/rpa-human-resources-management/",
+      "title": "提升效率與降低人力負擔：RPA 在人力資源部門的應用指南",
+      "url": "https://aiworks.tw/rpa-human-resources-management/"
+    },
+    {
+      "date": "2024-09-05",
+      "slug": "/microsoft365-must-know-tools/",
+      "title": "高效工作必學：Microsoft 365 超實用工具分享",
+      "url": "https://aiworks.tw/microsoft365-must-know-tools/"
+    },
+    {
+      "date": "2024-09-12",
+      "slug": "/taipei-smart-city/",
+      "title": "智慧城市藍圖：臺北市如何以資料驅動未來",
+      "url": "https://aiworks.tw/taipei-smart-city/"
+    },
+    {
+      "date": "2024-09-12",
+      "slug": "/uipath-table-extraction-tutorial/",
+      "title": "RPA 功能教學：一鍵爬蟲抓資料 UiPath Table Extraction",
+      "url": "https://aiworks.tw/uipath-table-extraction-tutorial/"
+    },
+    {
+      "date": "2024-09-26",
+      "slug": "/gartner-magic-quadrant-2024/",
+      "title": "Gartner 魔力象限報告 2024 RPA 市場現況與主要供應商分析",
+      "url": "https://aiworks.tw/gartner-magic-quadrant-2024/"
+    },
+    {
+      "date": "2024-10-09",
+      "slug": "/hr-automation-case/",
+      "title": "人資自動化實例分享：一鍵生成合作合約與錄取通知信",
+      "url": "https://aiworks.tw/hr-automation-case/"
+    },
+    {
+      "date": "2024-10-11",
+      "slug": "/ai-hr-recruitment-efficiency/",
+      "title": "AI 智能應用人資篇：如何利用 RPA 自動化提升招聘效率並減少篩選錯誤",
+      "url": "https://aiworks.tw/ai-hr-recruitment-efficiency/"
+    },
+    {
+      "date": "2024-10-15",
+      "slug": "/smart-ai-talent-upgrade/",
+      "title": "告別「笨水管」時代！台灣大如何藉由 AI 賦能人才，提升企業競爭力",
+      "url": "https://aiworks.tw/smart-ai-talent-upgrade/"
+    },
+    {
+      "date": "2024-10-22",
+      "slug": "/pm-automation-case/",
+      "title": "產品行銷經理自動化實例：打造高效且低門檻的趨勢觀察小工具",
+      "url": "https://aiworks.tw/pm-automation-case/"
+    },
+    {
+      "date": "2024-10-24",
+      "slug": "/ai-hr-resume-summary/",
+      "title": "AI 智能應用人資篇：RPA 自動摘要履歷功能讓招聘流程更高效",
+      "url": "https://aiworks.tw/ai-hr-resume-summary/"
+    },
+    {
+      "date": "2024-10-24",
+      "slug": "/uipath-genai-activity/",
+      "title": "提升工作流程自動化效率的最佳實踐指南：UiPath GenAI activity",
+      "url": "https://aiworks.tw/uipath-genai-activity/"
+    },
+    {
+      "date": "2024-10-30",
+      "slug": "/blog-marketing-rpa-ai-practical/",
+      "title": "RPA 結合 AI 技術：行銷領域實際應用策略",
+      "url": "https://aiworks.tw/blog-marketing-rpa-ai-practical/"
+    },
+    {
+      "date": "2024-10-30",
+      "slug": "/blog-rpa-summary-tool-for-business-efficiency/",
+      "title": "效率倍增！UiPath 自動摘要工具如何重塑企業工作流程",
+      "url": "https://aiworks.tw/blog-rpa-summary-tool-for-business-efficiency/"
+    },
+    {
+      "date": "2024-10-30",
+      "slug": "/blog-artical-categorization/",
+      "title": "流程革新的利器：UiPath 自動分類工具如何助力企業增效",
+      "url": "https://aiworks.tw/blog-artical-categorization/"
+    },
+    {
+      "date": "2024-11-01",
+      "slug": "/blog-object-detection/",
+      "title": "保險、製造業必備：UiPath 物件辨識工具的應用指南",
+      "url": "https://aiworks.tw/blog-object-detection/"
+    },
+    {
+      "date": "2024-11-05",
+      "slug": "/blog-filter-pii/",
+      "title": "保護資料隱私的自動化解決方案：UiPath PII 檢測與過濾工具",
+      "url": "https://aiworks.tw/blog-filter-pii/"
+    },
+    {
+      "date": "2024-11-05",
+      "slug": "/blog-headhunter-talent-database-automation/",
+      "title": "獵頭顧問自動化實例：LinkedIn 人才資料庫自動化建置",
+      "url": "https://aiworks.tw/blog-headhunter-talent-database-automation/"
+    },
+    {
+      "date": "2024-11-07",
+      "slug": "/blog-rpa-basic-concept/",
+      "title": "自動化流程入門 #1：RPA 基礎概念與應用領域介紹",
+      "url": "https://aiworks.tw/blog-rpa-basic-concept/"
+    },
+    {
+      "date": "2024-11-11",
+      "slug": "/ai-fubon/",
+      "title": "對外串連共榮創新生態系、對內以 AI 賦能，北富銀的深化客戶體驗之路",
+      "url": "https://aiworks.tw/ai-fubon/"
+    },
+    {
+      "date": "2024-11-14",
+      "slug": "/blog-marketing-sns-data-entry-automation/",
+      "title": "RPA 化身數位行銷高效助理：社群媒體後台數據自動化登錄",
+      "url": "https://aiworks.tw/blog-marketing-sns-data-entry-automation/"
+    },
+    {
+      "date": "2024-11-26",
+      "slug": "/blog-2025-rpa-ai-trends-insights/",
+      "title": "全面解析 2025 年 RPA 發展趨勢：從效率提升到全域自動化",
+      "url": "https://aiworks.tw/blog-2025-rpa-ai-trends-insights/"
+    },
+    {
+      "date": "2024-12-04",
+      "slug": "/blog-rpa-power-platform/",
+      "title": "自動化流程入門 #2：認識 Power Platform 開發工具集",
+      "url": "https://aiworks.tw/blog-rpa-power-platform/"
+    },
+    {
+      "date": "2024-12-04",
+      "slug": "/blog-om-automation-case/",
+      "title": "營運經理自動化實例：LINE@ 官方帳號訊息自動排程",
+      "url": "https://aiworks.tw/blog-om-automation-case/"
+    },
+    {
+      "date": "2024-12-11",
+      "slug": "/ai-bizlink/",
+      "title": "解決客戶痛點到成功突破：貿聯用 AI + RPA 實現數位轉型",
+      "url": "https://aiworks.tw/ai-bizlink/"
+    },
+    {
+      "date": "2024-12-11",
+      "slug": "/blog-image-analysis/",
+      "title": "提升影像處理效率的利器：UiPath Image Analysis 工具全解析",
+      "url": "https://aiworks.tw/blog-image-analysis/"
+    },
+    {
+      "date": "2024-12-12",
+      "slug": "/blog-rpa-dpa-power-automate/",
+      "title": "自動化流程入門 #3：Power Automate 桌面流程與雲端版功能比較",
+      "url": "https://aiworks.tw/blog-rpa-dpa-power-automate/"
+    },
+    {
+      "date": "2024-12-13",
+      "slug": "/blog-ai-automation-hr-upgrade-notonlyhrs2ep95/",
+      "title": "一鍵升級 AI 人資！0 基礎也可用 RPA 設定自動化工作流程",
+      "url": "https://aiworks.tw/blog-ai-automation-hr-upgrade-notonlyhrs2ep95/"
+    },
+    {
+      "date": "2024-12-18",
+      "slug": "/blog-enterprise-ai-transformation-notonlyhrs2ep96/",
+      "title": "企業如何智能轉型？ Aiworks 轉型經驗談，將 AI 融入你的工作！",
+      "url": "https://aiworks.tw/blog-enterprise-ai-transformation-notonlyhrs2ep96/"
+    },
+    {
+      "date": "2024-12-19",
+      "slug": "/power-automate-setup-intro/",
+      "title": "自動化流程入門 #4：Power Automate Desktop 安裝與介面介紹",
+      "url": "https://aiworks.tw/power-automate-setup-intro/"
+    },
+    {
+      "date": "2024-12-23",
+      "slug": "/blog-hrm-part-time-check/",
+      "title": "出勤管理自動化：兼職人員時數審核流程優化",
+      "url": "https://aiworks.tw/blog-hrm-part-time-check/"
+    },
+    {
+      "date": "2025-01-16",
+      "slug": "/ai-cloudmile/",
+      "title": "從商模轉型到人才培育 劉永信引領 CloudMile 萬里雲打造企業數位轉型新典範",
+      "url": "https://aiworks.tw/ai-cloudmile/"
+    },
+    {
+      "date": "2025-02-06",
+      "slug": "/blog-cw-genai-business/",
+      "title": "生成式 AI 助攻業務場景！天下雜誌行銷業務團隊的 AI 實戰學習心得",
+      "url": "https://aiworks.tw/blog-cw-genai-business/"
+    },
+    {
+      "date": "2025-02-12",
+      "slug": "/blog-basic-power-automate/",
+      "title": "自動化流程入門 #5：Power Automate Desktop 新手必學基礎變數 & 文字方塊",
+      "url": "https://aiworks.tw/blog-basic-power-automate/"
+    },
+    {
+      "date": "2025-02-25",
+      "slug": "/blog-chatgpt-prompt/",
+      "title": "5 分鐘學會 ChatGPT Prompt 提示詞優化術！（內附實戰範例）",
+      "url": "https://aiworks.tw/blog-chatgpt-prompt/"
+    },
+    {
+      "date": "2025-02-26",
+      "slug": "/blog-genai-business-guide-video/",
+      "title": "《生成式 AI prompt 應用指南》精準掌握提示詞技術，解放生成式 AI 潛力",
+      "url": "https://aiworks.tw/blog-genai-business-guide-video/"
+    },
+    {
+      "date": "2025-02-27",
+      "slug": "/blog-ai-agent-2025-trends/",
+      "title": "什麼是 AI Agent？一窺 2025 最重要企業 AI 應用趨勢",
+      "url": "https://aiworks.tw/blog-ai-agent-2025-trends/"
+    },
+    {
+      "date": "2025-03-13",
+      "slug": "/blog-power-automate-desktop-variable/",
+      "title": "自動化流程入門 #6：Power Automate Desktop 變數與文字型態完全指南",
+      "url": "https://aiworks.tw/blog-power-automate-desktop-variable/"
+    },
+    {
+      "date": "2025-03-17",
+      "slug": "/blog-kingsteel-ai-transform/",
+      "title": "不只是技術升級，鉅鋼機械如何讓 AI 成為企業基因？",
+      "url": "https://aiworks.tw/blog-kingsteel-ai-transform/"
+    },
+    {
+      "date": "2025-03-18",
+      "slug": "/blog-notebooklm-service-bot/",
+      "title": "不只是筆記工具！教你用 NotebookLM 輕鬆打造 AI 客服助理",
+      "url": "https://aiworks.tw/blog-notebooklm-service-bot/"
+    },
+    {
+      "date": "2025-03-24",
+      "slug": "/blog-openai-agent-operator/",
+      "title": "從 ChatGPT 到 Operator — 讓 AI 從思考走向行動",
+      "url": "https://aiworks.tw/blog-openai-agent-operator/"
+    },
+    {
+      "date": "2025-03-28",
+      "slug": "/power-automate-desktop-if-else/",
+      "title": "自動化流程入門 #7：Power Automate Desktop 基礎功能 If-Else 條件式應用",
+      "url": "https://aiworks.tw/power-automate-desktop-if-else/"
+    },
+    {
+      "date": "2025-04-09",
+      "slug": "/blog-chatgpt-3useful-gpts/",
+      "title": "3 個超實用 GPTs！讓客製化 ChatGPT 幫你精準完成任務",
+      "url": "https://aiworks.tw/blog-chatgpt-3useful-gpts/"
+    },
+    {
+      "date": "2025-04-11",
+      "slug": "/blog-ai-hr-takeda/",
+      "title": "生成式 AI 如何成為 HR 的數位夥伴？武田藥品的 AI 實戰學習心得",
+      "url": "https://aiworks.tw/blog-ai-hr-takeda/"
+    },
+    {
+      "date": "2025-04-14",
+      "slug": "/blog-dbs-finance-new-gen/",
+      "title": "星展銀行如何靠 AI 打造金融新世代？資訊部長康潔儀獨家分享",
+      "url": "https://aiworks.tw/blog-dbs-finance-new-gen/"
+    },
+    {
+      "date": "2025-04-17",
+      "slug": "/blog-deepresearch-implement/",
+      "title": "讓 Deep Research 為你做足功課！AI 快速掌握客戶背景與產業脈絡",
+      "url": "https://aiworks.tw/blog-deepresearch-implement/"
+    },
+    {
+      "date": "2025-04-18",
+      "slug": "/blog-power-automate-switch/",
+      "title": "自動化流程入門 #8：Power Automate Desktop 基礎功能 Switch 條件式應用",
+      "url": "https://aiworks.tw/blog-power-automate-switch/"
+    },
+    {
+      "date": "2025-04-28",
+      "slug": "/blog-ai-risk-management/",
+      "title": "你的 ChatGPT 安全嗎？使用 AI 工具必知的 10 個安全檢核",
+      "url": "https://aiworks.tw/blog-ai-risk-management/"
+    },
+    {
+      "date": "2025-05-14",
+      "slug": "/blog-reasoning-o-model/",
+      "title": "推理模型是什麼？從 GPT-4o 到 o3，一次看懂 ChatGPT 模型差異與應用場景",
+      "url": "https://aiworks.tw/blog-reasoning-o-model/"
+    },
+    {
+      "date": "2025-05-14",
+      "slug": "/blog-moe-ai-education/",
+      "title": "從「好學生心態」到「玩家心態」── 葉丙成談 AI 教育的正確起點",
+      "url": "https://aiworks.tw/blog-moe-ai-education/"
+    },
+    {
+      "date": "2025-05-16",
+      "slug": "/blog-2025-sme-digital-subsidy/",
+      "title": "2025 最新 AI 課程政府補助：企業最高可領 10 萬元！",
+      "url": "https://aiworks.tw/blog-2025-sme-digital-subsidy/"
+    },
+    {
+      "date": "2025-05-29",
+      "slug": "/blog-2025-wda-subsidy/",
+      "title": "2025 AI 補助課程申請攻略｜大人提 × 小人提一次搞懂 + 實戰課程推薦",
+      "url": "https://aiworks.tw/blog-2025-wda-subsidy/"
+    },
+    {
+      "date": "2025-06-09",
+      "slug": "/ai-sales-business-development/",
+      "title": "ChatGPT 業務應用教學：潛在客戶名單搜集＋陌開信件寫作實例",
+      "url": "https://aiworks.tw/ai-sales-business-development/"
+    },
+    {
+      "date": "2025-06-10",
+      "slug": "/blog-mbat-automation-workshop/",
+      "title": "為媒體出版業夥伴量身打造的實戰演練：雜誌公會 No-code 自動化工作坊",
+      "url": "https://aiworks.tw/blog-mbat-automation-workshop/"
+    },
+    {
+      "date": "2025-06-11",
+      "slug": "/blog-ssstc-ai-hr/",
+      "title": "從 HR 出發，打開 AI 的第一道門 —— 建興儲存科技如何點燃 AI 的實驗精神？",
+      "url": "https://aiworks.tw/blog-ssstc-ai-hr/"
+    },
+    {
+      "date": "2025-06-16",
+      "slug": "/blog-ai-social-media-mkt-context/",
+      "title": "建立你的社群行銷 AI 工作流（上）NotebookLM + ChatGPT 讓你成為文案快手",
+      "url": "https://aiworks.tw/blog-ai-social-media-mkt-context/"
+    },
+    {
+      "date": "2025-06-16",
+      "slug": "/blog-ai-social-media-mkt-image/",
+      "title": "建立你的社群行銷 AI 工作流（下）小編救星！ChatGPT 幫你快速生成圖片",
+      "url": "https://aiworks.tw/blog-ai-social-media-mkt-image/"
+    },
+    {
+      "date": "2025-06-20",
+      "slug": "/blog-0515-webinar-abstract/",
+      "title": "AI 人才轉型怎麼做？企業打造持續進化團隊的 4 大實戰策略（含台灣大哥大案例）",
+      "url": "https://aiworks.tw/blog-0515-webinar-abstract/"
+    },
+    {
+      "date": "2025-07-07",
+      "slug": "/blog-notion-ai-build-use-case/",
+      "title": "Notion AI 教學：快速建立客戶管理、專案協作與行銷追蹤（附實作範例）",
+      "url": "https://aiworks.tw/blog-notion-ai-build-use-case/"
+    },
+    {
+      "date": "2025-07-17",
+      "slug": "/blog-twreporter-genai-workshop/",
+      "title": "新聞媒體工作者如何與生成式 AI 協作？從內訓實例看應用場景與思維挑戰",
+      "url": "https://aiworks.tw/blog-twreporter-genai-workshop/"
+    },
+    {
+      "date": "2025-07-28",
+      "slug": "/blog-aiworks-2025-white-paper-abstract/",
+      "title": "Aiworks 白皮書精華整理：逾八成企業看好 AI，真正落地僅 1%",
+      "url": "https://aiworks.tw/blog-aiworks-2025-white-paper-abstract/"
+    },
+    {
+      "date": "2025-08-11",
+      "slug": "/blog-make-automation-introduction/",
+      "title": "Make 自動化工具教學：介面操作、功能亮點與 Zapier、n8n 比較一次看懂",
+      "url": "https://aiworks.tw/blog-make-automation-introduction/"
+    },
+    {
+      "date": "2025-08-11",
+      "slug": "/blog-make-to-do-list-tutorial/",
+      "title": "Make 自動化工具實作教學：整合 Google Sheet 與 Gmail 打造待辦事項提醒助理",
+      "url": "https://aiworks.tw/blog-make-to-do-list-tutorial/"
+    },
+    {
+      "date": "2025-08-21",
+      "slug": "/blog-how-to-do-geo/",
+      "title": "2025 GEO 實戰守則：讓 ChatGPT、Gemini 主動引用你的內容",
+      "url": "https://aiworks.tw/blog-how-to-do-geo/"
+    },
+    {
+      "date": "2025-08-26",
+      "slug": "/blog-gpts-financial-implement/",
+      "title": "客製化 AI 助理使用指南：從金融案例認識更多應用可能性",
+      "url": "https://aiworks.tw/blog-gpts-financial-implement/"
+    },
+    {
+      "date": "2025-09-02",
+      "slug": "/blog-cnfi-industry-ai-implement/",
+      "title": "「AI 很重要，但知易行難」—— 工總祕書長呂正華談製造業的挑戰與下一步",
+      "url": "https://aiworks.tw/blog-cnfi-industry-ai-implement/"
+    },
+    {
+      "date": "2025-09-03",
+      "slug": "/blog-chatgpt-agent-intro/",
+      "title": "ChatGPT agent 實測：AI Agent 功能與日常辦公應用",
+      "url": "https://aiworks.tw/blog-chatgpt-agent-intro/"
+    },
+    {
+      "date": "2025-09-19",
+      "slug": "/blog-ai-evaluate/",
+      "title": "AI 導入前要怎麼評估？七大面向幫你建立專屬指標與治理邊界",
+      "url": "https://aiworks.tw/blog-ai-evaluate/"
+    },
+    {
+      "date": "2025-10-14",
+      "slug": "/blog-genai-chatbot-comparison-2025/",
+      "title": "生成式 AI 工具全攻略：5 大平台功能實測、訂閱方案與使用場景完整比較",
+      "url": "https://aiworks.tw/blog-genai-chatbot-comparison-2025/"
+    },
+    {
+      "date": "2025-11-11",
+      "slug": "/blog-aiworks-automation-implementation/",
+      "title": "業務每天花三小時整理名單？看 Aiworks 如何用 AI 自動化省回 40% 時間",
+      "url": "https://aiworks.tw/blog-aiworks-automation-implementation/"
+    },
+    {
+      "date": "2025-11-14",
+      "slug": "/blog-openai-agent-builder/",
+      "title": "OpenAI Agent Builder 業務實作案例：從客戶情蒐到行動建議，開發過程不再卡關",
+      "url": "https://aiworks.tw/blog-openai-agent-builder/"
+    },
+    {
+      "date": "2025-12-12",
+      "slug": "/the-genai-divide/",
+      "title": "為什麼 95% 的企業 AI 導入會失敗？MIT 報告揭露 AI 鴻溝與低 ROI 真相",
+      "url": "https://aiworks.tw/the-genai-divide/"
+    },
+    {
+      "date": "2025-12-26",
+      "slug": "/blog-chatgpt-gemini-scheduled/",
+      "title": "ChatGPT 與 Gemini 排程功能教學：3 大情境讓 AI 變身全天候貼身秘書",
+      "url": "https://aiworks.tw/blog-chatgpt-gemini-scheduled/"
+    },
+    {
+      "date": "2026-01-08",
+      "slug": "/blog-chatgpt-shopping-research/",
+      "title": "ChatGPT 智慧購物功能：讓 AI 幫你做購物研究、選品與比價",
+      "url": "https://aiworks.tw/cover_blog-chatgpt-shopping-research/"
+    },
+    {
+      "date": "2026-01-14",
+      "slug": "/blog-creative-life-science-automation/",
+      "title": "啟新集團 AI 自動化實戰：賦能後勤團隊，驅動企業創新動能",
+      "url": "https://aiworks.tw/blog-creative-life-science-automation/"
+    },
+    {
+      "date": "2026-01-22",
+      "slug": "/blog-excel-ai-markdown/",
+      "title": "為什麼你的 AI 看不懂 Excel？從 AI 閱讀邏輯看懂 Markdown 的關鍵角色",
+      "url": "https://aiworks.tw/blog-excel-ai-markdown/"
+    },
+    {
+      "date": "2026-01-23",
+      "slug": "/blog-ai-enterprise-top-line-growth/",
+      "title": "AI 不該只是幫企業省成本：從 Thoughtworks 報告看見 AI 創造成長的關鍵轉向",
+      "url": "https://aiworks.tw/blog-ai-enterprise-top-line-growth/"
+    },
+    {
+      "date": "2026-01-29",
+      "slug": "/blog-chatgpt-quiz/",
+      "title": "ChatGPT 測驗功能教學：從讀報告、做研究到企業應用",
+      "url": "https://aiworks.tw/blog-chatgpt-quiz/"
+    },
+    {
+      "date": "2026-02-26",
+      "slug": "/blog-ai-image-generation-review/",
+      "title": "AI 圖片生成實測：ChatGPT vs Gemini 五大情境深度解析",
+      "url": "https://aiworks.tw/blog-ai-image-generation-review/"
+    },
+    {
+      "date": "2026-03-02",
+      "slug": "/blog-ai-agent-skill-partnership/",
+      "title": "AI Agent、機器人與人類的下一步：從替代走向「夥伴關係」",
+      "url": "https://aiworks.tw/blog-ai-agent-skill-partnership/"
+    },
+    {
+      "date": "2026-03-10",
+      "slug": "/blog-prompt-advanced-skills/",
+      "title": "Prompt 提示詞進階技巧：善用「壽司結構」，避免 AI 忽略關鍵資訊",
+      "url": "https://aiworks.tw/blog-prompt-advanced-skills/"
+    },
+    {
+      "date": "2026-03-16",
+      "slug": "/blog-ai-healthcare-to-compliance/",
+      "title": "從醫療 AI 策略看企業合規：AI 如何踏入高度監管產業？",
+      "url": "https://aiworks.tw/blog-ai-healthcare-to-compliance/"
+    },
+    {
+      "date": "2026-03-16",
+      "slug": "/blog-anthropic-economic-index-reivew/",
+      "title": "2026 Anthropic 經濟指數報告解析：AI 如何重塑知識工作與企業專業價值",
+      "url": "https://aiworks.tw/blog-anthropic-economic-index-reivew/"
+    },
+    {
+      "date": "2026-03-19",
+      "slug": "/aiworks-openai-services-partner-announcement/",
+      "title": "Aiworks 宣布成為 OpenAI Services Partner 持續協助台灣企業推動 AI 導入與應用落地",
+      "url": "https://aiworks.tw/aiworks-openai-services-partner-announcement/"
+    },
+    {
+      "date": "2026-03-30",
+      "slug": "/blog-prompt-library/",
+      "title": "同樣使用 AI，為什麼成效因人而異？用 Prompt Library 打造企業專屬的 AI 溝通指南",
+      "url": "https://aiworks.tw/blog-prompt-library/"
+    },
+    {
+      "date": "2026-04-09",
+      "slug": "/blog-agent-skills-concept/",
+      "title": "什麼是 Agent Skills？為 AI 打造一本企業級任務攻略",
+      "url": "https://aiworks.tw/blog-agent-skills-concept/"
+    },
+    {
+      "date": "2026-04-20",
+      "slug": "/openai-ai-jobs-transition-framework/",
+      "title": "被取代、被重組，還是因 AI 擴張？OpenAI 最新報告的 6 個關鍵發現",
+      "url": "https://aiworks.tw/openai-ai-jobs-transition-framework/"
+    },
+    {
+      "date": "2026-04-22",
+      "slug": "/blog-chatgpt-images-2-0-release/",
+      "title": "ChatGPT Images 2.0 重點整理：推理能力、Codex 整合與中文渲染三大突破",
+      "url": "https://aiworks.tw/blog-chatgpt-images-2-0-release/"
+    },
+    {
+      "date": "2026-04-23",
+      "slug": "/blog-workspace-agents-in-chatgpt/",
+      "title": "AI 同事正式上線！ChatGPT Workspace Agents 功能解析與企業導入建議",
+      "url": "https://aiworks.tw/blog-workspace-agents-in-chatgpt/"
+    },
+    {
+      "date": "2026-04-24",
+      "slug": "/blog-harness-ai-agent/",
+      "title": "什麼是 Harness？從 Anthropic 事後檢討報告看 AI Agent 背後的企業駕馭責任",
+      "url": "https://aiworks.tw/blog-harness-ai-agent/"
+    },
+    {
+      "date": "2026-04-27",
+      "slug": "/blog-2026-stanford-ai-index-report/",
+      "title": "2026 AI 指數報告關鍵洞察：Agentic AI 已成新基準，企業三道缺口同步擴大",
+      "url": "https://aiworks.tw/blog-2026-stanford-ai-index-report/"
+    },
+    {
+      "date": "2026-04-28",
+      "slug": "/blog-anthropic-project-deal/",
+      "title": "當 AI Agent 開始替你談判：從 Anthropic 實驗看企業導入前必須釐清的三個關鍵問題",
+      "url": "https://aiworks.tw/blog-anthropic-project-deal/"
+    },
+    {
+      "date": "2026-04-29",
+      "slug": "/blog-prompt-injection-intro/",
+      "title": "Agent 時代的新型資安威脅：Prompt Injection 如何讓 AI 工具變成攻擊者的入口",
+      "url": "https://aiworks.tw/blog-prompt-injection-intro/"
+    },
+    {
+      "date": "2026-04-30",
+      "slug": "/blog-tokenmaxxing-vs-productivity/",
+      "title": "Tokenmaxxing：當燒 token 變成競賽，企業衡量的是 AI 生產力還是幻覺？",
+      "url": "https://aiworks.tw/blog-tokenmaxxing-vs-productivity/"
+    },
+    {
+      "date": "2026-05-04",
+      "slug": "/blog-chatgpt-business-vs-enterprise/",
+      "title": "ChatGPT Business vs ChatGPT Enterprise：企業導入 ChatGPT，該怎麼選？",
+      "url": "https://aiworks.tw/blog-chatgpt-business-vs-enterprise/"
+    },
+    {
+      "date": "2026-05-05",
+      "slug": "/blog-anthropic-ai-sycophancy/",
+      "title": "AI 在說真話嗎？揭示 AI 討好行為如何影響人的決策判斷",
+      "url": "https://aiworks.tw/blog-anthropic-ai-sycophancy/"
+    },
+    {
+      "date": "2026-05-06",
+      "slug": "/blog-codex-intro/",
+      "title": "企業該如何使用 Codex？從工作場景到 Agent 時代的組織能力建立",
+      "url": "https://aiworks.tw/blog-codex-intro/"
+    },
+    {
+      "date": "2026-05-07",
+      "slug": "/blog-claude-managed-agents-intro/",
+      "title": "Claude Managed Agents 是什麼？企業部署組織級 AI Agent 的評估與決策指南",
+      "url": "https://aiworks.tw/blog-claude-managed-agents-intro/"
+    },
+    {
+      "date": "2026-05-11",
+      "slug": "/blog-ai-infrastructure-compute-capacity/",
+      "title": "AI 競爭重心從模型移向基礎設施：三大服務商的運算佈局與企業採用視角",
+      "url": "https://aiworks.tw/blog-ai-infrastructure-compute-capacity/"
+    },
+    {
+      "date": "2026-05-12",
+      "slug": "/blog-cantab-ai-financial-services-2026/",
+      "title": "金融業 AI 採用率 81%、轉型影響僅 14%：《2026 全球金融服務業 AI 報告》拆解企業導入落差",
+      "url": "https://aiworks.tw/blog-cantab-ai-financial-services-2026/"
+    },
+    {
+      "date": "2026-05-13",
+      "slug": "/blog-gpt-5-5-prompt-guidance/",
+      "title": "從 prompt 技巧到成果導向規格：AI Agent 時代與 GPT-5.5 高效協作的新標準",
+      "url": "https://aiworks.tw/blog-gpt-5-5-prompt-guidance/"
+    },
+    {
+      "date": "2026-05-14",
+      "slug": "/blog-ai-cybersecurity-trends-2026/",
+      "title": "AI 資安攻防戰升級：從 OpenAI Daybreak 與 Anthropic Project Glasswing 看企業防禦應對策略",
+      "url": "https://aiworks.tw/blog-ai-cybersecurity-trends-2026/"
+    },
+    {
+      "date": "2026-05-15",
+      "slug": "/blog-codex-remote-access/",
+      "title": "AI Agent 走向跨裝置時代：Codex 手機遠端控制功能全解析",
+      "url": "https://aiworks.tw/blog-codex-remote-access/"
+    },
+    {
+      "date": "2026-05-27",
+      "slug": "/blog-google-io-2026/",
+      "title": "Google I/O 大會 2026 重點整理：當 Agent 成為協作夥伴，企業必須掌握的策略訊號",
+      "url": "https://aiworks.tw/blog-google-io-2026/"
+    },
+    {
+      "date": "2026-05-29",
+      "slug": "/blog-google-ai-search-change/",
+      "title": "當 Google 改變搜尋：資訊主權正在轉移，企業不可不知的結構性轉變",
+      "url": "https://aiworks.tw/blog-google-ai-search-change/"
+    },
+    {
+      "date": "2026-06-03",
+      "slug": "/blog-codex-everyone/",
+      "title": "不只屬於開發者！看 Codex 如何加速各職能知識工作流程",
+      "url": "https://aiworks.tw/blog-codex-everyone/"
+    },
+    {
+      "date": "2026-06-05",
+      "slug": "/blog-chatgpt-memory-dreaming/",
+      "title": "ChatGPT 用「做夢」打造更精準的 AI 記憶！企業協作中該守住的關鍵脈絡是什麼？",
+      "url": "https://aiworks.tw/blog-chatgpt-memory-dreaming/"
+    },
+    {
+      "date": "2026-06-10",
+      "slug": "/blog-anthropic-ai-humanities/",
+      "title": "當 AI 問題超出技術範疇：Anthropic 近期研究揭示的人文課題",
+      "url": "https://aiworks.tw/blog-anthropic-ai-humanities/"
+    },
+    {
+      "date": "2026-06-11",
+      "slug": "/blog-aiworks-ddi-workshop/",
+      "title": "Agentic AI 是 2026 企業關鍵應用：Aiworks 講座重點回顧，從導入路徑到人才佈局",
+      "url": "https://aiworks.tw/blog-aiworks-ddi-workshop/"
+    },
+    {
+      "date": "2026-06-18",
+      "slug": "/blog-sinopac-bank-ai-consulting/",
+      "title": "金融產業 AI 人才賦能：永豐銀行 × Aiworks 顧問的 AI 自動化實戰",
+      "url": "https://aiworks.tw/blog-sinopac-bank-ai-consulting/"
+    },
+    {
+      "date": "2026-07-02",
+      "slug": "/blog-claude-tag/",
+      "title": "Claude Tag 是什麼？AI 進入 Slack 頻道後的企業治理框架",
+      "url": "https://aiworks.tw/blog-claude-tag/"
+    },
+    {
+      "date": "2026-07-08",
+      "slug": "/blog-enterprise-ai-cost-governance/",
+      "title": "企業 AI 成本治理：從用量控管到 ROI 驗證的管理框架",
+      "url": "https://aiworks.tw/blog-enterprise-ai-cost-governance/"
+    },
+    {
+      "date": "2026-07-16",
+      "slug": "/blog_ai-workflow-handoff/",
+      "title": "從 ChatGPT Work 看企業 AI 導入：任務交接、人工核准與治理邊界",
+      "url": "https://aiworks.tw/blog_ai-workflow-handoff/"
+    },
+    {
+      "date": "2026-07-27",
+      "slug": "/blog-codex-record-replay-workflow/",
+      "title": "ChatGPT Record & Replay 企業應用指南：從流程示範建立 Skill，掌握 RPA 差異與治理重點",
+      "url": "https://aiworks.tw/blog-codex-record-replay-workflow/"
+    },
+    {
+      "date": "2026-07-30",
+      "slug": "/blog-openai-sandbox-escape/",
+      "title": "從 OpenAI 沙盒逃逸事件看 AI Agent 資安：風險鏈、多層防護與企業治理",
+      "url": "https://aiworks.tw/blog-openai-sandbox-escape/"
+    },
+    {
+      "date": "2026-08-06",
+      "slug": "/blog_coinbase-ai-adoption/",
+      "title": "企業 AI 採用從哪開始？Coinbase 以真實任務建立組織 AI 能力的實戰案例",
+      "url": "https://aiworks.tw/blog_coinbase-ai-adoption/"
+    },
+    {
+      "date": "2026-08-14",
+      "slug": "/blog_shadow-ai-governance/",
+      "title": "企業如何治理 Shadow AI？從風險清冊、需求地圖到分級控制",
+      "url": "https://aiworks.tw/blog_shadow-ai-governance/"
+    },
+    {
+      "date": "2026-08-20",
+      "slug": "/blog_chatgpt-sites-introduction/",
+      "title": "ChatGPT Sites 怎麼用？一次看懂功能、分享設定與部署方式",
+      "url": "https://aiworks.tw/blog_chatgpt-sites-introduction/"
+    },
+    {
+      "date": "2026-09-03",
+      "slug": "/blog_gemini-recent-updates/",
+      "title": "Google Gemini 新功能一次看：模型、語音、Notebook 與 Skills 有哪些改變？",
+      "url": "https://aiworks.tw/blog_gemini-recent-updates/"
+    },
+    {
+      "date": "2026-09-10",
+      "slug": "/blog_astra-agi-criteria/",
+      "title": "GPT-6 Astra 與 Sol 差在哪？看懂 AI 在企業工作中的新進展",
+      "url": "https://aiworks.tw/blog_astra-agi-criteria/"
+    },
+    {
+      "date": "2026-09-17",
+      "slug": "/blog_chatgpt-images-2-5/",
+      "title": "ChatGPT Images 2.5 更新了什麼？速度、精準編輯與 Sketch 一次看",
+      "url": "https://aiworks.tw/blog_chatgpt-images-2-5/"
+    },
+    {
+      "date": "2026-09-23",
+      "slug": "/blog_skill-instructions-model-upgrades/",
+      "title": "AI 模型升級，舊 Skill 還適用嗎？企業檢查與更新指南",
+      "url": "https://aiworks.tw/blog_skill-instructions-model-upgrades/"
+    },
+    {
+      "date": "2026-10-02",
+      "slug": "/blog_uber-agentic-pods-ai-adoption/",
+      "title": "Uber Agentic Pods：讓工程師與領域專家一起找出可落地的 AI 應用",
+      "url": "https://aiworks.tw/blog_uber-agentic-pods-ai-adoption/"
+    }
+  ],
+  "articleMatching": "依已發布索引的標題與 Slug 提供候選；回答程度需人工確認。",
+  "designReferences": [
+    "https://reactflow.dev/examples/layout/expand-collapse",
+    "https://reactflow.dev/examples/edges/animating-edges"
+  ]
+}
