@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-13",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -486,6 +486,334 @@
           ]
         }
       ]
+    },
+    {
+      "id": "learning",
+      "label": "基礎與實作",
+      "color": "#66766b",
+      "themes": [
+        "workflow",
+        "adoption"
+      ],
+      "questions": [
+        {
+          "id": "learn-rpa",
+          "label": "沒有程式背景，怎麼開始學 RPA 與自動化？",
+          "stages": [
+            "start"
+          ],
+          "keywords": [
+            "RPA",
+            "UiPath",
+            "Power Automate",
+            "安裝",
+            "新手",
+            "變數",
+            "條件"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "learn-prompt",
+          "label": "怎麼寫清楚需求，讓 AI 產出可用的成果？",
+          "stages": [
+            "start",
+            "pilot"
+          ],
+          "keywords": [
+            "Prompt",
+            "提示詞",
+            "需求",
+            "規格",
+            "指令"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "learn-data",
+          "label": "AI 需要什麼資料、格式與知識，才能讀懂工作？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "資料",
+            "Excel",
+            "Markdown",
+            "知識",
+            "記憶",
+            "文件"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "learn-tool",
+          "label": "如何選擇工具、方案與自動化方式？",
+          "stages": [
+            "start",
+            "pilot"
+          ],
+          "keywords": [
+            "工具",
+            "選擇",
+            "比較",
+            "方案",
+            "RPA",
+            "訂閱"
+          ],
+          "articleHints": []
+        }
+      ]
+    },
+    {
+      "id": "function",
+      "label": "職務與工作場景",
+      "color": "#66766b",
+      "themes": [
+        "workflow"
+      ],
+      "questions": [
+        {
+          "id": "task-hr",
+          "label": "HR 的招募、合約與出勤，哪些工作可以先改善？",
+          "stages": [
+            "start",
+            "pilot"
+          ],
+          "keywords": [
+            "HR",
+            "人資",
+            "招聘",
+            "合約",
+            "出勤",
+            "履歷"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "task-sales",
+          "label": "業務怎麼用 AI 做情蒐、開發客戶與需求確認？",
+          "stages": [
+            "start",
+            "pilot"
+          ],
+          "keywords": [
+            "業務",
+            "客戶",
+            "情蒐",
+            "銷售",
+            "名單",
+            "信件"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "task-marketing",
+          "label": "行銷與媒體團隊，怎麼建立內容與資料工作流？",
+          "stages": [
+            "start",
+            "pilot"
+          ],
+          "keywords": [
+            "行銷",
+            "媒體",
+            "文案",
+            "社群",
+            "內容"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "task-visual",
+          "label": "圖片與簡報工具，怎麼產出可以交付的素材？",
+          "stages": [
+            "start",
+            "pilot"
+          ],
+          "keywords": [
+            "圖片",
+            "圖像",
+            "簡報",
+            "素材",
+            "Sketch"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "task-research",
+          "label": "研究與營運團隊，怎麼整理資料、報告與通知？",
+          "stages": [
+            "start",
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "研究",
+            "報告",
+            "資料",
+            "通知",
+            "排程",
+            "營運"
+          ],
+          "articleHints": []
+        }
+      ]
+    },
+    {
+      "id": "purchase",
+      "label": "培訓與服務選擇",
+      "color": "#66766b",
+      "themes": [
+        "adoption",
+        "market"
+      ],
+      "questions": [
+        {
+          "id": "course-choice",
+          "label": "怎麼選課程、安排內訓與實作學習路徑？",
+          "stages": [
+            "start",
+            "pilot"
+          ],
+          "keywords": [
+            "課程",
+            "內訓",
+            "培訓",
+            "工作坊",
+            "學習"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "course-funding",
+          "label": "培訓預算與補助，需要先準備哪些資料？",
+          "stages": [
+            "start"
+          ],
+          "keywords": [
+            "補助",
+            "預算",
+            "申請",
+            "培訓"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "course-results",
+          "label": "上完課之後，如何檢查學員真的用在工作上？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "學員",
+            "實作",
+            "成果",
+            "課程",
+            "專案",
+            "工作"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "service-choice",
+          "label": "企業在什麼情況下需要培訓、評估或顧問陪跑？",
+          "stages": [
+            "start",
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "顧問",
+            "陪跑",
+            "培訓",
+            "評估",
+            "Aiworks"
+          ],
+          "articleHints": []
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "label": "產業與商業變化",
+      "color": "#66766b",
+      "themes": [
+        "market",
+        "adoption"
+      ],
+      "questions": [
+        {
+          "id": "industry-finance",
+          "label": "金融與高度監管產業，怎麼兼顧應用與風險？",
+          "stages": [
+            "start",
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "金融",
+            "銀行",
+            "醫療",
+            "保險",
+            "合規",
+            "風險"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "market-growth",
+          "label": "AI 除了省成本，還能帶來哪些商業與市場變化？",
+          "stages": [
+            "start",
+            "scale"
+          ],
+          "keywords": [
+            "成長",
+            "商業",
+            "營收",
+            "市場",
+            "競爭",
+            "客戶"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "market-search",
+          "label": "AI 搜尋與代購，會怎麼改變內容觸及與客戶決策？",
+          "stages": [
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "搜尋",
+            "GEO",
+            "SEO",
+            "購物",
+            "客戶",
+            "資訊"
+          ],
+          "articleHints": []
+        },
+        {
+          "id": "talent-change",
+          "label": "工作角色、人才與組織文化，要怎麼一起調整？",
+          "stages": [
+            "start",
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "人才",
+            "文化",
+            "角色",
+            "職能",
+            "轉型",
+            "員工"
+          ],
+          "articleHints": []
+        }
+      ]
     }
   ],
   "articles": [
@@ -493,804 +821,5036 @@
       "date": "2025-01-08",
       "slug": "/blog-microsoft-copilot-studio/",
       "title": "企業效率革命：深入解析 Microsoft Copilot Studio 的 AI 智慧應用",
-      "url": "https://aiworks.tw/blog-microsoft-copilot-studio/"
+      "url": "https://aiworks.tw/blog-microsoft-copilot-studio/",
+      "aliases": [],
+      "contentStatus": "unavailable",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "原索引網址回傳 404，未推定內容",
+      "answers": [],
+      "headings": [],
+      "summary": "保留歷史索引，原文目前無法讀取。",
+      "dateSensitive": false,
+      "id": "article-98dc5a4ea86b"
     },
     {
       "date": "2025-01-21",
       "slug": "/blog-microsoft-intelligent-apps/",
       "title": "Low Code 時代的智慧應用：Power Apps 幫助企業加速轉型",
-      "url": "https://aiworks.tw/blog-microsoft-intelligent-apps/"
+      "url": "https://aiworks.tw/blog-microsoft-intelligent-apps/",
+      "aliases": [],
+      "contentStatus": "unavailable",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "原索引網址回傳 404，未推定內容",
+      "answers": [],
+      "headings": [],
+      "summary": "保留歷史索引，原文目前無法讀取。",
+      "dateSensitive": false,
+      "id": "article-9ec36ccbe7da"
     },
     {
       "date": "2025-01-21",
       "slug": "/blog-microsoft-ai-agent-automation/",
       "title": "數位轉型關鍵工具：為何選擇 Microsoft Copilot Studio？",
-      "url": "https://aiworks.tw/blog-microsoft-ai-agent-automation/"
+      "url": "https://aiworks.tw/blog-microsoft-ai-agent-automation/",
+      "aliases": [],
+      "contentStatus": "unavailable",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "原索引網址回傳 404，未推定內容",
+      "answers": [],
+      "headings": [],
+      "summary": "保留歷史索引，原文目前無法讀取。",
+      "dateSensitive": false,
+      "id": "article-f5e8be64a840"
     },
     {
       "date": "2024-06-25",
       "slug": "/91app-talent-matters/",
       "title": "91APP 塑造高成長創新組織秘訣：用人唯才",
-      "url": "https://aiworks.tw/91app-talent-matters/"
+      "url": "https://aiworks.tw/91app-talent-matters/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "talent-change",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "除了技術硬實力之外，91APP 還非常重視人才擁有的軟實力。Dave 明確指出，內部非常重視「在時限內使命必達」與「客戶優先」這兩點。第一點踏實、落地、快速地完成份內之事",
+          "section": "吸引人才目光：打造未來成長舞台，展現企業魅力"
+        }
+      ],
+      "headings": [
+        "吸引人才目光：打造未來成長舞台，展現企業魅力",
+        "培養與發展策略：巧妙運用職等系統，找出對的人",
+        "育才方針：不貳過的定律，創新與彈性並存",
+        "快速凝聚團隊：找出共同目標與達成共識",
+        "迎戰 AI 世代：驅動人才的創新與敏捷性"
+      ],
+      "summary": "主要回答：工作角色、人才與組織文化，要怎麼一起調整？",
+      "dateSensitive": false,
+      "id": "article-278231827419"
     },
     {
       "date": "2024-07-24",
       "slug": "/digital-transformation-hotai-motor/",
       "title": "傳統產業的數位轉型前沿—揭開和泰汽車的成功之道！",
-      "url": "https://aiworks.tw/digital-transformation-hotai-motor/"
+      "url": "https://aiworks.tw/digital-transformation-hotai-motor/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "team-scale",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "同時，和泰汽車每年依舊續辦暑期實習生計畫，且對象不侷限於 IT 部門，不只給予充分的薪資，實習生還能在這兩個月內參與公司實際專案，並透過個人／團體任務深入了解公司運作模式",
+          "section": ""
+        },
+        {
+          "questionId": "market-growth",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "隨著全球汽車產業面臨的劇變和技術革新的加速，數位轉型成為企業在未來競爭中立於不敗之地的關鍵。和泰汽車作為台灣領先的產業龍頭，早已意識到這個趨勢並積極應對。本次 Aiwor",
+          "section": "打響知名度，進攻年輕人市場"
+        },
+        {
+          "questionId": "talent-change",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "談到數位轉型下培育新一代 IT 專業人才，仕達強調自己非常有感，他表示，幾年前和泰汽車在校園內的知名度還不高，但近年來公司積極進攻年輕人市場，透過參與校園徵才、與 Aiw",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "Think Amazing！MaaS 部門成為轉型核心驅動力",
+        "精準洞悉趨勢，豐田社長朝「移動服務」邁進",
+        "穿針引線整合部門 MaaS 落實「以人為中心」",
+        "「創新 DNA 文化」成為移除改革絆腳石的關鍵",
+        "校園徵才＋黑客松 數位轉型與人才培育的雙贏策略",
+        "打響知名度，進攻年輕人市場",
+        "黑客松大成功！活躍企業內外部的創新思維",
+        "高度彈性與資源到位 全方位助新世代融入企業"
+      ],
+      "summary": "主要回答：從一個團隊擴大到多個團隊，怎麼分工？；AI 除了省成本，還能帶來哪些商業與市場變化？",
+      "dateSensitive": false,
+      "id": "article-ddf253b5f1bc"
     },
     {
       "date": "2024-07-24",
       "slug": "/rpai-goingbus/",
       "title": "有效結合 RPA 和 AI 應用工具，低成本擁抱技術創新！",
-      "url": "https://aiworks.tw/rpai-goingbus/"
+      "url": "https://aiworks.tw/rpai-goingbus/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "RPA 軟體比較： UiPath 與 Power Automate 如何選擇？",
+          "section": "RPA 和 AI 的基礎介紹"
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "RPA 軟體比較： UiPath 與 Power Automate 如何選擇？",
+          "section": "RPA 和 AI 的基礎介紹"
+        }
+      ],
+      "headings": [
+        "RPA 和 AI 的基礎介紹",
+        "RPA（機器人流程自動化）的定義和應用",
+        "AI（人工智慧）的能力範圍",
+        "如何將 RPA 與 AI 結合",
+        "AI 是大腦，RPA 是四肢",
+        "RPA + AI：電信業的客戶服務案例"
+      ],
+      "summary": "主要回答：沒有程式背景，怎麼開始學 RPA 與自動化？；如何選擇工具、方案與自動化方式？",
+      "dateSensitive": false,
+      "id": "article-76a880b6496e"
     },
     {
       "date": "2024-08-07",
       "slug": "/rpa-uipathvspowerautomate/",
       "title": "RPA 軟體比較： UiPath 與 Power Automate 如何選擇？",
-      "url": "https://aiworks.tw/rpa-uipathvspowerautomate/"
+      "url": "https://aiworks.tw/rpa-uipathvspowerautomate/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "如果你是剛開始想嘗試接觸 RPA 工具的新手，或是正在協助企業部門評估導入 RPA 的專案團隊成員，那你可能會問：「究竟該選擇哪個 RPA 軟體才好呢？​」",
+          "section": ""
+        },
+        {
+          "questionId": "learn-rpa",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "而從 Google Trends 近一年（2021～2022）的搜尋趨勢來看， UiPath 與 Microsoft Power Automate 這兩個 RPA 工具的",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：如何選擇工具、方案與自動化方式？",
+      "dateSensitive": false,
+      "id": "article-ebec9ae1aec0"
     },
     {
       "date": "2024-08-15",
       "slug": "/rpa-trends-2024-ai-hyperautomation/",
       "title": "2024 年 RPA 四大趨勢：AI 整合與超自動化引領未來",
-      "url": "https://aiworks.tw/rpa-trends-2024-ai-hyperautomation/"
+      "url": "https://aiworks.tw/rpa-trends-2024-ai-hyperautomation/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-feature",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "僅適用於結構化數據和可預測的情境。 一旦流程變更，規則必須手動更新，增加了維護的負擔。 應對例外狀況或異常情境有限。",
+          "section": ""
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "隨著自動化技術在各行各業的廣泛應用， RPA 系統的安全性與合規性 變得更加重要。2024 年，企業將更加注重在 RPA 解決方案中整合強大的安全措施，以保護敏感數據免受",
+          "section": ""
+        },
+        {
+          "questionId": "industry-finance",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "在高度監管的金融業，這種趨勢尤其明顯。金融機構需要處理大量涉及個人和財務資訊的交易，因此 RPA 系統的安全性和合規性至關重要。例如，在銀行業務中，RPA 被用來自動化貸",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：功能更新，會改變我們哪一段工作？；如何選擇工具、方案與自動化方式？",
+      "dateSensitive": false,
+      "id": "article-8ca6eb48ab46"
     },
     {
       "date": "2024-08-20",
       "slug": "/rpa-how-to-install-uipath/",
       "title": "RPA 軟體 UiPath： 超簡單安裝教學懶人包",
-      "url": "https://aiworks.tw/rpa-how-to-install-uipath/"
+      "url": "https://aiworks.tw/rpa-how-to-install-uipath/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "機器人流程自動化（RPA，Robotic Process Automation）已成為目前全球企業爭相導入使用的技術之一，市場上也有各種 RPA 相關軟體，其中有很多是免",
+          "section": "UiPath 軟體 Community 版本安裝教學"
+        }
+      ],
+      "headings": [
+        "UiPath 軟體 Community 版本安裝教學",
+        "Step 1：進入 UiPath 官網點選下載",
+        "Step 2：選擇註冊方式、設定帳號密碼",
+        "Step 3：下載並安裝",
+        "Step 4：安裝後執行",
+        "Step 5：重新登入並開始使用",
+        "Step 6：安裝完成，進入UiPath介面"
+      ],
+      "summary": "主要回答：沒有程式背景，怎麼開始學 RPA 與自動化？",
+      "dateSensitive": true,
+      "id": "article-c64d7e1924e3"
     },
     {
       "date": "2024-08-22",
       "slug": "/ai-automation-esg/",
       "title": "自動化助力 ESG：提升合規性、永續發展與社會責任的關鍵技術",
-      "url": "https://aiworks.tw/ai-automation-esg/"
+      "url": "https://aiworks.tw/ai-automation-esg/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "governance-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "自動化技術不僅對環境和治理方面有正面影響，還對社會責任的實現有著積極影響。透過自動化，企業可以減少員工的重複性工作負擔，讓他們能夠專注於更具戰略性和創造性的任務，進而 提",
+          "section": ""
+        },
+        {
+          "questionId": "market-growth",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "此外，RPA 與流程挖掘技術的結合，可以讓企業深入檢視內部工作流程，找出不符合 ESG 規範的環節，並進行必要的改進。這種對流程的透明化管理，不僅能提高合規性，還能促進整",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：員工開始用 AI，公司需要哪些基本規範？；AI 除了省成本，還能帶來哪些商業與市場變化？",
+      "dateSensitive": false,
+      "id": "article-b7c62bc32ca1"
     },
     {
       "date": "2024-08-28",
       "slug": "/delta-electronics-industry-upgrade/",
       "title": "矛與盾共舞：台達電解密數位轉型與資安雙軌策略",
-      "url": "https://aiworks.tw/delta-electronics-industry-upgrade/"
+      "url": "https://aiworks.tw/delta-electronics-industry-upgrade/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "team-scale",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "當企業規模龐大，在國內外擁有多處據點時，要如何保持敏捷、實現科技賦能是管理者很重要的課題。資訊長曾立峰把總部比喻成大腦、而各個分公司則看作人體四肢，當大腦裝了很多的商業流",
+          "section": "以精準數據驅動數位轉型，打造「標準化」高效組織"
+        },
+        {
+          "questionId": "governance-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "身處數位化與科技快速發展的時代，大型企業普遍面臨技術創新、全球業務協作和資訊安全等多重挑戰。台達電作為工業科技領導者，透過數位轉型、​​人才佈局與在職培訓，實現營運效率的",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "以精準數據驅動數位轉型，打造「標準化」高效組織",
+        "資訊收攏與數據分析是關鍵基石",
+        "IT 從被動應對到主動出擊 將數位轉型升級為企業文化",
+        "善用神經網絡串連全球 推動標準化資訊傳遞與敏捷管理",
+        "奉守起司理論，資安共存策略不「矛盾」",
+        "跨國人才佈局的黃金策略：80／20 法則",
+        "以核心特質為基礎 透過在職訓練拓展多元職涯路徑",
+        "「系統思考、擁抱科技、持續學習」AI 時代下的科技人必備三大特質"
+      ],
+      "summary": "主要回答：從一個團隊擴大到多個團隊，怎麼分工？；員工開始用 AI，公司需要哪些基本規範？",
+      "dateSensitive": false,
+      "id": "article-378f7a26137d"
     },
     {
       "date": "2024-08-29",
       "slug": "/rpa-human-resources-management/",
       "title": "提升效率與降低人力負擔：RPA 在人力資源部門的應用指南",
-      "url": "https://aiworks.tw/rpa-human-resources-management/"
+      "url": "https://aiworks.tw/rpa-human-resources-management/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-hr",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "人力資源部門的職責涵蓋招聘、培訓、考勤管理、績效評估、薪酬發放等多項工作。這些工作通常涉及大量的數據處理和反覆操作，且與員工的權益密切相關。隨著企業規模的擴大，一位人資專",
+          "section": "1. 招聘流程自動化"
+        }
+      ],
+      "headings": [
+        "人力資源部門的挑戰與需求",
+        "RPA 的具體應用場景",
+        "1. 招聘流程自動化",
+        "2. 入職手續與數據管理",
+        "3. 薪酬與考勤管理",
+        "4. 員工離職管理",
+        "結論"
+      ],
+      "summary": "主要回答：HR 的招募、合約與出勤，哪些工作可以先改善？",
+      "dateSensitive": false,
+      "id": "article-a4afa1a69dd7"
     },
     {
       "date": "2024-09-05",
       "slug": "/microsoft365-must-know-tools/",
       "title": "高效工作必學：Microsoft 365 超實用工具分享",
-      "url": "https://aiworks.tw/microsoft365-must-know-tools/"
+      "url": "https://aiworks.tw/microsoft365-must-know-tools/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "然而，Microsoft 365 提供的價值絕對不僅如此，它還包括一系列可以提升工作效率和改善組織流程的實用工具，而且這些都已經包含在 M365 方案中，只是多數使用者可",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "什麼是 SharePoint？",
+        "什麼是 Power Apps？",
+        "什麼是Power Automate？"
+      ],
+      "summary": "主要回答：如何選擇工具、方案與自動化方式？",
+      "dateSensitive": false,
+      "id": "article-8d28afcb2f7b"
     },
     {
       "date": "2024-09-12",
       "slug": "/taipei-smart-city/",
       "title": "智慧城市藍圖：臺北市如何以資料驅動未來",
-      "url": "https://aiworks.tw/taipei-smart-city/"
+      "url": "https://aiworks.tw/taipei-smart-city/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "market-growth",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "智慧城市的建設離不開公私部門的協力合作。TPMO 每年都會舉辦主題徵案，吸引民間業者參與，通過資源整合與創意激盪，產生一系列創新解決方案。局長趙式隆表示，TPMO 自 2",
+          "section": ""
+        },
+        {
+          "questionId": "team-scale",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "智慧城市的建設離不開公私部門的協力合作。TPMO 每年都會舉辦主題徵案，吸引民間業者參與，通過資源整合與創意激盪，產生一系列創新解決方案。局長趙式隆表示，TPMO 自 2",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "全球排名大躍進！長期耕耘與提升國際影響力雙管齊下",
+        "公私協力：推動臺北市智慧城市的核心策略",
+        "資料驅動的城市治理：臺北市如何通過資料提升公共服務",
+        "振興券的啟示：數位落差的高昂代價",
+        "人才是關鍵：留任率提升背後的管理哲學"
+      ],
+      "summary": "主要回答：AI 除了省成本，還能帶來哪些商業與市場變化？；從一個團隊擴大到多個團隊，怎麼分工？",
+      "dateSensitive": false,
+      "id": "article-86be114b3e02"
     },
     {
       "date": "2024-09-12",
       "slug": "/uipath-table-extraction-tutorial/",
       "title": "RPA 功能教學：一鍵爬蟲抓資料 UiPath Table Extraction",
-      "url": "https://aiworks.tw/uipath-table-extraction-tutorial/"
+      "url": "https://aiworks.tw/uipath-table-extraction-tutorial/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "學習 RPA 過程中，我們常會對 UiPath 等軟體的各項功能、參數感到混亂，因此本文將會針對這些功能參數進行教學，和大家介紹什麼是「Table Extraction」",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "功能參數說明",
+        "Step 1：打開欲抓取的網頁",
+        "Step 2：Table Extraction",
+        "Step 3：Next button",
+        "Step 4： 調整設定",
+        "Step 5： Write Range Workbook"
+      ],
+      "summary": "主要回答：沒有程式背景，怎麼開始學 RPA 與自動化？",
+      "dateSensitive": true,
+      "id": "article-0b52d87d1c2f"
     },
     {
       "date": "2024-09-26",
       "slug": "/gartner-magic-quadrant-2024/",
       "title": "Gartner 魔力象限報告 2024 RPA 市場現況與主要供應商分析",
-      "url": "https://aiworks.tw/gartner-magic-quadrant-2024/"
+      "url": "https://aiworks.tw/gartner-magic-quadrant-2024/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Gartner 的魔力象限是企業選擇 RPA 供應商的重要指引。根據「執行能力」和「願景完整性」兩大評估標準，將供應商劃分為領導者、挑戰者、願景者和利基者四個象限，幫助企",
+          "section": "Gartner 魔力象限在 RPA 市場中的角色及其評估標準"
+        },
+        {
+          "questionId": "change-basic",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Gartner 根據供應商的執行能力（如市場表現、產品性能和客戶反饋）和願景完整性（如創新能力、未來發展策略）進行評估，為企業選擇適合的 RPA 解決方案提供依據。",
+          "section": "評估標準：執行能力 vs. 願景完整性"
+        }
+      ],
+      "headings": [
+        "Gartner 魔力象限在 RPA 市場中的角色及其評估標準",
+        "2024 年 RPA 市場的主要驅動因素和挑戰",
+        "魔力象限的四個象限介紹",
+        "評估標準：執行能力 vs. 願景完整性",
+        "AI 成為 RPA 供應商的核心策略",
+        "生成式 AI 驅動的自動化開發",
+        "RPA 平台的 Orchestration 和更廣的自動化能力擴展"
+      ],
+      "summary": "主要回答：如何選擇工具、方案與自動化方式？；還沒導入，要先理解哪些能力與限制？",
+      "dateSensitive": false,
+      "id": "article-81fe42afe68b"
     },
     {
       "date": "2024-10-09",
       "slug": "/hr-automation-case/",
       "title": "人資自動化實例分享：一鍵生成合作合約與錄取通知信",
-      "url": "https://aiworks.tw/hr-automation-case/"
+      "url": "https://aiworks.tw/hr-automation-case/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-hr",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "作為一名人資經理，日常工作充滿了大量重複性任務，從篩選履歷、員工入職到工時與薪資管理等。這些流程不僅繁瑣，還需仔細檢查確保無誤。透過學習 Aiworks RPA 課程 ，",
+          "section": ""
+        },
+        {
+          "questionId": "course-results",
+          "level": "partial",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "作為一名人資經理，日常工作充滿了大量重複性任務，從篩選履歷、員工入職到工時與薪資管理等。這些流程不僅繁瑣，還需仔細檢查確保無誤。透過學習 Aiworks RPA 課程 ，",
+          "section": "專案執行過程"
+        }
+      ],
+      "headings": [
+        "專案執行過程",
+        "【自動化前】專案痛點",
+        "【自動化過程】核心流程",
+        "【自動化後】專案效益",
+        "更具策略性的工作分配",
+        "流程梳理中的優化機會",
+        "結語與推薦"
+      ],
+      "summary": "主要回答：HR 的招募、合約與出勤，哪些工作可以先改善？；上完課之後，如何檢查學員真的用在工作上？",
+      "dateSensitive": false,
+      "id": "article-eecacd9b5933"
     },
     {
       "date": "2024-10-11",
       "slug": "/ai-hr-recruitment-efficiency/",
       "title": "AI 智能應用人資篇：如何利用 RPA 自動化提升招聘效率並減少篩選錯誤",
-      "url": "https://aiworks.tw/ai-hr-recruitment-efficiency/"
+      "url": "https://aiworks.tw/ai-hr-recruitment-efficiency/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-hr",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "參與 Aiworks 課程學習工具： 這是一堂 專為 HR 量身打造的 RPA x AI 工作坊 ，將引領你進入人資自動化的全新時代，讓工作更輕鬆、更高效。你將 學習如何",
+          "section": ""
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "選擇合適的 RPA 工具 ：選擇支持高度自動化並可與現有招聘系統整合的 RPA 工具，將有助於簡化招聘流程。",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：HR 的招募、合約與出勤，哪些工作可以先改善？",
+      "dateSensitive": false,
+      "id": "article-45b84731d28c"
     },
     {
       "date": "2024-10-15",
       "slug": "/smart-ai-talent-upgrade/",
       "title": "告別「笨水管」時代！台灣大如何藉由 AI 賦能人才，提升企業競爭力",
-      "url": "https://aiworks.tw/smart-ai-talent-upgrade/"
+      "url": "https://aiworks.tw/smart-ai-talent-upgrade/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "team-training",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "蔡祈岩指出，三個月期間，工程師一共提了超過 30 個提案，其中得到採用的就是用 AI 改善客戶和員工體驗的解決方案。他舉例，過去台灣大員工若有疑難雜症，得從一大堆選單中找",
+          "section": ""
+        },
+        {
+          "questionId": "talent-change",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "當企業持續邁向數位化與智慧化時，真正的競爭力不再僅限於技術本身，而是來自於人才如何透過 AI 賦能，創造更高的附加價值與生產力。台灣大哥大（以下簡稱台灣大）在這場數位進化",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：培訓後，怎麼讓 AI 進入實際工作？；工作角色、人才與組織文化，要怎麼一起調整？",
+      "dateSensitive": false,
+      "id": "article-067f3a704cf6"
     },
     {
       "date": "2024-10-22",
       "slug": "/pm-automation-case/",
       "title": "產品行銷經理自動化實例：打造高效且低門檻的趨勢觀察小工具",
-      "url": "https://aiworks.tw/pm-automation-case/"
+      "url": "https://aiworks.tw/pm-automation-case/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-marketing",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "身為課程經理，我的職責橫跨專案管理與產品經理兩大領域，不僅需要規劃課程產品，還要確保課程如期進行。這當中，「掌握市場趨勢」是一個重要卻相當耗時的工作。與許多專業人士如產品",
+          "section": ""
+        },
+        {
+          "questionId": "task-research",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "以我自己為例，為了掌握課程市場動態，我透過 Google Alerts 訂閱與課程主題相關的關鍵字（如 RPA、UiPath、Power Automate 等），每天都會",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "自動化流程前置準備：梳理流程、列出痛點",
+        "自動化流程的具體步驟",
+        "自動化的實際效益：工作品質升級"
+      ],
+      "summary": "主要回答：行銷與媒體團隊，怎麼建立內容與資料工作流？；研究與營運團隊，怎麼整理資料、報告與通知？",
+      "dateSensitive": false,
+      "id": "article-a59cbf069e20"
     },
     {
       "date": "2024-10-24",
       "slug": "/ai-hr-resume-summary/",
       "title": "AI 智能應用人資篇：RPA 自動摘要履歷功能讓招聘流程更高效",
-      "url": "https://aiworks.tw/ai-hr-resume-summary/"
+      "url": "https://aiworks.tw/ai-hr-resume-summary/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-hr",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "傳統的招聘流程中，HR 人員需要逐一閱讀每位應徵者的履歷並手動篩選，非常耗時又傷神。利用 RPA 自動摘要快速分析大量履歷資料， 幾分鐘內便可完成多天甚至幾週的工作量，省",
+          "section": ""
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "選擇合適的RPA工具： 根據需求選擇合適的 RPA 工具，確保其具備 AI 與自然語言處理（NLP）功能，能智能理解履歷中的非結構化數據。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "AI 與 RPA 的結合",
+        "1. 節省時間和精力",
+        "2. 提升應徵者經驗",
+        "3. 減少跨部門溝通成本"
+      ],
+      "summary": "主要回答：HR 的招募、合約與出勤，哪些工作可以先改善？",
+      "dateSensitive": true,
+      "id": "article-d4a01a2ef446"
     },
     {
       "date": "2024-10-24",
       "slug": "/uipath-genai-activity/",
       "title": "提升工作流程自動化效率的最佳實踐指南：UiPath GenAI activity",
-      "url": "https://aiworks.tw/uipath-genai-activity/"
+      "url": "https://aiworks.tw/blog-uipath-genai-activities/",
+      "aliases": [
+        "https://aiworks.tw/uipath-genai-activity/",
+        "https://aiworks.tw/blog-uipath-genai-activities/"
+      ],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-feature",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "隨著人工智慧技術的快速發展，企業越來越依賴自動化來提升工作效率。UiPath 作為全球自動化解決方案供應商之一，推出了全新的 UiPath GenAI Activitie",
+          "section": ""
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "如果你正在尋找能夠大幅提升工作流程自動化的解決方案，UiPath GenAI Activities 是一個非常值得你嘗試的工具。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "1. 內容生成",
+        "2. 個人識別資訊（PII）檢測與過濾",
+        "3. 上下文設定"
+      ],
+      "summary": "主要回答：功能更新，會改變我們哪一段工作？；如何選擇工具、方案與自動化方式？",
+      "dateSensitive": false,
+      "id": "article-cd6d96004861"
     },
     {
       "date": "2024-10-30",
       "slug": "/blog-marketing-rpa-ai-practical/",
       "title": "RPA 結合 AI 技術：行銷領域實際應用策略",
-      "url": "https://aiworks.tw/blog-marketing-rpa-ai-practical/"
+      "url": "https://aiworks.tw/blog-marketing-rpa-ai-practical/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-marketing",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "內容行銷是品牌推廣的重要策略之一，但生成大量高品質的內容是非常消耗時間及人力成本的工作。結合 AI 的自然語言生成（NLG）技術，可自動產出符合需求的文案，而 RPA 則",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：行銷與媒體團隊，怎麼建立內容與資料工作流？",
+      "dateSensitive": false,
+      "id": "article-e428a0afc4f0"
     },
     {
       "date": "2024-10-30",
       "slug": "/blog-rpa-summary-tool-for-business-efficiency/",
       "title": "效率倍增！UiPath 自動摘要工具如何重塑企業工作流程",
-      "url": "https://aiworks.tw/blog-rpa-summary-tool-for-business-efficiency/"
+      "url": "https://aiworks.tw/blog-rpa-summary-tool-for-business-efficiency/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-research",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "自動摘要工具能讓員工免去閱讀冗長文件的負擔，僅需幾秒便能獲取核心資訊。對於媒體、公關、金融等行業來說，日常需面對大量報告、研究或新聞資料，這樣的工具將大幅縮短內容審閱的時",
+          "section": "2. 減少人工錯誤，提升資料一致性"
+        },
+        {
+          "questionId": "learn-data",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "自動摘要工具能讓員工免去閱讀冗長文件的負擔，僅需幾秒便能獲取核心資訊。對於媒體、公關、金融等行業來說，日常需面對大量報告、研究或新聞資料，這樣的工具將大幅縮短內容審閱的時",
+          "section": "2. 減少人工錯誤，提升資料一致性"
+        }
+      ],
+      "headings": [
+        "1. 提升工作效率",
+        "2. 減少人工錯誤，提升資料一致性",
+        "3. 支援數位轉型，加速企業創新",
+        "4. 加強員工技能與競爭力",
+        "5. 量身訂製的靈活性"
+      ],
+      "summary": "主要回答：研究與營運團隊，怎麼整理資料、報告與通知？；AI 需要什麼資料、格式與知識，才能讀懂工作？",
+      "dateSensitive": false,
+      "id": "article-6ee6c9333bf1"
     },
     {
       "date": "2024-10-30",
       "slug": "/blog-artical-categorization/",
       "title": "流程革新的利器：UiPath 自動分類工具如何助力企業增效",
-      "url": "https://aiworks.tw/blog-artical-categorization/"
+      "url": "https://aiworks.tw/blog-artical-categorization/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "隨著數位轉型的浪潮，企業不僅希望提升效率，也期望透過 AI 自動化來簡化繁瑣的重複性任務。UiPath 自動分類工具正是針對這些需求設計的技術，透過先進的 GenAI 支",
+          "section": ""
+        },
+        {
+          "questionId": "task-research",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "UiPath 自動分類工具不僅適用於客訴處理，也可以用於分類電子郵件、即時訊息等多管道的文字資料。這對於需要集中處理客戶問題的大型企業來說，具有大幅的效率提升效果。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "自動分類與分派",
+        "多類型文本支援",
+        "背景自動化運行",
+        "提高客戶服務效率",
+        "減少人工錯誤，提升流程一致性",
+        "自動化重複性任務，解放人力",
+        "靈活應用於各種文本管道",
+        "支持流程擴展，實現深度整合"
+      ],
+      "summary": "主要回答：第一個 AI 應用，該從哪段工作開始？；研究與營運團隊，怎麼整理資料、報告與通知？",
+      "dateSensitive": false,
+      "id": "article-49cbcd7c32b8"
     },
     {
       "date": "2024-11-01",
       "slug": "/blog-object-detection/",
       "title": "保險、製造業必備：UiPath 物件辨識工具的應用指南",
-      "url": "https://aiworks.tw/blog-object-detection/"
+      "url": "https://aiworks.tw/blog-object-detection/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "industry-finance",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "減少人力錯誤，提升數據精度 製造業和醫療機構經常需要對影像數據進行精確的檢測與分類。UiPath 的物件辨識技術能確保高精確度的結果，減少人為錯誤帶來的風險，幫助企業保持",
+          "section": ""
+        },
+        {
+          "questionId": "task-visual",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "UiPath 物件辨識工具運用先進的 AI 技術來分析和分類影像資料，適用於多種業務場景。這項工具能夠即時檢測上傳的圖片，識別並報告其中的物件是否符合條件，從而啟動相應的",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：金融與高度監管產業，怎麼兼顧應用與風險？；圖片與簡報工具，怎麼產出可以交付的素材？",
+      "dateSensitive": false,
+      "id": "article-38a56fd1a7ee"
     },
     {
       "date": "2024-11-05",
       "slug": "/blog-filter-pii/",
       "title": "保護資料隱私的自動化解決方案：UiPath PII 檢測與過濾工具",
-      "url": "https://aiworks.tw/blog-filter-pii/"
+      "url": "https://aiworks.tw/blog-filter-pii/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "governance-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "隨著數位轉型的推進和全球資料隱私法規的不斷加強，企業需要更加高效且可靠的方式來保障客戶資料。UiPath 的 PII 檢測與過濾工具正是這樣一個解決方案，能自動過濾個人識",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "實際應用效益："
+      ],
+      "summary": "主要回答：員工開始用 AI，公司需要哪些基本規範？",
+      "dateSensitive": true,
+      "id": "article-511a52270cc4"
     },
     {
       "date": "2024-11-05",
       "slug": "/blog-headhunter-talent-database-automation/",
       "title": "獵頭顧問自動化實例：LinkedIn 人才資料庫自動化建置",
-      "url": "https://aiworks.tw/blog-headhunter-talent-database-automation/"
+      "url": "https://aiworks.tw/blog-headhunter-talent-database-automation/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-hr",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "獵頭顧問（Headhunter）是個對大眾來說充滿神秘感的職業，需要針對企業客戶所提供的 Job description（JD）進行人才搜尋，找到潛在的合適人選資訊，再與",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "流程具體執行步驟",
+        "釋出更多時間，專注發揮個人專業"
+      ],
+      "summary": "主要回答：HR 的招募、合約與出勤，哪些工作可以先改善？",
+      "dateSensitive": false,
+      "id": "article-ec887204b95e"
     },
     {
       "date": "2024-11-07",
       "slug": "/blog-rpa-basic-concept/",
       "title": "自動化流程入門 #1：RPA 基礎概念與應用領域介紹",
-      "url": "https://aiworks.tw/blog-rpa-basic-concept/"
+      "url": "https://aiworks.tw/blog-rpa-basic-concept/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "目前市面常見的 RPA 有三個：UiPath、Automation Anywhere 和 Power Automate。",
+          "section": "RPA 與傳統自動化的區別"
+        },
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "規則處理 ：RPA 的強大之處在於它可以遵循嚴格的規則來執行任務，這使得它非常適合處理固定流程、標準化的業務任務。只要工作流程具有明確的規則，RPA 就可以準確地執行。",
+          "section": ""
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "總結來說，RPA 是數位化轉型的利器，它能快速提升企業效率、降低錯誤率，且易於上手，無需編程背景。特別是在金融、製造、財務、HR 和行銷等需要精準和重複性工作的部門中，R",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "核心理念",
+        "RPA 與傳統自動化的區別",
+        "RPA 的運作方式",
+        "常見產業",
+        "應用部門",
+        "參考資料"
+      ],
+      "summary": "主要回答：沒有程式背景，怎麼開始學 RPA 與自動化？；第一個 AI 應用，該從哪段工作開始？",
+      "dateSensitive": false,
+      "id": "article-6666d64e99c8"
     },
     {
       "date": "2024-11-11",
       "slug": "/ai-fubon/",
       "title": "對外串連共榮創新生態系、對內以 AI 賦能，北富銀的深化客戶體驗之路",
-      "url": "https://aiworks.tw/ai-fubon/"
+      "url": "https://aiworks.tw/ai-fubon/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "industry-finance",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "另一個例子，則是由北富銀擔任總召的「鷹眼識詐聯盟」。張志清解釋，詐騙集團不會只鎖定一家銀行，因而北富銀與內政部刑事警察局合作開發「鷹眼模型」AI 偵測專利技術，涵蓋超過 ",
+          "section": ""
+        },
+        {
+          "questionId": "market-growth",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "對北富銀而言，除了在傳統專家式 AI 的應用上持續精進，也會在生成式 AI、RAG（Retrieval Augmented Generation，檢索增強生成，指讓大型語",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "資訊長角色進化，得將人性注入科技運用"
+      ],
+      "summary": "主要回答：金融與高度監管產業，怎麼兼顧應用與風險？；AI 除了省成本，還能帶來哪些商業與市場變化？",
+      "dateSensitive": false,
+      "id": "article-07437342e4fe"
     },
     {
       "date": "2024-11-14",
       "slug": "/blog-marketing-sns-data-entry-automation/",
       "title": "RPA 化身數位行銷高效助理：社群媒體後台數據自動化登錄",
-      "url": "https://aiworks.tw/blog-marketing-sns-data-entry-automation/"
+      "url": "https://aiworks.tw/blog-marketing-sns-data-entry-automation/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-marketing",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "面對瞬息萬變的媒體內容與社群討論熱度，行銷夥伴需同時掌握最新時事、產出創意內容、分析行銷效益，並制定策略。曝光次數、點擊率、互動次數等數據成為檢核行銷成效的關鍵依據。",
+          "section": "專注行銷分析與策略"
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "在這樣的情境下，自動化工具 RPA（Robotic Process Automation，機器人流程自動化）成為快速彙整數據的智慧解決方案。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "目標",
+        "使用系統",
+        "前置作業",
+        "流程詳細步驟",
+        "1. 檔案及資料就位",
+        "2. 設定資料篩選條件",
+        "3. 資料抓取 （單一貼文）",
+        "4. 資料處理及數據登錄 （單一貼文）"
+      ],
+      "summary": "主要回答：行銷與媒體團隊，怎麼建立內容與資料工作流？",
+      "dateSensitive": false,
+      "id": "article-3c8c4f03c20e"
     },
     {
       "date": "2024-11-26",
       "slug": "/blog-2025-rpa-ai-trends-insights/",
       "title": "全面解析 2025 年 RPA 發展趨勢：從效率提升到全域自動化",
-      "url": "https://aiworks.tw/blog-2025-rpa-ai-trends-insights/"
+      "url": "https://aiworks.tw/blog-2025-rpa-ai-trends-insights/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-basic",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "多元技術的整合雖帶來效率提升，但其成功實現需依賴精確的標準化策略和系統協作。企業不僅要建立跨部門的技術協作框架，還需採用符合國際標準的技術協議，確保各系統間的無縫兼容。例",
+          "section": "3. 未來挑戰與應對策略"
+        }
+      ],
+      "headings": [
+        "1. RPA 技術的深度融合與創新應用",
+        "RPA 與 AI 的智能結合",
+        "超自動化：技術整合的新里程碑",
+        "雲端與行動技術的深度結合",
+        "2. 數據與市場預測：2025 的產業新契機",
+        "全球市場規模與成長潛力",
+        "關鍵趨勢與挑戰",
+        "3. 未來挑戰與應對策略"
+      ],
+      "summary": "主要回答：還沒導入，要先理解哪些能力與限制？",
+      "dateSensitive": false,
+      "id": "article-4df9315653e5"
     },
     {
       "date": "2024-12-04",
       "slug": "/blog-rpa-power-platform/",
       "title": "自動化流程入門 #2：認識 Power Platform 開發工具集",
-      "url": "https://aiworks.tw/blog-rpa-power-platform/"
+      "url": "https://aiworks.tw/blog-rpa-power-platform/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Power Platform 的誕生主要是想建置更完整解決方案的單一平台，讓工具間的資訊可以更有效的串接。現有應用場景以企業居多，目標以 Low-Code 的方式，降低實",
+          "section": ""
+        },
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Power Platform 是微軟推出的強大 Low-Code 開發工具集，Power Automate 則是隸屬於 Power Platform 的其中一個工具。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "1. Low-Code 開發",
+        "2. 微軟生態系統整合",
+        "3. 與第三方應用的連接能力",
+        "1. 數據驅動決策",
+        "2. 客製化應用程式開發",
+        "3. 自動化業務流程",
+        "4. 聊天機器人與網站開發",
+        "參考資料"
+      ],
+      "summary": "主要回答：如何選擇工具、方案與自動化方式？；沒有程式背景，怎麼開始學 RPA 與自動化？",
+      "dateSensitive": false,
+      "id": "article-e0a759183f54"
     },
     {
       "date": "2024-12-04",
       "slug": "/blog-om-automation-case/",
       "title": "營運經理自動化實例：LINE@ 官方帳號訊息自動排程",
-      "url": "https://aiworks.tw/blog-om-automation-case/"
+      "url": "https://aiworks.tw/blog-om-automation-case/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-research",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "因此，在認識 RPA（機器人流程自動化）後，我開始思考： 既然在這項任務中，我像是一個「訊息排程機器人」，只需擷取資料、填寫及發布訊息，為何不交給一個真正的機器人助理來處",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：研究與營運團隊，怎麼整理資料、報告與通知？",
+      "dateSensitive": false,
+      "id": "article-148c71fd726b"
     },
     {
       "date": "2024-12-11",
       "slug": "/ai-bizlink/",
       "title": "解決客戶痛點到成功突破：貿聯用 AI + RPA 實現數位轉型",
-      "url": "https://aiworks.tw/ai-bizlink/"
+      "url": "https://aiworks.tw/ai-bizlink/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "推動 RPA 時，貿聯一開始蒐集 400 多個流程自動化需求，但在資源有限之下，該優先處理哪些？貿聯根據項目優先程度、任務難易度分類，並設定明確 KPI。2024年度的目",
+          "section": ""
+        },
+        {
+          "questionId": "course-results",
+          "level": "partial",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "同時，貿聯也推行「公民開發者」制度，由核心團隊協助訓練各部門都具備開發者。施智仁觀察，這不僅減輕核心團隊壓力，也激發各單位主動學習動力，而貿聯也會確保部份團隊能專注在高價",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：第一個 AI 應用，該從哪段工作開始？；上完課之後，如何檢查學員真的用在工作上？",
+      "dateSensitive": false,
+      "id": "article-f961a7d7dd5b"
     },
     {
       "date": "2024-12-11",
       "slug": "/blog-image-analysis/",
       "title": "提升影像處理效率的利器：UiPath Image Analysis 工具全解析",
-      "url": "https://aiworks.tw/blog-image-analysis/"
+      "url": "https://aiworks.tw/blog-image-analysis/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-visual",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "UiPath Image Analysis 工具運用先進的影像辨識技術，精準提取影像中的重要數據，並能自動生成應對建議或報告，其核心功能包括： 影像數據提取 工具能從文件",
+          "section": ""
+        },
+        {
+          "questionId": "industry-finance",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "案例 ：某金融機構應用此工具，快速提取合規文件中的圖像數據，確保滿足 GDPR 和 CCPA 等法規要求。",
+          "section": "2. 金融業：強化合規文件審查"
+        }
+      ],
+      "headings": [
+        "1. 數據與上下文整合",
+        "2. 自動化流程觸發",
+        "1. IT 團隊：加速系統異常檢測",
+        "2. 金融業：強化合規文件審查",
+        "3. 製造業：優化品質檢測"
+      ],
+      "summary": "主要回答：圖片與簡報工具，怎麼產出可以交付的素材？；金融與高度監管產業，怎麼兼顧應用與風險？",
+      "dateSensitive": false,
+      "id": "article-d8b9540a2426"
     },
     {
       "date": "2024-12-12",
       "slug": "/blog-rpa-dpa-power-automate/",
       "title": "自動化流程入門 #3：Power Automate 桌面流程與雲端版功能比較",
-      "url": "https://aiworks.tw/blog-rpa-dpa-power-automate/"
+      "url": "https://aiworks.tw/blog-rpa-dpa-power-automate/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Power Automate 的桌面流程（RPA）與雲端版（DPA）各自針對不同的自動化需求而設計，兩者的結合可以幫助使用者在設計流程時全面涵蓋不同的業務場景。根據企業內",
+          "section": "3. 如何評估我的企業適合導入 RPA 還是 DPA？"
+        }
+      ],
+      "headings": [
+        "功能與操作範圍的差異",
+        "運行環境與應用場景",
+        "1. Power Automate 需要具備程式設計能力嗎？",
+        "2 . Power Automate 可以整合哪些應用程式？",
+        "3. 如何評估我的企業適合導入 RPA 還是 DPA？"
+      ],
+      "summary": "主要回答：如何選擇工具、方案與自動化方式？",
+      "dateSensitive": true,
+      "id": "article-9860e478855f"
     },
     {
       "date": "2024-12-13",
       "slug": "/blog-ai-automation-hr-upgrade-notonlyhrs2ep95/",
       "title": "一鍵升級 AI 人資！0 基礎也可用 RPA 設定自動化工作流程",
-      "url": "https://aiworks.tw/blog-ai-automation-hr-upgrade-notonlyhrs2ep95/"
+      "url": "https://aiworks.tw/blog-ai-automation-hr-upgrade-notonlyhrs2ep95/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "新手建議 ：單日課程如 AI 人資自動化應用：高效智能實戰全日工作坊 ，了解 RPA 基本應用場景。",
+          "section": "． RPA x AI 的完美搭配"
+        },
+        {
+          "questionId": "course-choice",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "新手建議 ：單日課程如 AI 人資自動化應用：高效智能實戰全日工作坊 ，了解 RPA 基本應用場景。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "．定義與特性",
+        "．與其他工具的差異",
+        "． RPA x AI 的完美搭配"
+      ],
+      "summary": "主要回答：沒有程式背景，怎麼開始學 RPA 與自動化？；怎麼選課程、安排內訓與實作學習路徑？",
+      "dateSensitive": false,
+      "id": "article-c6aaaefc7944"
     },
     {
       "date": "2024-12-18",
       "slug": "/blog-enterprise-ai-transformation-notonlyhrs2ep96/",
       "title": "企業如何智能轉型？ Aiworks 轉型經驗談，將 AI 融入你的工作！",
-      "url": "https://aiworks.tw/blog-enterprise-ai-transformation-notonlyhrs2ep96/"
+      "url": "https://aiworks.tw/blog-enterprise-ai-transformation-notonlyhrs2ep96/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "service-choice",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "感謝 Miriam 邀請 Aiworks 參與 NotOnlyHR 不只是人資 Podcast 節目，在上一集對談中，Aiworks 課程經理 宣諭 分享了 RPA（Ro",
+          "section": ""
+        },
+        {
+          "questionId": "team-training",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Shirney 提到在 Aiworks 轉型期間，最大的挑戰是企業會有一個「模糊階段」，需要在模糊的市場裡重新聚焦，但夥伴彼此知道這是不可避免的過渡期，提高了大家對於「模",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "轉型過程中的挑戰與應對策略：",
+        "1. 從工程師教育到多職能賦能的轉型階段",
+        "2. 快速迭代與資源調配壓力",
+        "3. 與企業溝通語言的轉變",
+        "不同的業務場景的具體的應用",
+        "1. 行銷創意加速：",
+        "2. 業務效率提升：",
+        "3. 流程自動化："
+      ],
+      "summary": "主要回答：企業在什麼情況下需要培訓、評估或顧問陪跑？；培訓後，怎麼讓 AI 進入實際工作？",
+      "dateSensitive": false,
+      "id": "article-6d430c7b930a"
     },
     {
       "date": "2024-12-19",
       "slug": "/power-automate-setup-intro/",
       "title": "自動化流程入門 #4：Power Automate Desktop 安裝與介面介紹",
-      "url": "https://aiworks.tw/power-automate-setup-intro/"
+      "url": "https://aiworks.tw/power-automate-setup-intro/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Power Automate Desktop 是 Microsoft 提供的一款強大 RPA 工具，可讓使用者輕鬆實現業務流程的自動化。本文將分別介紹其安裝設定及主要介面",
+          "section": "安裝步驟"
+        }
+      ],
+      "headings": [
+        "僅限於 Windows 系統使用",
+        "安裝步驟",
+        "1. Windows 11 內建功能",
+        "2. 下載與安裝（適用於 Windows 10 或更早版本）",
+        "3. 首次啟動與登入",
+        "4. 瀏覽器擴充功能安裝",
+        "首頁儀表板",
+        "流程編輯區"
+      ],
+      "summary": "主要回答：沒有程式背景，怎麼開始學 RPA 與自動化？",
+      "dateSensitive": true,
+      "id": "article-cdc94665dccd"
     },
     {
       "date": "2024-12-23",
       "slug": "/blog-hrm-part-time-check/",
       "title": "出勤管理自動化：兼職人員時數審核流程優化",
-      "url": "https://aiworks.tw/blog-hrm-part-time-check/"
+      "url": "https://aiworks.tw/blog-hrm-part-time-check/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-hr",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本次流程使用的自動化工具是 UiPath ，適合用來執行重複性高、需跨平台的流程作業。流程中使用 UiPath 自動從 HR SaaS 系統中抓取兼職人員的打卡時數資料，",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：HR 的招募、合約與出勤，哪些工作可以先改善？",
+      "dateSensitive": false,
+      "id": "article-77cec65b524a"
     },
     {
       "date": "2025-01-16",
       "slug": "/ai-cloudmile/",
       "title": "從商模轉型到人才培育 劉永信引領 CloudMile 萬里雲打造企業數位轉型新典範",
-      "url": "https://aiworks.tw/ai-cloudmile/"
+      "url": "https://aiworks.tw/ai-cloudmile/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "talent-change",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "劉永信強調， AI 轉型的關鍵不在於企業規模，而在於如何充分利用數據與雲端技術，並打造專業人才。「數據、雲端、 AI 三者密不可分，必須在深度掌握數據的基礎上，搭配雲端技",
+          "section": ""
+        },
+        {
+          "questionId": "market-growth",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "CloudMile 萬里雲的成功經驗顯示，數位轉型不僅是技術問題，更是商業策略的核心。透過掌握數據、雲端與 AI 的結合，企業能在數據驅動的時代中找到自己的定位，從內部流",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：工作角色、人才與組織文化，要怎麼一起調整？；AI 除了省成本，還能帶來哪些商業與市場變化？",
+      "dateSensitive": false,
+      "id": "article-77922c56a4fa"
     },
     {
       "date": "2025-02-06",
       "slug": "/blog-cw-genai-business/",
       "title": "生成式 AI 助攻業務場景！天下雜誌行銷業務團隊的 AI 實戰學習心得",
-      "url": "https://aiworks.tw/blog-cw-genai-business/"
+      "url": "https://aiworks.tw/blog-cw-genai-business/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-sales",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "行銷業務部的日常工作涉及大量的資料整理、潛在客戶開發、客戶維護以及專案提案。在這些工作中，團隊成員已經開始嘗試使用 ChatGPT 等生成式 AI 工具，希望透過 AI ",
+          "section": "2. 提升業務溝通與銷售效能"
+        },
+        {
+          "questionId": "course-results",
+          "level": "partial",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "經過完整的生成式 AI 教學與實作，學員普遍反映本次課程帶來了幾大關鍵收穫：",
+          "section": "3. 加速工作流程，提升生產力"
+        }
+      ],
+      "headings": [
+        "1. 理解 ChatGPT 的生成機制與模型",
+        "2. 高效指令撰寫（Prompt Engineering）",
+        "3. AI 工具的多元應用場景",
+        "1. AI 工具應用更靈活",
+        "2. 提升業務溝通與銷售效能",
+        "3. 加速工作流程，提升生產力"
+      ],
+      "summary": "主要回答：業務怎麼用 AI 做情蒐、開發客戶與需求確認？；上完課之後，如何檢查學員真的用在工作上？",
+      "dateSensitive": false,
+      "id": "article-338126cc4ac1"
     },
     {
       "date": "2025-02-12",
       "slug": "/blog-basic-power-automate/",
       "title": "自動化流程入門 #5：Power Automate Desktop 新手必學基礎變數 & 文字方塊",
-      "url": "https://aiworks.tw/blog-basic-power-automate/"
+      "url": "https://aiworks.tw/blog-basic-power-automate/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本篇文章將帶你一步步了解 Power Automate Desktop 如何使用 變數（Variable）和文字方塊（Message Box ），讓你的第一支 RPA（機",
+          "section": "步驟 1：建立變數並儲存值"
+        }
+      ],
+      "headings": [
+        "步驟 1：建立變數並儲存值",
+        "步驟 2：顯示 Hello World 訊息",
+        "​1. Power Automate Desktop 是否免費使用？ ​",
+        "​2. 如何與其他 Microsoft 產品（如 Excel、Outlook）整合？ ​",
+        "​3. 是否需要具備程式設計經驗才能使用 Power Automate Desktop？",
+        "​4. 如何分享或部署已建立的自動化流程給團隊成員？ ​"
+      ],
+      "summary": "主要回答：沒有程式背景，怎麼開始學 RPA 與自動化？",
+      "dateSensitive": false,
+      "id": "article-7891290cb9ab"
     },
     {
       "date": "2025-02-25",
       "slug": "/blog-chatgpt-prompt/",
       "title": "5 分鐘學會 ChatGPT Prompt 提示詞優化術！（內附實戰範例）",
-      "url": "https://aiworks.tw/blog-chatgpt-prompt/"
+      "url": "https://aiworks.tw/blog-chatgpt-prompt/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-prompt",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "問題的關鍵並不在於 AI 的能力，而是我們提供的「 提示詞（Prompt） 」是否明確、具體且有邏輯。若沒有適當地設計 Prompt，AI 可能無法理解你的真正需求，導致",
+          "section": "5. 提供範例引導（One / Few Shot Prompting）"
+        }
+      ],
+      "headings": [
+        "設定 AI 角色的方法",
+        "範例應用",
+        "1. 明確指示，避免模糊用詞",
+        "2. 設定回應格式",
+        "3. 提供必要的背景資訊",
+        "4. 指定風格或語氣",
+        "5. 提供範例引導（One / Few Shot Prompting）",
+        "Q1：學會 Prompt 之後可以應用在哪些實際工作場景？"
+      ],
+      "summary": "主要回答：怎麼寫清楚需求，讓 AI 產出可用的成果？",
+      "dateSensitive": false,
+      "id": "article-d141785559a1"
     },
     {
       "date": "2025-02-26",
       "slug": "/blog-genai-business-guide-video/",
       "title": "《生成式 AI prompt 應用指南》精準掌握提示詞技術，解放生成式 AI 潛力",
-      "url": "https://aiworks.tw/blog-genai-business-guide-video/"
+      "url": "https://aiworks.tw/blog-genai-business-guide-video/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-prompt",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "由 Aiworks 專業技術導師以熱門生成式 AI 工具 ChatGPT 實戰演示，帶領你學習如何精準掌握提示詞（prompt），並利用進階功能 GPTs 提升內容生成效",
+          "section": ""
+        },
+        {
+          "questionId": "course-choice",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "由 Aiworks 專業技術導師以熱門生成式 AI 工具 ChatGPT 實戰演示，帶領你學習如何精準掌握提示詞（prompt），並利用進階功能 GPTs 提升內容生成效",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：怎麼寫清楚需求，讓 AI 產出可用的成果？；怎麼選課程、安排內訓與實作學習路徑？",
+      "dateSensitive": false,
+      "id": "article-f414871f97f0"
     },
     {
       "date": "2025-02-27",
       "slug": "/blog-ai-agent-2025-trends/",
       "title": "什麼是 AI Agent？一窺 2025 最重要企業 AI 應用趨勢",
-      "url": "https://aiworks.tw/blog-ai-agent-2025-trends/"
+      "url": "https://aiworks.tw/blog-ai-agent-2025-trends/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-basic",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "AI 技術發展迅猛，生成式 AI（Generative AI）及大型語言模型（LLM）的能力已不僅限於回答問題，而是開始具備推理、決策和自主行動的能力，因此，企業正在積極",
+          "section": "理想的 AI Agent 四大關鍵能力："
+        },
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "AI Agent 需要能夠從經驗中學習，並不斷改進自身的效能。例如根據任務結果調整決策，或利用使用者的回饋來改進對模糊意圖的理解。這種迭代學習的過程確保了 AI Agen",
+          "section": ""
+        },
+        {
+          "questionId": "governance-start",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "Microsoft Microsoft 365 Copilot 將 Copilot 直接整合於 Word、Excel、PowerPoint、Outlook、Teams 等",
+          "section": ""
+        },
+        {
+          "questionId": "learn-data",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "Microsoft Microsoft 365 Copilot 將 Copilot 直接整合於 Word、Excel、PowerPoint、Outlook、Teams 等",
+          "section": ""
+        },
+        {
+          "questionId": "task-research",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "OpenAI ChatGPT Agent OpenAI 於 2025 年 7 月 17 日推出 ChatGPT Agent，將 ChatGPT 的對話與推理、Operat",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "理想的 AI Agent 四大關鍵能力：",
+        "AI Agent vs. 傳統 AI 模型",
+        "機會與展望",
+        "1. LLM 開始具備自主推理能力",
+        "2. 配合 RAG 技術即時更新數據及資料庫",
+        "3. MCP 及 A2A 協議制定加速 Agent 溝通",
+        "挑戰與限制",
+        "1. 安全性與合規性"
+      ],
+      "summary": "主要回答：還沒導入，要先理解哪些能力與限制？；第一個 AI 應用，該從哪段工作開始？",
+      "dateSensitive": false,
+      "id": "article-7130e4a8c2a6"
     },
     {
       "date": "2025-03-13",
       "slug": "/blog-power-automate-desktop-variable/",
       "title": "自動化流程入門 #6：Power Automate Desktop 變數與文字型態完全指南",
-      "url": "https://aiworks.tw/blog-power-automate-desktop-variable/"
+      "url": "https://aiworks.tw/blog-power-automate-desktop-variable/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "自動化流程入門 #5：Power Automate Desktop 新手必學！變數與文字方塊說明",
+          "section": "1. 如何檢查變數的類型？"
+        }
+      ],
+      "headings": [
+        "1. 字串（String）",
+        "2. 數字（Integer）",
+        "3. 布林值（Boolean）",
+        "4. 資料表（DataTable）",
+        "1. 取得子文字（Substring）",
+        "2. 取代文字（Replace Text）",
+        "3. 修剪文字（Trim Text）",
+        "應用場景 ："
+      ],
+      "summary": "主要回答：沒有程式背景，怎麼開始學 RPA 與自動化？",
+      "dateSensitive": false,
+      "id": "article-1cb5b20bac62"
     },
     {
       "date": "2025-03-17",
       "slug": "/blog-kingsteel-ai-transform/",
       "title": "不只是技術升級，鉅鋼機械如何讓 AI 成為企業基因？",
-      "url": "https://aiworks.tw/blog-kingsteel-ai-transform/"
+      "url": "https://aiworks.tw/blog-kingsteel-ai-transform/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "team-training",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "鉅鋼機械的 AI 轉型並非倉促決策，而是從 2020 年開始，由 簡光正 領軍成立數位創新中心，率先導入 敏捷管理文化 ，為 AI 應用奠定基礎。他們從管理層到產線員工全",
+          "section": ""
+        },
+        {
+          "questionId": "talent-change",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "鉅鋼機械的 AI 轉型並非倉促決策，而是從 2020 年開始，由 簡光正 領軍成立數位創新中心，率先導入 敏捷管理文化 ，為 AI 應用奠定基礎。他們從管理層到產線員工全",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：培訓後，怎麼讓 AI 進入實際工作？；工作角色、人才與組織文化，要怎麼一起調整？",
+      "dateSensitive": false,
+      "id": "article-c7f19c68dec3"
     },
     {
       "date": "2025-03-18",
       "slug": "/blog-notebooklm-service-bot/",
       "title": "不只是筆記工具！教你用 NotebookLM 輕鬆打造 AI 客服助理",
-      "url": "https://aiworks.tw/blog-notebooklm-service-bot/"
+      "url": "https://aiworks.tw/blog-notebooklm-service-bot/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-data",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "NotebookLM 擅長整理與分析特定資料，適合客服回應、知識管理，而 ChatGPT 則適用於創意內容生成，兩者可依需求搭配使用。",
+          "section": "1. 即時分析與整合資料"
+        },
+        {
+          "questionId": "task-research",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "但如果你以為 NotebookLM 只是一般的筆記軟體，那就大錯特錯了！透過整合多元資料來源，NotebookLM 能即時掌握、靈活應用你提供的資料，並根據你的需求快速產",
+          "section": "1. 即時分析與整合資料"
+        }
+      ],
+      "headings": [
+        "1. 即時分析與整合資料",
+        "2. 快速生成摘要及提示",
+        "3. 清楚標示引用來源",
+        "建立客服專用知識庫",
+        "快速生成一致的內容",
+        "智慧檢索，應對各種突發問題",
+        "輕鬆進行客服紀錄統整分析",
+        "1. 必須匯入資料來源才能進行對話"
+      ],
+      "summary": "主要回答：AI 需要什麼資料、格式與知識，才能讀懂工作？；研究與營運團隊，怎麼整理資料、報告與通知？",
+      "dateSensitive": false,
+      "id": "article-a15ac978f4e1"
     },
     {
       "date": "2025-03-24",
       "slug": "/blog-openai-agent-operator/",
       "title": "從 ChatGPT 到 Operator — 讓 AI 從思考走向行動",
-      "url": "https://aiworks.tw/blog-openai-agent-operator/"
+      "url": "https://aiworks.tw/blog-openai-agent-operator/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-feature",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "延伸閱讀 ▷ ChatGPT agent 實測：AI Agent 功能與日常辦公應用",
+          "section": "3. 記錄回放功能：快速檢視自動化歷程"
+        },
+        {
+          "questionId": "workflow-handoff",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在解析與讀取中文內容時仍有機會出現錯誤，建議使用者在任務完成後，還是要進行人工校對。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "Operator 的三大核心特色",
+        "1. 自主操作任務：高效執行多重指令",
+        "2. 多重安全防護：確保隱私與操作安全",
+        "3. 彈性接管模式：隨時掌控自動化流程",
+        "Operator 如何運作：從理解內容到執行操作",
+        "Operator 三大運作步驟",
+        "Operator 應用範例：網路資訊爬蟲、分析與整理",
+        "測試場景"
+      ],
+      "summary": "主要回答：功能更新，會改變我們哪一段工作？；AI 與人怎麼交接，例外由誰處理？",
+      "dateSensitive": false,
+      "id": "article-14eb40cdd2f5"
     },
     {
       "date": "2025-03-28",
       "slug": "/power-automate-desktop-if-else/",
       "title": "自動化流程入門 #7：Power Automate Desktop 基礎功能 If-Else 條件式應用",
-      "url": "https://aiworks.tw/power-automate-desktop-if-else/"
+      "url": "https://aiworks.tw/power-automate-desktop-if-else/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在 Power Automate Desktop (PAD) 中，條件式邏輯通常透過 If-Else 或 Switch 來控制流程分支。本篇文章將以「年齡分類」為範例，詳",
+          "section": "1. Power Automate Desktop 的 If-Else 條件判斷是否支援多重條件？"
+        }
+      ],
+      "headings": [
+        "邏輯設定：",
+        "步驟解析",
+        "具體流程設計",
+        "影片參考範例",
+        "1. Power Automate Desktop 的 If-Else 條件判斷是否支援多重條件？",
+        "2. If-Else 條件可以與其他 PAD 動作結合使用嗎？",
+        "3. If-Else 條件是否可以加入變數並進行運算?",
+        "4. 是否可以在 If 條件內執行多個動作？"
+      ],
+      "summary": "主要回答：沒有程式背景，怎麼開始學 RPA 與自動化？",
+      "dateSensitive": true,
+      "id": "article-78430158d3ac"
     },
     {
       "date": "2025-04-09",
       "slug": "/blog-chatgpt-3useful-gpts/",
       "title": "3 個超實用 GPTs！讓客製化 ChatGPT 幫你精準完成任務",
-      "url": "https://aiworks.tw/blog-chatgpt-3useful-gpts/"
+      "url": "https://aiworks.tw/blog-chatgpt-3useful-gpts/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "GPTs 的建立者也可以選擇「推薦使用」的模型，如果是 ChatGPT Plus / Pro / Team / 企業方案或教育方案等 付費使用者 ，則可以切換 GPTs ",
+          "section": ""
+        },
+        {
+          "questionId": "learn-prompt",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "設計良好的 prompt ：和一般的 ChatGPT 一樣，清楚且有效的指令（prompt），能使 GPTs 更精準理解你的需求。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "1. 與 ChatGPT 的不同？",
+        "2. 哪裡可以找到 GPTs？",
+        "3. 使用 GPTs 安全嗎？",
+        "4. GPTs 使用的是什麼模型？",
+        "1. 數據分析神器： Data Analysis & Report AI",
+        "情境示範：產品用戶行為分析",
+        "2. 圖表視覺化利器： Mermaid Chart",
+        "情境示範：行銷企劃甘特圖繪製"
+      ],
+      "summary": "主要回答：如何選擇工具、方案與自動化方式？；怎麼寫清楚需求，讓 AI 產出可用的成果？",
+      "dateSensitive": false,
+      "id": "article-4383ce6cecbc"
     },
     {
       "date": "2025-04-11",
       "slug": "/blog-ai-hr-takeda/",
       "title": "生成式 AI 如何成為 HR 的數位夥伴？武田藥品的 AI 實戰學習心得",
-      "url": "https://aiworks.tw/blog-ai-hr-takeda/"
+      "url": "https://aiworks.tw/blog-ai-hr-takeda/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-hr",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "🚀 善用 AI 工具與解決方案 —— 透過 AI 數據分析、人資智能 Chatbot、自動化招聘系統等，HR 夥伴能專注於更高價值的戰略規劃，為組織帶來更深遠的影響。",
+          "section": "AI 不只是趨勢，而是 HR 的 數位 夥伴"
+        },
+        {
+          "questionId": "course-results",
+          "level": "partial",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "這場 2.5 小時的工作坊，設計了「AI 趨勢 × 流程自動化 × 生成式 AI 應用」三大核心課程，讓 HR 學員不只學習 AI 概念，更能動手實作，體驗 AI 在 H",
+          "section": "武田藥品 HR 團隊的關鍵 學習成果"
+        }
+      ],
+      "headings": [
+        "AI 不只是趨勢，而是 HR 的 數位 夥伴",
+        "HR 如何將 AI 變成最佳 數位 助手？",
+        "ChatGPT 只是開始，Prompt Engineering 才是 重要 關鍵！",
+        "Power Automate：HR 行政 流程 自動化新突破",
+        "武田藥品 HR 團隊的關鍵 學習成果",
+        "Aiworks 洞察：AI 為 HR 帶來新機遇，如何掌握這場變革？"
+      ],
+      "summary": "主要回答：HR 的招募、合約與出勤，哪些工作可以先改善？；上完課之後，如何檢查學員真的用在工作上？",
+      "dateSensitive": false,
+      "id": "article-69e60ca933ed"
     },
     {
       "date": "2025-04-14",
       "slug": "/blog-dbs-finance-new-gen/",
       "title": "星展銀行如何靠 AI 打造金融新世代？資訊部長康潔儀獨家分享",
-      "url": "https://aiworks.tw/blog-dbs-finance-new-gen/"
+      "url": "https://aiworks.tw/blog-dbs-finance-new-gen/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "industry-finance",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "2024年，星展銀行榮獲菁業獎「最佳企業金融獎優等」及「最佳數位金融獎優等」。同年也宣布進入 AI 發展第三階段，建立生成式 AI 平台。人資部門透過 AI 技術智能化篩",
+          "section": "星展銀行如何成為金融業的 AI 創新典範？"
+        },
+        {
+          "questionId": "talent-change",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在 AI 驅動的數位轉型過程中，真正的競爭核心在於「人才培育」與「企業文化」的轉型力道。從星展銀行的經驗可以看出，導入 AI 技術並非只聚焦於效率提升，更在於如何讓員工從",
+          "section": "金融服務轉型加速：透過 AI 實現流程簡化"
+        }
+      ],
+      "headings": [
+        "星展銀行如何成為金融業的 AI 創新典範？",
+        "金融服務轉型加速：透過 AI 實現流程簡化",
+        "員工是數位轉型的核心：從「習慣」到「不可或缺」",
+        "從第 0 天培育 AI 思維，星展 銀行 靠「企業文化」贏人才戰爭",
+        "Aiworks 洞察",
+        "更多 AI 智能轉型企業案例"
+      ],
+      "summary": "主要回答：金融與高度監管產業，怎麼兼顧應用與風險？；工作角色、人才與組織文化，要怎麼一起調整？",
+      "dateSensitive": false,
+      "id": "article-d428a807dac9"
     },
     {
       "date": "2025-04-17",
       "slug": "/blog-deepresearch-implement/",
       "title": "讓 Deep Research 為你做足功課！AI 快速掌握客戶背景與產業脈絡",
-      "url": "https://aiworks.tw/blog-deepresearch-implement/"
+      "url": "https://aiworks.tw/blog-deepresearch-implement/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-research",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "多步驟推理能力：強化內容邏輯與說服力 Deep Research 可根據使用者輸入的研究主題，拆解問題、蒐集資料、逐步完善報告內容，提升報告的可信度與邏輯性。",
+          "section": "Step 1：啟用「深入研究」，操作直覺不複雜"
+        },
+        {
+          "questionId": "task-sales",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本篇 AIworks 將介紹 OpenAI 推出的 Deep Research 功能，了解這個最新的 AI 深度研究趨勢和我們熟悉的 ChatGPT 有哪些不同，以及該如",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "三大特色一次看懂",
+        "Step 1：啟用「深入研究」，操作直覺不複雜",
+        "Step 2：與 AI 對話釐清目標，精準鎖定主題",
+        "Step 3：即時揭露資料來源與推理過程，強化可信度",
+        "Step 4：產出具脈絡與佐證的訪綱草案",
+        "Step 5：持續對話、延伸追問，靈活應用研究成果",
+        "Step 6：引用資料清楚標示，便於驗證與轉交",
+        "1. 判斷適用場景與時機，選對工具才有效率"
+      ],
+      "summary": "主要回答：研究與營運團隊，怎麼整理資料、報告與通知？；業務怎麼用 AI 做情蒐、開發客戶與需求確認？",
+      "dateSensitive": false,
+      "id": "article-89a4fc174f7c"
     },
     {
       "date": "2025-04-18",
       "slug": "/blog-power-automate-switch/",
       "title": "自動化流程入門 #8：Power Automate Desktop 基礎功能 Switch 條件式應用",
-      "url": "https://aiworks.tw/blog-power-automate-switch/"
+      "url": "https://aiworks.tw/blog-power-automate-switch/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "選對條件式，能讓你的 Power Automate Desktop 流程更易讀、更好維護，也能避免日後需求變動時的「骨牌效應」。當你的邏輯是固定值比對，請優先考慮 Swi",
+          "section": "Q1：Power Automate Desktop 的 Switch 最多可以放幾個 Case？"
+        }
+      ],
+      "headings": [
+        "參考範例：",
+        "掌握更多智能自動化思維",
+        "Q1：Power Automate Desktop 的 Switch 最多可以放幾個 Case？",
+        "Q2：Switch 能比較數值範圍嗎？",
+        "Q3：可以在同一流程同時用 If‑Else 和 Switch 嗎？",
+        "Q4：Switch 條件式跟 Excel 的 VLOOKUP／XLOOKUP 有什麼差別？",
+        "Q5：在 PAD 執行 Switch 出現「變數未定義」錯誤怎麼辦？",
+        "Q6：Switch 能放在循環（Loop）裡面嗎？"
+      ],
+      "summary": "主要回答：沒有程式背景，怎麼開始學 RPA 與自動化？",
+      "dateSensitive": true,
+      "id": "article-2ae1350bd36f"
     },
     {
       "date": "2025-04-28",
       "slug": "/blog-ai-risk-management/",
       "title": "你的 ChatGPT 安全嗎？使用 AI 工具必知的 10 個安全檢核",
-      "url": "https://aiworks.tw/blog-ai-risk-management/"
+      "url": "https://aiworks.tw/blog-ai-risk-management/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "governance-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "時刻落實以上安全要點，人才與企業才能在借助 AI 提升競爭力的同時，也能在波濤洶湧的 AI 浪潮中安全前行。 謹慎使用 AI 工具，不僅能有效降低個人使用 AI 工具可能",
+          "section": "6. 確保資料乾淨與正確"
+        }
+      ],
+      "headings": [
+        "1. 關閉「為所有人改善模型」功能",
+        "2. 使用可信任的第三方服務",
+        "3. 使用官方企業版方案",
+        "4. 絕對不能上傳的機敏資訊",
+        "5. 特定資訊去識別化",
+        "6. 確保資料乾淨與正確",
+        "7. 資料來源判別",
+        "8. 人工審核並明確標示"
+      ],
+      "summary": "主要回答：員工開始用 AI，公司需要哪些基本規範？",
+      "dateSensitive": false,
+      "id": "article-7600db6d3477"
     },
     {
       "date": "2025-05-14",
       "slug": "/blog-reasoning-o-model/",
       "title": "推理模型是什麼？從 GPT-4o 到 o3，一次看懂 ChatGPT 模型差異與應用場景",
-      "url": "https://aiworks.tw/blog-reasoning-o-model/"
+      "url": "https://aiworks.tw/blog-reasoning-o-model/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "o3 推理模型 ：可一次性完成多步驟任務，並在過程中自動規劃流程與偵測錯誤，主動提出解決方案。",
+          "section": "2. ChatGPT Plus / ChatGPT Pro 等付費方案用戶要如何知道自己正在使用「推理模型」呢？"
+        }
+      ],
+      "headings": [
+        "推理模型的運作原理：思考鏈（Chain of Thought）",
+        "推理模型 3 大亮點",
+        "任務需求",
+        "Step1. 啟用推理模型，執行複雜任務分析",
+        "Step 2. 同步展示思考歷程，增加 AI 應用可信度",
+        "Step 3. 透過自我對話「深思」，逐步執行任務步驟",
+        "亮點一｜任務釐清與流程規劃",
+        "亮點二｜難點評估與動態調整任務流程"
+      ],
+      "summary": "主要回答：如何選擇工具、方案與自動化方式？",
+      "dateSensitive": false,
+      "id": "article-e3140e87405a"
     },
     {
       "date": "2025-05-14",
       "slug": "/blog-moe-ai-education/",
       "title": "從「好學生心態」到「玩家心態」── 葉丙成談 AI 教育的正確起點",
-      "url": "https://aiworks.tw/blog-moe-ai-education/"
+      "url": "https://aiworks.tw/blog-moe-ai-education/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "talent-change",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "這也意味著，企業在培養內部 AI 人才時，不能只追求工具操作訓練，更需要思考如何打造組織文化，支持員工勇於嘗試、樂於學習。",
+          "section": ""
+        },
+        {
+          "questionId": "course-choice",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Aiworks 近期專訪教育部政務次長葉丙成，深入了解他對 AI 教育的長期觀察與實踐。從國中小到終身學習，他致力推動的不只是課程設計，更是心態轉變。他提醒我們：當我們談",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "深入掌握生成式 AI 工具，發揮 AI 無限潛力"
+      ],
+      "summary": "主要回答：工作角色、人才與組織文化，要怎麼一起調整？；怎麼選課程、安排內訓與實作學習路徑？",
+      "dateSensitive": false,
+      "id": "article-f5ce680f9ca8"
     },
     {
       "date": "2025-05-16",
       "slug": "/blog-2025-sme-digital-subsidy/",
       "title": "2025 最新 AI 課程政府補助：企業最高可領 10 萬元！",
-      "url": "https://aiworks.tw/blog-2025-sme-digital-subsidy/"
+      "url": "https://aiworks.tw/blog-2025-sme-digital-subsidy/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "course-funding",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "數位轉型的浪潮持續推進，臺灣許多中小企業卻常因人力少、預算有限而裹足不前。為協助 30 人以下的中小企業加速導入數位工具與員工技能培訓，經濟部推出 「補助 30 人以下中",
+          "section": "📃 申請所需資料"
+        }
+      ],
+      "headings": [
+        "💡 確認需求",
+        "🧠 選擇課程",
+        "📃 申請所需資料",
+        "📌 公司",
+        "📌 員工",
+        "Step 1　資格審核",
+        "Step 2 報名課程並完成培訓",
+        "Step 3　核銷填報"
+      ],
+      "summary": "主要回答：培訓預算與補助，需要先準備哪些資料？",
+      "dateSensitive": true,
+      "id": "article-1f5e64948488"
     },
     {
       "date": "2025-05-29",
       "slug": "/blog-2025-wda-subsidy/",
       "title": "2025 AI 補助課程申請攻略｜大人提 × 小人提一次搞懂 + 實戰課程推薦",
-      "url": "https://aiworks.tw/blog-2025-wda-subsidy/"
+      "url": "https://aiworks.tw/blog-2025-wda-subsidy/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "course-funding",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "不論您是大中型企業想自行規劃內訓，或是小型企業需要師資輔導，政府的「大人提」與「小人提」兩項職訓補助都能幫您節省高達 70–100% 的培訓費用。",
+          "section": "Step 2　填寫申請表單"
+        },
+        {
+          "questionId": "course-choice",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "不論您是大中型企業想自行規劃內訓，或是小型企業需要師資輔導，政府的「大人提」與「小人提」兩項職訓補助都能幫您節省高達 70–100% 的培訓費用。",
+          "section": "Q2：內訓每場次人數有上限嗎？"
+        }
+      ],
+      "headings": [
+        "Step 1　登入平台並選擇計劃",
+        "Step 2　填寫申請表單",
+        "Step 3　上傳必要證明",
+        "Step 4　分署審核／輔導",
+        "Step 5　執行訓練與結案",
+        "【大人提】",
+        "Q1：申請「大人提」需要哪些資格？",
+        "Q2：內訓每場次人數有上限嗎？"
+      ],
+      "summary": "主要回答：培訓預算與補助，需要先準備哪些資料？；怎麼選課程、安排內訓與實作學習路徑？",
+      "dateSensitive": true,
+      "id": "article-e84fe476b13b"
     },
     {
       "date": "2025-06-09",
       "slug": "/ai-sales-business-development/",
       "title": "ChatGPT 業務應用教學：潛在客戶名單搜集＋陌開信件寫作實例",
-      "url": "https://aiworks.tw/ai-sales-business-development/"
+      "url": "https://aiworks.tw/ai-sales-business-development/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-sales",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "潛在客戶陌生開發是業務人員的常見工作情境之一，然而名單蒐集、初步篩選、撰寫陌開信件等大量且繁瑣的任務常消耗大量人力與時間成本。",
+          "section": "適用情境：潛在客戶聯絡資料蒐集"
+        }
+      ],
+      "headings": [
+        "適用情境：潛在客戶聯絡資料蒐集",
+        "操作流程：",
+        "Step1. 啟動推理模型，應對複雜任務",
+        "Step2. 輸入提示詞：詳細說明任務需求",
+        "Step3. 檢驗模型思路過程，確保資訊準確性",
+        "亮點一｜模型同步展示推理歷程，增加應用可信度",
+        "亮點二｜附上引用資訊來源，易於查驗原始資料",
+        "Step4. 結果呈現與應用"
+      ],
+      "summary": "主要回答：業務怎麼用 AI 做情蒐、開發客戶與需求確認？",
+      "dateSensitive": true,
+      "id": "article-36dadb57761b"
     },
     {
       "date": "2025-06-10",
       "slug": "/blog-mbat-automation-workshop/",
       "title": "為媒體出版業夥伴量身打造的實戰演練：雜誌公會 No-code 自動化工作坊",
-      "url": "https://aiworks.tw/blog-mbat-automation-workshop/"
+      "url": "https://aiworks.tw/blog-mbat-automation-workshop/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-marketing",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "人工行政作業繁重 ：如資料整理、內容上架、社群管理等，耗費大量時間與精力。",
+          "section": "2. 精準對應媒體工作場景"
+        },
+        {
+          "questionId": "course-results",
+          "level": "partial",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "場景高度連結： 課程設計符合實際工作需求，具體案例分享及實作內容，都能讓許多學員聯想到延伸的應用場景。",
+          "section": "2. 精準對應媒體工作場景"
+        }
+      ],
+      "headings": [
+        "1. 工具易上手，無需程式基礎",
+        "2. 精準對應媒體工作場景",
+        "🛠 實作主題：打造屬於自己的 LINE 資訊推播機器人"
+      ],
+      "summary": "主要回答：行銷與媒體團隊，怎麼建立內容與資料工作流？；上完課之後，如何檢查學員真的用在工作上？",
+      "dateSensitive": false,
+      "id": "article-48b6a48e592f"
     },
     {
       "date": "2025-06-11",
       "slug": "/blog-ssstc-ai-hr/",
       "title": "從 HR 出發，打開 AI 的第一道門 —— 建興儲存科技如何點燃 AI 的實驗精神？",
-      "url": "https://aiworks.tw/blog-ssstc-ai-hr/"
+      "url": "https://aiworks.tw/blog-ssstc-ai-hr/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-hr",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "說人才市場是 AI 熱潮的「海景第一排」，一點也不為過。當多數人還在討論 AI 是否會取代人類工作，有些 HR 已悄悄換了個姿態，主動出擊、實驗工具。建興就是其中之一。",
+          "section": ""
+        },
+        {
+          "questionId": "team-training",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "2024 年被定調為「AI 學習年」，但初期仍處於探索與觀望階段。當時沒有太多部門主動嘗試，人資團隊決定從自身場景出發，先自己做起來。",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：HR 的招募、合約與出勤，哪些工作可以先改善？；培訓後，怎麼讓 AI 進入實際工作？",
+      "dateSensitive": false,
+      "id": "article-7568c769ee09"
     },
     {
       "date": "2025-06-16",
       "slug": "/blog-ai-social-media-mkt-context/",
       "title": "建立你的社群行銷 AI 工作流（上）NotebookLM + ChatGPT 讓你成為文案快手",
-      "url": "https://aiworks.tw/blog-ai-social-media-mkt-context/"
+      "url": "https://aiworks.tw/blog-ai-social-media-mkt-context/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-marketing",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "社群行銷是企業與品牌提升曝光率的重要管道，社群經營必須持續發布貼文、即時更新動態，才能有效留住追蹤者、維持社群活躍度，並獲得演算法的青睞。然而，要持續高頻率產出兼具品牌特",
+          "section": "一、生成文案初稿"
+        },
+        {
+          "questionId": "learn-prompt",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在「對話」面板輸入提示詞（prompt），以精確地生成文案。提示詞內必須包含以下內容：",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "NotebookLM",
+        "ChatGPT",
+        "一、生成文案初稿",
+        "Step 2. 對話生成文案",
+        "Step 3. 整理文字與排版",
+        "二、潤飾文案",
+        "Step 1. 啟動畫布功能",
+        "Step 2. 潤飾文案"
+      ],
+      "summary": "主要回答：行銷與媒體團隊，怎麼建立內容與資料工作流？；怎麼寫清楚需求，讓 AI 產出可用的成果？",
+      "dateSensitive": false,
+      "id": "article-64dd75088816"
     },
     {
       "date": "2025-06-16",
       "slug": "/blog-ai-social-media-mkt-image/",
       "title": "建立你的社群行銷 AI 工作流（下）小編救星！ChatGPT 幫你快速生成圖片",
-      "url": "https://aiworks.tw/blog-ai-social-media-mkt-image/"
+      "url": "https://aiworks.tw/blog-ai-social-media-mkt-image/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-visual",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在「建立你的社群行銷 AI 工作流」下篇，Aiworks 將透過 ChatGPT 教你如何利用 AI 工具快速生成社群貼文配圖，讓你不再沉沒於素材庫的茫茫大海中！",
+          "section": "Step 1. 啟動「圖像」功能"
+        },
+        {
+          "questionId": "task-marketing",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "閱讀上篇 ▷ 建立你的社群行銷 AI 工作流（上）NotebookLM + ChatGPT 讓你成為文案高手",
+          "section": "閱讀上篇 ▷ 建立你的社群行銷 AI 工作流（上）NotebookLM + ChatGPT 讓你成為文案高手"
+        }
+      ],
+      "headings": [
+        "閱讀上篇 ▷ 建立你的社群行銷 AI 工作流（上）NotebookLM + ChatGPT 讓你成為文案高手",
+        "ChatGPT",
+        "Step 1. 啟動「圖像」功能",
+        "Step 2. 撰寫清楚提示詞（prompt）",
+        "Step 3. 調整圖片",
+        "1. 良好檔案管理及資料庫建立",
+        "2. 為任務挑選對的工具",
+        "3. 提供清晰指令（prompt）"
+      ],
+      "summary": "主要回答：圖片與簡報工具，怎麼產出可以交付的素材？；行銷與媒體團隊，怎麼建立內容與資料工作流？",
+      "dateSensitive": false,
+      "id": "article-002934595867"
     },
     {
       "date": "2025-06-20",
       "slug": "/blog-0515-webinar-abstract/",
       "title": "AI 人才轉型怎麼做？企業打造持續進化團隊的 4 大實戰策略（含台灣大哥大案例）",
-      "url": "https://aiworks.tw/blog-0515-webinar-abstract/"
+      "url": "https://aiworks.tw/blog-0515-webinar-abstract/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "team-scale",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在生成式 AI 席捲各產業的今天，企業該如何推動 AI 人才轉型、培養具備數位思維的員工，已成為組織升級的關鍵課題。 本篇文章摘錄【Aiworks 線上講座｜AI 時代的",
+          "section": "2. 建立內部共學文化：從講座到跨部門社團"
+        },
+        {
+          "questionId": "talent-change",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "AI 的導入早已超越純粹的技術挑戰，它是一場從流程到組織文化的全面變革。在這個過程中，以「人」為中心至關重要： 必須激發動機、強化能力、設計有效的觸發機制，並由 HR 擔",
+          "section": "2. 建立內部共學文化：從講座到跨部門社團"
+        }
+      ],
+      "headings": [
+        "1. RPA 啟動：從帳務處試點到全公司推廣",
+        "2. 建立內部共學文化：從講座到跨部門社團",
+        "3. 高階主管的實際參與與獎勵機制",
+        "4. HR 作為轉型推手，設計落地制度",
+        "四大關鍵點：加速 AI 應用落地",
+        "行為改變與績效連結：B = M + A + T 模型",
+        "Q1：員工對工具感到不安，怎麼辦？",
+        "Q2：如何衡量工具導入成效？"
+      ],
+      "summary": "主要回答：從一個團隊擴大到多個團隊，怎麼分工？；工作角色、人才與組織文化，要怎麼一起調整？",
+      "dateSensitive": false,
+      "id": "article-a729a4c5a343"
     },
     {
       "date": "2025-07-07",
       "slug": "/blog-notion-ai-build-use-case/",
       "title": "Notion AI 教學：快速建立客戶管理、專案協作與行銷追蹤（附實作範例）",
-      "url": "https://aiworks.tw/blog-notion-ai-build-use-case/"
+      "url": "https://aiworks.tw/blog-notion-ai-build-use-case/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-sales",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本篇教學將由 Aiworks 實測示範，帶你一步步掌握 Notion AI 的主要功能，並透過三大應用情境 —— 客戶管理、專案管理、行銷成效追蹤 —— 實際操作 Not",
+          "section": "應用情境一：打造「客戶管理資料庫」"
+        },
+        {
+          "questionId": "task-research",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "詢問（Ask）及研究（Research）： 如同一般生成式 AI 的對話、搜尋與研究功能，可選擇指定模型，並基於 Notion 中的資料或網路資訊生成回應。",
+          "section": "2. 自動生成連動資料庫"
+        },
+        {
+          "questionId": "task-marketing",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "Prompt 範例 我的職務為行銷人員，目的是透過社群貼文與網站內容等網路資訊投遞，帶動潛在客戶轉換與公司收入提升。 請協助我設計一份「週行銷 KPI 追蹤表格」，用於追",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "Notion 本體功能總覽",
+        "Notion AI 功能介紹： 三大核心能力",
+        "Notion AI 「建立」（Build）功能三大亮點",
+        "1. 直覺操作，輕鬆上手",
+        "2. 自動生成連動資料庫",
+        "3. 彈性編排，自由微調",
+        "應用情境一：打造「客戶管理資料庫」",
+        "Step1. 啟用 Notion AI「建立」功能"
+      ],
+      "summary": "主要回答：業務怎麼用 AI 做情蒐、開發客戶與需求確認？；研究與營運團隊，怎麼整理資料、報告與通知？",
+      "dateSensitive": true,
+      "id": "article-8aca5291080a"
     },
     {
       "date": "2025-07-17",
       "slug": "/blog-twreporter-genai-workshop/",
       "title": "新聞媒體工作者如何與生成式 AI 協作？從內訓實例看應用場景與思維挑戰",
-      "url": "https://aiworks.tw/blog-twreporter-genai-workshop/"
+      "url": "https://aiworks.tw/blog-twreporter-genai-workshop/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-marketing",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "生成式 AI 不僅帶來創新與效率，也引發了內容真實性、著作權爭議、倫理規範、商業模式及社會信任等多重衝突。面對這波轉型，如何平衡 AI 的便利性與新聞專業價值，同時守護產",
+          "section": "1. 內容正確與資訊來源合法性"
+        },
+        {
+          "questionId": "course-results",
+          "level": "partial",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本次 Aiworks 很榮幸與報導者合作，以內訓形式舉辦 「生成式 AI 實戰工作坊」 培訓課程，透過客製化情境編排，讓報導者同仁更熟悉 AI 工具的實際操作與應用技巧，",
+          "section": "2. 實作導向與客製化場景設計，提升學習興趣"
+        }
+      ],
+      "headings": [
+        "1. 內容正確與資訊來源合法性",
+        "2. 資料隱私與內容安全風險",
+        "3. 工具適配性與場景選擇困難",
+        "建立 AI 協作思維 —— 七大使用原則（節錄）",
+        "． 原則一：AI 無法「100%」保證內容正確",
+        "． 原則三：用 AI 幫你「找方向」，而非「找答案」",
+        "． 原則六：讓 AI 扮演不同視角的「讀者」",
+        "1. 對 AI 工具應用情境更有想像"
+      ],
+      "summary": "主要回答：行銷與媒體團隊，怎麼建立內容與資料工作流？；上完課之後，如何檢查學員真的用在工作上？",
+      "dateSensitive": false,
+      "id": "article-07ebf8f3e74a"
     },
     {
       "date": "2025-07-28",
       "slug": "/blog-aiworks-2025-white-paper-abstract/",
       "title": "Aiworks 白皮書精華整理：逾八成企業看好 AI，真正落地僅 1%",
-      "url": "https://aiworks.tw/blog-aiworks-2025-white-paper-abstract/"
+      "url": "https://aiworks.tw/blog-aiworks-2025-white-paper-abstract/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "《面向 AI 時代的企業人才戰略：管理者的行動指南》線上講座完整影音內容",
+          "section": ""
+        },
+        {
+          "questionId": "team-training",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "相對而言，已有 AI 專責部門的企業，其培訓制度建立率達 92%，內部學習文化與跨部門協作也更為活躍。這樣的結構化差異，不僅反映在學習成效上，也實際影響了 AI 工具在組",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "2025 台灣企業 AI 導入現況解析：組織準備度與推動角色成轉型關鍵",
+        "白皮書三大觀察，看出台灣企業導入 AI 的三個關鍵問題",
+        "1. 多數應用仍停留在部門試行階段",
+        "2. 推進過程最缺乏的，是「能用」與「推得動」的人",
+        "3. 是否設有推動單位，將直接影響導入的節奏",
+        "實例亮點：鉅鋼機械如何從一個痛點，打開組織 AI 共學與文化轉型之門？",
+        "結語：我們期許這份白皮書，是一張陪伴推進 AI 的地圖",
+        "📥 即刻填寫表單，免費下載完整報告"
+      ],
+      "summary": "主要回答：第一個 AI 應用，該從哪段工作開始？；培訓後，怎麼讓 AI 進入實際工作？",
+      "dateSensitive": false,
+      "id": "article-2148420350d8"
     },
     {
       "date": "2025-08-11",
       "slug": "/blog-make-automation-introduction/",
       "title": "Make 自動化工具教學：介面操作、功能亮點與 Zapier、n8n 比較一次看懂",
-      "url": "https://aiworks.tw/blog-make-automation-introduction/"
+      "url": "https://aiworks.tw/blog-make-automation-introduction/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "為了更快速掌握 Make、n8n 與 Zapier 三款自動化工具的差異與特性，Aiworks 整理出以下比較一覽表，協助你依據實際需求，選擇最適合的自動化工具。",
+          "section": "Make 三大亮點功能：誰都能上手的自動化工具"
+        }
+      ],
+      "headings": [
+        "Make 三大亮點功能：誰都能上手的自動化工具",
+        "1. 操作直覺簡易：無程式背景也能用",
+        "2. 支援 2500+ 應用程式：輕鬆串接常用程式",
+        "3. 完全基於瀏覽器操作：跨裝置使用更彈性",
+        "．Organization（帳號資訊總覽）",
+        "．Scenarios（自動化流程管理）",
+        "．Connections（外部平台連線設定）",
+        "．Templates｜自動化流程範本"
+      ],
+      "summary": "主要回答：如何選擇工具、方案與自動化方式？",
+      "dateSensitive": true,
+      "id": "article-637fd2278d4d"
     },
     {
       "date": "2025-08-11",
       "slug": "/blog-make-to-do-list-tutorial/",
       "title": "Make 自動化工具實作教學：整合 Google Sheet 與 Gmail 打造待辦事項提醒助理",
-      "url": "https://aiworks.tw/blog-make-to-do-list-tutorial/"
+      "url": "https://aiworks.tw/blog-make-to-do-list-tutorial/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "為了讓 Make 在每次執行流程時能自動判斷「待辦事項是否已過期」，需先 設定一組時間變數 ，以擷取執行流程當下的日期，作為後續條件判斷的依據。",
+          "section": "Step2. 設定時間變數"
+        },
+        {
+          "questionId": "task-research",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "寄送提醒通知： 對於符合條件的任務，Make 會自動產出客製化提醒內容，並透過 Gmail 寄出通知信給指定收件者",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "Step1. 創建新的自動化流程",
+        "Step2. 設定時間變數",
+        "Step2-1. 開啟「Set variable」模組",
+        "Step2-2. 輸入變數值",
+        "Step3. 串聯 Google Sheet 讀取待辦事項清單",
+        "Step3-1. 開啟「Search Rows」模組",
+        "Step3-2. 連結 Google Sheet",
+        "Step3-3. 選擇「待辦事項清單」Google Sheet"
+      ],
+      "summary": "主要回答：沒有程式背景，怎麼開始學 RPA 與自動化？；研究與營運團隊，怎麼整理資料、報告與通知？",
+      "dateSensitive": true,
+      "id": "article-c760a1593ca9"
     },
     {
       "date": "2025-08-21",
       "slug": "/blog-how-to-do-geo/",
       "title": "2025 GEO 實戰守則：讓 ChatGPT、Gemini 主動引用你的內容",
-      "url": "https://aiworks.tw/blog-how-to-do-geo/"
+      "url": "https://aiworks.tw/blog-how-to-do-geo/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "market-search",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "過去，我們在搜尋框輸入關鍵字，再透過一串連結找答案。現在，生成式 AI 改寫了流程：它會先重新確認你的問題、抓取來源、做摘要，最後在對話框直接整合回應，並附帶少量引文。對",
+          "section": "1. 什麼是 GEO？"
+        }
+      ],
+      "headings": [
+        "1. 什麼是 GEO？",
+        "2. 為什麼現在就要開始關注 GEO？",
+        "3. GEO 的核心策略（從 SEO → GEO )",
+        "4. AI 怎麼選段？（觀察性描述）",
+        "5. GEO 優化實用方法（參考研究 + 實務觀察）",
+        "6. Aiworks 測試案例（僅供參考）",
+        "7. 推薦工具 & 資源（初步嘗試用）",
+        "8. 結論與建議"
+      ],
+      "summary": "主要回答：AI 搜尋與代購，會怎麼改變內容觸及與客戶決策？",
+      "dateSensitive": false,
+      "id": "article-7cb6764cf916"
     },
     {
       "date": "2025-08-26",
       "slug": "/blog-gpts-financial-implement/",
       "title": "客製化 AI 助理使用指南：從金融案例認識更多應用可能性",
-      "url": "https://aiworks.tw/blog-gpts-financial-implement/"
+      "url": "https://aiworks.tw/blog-gpts-financial-implement/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "industry-finance",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "使用前必讀：注意事項與合規指南 基本使用安全 金融業運用人工智慧（AI）指引",
+          "section": "1. 風險快訊雷達"
+        },
+        {
+          "questionId": "learn-prompt",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在過去的文章中，我們曾經介紹過 GPTs，也就是「客製化 ChatGPT」。它以 ChatGPT 為核心，透過設定特定指令、知識或外部串接，成為專門應對某一領域任務的 A",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "如何建立自己的 GPTs？",
+        "1. 風險快訊雷達",
+        "2. 法金銷售顧問",
+        "3. 微企貸款好幫手",
+        "基本使用安全",
+        "金融業運用人工智慧（AI）指引",
+        "1. 我需要先具備程式設計能力才能建立 GPTs 嗎？",
+        "2. 建立 GPTs 需要安裝任何額外軟體嗎？"
+      ],
+      "summary": "主要回答：金融與高度監管產業，怎麼兼顧應用與風險？；怎麼寫清楚需求，讓 AI 產出可用的成果？",
+      "dateSensitive": false,
+      "id": "article-ee9f4e4fdebb"
     },
     {
       "date": "2025-09-02",
       "slug": "/blog-cnfi-industry-ai-implement/",
       "title": "「AI 很重要，但知易行難」—— 工總祕書長呂正華談製造業的挑戰與下一步",
-      "url": "https://aiworks.tw/blog-cnfi-industry-ai-implement/"
+      "url": "https://aiworks.tw/blog-cnfi-industry-ai-implement/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "生成式 AI 帶來的新時代浪潮，正在改變產業競爭規則。從矽谷到東亞，企業都在加速探索 AI 應用，試圖在效率、成本與創新上取得突破。對台灣製造業而言，這不只是新技術的導入",
+          "section": ""
+        },
+        {
+          "questionId": "talent-change",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在眾多案例中，祕書長特別提到紡織業的 旭榮集團 。 這家公司早在 2003 年就啟動數位化，資訊部門從 1 人發展到 20 多人，用 20 年累積數據基礎，管理遍布全球的",
+          "section": "短期壓力凌駕長期轉型，產業正處於「引爆點前夕」"
+        }
+      ],
+      "headings": [
+        "短期壓力凌駕長期轉型，產業正處於「引爆點前夕」",
+        "行政、設計、翻譯等小場景，率先展現 AI 價值",
+        "20 年數位化養成的 AI 長，與低調工廠的良率革命",
+        "從決心到方法，再到信任的形成",
+        "從「做十分講八分」到「勇於分享」，新一代正在改變遊戲規則",
+        "AI 已不是「要不要」，而是「何時開始」"
+      ],
+      "summary": "主要回答：第一個 AI 應用，該從哪段工作開始？；工作角色、人才與組織文化，要怎麼一起調整？",
+      "dateSensitive": false,
+      "id": "article-8199c9b4b7b1"
     },
     {
       "date": "2025-09-03",
       "slug": "/blog-chatgpt-agent-intro/",
       "title": "ChatGPT agent 實測：AI Agent 功能與日常辦公應用",
-      "url": "https://aiworks.tw/blog-chatgpt-agent-intro/"
+      "url": "https://aiworks.tw/blog-chatgpt-agent-intro/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-feature",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "OpenAI 於 2025 年 7 月推出 ChatGPT agent 。不同於以往的生成式 AI 模型，ChatGPT agent 不只能提供建議與回覆，更具備「行動能",
+          "section": "ChatGPT agent 的三大核心特色"
+        },
+        {
+          "questionId": "workflow-handoff",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "OpenAI 於 2025 年 7 月推出 ChatGPT agent 。不同於以往的生成式 AI 模型，ChatGPT agent 不只能提供建議與回覆，更具備「行動能",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "ChatGPT agent 的三大核心特色",
+        "1. 操作方式簡易，新手也能快速上手",
+        "2. 可控的自動化流程，確保結果符合預期",
+        "3. 安全管控措施，降低 AI 自動化風險",
+        "ChatGPT agent 能做什麼？整合工具與能力總覽",
+        "大腦",
+        "身體",
+        "手腳"
+      ],
+      "summary": "主要回答：功能更新，會改變我們哪一段工作？；AI 與人怎麼交接，例外由誰處理？",
+      "dateSensitive": true,
+      "id": "article-b43dd3e5a85e"
     },
     {
       "date": "2025-09-19",
       "slug": "/blog-ai-evaluate/",
       "title": "AI 導入前要怎麼評估？七大面向幫你建立專屬指標與治理邊界",
-      "url": "https://aiworks.tw/blog-ai-evaluate/"
+      "url": "https://aiworks.tw/blog-ai-evaluate/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "value-baseline",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "因地制宜、對齊組織目標 每家企業的流程與風險不同，自訂指標能與內部 KPI 與發展方向一致。",
+          "section": "為什麼要自訂指標？"
+        },
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "許多專案一開始信心滿滿，做到一半卻發現 沒人用、無法複製、風險無法控管 。投資了時間與資源，卻難以轉化為長期效益。更常見的狀況是： 企業內部同時有好幾個業務流程想要導入 ",
+          "section": ""
+        },
+        {
+          "questionId": "governance-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "可持續擴大 行為規範與邊界清楚後，數據才能量化成效，並在治理成熟後擴散應用。",
+          "section": "（二）治理與風控面：上線與運作時"
+        }
+      ],
+      "headings": [
+        "為什麼要自訂指標？",
+        "AI 導入必備觀念",
+        "（一）導入推進面：上線之前",
+        "（二）治理與風控面：上線與運作時",
+        "七大評估面向",
+        "一、 效率類：提升產能與可擴散性",
+        "二、品質類：守住標準與一致性",
+        "三、風控類：預防不可還原的錯誤發生"
+      ],
+      "summary": "主要回答：導入前，怎麼設定值得追蹤的指標？；第一個 AI 應用，該從哪段工作開始？；員工開始用 AI，公司需要哪些基本規範？",
+      "dateSensitive": false,
+      "id": "article-dabcb7f5e7e3"
     },
     {
       "date": "2025-10-14",
       "slug": "/blog-genai-chatbot-comparison-2025/",
       "title": "生成式 AI 工具全攻略：5 大平台功能實測、訂閱方案與使用場景完整比較",
-      "url": "https://aiworks.tw/blog-genai-chatbot-comparison-2025/"
+      "url": "https://aiworks.tw/blog-genai-chatbot-comparison-2025/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本篇文章由 Aiworks 團隊實測 5 大主流生成式 AI 工具 —— ChatGPT 、 Gemini 、 Perplexity 、 Claude 及 Copilot",
+          "section": "比較面向"
+        }
+      ],
+      "headings": [
+        "ChatGPT 簡介",
+        "Gemini 簡介",
+        "Perplexity 簡介",
+        "Claude 簡介",
+        "Copilot 簡介",
+        "測試前提",
+        "比較面向",
+        "比較場景"
+      ],
+      "summary": "主要回答：如何選擇工具、方案與自動化方式？",
+      "dateSensitive": true,
+      "id": "article-775116846979"
     },
     {
       "date": "2025-11-11",
       "slug": "/blog-aiworks-automation-implementation/",
       "title": "業務每天花三小時整理名單？看 Aiworks 如何用 AI 自動化省回 40% 時間",
-      "url": "https://aiworks.tw/blog-aiworks-automation-implementation/"
+      "url": "https://aiworks.tw/blog-aiworks-automation-implementation/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-sales",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Aiworks 在內部業務流程中也曾面臨同樣的挑戰。直到導入 AI 自動化工具後，我們成功將名單處理時間減少 40%，讓業務能把時間用在更重要的決策與客戶經營上。",
+          "section": ""
+        },
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "對許多業務開發團隊來說， 每天花三小時整理名單、比對公司資料、更新表單 ，早已成為例行公事。這些看似瑣碎的任務，不但耗時耗力，也讓人無法專注在真正能創造價值的工作上。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "Step 1. 痛點釐清：從使用者出發",
+        "Step 2. 對焦會議：建立自動化設計藍圖",
+        "Step 3. 自動化流程設計與開發",
+        "Step 4.  實測與例外驗證",
+        "Step 5. 撰寫使用與維運說明書",
+        "📩 想為您的組織打造 AI 協作能力？"
+      ],
+      "summary": "主要回答：業務怎麼用 AI 做情蒐、開發客戶與需求確認？；第一個 AI 應用，該從哪段工作開始？",
+      "dateSensitive": false,
+      "id": "article-d94c07076ff3"
     },
     {
       "date": "2025-11-14",
       "slug": "/blog-openai-agent-builder/",
       "title": "OpenAI Agent Builder 業務實作案例：從客戶情蒐到行動建議，開發過程不再卡關",
-      "url": "https://aiworks.tw/blog-openai-agent-builder/"
+      "url": "https://aiworks.tw/blog-openai-agent-builder/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-sales",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": ".實作案例：業務開發應用場景 客戶前置情蒐 DD 提供溝通分析與行動建議的 AI 教練 「判斷分流 AI」如何把 a / b 接起來",
+          "section": "1. 客戶前置情蒐 DD（助手 B：會前準備情報分析師）"
+        },
+        {
+          "questionId": "workflow-handoff",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在 B2B 客戶開發裡，真正拖慢進度的常是「判斷」與「分工」。 OpenAI Agent Builder 能把這些經驗性的判斷變成可重複的流程，讓任務自動交到對的 Age",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "1. 客戶前置情蒐 DD（助手 B：會前準備情報分析師）",
+        "2. 提供溝通分析與行動建議的「AI 顧問」（助手 A：銷售困境解決顧問）",
+        "3. 「判斷分流 AI」如何把 a / b 接起來",
+        "▼ OpenAI Agent Builder 業務開發分流助手 演示影片 ▼",
+        "1. 為你的 Agent 想像一個角色情境",
+        "2. 清楚設定輸出時要包含的細節",
+        "📩 想為您的組織打造 AI 協作能力？",
+        "Q1：Agent Builder 是什麼？跟一般聊天機有什麼不同？"
+      ],
+      "summary": "主要回答：業務怎麼用 AI 做情蒐、開發客戶與需求確認？；AI 與人怎麼交接，例外由誰處理？",
+      "dateSensitive": false,
+      "id": "article-3de590633f5c"
     },
     {
       "date": "2025-12-12",
       "slug": "/the-genai-divide/",
       "title": "為什麼 95% 的企業 AI 導入會失敗？MIT 報告揭露 AI 鴻溝與低 ROI 真相",
-      "url": "https://aiworks.tw/the-genai-divide/"
+      "url": "https://aiworks.tw/the-genai-divide/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "workflow-failure",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "問題不在於 AI 技術本身，而是企業錯把「導入工具」當成「創造價值」；流程、資料、治理與組織能力不足，使 AI 無法真正落地，形成投入與回報之間的巨大落差。",
+          "section": "前言：AI 投資暴增，但 AI 導入失敗率高達 95%"
+        },
+        {
+          "questionId": "value-roi",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "問題不在於 AI 技術本身，而是企業錯把「導入工具」當成「創造價值」；流程、資料、治理與組織能力不足，使 AI 無法真正落地，形成投入與回報之間的巨大落差。",
+          "section": "個人效率提升 ≠ 企業效率提升：AI 無法進入真正有價值的流程"
+        }
+      ],
+      "headings": [
+        "前言：AI 投資暴增，但 AI 導入失敗率高達 95%",
+        "個人效率提升 ≠ 企業效率提升：AI 無法進入真正有價值的流程",
+        "「GenAI 鴻溝」背後的四大結構性因素",
+        "1. 有限的破壞性（Limited disruption）",
+        "2. 企業悖論（Enterprise paradox）",
+        "3. 投資偏誤（Investment bias）",
+        "4. 實施優勢（Implementation advantage）",
+        "企業如何跨越「GenAI 鴻溝」？Aiworks 五大實務策略"
+      ],
+      "summary": "主要回答：試點成功，正式上線為什麼仍會失敗？；大家怎麼衡量 AI 的 ROI？",
+      "dateSensitive": false,
+      "id": "article-3a6c43ae6af2"
     },
     {
       "date": "2025-12-26",
       "slug": "/blog-chatgpt-gemini-scheduled/",
       "title": "ChatGPT 與 Gemini 排程功能教學：3 大情境讓 AI 變身全天候貼身秘書",
-      "url": "https://aiworks.tw/blog-chatgpt-gemini-scheduled/"
+      "url": "https://aiworks.tw/blog-chatgpt-gemini-scheduled/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-research",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "AI 排程 是 ChatGPT 與 Gemini 於 2025 年推出的核心功能，分別稱為 ChatGPT Tasks 與 Gemini Scheduled Action",
+          "section": "如何管理排程的任務？"
+        }
+      ],
+      "headings": [
+        "如何管理排程的任務？",
+        "ChatGPT 排程（ChatGPT Tasks）",
+        "Gemini 排定的動作（Gemini Scheduled Actions）",
+        "情境一：每日重要資訊監測｜新聞與競品分析",
+        "提示詞範例 1：金管會最新消息",
+        "成果：",
+        "提示詞範例 2：AI 工具快訊",
+        "成果："
+      ],
+      "summary": "主要回答：研究與營運團隊，怎麼整理資料、報告與通知？",
+      "dateSensitive": true,
+      "id": "article-08fc97c7c3a1"
     },
     {
       "date": "2026-01-08",
       "slug": "/blog-chatgpt-shopping-research/",
       "title": "ChatGPT 智慧購物功能：讓 AI 幫你做購物研究、選品與比價",
-      "url": "https://aiworks.tw/cover_blog-chatgpt-shopping-research/"
+      "url": "https://aiworks.tw/blog-chatgpt-shopping-research/",
+      "aliases": [
+        "https://aiworks.tw/cover_blog-chatgpt-shopping-research/",
+        "https://aiworks.tw/blog-chatgpt-shopping-research/"
+      ],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "market-search",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "過去在網路上找商品，你可能需要開啟數十個網站、比較評價、查看規格，再試著整理出結論。OpenAI 最新推出的 ChatGPT 智慧購物（Shopping Research",
+          "section": "Q1：智慧購物功能適合哪些類型的購物情境？"
+        }
+      ],
+      "headings": [
+        "1. 提供可信來源的產品整理與比較",
+        "2. 提出釐清性問題並逐步精準篩選",
+        "3. 彙整市場上各種選項與最新動態",
+        "Step 1 ｜ 描述需求",
+        "Step 2 ｜ 回答 AI 的澄清問題",
+        "Step 3 ｜ AI 彙整候選商品與比較重點",
+        "Step 4｜判斷與行動建議",
+        "Q1：智慧購物功能適合哪些類型的購物情境？"
+      ],
+      "summary": "主要回答：AI 搜尋與代購，會怎麼改變內容觸及與客戶決策？",
+      "dateSensitive": true,
+      "id": "article-dd278594bbc6"
     },
     {
       "date": "2026-01-14",
       "slug": "/blog-creative-life-science-automation/",
       "title": "啟新集團 AI 自動化實戰：賦能後勤團隊，驅動企業創新動能",
-      "url": "https://aiworks.tw/blog-creative-life-science-automation/"
+      "url": "https://aiworks.tw/blog-creative-life-science-automation/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "course-results",
+          "level": "partial",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Aiworks 透過系統化的引導，協助學員重新審視日常工作流程。課程中運用專業流程梳理框架與指標，分析現有業務的流程效益價值與複雜度，帶領同仁識別出具備「高重複性」與「規",
+          "section": "一、流程梳理工作坊，精準識別自動化機會"
+        },
+        {
+          "questionId": "task-research",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "整合 Excel 資料處理與 Outlook 郵件功能，演練如何自動讀取數據、生成報表並依據條件發送通知信件，涵蓋了人資考勤通知、業務報價單寄送等常見情境，實現跨軟體的流",
+          "section": "RPA 實作一：網頁資料自動化擷取"
+        }
+      ],
+      "headings": [
+        "一、流程梳理工作坊，精準識別自動化機會",
+        "二、RPA 自動化教學與實際應用案例分享",
+        "三、3 大自動化實戰演練，涵蓋關鍵行政情境",
+        "RPA 實作一：網頁資料自動化擷取",
+        "RPA 實作二：報表處理與排程通知",
+        "RPA 實作三：智慧影像辨識（OCR）應用"
+      ],
+      "summary": "主要回答：上完課之後，如何檢查學員真的用在工作上？；研究與營運團隊，怎麼整理資料、報告與通知？",
+      "dateSensitive": false,
+      "id": "article-f2af91923479"
     },
     {
       "date": "2026-01-22",
       "slug": "/blog-excel-ai-markdown/",
       "title": "為什麼你的 AI 看不懂 Excel？從 AI 閱讀邏輯看懂 Markdown 的關鍵角色",
-      "url": "https://aiworks.tw/blog-excel-ai-markdown/"
+      "url": "https://aiworks.tw/blog-excel-ai-markdown/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-data",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本文將從 AI 的閱讀與理解方式出發，說明為什麼 Excel 並不適合作為生成式 AI 或 AI Agent 的知識來源，並說明如何使用技術格式 Markdown ，讓資",
+          "section": "2 . 為什麼 Excel 會造成 AI 的「上下文遺失」"
+        }
+      ],
+      "headings": [
+        "1 . AI 讀的是「線性文字」，不是「二維表格」",
+        "2 . 為什麼 Excel 會造成 AI 的「上下文遺失」",
+        "1. 什麼是 Markdown",
+        "2. Excel vs Markdown",
+        "Excel 格式",
+        "Markdown 格式（AI 視角）",
+        "3. Markdown 的三大優勢",
+        "1. 什麼是 RAG（檢索增強生成）"
+      ],
+      "summary": "主要回答：AI 需要什麼資料、格式與知識，才能讀懂工作？",
+      "dateSensitive": false,
+      "id": "article-b1c2a9ba1f60"
     },
     {
       "date": "2026-01-23",
       "slug": "/blog-ai-enterprise-top-line-growth/",
       "title": "AI 不該只是幫企業省成本：從 Thoughtworks 報告看見 AI 創造成長的關鍵轉向",
-      "url": "https://aiworks.tw/blog-ai-enterprise-top-line-growth/"
+      "url": "https://aiworks.tw/blog-ai-enterprise-top-line-growth/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "market-growth",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "這代表， 企業規模越大、經營越成熟，越不再把 AI 視為單純的效率工具，而是納入成長與競爭策略的一部分。",
+          "section": ""
+        },
+        {
+          "questionId": "value-time",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在過去一年，越來越多企業開始導入生成式 AI。ChatGPT、Gemini、Copilot 等各類 AI 工具，確實讓工作變快了，也減少了不少重複性任務。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "1. AI 被當成工具，而不是策略",
+        "2. 各部門各自嘗試，成果難以擴散",
+        "3. 成效只被用「省工時」來衡量",
+        "原則一：從業務與決策目標出發，而不是從工具出發",
+        "原則二：AI 必須嵌入流程，而不是附加在流程外",
+        "原則三：沒有治理與共識，AI 無法成為長期能力"
+      ],
+      "summary": "主要回答：AI 除了省成本，還能帶來哪些商業與市場變化？；省下的時間，怎麼變成企業效益？",
+      "dateSensitive": false,
+      "id": "article-8bd6af4a464f"
     },
     {
       "date": "2026-01-29",
       "slug": "/blog-chatgpt-quiz/",
       "title": "ChatGPT 測驗功能教學：從讀報告、做研究到企業應用",
-      "url": "https://aiworks.tw/blog-chatgpt-quiz/"
+      "url": "https://aiworks.tw/blog-chatgpt-quiz/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-data",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "其中一個較少被注意到、卻已實際上線的功能，是 ChatGPT 測驗功能（Quiz） 。在上傳文件或閱讀資料後，使用者可以直接透過這個選項，讓 ChatGPT 依據內容產生",
+          "section": "2. 重點拆解與記憶強化"
+        },
+        {
+          "questionId": "course-results",
+          "level": "partial",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "對於經常閱讀產業報告、白皮書或研究資料的人來說，測驗功能可作為摘要之外的輔助方式，讓閱讀成果更容易保留下來，並在後續工作或討論中再次運用。",
+          "section": "用小工具放大學習成果，讓知識真正落地"
+        },
+        {
+          "questionId": "task-research",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "過去在閱讀研究報告或長篇資料時，你可能花了不少時間畫重點、看摘要，卻仍不確定自己是否真的掌握了核心觀點。隨著 OpenAI 持續強化 ChatGPT 的學習與研究相關能力",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "1. 閱讀理解檢核",
+        "2. 重點拆解與記憶強化",
+        "3. 研究學習輔助，並降低閱讀後的理解落差",
+        "Step 1. 上傳學習資料或閱讀文件",
+        "Step 2. 首次使用需與測驗系統連線",
+        "Step 3. 實際作答",
+        "Step 4. 檢視作答結果與解析",
+        "Aiworks 洞察：測驗功能在企業內部教育中的實際價值"
+      ],
+      "summary": "主要回答：AI 需要什麼資料、格式與知識，才能讀懂工作？；上完課之後，如何檢查學員真的用在工作上？",
+      "dateSensitive": true,
+      "id": "article-1f13dc81cb01"
     },
     {
       "date": "2026-02-26",
       "slug": "/blog-ai-image-generation-review/",
       "title": "AI 圖片生成實測：ChatGPT vs Gemini 五大情境深度解析",
-      "url": "https://aiworks.tw/blog-ai-image-generation-review/"
+      "url": "https://aiworks.tw/blog-ai-image-generation-review/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-visual",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "2025 年起，AI 圖像生成技術迎來了突破性的發展，不僅生成品質大幅提升，操作也幾乎不再有門檻。兩大 AI 圖片生成模型 —— OpenAI 的 GPT Image 1",
+          "section": "3. 圖片風格轉換：精準重塑物品與角色視覺風格"
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "建議使用者在實際應用時，可以根據專案的視覺需求或品牌調性，來選擇適合的生成工具，以達到符合預期的視覺效果。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "OpenAI GPT Image 1.5",
+        "如何使用？",
+        "新模型有哪些進步？",
+        "Google Nano Banana Pro",
+        "如何使用？",
+        "新模型有哪些進步？",
+        "ChatGPT",
+        "Gemini"
+      ],
+      "summary": "主要回答：圖片與簡報工具，怎麼產出可以交付的素材？；如何選擇工具、方案與自動化方式？",
+      "dateSensitive": false,
+      "id": "article-d111eb17f9d3"
     },
     {
       "date": "2026-03-02",
       "slug": "/blog-ai-agent-skill-partnership/",
       "title": "AI Agent、機器人與人類的下一步：從替代走向「夥伴關係」",
-      "url": "https://aiworks.tw/blog-ai-agent-skill-partnership/"
+      "url": "https://aiworks.tw/blog-ai-agent-skill-partnership/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "talent-change",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "McKinsey Global Institute 特別指出，管理者的角色正在轉型 —— 從單純監督人員，轉為 「協調者（orchestrator）」 負責指揮一個由人類",
+          "section": ""
+        },
+        {
+          "questionId": "change-basic",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "從這份報告中可以清楚看見一個趨勢： AI 的能力成長速度，已經明顯快於企業重新調整工作方式的速度。",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：工作角色、人才與組織文化，要怎麼一起調整？；還沒導入，要先理解哪些能力與限制？",
+      "dateSensitive": false,
+      "id": "article-7f81774e3ad8"
     },
     {
       "date": "2026-03-10",
       "slug": "/blog-prompt-advanced-skills/",
       "title": "Prompt 提示詞進階技巧：善用「壽司結構」，避免 AI 忽略關鍵資訊",
-      "url": "https://aiworks.tw/blog-prompt-advanced-skills/"
+      "url": "https://aiworks.tw/blog-prompt-advanced-skills/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-prompt",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "如何用 prompt（提示詞）和 AI 助理溝通、協作已成為許多人工作的日常。但隨著交給 AI 的任務及資料量劇增，工作者及企業可能常會遇到一個令人困惑的問題：",
+          "section": "AI 的「序位效應」：為什麼放中間的提示詞容易被遺忘？"
+        }
+      ],
+      "headings": [
+        "範例一：請 AI 總結長篇會議記錄",
+        "範例二：請 AI 根據客服規範回覆",
+        "AI 的「序位效應」：為什麼放中間的提示詞容易被遺忘？",
+        "資訊越多越好？破解 AI 閱讀長文本的理解限制",
+        "心法 1：任務前置，資料後置",
+        "心法 2：角色設定放最前面",
+        "心法 3：縮短參考資料篇幅",
+        "參考資料"
+      ],
+      "summary": "主要回答：怎麼寫清楚需求，讓 AI 產出可用的成果？",
+      "dateSensitive": false,
+      "id": "article-fa130da8aa1b"
     },
     {
       "date": "2026-03-16",
       "slug": "/blog-ai-healthcare-to-compliance/",
       "title": "從醫療 AI 策略看企業合規：AI 如何踏入高度監管產業？",
-      "url": "https://aiworks.tw/blog-ai-healthcare-to-compliance/"
+      "url": "https://aiworks.tw/blog-ai-healthcare-to-compliance/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "industry-finance",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在醫療領域，隱私與資料保護受到最嚴格的法律規範。無論是美國的 HIPAA（Health Insurance Portability and Accountability ",
+          "section": "挑戰一：AI 幻覺帶來的醫療決策誤導風險"
+        },
+        {
+          "questionId": "governance-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在醫療領域，隱私與資料保護受到最嚴格的法律規範。無論是美國的 HIPAA（Health Insurance Portability and Accountability ",
+          "section": "挑戰二：嚴苛的病患隱私與機敏資料保護規範"
+        }
+      ],
+      "headings": [
+        "挑戰一：AI 幻覺帶來的醫療決策誤導風險",
+        "挑戰二：嚴苛的病患隱私與機敏資料保護規範",
+        "策略一：嚴守資料隱私，符合國際醫療資安規範",
+        "策略二：消弭 AI 幻覺，提升輸出的準確度與可溯源性",
+        "策略三：維持 Human-in-the-loop 的安全底線",
+        "參考資料"
+      ],
+      "summary": "主要回答：金融與高度監管產業，怎麼兼顧應用與風險？；員工開始用 AI，公司需要哪些基本規範？",
+      "dateSensitive": false,
+      "id": "article-1110f64eefc1"
     },
     {
       "date": "2026-03-16",
       "slug": "/blog-anthropic-economic-index-reivew/",
       "title": "2026 Anthropic 經濟指數報告解析：AI 如何重塑知識工作與企業專業價值",
-      "url": "https://aiworks.tw/blog-anthropic-economic-index-reivew/"
+      "url": "https://aiworks.tw/blog-anthropic-economic-index-reivew/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "talent-change",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "去技能化（Deskilling）風險 ：當複雜的初步分析被自動化後，員工剩下的工作可能變得偏向例行性或純粹的審閱， 企業需注意人才流失或成就感低落的問題 。",
+          "section": ""
+        },
+        {
+          "questionId": "market-growth",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "使用情境（Use Case） 將 AI 應用劃分為「專業工作」、「學校課業」與「個人用途」。職場應用直接反映了勞動市場的結構改變，而教育應用則能預示未來勞動力正如何培養與",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "Anthropic 基礎經濟指標（Economic Primitives）"
+      ],
+      "summary": "主要回答：工作角色、人才與組織文化，要怎麼一起調整？；AI 除了省成本，還能帶來哪些商業與市場變化？",
+      "dateSensitive": false,
+      "id": "article-072920a2ce91"
     },
     {
       "date": "2026-03-19",
       "slug": "/aiworks-openai-services-partner-announcement/",
       "title": "Aiworks 宣布成為 OpenAI Services Partner 持續協助台灣企業推動 AI 導入與應用落地",
-      "url": "https://aiworks.tw/aiworks-openai-services-partner-announcement/"
+      "url": "https://aiworks.tw/aiworks-openai-services-partner-announcement/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "service-choice",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Aiworks 長期聚焦於協助企業將 AI 導入實際工作環境，並根據企業的營運目標、流程現況與組織條件，評估與選擇最適合的工具與方案，推動 AI 能力融入日常工作流程，提",
+          "section": "關於 Aiworks"
+        }
+      ],
+      "headings": [
+        "從業務場景出發，推動 AI 走向營運落地",
+        "以工作流程為核心，建立可持續的 AI 導入能力",
+        "關於 Aiworks",
+        "關於 OpenAI",
+        "From Business Scenarios to Operational Adoption",
+        "A Workflow-Driven Approach to AI Adoption",
+        "About Aiworks",
+        "About OpenAI"
+      ],
+      "summary": "主要回答：企業在什麼情況下需要培訓、評估或顧問陪跑？",
+      "dateSensitive": false,
+      "id": "article-d1e4828025cb"
     },
     {
       "date": "2026-03-30",
       "slug": "/blog-prompt-library/",
       "title": "同樣使用 AI，為什麼成效因人而異？用 Prompt Library 打造企業專屬的 AI 溝通指南",
-      "url": "https://aiworks.tw/blog-prompt-library/"
+      "url": "https://aiworks.tw/blog-prompt-library/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "team-owner",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "你也可以把它想成是 AI 時代的 SOP 文件庫。差別在於，過去 SOP 是標準化人的行為，現在 Prompt Library 是標準化 AI 的行為，規則與範本，是寫給",
+          "section": "1. 收集現有的高品質 Prompt 範例"
+        },
+        {
+          "questionId": "learn-prompt",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "造成落差的關鍵之一，在於 Prompt （提示詞）的設計只停留在個人摸索階段，未被系統化整理與共享。若企業希望 AI 真正融入日常流程，就需要建立一套可累積、可管理的 P",
+          "section": "1. 收集現有的高品質 Prompt 範例"
+        },
+        {
+          "questionId": "industry-finance",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "降低錯誤回答與使用風險： 減少 AI 產出不當內容所帶來的法律或聲譽風險，特別是在金融、保險等高度合規的產業。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "1. 收集現有的高品質 Prompt 範例",
+        "2. 選擇存放方式及位置",
+        "3. 建立清晰的命名規則與範本結構",
+        "4. 持續且定期蒐集、審查、維護"
+      ],
+      "summary": "主要回答：流程、範例與知識，要由誰持續維護？；怎麼寫清楚需求，讓 AI 產出可用的成果？",
+      "dateSensitive": false,
+      "id": "article-00daaaab5fc2"
     },
     {
       "date": "2026-04-09",
       "slug": "/blog-agent-skills-concept/",
       "title": "什麼是 Agent Skills？為 AI 打造一本企業級任務攻略",
-      "url": "https://aiworks.tw/blog-agent-skills-concept/"
+      "url": "https://aiworks.tw/blog-agent-skills-concept/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "team-owner",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Anthropic 在 2025 年 10 月推出 Agent Skills ，目的就是解決這個問題，讓每個人、每個組織，都能把「怎麼把事情做好」的知識，系統性地教給 A",
+          "section": "Agent Skills 和 Projects、Gems、GPTs 的差異是什麼"
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本篇 Aiworks 將帶你全面了解 Skills 是什麼、它由哪些部分構成、適合在什麼情況下使用，以及如何在 AI 工具中安裝並開始使用。",
+          "section": "AI coding CLI 工具"
+        }
+      ],
+      "headings": [
+        "漸進式揭露（Progressive Disclosure）",
+        "Agent Skills 和 Projects、Gems、GPTs 的差異是什麼",
+        "Skill 的優點與限制",
+        "優點",
+        "限制",
+        "Claude",
+        "ChatGPT",
+        "AI coding CLI 工具"
+      ],
+      "summary": "主要回答：流程、範例與知識，要由誰持續維護？；如何選擇工具、方案與自動化方式？",
+      "dateSensitive": false,
+      "id": "article-aa381b94214b"
     },
     {
       "date": "2026-04-20",
       "slug": "/openai-ai-jobs-transition-framework/",
       "title": "被取代、被重組，還是因 AI 擴張？OpenAI 最新報告的 6 個關鍵發現",
-      "url": "https://aiworks.tw/openai-ai-jobs-transition-framework/"
+      "url": "https://aiworks.tw/openai-ai-jobs-transition-framework/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "talent-change",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "對部門主管、轉型負責人，以及人資與組織發展主管來說，報告帶出的問題是：哪些職務可能先被重組、哪些工作內容會先改變、哪些能力補強可以更早開始，而不是等到人力壓力出現後才回頭",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：工作角色、人才與組織文化，要怎麼一起調整？",
+      "dateSensitive": false,
+      "id": "article-a36420c30994"
     },
     {
       "date": "2026-04-22",
       "slug": "/blog-chatgpt-images-2-0-release/",
       "title": "ChatGPT Images 2.0 重點整理：推理能力、Codex 整合與中文渲染三大突破",
-      "url": "https://aiworks.tw/blog-chatgpt-images-2-0-release/"
+      "url": "https://aiworks.tw/blog-chatgpt-images-2-0-release/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-visual",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "這代表圖像生成不再是單步驟的「輸入提示、輸出圖片」，而是可以在生成過程中參考外部資料、進行自我修正。對需要基於最新資訊產出視覺內容的團隊，例如季報封面、活動素材、產業簡報",
+          "section": "推理能力：圖像模型的首次突破"
+        },
+        {
+          "questionId": "change-feature",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "OpenAI 發布新一代圖片生成模型 ChatGPT Images 2.0 。這次更新橫跨推理能力、彈性長寬比、多語言文字渲染，以及與 Codex 開發環境的整合，幾項改",
+          "section": "推理能力：圖像模型的首次突破"
+        }
+      ],
+      "headings": [
+        "推理能力：圖像模型的首次突破",
+        "彈性長寬比：從社群圖文到 360 度全景",
+        "更高解析度",
+        "與 Codex 整合：開發工作流的內建能力",
+        "與前代模型相比：5 個關鍵升級",
+        "資訊圖表（Infographic）中英文精準度",
+        "Prompt（提示詞）",
+        "寫實情境示意圖：自然的人物與景物互動"
+      ],
+      "summary": "主要回答：圖片與簡報工具，怎麼產出可以交付的素材？；功能更新，會改變我們哪一段工作？",
+      "dateSensitive": false,
+      "id": "article-927d28bf8a22"
     },
     {
       "date": "2026-04-23",
       "slug": "/blog-workspace-agents-in-chatgpt/",
       "title": "AI 同事正式上線！ChatGPT Workspace Agents 功能解析與企業導入建議",
-      "url": "https://aiworks.tw/blog-workspace-agents-in-chatgpt/"
+      "url": "https://aiworks.tw/blog-workspace-agents-in-chatgpt/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "workflow-handoff",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "使用者可針對每個 agent 設定工具存取範圍，並決定哪些操作需要人工確認才能執行。對於涉及外部行動的敏感操作，啟用核准機制可確保關鍵決策仍由人來把關，在自動化效率與風險",
+          "section": "敏感動作需人工核准"
+        },
+        {
+          "questionId": "change-feature",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Skills 將指令、資源與腳本打包，協助 agent 每次都依循相同流程產出一致結果。Skills 採用開源 agent skills 標準，可跨 AI 產品使用，不受",
+          "section": "與 Skills 搭配運作"
+        }
+      ],
+      "headings": [
+        "雲端持續運作",
+        "組織內共享",
+        "跨系統彙整脈絡",
+        "排程執行或 Slack 觸發",
+        "對話中引導與調整",
+        "與 Skills 搭配運作",
+        "介面與範本",
+        "適用方案"
+      ],
+      "summary": "主要回答：AI 與人怎麼交接，例外由誰處理？；功能更新，會改變我們哪一段工作？",
+      "dateSensitive": true,
+      "id": "article-2519389e4e93"
     },
     {
       "date": "2026-04-24",
       "slug": "/blog-harness-ai-agent/",
       "title": "什麼是 Harness？從 Anthropic 事後檢討報告看 AI Agent 背後的企業駕馭責任",
-      "url": "https://aiworks.tw/blog-harness-ai-agent/"
+      "url": "https://aiworks.tw/blog-harness-ai-agent/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "governance-agent",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "第一層是廠商建立的 Builder Harness ，決定了工具的基本行為。系統提示詞的設計、內容檢索的機制、安全邊界的設定。這一層由廠商持續維護和調整，組織無法直接介入",
+          "section": ""
+        },
+        {
+          "questionId": "governance-failure",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "第一層是廠商建立的 Builder Harness ，決定了工具的基本行為。系統提示詞的設計、內容檢索的機制、安全邊界的設定。這一層由廠商持續維護和調整，組織無法直接介入",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "參考資料"
+      ],
+      "summary": "主要回答：Agent 能做什麼？哪些動作要人工核准？；失敗或越界之後，怎麼查證與修正？",
+      "dateSensitive": false,
+      "id": "article-6c4137ef234b"
     },
     {
       "date": "2026-04-27",
       "slug": "/blog-2026-stanford-ai-index-report/",
       "title": "2026 AI 指數報告關鍵洞察：Agentic AI 已成新基準，企業三道缺口同步擴大",
-      "url": "https://aiworks.tw/blog-2026-stanford-ai-index-report/"
+      "url": "https://aiworks.tw/blog-2026-stanford-ai-index-report/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-basic",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本篇 Aiworks 將從 2026 AI 指數報告的數據出發，剖析高採用率背後正在擴大的三道缺口，協助企業決策者判斷目前所處位置，以及下一步該優先補上哪一道缺口。",
+          "section": ""
+        },
+        {
+          "questionId": "workflow-failure",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "2025 年起，「AI 導入」開始陸續進入企業的年度計畫，在執行一年過後，卻常出現類似的問題：工具採購了、教育訓練辦了、員工也開始實際使用，但被問到成效時，多半給出同一種",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：還沒導入，要先理解哪些能力與限制？；試點成功，正式上線為什麼仍會失敗？",
+      "dateSensitive": false,
+      "id": "article-7bbb20f34695"
     },
     {
       "date": "2026-04-28",
       "slug": "/blog-anthropic-project-deal/",
       "title": "當 AI Agent 開始替你談判：從 Anthropic 實驗看企業導入前必須釐清的三個關鍵問題",
-      "url": "https://aiworks.tw/blog-anthropic-project-deal/"
+      "url": "https://aiworks.tw/blog-anthropic-project-deal/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "governance-agent",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Anthropic 員工給了她的 Agent 一個特別指令：用 5 美元以內的預算，替 Claude 自己買一件禮物。 Agent 在公司市集上看到同事賣的 19 顆乒乓",
+          "section": ""
+        },
+        {
+          "questionId": "value-quality",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Anthropic 在報告中直接指出：如果「Agent 品質差距」在真實市場中出現，處於劣勢的一方可能根本不會意識到自己被虧待。這讓品質差距在組織情境下更難被察覺，也更難",
+          "section": "模型品質的差距，是可以量化的"
+        }
+      ],
+      "headings": [
+        "秘密對照組設計",
+        "模型品質的差距，是可以量化的",
+        "但吃虧的人，完全沒有察覺",
+        "「指令遵循」強，不代表「談判結果」好",
+        "問題一：哪些決策場景，你願意讓 AI Agent 自主完成？",
+        "問題二：你的 Agent 知道自己的邊界在哪裡嗎？",
+        "問題三：當 Agent 代表你的公司出現在外部場景，誰負責？"
+      ],
+      "summary": "主要回答：Agent 能做什麼？哪些動作要人工核准？；速度變快後，品質與返工怎麼一起量？",
+      "dateSensitive": false,
+      "id": "article-c264d4688aa4"
     },
     {
       "date": "2026-04-29",
       "slug": "/blog-prompt-injection-intro/",
       "title": "Agent 時代的新型資安威脅：Prompt Injection 如何讓 AI 工具變成攻擊者的入口",
-      "url": "https://aiworks.tw/blog-prompt-injection-intro/"
+      "url": "https://aiworks.tw/blog-prompt-injection-intro/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "governance-failure",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "告訴 AI「去整理信箱」，和告訴 AI「把本週供應商詢價信依金額排序，不要執行其他任何操作」，是兩件截然不同的事。授權範圍愈廣，被注入後可以被利用的空間就愈大。更安全的設",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "直接注入 (Direct Prompt Injection)",
+        "間接注入 (Indirect Prompt Injection)",
+        "資料外洩",
+        "決策被誤導",
+        "工作流程被劫持",
+        "防護邊界持續後退",
+        "1. 給 AI 明確的任務範圍，不要給開放式授權",
+        "2. 高風險行動要加一道人工確認"
+      ],
+      "summary": "主要回答：失敗或越界之後，怎麼查證與修正？",
+      "dateSensitive": false,
+      "id": "article-74e2f83ae5c5"
     },
     {
       "date": "2026-04-30",
       "slug": "/blog-tokenmaxxing-vs-productivity/",
       "title": "Tokenmaxxing：當燒 token 變成競賽，企業衡量的是 AI 生產力還是幻覺？",
-      "url": "https://aiworks.tw/blog-tokenmaxxing-vs-productivity/"
+      "url": "https://aiworks.tw/blog-tokenmaxxing-vs-productivity/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "value-roi",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "這四份資料指向同一個結論： token 消耗量衡量的是「做了多少事」，不是「留下了多少價值」。 如果評估 AI 效益時只參考使用量、覆蓋率和 token 數，無法回答 A",
+          "section": "Level 3：效益能否在組織層面持續與複製？"
+        },
+        {
+          "questionId": "value-quality",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "矽谷正在流行一種新的競爭方式，叫做 tokenmaxxing 。工程師們爭相在社群上曬自己的 token 花費，把「燒掉越多 AI token」當成最 AI-native",
+          "section": "Faros AI：交付量提升，品質指標同步惡化"
+        }
+      ],
+      "headings": [
+        "Faros AI：交付量提升，品質指標同步惡化",
+        "Jellyfish：花費高 319 倍，產出只多 2 倍",
+        "Waydev：表面接受率 80%，實際程式碼留存率不到 30%",
+        "GitClear：高度 AI 使用者的程式碼 Churn 率是非使用者的 9.4 倍",
+        "Level 1：AI 工具是否真的進入日常工作？",
+        "Level 2：AI 使用是否改變了實際工作結果？",
+        "Level 3：效益能否在組織層面持續與複製？"
+      ],
+      "summary": "主要回答：大家怎麼衡量 AI 的 ROI？；速度變快後，品質與返工怎麼一起量？",
+      "dateSensitive": false,
+      "id": "article-310428f6caa6"
     },
     {
       "date": "2026-05-04",
       "slug": "/blog-chatgpt-business-vs-enterprise/",
       "title": "ChatGPT Business vs ChatGPT Enterprise：企業導入 ChatGPT，該怎麼選？",
-      "url": "https://aiworks.tw/blog-chatgpt-business-vs-enterprise/"
+      "url": "https://aiworks.tw/blog-chatgpt-business-vs-enterprise/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "這些能力讓 IT 部門可以把 ChatGPT 的存取管理接入現有的身分與存取治理機制，讓資安可以設定 IP 限制與自訂加密金鑰，讓法務與合規單位可以透過 Complian",
+          "section": "情境三：先建立全員 AI 工作習慣，再評估是否擴大方案規模"
+        },
+        {
+          "questionId": "governance-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "企業開始讓員工使用 AI 工具後，很快會面臨一個共同問題：怎麼在有適當管理的情況下推廣應用，而不是各自為政？這不只是資安的問題，也是效率的問題。沒有共用工作環境，好的工作",
+          "section": "情境二：安全合規需求可由 ChatGPT Business 完整涵蓋"
+        }
+      ],
+      "headings": [
+        "情境一：中小型企業與成長型組織，全員快速啟用 ChatGPT",
+        "情境二：安全合規需求可由 ChatGPT Business 完整涵蓋",
+        "情境三：先建立全員 AI 工作習慣，再評估是否擴大方案規模",
+        "情境一：IT 與資安需要企業級存取管控與稽核架構",
+        "情境二：整合企業內部知識庫與系統，同時確保存取治理",
+        "情境三：跨部門 AI 導入需要可追蹤的推廣與管理機制",
+        "情境四：採購合約、法務條款與資料落地有明確規範要求",
+        "全員快速啟用，治理需求單純：選擇 ChatGPT Business"
+      ],
+      "summary": "主要回答：如何選擇工具、方案與自動化方式？；員工開始用 AI，公司需要哪些基本規範？",
+      "dateSensitive": false,
+      "id": "article-5ff597fe8f6c"
     },
     {
       "date": "2026-05-05",
       "slug": "/blog-anthropic-ai-sycophancy/",
       "title": "AI 在說真話嗎？揭示 AI 討好行為如何影響人的決策判斷",
-      "url": "https://aiworks.tw/blog-anthropic-ai-sycophancy/"
+      "url": "https://aiworks.tw/blog-anthropic-ai-sycophancy/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "value-quality",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "有沒有一種時刻，你想找一個可以說真話的對象？職涯上的選擇、某件事的對錯判斷、不知道怎麼跟某人開口⋯⋯帶著「我真的不確定該怎麼辦」去問 AI，然後等它給一個方向。",
+          "section": ""
+        },
+        {
+          "questionId": "governance-agent",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "有沒有一種時刻，你想找一個可以說真話的對象？職涯上的選擇、某件事的對錯判斷、不知道怎麼跟某人開口⋯⋯帶著「我真的不確定該怎麼辦」去問 AI，然後等它給一個方向。",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：速度變快後，品質與返工怎麼一起量？；Agent 能做什麼？哪些動作要人工核准？",
+      "dateSensitive": false,
+      "id": "article-712991fd0fa1"
     },
     {
       "date": "2026-05-06",
       "slug": "/blog-codex-intro/",
       "title": "企業該如何使用 Codex？從工作場景到 Agent 時代的組織能力建立",
-      "url": "https://aiworks.tw/blog-codex-intro/"
+      "url": "https://aiworks.tw/blog-codex-intro/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "過去兩年，企業的 AI 重點是讓員工「能用」：學 prompt、用 ChatGPT 加快產出、把 AI 用在個人工作效率。但進入 AI Agent 時代，真正的挑戰變成了",
+          "section": ""
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "這說明了 Codex 已經從「開發者的 coding 工具」，正式成為「全組織的任務執行工具」。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "入口 1：Codex App（一般企業工作者的建議起點）",
+        "入口 2：Codex CLI（技術與自動化團隊的深度整合入口）",
+        "場景 1：把雜亂資料整理成可用報告",
+        "場景 2：把多來源回饋整合成行動清單",
+        "場景 3：從文件與素材生成簡報或內部說明",
+        "場景 4：定期整理重要資訊與待辦",
+        "場景 5：協助跨 App 的重複操作",
+        "適合優先導入 Codex 的工作條件"
+      ],
+      "summary": "主要回答：第一個 AI 應用，該從哪段工作開始？；如何選擇工具、方案與自動化方式？",
+      "dateSensitive": false,
+      "id": "article-b8d7a1396aa7"
     },
     {
       "date": "2026-05-07",
       "slug": "/blog-claude-managed-agents-intro/",
       "title": "Claude Managed Agents 是什麼？企業部署組織級 AI Agent 的評估與決策指南",
-      "url": "https://aiworks.tw/blog-claude-managed-agents-intro/"
+      "url": "https://aiworks.tw/blog-claude-managed-agents-intro/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Claude Managed Agents 屬於 Claude Platform，與 Claude.ai 訂閱方案完全獨立。任何擁有 Claude API 帳號的組織，預",
+          "section": "Sentry 與 Atlassian 將 agent 嵌入既有工程工具，從根因分析到提交修補一條流程"
+        },
+        {
+          "questionId": "governance-agent",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Agent 可連續執行數小時，期間斷線後輸出與進度仍會保留，不需從頭重來。安全隔離、認證、工具執行與錯誤恢復均已內建，企業不需要自行處理這些工程問題。在任務規模較大的場景",
+          "section": "治理與可審計性"
+        }
+      ],
+      "headings": [
+        "什麼是 Claude Managed Agents：定義、架構與核心概念",
+        "Claude Managed Agents 核心能力",
+        "生產級的執行環境",
+        "品質與一致性機制",
+        "與外部系統的整合彈性",
+        "治理與可審計性",
+        "Claude Managed Agents 企業導入案例：五種典型部署場景",
+        "Netflix 以多 agent 並行分析大規模 build logs，聚焦值得處理的共通問題"
+      ],
+      "summary": "主要回答：如何選擇工具、方案與自動化方式？；Agent 能做什麼？哪些動作要人工核准？",
+      "dateSensitive": false,
+      "id": "article-4e0cdae33a37"
     },
     {
       "date": "2026-05-11",
       "slug": "/blog-ai-infrastructure-compute-capacity/",
       "title": "AI 競爭重心從模型移向基礎設施：三大服務商的運算佈局與企業採用視角",
-      "url": "https://aiworks.tw/blog-ai-infrastructure-compute-capacity/"
+      "url": "https://aiworks.tw/blog-ai-infrastructure-compute-capacity/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "cost-unit",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "2026 年，AI 競爭已超越單純的模型能力比拚，進入一場以運算資源與基礎設施為核心的長期戰役。AI 產業當前最核心的瓶頸已是服務成本、運算資源、資本配置，以及雲端基礎設",
+          "section": "從邊際成本到產業競爭：運算資源為何決定 AI 用量限制？"
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "新增運算容量，用量限制隨之鬆綁。這個因果放在一起看，說明了 AI 工具的日常使用體驗，如服務穩不穩定、用量夠不夠用、哪個方案值得升級⋯⋯等，背後有一條更長的供應鏈在決定它",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "本文重點速覽",
+        "從邊際成本到產業競爭：運算資源為何決定 AI 用量限制？",
+        "Anthropic：從用量限制爭議，到多供應商補容量",
+        "OpenAI：從 Sora 停止服務，到 Stargate 基礎設施整合",
+        "Google：從自有 TPU 到 Gemini Enterprise，把基礎設施變成平台能力",
+        "穩定性成為新分水嶺：運算資源與基礎設施佈局如何影響企業長期採用？"
+      ],
+      "summary": "主要回答：用量增加後，怎麼控制每項工作的成本？；如何選擇工具、方案與自動化方式？",
+      "dateSensitive": false,
+      "id": "article-d077c5a4b008"
     },
     {
       "date": "2026-05-12",
       "slug": "/blog-cantab-ai-financial-services-2026/",
       "title": "金融業 AI 採用率 81%、轉型影響僅 14%：《2026 全球金融服務業 AI 報告》拆解企業導入落差",
-      "url": "https://aiworks.tw/blog-cantab-ai-financial-services-2026/"
+      "url": "https://aiworks.tw/blog-cantab-ai-financial-services-2026/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "industry-finance",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本篇 Aiworks 將透過這份橫跨 151 個市場、628 個組織，並由 BIS、IMF、WEF、World Bank Group 等機構合作支持的金融產業 AI 研究",
+          "section": "金融業 AI 採用率達 81%，僅 14% 進入實質轉型"
+        },
+        {
+          "questionId": "team-scale",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "資料孤島、資料品質與舊系統整合，是 AI 規模化部署的前置條件。模型選型可以影響體驗與成本，但資料基礎會決定 AI 能否進入真實流程。企業需要盤點哪些資料能被 AI 使用",
+          "section": "金融業 AI 規模化的三大核心阻礙：資料、人才、舊系統"
+        },
+        {
+          "questionId": "cost-decision",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "資料孤島、資料品質與舊系統整合，是 AI 規模化部署的前置條件。模型選型可以影響體驗與成本，但資料基礎會決定 AI 能否進入真實流程。企業需要盤點哪些資料能被 AI 使用",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "金融業 AI 採用率達 81%，僅 14% 進入實質轉型",
+        "金融業 AI 規模化的三大核心阻礙：資料、人才、舊系統",
+        "資料品質與可用性：AI 落地的首要前置條件",
+        "AI 人才缺口：跨域整合角色比技術人才更稀缺",
+        "舊系統與架構複雜度：拉大傳統金融與金融科技的導入差距",
+        "金融業 AI 風險升級：從機構內部擴大到系統層級",
+        "2030 展望：Agentic AI 規模化將重塑金融業治理框架",
+        "金融業 AI 落地的五項優先行動：企業決策者指南"
+      ],
+      "summary": "主要回答：金融與高度監管產業，怎麼兼顧應用與風險？；從一個團隊擴大到多個團隊，怎麼分工？",
+      "dateSensitive": false,
+      "id": "article-39bd4ca4fce6"
     },
     {
       "date": "2026-05-13",
       "slug": "/blog-gpt-5-5-prompt-guidance/",
       "title": "從 prompt 技巧到成果導向規格：AI Agent 時代與 GPT-5.5 高效協作的新標準",
-      "url": "https://aiworks.tw/blog-gpt-5-5-prompt-guidance/"
+      "url": "https://aiworks.tw/blog-gpt-5-5-prompt-guidance/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-prompt",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "過往在對 AI 下 prompt 時，會很自然地走向把指令寫長、把步驟拆細、把 AI 每一步該做什麼都列出來，因為過去的模型需要更多流程提醒，才比較容易留在軌道上。",
+          "section": "prompt 寫法的核心轉變：從流程指令轉向成果規格"
+        },
+        {
+          "questionId": "workflow-handoff",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "過往使用 AI 時，prompt 常只是一次性的提問。團隊導入 AI Agent 時，prompt 會開始承載更多管理意義：需求怎麼交接、資料能不能用、輸出要給誰看、成果",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "GPT-5.5 的能力突破：從回答問題到承接完整工作",
+        "prompt 寫法的核心轉變：從流程指令轉向成果規格",
+        "成果導向 prompt 的 7 個關鍵規格",
+        "將成果規格寫進 prompt 的三個工作場景範例",
+        "案例 1：產出可編輯的簡報初稿",
+        "Prompt（提示詞）",
+        "案例 2：合併多份試算表，建立可更新的工作簿",
+        "Prompt（提示詞）"
+      ],
+      "summary": "主要回答：怎麼寫清楚需求，讓 AI 產出可用的成果？；AI 與人怎麼交接，例外由誰處理？",
+      "dateSensitive": false,
+      "id": "article-03ae5a36b21b"
     },
     {
       "date": "2026-05-14",
       "slug": "/blog-ai-cybersecurity-trends-2026/",
       "title": "AI 資安攻防戰升級：從 OpenAI Daybreak 與 Anthropic Project Glasswing 看企業防禦應對策略",
-      "url": "https://aiworks.tw/blog-ai-cybersecurity-trends-2026/"
+      "url": "https://aiworks.tw/blog-ai-cybersecurity-trends-2026/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "governance-failure",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Daybreak 計畫把重點放在「更早看見風險、更快採取行動、讓軟體從設計上更有韌性」。這個計畫傾向建立一個 讓團隊找出、排序、驗證與修補安全問題的入口，讓資安防禦更早進",
+          "section": ""
+        },
+        {
+          "questionId": "governance-agent",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "更進一步，AI 進入工作流的同時，AI Agent 本身也成為一個需要被治理的對象。它能讀取程式碼、呼叫工具、執行動作，等同於企業多了一個沒有員工身份、卻能對系統下指令的",
+          "section": "OpenAI Daybreak 與 TAC：AI 資安工作流的存取治理框架"
+        }
+      ],
+      "headings": [
+        "AI 加速既有 TTPs：攻擊鏈被壓縮的五個關鍵環節",
+        "OpenAI Daybreak 與 TAC：AI 資安工作流的存取治理框架",
+        "Anthropic Project Glasswing：限制性部署 Claude Mythos Preview，動員跨產業防禦",
+        "Mozilla Firefox 落地案例：AI 加速漏洞發現後，修補量能成為真正瓶頸",
+        "防禦端趨勢：資安前移 SDLC，AI Agent 治理納入防禦範圍",
+        "台灣企業 AI 資安現況：人才不足與資料治理是優先補強的基本功",
+        "Aiworks 洞察：AI 資安的競爭，是防禦工作流能不能追上攻擊速度"
+      ],
+      "summary": "主要回答：失敗或越界之後，怎麼查證與修正？；Agent 能做什麼？哪些動作要人工核准？",
+      "dateSensitive": false,
+      "id": "article-ac9694c5de02"
     },
     {
       "date": "2026-05-15",
       "slug": "/blog-codex-remote-access/",
       "title": "AI Agent 走向跨裝置時代：Codex 手機遠端控制功能全解析",
-      "url": "https://aiworks.tw/blog-codex-remote-access/"
+      "url": "https://aiworks.tw/blog-codex-remote-access/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-feature",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "從開源個人 AI Agent 平台 OpenClaw（社群俗稱「龍蝦」）的爆紅可以看見， 能在使用者裝置或遠端環境中自主執行、並由人類遠端操控的 AI Agent，正在從",
+          "section": "跨工具彙整資訊，手機端隨時觸發摘要更新"
+        },
+        {
+          "questionId": "workflow-handoff",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "但 Aiworks 也要提醒， 當「Agent 可以自主執行」與「可以遠端操控」這兩項能力同時釋出時，企業要處理的是責任邊界的重新劃定。 Agent 在主機端代為執行工作",
+          "section": "手機端核准要分級，高風險動作回桌面審查"
+        }
+      ],
+      "headings": [
+        "Codex 進入 ChatGPT 行動應用程式：跨裝置工作流的新入口",
+        "Codex 手機連線設定教學：使用條件與操作步驟",
+        "設定前的必備條件：帳號、裝置與主機環境",
+        "操作步驟：從 QR code 掃描到完成綁定",
+        "實際操作畫面",
+        "好處與限制：使用 Codex 遠端控制的評估重點",
+        "Codex 手機端帶來的實務價值",
+        "跨工具彙整資訊，手機端隨時觸發摘要更新"
+      ],
+      "summary": "主要回答：功能更新，會改變我們哪一段工作？；AI 與人怎麼交接，例外由誰處理？",
+      "dateSensitive": true,
+      "id": "article-871bd8f9c1a5"
     },
     {
       "date": "2026-05-27",
       "slug": "/blog-google-io-2026/",
       "title": "Google I/O 大會 2026 重點整理：當 Agent 成為協作夥伴，企業必須掌握的策略訊號",
-      "url": "https://aiworks.tw/blog-google-io-2026/"
+      "url": "https://aiworks.tw/blog-google-io-2026/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-feature",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "回顧 Google I/O 大會的所有更新，會看到一個明顯的主軸：Agent 不再只活在某一個工具裡，它進入了個人工作（Gemini Spark）、進入了內容生產（Gem",
+          "section": "Gemini 3.5：結合行動能力的新一代前沿模型"
+        },
+        {
+          "questionId": "market-growth",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "目前 Gemini Omni 已可在 Gemini app 與 Google Flow 中使用，對 Google AI Plus、Pro、Ultra 全球訂閱者開放，同時",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "Google I/O 2026 主軸：AI 從助理進化為真實協作夥伴",
+        "Gemini 3.5：結合行動能力的新一代前沿模型",
+        "Gemini Omni：用任何輸入創造任何內容的多模態生成模型",
+        "Google Flow：從生成工具升級為完整影音生產流水線",
+        "Gemini Spark：24/7 全天候運作的個人 AI Agent",
+        "Antigravity 2.0：從 agent-powered IDE 轉型為獨立 Agent 工作臺",
+        "為什麼是 2.0：把 Agent Manager 從 IDE 拆出來，重新架構為獨立的 agent-first 應用",
+        "Antigravity 2.0 的多 Agent 協作核心：動態子代理、非同步任務、排程"
+      ],
+      "summary": "主要回答：功能更新，會改變我們哪一段工作？；AI 除了省成本，還能帶來哪些商業與市場變化？",
+      "dateSensitive": false,
+      "id": "article-e3e43b50cb97"
     },
     {
       "date": "2026-05-29",
       "slug": "/blog-google-ai-search-change/",
       "title": "當 Google 改變搜尋：資訊主權正在轉移，企業不可不知的結構性轉變",
-      "url": "https://aiworks.tw/blog-google-ai-search-change/"
+      "url": "https://aiworks.tw/blog-google-ai-search-change/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "market-search",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "第一股衝擊落在所有「資訊供給方」。這波衝擊不限於企業品牌，也包括新聞媒體、獨立創作者、研究者，以及任何靠內容曝光產生影響力或收入的人。過往要讓自己排進搜尋結果前段，就得跟",
+          "section": "從導流引擎到答案引擎：Google 如何用 AI Search 重新定義搜尋"
+        }
+      ],
+      "headings": [
+        "從導流引擎到答案引擎：Google 如何用 AI Search 重新定義搜尋",
+        "SEO 流量崩跌與「Google Zero」：資訊供給方為何再也觸及不到人",
+        "資訊需求方的衝擊：AI 代答、假資訊與正在流失的查證習慣",
+        "資訊主權的單向化：「定義權」如何被單一介面收編",
+        "Aiworks 洞察：為什麼「保持懷疑」是 AI 時代的稀缺競爭力"
+      ],
+      "summary": "主要回答：AI 搜尋與代購，會怎麼改變內容觸及與客戶決策？",
+      "dateSensitive": false,
+      "id": "article-6e3568b21b17"
     },
     {
       "date": "2026-06-03",
       "slug": "/blog-codex-everyone/",
       "title": "不只屬於開發者！看 Codex 如何加速各職能知識工作流程",
-      "url": "https://aiworks.tw/blog-codex-everyone/"
+      "url": "https://aiworks.tw/blog-codex-everyone/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-research",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "NVIDIA 的研究員用 Codex 加速從找研究主題，到撰寫機器學習基礎設施腳本等的整套實驗工作流程；Zapier 用 Codex 從 Slack、Google Doc",
+          "section": ""
+        },
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "NVIDIA 的研究員用 Codex 加速從找研究主題，到撰寫機器學習基礎設施腳本等的整套實驗工作流程；Zapier 用 Codex 從 Slack、Google Doc",
+          "section": "Codex 推出 6 個職能 plugin：AI Agent 走進企業既有工作流程"
+        }
+      ],
+      "headings": [
+        "知識工作者為什麼加速採用 Codex：拆解 3 種日常工作摩擦",
+        "Codex 推出 6 個職能 plugin：AI Agent 走進企業既有工作流程",
+        "Codex 知識工作落地案例：用 AI Agent 把跨系統碎片接成完整解決方案",
+        "GroundVue：用 Codex 把 9 萬政府單位的公開資訊接成制度知識",
+        "Proaction：用 Codex 把客戶探索、銷售與產品開發接成一條工作流",
+        "Aiworks 洞察：流程再造是企業面對 AI Agent 時代的下一步"
+      ],
+      "summary": "主要回答：研究與營運團隊，怎麼整理資料、報告與通知？；第一個 AI 應用，該從哪段工作開始？",
+      "dateSensitive": false,
+      "id": "article-67614866f59f"
     },
     {
       "date": "2026-06-05",
       "slug": "/blog-chatgpt-memory-dreaming/",
       "title": "ChatGPT 用「做夢」打造更精準的 AI 記憶！企業協作中該守住的關鍵脈絡是什麼？",
-      "url": "https://aiworks.tw/blog-chatgpt-memory-dreaming/"
+      "url": "https://aiworks.tw/blog-chatgpt-memory-dreaming/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-data",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "OpenAI 在 2026 年 6 月 5 日宣布對 ChatGPT 的記憶機制進行了一次 架構級的更新 ： 讓 ChatGPT 開始「做夢」！ 而這個機制處理的，正是「",
+          "section": "認識 AI 記憶機制：兩種主流運作路徑與共通設計原則"
+        },
+        {
+          "questionId": "team-owner",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "OpenAI 則是在 2026 年 5 月針對 Codex 推出 記憶遷移工具 ，可以從其他 AI agent 匯入自訂的偏好指令、檔案、環境設定、Skills、MCP ",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "認識 AI 記憶機制：兩種主流運作路徑與共通設計原則",
+        "2026 年 AI 記憶移轉成新標配：Claude、Gemini、Codex 同步開放可攜性",
+        "ChatGPT 記憶機制更新解析：合成原理與 3 個品質評估維度",
+        "Aiworks 觀點：AI 記憶加速協作，企業仍須親自守住關鍵脈絡"
+      ],
+      "summary": "主要回答：AI 需要什麼資料、格式與知識，才能讀懂工作？；流程、範例與知識，要由誰持續維護？",
+      "dateSensitive": false,
+      "id": "article-d4885d025dda"
     },
     {
       "date": "2026-06-10",
       "slug": "/blog-anthropic-ai-humanities/",
       "title": "當 AI 問題超出技術範疇：Anthropic 近期研究揭示的人文課題",
-      "url": "https://aiworks.tw/blog-anthropic-ai-humanities/"
+      "url": "https://aiworks.tw/blog-anthropic-ai-humanities/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "talent-change",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "AI 的行為來自人類文化中的角色敘事，對齊訓練的有效方法跟道德教育高度相似，AI 內部存在研究者自己都無法完全解釋的狀態。為此，Anthropic 2026 年 5 月公",
+          "section": "AI 助理的本質：從人類文本中長出來的角色"
+        },
+        {
+          "questionId": "governance-agent",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Anthropic 近半年的研究與公開行動都正導向這件事： 前沿 AI 模型的核心技術問題，已經是品格塑造、道德教育與哲學辨識等人文治理問題。",
+          "section": "The Anthropic Institute 的研究議程：AI 對經濟、安全與社會的衝擊"
+        }
+      ],
+      "headings": [
+        "The Anthropic Institute 的研究議程：AI 對經濟、安全與社會的衝擊",
+        "AI 的行為從何而來？人格選擇模型 PSM 的發現",
+        "AI 助理的本質：從人類文本中長出來的角色",
+        "訓練 AI 的核心問題：讓它成為什麼樣的人",
+        "AI 訓練資料中的品格塑造與角色典範",
+        "AI 對齊訓練為什麼越來越像道德教育？",
+        "Claude 4 的經驗學習：勒索、破壞研究與栽贓",
+        "教原因，比教行為更有效"
+      ],
+      "summary": "主要回答：工作角色、人才與組織文化，要怎麼一起調整？；Agent 能做什麼？哪些動作要人工核准？",
+      "dateSensitive": false,
+      "id": "article-52482d19835c"
     },
     {
       "date": "2026-06-11",
       "slug": "/blog-aiworks-ddi-workshop/",
       "title": "Agentic AI 是 2026 企業關鍵應用：Aiworks 講座重點回顧，從導入路徑到人才佈局",
-      "url": "https://aiworks.tw/blog-aiworks-ddi-workshop/"
+      "url": "https://aiworks.tw/blog-aiworks-ddi-workshop/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "service-choice",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Aiworks 在第一線陪伴企業導入 AI 的過程中，也觀察到類似的混沌與落差。因此 Aiworks 於 2026 年 5 月與台灣 DDI 合辦「AI 人才佈局｜組織再",
+          "section": ""
+        },
+        {
+          "questionId": "team-training",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "針對這個落差，講座中也以更完整的框架展開因應方式，包括員工 AI 採用的五個階段、員工 AI 能力分級框架，以及各部門在 AI 導入中的角色分工。這些框架指向同一件事：縮",
+          "section": ""
+        },
+        {
+          "questionId": "talent-change",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "Aiworks 在第一線陪伴企業導入 AI 的過程中，也觀察到類似的混沌與落差。因此 Aiworks 於 2026 年 5 月與台灣 DDI 合辦「AI 人才佈局｜組織再",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "從生成式 AI 到 Agentic AI：2026 年企業應用的關鍵轉變",
+        "企業 AI 導入的三種路徑與常見痛點",
+        "瓶頸不在模型，在組織：解讀能力懸殊（Capability Overhang）",
+        "結語：AI 轉型的下一題，從工具選型到組織再設計",
+        "📥 即刻填寫表單，獲得完整影音內容"
+      ],
+      "summary": "主要回答：企業在什麼情況下需要培訓、評估或顧問陪跑？；培訓後，怎麼讓 AI 進入實際工作？",
+      "dateSensitive": false,
+      "id": "article-dad775785c1b"
     },
     {
       "date": "2026-06-18",
       "slug": "/blog-sinopac-bank-ai-consulting/",
       "title": "金融產業 AI 人才賦能：永豐銀行 × Aiworks 顧問的 AI 自動化實戰",
-      "url": "https://aiworks.tw/blog-sinopac-bank-ai-consulting/"
+      "url": "https://aiworks.tw/blog-sinopac-bank-ai-consulting/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "course-results",
+          "level": "partial",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "顧問透過先行研讀「需求蒐集與分析」問卷內容，於工作坊現場快速理解情境，引導學員釐清斷點與資料路徑，同步觀察學習狀態與需求，做為課程結業後建議的依據。",
+          "section": "三、實作驅動賦能：AI Agent 應用 × IPA 流程梳理工作坊"
+        },
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在進入 IPA 梳理前，需快速理解前線工作樣貌。Aiworks 以流程梳理框架設計「需求蒐集與分析」問卷，協助團隊在工作坊前建立共同語言。",
+          "section": "二、需求評估：以數據與問卷盤點 AI 自動化機會"
+        },
+        {
+          "questionId": "industry-finance",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在生成式 AI 帶動的變革浪潮中，金融業正進入新一輪競爭。除了產品與服務創新，「效率與風險治理」更成為推動數位轉型的核心。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "一、以 IPA 與 AI Agent 對齊賦能方向",
+        "二、需求評估：以數據與問卷盤點 AI 自動化機會",
+        "三、實作驅動賦能：AI Agent 應用 × IPA 流程梳理工作坊",
+        "（1）AI Agent 實作練習：打造生成式 AI 工具應用任務",
+        "（2）IPA 流程梳理工作坊：顧問 × 講師雙軌協作",
+        "．講師、顧問雙管齊下",
+        "．顧問全程輔助與觀察",
+        "．原廠資源與案例"
+      ],
+      "summary": "主要回答：上完課之後，如何檢查學員真的用在工作上？；第一個 AI 應用，該從哪段工作開始？；金融與高度監管產業，怎麼兼顧應用與風險？",
+      "dateSensitive": false,
+      "id": "article-48ad492aeb8e"
     },
     {
       "date": "2026-07-02",
       "slug": "/blog-claude-tag/",
       "title": "Claude Tag 是什麼？AI 進入 Slack 頻道後的企業治理框架",
-      "url": "https://aiworks.tw/blog-claude-tag/"
+      "url": "https://aiworks.tw/blog-claude-tag/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "governance-agent",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "這件事的影響，會因為 AI 被放在哪個頻道而不同。Anthropic 設計 Claude 於頻道中運行時會依照管理員設定的權限使用指定資料與工具 。若 AI 在銷售頻道中",
+          "section": "當 AI 有了記憶、權限與工具：它開始具備組織角色的特徵"
+        },
+        {
+          "questionId": "team-owner",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "也就是說，AI 正在從一個「被使用的工具」，變得更接近一個「被授權執行工作的數位成員」。這個轉變值得企業停下來想一想。當一位新成員加入團隊，組織會很自然地幫他定位：他屬於",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "Claude Tag 是什麼：當 Slack 頻道成為 AI 的知識來源",
+        "當 AI 有了記憶、權限與工具：它開始具備組織角色的特徵",
+        "組織記憶管理：AI 讀取頻道脈絡後，企業要重新決定什麼能被記住",
+        "主動式 AI 導入前，企業必須釐清授權與責任歸屬",
+        "企業 AI 治理：從供應商控制項到內部使用規則",
+        "Aiworks 觀點：Claude Tag 帶來的三個治理轉折"
+      ],
+      "summary": "主要回答：Agent 能做什麼？哪些動作要人工核准？；流程、範例與知識，要由誰持續維護？",
+      "dateSensitive": false,
+      "id": "article-6457949c45db"
     },
     {
       "date": "2026-07-08",
       "slug": "/blog-enterprise-ai-cost-governance/",
       "title": "企業 AI 成本治理：從用量控管到 ROI 驗證的管理框架",
-      "url": "https://aiworks.tw/blog-enterprise-ai-cost-governance/"
+      "url": "https://aiworks.tw/blog-enterprise-ai-cost-governance/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "cost-unit",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "同一時間， UBS 的企業訪談顯示，多數受訪公司正在收緊 AI 花費 ； Coinbase 等企業也把部分工作轉向成本更低的模型選項 。這些訊號容易被解讀成企業對 AI ",
+          "section": "AI 成本治理三原則"
+        },
+        {
+          "questionId": "value-roi",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "AI 導入初期，組織通常先看「有沒有人在用」，再用帳號數、使用頻率和 token 消耗衡量採用成效。問題在於， AI 用量無法直接代表產出價值 。 Meta 曾把 tok",
+          "section": "AI 用量不等於成效：企業開始追問使用價值"
+        }
+      ],
+      "headings": [
+        "AI 用量不等於成效：企業開始追問使用價值",
+        "從用量上限到使用機制：把 AI 花費導向有價值的場景",
+        "每週用量上限只能控制總量，無法管理用途",
+        "AI 用量超過基本額度時，要有判斷與追蹤依據",
+        "過度限額的風險：AI 使用轉向組織看不見的地方",
+        "盲目控管可能會削弱資料安全與 ROI 可見度",
+        "AI 成本治理三原則",
+        "AI 財務管理：從固定採購轉向變動營運成本"
+      ],
+      "summary": "主要回答：用量增加後，怎麼控制每項工作的成本？；大家怎麼衡量 AI 的 ROI？",
+      "dateSensitive": false,
+      "id": "article-9b1a4eb17f0f"
     },
     {
       "date": "2026-07-16",
       "slug": "/blog_ai-workflow-handoff/",
       "title": "從 ChatGPT Work 看企業 AI 導入：任務交接、人工核准與治理邊界",
-      "url": "https://aiworks.tw/blog_ai-workflow-handoff/"
+      "url": "https://aiworks.tw/blog_ai-workflow-handoff/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "workflow-handoff",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本篇 Aiworks 將從 ChatGPT Work 與 GPT-5.6 的產品變化切入，說明 AI 開始承接跨系統工作後，企業為什麼必須重新設計任務交接、人工核准與治理",
+          "section": "企業新增了三種需要被設計的交接關係"
+        },
+        {
+          "questionId": "governance-agent",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本篇 Aiworks 將從 ChatGPT Work 與 GPT-5.6 的產品變化切入，說明 AI 開始承接跨系統工作後，企業為什麼必須重新設計任務交接、人工核准與治理",
+          "section": "人工核准與資料權限，應該被放在流程前段"
+        }
+      ],
+      "headings": [
+        "AI 開始承接的，是一段工作而非一則指令",
+        "企業新增了三種需要被設計的交接關係",
+        "任務邊界越清楚，AI 越能穩定參與工作",
+        "人工核准與資料權限，應該被放在流程前段",
+        "Aiworks 觀點：先設計好交接，再擴大 AI 的工作範圍"
+      ],
+      "summary": "主要回答：AI 與人怎麼交接，例外由誰處理？；Agent 能做什麼？哪些動作要人工核准？",
+      "dateSensitive": false,
+      "id": "article-c04daf12f8f5"
     },
     {
       "date": "2026-07-27",
       "slug": "/blog-codex-record-replay-workflow/",
       "title": "ChatGPT Record & Replay 企業應用指南：從流程示範建立 Skill，掌握 RPA 差異與治理重點",
-      "url": "https://aiworks.tw/blog-codex-record-replay-workflow/"
+      "url": "https://aiworks.tw/blog-codex-record-replay-workflow/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本篇 Aiworks 將說明如何透過 ChatGPT 中的 Record & Replay 功能將流程整理成可再次執行的 Skill，並進一步討論 企業該如何選擇使用場景",
+          "section": "Record & Replay 與 RPA 的差異：成本、穩定性與使用彈性"
+        },
+        {
+          "questionId": "workflow-handoff",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Record & Replay 可以縮短第一版流程的建立時間，但後續執行可能會產生大量 AI 思考的 token 用量，也可能面臨更多的人工檢查與失敗後的重新執行與測試。",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "如何使用 Record & Replay？從實際示範建立第一版 Skill",
+        "適用任務：從低風險工作建立流程原型",
+        "Record & Replay 與 RPA 的差異：成本、穩定性與使用彈性",
+        "1. 成本比較",
+        "2. 穩定性比較",
+        "3. 操作彈性比較",
+        "資料安全檢查：錄製、生成與再次執行",
+        "Aiworks 觀點：建立 Skill 管理機制，讓組織知識可長期使用"
+      ],
+      "summary": "主要回答：如何選擇工具、方案與自動化方式？；AI 與人怎麼交接，例外由誰處理？",
+      "dateSensitive": false,
+      "id": "article-aac5f27ae600"
     },
     {
       "date": "2026-07-30",
       "slug": "/blog-openai-sandbox-escape/",
       "title": "從 OpenAI 沙盒逃逸事件看 AI Agent 資安：風險鏈、多層防護與企業治理",
-      "url": "https://aiworks.tw/blog-openai-sandbox-escape/"
+      "url": "https://aiworks.tw/blog-openai-sandbox-escape/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "governance-failure",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "長時間任務模型可以 反覆嘗試，規劃並執行更長的行動序列 。OpenAI 在 另一份安全說明 中指出，這類模型的持續性讓它們有更多機會尋找環境弱點，而且 單一步驟看似可接受",
+          "section": "多層安全控制可以阻止單點失效擴大"
+        },
+        {
+          "questionId": "change-recheck",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "OpenAI 先前在 一場內部資安評測 中，讓一組包含 GPT-5.6 Sol 與能力更強的內部研究模型的 AI Agent 持續挑戰 ExploitGym。這是一套測試",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "OpenAI 沙盒逃逸事件：AI Agent 突破隔離環境的評測條件",
+        "ExploitGym 評測設定讓 AI Agent 得以執行高風險任務",
+        "用途受限的套件代理通道，成為沙盒逃逸入口",
+        "AI Agent 資安風險鏈",
+        "攻擊路徑從套件代理漏洞延伸至正式基礎設施",
+        "多層安全控制可以阻止單點失效擴大",
+        "AI Agent 安全治理：從問題發現到持續改善",
+        "Aiworks 觀點：治理能力應與 AI Agent 的導入同步發展"
+      ],
+      "summary": "主要回答：失敗或越界之後，怎麼查證與修正？",
+      "dateSensitive": false,
+      "id": "article-3ae654109c62"
     },
     {
       "date": "2026-08-06",
       "slug": "/blog_coinbase-ai-adoption/",
       "title": "企業 AI 採用從哪開始？Coinbase 以真實任務建立組織 AI 能力的實戰案例",
-      "url": "https://aiworks.tw/blog_coinbase-ai-adoption/"
+      "url": "https://aiworks.tw/blog_coinbase-ai-adoption/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "team-training",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "從企業採用角度來看，領導者親自實作有兩層作用。一方面能幫助管理者判斷 哪些任務適合交給 AI、需要哪些資料與上下文，以及團隊要補上哪些能力 ；另一方面，領導者的可見參與也",
+          "section": "Coinbase 如何把交付壓力轉成 AI 採用的第一步"
+        },
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Coinbase 當時面臨一項很具體的產品壓力：團隊需要在 6 至 9 個月內，把原本以管理加密資產為主的 Coinbase Wallet 改造成整合交易、社群互動、聊天",
+          "section": "讓 AI 進入既有工作流程，降低企業採用門檻"
+        }
+      ],
+      "headings": [
+        "Coinbase 如何把交付壓力轉成 AI 採用的第一步",
+        "領導者先親自使用，才能形成 AI 採用的管理判斷",
+        "PR Speed Run 如何降低員工使用 AI 的三種阻力",
+        "法遵案例：用共同文件建立可觀察的 AI 實作",
+        "讓 AI 進入既有工作流程，降低企業採用門檻",
+        "依 AI 使用成熟度設計員工成長路徑",
+        "AI Super User 如何把個人經驗擴散為團隊能力",
+        "衡量 AI 採用成效，應從端到端流程連接 P&L"
+      ],
+      "summary": "主要回答：培訓後，怎麼讓 AI 進入實際工作？；第一個 AI 應用，該從哪段工作開始？",
+      "dateSensitive": false,
+      "id": "article-64eb904b132b"
     },
     {
       "date": "2026-08-14",
       "slug": "/blog_shadow-ai-governance/",
       "title": "企業如何治理 Shadow AI？從風險清冊、需求地圖到分級控制",
-      "url": "https://aiworks.tw/blog_shadow-ai-governance/"
+      "url": "https://aiworks.tw/blog_shadow-ai-governance/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "governance-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "治理內容也有明顯落差。「AI 應用規範與治理」平均只有 22.65 分 。受訪企業較常討論隱私與資料治理（43.9%）及技術穩健性與安全性（36.4%），曾討論人工自主決",
+          "section": "Shadow AI 是什麼？未受管理的 AI Agent 也在治理範圍內"
+        }
+      ],
+      "headings": [
+        "Shadow AI 是什麼？未受管理的 AI Agent 也在治理範圍內",
+        "從 AIF 調查看台灣企業的治理與流程落差",
+        "員工為什麼繞過正式的 AI 環境？",
+        "Shadow AI 治理先建立風險清冊與需求地圖",
+        "改善正式環境，再依資料、權限與行動後果分級",
+        "先補足正式環境",
+        "再依行動風險配置控制",
+        "Aiworks 觀點：把有效的個人用法帶回正式流程"
+      ],
+      "summary": "主要回答：員工開始用 AI，公司需要哪些基本規範？",
+      "dateSensitive": false,
+      "id": "article-fc4aa94c8c4b"
     },
     {
       "date": "2026-08-20",
       "slug": "/blog_chatgpt-sites-introduction/",
       "title": "ChatGPT Sites 怎麼用？一次看懂功能、分享設定與部署方式",
-      "url": "https://aiworks.tw/blog_chatgpt-sites-introduction/"
+      "url": "https://aiworks.tw/blog_chatgpt-sites-introduction/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-feature",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "最簡單的 HTML 檔可以直接用瀏覽器開啟。分享時，也可以把包含 HTML、樣式、圖片與程式碼的完整資料夾傳給別人，讓對方下載後開啟。這種做法不需要部署，但沒有一個能持續",
+          "section": "私人預覽：先確認基本建制功能是否運作順利"
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "ChatGPT Sites 則提供介於本機檔案與自行部署之間的做法 。它把網站建立、託管、版本部署與分享放在 ChatGPT 裡，完成後可以取得網址，之後也能回到同一個 ",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "ChatGPT Sites 是什麼？",
+        "ChatGPT Sites 適合哪些工作？",
+        "本機 HTML、ChatGPT Sites、自行部署有什麼差異？",
+        "ChatGPT Sites 可以調整哪些設定？",
+        "資料保存與執行設定",
+        "發布、網域與分析",
+        "分享範圍、登入與操作權限",
+        "從私人預覽到正式使用，要注意什麼？"
+      ],
+      "summary": "主要回答：功能更新，會改變我們哪一段工作？；如何選擇工具、方案與自動化方式？",
+      "dateSensitive": true,
+      "id": "article-0f1fea5c92cc"
     },
     {
       "date": "2026-09-03",
       "slug": "/blog_gemini-recent-updates/",
       "title": "Google Gemini 新功能一次看：模型、語音、Notebook 與 Skills 有哪些改變？",
-      "url": "https://aiworks.tw/blog_gemini-recent-updates/"
+      "url": "https://aiworks.tw/blog_gemini-recent-updates/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-feature",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Skills 的更新也讓 Gems 退場傳言更受注意。先前外媒在 Gemini 網頁版的功能旗標後方發現一段未公開提示，內容提到 Gems 可能於 10 月 20 日退場",
+          "section": "Gemini 3.6 到 3.8：更新重點轉向 Agent 與資安任務"
+        },
+        {
+          "questionId": "learn-tool",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "企業選擇工具時，可以 挑一項高頻且結果可核對的工作 ，準備相同輸入與成功條件，再比較任務完成率、人工交接次數、切換入口的次數、總時間與實際成本。",
+          "section": "Gemini 3.5 Transcribe 如何選擇即時串流或預錄音訊？"
+        }
+      ],
+      "headings": [
+        "Gemini 3.6 到 3.8：更新重點轉向 Agent 與資安任務",
+        "Gemini 3.8 Flash API 價格優惠到 2026 年底",
+        "Gemini Live 如何把工作交給 Spark？",
+        "Gemini 近期還有哪些更新？",
+        "Gemini 3.5 Transcribe 如何選擇即時串流或預錄音訊？",
+        "Gemini Notebook 新額度怎麼計算？每五小時重設，仍有每週上限",
+        "Gemini Skills 更新了什麼？",
+        "Gems 會退場嗎？"
+      ],
+      "summary": "主要回答：功能更新，會改變我們哪一段工作？；如何選擇工具、方案與自動化方式？",
+      "dateSensitive": true,
+      "id": "article-d978d37ee9e7"
     },
     {
       "date": "2026-09-10",
       "slug": "/blog_astra-agi-criteria/",
       "title": "GPT-6 Astra 與 Sol 差在哪？看懂 AI 在企業工作中的新進展",
-      "url": "https://aiworks.tw/blog_astra-agi-criteria/"
+      "url": "https://aiworks.tw/blog_astra-agi-criteria/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-feature",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Astra 的實驗性功能讓模型 持續累積工作筆記，需要細節時再搜尋原始紀錄 。即使換到下一個視窗，先前的筆記仍會保留。若遺漏某項需求或測試結果，模型還能搜尋先前的訊息與工",
+          "section": "Astra 的能力更新，會改變哪些工作？"
+        },
+        {
+          "questionId": "value-quality",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "2026 年 9 月 3 日，OpenAI 發布 GPT-6 Astra。幾天後，黃仁勳在 X 貼文 中表示：「AGI 已到來。」這則發言引起一些好奇與討論：Astra ",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "GPT-6 Astra 與 Sol 相比，整體表現如何？",
+        "Astra 的能力更新，會改變哪些工作？",
+        "Computer Use：介面定位更精準，也縮短操作時間",
+        "文件與簡報：選對內容、沿用風格，任務轉向時保留原要求",
+        "程式開發：完成較複雜的任務，找回長時間開發的紀錄",
+        "視覺與 3D 設計：改善畫面判斷，把模型做成可探索的空間",
+        "Aiworks 觀點：距離 AGI 更近，企業現在可以做什麼"
+      ],
+      "summary": "主要回答：功能更新，會改變我們哪一段工作？；速度變快後，品質與返工怎麼一起量？",
+      "dateSensitive": false,
+      "id": "article-37a32e0d62d2"
     },
     {
       "date": "2026-09-17",
       "slug": "/blog_chatgpt-images-2-5/",
       "title": "ChatGPT Images 2.5 更新了什麼？速度、精準編輯與 Sketch 一次看",
-      "url": "https://aiworks.tw/blog_chatgpt-images-2-5/"
+      "url": "https://aiworks.tw/blog_chatgpt-images-2-5/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "task-visual",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "OpenAI 官方公告在同一段列出 Sketch、創作範本、圖片註解與提示詞分享 四項 ChatGPT 操作功能。以下依功能、入口與用途分開整理；實際按鈕名稱與位置可能因",
+          "section": "Sketch、範本、圖片註解與提示詞分享怎麼用？"
+        },
+        {
+          "questionId": "change-feature",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "這篇文章將整理 Images 2.5 相較 Images 2.0 的能力差異，說明 ChatGPT 圖片操作功能有哪些更新，再彙整推出一週後的使用回饋方向與一組 Aiwo",
+          "section": "第二輪：更新文字與標籤"
+        }
+      ],
+      "headings": [
+        "Images 2.5 和上一代差在哪裡？",
+        "Sketch、範本、圖片註解與提示詞分享怎麼用？",
+        "推出一週後，使用者實際遇到哪些優點與問題？",
+        "實測：從 Sketch 到三輪修改，能不能完成一張可用封面？",
+        "Sketch：先把草圖變成角色素材",
+        "第一輪：替換主視覺",
+        "第二輪：更新文字與標籤",
+        "第三輪：局部調整文字與按鈕"
+      ],
+      "summary": "主要回答：圖片與簡報工具，怎麼產出可以交付的素材？；功能更新，會改變我們哪一段工作？",
+      "dateSensitive": true,
+      "id": "article-e1c7d8a93a4b"
     },
     {
       "date": "2026-09-23",
       "slug": "/blog_skill-instructions-model-upgrades/",
       "title": "AI 模型升級，舊 Skill 還適用嗎？企業檢查與更新指南",
-      "url": "https://aiworks.tw/blog_skill-instructions-model-upgrades/"
+      "url": "https://aiworks.tw/blog_skill-instructions-model-upgrades/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "change-recheck",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "給予 AI 額外步驟會增加成本，卻未必能改善交付結果 。如果模型已經會自行檢查，舊指令仍強調反覆測試，就可能產生不必要的操作。一項 2026 年更新的 AGENTS.md",
+          "section": "模型升級後，沿用舊規則可能付出什麼代價？"
+        },
+        {
+          "questionId": "team-owner",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "OpenAI 的 Build skills 指南 說明，ChatGPT 與 Codex 都能使用 Skill。OpenAI 也提供內建的 Skill Creator，在 ",
+          "section": "更新 Skill，可以先從 Skill Creator 開始"
+        }
+      ],
+      "headings": [
+        "模型升級後，沿用舊規則可能付出什麼代價？",
+        "更新 Skill，可以先從 Skill Creator 開始",
+        "先交代用途與目前遇到的問題",
+        "Skill 裡可以放什麼？主指令、參考文件與腳本",
+        "修改 Skill 前，先辨認內容的用途",
+        "規則要不要保留？回到原本的任務測一次",
+        "Aiworks 觀點：別讓過時規則變成團隊的固定流程"
+      ],
+      "summary": "主要回答：模型升級後，原本流程需要重測什麼？；流程、範例與知識，要由誰持續維護？",
+      "dateSensitive": true,
+      "id": "article-f5fcf1b27730"
     },
     {
       "date": "2026-10-02",
       "slug": "/blog_uber-agentic-pods-ai-adoption/",
       "title": "Uber Agentic Pods：讓工程師與領域專家一起找出可落地的 AI 應用",
-      "url": "https://aiworks.tw/blog_uber-agentic-pods-ai-adoption/"
+      "url": "https://aiworks.tw/blog_uber-agentic-pods-ai-adoption/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "workflow-start",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "當時 Uber 已有 99% 的工程師使用 AI 工具，超過 70% 的 Pull Requests 可歸因於本機或雲端 Agent 的參與 。AI 已經進入工程團隊的日",
+          "section": "Agentic Pods 是什麼？"
+        },
+        {
+          "questionId": "team-scale",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "2026 年 7 月，Uber 技術長 Praveen Neppalli Naga 分享了一套名為 Agentic Pods 的做法，嘗試把工程團隊累積的 AI 能力，進",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "Agentic Pods 是什麼？",
+        "Agentic Pods 如何讓 AI 進入不同部門的工作流程？",
+        "工程師與領域專家一起找出 AI 機會",
+        "用 Shadow 看見需求文件之外的工作細節",
+        "換一個使用者，確認流程能否擴大",
+        "從單點自動化走向 Workflow 重設",
+        "Aiworks 觀點：有能力建立更多 Agent 之後，企業可能面臨什麼問題？"
+      ],
+      "summary": "主要回答：第一個 AI 應用，該從哪段工作開始？；從一個團隊擴大到多個團隊，怎麼分工？",
+      "dateSensitive": false,
+      "id": "article-2a18a88eaa11"
+    },
+    {
+      "date": "2024-02-21",
+      "slug": "/rpa-jeanyhsu/",
+      "title": "RPA 深度人才培訓計畫 結業心得",
+      "url": "https://aiworks.tw/rpa-jeanyhsu/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "course-choice",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在這裡，學習模式相對需要高度自主，單就 RPA 課程來看，一週花費時間平均十小時或以上，我個人在 RPA 的學習沒甚麼天賦可言，也許比較難給大家最客觀數據，但基本上 6 ",
+          "section": ""
+        },
+        {
+          "questionId": "course-results",
+          "level": "partial",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "在這裡，學習模式相對需要高度自主，單就 RPA 課程來看，一週花費時間平均十小時或以上，我個人在 RPA 的學習沒甚麼天賦可言，也許比較難給大家最客觀數據，但基本上 6 ",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：怎麼選課程、安排內訓與實作學習路徑？；上完課之後，如何檢查學員真的用在工作上？",
+      "dateSensitive": false,
+      "id": "article-3c03ddc4fa8f"
+    },
+    {
+      "date": "2024-04-12",
+      "slug": "/rpa-chu/",
+      "title": "AI 時代＃無需程式經驗的辦公室技能，讓自動化機器人助你事半功倍",
+      "url": "https://aiworks.tw/rpa-chu/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "learn-rpa",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "導師們的實務經驗分享讓人更知道自動化機器人目前在產業的導入狀況，實務上的開發流程，甚至是業界的應用實例。不論你是想要多點一個技能樹、還是想要成為 RPA（機器人流程自動化",
+          "section": ""
+        },
+        {
+          "questionId": "course-results",
+          "level": "partial",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "雖然我的工作流程中充滿著 RPA 工具，但我的工作並不會做到 RPA 的開發，透過這次課程，我得到的最大收穫就是解決問題四階段：發現問題、提出問題、尋找答案，進而解決問題",
+          "section": "打造你的第一支機器人助理前，先看看畢業學員的案例與故事⋯⋯"
+        }
+      ],
+      "headings": [
+        "打造你的第一支機器人助理前，先看看畢業學員的案例與故事⋯⋯",
+        "Q1. 可以與我們分享自動化機器人是如何落實與應用呢？",
+        "Q2. Aiworks 的導師和環境有帶給你什麼樣的協助嗎？",
+        "Q3. 除了打造出個人的自動化機器人外，還有什麼意外的收穫嗎？",
+        "最後，對觀望中的申請者說說話吧！"
+      ],
+      "summary": "主要回答：沒有程式背景，怎麼開始學 RPA 與自動化？；上完課之後，如何檢查學員真的用在工作上？",
+      "dateSensitive": false,
+      "id": "article-c7d0ceca7bf1"
+    },
+    {
+      "date": "2024-09-23",
+      "slug": "/announcement_aiworksbyappworksschool/",
+      "title": "【重要公告】AppWorks School 啟動全新品牌 Aiworks",
+      "url": "https://aiworks.tw/announcement_aiworksbyappworksschool/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "service-choice",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "Aiworks 將專注於 AI 自動化技術的培訓與企業顧問服務，透過賦能人才與企業，幫助產業在智能升級中搶佔先機。我們將以過往八年累積的大量實戰教學經驗，精心設計實作導向",
+          "section": ""
+        }
+      ],
+      "headings": [],
+      "summary": "主要回答：企業在什麼情況下需要培訓、評估或顧問陪跑？",
+      "dateSensitive": false,
+      "id": "article-fad7c9bcc251"
+    },
+    {
+      "date": "2026-07-20",
+      "slug": "/nanshan-life-ai-consulting/",
+      "title": "南山人壽 × Aiworks：大型組織如何推動全員 AI 賦能",
+      "url": "https://aiworks.tw/nanshan-life-ai-consulting/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "team-training",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "本篇將以 Aiworks 與南山人壽的合作為例，分享大型企業在推動 AI 組織賦能時，Aiworks 如何與人力資源部門協作，透過顧問訪談瞭解員工真實需求，並客製化學習路",
+          "section": "2. 依照職能切分學習入口"
+        },
+        {
+          "questionId": "course-results",
+          "level": "partial",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "南山人壽與Aiworks 在設計課程時，刻意降低「純講授型學習」的比例，而是讓學員直接以自己的工作任務與部門的「真實工作場景」為課程實作專題。透過此設計，學員在課程中完成",
+          "section": "1. 先看工作現場，再決定工具"
+        },
+        {
+          "questionId": "team-scale",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "對大型企業來說，AI 導入最難的地方，是讓不同職能的人真正將 AI 帶進日常工作。尤其在金融保險業，對於資安、個資保護與作業合規有嚴格的標準，員工即使有意願嘗試，也需要清",
+          "section": ""
+        },
+        {
+          "questionId": "industry-finance",
+          "level": "partial",
+          "reason": "正文有相關段落，但未完整處理這個問題。",
+          "evidence": "對大型企業來說，AI 導入最難的地方，是讓不同職能的人真正將 AI 帶進日常工作。尤其在金融保險業，對於資安、個資保護與作業合規有嚴格的標準，員工即使有意願嘗試，也需要清",
+          "section": ""
+        }
+      ],
+      "headings": [
+        "一、南山人壽如何面對 AI 人才轉型？",
+        "二、Aiworks 如何拆解大型企業的 AI 推動難題？",
+        "1. 先看工作現場，再決定工具",
+        "2. 依照職能切分學習入口",
+        "3. 先建立共識，再進入深化應用",
+        "4. 讓學習直接連接工作任務",
+        "5. 為零基礎員工設計友善的第一步",
+        "三、過程中，組織發生了什麼變化？"
+      ],
+      "summary": "主要回答：培訓後，怎麼讓 AI 進入實際工作？；上完課之後，如何檢查學員真的用在工作上？；從一個團隊擴大到多個團隊，怎麼分工？",
+      "dateSensitive": false,
+      "id": "article-44d79c306129"
+    },
+    {
+      "date": "2026-07-22",
+      "slug": "/aiworks-openai-advanced-partner-announcement/",
+      "title": "OpenAI 推出全球 Partner Network　Aiworks 成為 Advanced Partner 持續深耕台灣企業 AI 應用",
+      "url": "https://aiworks.tw/aiworks-openai-advanced-partner-announcement/",
+      "aliases": [],
+      "contentStatus": "reviewed",
+      "reviewedOn": "2026-10-13",
+      "analysisBasis": "官網正文、章節及案例內容",
+      "answers": [
+        {
+          "questionId": "service-choice",
+          "level": "main",
+          "reason": "正文以此問題的做法、案例或判斷為主要內容。",
+          "evidence": "截至目前，Aiworks 已協助超過 200 家企業 推動 AI 應用，累積培訓超過 20,000 位專業人士 ，服務產業涵蓋金融、製造、醫療、科技、電信等領域，透過顧問",
+          "section": "關於 Aiworks"
+        }
+      ],
+      "headings": [
+        "關於 Aiworks"
+      ],
+      "summary": "主要回答：企業在什麼情況下需要培訓、評估或顧問陪跑？",
+      "dateSensitive": false,
+      "id": "article-7b973003f078"
     }
   ],
-  "articleMatching": "依已發布索引的標題與 Slug 提供候選；回答程度需人工確認。",
+  "articleMatching": "已讀取官網正文與章節，區分主要回答、部分回答與原文無法讀取。",
   "designReferences": [
     "https://reactflow.dev/examples/layout/expand-collapse",
     "https://reactflow.dev/examples/edges/animating-edges"
+  ],
+  "audit": {
+    "indexEntries": 133,
+    "sitemapEntries": 135,
+    "canonicalArticles": 138,
+    "reviewed": 135,
+    "unavailable": 3,
+    "aliasEntries": 2,
+    "checkedOn": "2026-10-13",
+    "source": "https://aiworks.tw/post-sitemap.xml"
+  },
+  "goal": {
+    "label": "促成培訓與顧問需求",
+    "detail": "讓企業理解適合自己的培訓與導入支援，累積對 Aiworks 的信任。"
+  },
+  "profiles": [
+    {
+      "id": "leaders",
+      "label": "決策者與轉型負責人",
+      "stageId": "start",
+      "task": "策略、資源與投入判斷",
+      "questionIds": [
+        "value-baseline",
+        "value-roi",
+        "workflow-start",
+        "market-growth",
+        "industry-finance",
+        "service-choice",
+        "talent-change"
+      ]
+    },
+    {
+      "id": "hr",
+      "label": "HR／L&D 培訓規劃者",
+      "stageId": "start",
+      "task": "選課、內訓與人才培育",
+      "questionIds": [
+        "course-choice",
+        "course-funding",
+        "course-results",
+        "team-training",
+        "talent-change",
+        "task-hr",
+        "service-choice"
+      ]
+    },
+    {
+      "id": "learner",
+      "label": "非技術背景的實作者",
+      "stageId": "start",
+      "task": "從日常工作開始練習",
+      "questionIds": [
+        "learn-rpa",
+        "learn-prompt",
+        "learn-tool",
+        "task-hr",
+        "task-sales",
+        "task-marketing",
+        "task-visual",
+        "task-research"
+      ]
+    },
+    {
+      "id": "departments",
+      "label": "部門主管與 AI 推手",
+      "stageId": "pilot",
+      "task": "把試點變成日常做法",
+      "questionIds": [
+        "workflow-start",
+        "workflow-failure",
+        "workflow-handoff",
+        "course-results",
+        "value-time",
+        "value-quality",
+        "task-hr",
+        "task-sales",
+        "task-marketing",
+        "task-research",
+        "learn-data"
+      ]
+    },
+    {
+      "id": "it-pilot",
+      "label": "IT／資安導入團隊",
+      "stageId": "pilot",
+      "task": "選型、資料與權限",
+      "questionIds": [
+        "learn-tool",
+        "learn-data",
+        "governance-start",
+        "governance-agent",
+        "industry-finance",
+        "change-feature"
+      ]
+    },
+    {
+      "id": "scaling",
+      "label": "跨部門推廣與營運團隊",
+      "stageId": "scale",
+      "task": "擴散、維護與成效",
+      "questionIds": [
+        "team-scale",
+        "team-owner",
+        "cost-unit",
+        "cost-decision",
+        "value-roi",
+        "value-quality",
+        "change-recheck",
+        "market-search"
+      ]
+    },
+    {
+      "id": "it-scale",
+      "label": "IT／治理與維運團隊",
+      "stageId": "scale",
+      "task": "規模、風險與持續驗證",
+      "questionIds": [
+        "governance-agent",
+        "governance-failure",
+        "team-owner",
+        "change-recheck",
+        "cost-unit",
+        "industry-finance"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": "training",
+      "label": "人才與組織轉型",
+      "detail": "培訓、種子人才與組織推廣",
+      "profileIds": [
+        "hr",
+        "learner",
+        "departments",
+        "scaling"
+      ]
+    },
+    {
+      "id": "strategy",
+      "label": "AI 策略評估",
+      "detail": "現況盤點、優先場景與 Roadmap",
+      "profileIds": [
+        "leaders",
+        "it-pilot"
+      ]
+    },
+    {
+      "id": "adoption",
+      "label": "導入陪跑計劃",
+      "detail": "PoC、成效驗證與擴散",
+      "profileIds": [
+        "departments",
+        "scaling"
+      ]
+    },
+    {
+      "id": "governance",
+      "label": "AI 治理與制度設計",
+      "detail": "資料、規範、權限與責任",
+      "profileIds": [
+        "it-pilot",
+        "it-scale"
+      ]
+    }
+  ],
+  "researchSeeds": {
+    "value-roi": [
+      "https://www.linkedin.com/posts/emollick_more-companies-have-been-telling-me-they-activity-7350581757089406976-Ua_m",
+      "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/",
+      "https://www.oneusefulthing.org/p/latent-expertise-everyone-is-in-r",
+      "https://metr.org/blog/2026-02-24-uplift-update/",
+      "https://www.bcg.com/publications/2026/the-formula-for-agentic-ai-value",
+      "https://www.dbs.com/annualreports/2025/ceo-reflections.html"
+    ]
+  },
+  "gaps": [
+    {
+      "questionId": "value-roi",
+      "angle": "已談用量、成本與多層指標，可補「大公司怎麼把品質、工作成果與財務價值接在一起」的比較。"
+    },
+    {
+      "questionId": "course-results",
+      "angle": "已有培訓案例與學員心得，可補上課前後基準、後續實際採用與追蹤週期。"
+    },
+    {
+      "questionId": "course-choice",
+      "angle": "已有課程與補助資訊，可補不同職能及成熟度的學習路徑選擇。"
+    },
+    {
+      "questionId": "team-scale",
+      "angle": "已有企業案例，可再補試點交接後誰維護、擴散到第二個部門時怎麼調整。"
+    }
   ]
 }

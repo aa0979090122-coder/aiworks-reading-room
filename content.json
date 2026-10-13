@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-12",
+  "editionDate": "2026-10-13",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -650,6 +650,112 @@
           "text": "值得研究的是如何找到隱藏在交接、例外與系統之間的工作阻塞，以及業務專家在設計與驗證中扮演的角色。"
         }
       ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/emollick_more-companies-have-been-telling-me-they-activity-7350581757089406976-Ua_m",
+      "author": "Ethan Mollick／LinkedIn 討論",
+      "sourceDate": "頁面顯示約 1 年前",
+      "title": "只追生產力 KPI，會不會讓企業錯過 AI 的價值？",
+      "zh": "Mollick 質疑過早聚焦生產力 KPI，可能讓企業只加速舊流程。公開留言補上指標、員工誘因與成長的不同看法。",
+      "englishSummary": "Mollick questions whether early productivity KPIs encourage faster old processes. Public replies discuss incentives, measurement choices and business growth.",
+      "points": [
+        "先讀作者主張，再分開看留言者的經驗與推論。",
+        "這串討論可用來提出問題，不能用來估計企業的平均 ROI。"
+      ],
+      "discussionAngles": [
+        {
+          "label": "Mark Diller",
+          "text": "指標容易讓團隊追逐既定數字，也限制重新想像成果。"
+        },
+        {
+          "label": "Mario Catalano",
+          "text": "擔心效率被用於裁員，員工可能隱藏有效做法。"
+        },
+        {
+          "label": "Indranil Sengupta",
+          "text": "提出擴大業務、讓員工成為流程負責人的另一種方向。"
+        }
+      ],
+      "discussionUrl": "https://www.linkedin.com/posts/emollick_more-companies-have-been-telling-me-they-activity-7350581757089406976-Ua_m",
+      "priority": 1,
+      "priorityReason": "優先讀：最接近這週的問題，有作者觀點及不同角色的回應。",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "adoption",
+          "workflow"
+        ],
+        "concepts": [
+          "AI 價值衡量",
+          "員工誘因",
+          "流程重設"
+        ],
+        "outcome": "perspective"
+      },
+      "topic": "trend",
+      "checkedAt": "2026-10-13",
+      "dailyBackfillAt": "2026-10-13T04:00:00+08:00",
+      "highLevel": true,
+      "researchQuestions": [
+        "value-roi",
+        "value-time",
+        "value-quality"
+      ],
+      "caveat": "作者觀點及公開留言，與公司實測、問卷和財務成果分開閱讀。"
+    },
+    {
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/",
+      "author": "r/ClaudeAI／實務討論",
+      "sourceDate": "頁面顯示約 4 個月前",
+      "title": "不用 token 排名之後，要怎麼向財務說明 AI 的 ROI？",
+      "zh": "發文者被要求證明 AI 花費值得。回覆提供工作週期、品質、返工與新增工作價值等觀察，也有人提醒因果歸因需要對照。",
+      "englishSummary": "A practitioner asks how to defend AI spending to finance. Replies discuss outcome baselines, quality, rework and attribution limits.",
+      "points": [
+        "可對照「容易追蹤的指標」與「能回答財務問題的指標」。",
+        "匿名自述與建議未經獨立驗證，不當作企業成果證據。"
+      ],
+      "discussionAngles": [
+        {
+          "label": "bkocdur",
+          "text": "先量既有工作成果，並承認不能完美歸因給 AI。"
+        },
+        {
+          "label": "Future_Manager3217",
+          "text": "按工作類別，把費用與審查、返工及缺陷一起看。"
+        },
+        {
+          "label": "siegevjorn",
+          "text": "提醒需要系統性研究與對照，也要量品質和審查瓶頸。"
+        }
+      ],
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/",
+      "priority": 1,
+      "priorityReason": "優先讀：有明確的財務提問、不同衡量做法與歸因爭議。",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "scaling",
+          "workflow"
+        ],
+        "concepts": [
+          "AI 價值衡量",
+          "基準與歸因",
+          "返工與品質"
+        ],
+        "outcome": "perspective"
+      },
+      "topic": "trend",
+      "checkedAt": "2026-10-13",
+      "dailyBackfillAt": "2026-10-13T04:00:00+08:00",
+      "highLevel": true,
+      "researchQuestions": [
+        "value-roi",
+        "value-time",
+        "value-quality"
+      ],
+      "caveat": "作者觀點及公開留言，與公司實測、問卷和財務成果分開閱讀。"
     }
   ],
   "podcasts": [
@@ -892,6 +998,87 @@
     }
   ],
   "news": [
+    {
+      "type": "原始研究 · 模型防護與誤判取捨",
+      "sourceDate": "2026-10-12",
+      "date": "2026-10-12",
+      "title": "Anthropic：防止模型推理遭大量擷取，仍需衡量正常使用的影響",
+      "lead": "Anthropic 公開模型蒸餾防護的三道措施：限制推理內容跨帳號與模型流動、用兩階段分類器辨識擷取請求，並對反覆嘗試的帳號加上限制。",
+      "takeaways": [
+        "團隊先測試只提供推理摘要：蒸餾後模型在 SWE-bench Verified 的分數由使用完整推理的 80.4% 降至 71.8%，但攻擊者後來改用提示與大量帳號嘗試擷取。",
+        "新措施包括保存推理內容的權限邊界、兩階段分類器，以及對反覆擷取帳號的限制。Anthropic 估計，平台上遭擷取的推理 token 量較先前減少約 90% 至 99%。",
+        "官方稱分類器誤判率低於 0.1%；部分正常開發者仍需修改整合，被誤擋的請求也可能計費。"
+      ],
+      "angle": "評估防護措施時，同時看擷取量、誤判與正常整合的維護成本；持續測試新繞過方式，不能只看首次攔截率。",
+      "caveat": "數字來自 Anthropic 自行觀測與測試。官方承認尚未經歷高度持續的繞過嘗試，無法保證降幅能長期維持；SWE-bench 結果只測特定蒸餾設定。",
+      "url": "https://www.anthropic.com/research/distillation-defenses",
+      "sources": [
+        {
+          "label": "Anthropic 原始研究與防護說明",
+          "url": "https://www.anthropic.com/research/distillation-defenses"
+        }
+      ],
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance",
+          "evaluation"
+        ],
+        "concepts": [
+          "推理內容存取邊界",
+          "擷取偵測",
+          "誤判成本"
+        ],
+        "outcome": "research"
+      },
+      "checkedAt": "2026-10-13",
+      "dailyBackfillAt": "2026-10-13T01:32:32.518002Z",
+      "englishSummary": "Anthropic describes three defenses against illicit reasoning extraction: access boundaries for thinking traces, a two-stage classifier, and limits on repeat attempts. It estimates a 90–99% reduction in extracted reasoning tokens on its platform. The figures are internal, and legitimate integrations and blocked requests can be affected.",
+      "originalTitle": "Strengthening our defenses against distillation attacks",
+      "source": "Anthropic Research",
+      "author": "Anthropic"
+    },
+    {
+      "type": "企業流程 · 供應鏈情境規劃",
+      "sourceDate": "2026-10-09",
+      "date": "2026-10-09",
+      "title": "Kinaxis：供應鏈 Agent 分開偵測與處理異常，規劃員保留決策權",
+      "lead": "Kinaxis 將訂單、庫存、生產能力與外部訊號整合到 Maestro，讓規劃員測試供應中斷的影響；早期 Agent 分工偵測事件、提出處理情境與後續建議。",
+      "takeaways": [
+        "Maestro 的資料層整合內外部訊號，預測與最佳化模型評估需求及供應限制；規劃員再透過畫面、報表與 Agent 比較情境。",
+        "Kinaxis 描述的 detector agent 負責辨識事件並呼叫工具，resolver agent 評估例外與提出建議；多個 Agent 在既定權限與防護下運作，最後由人員決策。",
+        "公司表示，相關 Agent 目前只由少數客戶使用；報導沒有提供這些客戶的預測準確率、處理時間或決策品質比較。"
+      ],
+      "angle": "供應鏈 Agent 的驗收應從異常辨識、情境建議與人工決策分開設指標，避免把平台使用量當成決策改善。",
+      "caveat": "這是 Kinaxis 主管在 Microsoft 報導中的供應商自述。原文的情境模擬使用增幅沒有對照組，也沒有揭露 Agent 客戶的實際成效。",
+      "url": "https://news.microsoft.com/source/canada/features/ai/kinaxis-supply-chain/",
+      "sources": [
+        {
+          "label": "Microsoft Source／Kinaxis 主管訪談",
+          "url": "https://news.microsoft.com/source/canada/features/ai/kinaxis-supply-chain/"
+        }
+      ],
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "governance",
+          "evaluation"
+        ],
+        "concepts": [
+          "供應鏈情境模擬",
+          "異常偵測與處理分工",
+          "人工決策"
+        ],
+        "outcome": "case"
+      },
+      "checkedAt": "2026-10-13",
+      "dailyBackfillAt": "2026-10-13T01:32:32.518002Z",
+      "englishSummary": "Kinaxis says Maestro combines internal and external supply-chain data for scenario planning. Early agents split event detection from exception resolution and recommendations; planners retain final decisions. The Microsoft interview says only a small customer group uses the agents and gives no measured decision-quality outcome.",
+      "originalTitle": "What if everything changes tomorrow? A Canadian company is using AI to help businesses navigate supply chain uncertainty",
+      "source": "Microsoft Source／Kinaxis",
+      "author": "Juan Montes"
+    },
     {
       "type": "原始評測 · 多 Agent 成本與品質",
       "sourceDate": "2026-10-09",
@@ -1710,6 +1897,13 @@
         "樣本為逾 1,300 位高階主管、涵蓋 20 多個產業；受訪者回報的價值與 BCG 成熟度分組須一起讀。",
         "最成熟組的 95% 使用損益或 KPI 等代理指標衡量 AI；直接追蹤損益的組別回報較高價值，尚不能證明因果。",
         "報告指出只有 5% 已部署完整的關鍵 Agent 控制；2030 年自主程度與價值占比是受訪者預期。"
+      ],
+      "priority": 1,
+      "priorityReason": "優先讀：企業主管怎麼定義價值；先核對問卷樣本、分組與損益指標。",
+      "researchQuestions": [
+        "value-roi",
+        "value-time",
+        "value-quality"
       ]
     },
     {
@@ -2289,6 +2483,13 @@
         "涵蓋十多個市場；74% 前線員工回報每天或每週數次使用 AI，42% 的經常使用者回報每週省下約一個工作日。",
         "報告指出，前線員工較少得到如何使用省下時間的指導。讀這份資料時，可追問主管是否重新安排工作與責任。",
         "BCG 將較清楚的策略、投入人才與流程調整，連到較高的受訪者回報價值與工作感受。"
+      ],
+      "priority": 2,
+      "priorityReason": "接著讀：補充員工省時與工作安排，與主管回報價值分開。",
+      "researchQuestions": [
+        "value-roi",
+        "value-time",
+        "value-quality"
       ]
     },
     {
@@ -2516,7 +2717,14 @@
         "2025 年研究在特定開發者與任務中測得耗時增加 19%，研究者明確限制其可推廣範圍。",
         "後續實驗遇到不願停用 AI 的開發者退出、報酬改變，以及多代理並行使工時難以衡量，因此難以可靠估計目前的加速幅度。"
       ],
-      "highLevel": true
+      "highLevel": true,
+      "priority": 1,
+      "priorityReason": "優先讀：檢查主觀感受、實際測量與選擇偏差，避免把不同研究直接合算。",
+      "researchQuestions": [
+        "value-roi",
+        "value-time",
+        "value-quality"
+      ]
     },
     {
       "type": "市場報告 · 指標比較",
@@ -2608,7 +2816,14 @@
         "DBS 說明沿用 Digital Value Capture 與跨部門客戶流程的績效管理架構，衡量資料分析及 AI／ML 的經濟價值。",
         "CodeBuddy 在部分程式工作上自述節省最多 20% 時間；這種任務指標與全行經濟價值的衡量範圍不同。"
       ],
-      "highLevel": true
+      "highLevel": true,
+      "priority": 2,
+      "priorityReason": "接著讀：金融業如何將 AI 效益放進績效與管理；公司自述不等於因果實驗。",
+      "researchQuestions": [
+        "value-roi",
+        "value-time",
+        "value-quality"
+      ]
     },
     {
       "type": "企業工程實作 · 證據與限制",
@@ -2717,6 +2932,59 @@
         "從真實查詢提出的問答與 SQL 範例，只有 12.5% 通過人工審核；除錯、一次性問題與不合適的查詢模式會被排除。",
         "持續追蹤資料品質、結構變動後的範例有效性及問題覆蓋，透過使用紀錄與回饋修補知識。"
       ]
+    },
+    {
+      "url": "https://www.oneusefulthing.org/p/latent-expertise-everyone-is-in-r",
+      "source": "Ethan Mollick／One Useful Thing",
+      "date": "2024-06-20",
+      "title": "AI 的價值只算省錢嗎？從 R&D 到實際工作機會",
+      "what": "Mollick 主張企業也要探索新的工作機會。留言則追問資金、風險，以及個人省時如何變成可兌現的財務節省。",
+      "englishSummary": "Mollick argues for employee-led experimentation. Comments ask how innovation, funding and individual time savings translate into organizational value.",
+      "points": [
+        "作者文章提供觀點；留言頁補充投入與可實現節省的疑問。",
+        "這是較早的管理討論，適合延伸問題，不代表現行產品能力。"
+      ],
+      "discussionAngles": [
+        {
+          "label": "Karl Haller",
+          "text": "先節省成本，也可能是為了取得創新的資金。"
+        },
+        {
+          "label": "RMC",
+          "text": "成本節省較容易估算，創新的風險與不確定性更高。"
+        },
+        {
+          "label": "Tony Ellis",
+          "text": "自述個人省時已出現，但可兌現的財務節省仍待建立。"
+        }
+      ],
+      "discussionUrl": "https://www.oneusefulthing.org/p/latent-expertise-everyone-is-in-r/comments",
+      "priority": 2,
+      "priorityReason": "接著讀：補出「效率、創新與財務價值」的取捨，有公開留言可延伸。",
+      "knowledge": {
+        "primary": "adoption",
+        "themes": [
+          "adoption",
+          "evaluation",
+          "market"
+        ],
+        "concepts": [
+          "AI 價值衡量",
+          "創新投入",
+          "財務節省"
+        ],
+        "outcome": "perspective"
+      },
+      "topic": "trend",
+      "checkedAt": "2026-10-13",
+      "dailyBackfillAt": "2026-10-13T04:00:00+08:00",
+      "highLevel": true,
+      "researchQuestions": [
+        "value-roi",
+        "value-time",
+        "value-quality"
+      ],
+      "caveat": "作者觀點及公開留言，與公司實測、問卷和財務成果分開閱讀。"
     }
   ],
   "deepDives": [
@@ -3125,7 +3393,14 @@
       ],
       "checkedAt": "2026-10-02",
       "englishSummary": "METR revisits the challenge of measuring AI productivity. Research design, task selection and changing tool usage affect what a measured time difference can tell us.",
-      "originalTitle": ""
+      "originalTitle": "",
+      "priority": 1,
+      "priorityReason": "優先讀：檢查主觀感受、實際測量與選擇偏差，避免把不同研究直接合算。",
+      "researchQuestions": [
+        "value-roi",
+        "value-time",
+        "value-quality"
+      ]
     },
     {
       "type": "失敗與修正 · 代理權限",
@@ -3196,7 +3471,14 @@
       ],
       "checkedAt": "2026-10-02",
       "englishSummary": "DBS places reported AI benefits within its broader operating and performance framework. Annual-report figures provide management context but need careful attribution when assessing AI-specific returns.",
-      "originalTitle": ""
+      "originalTitle": "",
+      "priority": 2,
+      "priorityReason": "接著讀：金融業如何將 AI 效益放進績效與管理；公司自述不等於因果實驗。",
+      "researchQuestions": [
+        "value-roi",
+        "value-time",
+        "value-quality"
+      ]
     },
     {
       "url": "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
@@ -3321,7 +3603,14 @@
         ]
       },
       "checkedAt": "2026-10-03",
-      "highLevel": true
+      "highLevel": true,
+      "priority": 1,
+      "priorityReason": "優先讀：企業主管怎麼定義價值；先核對問卷樣本、分組與損益指標。",
+      "researchQuestions": [
+        "value-roi",
+        "value-time",
+        "value-quality"
+      ]
     },
     {
       "url": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
@@ -3360,10 +3649,30 @@
         ]
       },
       "checkedAt": "2026-10-03",
-      "highLevel": true
+      "highLevel": true,
+      "priority": 2,
+      "priorityReason": "接著讀：補充員工省時與工作安排，與主管回報價值分開。",
+      "researchQuestions": [
+        "value-roi",
+        "value-time",
+        "value-quality"
+      ]
     }
   ],
   "readingSets": [
+    {
+      "title": "AI 價值怎麼量？先對照指標，再看討論與反例",
+      "summary": "從企業主管的價值定義、研究方法的限制，讀到實務工作者與管理者的討論。先分清使用量、個人省時、工作品質與企業成果，再思考這週文章要回答哪個困惑。",
+      "urls": [
+        "https://www.linkedin.com/posts/emollick_more-companies-have-been-telling-me-they-activity-7350581757089406976-Ua_m",
+        "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/",
+        "https://www.bcg.com/publications/2026/the-formula-for-agentic-ai-value",
+        "https://metr.org/blog/2026-02-24-uplift-update/",
+        "https://www.oneusefulthing.org/p/latent-expertise-everyone-is-in-r",
+        "https://www.dbs.com/annualreports/2025/ceo-reflections.html"
+      ],
+      "origin": "user-research"
+    },
     {
       "title": "AI 省時如何轉成企業價值？",
       "summary": "員工回報的省時、主管回報的價值與年報效益使用不同指標。對照三種資料，檢查省下的時間是否接上工作安排、品質與財務衡量。",
@@ -3433,7 +3742,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-12T01:37:10Z",
+    "checkedAt": "2026-10-13T01:32:32.518002Z",
     "points": []
   },
   "knowledgeLibrary": [
