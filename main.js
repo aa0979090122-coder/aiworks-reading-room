@@ -1,4 +1,4 @@
-import {initEditorialMap,inlineReading,sourceLens} from './editorial-map.js?v=20261013-1';
+import {initEditorialMap,inlineReading,sourceLens} from './editorial-map.js?v=20261013-2';
 import {chapters,outcomeLabels,allItems,itemTitle,classify,savedItems,relatedTo,exportMarkdown,mergeBackup,noteFor} from './knowledge.js?v=20261003-5';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeUrl=v=>/^https?:\/\//i.test(String(v))?String(v):'#';

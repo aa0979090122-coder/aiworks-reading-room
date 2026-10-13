@@ -22,3 +22,5 @@ assert.equal(sourceLens({knowledge:{outcome:'report'}}),'research');
 console.log(`Passed: ${ids.size} question IDs, cross-media evidence candidates, unrelated-source exclusion, public article mapping, Taipei weekly rollover, source dates, safe inline preview.`);
 
 assert.equal(data.articles.length,138);assert.equal(data.articles.filter(a=>a.contentStatus==='reviewed').length,135);assert.equal(data.articles.filter(a=>a.contentStatus==='unavailable').length,3);assert.equal(new Set(data.articles.map(a=>a.url)).size,138);for(const a of data.articles){if(a.contentStatus==='unavailable')assert.equal(a.answers.length,0);for(const answer of a.answers){assert(ids.has(answer.questionId));assert(answer.evidence);assert(['main','partial'].includes(answer.level));}}
+
+for(const id of ids)assert(data.profiles.some(p=>p.questionIds.includes(id)),`Question ${id} must be reachable in the map`);

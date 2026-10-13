@@ -5687,7 +5687,9 @@
         "market-growth",
         "industry-finance",
         "service-choice",
-        "talent-change"
+        "talent-change",
+        "change-basic",
+        "cost-budget"
       ]
     },
     {
@@ -5718,7 +5720,8 @@
         "task-sales",
         "task-marketing",
         "task-visual",
-        "task-research"
+        "task-research",
+        "change-basic"
       ]
     },
     {
@@ -5751,7 +5754,8 @@
         "governance-start",
         "governance-agent",
         "industry-finance",
-        "change-feature"
+        "change-feature",
+        "cost-budget"
       ]
     },
     {
