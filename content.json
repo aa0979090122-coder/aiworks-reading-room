@@ -700,9 +700,32 @@
       "researchQuestions": [
         "value-roi",
         "value-time",
-        "value-quality"
+        "value-quality",
+        "value-practical-metrics"
       ],
-      "caveat": "作者觀點及公開留言，與公司實測、問卷和財務成果分開閱讀。"
+      "caveat": "作者觀點及公開留言，與公司實測、問卷和財務成果分開閱讀。",
+      "followupQuestions": [
+        {
+          "id": "why-adoption",
+          "question": "為什麼主管常先看使用量與採用率？",
+          "answer": "Mollick 留言者 Mark Diller 認為既有指標具體、熟悉，容易讓組織持續追逐同一個數字。這提供一種解釋；是否因為管理後台容易匯出、回報週期短，仍需要管理者訪談或資料支持。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://www.linkedin.com/posts/emollick_more-companies-have-been-telling-me-they-activity-7350581757089406976-Ua_m"
+          ],
+          "next": "查企業管理者怎麼選指標、取得資料，以及採用率在決策中實際扮演什麼角色。"
+        },
+        {
+          "id": "decision",
+          "question": "讀者拿到這些數字後，可以做什麼決定？",
+          "answer": "可以先討論要不要繼續試點、改哪段工作、需要補哪些資料。具體門檻取決於部門目標與成本，目前尚未替讀者設定。",
+          "status": "open",
+          "evidenceUrls": [
+            "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/"
+          ],
+          "next": "用一個實際情境檢查：如果數字變好或變差，團隊的下一步會不會不同？"
+        }
+      ]
     },
     {
       "url": "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/",
@@ -753,9 +776,106 @@
       "researchQuestions": [
         "value-roi",
         "value-time",
-        "value-quality"
+        "value-quality",
+        "value-practical-metrics"
       ],
-      "caveat": "作者觀點及公開留言，與公司實測、問卷和財務成果分開閱讀。"
+      "caveat": "作者觀點及公開留言，與公司實測、問卷和財務成果分開閱讀。",
+      "followupQuestions": [
+        {
+          "id": "easy-metrics",
+          "question": "除了採用率，有哪些資料可能已在工作紀錄裡？",
+          "answer": "Reddit 的 bkocdur 建議追既有工作成果；Future_Manager3217 建議按工作類別追週期、審查、返工與成本。這是實務建議。可先檢查任務起訖時間、一次驗收結果與退回次數；取得成本會隨現有紀錄而不同。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/"
+          ],
+          "next": "找一種實際職務，核對資料在哪裡、能否低負擔取得、用來支援什麼決定。"
+        },
+        {
+          "id": "attribution",
+          "question": "指標改善之後，怎麼知道和 AI 有關？",
+          "answer": "微軟銷售數字比較經常使用與較低使用的群體，屬內部觀察，沒有隔離流程重設、同儕共學等因素。Reddit 有人建議對照組；METR 也指出任務與參與者選擇會影響估計。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
+            "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/",
+            "https://metr.org/blog/2026-02-24-uplift-update/"
+          ],
+          "next": "查導入前的同類工作基準、任務難度與人員差異；把前後觀察和因果證據分開。"
+        },
+        {
+          "id": "decision",
+          "question": "讀者拿到這些數字後，可以做什麼決定？",
+          "answer": "可以先討論要不要繼續試點、改哪段工作、需要補哪些資料。具體門檻取決於部門目標與成本，目前尚未替讀者設定。",
+          "status": "open",
+          "evidenceUrls": [
+            "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/"
+          ],
+          "next": "用一個實際情境檢查：如果數字變好或變差，團隊的下一步會不會不同？"
+        }
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/stuart-winter-tear_so-what-has-microsoft-learnt-from-its-own-activity-7506961410954788864-e5yV",
+      "author": "Stuart Winter-Tear／LinkedIn 討論",
+      "title": "回應微軟 AI 轉型：採用、流程與組織學習怎麼連起來？",
+      "sourceDate": "公開頁面顯示約 1 週前",
+      "checkedAt": "2026-10-13",
+      "dailyBackfillAt": "2026-10-13T04:00:00+08:00",
+      "highLevel": true,
+      "topic": "trend",
+      "what": "直接引用微軟原文。留言追問技術上線與價值管理的差別，也提出知識保存、資源重新配置及審查流程變慢的問題。",
+      "englishSummary": "A discussion of Microsoft’s own transformation asks how technology rollout connects to business value, shared learning and resource allocation. Replies include implementation concerns and counterarguments.",
+      "points": [
+        "Henrik Göthberg 質疑既有管理方式偏重技術上線，沒有以價值為中心。",
+        "Kim Siler 希望把個人摸索寫成可供其他團隊使用的紀錄；Shari Leysen 關注學習如何改變下一次資源配置。",
+        "Marc A. 提醒，學習也可能變成新的審查關卡；Anna Bergevin 提出知識捕捉與取用的實務缺口。"
+      ],
+      "discussionAngles": [
+        {
+          "label": "價值管理",
+          "text": "Henrik Göthberg：如果評估仍圍繞技術導入，根本的管理問題是否仍未解決？"
+        },
+        {
+          "label": "落地的反面",
+          "text": "Marc A.：每次學習都增加一道審查，會不會讓團隊失去速度？"
+        }
+      ],
+      "discussionUrl": "https://www.linkedin.com/posts/stuart-winter-tear_so-what-has-microsoft-learnt-from-its-own-activity-7506961410954788864-e5yV",
+      "priority": 2,
+      "priorityReason": "接著讀：原文的直接回應，補出價值管理與落地的分歧。",
+      "researchQuestions": [
+        "value-practical-metrics",
+        "value-roi",
+        "team-owner"
+      ],
+      "caveat": "公開留言是觀察與觀點，沒有驗證各企業實際成果。",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow",
+          "adoption"
+        ],
+        "concepts": [
+          "指標選擇",
+          "組織學習",
+          "工作成果"
+        ],
+        "outcome": "perspective"
+      },
+      "followupQuestions": [
+        {
+          "id": "learning-cost",
+          "question": "把經驗留下來，會不會也增加工作與審查負擔？",
+          "answer": "留言同時支持寫下經驗與提醒新增審查的風險，尚無可比較的量化結果。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://www.linkedin.com/posts/stuart-winter-tear_so-what-has-microsoft-learnt-from-its-own-activity-7506961410954788864-e5yV"
+          ],
+          "next": "查紀錄如何被下一個團隊採用，以及是否減少重做或只是增加文件。"
+        }
+      ]
     }
   ],
   "podcasts": [
@@ -2135,7 +2255,48 @@
           "人工介入"
         ],
         "outcome": "failure"
-      }
+      },
+      "researchQuestions": [
+        "value-practical-metrics"
+      ],
+      "priority": 1,
+      "priorityReason": "先讀第一點與註腳：檢查業務目標如何帶出使用場景，再讀採用與成果的比較。",
+      "followupQuestions": [
+        {
+          "id": "what-adoption",
+          "question": "採用率可以回答什麼？在哪裡開始不夠？",
+          "answer": "微軟第一點說明工具普及後，業務影響仍未出現；後續改從銷售目標與客戶經理工作出發。文章仍報告指定場景採用增加，並搭配成交率與營收；採用訊號與成果需要一起讀。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/"
+          ],
+          "next": "檢查一個團隊是否把「開始用」直接當成「產生成果」，以及是否漏掉原本就有效的工作。"
+        },
+        {
+          "id": "why-metrics",
+          "question": "為什麼這些指標比較適合目前的業務目標？",
+          "answer": "要先知道卡點是交付慢、品質不穩、客戶回應不足或其他成果，再選能觀察該變化的指標。目前沒有一組已證明適用所有部門的固定清單。",
+          "status": "open",
+          "evidenceUrls": [
+            "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
+            "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/"
+          ],
+          "next": "以同一類工作為單位，先定義成果與驗收條件，再核對指標是否真的反映該成果。"
+        },
+        {
+          "id": "attribution",
+          "question": "指標改善之後，怎麼知道和 AI 有關？",
+          "answer": "微軟銷售數字比較經常使用與較低使用的群體，屬內部觀察，沒有隔離流程重設、同儕共學等因素。Reddit 有人建議對照組；METR 也指出任務與參與者選擇會影響估計。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
+            "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/",
+            "https://metr.org/blog/2026-02-24-uplift-update/"
+          ],
+          "next": "查導入前的同類工作基準、任務難度與人員差異；把前後觀察和因果證據分開。"
+        }
+      ],
+      "englishSummary": "Microsoft describes moving from broad tool deployment to specific business outcomes and sales workflows. Its reported gains come from internal observations involving tools, work practices and peer learning."
     },
     {
       "date": "2026-09-16",
@@ -2723,7 +2884,8 @@
       "researchQuestions": [
         "value-roi",
         "value-time",
-        "value-quality"
+        "value-quality",
+        "value-practical-metrics"
       ]
     },
     {
@@ -3399,7 +3561,8 @@
       "researchQuestions": [
         "value-roi",
         "value-time",
-        "value-quality"
+        "value-quality",
+        "value-practical-metrics"
       ]
     },
     {

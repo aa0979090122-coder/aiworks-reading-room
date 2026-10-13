@@ -131,6 +131,108 @@
             "ai-evaluate",
             "skill-instructions-model-upgrades"
           ]
+        },
+        {
+          "id": "value-practical-metrics",
+          "label": "採用率之外，先追哪些容易取得又有用的指標？",
+          "stages": [
+            "start",
+            "pilot",
+            "scale"
+          ],
+          "keywords": [
+            "指標",
+            "採用率",
+            "衡量",
+            "工作成果",
+            "baseline",
+            "cycle time"
+          ],
+          "readingPrompts": [
+            {
+              "id": "why-adoption",
+              "question": "為什麼主管常先看使用量與採用率？",
+              "answer": "Mollick 留言者 Mark Diller 認為既有指標具體、熟悉，容易讓組織持續追逐同一個數字。這提供一種解釋；是否因為管理後台容易匯出、回報週期短，仍需要管理者訪談或資料支持。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://www.linkedin.com/posts/emollick_more-companies-have-been-telling-me-they-activity-7350581757089406976-Ua_m"
+              ],
+              "next": "查企業管理者怎麼選指標、取得資料，以及採用率在決策中實際扮演什麼角色。"
+            },
+            {
+              "id": "what-adoption",
+              "question": "採用率可以回答什麼？在哪裡開始不夠？",
+              "answer": "微軟第一點說明工具普及後，業務影響仍未出現；後續改從銷售目標與客戶經理工作出發。文章仍報告指定場景採用增加，並搭配成交率與營收；採用訊號與成果需要一起讀。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/"
+              ],
+              "next": "檢查一個團隊是否把「開始用」直接當成「產生成果」，以及是否漏掉原本就有效的工作。"
+            },
+            {
+              "id": "easy-metrics",
+              "question": "除了採用率，有哪些資料可能已在工作紀錄裡？",
+              "answer": "Reddit 的 bkocdur 建議追既有工作成果；Future_Manager3217 建議按工作類別追週期、審查、返工與成本。這是實務建議。可先檢查任務起訖時間、一次驗收結果與退回次數；取得成本會隨現有紀錄而不同。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/"
+              ],
+              "next": "找一種實際職務，核對資料在哪裡、能否低負擔取得、用來支援什麼決定。"
+            },
+            {
+              "id": "why-metrics",
+              "question": "為什麼這些指標比較適合目前的業務目標？",
+              "answer": "要先知道卡點是交付慢、品質不穩、客戶回應不足或其他成果，再選能觀察該變化的指標。目前沒有一組已證明適用所有部門的固定清單。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
+                "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/"
+              ],
+              "next": "以同一類工作為單位，先定義成果與驗收條件，再核對指標是否真的反映該成果。"
+            },
+            {
+              "id": "attribution",
+              "question": "指標改善之後，怎麼知道和 AI 有關？",
+              "answer": "微軟銷售數字比較經常使用與較低使用的群體，屬內部觀察，沒有隔離流程重設、同儕共學等因素。Reddit 有人建議對照組；METR 也指出任務與參與者選擇會影響估計。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
+                "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/",
+                "https://metr.org/blog/2026-02-24-uplift-update/"
+              ],
+              "next": "查導入前的同類工作基準、任務難度與人員差異；把前後觀察和因果證據分開。"
+            },
+            {
+              "id": "decision",
+              "question": "讀者拿到這些數字後，可以做什麼決定？",
+              "answer": "可以先討論要不要繼續試點、改哪段工作、需要補哪些資料。具體門檻取決於部門目標與成本，目前尚未替讀者設定。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/"
+              ],
+              "next": "用一個實際情境檢查：如果數字變好或變差，團隊的下一步會不會不同？"
+            }
+          ],
+          "scenarioOptions": [
+            {
+              "label": "回報導入成效",
+              "scenario": "部門已開始用 AI，下次主管會議要回報成果，手邊卻只有登入、使用量與採用率。",
+              "decision": "選一種日常工作，決定先追哪些成果，下一次能據此調整做法。",
+              "scope": "先談同類工作的週期、一次驗收與返工資料；完整財務 ROI 計算另作後續題目。"
+            },
+            {
+              "label": "決定第一個試點",
+              "scenario": "主管剛收到 AI 導入要求，還沒選定試點，需要先想清楚想改善什麼。",
+              "decision": "把一個具體業務卡點與可觀察成果配對，再選使用場景。",
+              "scope": "先處理試點目標與導入前基準；不一次列出所有部門的 KPI。"
+            },
+            {
+              "label": "評估培訓後的應用",
+              "scenario": "HR 或內部推手已辦完培訓，想知道學員是否把方法用在實際工作。",
+              "decision": "選一類實際工作與驗收方式，安排後續追蹤。",
+              "scope": "滿意度、學會工具與工作成果分開記錄；不把課後問卷直接當成財務 ROI。"
+            }
+          ]
         }
       ]
     },
@@ -3592,6 +3694,13 @@
           "reason": "正文以此問題的做法、案例或判斷為主要內容。",
           "evidence": "問題不在於 AI 技術本身，而是企業錯把「導入工具」當成「創造價值」；流程、資料、治理與組織能力不足，使 AI 無法真正落地，形成投入與回報之間的巨大落差。",
           "section": "個人效率提升 ≠ 企業效率提升：AI 無法進入真正有價值的流程"
+        },
+        {
+          "questionId": "value-practical-metrics",
+          "level": "partial",
+          "reason": "舊文提供價值與工作成果的基礎；本題可在具體回報情境繼續深挖資料取得與判斷。",
+          "evidence": "問題不在於 AI 技術本身，而是企業錯把「導入工具」當成「創造價值」；流程、資料、治理與組織能力不足，使 AI 無法真正落地，形成投入與回報之間的巨大落差。",
+          "section": "個人效率提升 ≠ 企業效率提升：AI 無法進入真正有價值的流程"
         }
       ],
       "headings": [
@@ -4366,6 +4475,13 @@
           "reason": "正文以此問題的做法、案例或判斷為主要內容。",
           "evidence": "矽谷正在流行一種新的競爭方式，叫做 tokenmaxxing 。工程師們爭相在社群上曬自己的 token 花費，把「燒掉越多 AI token」當成最 AI-native",
           "section": "Faros AI：交付量提升，品質指標同步惡化"
+        },
+        {
+          "questionId": "value-practical-metrics",
+          "level": "partial",
+          "reason": "舊文提供價值與工作成果的基礎；本題可在具體回報情境繼續深挖資料取得與判斷。",
+          "evidence": "這四份資料指向同一個結論： token 消耗量衡量的是「做了多少事」，不是「留下了多少價值」。 如果評估 AI 效益時只參考使用量、覆蓋率和 token 數，無法回答 A",
+          "section": "Level 3：效益能否在組織層面持續與複製？"
         }
       ],
       "headings": [
@@ -5055,6 +5171,13 @@
           "reason": "正文以此問題的做法、案例或判斷為主要內容。",
           "evidence": "AI 導入初期，組織通常先看「有沒有人在用」，再用帳號數、使用頻率和 token 消耗衡量採用成效。問題在於， AI 用量無法直接代表產出價值 。 Meta 曾把 tok",
           "section": "AI 用量不等於成效：企業開始追問使用價值"
+        },
+        {
+          "questionId": "value-practical-metrics",
+          "level": "partial",
+          "reason": "舊文提供價值與工作成果的基礎；本題可在具體回報情境繼續深挖資料取得與判斷。",
+          "evidence": "AI 導入初期，組織通常先看「有沒有人在用」，再用帳號數、使用頻率和 token 消耗衡量採用成效。問題在於， AI 用量無法直接代表產出價值 。 Meta 曾把 tok",
+          "section": "AI 用量不等於成效：企業開始追問使用價值"
         }
       ],
       "headings": [
@@ -5689,7 +5812,8 @@
         "service-choice",
         "talent-change",
         "change-basic",
-        "cost-budget"
+        "cost-budget",
+        "value-practical-metrics"
       ]
     },
     {
@@ -5704,7 +5828,8 @@
         "team-training",
         "talent-change",
         "task-hr",
-        "service-choice"
+        "service-choice",
+        "value-practical-metrics"
       ]
     },
     {
@@ -5740,7 +5865,8 @@
         "task-sales",
         "task-marketing",
         "task-research",
-        "learn-data"
+        "learn-data",
+        "value-practical-metrics"
       ]
     },
     {
@@ -5771,7 +5897,8 @@
         "value-roi",
         "value-quality",
         "change-recheck",
-        "market-search"
+        "market-search",
+        "value-practical-metrics"
       ]
     },
     {
@@ -5837,6 +5964,13 @@
       "https://metr.org/blog/2026-02-24-uplift-update/",
       "https://www.bcg.com/publications/2026/the-formula-for-agentic-ai-value",
       "https://www.dbs.com/annualreports/2025/ceo-reflections.html"
+    ],
+    "value-practical-metrics": [
+      "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
+      "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/",
+      "https://www.linkedin.com/posts/emollick_more-companies-have-been-telling-me-they-activity-7350581757089406976-Ua_m",
+      "https://www.linkedin.com/posts/stuart-winter-tear_so-what-has-microsoft-learnt-from-its-own-activity-7506961410954788864-e5yV",
+      "https://metr.org/blog/2026-02-24-uplift-update/"
     ]
   },
   "gaps": [
@@ -5855,6 +5989,20 @@
     {
       "questionId": "team-scale",
       "angle": "已有企業案例，可再補試點交接後誰維護、擴散到第二個部門時怎麼調整。"
+    },
+    {
+      "questionId": "value-practical-metrics",
+      "angle": "舊文已談用量與成果的差別。這次可針對「要回報成效，手邊只有採用資料」繼續往下問。相同概念能服務不同情境，篇數不決定這個切角是否值得寫。"
+    }
+  ],
+  "editorialCandidates": [
+    {
+      "id": "ms-business-outcomes-20260917",
+      "questionId": "value-practical-metrics",
+      "title": "主管要回報 AI 成效，採用率之外先看什麼？",
+      "sourceLabel": "Microsoft 第一點：從商業成果出發",
+      "sourceUrl": "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
+      "reason": "微軟在發放工具後遇到採用停滯，後來從銷售目標與日常工作重選場景。這個案例可往下問：回報導入效果時，哪些數字能幫助決定下一步？"
     }
   ]
 }
