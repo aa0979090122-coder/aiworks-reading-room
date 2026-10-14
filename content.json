@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-13",
+  "editionDate": "2026-10-14",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1118,6 +1118,148 @@
     }
   ],
   "news": [
+    {
+      "type": "企業工程實作 · 產出規模與審查",
+      "sourceDate": "2026-10-13",
+      "date": "2026-10-13",
+      "title": "Anthropic：程式合併量暴增後，來源控制與審查怎麼跟上？",
+      "lead": "Anthropic 自述每日合併變更從 5 月約 2,500 件增至 9 月逾 30,000 件；舊有 Git 鏡像與大量 checkout 成為開發流程的瓶頸。",
+      "takeaways": [
+        "團隊用了五個月遷移到內部系統 Scion：變更在伺服器端建立，客戶端按需取得檔案；CI 可透過 API 查詢差異，減少完整 checkout。",
+        "官方稱來源控制基礎設施的 CPU 與記憶體占用降至原來約 1/200，CI 的 CPU 容量節省 25%；這些是 Anthropic 內部工作負載的數字。",
+        "工程師仍審查每項變更的意圖，並阻止代理違反系統約束或因假設性風險加入過度複雜的檢查。"
+      ],
+      "angle": "先量出合併、checkout、CI 與審查各關卡的負荷，再決定要調整哪一段；程式產出量本身不能代表交付品質。",
+      "caveat": "Anthropic 明說其巨大單一倉庫、代理工作量與內部 token 投入很特殊；Scion 不適合作為一般企業替換 Git 的範本。效益數字來自內部自述，沒有獨立對照。",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "sources": [
+        {
+          "label": "Anthropic Engineering 原文",
+          "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+        }
+      ],
+      "source": "Anthropic Engineering",
+      "author": "Nick G. 與 Anthropic 來源控制團隊",
+      "originalTitle": "Redesigning source control at Anthropic",
+      "englishSummary": "Anthropic reports that daily merges rose from about 2,500 to over 30,000 in 2026. Its bespoke, server-centered Scion system reduces checkout and source-control load, while engineers still review intent and constraints. These internal results reflect an unusually large monorepo and agent workload.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "governance"
+        ],
+        "concepts": [
+          "程式產出與審查負荷",
+          "來源控制擴張",
+          "人工審查關卡"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://www.uber.com/gb/en/blog/efficient-software-factory/",
+            "reason": "兩篇都處理工程代理擴張後的負荷；Uber 按任務拆成本與品質，Anthropic 處理合併、checkout 與審查基礎設施。"
+          }
+        ]
+      },
+      "followupQuestions": [
+        "合併量增加時，最先排隊的是程式審查、CI、checkout，還是部署？",
+        "哪些品質與返工紀錄能和變更量一起看，避免只用產出數量判斷成效？"
+      ],
+      "checkedAt": "2026-10-14",
+      "dailyBackfillAt": "2026-10-14T11:35:00+08:00",
+      "highLevel": true,
+      "researchQuestions": [
+        "team-scale",
+        "value-quality"
+      ]
+    },
+    {
+      "type": "功能更新 · 跨應用任務",
+      "sourceDate": "2026-10-13",
+      "date": "2026-10-13",
+      "title": "Google：Gemini 4 Argon 進入 App，聊天與任務模式分開",
+      "lead": "Google 公布 Gemini 4 Argon 已提供給 AI Pro 與 Ultra 訂閱者；Gemini App 增加任務切換，macOS 版可進入 Antigravity 編碼介面。",
+      "takeaways": [
+        "使用者可在主對話切換到 Tasks，讓系統在離開電腦後持續處理跨 Google 應用的任務。",
+        "Google 稱 Gemini 已連接超過 40 個應用，舉例包含訂餐、訂位、設計和商務工具；不同連線的可執行動作與權限仍需逐一確認。"
+      ],
+      "angle": "試用時先選一段真實工作，檢查可存取資料、可執行動作與需要人員確認的關卡。",
+      "caveat": "這是官方功能與供應範圍公告，未提供企業現場成效或跨應用任務的可靠率；訂閱與地區供應可能影響可用性。",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
+      "sources": [
+        {
+          "label": "Google Gemini 官方公告",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/"
+        }
+      ],
+      "source": "Google",
+      "author": "Google",
+      "originalTitle": "Gemini 4 Argon comes to the Gemini app",
+      "englishSummary": "Google says Gemini 4 Argon is available in the Gemini app for AI Pro and Ultra users, with a Tasks mode for work across connected apps and Antigravity coding access in the macOS app. The announcement does not quantify enterprise outcomes.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "governance"
+        ],
+        "concepts": [
+          "跨應用任務",
+          "工具權限",
+          "人工確認"
+        ],
+        "outcome": "product"
+      },
+      "followupQuestions": [
+        "跨應用任務能做哪些動作，哪些需要人員確認？"
+      ],
+      "checkedAt": "2026-10-14",
+      "dailyBackfillAt": "2026-10-14T11:35:00+08:00",
+      "topic": "product"
+    },
+    {
+      "type": "功能更新 · 廣告衡量",
+      "sourceDate": "2026-10-13",
+      "date": "2026-10-13",
+      "title": "Google Ads：Data Strength Uplift 指標將顯示資料設定的估計轉換差異",
+      "lead": "Google 宣布 Demand Gen 的 Data Strength Uplift 指標將上線，並擴充第一方資料與增強型轉換的支援範圍。",
+      "takeaways": [
+        "新指標意在讓廣告主查看資料設定與轉換表現的關聯；Data Manager 將延伸至 DV360 與 GA。",
+        "Google 引述內部分析：使用 Google Tag Gateway 的廣告主平均轉換提升逾 20%；The Zebra 的轉換量與轉換價值分別提升 16% 與 19%。"
+      ],
+      "angle": "先核對新指標的比較基準、轉換定義及資料涵蓋，再用於調整資料設定；供應商案例數字不能直接視為自身增益。",
+      "caveat": "逾 20% 是 Google 在 2026 年 6 月 3 至 17 日的全球內部分析；The Zebra 的數字是官方案例。公告未交代可排除其他因素的對照設計。",
+      "url": "https://blog.google/products/ads-commerce/demand-gen-drop-october-2026/",
+      "sources": [
+        {
+          "label": "Google Ads 官方公告",
+          "url": "https://blog.google/products/ads-commerce/demand-gen-drop-october-2026/"
+        }
+      ],
+      "source": "Google Ads",
+      "author": "Google Ads 團隊",
+      "originalTitle": "Build your data strength with October’s Demand Gen drop",
+      "englishSummary": "Google announced a forthcoming Data Strength Uplift metric, expanded Data Manager connections, and enhanced conversions support. Its conversion uplift figures come from internal analysis and a named customer example; the post does not establish a controlled causal estimate for every advertiser.",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "market"
+        ],
+        "concepts": [
+          "資料設定",
+          "轉換衡量",
+          "歸因限制"
+        ],
+        "outcome": "product"
+      },
+      "followupQuestions": [
+        "Data Strength Uplift 使用什麼比較基準，能否排除同期投放與受眾變化？"
+      ],
+      "checkedAt": "2026-10-14",
+      "dailyBackfillAt": "2026-10-14T11:35:00+08:00",
+      "topic": "product"
+    },
     {
       "type": "原始研究 · 模型防護與誤判取捨",
       "sourceDate": "2026-10-12",
@@ -3848,7 +3990,7 @@
     },
     {
       "title": "Agent 規模化後，誰處理審查與成本？",
-      "summary": "Spotify 追蹤產出增加後的品質與審查，Uber 和 Asana 拆解實際工作成本，Block 保留部署關卡；Vals 用 50 個網頁應用測試分工對品質、時間與費用的影響。各資料的任務和指標不同，不能合算。",
+      "summary": "Spotify 追蹤產出增加後的品質與審查，Anthropic 處理大量合併與 CI 負荷，Uber 和 Asana 拆解工作成本，Block 保留部署關卡；Vals 測分工對品質、時間與費用的影響。各資料的工作負載不同，不能合算。",
       "urls": [
         "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
         "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity",
@@ -3857,7 +3999,8 @@
         "https://openai.com/index/legalon-halves-codex-costs/",
         "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests",
         "https://asana.com/inside-asana/cut-browsers-agent-cost",
-        "https://www.vals.ai/blogs/multi-agent-vibe-code-bench"
+        "https://www.vals.ai/blogs/multi-agent-vibe-code-bench",
+        "https://www.anthropic.com/engineering/redesigning-source-control"
       ],
       "origin": "daily-trend"
     },
@@ -3905,7 +4048,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-13T01:32:32.518002Z",
+    "checkedAt": "2026-10-14T03:34:00.553422+00:00",
     "points": []
   },
   "knowledgeLibrary": [
