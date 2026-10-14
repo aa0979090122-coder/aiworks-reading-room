@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13",
+  "updatedAt": "2026-10-14T03:34:00.553422+00:00",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -423,6 +423,69 @@
             "uber-agentic-pods-ai-adoption",
             "prompt-library",
             "agent-skills-concept"
+          ],
+          "scenarioOptions": [
+            {
+              "label": "工程交付排隊",
+              "scenario": "工程團隊使用編碼代理後，變更數量上升，但審查與 CI 開始排隊。",
+              "decision": "分辨瓶頸落在審查、checkout、測試或部署，決定先調整哪個關卡。",
+              "scope": "用 Anthropic 的特殊負載作對照，先談可量的隊列與品質；不建議一般團隊換掉 Git。"
+            },
+            {
+              "label": "向主管解釋產出",
+              "scenario": "主管看到程式變更量快速增加，想知道團隊是否真的交付得更快、更穩。",
+              "decision": "把合併量與等待時間、返工和部署後問題一起看，決定是否擴大代理使用。",
+              "scope": "先界定工程交付指標與歸因缺口，不把合併件數直接換算為財務 ROI。"
+            },
+            {
+              "label": "規劃跨團隊擴張",
+              "scenario": "平台團隊要讓更多開發團隊使用代理，擔心共用基礎設施與審查規則承受不了。",
+              "decision": "先盤點共用資源、權限和人工審查責任，再安排擴張順序。",
+              "scope": "只處理工程代理的共用關卡；其他部門的知識與流程維護另題討論。"
+            }
+          ],
+          "readingPrompts": [
+            {
+              "id": "scion-why-bottleneck",
+              "question": "為什麼寫程式變快後，來源控制先吃不消？",
+              "answer": "Anthropic 的日合併量由約 2,500 件升到逾 30,000 件；大型單一倉庫的 checkout、Git 鏡像與歷史查詢承受更多代理與 CI 工作。團隊因此改用伺服器端變更與按需取得檔案。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://www.anthropic.com/engineering/redesigning-source-control"
+              ],
+              "next": "找同類工程團隊的合併與等待紀錄，確認瓶頸是否也在來源控制。"
+            },
+            {
+              "id": "scion-what-to-measure",
+              "question": "除了合併件數，先追哪些負荷與品質訊號？",
+              "answer": "Anthropic 公布 checkout 速度、基礎設施占用及 CI CPU 容量，並說每項變更仍由工程師審查意圖。這些訊號可拆開看；文章未提供完整返工率或部署後缺陷的前後對照。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://www.anthropic.com/engineering/redesigning-source-control",
+                "https://www.uber.com/gb/en/blog/efficient-software-factory/"
+              ],
+              "next": "查每項變更的等待時間、人工審查負荷、退回率及部署後問題，與產出量一起比較。"
+            },
+            {
+              "id": "scion-what-transfers",
+              "question": "一般企業需要改用 Anthropic 的來源控制架構嗎？",
+              "answer": "Anthropic 明說 Scion 針對極大的單一倉庫與代理工作量設計，並非一般 Git 替代品。可先借用按瓶頸量測、減少不必要 checkout 及分級審查的思路；哪項做法有效仍需在自身系統驗證。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://www.anthropic.com/engineering/redesigning-source-control"
+              ],
+              "next": "找規模較小的團隊，核對現有 Git、CI 與審查流程的實際負荷。"
+            },
+            {
+              "id": "scion-attribution",
+              "question": "容量節省能歸因於哪一項改動？",
+              "answer": "官方同時調整了來源控制、快取、查詢方式與 CI 存取；公開文章提供整體內部結果，未分離各改動的個別效果。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://www.anthropic.com/engineering/redesigning-source-control"
+              ],
+              "next": "查遷移分階段數據或獨立案例，避免把整體改善歸給單一架構決策。"
+            }
           ]
         },
         {
@@ -5971,6 +6034,10 @@
       "https://www.linkedin.com/posts/emollick_more-companies-have-been-telling-me-they-activity-7350581757089406976-Ua_m",
       "https://www.linkedin.com/posts/stuart-winter-tear_so-what-has-microsoft-learnt-from-its-own-activity-7506961410954788864-e5yV",
       "https://metr.org/blog/2026-02-24-uplift-update/"
+    ],
+    "team-scale": [
+      "https://www.anthropic.com/engineering/redesigning-source-control",
+      "https://www.uber.com/gb/en/blog/efficient-software-factory/"
     ]
   },
   "gaps": [
@@ -6003,6 +6070,14 @@
       "sourceLabel": "Microsoft 第一點：從商業成果出發",
       "sourceUrl": "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
       "reason": "微軟在發放工具後遇到採用停滯，後來從銷售目標與日常工作重選場景。這個案例可往下問：回報導入效果時，哪些數字能幫助決定下一步？"
+    },
+    {
+      "id": "anthropic-scion-engineering-scale-20261013",
+      "questionId": "team-scale",
+      "title": "AI 程式產出變快後，團隊該先改哪個關卡？",
+      "sourceLabel": "Anthropic 工程：Scion 遷移",
+      "sourceUrl": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "reason": "Anthropic 公開日合併量、checkout 負荷、遷移做法與審查限制，可從不同管理時機討論如何找瓶頸；其特殊規模也提供清楚的反例邊界。"
     }
   ]
 }
