@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-14",
+  "editionDate": "2026-10-15",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1118,6 +1118,162 @@
     }
   ],
   "news": [
+    {
+      "type": "企業案例 · 知識索引與故障修正",
+      "sourceDate": "2026-10-14",
+      "date": "2026-10-14",
+      "title": "StackAI：知識索引失敗率下降，關鍵是從故障步驟接續",
+      "lead": "StackAI 原本約五分之一的文件索引會失敗，客戶每天反映查不到資料。團隊把下載、擷取、切塊與索引拆成可追蹤的步驟，失敗時只重試該步。",
+      "takeaways": [
+        "Temporal 記錄每份文件完成到哪一段；工程師能看到失敗的文件、步驟與錯誤，各步也可分配不同的運算資源。",
+        "Temporal 與 StackAI 表示，改版後索引失敗率由約 20% 降至 0.1% 以下。這是供應商與客戶共同公布的數字，原文未交代觀察期間、分母或獨立驗證。",
+        "解析成本降至原先約十分之一，來自解析分離、快取與重試等整體改造；不能單獨歸因於 Temporal。"
+      ],
+      "angle": "企業 AI 答錯或找不到文件時，先查文件有沒有完整進入知識庫，再檢查搜尋與答案；索引成功率和回答品質要分開衡量。",
+      "caveat": "這是 Temporal 的客戶案例。失敗率與成本由當事人自述，未公開分母、時間窗或對照；索引成功也不保證 AI 回答正確。",
+      "url": "https://temporal.io/resources/case-studies/stack-ai",
+      "sources": [
+        {
+          "label": "Temporal／StackAI 原始案例",
+          "url": "https://temporal.io/resources/case-studies/stack-ai"
+        }
+      ],
+      "source": "Temporal／StackAI",
+      "author": "Temporal；受訪者 Frank Hidalgo（StackAI CTO）",
+      "originalTitle": "How StackAI cut its indexing failure rate from 20% to below 0.1% with Temporal",
+      "englishSummary": "Temporal and StackAI describe a document pipeline that records each file’s progress and retries only the failed stage. They report indexing failures falling from about 20% to below 0.1%. The cost reduction followed several changes, and no independent comparison is published.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "governance"
+        ],
+        "concepts": [
+          "文件索引可靠性",
+          "故障步驟重試",
+          "來源可追蹤性"
+        ],
+        "outcome": "case"
+      },
+      "followupQuestions": [
+        "知識庫回答錯誤時，文件是否先完整進入索引？",
+        "索引失敗率用什麼分母和觀察期間計算？",
+        "成本下降由重試、快取與解析方式各貢獻多少？"
+      ],
+      "checkedAt": "2026-10-15",
+      "dailyBackfillAt": "2026-10-15T09:38:33+08:00",
+      "topic": "case",
+      "researchQuestions": [
+        "learn-data",
+        "workflow-failure",
+        "team-owner"
+      ]
+    },
+    {
+      "type": "企業案例 · 長時間代理與研究環境",
+      "sourceDate": "2026-10-14",
+      "date": "2026-10-14",
+      "title": "Third Moment：長時間代理研究先處理重複輪詢與未完成任務",
+      "lead": "Third Moment Research 自述同時運行約一萬個代理，單次研究可持續 36 至 48 小時。它把模擬軌跡、時間戳和程式碼交給 Codex，找出回測過慢造成的等待與 token 浪費。",
+      "takeaways": [
+        "團隊稱，快取與記憶體配置調整使一年美股逐筆資料回測由約三小時縮至三至五分鐘；代理因此少做重複輪詢。",
+        "代理若提前停止，外層系統檢查執行軌跡，再決定重試、終止或交給人員。團隊也在模擬啟動前測試研究環境的隔離。",
+        "研究工作以歷史資料回測和正確性檢查選擇後續實驗；原文沒有公開交易成果、完整成本或可供外部重現的評測。"
+      ],
+      "angle": "長任務的成本要連同等待、重試與人工接手來看；先記錄代理停在哪一步，再決定要換模型或修執行環境。",
+      "caveat": "數字來自 OpenAI 的客戶訪談與 Third Moment 自述，規模和金融研究環境特殊。回測加快不代表策略有效，也不能推論一般企業可以運行相同數量的代理。",
+      "url": "https://openai.com/index/third-moment-research/",
+      "sources": [
+        {
+          "label": "OpenAI／Third Moment 原始訪談",
+          "url": "https://openai.com/index/third-moment-research/"
+        }
+      ],
+      "source": "OpenAI／Third Moment Research",
+      "author": "OpenAI；受訪者 Third Moment Research",
+      "originalTitle": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "englishSummary": "Third Moment says it runs roughly 10,000 agents concurrently for 36–48-hour investigations. It traced wasted polling to a slow backtest, then used caching and memory changes to shorten that job. An outer harness checks unfinished runs and can retry, stop, or escalate them. Results are customer-reported.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "governance"
+        ],
+        "concepts": [
+          "長任務恢復",
+          "輪詢成本",
+          "人工接手"
+        ],
+        "outcome": "case"
+      },
+      "followupQuestions": [
+        "代理提早停止時，如何區分重試、終止與人工接手？",
+        "回測加快後，品質與總成本是否也有紀錄？"
+      ],
+      "checkedAt": "2026-10-15",
+      "dailyBackfillAt": "2026-10-15T09:38:33+08:00",
+      "topic": "case",
+      "researchQuestions": [
+        "team-scale",
+        "cost-unit",
+        "workflow-failure"
+      ]
+    },
+    {
+      "type": "原始研究 · 歐洲企業代理使用",
+      "sourceDate": "2026-10-14",
+      "date": "2026-10-14",
+      "title": "OpenAI 歐洲資料：代理使用量增加，仍需另外檢查工作成果",
+      "lead": "OpenAI Economic Research 分析歐盟的 ChatGPT Enterprise 與 Business 帳號：截至九月底，Codex 與 ChatGPT Work 產生的文字 token 已超過樣本總量的一半。",
+      "takeaways": [
+        "報告以輸出 token 占比描述代理使用深度；歐盟各國企業樣本介於立陶宛 85% 與斯洛維尼亞 22%。",
+        "歐盟 200 人以下帳號的代理週活躍使用者，自五月初至九月底／十月初增加 8.1 倍；這是 OpenAI 產品內部使用量。",
+        "報告把前 10% 企業定義為每位活躍使用者輸出 token 最多的公司。這套分類沒有直接量到工作品質、生產力或財務成果。"
+      ],
+      "angle": "若企業用 token、活躍使用者或代理任務數回報導入進度，應另追同類工作的完成率、返工與成本，才能判斷使用量是否帶來改善。",
+      "caveat": "樣本限於 OpenAI 企業產品；各國 token 占比受客戶組成與產品供應影響。OpenAI 沒有在這份報告建立使用量與企業成果的因果關係。",
+      "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic/",
+      "sources": [
+        {
+          "label": "OpenAI 原始報告",
+          "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic/"
+        },
+        {
+          "label": "報告 PDF 與圖表註記",
+          "url": "https://cdn.openai.com/pdf/europes-agentic-opportunity.pdf"
+        }
+      ],
+      "source": "OpenAI Economic Research",
+      "author": "OpenAI Economic Research",
+      "originalTitle": "The EU’s next chapter in AI is agentic",
+      "englishSummary": "OpenAI reports that Codex and ChatGPT Work generated over half of text output tokens in its EU Enterprise and Business sample by late September 2026. Agentic weekly active users at smaller accounts rose 8.1 times since May. The report measures product activity, not work outcomes.",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "market"
+        ],
+        "concepts": [
+          "代理使用深度",
+          "採用與成果差異",
+          "樣本邊界"
+        ],
+        "outcome": "research"
+      },
+      "followupQuestions": [
+        "輸出 token 增加，對同一工作類型的完成品質和返工有什麼影響？",
+        "跨國比較時，客戶組成與產品供應差異如何處理？"
+      ],
+      "checkedAt": "2026-10-15",
+      "dailyBackfillAt": "2026-10-15T09:38:33+08:00",
+      "topic": "research",
+      "researchQuestions": [
+        "value-practical-metrics",
+        "value-roi"
+      ]
+    },
     {
       "type": "企業工程實作 · 產出規模與審查",
       "sourceDate": "2026-10-13",
@@ -3967,14 +4123,15 @@
   "readingSets": [
     {
       "title": "AI 價值怎麼量？先對照指標，再看討論與反例",
-      "summary": "從企業主管的價值定義、研究方法的限制，讀到實務工作者與管理者的討論。先分清使用量、個人省時、工作品質與企業成果，再思考這週文章要回答哪個困惑。",
+      "summary": "對照企業主管、研究者與實務工作者的資料。OpenAI 的歐洲報告補上代理產品使用量，但仍需另查工作品質、返工與企業成果；不同指標不能直接互換。",
       "urls": [
         "https://www.linkedin.com/posts/emollick_more-companies-have-been-telling-me-they-activity-7350581757089406976-Ua_m",
         "https://www.reddit.com/r/ClaudeAI/comments/1tslzaq/followup_i_talked_my_manager_out_of_ranking/",
         "https://www.bcg.com/publications/2026/the-formula-for-agentic-ai-value",
         "https://metr.org/blog/2026-02-24-uplift-update/",
         "https://www.oneusefulthing.org/p/latent-expertise-everyone-is-in-r",
-        "https://www.dbs.com/annualreports/2025/ceo-reflections.html"
+        "https://www.dbs.com/annualreports/2025/ceo-reflections.html",
+        "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic/"
       ],
       "origin": "user-research"
     },
@@ -3990,7 +4147,7 @@
     },
     {
       "title": "Agent 規模化後，誰處理審查與成本？",
-      "summary": "Spotify 追蹤產出增加後的品質與審查，Anthropic 處理大量合併與 CI 負荷，Uber 和 Asana 拆解工作成本，Block 保留部署關卡；Vals 測分工對品質、時間與費用的影響。各資料的工作負載不同，不能合算。",
+      "summary": "Spotify、Anthropic、Uber、Asana 與 Third Moment 分別處理品質審查、基礎設施、任務成本和長時間代理。各案例的工作負載不同，應分開檢查速度、品質、成本與人工接手。",
       "urls": [
         "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
         "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity",
@@ -4000,7 +4157,8 @@
         "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests",
         "https://asana.com/inside-asana/cut-browsers-agent-cost",
         "https://www.vals.ai/blogs/multi-agent-vibe-code-bench",
-        "https://www.anthropic.com/engineering/redesigning-source-control"
+        "https://www.anthropic.com/engineering/redesigning-source-control",
+        "https://openai.com/index/third-moment-research/"
       ],
       "origin": "daily-trend"
     },
@@ -4028,12 +4186,13 @@
     },
     {
       "title": "Agent 的知識與證據，由誰整理、驗證與維護？",
-      "summary": "Spotify 把業務語意與範例交給領域專家維護；Cloudflare 讓跨系統盤點保留證據與未知。可對照知識負責人、可追溯性，以及更動後能否重測；兩篇都不足以推算投資報酬。",
+      "summary": "Spotify 談業務語意與範例維護，Cloudflare 保留跨系統盤點的證據，StackAI 則展示文件索引失敗如何被定位與重試。三者處理知識可靠性的不同環節；各自結果不能合算。",
       "origin": "daily",
       "urls": [
         "https://engineering.atspotify.com/2026/6/encoding-your-domain-expert-the-context-layer-behind-spotifys-data-assistant",
         "https://blog.cloudflare.com/ai-driven-cryptography-discovery/",
-        "https://x.com/levie/status/2103629073595728372"
+        "https://x.com/levie/status/2103629073595728372",
+        "https://temporal.io/resources/case-studies/stack-ai"
       ]
     },
     {
@@ -4048,7 +4207,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-14T03:34:00.553422+00:00",
+    "checkedAt": "2026-10-15T09:38:33+08:00",
     "points": []
   },
   "knowledgeLibrary": [
