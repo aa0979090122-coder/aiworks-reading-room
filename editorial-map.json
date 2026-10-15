@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T03:34:00.553422+00:00",
+  "updatedAt": "2026-10-15",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -709,7 +709,69 @@
             "記憶",
             "文件"
           ],
-          "articleHints": []
+          "articleHints": [],
+          "scenarioOptions": [
+            {
+              "label": "知識庫常漏檔",
+              "scenario": "IT 團隊上線企業 AI 知識庫後，員工反映新文件常找不到，卻不知道是同步、解析、索引還是搜尋出錯。",
+              "decision": "先建立每份文件的處理紀錄，決定要修哪一段及何時重試。",
+              "scope": "先談文件進入知識庫的可靠性；回答正確率與語意品質另作檢查。"
+            },
+            {
+              "label": "跨系統資料擴張",
+              "scenario": "部門想把 Drive、SharePoint 等文件接進同一個 AI 工作流程，資料量增加後同步故障變得難查。",
+              "decision": "按來源和處理步驟配置監控、重試與負責人。",
+              "scope": "先看文件處理與故障定位，不假設所有連線具有相同權限或格式。"
+            },
+            {
+              "label": "向主管說明改善",
+              "scenario": "專案負責人換了資料處理流程，主管問知識庫是否真的穩定、成本是否值得。",
+              "decision": "分開回報索引成功率、成本、使用者查找結果與品質限制。",
+              "scope": "以同類文件和固定期間比較；供應商案例不能當成自身投資報酬。"
+            }
+          ],
+          "readingPrompts": [
+            {
+              "id": "index-stage",
+              "question": "員工說「AI 找不到文件」時，先查哪一步？",
+              "answer": "StackAI 案例把下載、擷取、切塊和索引拆成步驟，能查出哪份文件在哪一段失敗。這先排除文件根本沒有進入知識庫的問題。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://temporal.io/resources/case-studies/stack-ai"
+              ],
+              "next": "再查索引成功但搜尋不到的文件，以及搜尋到後回答仍錯的情況。"
+            },
+            {
+              "id": "retry-cause",
+              "question": "為什麼只重試失敗步驟可能比整條流程重跑更穩？",
+              "answer": "Temporal 記錄每份文件完成的步驟；單一步驟失敗時可從該處接續，避免重新執行已完成的下載或解析。案例報告索引失敗率改善，但沒有公開故障分類與各措施貢獻。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://temporal.io/resources/case-studies/stack-ai"
+              ],
+              "next": "找改版前後相同文件類型的失敗原因與重試次數，檢查改善由哪個措施帶來。"
+            },
+            {
+              "id": "cost-attribution",
+              "question": "解析成本降到約十分之一，能歸因於哪項調整？",
+              "answer": "Temporal 明說成本變化來自解析分離、快取與重試等整體改造；沒有公布逐項貢獻。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://temporal.io/resources/case-studies/stack-ai"
+              ],
+              "next": "若要套用到自身系統，先量每份文件的解析、重試與儲存成本。"
+            },
+            {
+              "id": "quality-limit",
+              "question": "索引成功率改善後，是否已證明 AI 回答更可靠？",
+              "answer": "公開案例只有索引故障與解析成本資料，沒有回答正確率、更新延遲或使用者任務完成率；目前不能據此判定答案品質。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://temporal.io/resources/case-studies/stack-ai"
+              ],
+              "next": "用有標準答案的文件查詢、來源引用與更新時間另做驗收。"
+            }
+          ]
         },
         {
           "id": "learn-tool",
@@ -6038,6 +6100,9 @@
     "team-scale": [
       "https://www.anthropic.com/engineering/redesigning-source-control",
       "https://www.uber.com/gb/en/blog/efficient-software-factory/"
+    ],
+    "learn-data": [
+      "https://temporal.io/resources/case-studies/stack-ai"
     ]
   },
   "gaps": [
@@ -6078,6 +6143,14 @@
       "sourceLabel": "Anthropic 工程：Scion 遷移",
       "sourceUrl": "https://www.anthropic.com/engineering/redesigning-source-control",
       "reason": "Anthropic 公開日合併量、checkout 負荷、遷移做法與審查限制，可從不同管理時機討論如何找瓶頸；其特殊規模也提供清楚的反例邊界。"
+    },
+    {
+      "id": "stackai-knowledge-index-reliability-20261014",
+      "questionId": "learn-data",
+      "title": "企業 AI 找不到新文件，該先修哪個環節？",
+      "sourceLabel": "StackAI 文件索引案例",
+      "sourceUrl": "https://temporal.io/resources/case-studies/stack-ai",
+      "reason": "案例交代索引故障、分段重試和可追蹤的改善數字；仍需補搜尋與回答品質的反例，避免把索引成功當成 AI 工作成果。"
     }
   ]
 }
