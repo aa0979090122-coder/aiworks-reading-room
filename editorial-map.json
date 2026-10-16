@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-10-16",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -370,6 +370,69 @@
             "ai-workflow-handoff",
             "harness-ai-agent",
             "codex-record-replay-workflow"
+          ],
+          "scenarioOptions": [
+            {
+              "label": "合約初審",
+              "scenario": "企業法務開始用 AI 審合約，草案與既有先例不一致，律師想先知道差異出在哪裡。",
+              "decision": "要求每項建議連回先例、談判準則與客戶立場，再決定是否修約。",
+              "scope": "先談初審與來源追溯；條款是否接受仍由律師判斷。"
+            },
+            {
+              "label": "例外與衝突",
+              "scenario": "同一份合約的條款互相影響，AI 多輪檢查後仍有相反建議或不確定處。",
+              "decision": "區分有依據、被駁回與待查問題，安排律師逐項處理。",
+              "scope": "先看交接資訊與責任，不把代理相互挑戰視為已驗證的正確答案。"
+            },
+            {
+              "label": "擴大使用",
+              "scenario": "律所已完成單人概念驗證，準備讓多位律師使用，管理者想知道品質與返工是否可控。",
+              "decision": "用相同合約類型量建議採納率、人工修正、處理時間與漏判。",
+              "scope": "公開案例沒有提供這些實測指標；只提出可驗收的方式。"
+            }
+          ],
+          "readingPrompts": [
+            {
+              "id": "legal-source-trace",
+              "question": "AI 建議修改合約時，律師先看什麼？",
+              "answer": "Sullivan & Cromwell 讓工具比對律所先例、談判準則與客戶立場，輸出備忘錄和修訂建議供律師檢查。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://openai.com/index/sullivan-cromwell/"
+              ],
+              "next": "再找實際審查紀錄，確認每種建議能否連回具體先例。"
+            },
+            {
+              "id": "legal-conflict-handoff",
+              "question": "代理互相挑戰後，不確定的問題交給誰？",
+              "answer": "受訪合夥人描述將結論分成經挑戰仍有依據、被駁回和未驗證三類，最後由律師決定修訂。原文未公布衝突率或人工處理紀錄。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://openai.com/index/sullivan-cromwell/"
+              ],
+              "next": "查多位律師使用時，待查問題由誰分派、多久解決、如何留下理由。"
+            },
+            {
+              "id": "legal-rollout-measures",
+              "question": "單人測試變成多人使用後，能否證明審查更快、更準？",
+              "answer": "案例說明工具已朝多人使用調整，沒有公開準確率、漏判率、返工或處理時間。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://openai.com/index/sullivan-cromwell/"
+              ],
+              "next": "以相近合約與固定品質標準比較人工初審和 AI 輔助初審。"
+            },
+            {
+              "id": "legal-task-vs-deployment",
+              "question": "Ironclad 的合約任務評測，能直接代表律所實際審查成效嗎？",
+              "answer": "Ironclad 是 11 項研究任務的模擬評測，包含流程核准規則；Sullivan & Cromwell 描述律師對真實草案的審查工作。兩者測量對象不同。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://openai.com/index/sullivan-cromwell/",
+                "https://openai.com/index/advancing-computer-use-with-ironclad/"
+              ],
+              "next": "若要比較，先定義同一份合約的品質、例外處理和人工接手標準。"
+            }
           ]
         }
       ]
@@ -6103,6 +6166,10 @@
     ],
     "learn-data": [
       "https://temporal.io/resources/case-studies/stack-ai"
+    ],
+    "workflow-handoff": [
+      "https://openai.com/index/sullivan-cromwell/",
+      "https://openai.com/index/advancing-computer-use-with-ironclad/"
     ]
   },
   "gaps": [
@@ -6151,6 +6218,14 @@
       "sourceLabel": "StackAI 文件索引案例",
       "sourceUrl": "https://temporal.io/resources/case-studies/stack-ai",
       "reason": "案例交代索引故障、分段重試和可追蹤的改善數字；仍需補搜尋與回答品質的反例，避免把索引成功當成 AI 工作成果。"
+    },
+    {
+      "id": "sullivan-legal-review-handoff-20261015",
+      "questionId": "workflow-handoff",
+      "title": "合約審查交給 AI，律師該在哪些判斷點接手？",
+      "sourceLabel": "Sullivan & Cromwell 合約審查案例",
+      "sourceUrl": "https://openai.com/index/sullivan-cromwell/",
+      "reason": "案例交代先例、談判準則、多輪審查與律師決定的交接；未公布品質和時間成效，適合追問導入驗收方式。"
     }
   ]
 }
