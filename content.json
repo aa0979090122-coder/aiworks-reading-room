@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-15",
+  "editionDate": "2026-10-16",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1118,6 +1118,110 @@
     }
   ],
   "news": [
+    {
+      "type": "企業案例 · 法務審查與人工判斷",
+      "sourceDate": "2026-10-15",
+      "date": "2026-10-15",
+      "title": "Sullivan & Cromwell：合約審查用先例與談判準則，律師保留修改決定",
+      "lead": "律師事務所 Sullivan & Cromwell 將合約草案、事務所先例、談判準則與客戶立場放進 Agreement Analyzer，產生問題清單、分析備忘錄與修訂建議，交由律師檢查。",
+      "takeaways": [
+        "工具先由合夥人用 Codex 做單人概念驗證，再與 OpenAI 改善輸出品質、平行處理及多人使用。律師可自行選擇先例與談判準則。",
+        "多輪審查檢查條款與先例的差異及條款間影響，最後提出附理由的問題與追蹤修訂。律師決定接受、調整或捨棄。",
+        "受訪合夥人描述讓代理互相挑戰結論的設計，並區分有依據、被駁回及仍待查的問題；原文沒有公布實際準確率、處理時間或正式部署規模。"
+      ],
+      "angle": "評估合約審查 AI 時，先看它能否連回先例與客戶規則，再查不確定的建議如何交給律師決定。",
+      "caveat": "這是 OpenAI 與合作律所的案例。代理互相挑戰的段落包含受訪者描述的設計，不能全部視為已量測的正式流程；文章沒有對照組或成效數字。",
+      "url": "https://openai.com/index/sullivan-cromwell/",
+      "sources": [
+        {
+          "label": "OpenAI／Sullivan & Cromwell 原始案例",
+          "url": "https://openai.com/index/sullivan-cromwell/"
+        }
+      ],
+      "source": "OpenAI／Sullivan & Cromwell",
+      "author": "OpenAI；受訪者 John Savva（Sullivan & Cromwell 合夥人）",
+      "originalTitle": "Sullivan & Cromwell brings legal expertise into agreement review",
+      "englishSummary": "Sullivan & Cromwell describes an Agreement Analyzer that compares draft terms with selected precedents and playbooks, produces issues and proposed changes, and leaves the decision to lawyers. The article gives no measured accuracy, time saving, or rollout scale.",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance",
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "先例追溯",
+          "條款例外",
+          "人工審查"
+        ],
+        "outcome": "case"
+      },
+      "followupQuestions": [
+        "AI 建議的每項修改能否連到先例或客戶談判規則？",
+        "代理意見相互衝突時，律師看到哪些未解問題？",
+        "從單人測試擴大後，品質、處理時間與返工如何量測？"
+      ],
+      "checkedAt": "2026-10-16",
+      "dailyBackfillAt": "2026-10-16T09:35:00+08:00",
+      "topic": "case",
+      "researchQuestions": [
+        "workflow-handoff",
+        "industry-finance",
+        "team-owner"
+      ]
+    },
+    {
+      "type": "教育案例 · 課程資料與教師驗證",
+      "sourceDate": "2026-10-15",
+      "date": "2026-10-15",
+      "title": "Bar-Ilan 大學：課程助理先整理教師資料，再由教師測試回答",
+      "lead": "Bar-Ilan 大學在 Moodle 試行課程 AI 助理，資料限定教師上傳的講課錄音、逐字稿、投影片與文章。試點涵蓋 71 門課、約 2,400 名學生。",
+      "takeaways": [
+        "學生可搜尋與摘要課程內容，並用選擇題或開放題自測。校方計畫在新學期再擴充 100 門課，屬後續計畫。",
+        "受訪教師重寫投影片的簡短條列，補充論文與閱讀資料，再逐題檢查助理回答，才讓學生依課程內容使用。",
+        "一名學生自述課後每天讀書由五至六小時降到約三小時；教師班上期末平均分數比往年高三個百分點，但也指出可能是這屆學生程度不同。"
+      ],
+      "angle": "把課程資料接進 AI 後，教師仍需補足原本只靠口頭說明的內容，並用真實學生問題驗收回答。",
+      "caveat": "來源為 Microsoft 對校方、教師與學生的訪談。學生時間為個人自述；分數比較沒有排除班級差異，不能歸因於助理。",
+      "url": "https://news.microsoft.com/source/emea/features/missed-a-lecture-this-ai-agent-at-bar-ilan-university-helps-students-catch-up/",
+      "sources": [
+        {
+          "label": "Microsoft Source／Bar-Ilan 大學訪談",
+          "url": "https://news.microsoft.com/source/emea/features/missed-a-lecture-this-ai-agent-at-bar-ilan-university-helps-students-catch-up/"
+        }
+      ],
+      "source": "Microsoft Source／Bar-Ilan University",
+      "author": "Lim Ai Leen（Microsoft Source）；受訪者 Yarden Shay、Eliyahu Biton",
+      "originalTitle": "Missed a lecture? This AI agent at Bar-Ilan University helps students catch up",
+      "englishSummary": "Bar-Ilan University piloted a Moodle learning agent across 71 courses and roughly 2,400 students. A lecturer rewrote and tested course materials before use. Reported study-time and grade changes come from interviews without a controlled comparison.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "training"
+        ],
+        "concepts": [
+          "課程資料準備",
+          "教師驗收",
+          "學習成效歸因"
+        ],
+        "outcome": "case"
+      },
+      "followupQuestions": [
+        "教師在開放學生使用前，如何選題驗收回答？",
+        "課程資料更新後，誰負責重測？",
+        "學生自述省時與考試成績可用什麼方法分開驗證？"
+      ],
+      "checkedAt": "2026-10-16",
+      "dailyBackfillAt": "2026-10-16T09:35:00+08:00",
+      "topic": "case",
+      "researchQuestions": [
+        "course-results",
+        "team-owner",
+        "learn-data"
+      ]
+    },
     {
       "type": "企業案例 · 知識索引與故障修正",
       "sourceDate": "2026-10-14",
@@ -4207,7 +4311,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-15T09:38:33+08:00",
+    "checkedAt": "2026-10-16T09:35:00+08:00",
     "points": []
   },
   "knowledgeLibrary": [
