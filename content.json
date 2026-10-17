@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-16",
+  "editionDate": "2026-10-17",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1118,6 +1118,209 @@
     }
   ],
   "news": [
+    {
+      "type": "研究報告 · 工作變化與人工審查",
+      "sourceDate": "2026-10-16",
+      "date": "2026-10-16",
+      "title": "Anthropic 內部研究：Agent 增產後，人的審查與新人職缺怎麼變？",
+      "lead": "Anthropic 用內部人事、Agent 使用、產出資料和 17 位員工訪談，追蹤 AI 密集使用後的工作與聘用變化。報告觀察到技術部門初階職缺占比下降，也發現人員開始花更多時間管理 Agent 產出。",
+      "takeaways": [
+        "技術部門初階員工占比自 2025 年初的 21% 降至 14%，初階技術職的新聘占比由 27% 降至 9%；技術職總人數仍增加，不能把占比變化直接解讀成裁員。",
+        "研究比較 192 位採用編碼 Agent 的工程師與 74 位未採用者。採用後程式產出上升，但工具採用並非隨機，且程式碼數量與撤銷率只能涵蓋部分品質。",
+        "員工指揮的互動式 Agent 到 2026 年 8 月累計運作時數約為人類工時六倍；研究估計互動工作階段約八成時間在等人回應。員工因而建立監控、分流與評測流程。"
+      ],
+      "angle": "導入 Agent 後，除產出速度外，也要量人工審查負荷、任務品質、新人學習與職務轉換。",
+      "caveat": "這是 Anthropic 對自身組織的觀察研究。業務快速成長與自選採用工具會影響比較；Agent 運作時數不等於有效工作時數，也不能推論其他企業的聘用變化。",
+      "url": "https://www.anthropic.com/research/employment-at-anthropic",
+      "sources": [
+        {
+          "label": "Anthropic Institute 原始研究",
+          "url": "https://www.anthropic.com/research/employment-at-anthropic"
+        }
+      ],
+      "source": "Anthropic Institute",
+      "author": "Nathan Wilmers、Regina Catipon、Maxim Massenkoff、Peter McCrory",
+      "originalTitle": "How employment is changing at Anthropic",
+      "englishSummary": "Anthropic analyzes internal employment, agent use and output data alongside 17 interviews. Junior technical hiring shares fell while agent use and measured output rose. Adoption is not randomized, code volume is an incomplete quality measure, and Anthropic may not generalize to other employers.",
+      "knowledge": {
+        "primary": "adoption",
+        "themes": [
+          "adoption",
+          "evaluation",
+          "workflow"
+        ],
+        "concepts": [
+          "人工注意力",
+          "職務轉換",
+          "初階人才培養"
+        ],
+        "outcome": "research"
+      },
+      "followupQuestions": [
+        "Agent 產出增加後，哪些審查工作落到員工身上，花多少時間？",
+        "初階工作交給 Agent 後，新人如何練習判斷與累積領域經驗？",
+        "同時追蹤品質、返工、員工負荷與部門成效，能否區分工具效果和業務成長？"
+      ],
+      "topic": "research",
+      "researchQuestions": [
+        "talent-change",
+        "team-owner",
+        "value-quality"
+      ],
+      "checkedAt": "2026-10-17",
+      "dailyBackfillAt": "2026-10-17T09:46:27+08:00"
+    },
+    {
+      "type": "企業案例 · 金融服務與模型治理",
+      "sourceDate": "2026-10-16",
+      "date": "2026-10-16",
+      "title": "Itaú：先用 IARA 管理多模型，再分階段擴大銀行服務",
+      "lead": "巴西銀行 Itaú 將文字與語音服務整合進 ia.i，先供約 30 萬名客戶使用；內部 IARA 平台集中管理不同模型的存取、成本、回應準確性與負責任 AI 規則。",
+      "takeaways": [
+        "ia.i 從 2024 年的特定金融需求功能擴大成對話入口，處理帳戶、信用、卡片與保險等問題；需要時轉交專業人員，先透過首批客戶觀察使用方式。",
+        "IARA 依內部政策提供不同模型，讓簡單任務偏重成本與延遲，複雜任務使用較深入的推理與資料根據。法務應用在逾 9,000 萬份文件中執行每月逾 200 萬項任務。",
+        "報導稱法務部門部分流程效率改善 20% 至 80%。這是銀行與供應商的自述，沒有公開各流程基準、品質或成本對照；全客戶覆蓋與其他服務能力仍屬計畫。"
+      ],
+      "angle": "金融業擴大 AI 服務前，可先拆開模型選擇、資料權限、成本、回答品質與轉交人工的驗收方式。",
+      "caveat": "來源是 OpenAI 對 Itaú CTO 的客戶案例；法務效率區間未揭露比較方法，面向全部客戶的目標不是已達成結果。",
+      "url": "https://openai.com/index/itau-generative-ai/",
+      "sources": [
+        {
+          "label": "OpenAI／Itaú CTO 原始訪談",
+          "url": "https://openai.com/index/itau-generative-ai/"
+        }
+      ],
+      "source": "OpenAI／Itaú",
+      "author": "OpenAI；受訪者 Carlos Eduardo Mazzei（Itaú CTO）",
+      "originalTitle": "How Itaú is building generative AI for its entire customer base",
+      "englishSummary": "Itaú describes a phased customer rollout of ia.i and its IARA platform for governed access to multiple models. The bank reports legal-document processing at scale, but does not publish comparable quality, cost or baseline measures for its efficiency claims.",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance",
+          "scaling",
+          "workflow"
+        ],
+        "concepts": [
+          "模型存取治理",
+          "分階段擴大",
+          "人工轉交"
+        ],
+        "outcome": "case"
+      },
+      "followupQuestions": [
+        "第一批客戶使用後，哪些問題應交由專業人員處理？",
+        "模型切換與權限政策如何留下可查的決策紀錄？",
+        "法務流程的效率改善，是否同時維持答案品質與單位成本？"
+      ],
+      "topic": "case",
+      "researchQuestions": [
+        "industry-finance",
+        "governance-agent",
+        "cost-unit"
+      ],
+      "checkedAt": "2026-10-17",
+      "dailyBackfillAt": "2026-10-17T09:46:27+08:00"
+    },
+    {
+      "type": "企業案例 · 開發流程與產品入口",
+      "sourceDate": "2026-10-16",
+      "date": "2026-10-16",
+      "title": "Stack Overflow：Codex 縮短連接器開發，Plugin 降低產品設定步驟",
+      "lead": "Stack Overflow 受訪主管描述兩名工程師用 Codex 在數週內建出 Agents 產品，另一組團隊把企業知識系統的連接器開發由原本三至六週縮短至四天。",
+      "takeaways": [
+        "新產品由兩名工程師在既定環境與計畫下與 Codex 協作；企業產品連接器開發仍需更多人工參與，不能把兩者視為同一工作量。",
+        "團隊以 ChatGPT Plugin 降低設定步驟，受訪者表示註冊量隔夜增為三倍、Agent 建立量最多約十倍。",
+        "主管希望未來探索自動化模型路由；這是計畫，原文沒有公布品質、維護成本或可重複的比較基準。"
+      ],
+      "angle": "先把開發週期與產品採用分開量，並檢查更快推出的連接器是否仍能維護。",
+      "caveat": "數字來自 OpenAI 客戶案例中的主管訪談；單一連接器和短期註冊變化沒有對照組，不能代表長期營收或所有開發任務。",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin/",
+      "sources": [
+        {
+          "label": "OpenAI／Stack Overflow 主管訪談",
+          "url": "https://openai.com/index/stack-overflow-chatgpt-plugin/"
+        }
+      ],
+      "source": "OpenAI／Stack Overflow",
+      "author": "OpenAI；受訪者 Alexandra Lato（Stack Overflow VP of Product）",
+      "originalTitle": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "englishSummary": "Stack Overflow reports a two-engineer build, shorter connector development, and an overnight rise in product signups after a ChatGPT plugin launch. The case offers no controlled comparison or long-term quality and revenue measures.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "scaling"
+        ],
+        "concepts": [
+          "連接器開發",
+          "設定摩擦",
+          "產品採用"
+        ],
+        "outcome": "case"
+      },
+      "followupQuestions": [
+        "連接器由數週縮到數天後，返工與維護工時怎麼變？",
+        "註冊量增加是否帶來持續使用與有效任務？"
+      ],
+      "topic": "case",
+      "researchQuestions": [
+        "value-quality",
+        "market-growth",
+        "team-scale"
+      ],
+      "checkedAt": "2026-10-17",
+      "dailyBackfillAt": "2026-10-17T09:46:27+08:00"
+    },
+    {
+      "type": "功能更新 · 多語關鍵字搜尋",
+      "sourceDate": "2026-10-16",
+      "date": "2026-10-16",
+      "title": "Cloudflare AI Search：中日韓查詢可用 trigram 分詞",
+      "lead": "Cloudflare 的 AI Search 關鍵字搜尋新增 trigram tokenizer，能處理沒有空格的中文、日文與韓文查詢。",
+      "takeaways": [
+        "官方說舊的 porter tokenizer 對這些語言效果不佳，整句無空格查詢可能被當成單一精確詞組而找不到結果。",
+        "已有這些語言內容的團隊需將 keyword_tokenizer 設為 trigram；變更後會重新建立完整索引。",
+        "更新只說明關鍵字比對能力，沒有公布實際檢索品質、成本或重建索引時間。"
+      ],
+      "angle": "企業知識庫若有中文文件，可先用常見問題比對改設定前後的搜尋召回與答案品質。",
+      "caveat": "這是功能發布說明，尚無獨立評測；重新索引可能影響上線安排，所需時間依資料量而定，原文未量化。",
+      "url": "https://developers.cloudflare.com/changelog/post/2026-10-16-cjk-keyword-search/",
+      "sources": [
+        {
+          "label": "Cloudflare 官方更新",
+          "url": "https://developers.cloudflare.com/changelog/post/2026-10-16-cjk-keyword-search/"
+        }
+      ],
+      "source": "Cloudflare Docs",
+      "author": "Cloudflare",
+      "originalTitle": "AI Search keyword search supports Japanese, Chinese, and Korean queries",
+      "englishSummary": "Cloudflare AI Search now offers trigram keyword tokenization for Japanese, Chinese and Korean. Switching from porter requires a full reindex; the note does not report measured retrieval quality.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "多語檢索",
+          "索引更新"
+        ],
+        "outcome": "update"
+      },
+      "followupQuestions": [
+        "改用 trigram 後，常見中文問題的命中與誤命中如何量測？",
+        "完整重建索引要安排多久，資料更新期間如何驗證？"
+      ],
+      "topic": "feature",
+      "researchQuestions": [
+        "learn-data",
+        "change-feature"
+      ],
+      "checkedAt": "2026-10-17",
+      "dailyBackfillAt": "2026-10-17T09:46:27+08:00"
+    },
     {
       "type": "企業案例 · 法務審查與人工判斷",
       "sourceDate": "2026-10-15",
@@ -4251,7 +4454,7 @@
     },
     {
       "title": "Agent 規模化後，誰處理審查與成本？",
-      "summary": "Spotify、Anthropic、Uber、Asana 與 Third Moment 分別處理品質審查、基礎設施、任務成本和長時間代理。各案例的工作負載不同，應分開檢查速度、品質、成本與人工接手。",
+      "summary": "Spotify、Anthropic、Uber、Itaú 等來源分別討論品質審查、人工注意力、基礎設施、任務成本與模型治理。案例工作負載不同，需分開檢查速度、品質、成本與人工接手。",
       "urls": [
         "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
         "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity",
@@ -4262,7 +4465,9 @@
         "https://asana.com/inside-asana/cut-browsers-agent-cost",
         "https://www.vals.ai/blogs/multi-agent-vibe-code-bench",
         "https://www.anthropic.com/engineering/redesigning-source-control",
-        "https://openai.com/index/third-moment-research/"
+        "https://openai.com/index/third-moment-research/",
+        "https://www.anthropic.com/research/employment-at-anthropic",
+        "https://openai.com/index/itau-generative-ai/"
       ],
       "origin": "daily-trend"
     },
@@ -4311,7 +4516,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-16T09:35:00+08:00",
+    "checkedAt": "2026-10-17T09:46:27+08:00",
     "points": []
   },
   "knowledgeLibrary": [
