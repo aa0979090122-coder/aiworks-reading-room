@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16",
+  "updatedAt": "2026-10-17",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -1049,7 +1049,69 @@
             "合規",
             "風險"
           ],
-          "articleHints": []
+          "articleHints": [],
+          "scenarioOptions": [
+            {
+              "label": "先向少數客戶試行",
+              "scenario": "銀行準備讓 AI 回答多種金融問題，服務團隊需要決定先開放哪些客戶與交易。",
+              "decision": "先列出可處理問題、轉交人工的條件與試行期間要記的錯誤。",
+              "scope": "以 Itaú 首批約 30 萬客戶為例；全客戶覆蓋仍是目標。"
+            },
+            {
+              "label": "統一模型存取",
+              "scenario": "各部門已使用不同模型，風控與 IT 要知道資料如何進出、費用如何歸屬。",
+              "decision": "建立同一層存取政策、觀測紀錄與模型選擇準則。",
+              "scope": "先討論治理架構；來源沒有公布政策細節或實際成本。"
+            },
+            {
+              "label": "驗收法務流程",
+              "scenario": "法務團隊報告文件處理更快，主管需要確認準確性、人工覆核和單位成本。",
+              "decision": "按工作階段建立基準，對照處理時間、錯誤、返工與人工接手。",
+              "scope": "公開效率區間是供應商與客戶自述，不能直接當作投資報酬。"
+            }
+          ],
+          "readingPrompts": [
+            {
+              "id": "itau-phased-rollout",
+              "question": "Itaú 怎麼降低一次開放所有客戶的風險？",
+              "answer": "ia.i 先向約 30 萬名客戶開放，提供文字與語音入口，必要時轉交專業人員，再觀察實際使用。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://openai.com/index/itau-generative-ai/"
+              ],
+              "next": "查首批使用中哪些問題需要轉交及其處理結果。"
+            },
+            {
+              "id": "itau-model-governance",
+              "question": "多模型平台實際管什麼？",
+              "answer": "IARA 讓不同模型按內部政策存取，公開訪談提到成本、準確性、觀測和負責任 AI；沒有揭露具體規則和稽核數據。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://openai.com/index/itau-generative-ai/"
+              ],
+              "next": "查存取權限、模型切換、錯誤追蹤與資料保留的操作紀錄。"
+            },
+            {
+              "id": "itau-legal-efficiency",
+              "question": "法務效率改善 20% 至 80%，可以直接當成全行成效嗎？",
+              "answer": "來源只說法務部門部分流程的改善區間，沒有列各項流程基準、品質或成本對照。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://openai.com/index/itau-generative-ai/"
+              ],
+              "next": "按文件類型和流程步驟取得前後處理時間、錯誤與覆核工時。"
+            },
+            {
+              "id": "itau-model-choice",
+              "question": "哪些工作值得用較昂貴、推理較深的模型？",
+              "answer": "受訪 CTO 區分成本與延遲敏感的簡單工作，以及需要推理和資料根據的複雜工作；文章未提供分流門檻或測試結果。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://openai.com/index/itau-generative-ai/"
+              ],
+              "next": "以真實問題集比較不同模型的品質、延遲與單位成本。"
+            }
+          ]
         },
         {
           "id": "market-growth",
@@ -1101,7 +1163,69 @@
             "轉型",
             "員工"
           ],
-          "articleHints": []
+          "articleHints": [],
+          "scenarioOptions": [
+            {
+              "label": "管理大量 Agent",
+              "scenario": "團隊部署更多 Agent 後，主管發現產出堆積，員工每天都在看結果和回覆請求。",
+              "decision": "先量每項任務的人工等待、審查與返工，再決定要增加 Agent 還是改善分流。",
+              "scope": "以 Anthropic 內部工作為起點，不把 Agent 運作時數當成生產力。"
+            },
+            {
+              "label": "重新設計初階職",
+              "scenario": "企業把初階重複工作交給 AI，HR 擔心新進同仁少了練習基本判斷的機會。",
+              "decision": "盤點仍需人工學習的案例、審查責任與輪調機會。",
+              "scope": "先談培養路徑；單一公司聘用占比無法預測全產業職缺。"
+            },
+            {
+              "label": "回報導入成效",
+              "scenario": "高層看到程式與銷售產出增加，要求判斷是否由 AI 帶來，現場也反映工作壓力提高。",
+              "decision": "同步追蹤品質、返工、員工負荷與原有業務變化。",
+              "scope": "把同人前後比較與採用者自選偏差說清楚，不直接歸因。"
+            }
+          ],
+          "readingPrompts": [
+            {
+              "id": "anthropic-attention-cost",
+              "question": "Agent 工作時數增加，為什麼人仍可能更忙？",
+              "answer": "Anthropic 估計互動工作階段約八成時間在等人回應，員工另外花時間監控、分流和審查產出；這些是該公司的觀察。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://www.anthropic.com/research/employment-at-anthropic"
+              ],
+              "next": "在一般企業量每項工作的人工作業、等待、審查和返工時間。"
+            },
+            {
+              "id": "anthropic-junior-path",
+              "question": "初階聘用占比下降，能否證明 AI 取代新人？",
+              "answer": "報告顯示技術部門初階新聘占比由 27% 降至 9%，也指出公司快速擴張、非技術職成長和工作內容轉移。單靠占比不能分離 AI 的影響。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://www.anthropic.com/research/employment-at-anthropic"
+              ],
+              "next": "找同期間職務需求、絕對人數、業務成長與新人培養資料。"
+            },
+            {
+              "id": "anthropic-output-causality",
+              "question": "工程師採用 Agent 後程式產出提高，能否歸因於工具？",
+              "answer": "研究追蹤 192 位採用者與 74 位未採用者，觀察採用後程式碼增加，但採用並非隨機，產出與品質指標也有限。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://www.anthropic.com/research/employment-at-anthropic"
+              ],
+              "next": "另查任務難度、發版成果、故障與維護成本，並比較採用前趨勢。"
+            },
+            {
+              "id": "anthropic-transferability",
+              "question": "Anthropic 的工作變化能套用到一般企業嗎？",
+              "answer": "研究樣本來自高度 AI 密集的模型公司，作者明確指出其聘用和工作制度有難以複製之處。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://www.anthropic.com/research/employment-at-anthropic"
+              ],
+              "next": "尋找其他產業的員工追蹤、審查工時與職務轉換研究。"
+            }
+          ]
         }
       ]
     }
@@ -6170,6 +6294,12 @@
     "workflow-handoff": [
       "https://openai.com/index/sullivan-cromwell/",
       "https://openai.com/index/advancing-computer-use-with-ironclad/"
+    ],
+    "talent-change": [
+      "https://www.anthropic.com/research/employment-at-anthropic"
+    ],
+    "industry-finance": [
+      "https://openai.com/index/itau-generative-ai/"
     ]
   },
   "gaps": [
@@ -6226,6 +6356,22 @@
       "sourceLabel": "Sullivan & Cromwell 合約審查案例",
       "sourceUrl": "https://openai.com/index/sullivan-cromwell/",
       "reason": "案例交代先例、談判準則、多輪審查與律師決定的交接；未公布品質和時間成效，適合追問導入驗收方式。"
+    },
+    {
+      "id": "anthropic-work-attention-20261016",
+      "questionId": "talent-change",
+      "title": "Agent 增產後，人該把注意力放在哪裡？",
+      "sourceLabel": "Anthropic 內部工作研究",
+      "sourceUrl": "https://www.anthropic.com/research/employment-at-anthropic",
+      "reason": "同時提供 Agent 時數、人工等待、產出與聘用資料，能追問增產如何改變審查、新人學習與職務；作者也列出歸因限制。"
+    },
+    {
+      "id": "itau-governed-banking-rollout-20261016",
+      "questionId": "industry-finance",
+      "title": "銀行擴大 AI 服務前，先驗收哪幾個環節？",
+      "sourceLabel": "Itaú 分階段導入案例",
+      "sourceUrl": "https://openai.com/index/itau-generative-ai/",
+      "reason": "案例有首批客戶、人工轉交、多模型治理與法務工作量；品質和成本基準未公開，適合拆成可檢查的導入問題。"
     }
   ]
 }
