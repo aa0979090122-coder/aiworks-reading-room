@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-17",
+  "editionDate": "2026-10-18",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1118,6 +1118,120 @@
     }
   ],
   "news": [
+    {
+      "type": "企業案例 · 信貸審查與人工覆核",
+      "sourceDate": "2026-10-16",
+      "date": "2026-10-16",
+      "title": "Benefit Street Partners：先用 AI 找合約風險，再由分析師覆核",
+      "lead": "投資經理用 Codex 建立公開貸款估值比較工具，並整理律師備忘錄做信貸合約初步分析；每份合約的第一輪處理約 20 分鐘，後續仍由人員審查至少一小時。",
+      "takeaways": [
+        "估值工具比對上市商業發展公司向 SEC 提交的資料，讓團隊檢查同一筆貸款在不同持有者帳上的估值；投資經理說首版用一天完成，後續修改合計約 10 至 12 小時。",
+        "合約分析工具根據律師備忘錄找出可能使價值轉離放款人的條款。約 20 分鐘產生第一輪結果後，分析師仍需一小時以上覆核，投資決定由人做。",
+        "投資經理說投資委員會的追問可由過去數天或數週縮為一天內，部分可在會中回答。來源沒有提供漏判率、對照組或委員會決策品質的量測。"
+      ],
+      "angle": "導入文件分析後，先驗收它找出風險條款的能力、人工覆核工時，以及投資委員會追問是否更有依據。",
+      "caveat": "數字與品質感受出自 OpenAI 客戶案例中的單一投資經理；20 分鐘只是第一輪分析，不能當成完整審查時間，也不能據此推論投資績效。",
+      "url": "https://openai.com/index/benefit-street-partners/",
+      "sources": [
+        {
+          "label": "OpenAI／Benefit Street Partners 原始訪談",
+          "url": "https://openai.com/index/benefit-street-partners/"
+        }
+      ],
+      "source": "OpenAI／Benefit Street Partners",
+      "author": "OpenAI；受訪者 Anant Kumar（Benefit Street Partners 投資經理）",
+      "originalTitle": "Benefit Street Partners answers questions faster with Codex",
+      "englishSummary": "A portfolio manager built a loan valuation tracker and a credit-agreement analyzer. The latter takes about 20 minutes for a first pass, then at least an hour of human review. Faster committee follow-ups are self-reported; error rates and investment outcomes are not measured publicly.",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow",
+          "governance"
+        ],
+        "concepts": [
+          "合約風險覆核",
+          "人工審查",
+          "估值比較"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://openai.com/index/sullivan-cromwell/",
+            "reason": "兩者都用 AI 輔助合約審查；Benefit Street Partners 從投資判斷出發，Sullivan & Cromwell 從律師先例與談判準則出發。"
+          }
+        ]
+      },
+      "followupQuestions": [
+        "20 分鐘第一輪分析之後，人工一小時主要在核對哪些風險條款？",
+        "委員會追問回覆變快後，漏判、返工與決策依據是否改善？",
+        "估值比較工具的資料更新與來源差異由誰驗證？"
+      ],
+      "topic": "case",
+      "researchQuestions": [
+        "value-quality",
+        "industry-finance",
+        "workflow-handoff"
+      ],
+      "checkedAt": "2026-10-18",
+      "dailyBackfillAt": "2026-10-18T09:35:43+08:00"
+    },
+    {
+      "type": "企業工程實作 · 推薦系統推論成本",
+      "sourceDate": "2026-10-16",
+      "date": "2026-10-16",
+      "title": "Spotify：推薦模型的推論成本卡在搜尋、評分與個人化",
+      "lead": "Spotify 說明大型語言模型推薦 Podcast 時，beam search、候選評分與個人化各有推論瓶頸；團隊與 NVIDIA 合作，把所需功能補進 TensorRT LLM。",
+      "takeaways": [
+        "先前 vLLM 的 beam search 在 GPU 核心外執行，增加 CPU 負荷與重算；團隊曾選用較低階加速器控制成本。候選評分則使用 SGLang，一次評估多個候選，避免每個候選各送一次請求。",
+        "個人化先試過把聆聽紀錄寫成文字，卻使提示過長、延遲與 GPU 使用量上升；目前較成功的做法是將既有使用者向量投影成 soft token，但其他方案仍在研究。",
+        "團隊與 NVIDIA 補上多序列 beam search、候選評分與 soft token 等功能。Spotify 報告 Qwen3 1.7B 特定負載的 beam search 成本最多降 54%，評分成本最多降 7%；未公開推薦品質與整體服務成本的可比數據。"
+      ],
+      "angle": "擴大生成式推薦前，將延遲、GPU 利用率與每次推薦成本分開量，再看品質是否維持。",
+      "caveat": "成本幅度來自 Spotify 與 NVIDIA 的工程文章，限於文中模型與負載；其他個人化方案尚未正式上線，不能推論一般企業改用同一推論引擎也有相同收益。",
+      "url": "https://engineering.atspotify.com/2026/10/advancing-generative-recommendation-inference-our-collaboration-with-nvidia-on-tensorrt-llm",
+      "sources": [
+        {
+          "label": "Spotify／NVIDIA 工程原文",
+          "url": "https://engineering.atspotify.com/2026/10/advancing-generative-recommendation-inference-our-collaboration-with-nvidia-on-tensorrt-llm"
+        }
+      ],
+      "source": "Spotify Engineering／NVIDIA Engineering",
+      "author": "Ivo Senese、Reid Wilbur、Mark VanMiddlesworth、Guy Stone、Marek Pikulski、Stefan Niebler、Alexander Young",
+      "originalTitle": "Advancing Generative Recommendation Inference: our collaboration with NVIDIA on TensorRT LLM",
+      "englishSummary": "Spotify describes separate beam-search, candidate-scoring and personalization bottlenecks, then reports adding needed features to TensorRT LLM with NVIDIA. For a Qwen3 1.7B workload it reports up to 54% lower beam-search cost and up to 7% lower scoring cost; recommendation quality and service-wide economics are not quantified.",
+      "knowledge": {
+        "primary": "scaling",
+        "themes": [
+          "scaling",
+          "evaluation",
+          "workflow"
+        ],
+        "concepts": [
+          "推論成本",
+          "候選評分",
+          "個人化延遲"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://www.uber.com/gb/en/blog/efficient-software-factory/",
+            "reason": "兩者都拆開不同工作負載的成本；Spotify 衡量推薦推論，Uber 衡量工程代理請求與工作階段。"
+          }
+        ]
+      },
+      "followupQuestions": [
+        "推論成本下降時，推薦品質與使用者互動是否維持？",
+        "不同推薦工作負載各自的延遲與 GPU 成本基準是多少？"
+      ],
+      "topic": "case",
+      "researchQuestions": [
+        "cost-unit",
+        "market-growth"
+      ],
+      "checkedAt": "2026-10-18",
+      "dailyBackfillAt": "2026-10-18T09:35:43+08:00"
+    },
     {
       "type": "研究報告 · 工作變化與人工審查",
       "sourceDate": "2026-10-16",
@@ -4516,7 +4630,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-17T09:46:27+08:00",
+    "checkedAt": "2026-10-18T09:35:43+08:00",
     "points": []
   },
   "knowledgeLibrary": [

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17",
+  "updatedAt": "2026-10-18",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -130,6 +130,68 @@
           "articleHints": [
             "ai-evaluate",
             "skill-instructions-model-upgrades"
+          ],
+          "scenarioOptions": [
+            {
+              "label": "投資委員會追問",
+              "scenario": "投資委員會問起某筆貸款估值，分析師需要在會中或當天找出可核對的比較資料。",
+              "decision": "檢查估值工具引用哪份 SEC 文件、資料是否更新，再決定能否當場回覆。",
+              "scope": "先談追問所需證據與覆核；案例沒有公布投資決策品質。"
+            },
+            {
+              "label": "長篇合約初審",
+              "scenario": "分析師收到數百頁信貸合約，擔心部分條款使放款人承擔未看見的風險。",
+              "decision": "先用律師備忘錄列出需查的條款，再分配人工覆核與法律意見。",
+              "scope": "20 分鐘是工具的第一輪結果；後續至少一小時人工審查仍需保留。"
+            },
+            {
+              "label": "向主管回報成效",
+              "scenario": "團隊導入 AI 文件分析後，主管問速度變快是否也讓審查更完整。",
+              "decision": "分開記錄第一輪時間、人工覆核、漏判、返工與委員會追問回覆。",
+              "scope": "公開案例只提供受訪者的時間與感受，尚不能歸因為投資績效改善。"
+            }
+          ],
+          "readingPrompts": [
+            {
+              "id": "bsp-first-pass-review",
+              "question": "合約初步分析完成，人工還要做多少事？",
+              "answer": "受訪經理說工具約 20 分鐘產生第一輪分析，之後仍有一小時以上人工覆核，投資決定由人作出。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://openai.com/index/benefit-street-partners/"
+              ],
+              "next": "查人工覆核實際修改了哪些條款判斷，以及需要多少法律諮詢。"
+            },
+            {
+              "id": "bsp-speed-vs-rigor",
+              "question": "回覆委員會更快，能否同時增加審查深度？",
+              "answer": "受訪經理說追問由數天或數週縮到一天內，有時可在會中回答，並認為相同時間可做更多審查；來源沒有公開審查量或品質基準。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://openai.com/index/benefit-street-partners/"
+              ],
+              "next": "比較相似交易的追問輪數、證據完整度與人工覆核工時。"
+            },
+            {
+              "id": "bsp-missed-clauses",
+              "question": "AI 是否漏掉影響放款人權益的條款？",
+              "answer": "來源說分析器參考律師備忘錄找風險條款，但沒有公開漏判率、錯誤案例或獨立測試。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://openai.com/index/benefit-street-partners/"
+              ],
+              "next": "用既有合約與律師已標註的風險條款建立固定測試集。"
+            },
+            {
+              "id": "bsp-valuation-source",
+              "question": "估值比較工具的資料怎麼核對？",
+              "answer": "工具從上市商業發展公司的公開 SEC 申報比對同筆貸款估值；原文沒有說明更新頻率或資料錯配處理。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://openai.com/index/benefit-street-partners/"
+              ],
+              "next": "查同名貸款、不同申報期間與估值方法如何對齊。"
+            }
           ]
         },
         {
@@ -6300,6 +6362,10 @@
     ],
     "industry-finance": [
       "https://openai.com/index/itau-generative-ai/"
+    ],
+    "value-quality": [
+      "https://openai.com/index/benefit-street-partners/",
+      "https://openai.com/index/sullivan-cromwell/"
     ]
   },
   "gaps": [
@@ -6372,6 +6438,14 @@
       "sourceLabel": "Itaú 分階段導入案例",
       "sourceUrl": "https://openai.com/index/itau-generative-ai/",
       "reason": "案例有首批客戶、人工轉交、多模型治理與法務工作量；品質和成本基準未公開，適合拆成可檢查的導入問題。"
+    },
+    {
+      "id": "bsp-credit-review-quality-20261016",
+      "questionId": "value-quality",
+      "title": "信貸審查加速後，人工覆核是否更扎實？",
+      "sourceLabel": "Benefit Street Partners 信貸分析案例",
+      "sourceUrl": "https://openai.com/index/benefit-street-partners/",
+      "reason": "原始訪談同時交代第一輪分析時間、人工覆核與投資委員會追問，可檢查速度改善後的品質與責任分工；漏判和投資結果仍無公開數據。"
     }
   ]
 }
