@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-18",
+  "editionDate": "2026-10-19",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1118,6 +1118,241 @@
     }
   ],
   "news": [
+    {
+      "type": "研究報告 · AI 採用預期",
+      "sourceDate": "2026-10-16",
+      "date": "2026-10-16",
+      "title": "Anthropic：員工與美國民眾對 AI 工作影響的預期差在哪？",
+      "lead": "Anthropic 比較 2026 年 8 月美國成年人與自家員工的問卷：兩群人對目前能力的判斷接近，對未來能力、採用速度與省時幅度的預期差距較大。",
+      "takeaways": [
+        "Morning Consult 的美國成年人樣本為 10,980 人，依人口特徵加權；Anthropic 員工內部問卷有 1,334 人，未加權。兩組都屬自陳預期，並非未來工作成果。",
+        "在工作中使用 AI 的美國受訪者有 26% 認為適合 AI 的任務可縮至四分之一時間以下；Anthropic 員工為 59%。題目已把檢查與修改時間算入，但兩群人的工作與工具經驗不同。",
+        "美國成年人最常選的未來採用障礙包括顧客偏好真人、資料隱私、安全、可靠性與責任歸屬。企業可先查自己工作中的限制，不能把兩組預測當作實際失業率。"
+      ],
+      "angle": "培訓與導入規劃可分開詢問員工預期、實際使用和工作成果，避免以能力預測代替部署決策。",
+      "caveat": "美國問卷來自網路自願樣本並經加權，Anthropic 員工是特殊工作環境；報告的 2030 數字是受訪者預測與模型情境，並非已驗證結果。",
+      "url": "https://www.anthropic.com/research/ai-expectations-gap",
+      "sources": [
+        {
+          "label": "Anthropic Institute 原始研究",
+          "url": "https://www.anthropic.com/research/ai-expectations-gap"
+        }
+      ],
+      "source": "Anthropic Institute",
+      "author": "Szymon Sacher、Tess Cotter、Charles I. Jones、Anton Korinek、Peter McCrory",
+      "originalTitle": "The AI expectations gap",
+      "englishSummary": "A survey compares 10,980 US adults with 1,334 Anthropic staff. Current capability views are closer than forecasts of future capabilities, adoption and time savings. These are expectations, not measured employment outcomes.",
+      "knowledge": {
+        "primary": "adoption",
+        "themes": [
+          "adoption",
+          "evaluation",
+          "market"
+        ],
+        "concepts": [
+          "採用障礙",
+          "員工預期",
+          "問卷樣本"
+        ],
+        "outcome": "report",
+        "related": [
+          {
+            "url": "https://www.anthropic.com/research/employment-at-anthropic",
+            "reason": "同一研究組的另一篇檢視公司內部工作變化；本篇則比較人們對未來的預期，不能把兩者混為實際成效。"
+          }
+        ]
+      },
+      "followupQuestions": [
+        "員工認為 AI 能做哪些工作，與實際使用紀錄差多少？",
+        "預期的省時若成立，會被檢查與返工抵銷多少？"
+      ],
+      "topic": "trend",
+      "researchQuestions": [
+        "talent-change",
+        "value-practical-metrics"
+      ],
+      "checkedAt": "2026-10-19",
+      "dailyBackfillAt": "2026-10-19T11:54:17+08:00"
+    },
+    {
+      "type": "企業實作 · 業務流程",
+      "sourceDate": "2026-10-16",
+      "date": "2026-10-16",
+      "title": "Anthropic 日本業務：把名單分配、回信草稿與例外追蹤拆給不同 Agent",
+      "lead": "日本業務代表原本每天花約兩小時分配與篩選名單，CRM 常落後一天。他把名單路由、資格判斷、回信草稿與後續追蹤分成不同工作，並保留需要人工判斷的項目。",
+      "takeaways": [
+        "名單路由 Agent 依優先度與當天人員排班分配線索並留下交接報告；另一個 Agent 依預先設定的條件篩選、更新 Salesforce、產生第一封信草稿。",
+        "業務代表對價格、敏感客戶與模糊需求保留審查；跨團隊後續事項送到 Slack 討論串追蹤。寄出的信仍由人檢查與送出，寄信修改會回寫成共享知識。",
+        "作者以每週完成的任務乘原本手作時間，估計省下約 60 小時；這是個人換算，沒有公開獨立計時、客戶回覆品質或成交結果。"
+      ],
+      "angle": "從名單交接與例外處理切入，先定義哪些步驟可自動執行、哪些信件與客戶承諾必須由人確認。",
+      "caveat": "單一 Anthropic 員工自述，工作環境、可用工具及資料權限特殊；「每週 60 小時」是任務時間換算，不能當作淨工時或營收改善。",
+      "url": "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day",
+      "sources": [
+        {
+          "label": "Claude／日本業務代表原文",
+          "url": "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
+        }
+      ],
+      "source": "Claude／Anthropic Japan",
+      "author": "Shahboz Ibragimov（Anthropic 日本業務代表）",
+      "originalTitle": "How an Anthropic BDR in Japan runs his day with Claude Managed Agents",
+      "englishSummary": "A Japan BDR splits lead routing, qualification, CRM updates and email drafts among scheduled agents. He reviews sensitive and ambiguous cases and sends customer messages himself. The estimated 60 hours saved weekly comes from task-time conversion, not independent measurement.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "adoption",
+          "governance"
+        ],
+        "concepts": [
+          "名單分配",
+          "人機交接",
+          "例外處理"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://openai.com/index/proaction/",
+            "reason": "兩篇都處理業務資料交接；Proaction 用互動示範確認需求，本例先把名單與回信作業拆開。"
+          }
+        ]
+      },
+      "followupQuestions": [
+        {
+          "id": "bdr-time-claim",
+          "question": "每週省下 60 小時，怎麼計算實際淨省時？",
+          "answer": "作者以完成任務數乘上過去手作估時，未扣除審查、修正與維護 Agent 的時間。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
+          ],
+          "next": "逐週記錄人工審查、修改與維護時間，和名單處理量、回覆品質一起比較。"
+        },
+        {
+          "id": "bdr-human-boundary",
+          "question": "哪些業務步驟仍需要人接手？",
+          "answer": "價格問題、敏感客戶和模糊需求由作者審查，回信草稿也由他確認後寄出。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
+          ],
+          "next": "查企業自己的定價權限、承諾責任與錯誤升級流程。"
+        }
+      ],
+      "topic": "case",
+      "researchQuestions": [
+        "task-sales",
+        "workflow-handoff"
+      ],
+      "checkedAt": "2026-10-19",
+      "dailyBackfillAt": "2026-10-19T11:54:17+08:00"
+    },
+    {
+      "type": "工程實作 · 審查與品質",
+      "sourceDate": "2026-10-15",
+      "date": "2026-10-15",
+      "title": "Claude Code 團隊：產出增加後，如何分級審查並量回退？",
+      "lead": "Claude Code 團隊把自動驗證放在人工審查前，依變更風險決定人員核准；用回退、事故、審查輪次與人工等待量檢查是否真的省下注意力。",
+      "takeaways": [
+        "每份 PR 先由 AI 檢查程式問題與安全風險，搭配測試、建置與人員責任；低、中、高風險變更分別設定不同的人員核准門檻。",
+        "團隊把歷史事故與回退納入每日評測，追蹤審查意見是否被修正、被判誤報，並限制反覆審查。作者提到曾有一份 PR 在夜間往返逾 50 輪。",
+        "作者稱 6 至 9 月合併 PR 超過翻倍、回退比例下降逾 40%；這是團隊內部趨勢，沒有拆出各項審查措施的個別因果效果。"
+      ],
+      "angle": "產出變多時，先對照人員審查時間、回退和事故，再決定哪些變更能放寬核准。",
+      "caveat": "流程與數字來自 Anthropic 自家團隊；高產出環境與成熟自動測試條件不一定能移植。回退比例下降不能單獨證明 AI 審查的效果。",
+      "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "sources": [
+        {
+          "label": "claude.dev 工程原文",
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic/"
+        }
+      ],
+      "source": "claude.dev／Claude Code team",
+      "author": "Addy Osmani、Morgan Westlee Lunt、Qing Wang",
+      "originalTitle": "How the Claude Code team does code review",
+      "englishSummary": "The team runs automated review, security checks, CI and risk-tiered human approval. It measures human review time alongside reverts and incidents, and caps repeated AI review cycles. Reported PR and revert trends are internal observations, not isolated causal effects.",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow",
+          "governance"
+        ],
+        "concepts": [
+          "分級審查",
+          "回退率",
+          "審查雜訊"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+            "reason": "Scion 處理版本控制容量，本篇處理大量變更後的品質審查；兩者是不同瓶頸。"
+          }
+        ]
+      },
+      "followupQuestions": [
+        "若減少人工核准，回退和事故是否維持不升？",
+        "AI 審查意見的誤報與反覆修正成本有多少？"
+      ],
+      "topic": "case",
+      "researchQuestions": [
+        "team-scale",
+        "value-quality"
+      ],
+      "checkedAt": "2026-10-19",
+      "dailyBackfillAt": "2026-10-19T11:54:17+08:00"
+    },
+    {
+      "type": "研究試點 · AI 搜尋發現",
+      "sourceDate": "2026-10-15",
+      "date": "2026-10-15",
+      "title": "Cloudflare／OpenAI：用網路訊號幫 AI 搜尋發現較少被連結的頁面",
+      "lead": "雙方在約占 Cloudflare 網路 1% 的參與站點測試頁面發現訊號，協助 OpenAI 搜尋爬蟲找到先前未收錄的頁面；公開資料仍缺少網站流量與商業成果。",
+      "takeaways": [
+        "試點使用網路中繼資料辨認值得發現或重訪的頁面，並排除不存在、重導到首頁或重複的網址；OpenAI 再獨立評估搜尋結果的相關性。",
+        "Cloudflare 稱試點促成數億個新頁面被發現與索引；這是索引範圍，不是點擊、推薦品質或成交數據。",
+        "下一階段才要測量內容被發現之後發生什麼；網站擁有者的存取選擇仍有效，頁面訊號不代表爬蟲取得內容的許可。"
+      ],
+      "angle": "企業檢查 AI 搜尋時，應分開量可被發現、被引用與帶來有效訪問，先確認內容可存取且提供獨特資訊。",
+      "caveat": "這是雙方共同研究的早期結果，未公布對照組、站點層級流量或轉換結果；不可將收錄數當成 SEO 或營收提升。",
+      "url": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web",
+      "sources": [
+        {
+          "label": "Cloudflare 與 OpenAI 共同原文",
+          "url": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web"
+        }
+      ],
+      "source": "Cloudflare／OpenAI",
+      "author": "Matthew Conroy、Jack Galilee、Henry Aspegren、James Balfour",
+      "originalTitle": "Cloudflare and OpenAI: Making AI discovery better for everyone",
+      "englishSummary": "A pilot covering roughly 1% of Cloudflare’s network used metadata to help OpenAI discover previously unknown pages. The companies report hundreds of millions of newly indexed pages; they have not yet reported site-level traffic or business outcomes.",
+      "knowledge": {
+        "primary": "market",
+        "themes": [
+          "market",
+          "evaluation"
+        ],
+        "concepts": [
+          "搜尋可發現性",
+          "索引與流量差異",
+          "網站存取選擇"
+        ],
+        "outcome": "report"
+      },
+      "followupQuestions": [
+        "新頁面被索引後，實際引用與有效訪問有多少？",
+        "哪些訊號只改善爬取效率，哪些可能影響網站的內容策略？"
+      ],
+      "topic": "trend",
+      "researchQuestions": [
+        "market-search",
+        "value-practical-metrics"
+      ],
+      "checkedAt": "2026-10-19",
+      "dailyBackfillAt": "2026-10-19T11:54:17+08:00"
+    },
     {
       "type": "企業案例 · 信貸審查與人工覆核",
       "sourceDate": "2026-10-16",
@@ -4568,7 +4803,7 @@
     },
     {
       "title": "Agent 規模化後，誰處理審查與成本？",
-      "summary": "Spotify、Anthropic、Uber、Itaú 等來源分別討論品質審查、人工注意力、基礎設施、任務成本與模型治理。案例工作負載不同，需分開檢查速度、品質、成本與人工接手。",
+      "summary": "Spotify、Anthropic、Uber、Itaú 等來源分別討論品質審查、人工注意力、基礎設施、任務成本與模型治理。Claude Code 團隊補上分級核准、回退與事故指標；不同工作負載仍需分開比較。",
       "urls": [
         "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
         "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity",
@@ -4581,7 +4816,8 @@
         "https://www.anthropic.com/engineering/redesigning-source-control",
         "https://openai.com/index/third-moment-research/",
         "https://www.anthropic.com/research/employment-at-anthropic",
-        "https://openai.com/index/itau-generative-ai/"
+        "https://openai.com/index/itau-generative-ai/",
+        "https://claude.dev/blog/solving-code-review-at-anthropic/"
       ],
       "origin": "daily-trend"
     },
@@ -4630,7 +4866,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-18T09:35:43+08:00",
+    "checkedAt": "2026-10-19T11:54:17+08:00",
     "points": []
   },
   "knowledgeLibrary": [
