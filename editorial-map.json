@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-19",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -610,6 +610,16 @@
                 "https://www.anthropic.com/engineering/redesigning-source-control"
               ],
               "next": "查遷移分階段數據或獨立案例，避免把整體改善歸給單一架構決策。"
+            },
+            {
+              "id": "review-human-time-guardrail",
+              "question": "把審查交給 AI，怎麼知道只是轉移了人的工作？",
+              "answer": "Claude Code 團隊同時追蹤人工核准、留言和等待時間，以回退與事故作品質護欄；作者報告 PR 增加與回退比例下降，但未分離各措施的效果。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://claude.dev/blog/solving-code-review-at-anthropic/"
+              ],
+              "next": "比較導入前後每份 PR 的審查與修復工時，並按風險級別看回退和事故。"
             }
           ]
         },
@@ -957,7 +967,69 @@
             "名單",
             "信件"
           ],
-          "articleHints": []
+          "articleHints": [],
+          "scenarioOptions": [
+            {
+              "label": "早上名單堆積",
+              "scenario": "業務每天先花時間分派新名單，CRM 更新落後，重要客戶可能沒有人接手。",
+              "decision": "先界定名單路由的優先規則、當天責任人與漏接警報，再決定可否自動分派。",
+              "scope": "用 Anthropic 日本業務的單人流程作起點；先談名單交接，不推論成交提升。"
+            },
+            {
+              "label": "回信品質難控",
+              "scenario": "團隊想讓 Agent 草擬日文與英文回覆，但價格、敏感帳戶與模糊需求需要業務承擔承諾。",
+              "decision": "列出必須人工核准的條件、來源資料與寄出前檢查項。",
+              "scope": "只處理草稿與人工寄送的邊界，尚不討論自動寄信。"
+            },
+            {
+              "label": "試點擴給團隊",
+              "scenario": "一位業務的 Agent 試點可用，主管想讓其他人共用，卻不知道改稿經驗如何保存、權限如何分開。",
+              "decision": "把修改與錯誤寫入共享知識，逐項指定資料權限與維護責任，再量團隊淨省時。",
+              "scope": "案例的管理式工具與資料權限特殊，先驗證可移植的流程。"
+            }
+          ],
+          "readingPrompts": [
+            {
+              "id": "bdr-why-split",
+              "question": "為什麼作者要把業務工作拆成多個 Agent？",
+              "answer": "作者讓路由、資格判斷、回信與後續追蹤各有清楚責任；這讓錯誤來源與交接報告較容易追查。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
+              ],
+              "next": "查跨 Agent 交接失敗、重複處理與名單漏接的實際紀錄。"
+            },
+            {
+              "id": "bdr-net-time",
+              "question": "每週估計省下 60 小時，代表團隊實際省時嗎？",
+              "answer": "作者把完成任務數換算成原本手作時間，未公開審稿、維護與錯誤修正的完整工時，也沒有團隊對照。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
+              ],
+              "next": "按任務記錄處理量、人工審查、修改與維護時間，算淨省時。"
+            },
+            {
+              "id": "bdr-reply-quality",
+              "question": "回信由人寄出，如何知道品質有改善？",
+              "answer": "原文說作者會看草稿、修正後寄出，修改可回寫共享知識；沒有公開回覆率、錯誤承諾率或客戶滿意度。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
+              ],
+              "next": "取得草稿修改比例、價格或政策錯誤、回覆率及客戶後續行動。"
+            },
+            {
+              "id": "bdr-permission-transfer",
+              "question": "其他業務照搬時，權限與資料會不會超出原本範圍？",
+              "answer": "作者描述每個 Agent 只使用工作需要的憑證庫，但沒有提供其他企業複製後的權限稽核資料。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
+              ],
+              "next": "用自家 CRM、郵件與共享知識權限做小範圍稽核，確認可撤銷與追溯。"
+            }
+          ]
         },
         {
           "id": "task-marketing",
@@ -1286,6 +1358,17 @@
                 "https://www.anthropic.com/research/employment-at-anthropic"
               ],
               "next": "尋找其他產業的員工追蹤、審查工時與職務轉換研究。"
+            },
+            {
+              "id": "anthropic-expectations-vs-observed",
+              "question": "員工對 AI 省時的預期，能代表工作成果嗎？",
+              "answer": "Anthropic 問卷顯示其員工比一般美國受訪者預期更高的省時與自動化；這是自陳經驗與未來預測，應與該公司實際工作紀錄分開。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://www.anthropic.com/research/ai-expectations-gap",
+                "https://www.anthropic.com/research/employment-at-anthropic"
+              ],
+              "next": "在同一工作流程對照預期、任務紀錄、人工覆核與品質結果。"
             }
           ]
         }
@@ -6348,7 +6431,8 @@
     ],
     "team-scale": [
       "https://www.anthropic.com/engineering/redesigning-source-control",
-      "https://www.uber.com/gb/en/blog/efficient-software-factory/"
+      "https://www.uber.com/gb/en/blog/efficient-software-factory/",
+      "https://claude.dev/blog/solving-code-review-at-anthropic/"
     ],
     "learn-data": [
       "https://temporal.io/resources/case-studies/stack-ai"
@@ -6358,7 +6442,8 @@
       "https://openai.com/index/advancing-computer-use-with-ironclad/"
     ],
     "talent-change": [
-      "https://www.anthropic.com/research/employment-at-anthropic"
+      "https://www.anthropic.com/research/employment-at-anthropic",
+      "https://www.anthropic.com/research/ai-expectations-gap"
     ],
     "industry-finance": [
       "https://openai.com/index/itau-generative-ai/"
@@ -6366,6 +6451,12 @@
     "value-quality": [
       "https://openai.com/index/benefit-street-partners/",
       "https://openai.com/index/sullivan-cromwell/"
+    ],
+    "task-sales": [
+      "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
+    ],
+    "market-search": [
+      "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web"
     ]
   },
   "gaps": [
@@ -6446,6 +6537,14 @@
       "sourceLabel": "Benefit Street Partners 信貸分析案例",
       "sourceUrl": "https://openai.com/index/benefit-street-partners/",
       "reason": "原始訪談同時交代第一輪分析時間、人工覆核與投資委員會追問，可檢查速度改善後的品質與責任分工；漏判和投資結果仍無公開數據。"
+    },
+    {
+      "id": "anthropic-japan-bdr-handoff-20261016",
+      "questionId": "task-sales",
+      "title": "業務 Agent 先接手哪些步驟，才不會漏掉客戶？",
+      "sourceLabel": "Anthropic 日本業務流程",
+      "sourceUrl": "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day",
+      "reason": "原文交代名單路由、資格判斷、CRM、回信與例外審查；自述省時仍缺審稿及維護成本，可拆成三種導入情境。"
     }
   ]
 }
