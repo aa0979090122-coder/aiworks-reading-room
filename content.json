@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-19",
+  "editionDate": "2026-10-20",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1118,6 +1118,138 @@
     }
   ],
   "news": [
+    {
+      "type": "企業工程實作 · Agent 分工與可靠性",
+      "sourceDate": "2026-10-19",
+      "date": "2026-10-19",
+      "title": "Meta：單一 Agent 混用多種資料規則後，改用薄路由與專責 Agent",
+      "lead": "Meta 的資料欄位上線橫跨三個程式倉庫、三種語言和最多六個管線階段。原本讓單一 Agent 載入所有領域規則，在正式環境出現混用規則的錯誤；團隊改由固定流程路由給專責 Agent。",
+      "takeaways": [
+        "約 1,300 行的路由層只負責辨認任務、收集必需欄位、檢查警告與審查人，再交給 14 個隔離領域知識的 Agent；超過 20 種工作流程共用這些專責 Agent。",
+        "欄位上線依「結構、驗證、資料填入、測試」等固定階段排序；團隊新增管線遷移時，先重組既有 Agent 的順序，沒有為此再寫新 Agent。",
+        "Meta 稱新欄位設定由人工的三至四天、前一版系統約一天，降到目前一小時內；約三分之二的變更不需大量人工改動。這是團隊自述，沒有公開完整任務樣本或獨立對照。"
+      ],
+      "angle": "團隊若在多系統流程中反覆遇到錯誤，可先盤點哪些步驟應固定、哪些需要領域判斷，以及每次交接要檢查什麼。",
+      "caveat": "Meta 的工程環境與欄位上線工作高度特定；文章沒有公開完整測試題組、錯誤率前後對照或維護成本，不能把縮時直接套用到其他企業。",
+      "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+      "sources": [
+        {
+          "label": "Meta Engineering 原始文章",
+          "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+        }
+      ],
+      "source": "Meta Engineering",
+      "author": "Meta Engineering 團隊",
+      "originalTitle": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
+      "englishSummary": "Meta describes replacing one context-heavy agent with a deterministic router and 14 domain-specific agents for data-column onboarding. It reports preparation under an hour and roughly two-thirds of changes landing without major human edits; the article does not publish a full test set or independent comparison.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "governance"
+        ],
+        "concepts": [
+          "流程路由",
+          "領域知識隔離",
+          "交接驗證"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day",
+            "reason": "兩篇都拆分 Agent 責任；Meta 用固定路由避免資料規則互相干擾，日本業務案例重點是客戶名單和回信的人工交接。"
+          }
+        ]
+      },
+      "followupQuestions": [
+        {
+          "id": "meta-router-failure",
+          "question": "單一 Agent 在正式環境出錯，錯在哪個環節？",
+          "answer": "Meta 描述規則互相混用，例如把另一個資料來源的欄位命名或程式生成方式用到當前任務。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+          ],
+          "next": "查團隊是否公布各類錯誤的次數與修正紀錄。"
+        },
+        {
+          "id": "meta-router-measure",
+          "question": "縮時後，錯誤率和人工維護負擔是否也改善？",
+          "answer": "Meta 公布準備時間與約三分之二變更不需大量人工修改，但沒有提供完整任務樣本、錯誤率前後對照或維護工時。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+          ],
+          "next": "用相同任務集記錄成功率、人工修正、返工和路由規則維護時間。"
+        },
+        {
+          "id": "meta-router-transfer",
+          "question": "哪些工作適合固定路由，哪些仍需要 Agent 判斷？",
+          "answer": "原文把任務分類、必填資料、警告與審查檢查放在固定流程，領域決策交給專責 Agent；其他企業是否適用仍需按流程變動程度驗證。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+          ],
+          "next": "找一段跨系統工作，列出可寫成明確規則的交接與必須由人判斷的例外。"
+        }
+      ],
+      "topic": "case",
+      "researchQuestions": [
+        "team-scale",
+        "workflow-handoff"
+      ],
+      "checkedAt": "2026-10-20",
+      "dailyBackfillAt": "2026-10-20T09:30:09+08:00"
+    },
+    {
+      "type": "功能更新 · 簡報與影片製作",
+      "sourceDate": "2026-10-19",
+      "date": "2026-10-19",
+      "title": "Gemini Notebook：簡報與影片可先審大綱，再產出成品",
+      "lead": "Google 為 Gemini Notebook 的 Slide Decks 和 Video Overviews 加入共同編排流程。使用者可先確認來源導出的主題，再調整大綱或製作註記。",
+      "takeaways": [
+        "在聊天中提出簡報或影片需求後，Notebook 會依已加入的來源建議主題；使用者可調整內容、視覺風格與格式。",
+        "開啟 Review 後，可先看簡報的大綱註記或影片製作註記，要求加入摘要或調換場景順序，再按 Proceed 產出。",
+        "Google 表示功能會在接下來一週全球推出；原文沒有提供產出品質、節省時間或各帳號開放進度的測量。"
+      ],
+      "angle": "需要製作簡報的團隊可先確認來源、章節與畫面安排，再驗收輸出是否忠於資料。",
+      "caveat": "官方功能公告，未公開實測成效；逐步推出期間，不同帳號的可用時間可能不同。",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/",
+      "sources": [
+        {
+          "label": "Google 官方功能公告",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/"
+        }
+      ],
+      "source": "Google Blog",
+      "author": "Viraj Doshi、Shan Wang",
+      "originalTitle": "How to shape your slides and videos with Gemini Notebook",
+      "englishSummary": "Gemini Notebook now offers source-based planning and an optional review step for Slide Decks and Video Overviews. Users can revise outline or producer notes before rendering. Google says the rollout will take place over the following week.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "來源核對",
+          "產出前審稿"
+        ],
+        "outcome": "update"
+      },
+      "followupQuestions": [
+        "大綱依據哪些來源？",
+        "最終簡報的事實與圖像需要哪些人工驗收？"
+      ],
+      "topic": "tool",
+      "researchQuestions": [
+        "task-slides",
+        "workflow-handoff"
+      ],
+      "checkedAt": "2026-10-20",
+      "dailyBackfillAt": "2026-10-20T09:30:09+08:00"
+    },
     {
       "type": "研究報告 · AI 採用預期",
       "sourceDate": "2026-10-16",
@@ -4866,7 +4998,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-19T11:54:17+08:00",
+    "checkedAt": "2026-10-20T09:30:09+08:00",
     "points": []
   },
   "knowledgeLibrary": [
