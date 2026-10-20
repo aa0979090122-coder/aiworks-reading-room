@@ -1242,7 +1242,7 @@
         "大綱依據哪些來源？",
         "最終簡報的事實與圖像需要哪些人工驗收？"
       ],
-      "topic": "tool",
+      "topic": "feature",
       "researchQuestions": [
         "task-slides",
         "workflow-handoff"
