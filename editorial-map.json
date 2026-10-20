@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-20T09:30:09+08:00",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -567,6 +567,24 @@
               "scenario": "平台團隊要讓更多開發團隊使用代理，擔心共用基礎設施與審查規則承受不了。",
               "decision": "先盤點共用資源、權限和人工審查責任，再安排擴張順序。",
               "scope": "只處理工程代理的共用關卡；其他部門的知識與流程維護另題討論。"
+            },
+            {
+              "label": "跨資料系統出錯",
+              "scenario": "資料團隊把多個來源的規則交給同一個 Agent，正式上線時發現它把 A 系統的欄位規則套到 B 系統。",
+              "decision": "先找出可固定的路由、必填資料與驗證關卡，再決定哪些領域判斷要拆給專責 Agent。",
+              "scope": "以 Meta 的欄位上線流程為例；先處理規則混用與交接，不推論所有單一 Agent 都會失敗。"
+            },
+            {
+              "label": "新流程接進來",
+              "scenario": "平台團隊已有數個 Agent，現在要支援新的資料管線，擔心每個新用途都要另建一套 Agent。",
+              "decision": "檢查既有 Agent 能否依新的固定順序重組，並標出真正缺少的領域能力。",
+              "scope": "先談工作流程範本與既有能力重用；維護成本仍待實測。"
+            },
+            {
+              "label": "向主管驗收改善",
+              "scenario": "團隊改了 Agent 分工，主管看到單次設定時間縮短，仍想知道錯誤、返工與人工審查是否減少。",
+              "decision": "用相同任務集比較完成率、修正量、審查時間與路由規則維護工時。",
+              "scope": "Meta 公布內部縮時與少量人工修改比例，沒有完整前後錯誤率或獨立對照。"
             }
           ],
           "readingPrompts": [
@@ -620,6 +638,46 @@
                 "https://claude.dev/blog/solving-code-review-at-anthropic/"
               ],
               "next": "比較導入前後每份 PR 的審查與修復工時，並按風險級別看回退和事故。"
+            },
+            {
+              "id": "meta-why-specialists",
+              "question": "為什麼載入更多知識反而讓原本的 Agent 出錯？",
+              "answer": "Meta 描述同一 Agent 在不同子系統間混用欄位命名與程式生成規則；把領域知識隔離後，路由層只處理固定交接。這是團隊對自身系統的分析。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+              ],
+              "next": "查是否有錯誤樣本或紀錄可比較拆分前後的規則混用頻率。"
+            },
+            {
+              "id": "meta-which-steps-fixed",
+              "question": "哪些交接應寫成固定步驟？",
+              "answer": "Meta 的七步路由包含檢查目標是否存在、收集必填欄位、檢查警告與審查人，只有專責 Agent 的領域工作使用模型判斷。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+              ],
+              "next": "將自家流程中的重複檢查列出，確認是否已有明確資料和責任人。"
+            },
+            {
+              "id": "meta-outcome-limits",
+              "question": "一小時內完成設定，能否證明整體品質更好？",
+              "answer": "原文報告設定時間和約三分之二變更無需大量人工修改，但未公布完整題組、錯誤率前後對照與維護工時。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+              ],
+              "next": "按相同難度任務追蹤錯誤、人工修正、返工及正式環境事故。"
+            },
+            {
+              "id": "meta-transfer-conditions",
+              "question": "不同企業能直接沿用 14 個專責 Agent 的做法嗎？",
+              "answer": "Meta 的流程跨三個倉庫、多種語言與多個管線階段；公開資料不足以判定較小、變動較少的工作是否也需要同等分工。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+              ],
+              "next": "先盤點自身流程的領域差異與常見錯誤，再比較單一 Agent、固定檢查與分工方案。"
             }
           ]
         },
@@ -6432,7 +6490,8 @@
     "team-scale": [
       "https://www.anthropic.com/engineering/redesigning-source-control",
       "https://www.uber.com/gb/en/blog/efficient-software-factory/",
-      "https://claude.dev/blog/solving-code-review-at-anthropic/"
+      "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
     ],
     "learn-data": [
       "https://temporal.io/resources/case-studies/stack-ai"
@@ -6545,6 +6604,14 @@
       "sourceLabel": "Anthropic 日本業務流程",
       "sourceUrl": "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day",
       "reason": "原文交代名單路由、資格判斷、CRM、回信與例外審查；自述省時仍缺審稿及維護成本，可拆成三種導入情境。"
+    },
+    {
+      "id": "meta-thin-orchestrator-20261019",
+      "questionId": "team-scale",
+      "title": "多個 Agent 怎麼分工，才不會把規則用錯地方？",
+      "sourceLabel": "Meta Engineering 分工案例",
+      "sourceUrl": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+      "reason": "原文有單一 Agent 在正式環境混用規則的失敗環節、固定路由與專責分工，以及內部縮時；錯誤率與維護成本仍待查。"
     }
   ]
 }
