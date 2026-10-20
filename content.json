@@ -1236,13 +1236,13 @@
           "來源核對",
           "產出前審稿"
         ],
-        "outcome": "update"
+        "outcome": "product"
       },
       "followupQuestions": [
         "大綱依據哪些來源？",
         "最終簡報的事實與圖像需要哪些人工驗收？"
       ],
-      "topic": "feature",
+      "topic": "product",
       "researchQuestions": [
         "task-slides",
         "workflow-handoff"
