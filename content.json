@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-20",
+  "editionDate": "2026-10-21",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1118,6 +1118,202 @@
     }
   ],
   "news": [
+    {
+      "type": "企業實作 · 投資判斷評測",
+      "sourceDate": "2026-10-20",
+      "date": "2026-10-20",
+      "title": "Terminal X：把投資團隊的判斷寫成規則，再逐筆檢查 Agent 建議",
+      "lead": "Terminal X 的工程師先與投資團隊一起整理既有備忘錄和未寫下的審查習慣，再按資產類型建立 Agent。另一個評測 Agent 依每家機構的標準，檢查建議是否引用正確資料、符合投資授權與既有觀點。",
+      "takeaways": [
+        "團隊把過去分析、投資委員會決定和工作指令存成有版本的機構記憶；每次查詢保留步驟、來源、模型與推理軌跡，供人員稽核。",
+        "評測流程使用 54 項準則。Terminal X 表示，在 500 項已評分判斷上，GPT-6.1 Sol 評測結果與資深審查員一致的比例為 88.6%，比較模型為 86.4%；這是其內部測試。",
+        "每項未通過的結果會附原因及修正來源，成為新的工作指令或測試案例。公司另稱某家客戶的盡職調查和投資備忘錄流程每年可省 240 萬美元，但沒有公開計算方法或獨立驗證。"
+      ],
+      "angle": "投資團隊若想把資深同事的判斷交給 Agent，先列出可查證的資料來源、投資授權界線與審查準則，再檢查評測結果與人員判斷在哪些情況下分歧。",
+      "caveat": "案例由供應商與模型提供者敘述；500 項測試的抽樣、比較模型、人工審查員一致性和客戶節省成本的計算未完整公開。88.6% 一致率不能直接當成投資建議正確率。",
+      "url": "https://openai.com/index/terminal-x/",
+      "sources": [
+        {
+          "label": "OpenAI／Terminal X 原始案例",
+          "url": "https://openai.com/index/terminal-x/"
+        }
+      ],
+      "source": "OpenAI／Terminal X",
+      "author": "OpenAI；受訪者 Terminal X",
+      "originalTitle": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "englishSummary": "Terminal X encodes investment-team practices into versioned firm memory and scores agent output with a 54-criterion rubric. Its reported 88.6% reviewer agreement comes from 500 internally scored judgments, without a published sampling protocol or independent audit.",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow",
+          "governance"
+        ],
+        "concepts": [
+          "人工判斷校準",
+          "投資授權界線",
+          "可追溯評測"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://openai.com/index/basis-tax-workbook-with-astra/",
+            "reason": "Basis 檢查會計工作過程與答案；Terminal X 進一步把機構投資準則寫成逐項評測，但兩者都只公布內部測試。"
+          }
+        ]
+      },
+      "followupQuestions": [
+        {
+          "id": "terminal-rubric",
+          "question": "54 項準則檢查哪些錯誤？",
+          "answer": "原文舉出數字、比較資料、引述來源、論證與機構投資授權；未公布完整 54 項清單。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://openai.com/index/terminal-x/"
+          ],
+          "next": "取得準則分類與各類錯誤的樣本。"
+        },
+        {
+          "id": "terminal-agreement",
+          "question": "88.6% 與人員一致，能否代表建議正確？",
+          "answer": "這是評測 Agent 對 500 項判斷與資深審查員的一致率；來源沒有公開抽樣或獨立真值，不能當成投資成果。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://openai.com/index/terminal-x/"
+          ],
+          "next": "查不同審查員彼此的一致率，以及錯誤建議是否被攔下。"
+        },
+        {
+          "id": "terminal-feedback",
+          "question": "人工修正如何變成下次可用的檢查？",
+          "answer": "Terminal X 說每項不通過的結果附原因及修正來源，再存成工作指令或新測試案例。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://openai.com/index/terminal-x/"
+          ],
+          "next": "查修正後是否用保留題組重測，避免只記住舊案例。"
+        }
+      ],
+      "topic": "case",
+      "researchQuestions": [
+        "value-quality"
+      ],
+      "checkedAt": "2026-10-21",
+      "dailyBackfillAt": "2026-10-21T10:09:50+08:00"
+    },
+    {
+      "type": "小型企業實作 · 定價與後勤",
+      "sourceDate": "2026-10-20",
+      "date": "2026-10-20",
+      "title": "餐飲加盟者：AI 先整理定價與排班建議，經理再檢查與送出",
+      "lead": "經營三家餐廳的 Ted Taylor 用 ChatGPT Work 整理菜單價格、銷售與人力資料。他先用人工分析對照第一次定價建議；排班則與經理比較草案，補上忙碌時段的人力規則，再由經理檢查後輸入排班系統。",
+      "takeaways": [
+        "定價時輸入菜單現價、競品價格、份量、銷售和進貨成本，再檢查店內與外送價格。Taylor 自述年度定價分析由五天縮至一至兩小時。",
+        "人力分析比較排定、預算與實際工時，以及預測和實際銷售；排班草案先與經理的版本對照，缺少的尖峰人力規則再補進指示。",
+        "每月現金對帳以交易和銀行紀錄比對，自述由三小時縮至五至十分鐘。可能增加的每年 5 萬至 10 萬美元現金流仍是排班改善預估，並非已實現成果。"
+      ],
+      "angle": "小型企業可從定價或排班選一段已有資料、有人負責覆核的工作，先拿人工做法對照 AI 建議，再記錄節省的時間和實際營運結果。",
+      "caveat": "這是單一加盟者的自述案例。時間節省缺少獨立對照；排班帶來的現金流是推估，原文未公布顧客反應、定價後銷量或長期獲利。",
+      "url": "https://openai.com/index/ted-taylor-restaurant/",
+      "sources": [
+        {
+          "label": "OpenAI／Ted Taylor 原始訪談",
+          "url": "https://openai.com/index/ted-taylor-restaurant/"
+        }
+      ],
+      "source": "OpenAI／Ted Taylor",
+      "author": "OpenAI；受訪者 Ted Taylor",
+      "originalTitle": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+      "englishSummary": "A three-store franchisee compares AI pricing and staffing drafts with his own analysis and a manager review. Reported time savings are self-reported; potential cash-flow improvement from scheduling remains a forecast.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "value"
+        ],
+        "concepts": [
+          "人工對照",
+          "排班規則",
+          "時間與現金流分離"
+        ],
+        "outcome": "case"
+      },
+      "followupQuestions": [
+        {
+          "id": "restaurant-review",
+          "question": "排班草案如何避免漏掉忙碌時段？",
+          "answer": "Taylor 與經理比較 AI 和人工版本，找出何時加派人手的遺漏規則；經理仍檢查並輸入排班系統。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://openai.com/index/ted-taylor-restaurant/"
+          ],
+          "next": "查上線後覆核修改率及缺班情況。"
+        },
+        {
+          "id": "restaurant-outcome",
+          "question": "省下分析時間後，餐廳的營運成果改善了嗎？",
+          "answer": "來源提供定價、對帳和薪資整理的自述縮時；排班現金流數字是預估，沒有公布定價後銷量或實際毛利。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://openai.com/index/ted-taylor-restaurant/"
+          ],
+          "next": "按店別比較調價前後銷量、毛利、缺班與加班。"
+        }
+      ],
+      "topic": "case",
+      "researchQuestions": [
+        "value-quality",
+        "task-research"
+      ],
+      "checkedAt": "2026-10-21",
+      "dailyBackfillAt": "2026-10-21T10:09:50+08:00"
+    },
+    {
+      "type": "功能更新 · 小型企業工作流程",
+      "sourceDate": "2026-10-20",
+      "date": "2026-10-20",
+      "title": "Gemini 小型企業工具：集中連接商業資料、品牌素材與試算表",
+      "lead": "Google 宣布在 Gemini 加入小型企業入口，連接 Google Business Profile、Ads、Workspace 及部分第三方應用；也可保存品牌樣式，從試算表和收據製作財務圖表。",
+      "takeaways": [
+        "使用者可上傳網站、品牌素材、字體或色盤，供後續視覺產出沿用。",
+        "Google 說可將試算表、收據和購買紀錄整理成圖表與互動模型；原文沒有提供準確率或人工核對方法。",
+        "小型企業入口、行銷與財務技能及新增應用連線，從 10 月 20 日起陸續在全球推出；可用性仍應以帳號實際介面核對。"
+      ],
+      "angle": "這是功能資訊；若用於企業流程，應先試一份可人工核對的資料和素材，確認連線範圍與輸出是否符合原始紀錄。",
+      "caveat": "Google 的小型企業故事屬產品宣傳案例，本文只記官方公布的功能與推出安排，未推論成效或資料處理保證。",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
+      "sources": [
+        {
+          "label": "Google 官方公告",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/"
+        }
+      ],
+      "source": "Google Blog",
+      "author": "Vishnu Sivaji／Google",
+      "originalTitle": "New Gemini tools for small business owners",
+      "englishSummary": "Google announced a small-business hub, app connections, persistent brand styles, and spreadsheet-to-visual workflows. The features begin rolling out globally after October 20; the announcement does not establish accuracy or business outcomes.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "learning"
+        ],
+        "concepts": [
+          "商業應用連線",
+          "品牌樣式保存",
+          "資料核對"
+        ],
+        "outcome": "feature"
+      },
+      "topic": "feature",
+      "researchQuestions": [
+        "task-marketing",
+        "task-research"
+      ],
+      "checkedAt": "2026-10-21",
+      "dailyBackfillAt": "2026-10-21T10:09:50+08:00"
+    },
     {
       "type": "企業工程實作 · Agent 分工與可靠性",
       "sourceDate": "2026-10-19",
@@ -4998,7 +5194,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-20T09:30:09+08:00",
+    "checkedAt": "2026-10-21T10:09:50+08:00",
     "points": []
   },
   "knowledgeLibrary": [
