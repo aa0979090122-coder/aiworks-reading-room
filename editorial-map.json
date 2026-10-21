@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T09:34:01+08:00",
+  "updatedAt": "2026-10-21T10:09:50+08:00",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -149,6 +149,24 @@
               "scenario": "團隊導入 AI 文件分析後，主管問速度變快是否也讓審查更完整。",
               "decision": "分開記錄第一輪時間、人工覆核、漏判、返工與委員會追問回覆。",
               "scope": "公開案例只提供受訪者的時間與感受，尚不能歸因為投資績效改善。"
+            },
+            {
+              "label": "資深同事交接",
+              "scenario": "投資團隊的資深同事離職或換組，文件還在，但新同事不知道哪些交易會被否決。",
+              "decision": "挑幾份已審過的備忘錄，記下資料來源、授權界線與否決理由，再決定哪些可以寫成 Agent 檢查。",
+              "scope": "以 Terminal X 的投資案例討論判斷保存；不假定所有資深判斷都能化成規則。"
+            },
+            {
+              "label": "上線前驗收",
+              "scenario": "團隊已讓 Agent 起草建議，主管擔心它引用正確數字，卻推薦了不符合機構投資授權的標的。",
+              "decision": "把資料正確性與授權符合度分開評分，抽查與資深人員不一致的項目及風險程度。",
+              "scope": "原文的 54 項準則與 500 項測試屬內部資料；仍需確認抽樣、漏攔和不同審查員的一致性。"
+            },
+            {
+              "label": "模型改版重測",
+              "scenario": "團隊改用新模型，單次查詢較便宜，但擔心以前攔下的錯誤重新出現。",
+              "decision": "用固定案例重測授權偏離、來源錯配與人工修正量，並另記成本與等待時間。",
+              "scope": "Terminal X 公布模型比較；沒有公開完整題組，不能直接移植其提升幅度。"
             }
           ],
           "readingPrompts": [
@@ -191,6 +209,46 @@
                 "https://openai.com/index/benefit-street-partners/"
               ],
               "next": "查同名貸款、不同申報期間與估值方法如何對齊。"
+            },
+            {
+              "id": "terminal-why-memory",
+              "question": "為什麼只存過去的投資備忘錄還不夠？",
+              "answer": "Terminal X 說工程師需與投資團隊一起還原未寫下的篩選過程，再把歷史分析與委員會決定存成有版本的工作記憶。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://openai.com/index/terminal-x/"
+              ],
+              "next": "查哪些判斷可被不同同事一致重現，哪些仍仰賴個人經驗。"
+            },
+            {
+              "id": "terminal-human-baseline",
+              "question": "評測 Agent 與資深審查員一致，能證明什麼？",
+              "answer": "內部 500 項判斷中報告 88.6% 一致率；它只說明與指定人員的符合程度，未公開審查員間一致率或投資結果。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://openai.com/index/terminal-x/"
+              ],
+              "next": "取得分歧類型、錯誤嚴重度和審查員之間的對照。"
+            },
+            {
+              "id": "terminal-feedback-cycle",
+              "question": "審查員改過的錯誤，如何影響下一輪？",
+              "answer": "原文說每次未通過的結果附原因與修正來源，轉成新的工作指令或測試案例。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://openai.com/index/terminal-x/"
+              ],
+              "next": "確認改版後是否用未參與修正的案例測試，避免只記住舊題。"
+            },
+            {
+              "id": "terminal-value-causality",
+              "question": "客戶自述每年省 240 萬美元，能否歸因於評測 Agent？",
+              "answer": "來源把節省額歸於盡職調查與備忘錄工作流程，沒有分開列出評測 Agent 的貢獻或計算方法。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://openai.com/index/terminal-x/"
+              ],
+              "next": "要求同類案件的人工工時、返工、外包費與品質資料，再看評測部分的增量。"
             }
           ]
         },
@@ -6531,7 +6589,8 @@
     ],
     "value-quality": [
       "https://openai.com/index/benefit-street-partners/",
-      "https://openai.com/index/sullivan-cromwell/"
+      "https://openai.com/index/sullivan-cromwell/",
+      "https://openai.com/index/terminal-x/"
     ],
     "task-sales": [
       "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
@@ -6637,6 +6696,14 @@
       "sourceLabel": "Meta Engineering 分工案例",
       "sourceUrl": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
       "reason": "原文有單一 Agent 在正式環境混用規則的失敗環節、固定路由與專責分工，以及內部縮時；錯誤率與維護成本仍待查。"
+    },
+    {
+      "id": "terminal-x-investment-eval-20261020",
+      "questionId": "value-quality",
+      "title": "AI 學到資深員工的判斷後，主管該怎麼驗收？",
+      "sourceLabel": "Terminal X 投資評測案例",
+      "sourceUrl": "https://openai.com/index/terminal-x/",
+      "reason": "原文有現場收集判斷規則、54 項逐筆評測、人工修正回寫與 500 項內部測試；一致率、實際判斷品質和維護成本仍需分開查。"
     }
   ]
 }
