@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-21",
+  "editionDate": "2026-10-23",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1118,6 +1118,264 @@
     }
   ],
   "news": [
+    {
+      "type": "工程實作 · AI 審查成本與品質",
+      "sourceDate": "2026-10-19",
+      "date": "2026-10-19",
+      "title": "Cloudflare：AI 程式審查成本降 68%，仍逐項檢查漏掉什麼",
+      "lead": "Cloudflare 發現 AI 審查每次成本增加，先記錄實際送進模型的提示與 token，再調整共用快取、工具呼叫、模型及推理強度。團隊同時追查嚴重問題是否被漏掉。",
+      "takeaways": [
+        "平均單次審查由較貴兩週的 2.43 美元降至 0.77 美元；中位審查時間由 4 分 09 秒降到 1 分 32 秒。這是 Cloudflare 內部工作負載的前後比較。",
+        "共用提示原本混入工作目錄與日期，讓跨倉庫快取失效。拆出一致的前綴後，首輪快取命中率由約 14%–26% 升到 91%–99.5%；團隊也移除無用工具與取消後仍持續執行的工作。",
+        "團隊用作者是否修改被指出的程式碼，以及 657 則匿名評語的模型判讀，檢查品質。程式品質審查在高推理強度下維持重要發現；效能審查在中等強度下少找到重要問題。"
+      ],
+      "angle": "團隊若要降低 AI 審查成本，可先按每次工作記錄快取讀寫、呼叫次數、模型與等待時間；模型或推理強度更動後，按問題類型查漏判與人工返工。",
+      "caveat": "作者指出，成本變化按相鄰時段比較，並非完整控制實驗；品質樣本不大，近期觀察時間短。作者修改被標記程式碼只能表示採取行動，不能證明建議正確。",
+      "url": "https://blog.cloudflare.com/obsessive-inference-optimization/",
+      "sources": [
+        {
+          "label": "Cloudflare 工程原文",
+          "url": "https://blog.cloudflare.com/obsessive-inference-optimization/"
+        }
+      ],
+      "source": "Cloudflare Engineering",
+      "author": "Ryan Skidmore／Cloudflare",
+      "originalTitle": "Cutting our inference bill by 68% by being obsessive about optimization",
+      "englishSummary": "Cloudflare measured prompt-cache behavior and per-review token costs, then changed shared prefixes, tool calls, models and effort. Its internal before/after data shows lower cost and latency; separate quality checks found some performance issues were missed at medium effort.",
+      "knowledge": {
+        "primary": "cost",
+        "themes": [
+          "cost",
+          "evaluation",
+          "workflow"
+        ],
+        "concepts": [
+          "單次審查成本",
+          "快取前綴",
+          "品質護欄"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://www.uber.com/gb/en/blog/efficient-software-factory/",
+            "reason": "兩家都按代理工作負載拆成本；Cloudflare 另公布審查品質檢查，指標與時段不可直接比較。"
+          }
+        ]
+      },
+      "followupQuestions": [
+        {
+          "id": "cf-cost-source",
+          "question": "成本為什麼隨時間增加？",
+          "answer": "Cloudflare 記錄到模型更換、每次審查 token 數與工具呼叫增加；快取命中率上升仍抵不過上下文變長。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://blog.cloudflare.com/obsessive-inference-optimization/"
+          ],
+          "next": "按自己的任務分開記快取寫入、讀取、輸出及模型費用。"
+        },
+        {
+          "id": "cf-cost-causality",
+          "question": "68% 降幅能分給各項改動嗎？",
+          "answer": "作者按改動前後時段估計：程式調整約減少 0.65 美元，模型與推理強度約減少 1.06 美元；他明說這不是嚴格控制實驗。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://blog.cloudflare.com/obsessive-inference-optimization/"
+          ],
+          "next": "在穩定工作類型與品質門檻下逐項比較。"
+        },
+        {
+          "id": "cf-cost-quality",
+          "question": "費用降低後，哪些錯誤可能漏掉？",
+          "answer": "程式品質審查採高強度時，重要發現約持平；效能審查採中等強度時，重要發現減少。人工採取行動及模型評判都有測量限制。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://blog.cloudflare.com/obsessive-inference-optimization/"
+          ],
+          "next": "用人工已確認的問題集及實際返工，按審查類型重測。"
+        }
+      ],
+      "topic": "case",
+      "researchQuestions": [
+        "cost-unit",
+        "value-quality"
+      ],
+      "checkedAt": "2026-10-23",
+      "dailyBackfillAt": "2026-10-23T09:36:39+08:00"
+    },
+    {
+      "type": "企業導入 · 現場試點與跨團隊擴張",
+      "sourceDate": "2026-10-22",
+      "date": "2026-10-22",
+      "title": "OpenAI 現場團隊：半導體試點上線後，怎麼減少下一隊的客製工作",
+      "lead": "OpenAI 現場工程主管說明，團隊先與半導體客戶的驗證工程師建立任務評測，再把多個客製工具改成共用執行架構、外掛與技能。原文同時交代模型能力不足時如何把缺口帶回研究。",
+      "takeaways": [
+        "約 15 位現場工程師參與十多個半導體用途，與客戶建立測試生成、故障診斷等評測；作者稱各用途在三至六個月內上線並有早期使用。約 48% 的測試生成省時及其他成果屬 OpenAI 自述。",
+        "團隊後來把用途移至共用 Codex 架構，移除每個專案約 90% 的客製程式。一個 2026 年 8 月案例的首隊部署耗時兩個月，第二隊改為一天；仍要換接資料系統並建立新評測。",
+        "另一個語音客服案在起始評測約 60% 時未直接上線；現場團隊與研究人員經六個月把相關評測提高至 90% 以上，才達到該客戶的上線門檻。"
+      ],
+      "angle": "試點要擴到第二個部門時，先分清哪些驗收標準與工具能共用，哪些資料權限、工作定義和評測題目需重新建立。",
+      "caveat": "作者是 OpenAI 現場工程負責人；客戶名稱、完整題組、成本與獨立對照未公開。半導體縮時、程式碼減量與第二隊部署時間不能當成一般企業的保證。",
+      "url": "https://openai.com/index/forward-deployed-engineering-means/",
+      "sources": [
+        {
+          "label": "OpenAI 現場工程主管原文",
+          "url": "https://openai.com/index/forward-deployed-engineering-means/"
+        }
+      ],
+      "source": "OpenAI／Forward Deployed Engineering",
+      "author": "Colin Jarvis／OpenAI",
+      "originalTitle": "What FDE means at OpenAI",
+      "englishSummary": "OpenAI FDEs describe building customer-specific evaluations before production, then moving use cases onto a shared Codex harness. One reported second-team deployment took one day after a two-month first deployment; source details and independent comparison are not public.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "governance"
+        ],
+        "concepts": [
+          "現場評測",
+          "共用執行架構",
+          "跨團隊重測"
+        ],
+        "outcome": "case",
+        "related": [
+          {
+            "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+            "reason": "兩篇都談規模化後的共用瓶頸；OpenAI 著重客戶場景與評測重用，Anthropic 著重工程來源控制負荷。"
+          }
+        ]
+      },
+      "followupQuestions": [
+        {
+          "id": "fde-start-eval",
+          "question": "為什麼試點一開始要讓現場工程師與客戶一起建評測？",
+          "answer": "原文說半導體工程師要檢查生成的測試是否可用、能否正確診斷故障；公開一般模型基準不能直接代表客戶任務。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://openai.com/index/forward-deployed-engineering-means/"
+          ],
+          "next": "找出每個部門最容易錯的工作案例和人工驗收標準。"
+        },
+        {
+          "id": "fde-reuse-boundary",
+          "question": "首隊成功後，第二隊有哪些工作仍要重做？",
+          "answer": "OpenAI 說共用架構保留外掛與技能，擴到另一隊仍要更換連線及建立新的評測。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://openai.com/index/forward-deployed-engineering-means/"
+          ],
+          "next": "核對第二隊的資料權限、例外規則與維護負責人。"
+        },
+        {
+          "id": "fde-outcome-proof",
+          "question": "第二隊一天上線，能證明交付品質相同嗎？",
+          "answer": "原文提供部署時間和共用架構做法，沒有公布兩隊的同類品質、返工或維護成本。",
+          "status": "open",
+          "evidenceUrls": [
+            "https://openai.com/index/forward-deployed-engineering-means/"
+          ],
+          "next": "比較兩隊上線後的通過率、人工覆核、故障和維護工時。"
+        }
+      ],
+      "topic": "case",
+      "researchQuestions": [
+        "team-scale",
+        "value-quality"
+      ],
+      "checkedAt": "2026-10-23",
+      "dailyBackfillAt": "2026-10-23T09:36:39+08:00"
+    },
+    {
+      "type": "功能更新 · 商店與購物代理",
+      "sourceDate": "2026-10-21",
+      "date": "2026-10-21",
+      "title": "Commerce.com／Cloudflare：商店為購物 Agent 開放工具，保留店家退出權",
+      "lead": "Commerce.com 與 Cloudflare 在近十萬個商店網域提供 WebMCP 預覽，讓支援的瀏覽器代理使用商品搜尋、加入購物車等工具。Cloudflare 以商店中繼資料控制個別退出，結帳仍由購物者操作。",
+      "takeaways": [
+        "WebMCP 工具在顧客目前的商店瀏覽器工作階段執行，沿用當下價格與購物車；Cloudflare 將 Commerce.com 後端工具透過邊緣服務提供給前端。",
+        "平台可一次啟用，店家若在管理介面退出，邊緣規則便停止在該店注入工具。後端服務或瀏覽器不支援時，商店回到原有頁面。",
+        "這是預覽中的技術部署。原文沒有公開購物代理完成率、轉換率、誤加購物車比例或顧客採用量。"
+      ],
+      "angle": "商店若測試代理購物，先驗證商品變體、價格、購物車與人工結帳的邊界，再追蹤工具失敗與顧客完成購買的情況。",
+      "caveat": "WebMCP 仍是預覽規格，需支援的瀏覽器環境；「近十萬網域」是可提供工具的部署範圍，不等於活躍使用店數或購物成效。",
+      "url": "https://blog.cloudflare.com/webmcp-commerce/",
+      "sources": [
+        {
+          "label": "Cloudflare／Commerce.com 原始技術說明",
+          "url": "https://blog.cloudflare.com/webmcp-commerce/"
+        }
+      ],
+      "source": "Cloudflare／Commerce.com",
+      "author": "Jenny Lea、Max Brosnahan、Matthew Conroy／Cloudflare",
+      "originalTitle": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+      "englishSummary": "Commerce.com and Cloudflare describe preview WebMCP tools across nearly 100,000 store domains, with per-merchant opt-out and human checkout. The article reports deployment mechanics, not shopper adoption or conversion outcomes.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "market",
+          "governance"
+        ],
+        "concepts": [
+          "代理購物工具",
+          "商店退出權",
+          "人工結帳"
+        ],
+        "outcome": "feature"
+      },
+      "topic": "product",
+      "researchQuestions": [
+        "market-search",
+        "change-feature"
+      ],
+      "checkedAt": "2026-10-23",
+      "dailyBackfillAt": "2026-10-23T09:36:39+08:00"
+    },
+    {
+      "type": "企業公告 · 跨部門使用",
+      "sourceDate": "2026-10-22",
+      "date": "2026-10-22",
+      "title": "Uber 將 ChatGPT Work 擴至全體員工，成效仍待後續公布",
+      "lead": "OpenAI 宣布 Uber 從約一千名員工試用，擴大至三萬多名員工可使用 ChatGPT Work。Uber 準備內部技能庫、核准的系統連線與員工訓練，涵蓋營運、財務、行銷和產品團隊。",
+      "takeaways": [
+        "公布的是可用範圍與支援安排，並列出跨應用研究、會議準備、簡報與資料分析等可能工作。",
+        "OpenAI 表示 Uber 將在擴大後再分享採用、用途和可衡量成果；目前沒有公布這波部署的品質、節省工時或投資報酬。"
+      ],
+      "angle": "可觀察全員開放後，技能庫和核准連線是否幫助團隊把個人做法變成可維護的工作流程。",
+      "caveat": "這是 OpenAI 與 Uber 的部署公告；三萬多名員工指可使用人數，不能視為活躍使用或已驗證成效。",
+      "url": "https://openai.com/index/uber-chatgpt-work-rollout/",
+      "sources": [
+        {
+          "label": "OpenAI／Uber 公告",
+          "url": "https://openai.com/index/uber-chatgpt-work-rollout/"
+        }
+      ],
+      "source": "OpenAI／Uber",
+      "author": "OpenAI；受訪者 Uber 技術長",
+      "originalTitle": "Uber brings ChatGPT Work to all employees with OpenAI",
+      "englishSummary": "OpenAI says Uber is expanding ChatGPT Work access from a 1,000-person pilot to more than 30,000 employees, supported by approved integrations, a skills library, and training. Post-rollout usage and outcomes are not yet reported.",
+      "knowledge": {
+        "primary": "adoption",
+        "themes": [
+          "adoption",
+          "workflow"
+        ],
+        "concepts": [
+          "跨部門擴散",
+          "技能庫",
+          "核准連線"
+        ],
+        "outcome": "announcement"
+      },
+      "topic": "product",
+      "researchQuestions": [
+        "team-scale",
+        "team-owner"
+      ],
+      "checkedAt": "2026-10-23",
+      "dailyBackfillAt": "2026-10-23T09:36:39+08:00"
+    },
     {
       "type": "企業實作 · 投資判斷評測",
       "sourceDate": "2026-10-20",
@@ -5131,7 +5389,7 @@
     },
     {
       "title": "Agent 規模化後，誰處理審查與成本？",
-      "summary": "Spotify、Anthropic、Uber、Itaú 等來源分別討論品質審查、人工注意力、基礎設施、任務成本與模型治理。Claude Code 團隊補上分級核准、回退與事故指標；不同工作負載仍需分開比較。",
+      "summary": "比較工程代理擴張後的審查、共用架構與單次成本。Cloudflare 公布快取、模型選擇與品質檢查；OpenAI 描述現場評測如何轉成共用工具。各來源的任務、時段與成果不同，需分開核對。",
       "urls": [
         "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
         "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity",
@@ -5145,7 +5403,9 @@
         "https://openai.com/index/third-moment-research/",
         "https://www.anthropic.com/research/employment-at-anthropic",
         "https://openai.com/index/itau-generative-ai/",
-        "https://claude.dev/blog/solving-code-review-at-anthropic/"
+        "https://claude.dev/blog/solving-code-review-at-anthropic/",
+        "https://blog.cloudflare.com/obsessive-inference-optimization/",
+        "https://openai.com/index/forward-deployed-engineering-means/"
       ],
       "origin": "daily-trend"
     },
@@ -5194,7 +5454,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-21T10:09:50+08:00",
+    "checkedAt": "2026-10-23T09:36:39+08:00",
     "points": []
   },
   "knowledgeLibrary": [
