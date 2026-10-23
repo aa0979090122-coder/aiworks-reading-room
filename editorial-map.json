@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T10:09:50+08:00",
+  "updatedAt": "2026-10-23T09:36:39+08:00",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -400,6 +400,58 @@
           "articleHints": [
             "enterprise-ai-cost-governance",
             "tokenmaxxing"
+          ],
+          "scenarioOptions": [
+            {
+              "label": "審查費用上升",
+              "scenario": "工程團隊讓 AI 審查程式變更，單次費用持續增加，卻不知道是模型、上下文還是重複呼叫造成。",
+              "decision": "先按審查類型記錄每次 token、快取讀寫、模型、呼叫次數與等待時間，再挑最高的成本來源。",
+              "scope": "以 Cloudflare 的內部審查流程示範查法；不套用其 68% 降幅。"
+            },
+            {
+              "label": "想換便宜設定",
+              "scenario": "平台團隊準備降低模型推理強度，擔心審查成本下降後重要問題漏得更多。",
+              "decision": "按程式品質、效能與安全分開測試，連同人工修改和已確認的漏判一起看。",
+              "scope": "Cloudflare 對不同審查器觀察到不同結果，不能用總費用代替品質驗收。"
+            },
+            {
+              "label": "向主管報成本",
+              "scenario": "代理審查量增加，主管看到每月總帳單上升，想知道每份工作是否變得更貴。",
+              "decision": "先固定工作量與審查等級，比較單次成本、完成時間及仍需人工處理的問題。",
+              "scope": "區分使用量成長與每次成本；前後比較仍需註明模型及工作內容變化。"
+            }
+          ],
+          "readingPrompts": [
+            {
+              "id": "cf-cost-why-rise",
+              "question": "快取命中率上升，為何每次審查仍更貴？",
+              "answer": "Cloudflare 記錄到每次審查送入的 token 增逾三倍，模型也換得更貴；命中率無法抵銷上下文變長。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://blog.cloudflare.com/obsessive-inference-optimization/"
+              ],
+              "next": "檢查自身任務的快取讀寫成本與每輪上下文長度。"
+            },
+            {
+              "id": "cf-cost-what-saved",
+              "question": "68% 的節省，哪些措施有直接量測？",
+              "answer": "團隊拆出跨倉庫共用的提示前綴，減少無效工具與重複呼叫，並調整模型和推理強度；作者按相鄰時段估計各項節省，沒有完整控制實驗。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://blog.cloudflare.com/obsessive-inference-optimization/"
+              ],
+              "next": "同一風險等級與工作類型分批變更，記錄每次成本與品質。"
+            },
+            {
+              "id": "cf-cost-quality-guardrail",
+              "question": "成本減少時，哪一類審查先漏掉重要問題？",
+              "answer": "Cloudflare 的模型判讀樣本發現效能審查的重要發現減少；程式品質審查採高強度後大致持平。樣本與觀察時間都有限。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://blog.cloudflare.com/obsessive-inference-optimization/"
+              ],
+              "next": "用人工確認的效能問題重測，並觀察後續返工。"
+            }
           ]
         },
         {
@@ -703,6 +755,18 @@
               "scenario": "平台團隊要讓更多開發團隊使用代理，擔心共用基礎設施與審查規則承受不了。",
               "decision": "先盤點共用資源、權限和人工審查責任，再安排擴張順序。",
               "scope": "只處理工程代理的共用關卡；其他部門的知識與流程維護另題討論。"
+            },
+            {
+              "label": "第二個部門上線",
+              "scenario": "第一個團隊的 Agent 試點已可用，另一部門想沿用，卻有不同資料系統和驗收標準。",
+              "decision": "共用可維護的執行架構與技能，重新核對資料權限、任務評測和人工交接。",
+              "scope": "OpenAI 提供半導體客戶經驗；第二隊一天部署是其自述，不能預估所有企業時程。"
+            },
+            {
+              "label": "試點仍做不到",
+              "scenario": "團隊已有展示版，正式任務評測卻持續失敗，主管要決定是否擴大。",
+              "decision": "列出失敗題型、上線門檻與模型能力缺口，必要時延後部署並與供應商共同修正。",
+              "scope": "OpenAI 語音客服案提供評測由約 60% 升到 90% 以上的過程；各任務門檻仍要自行定義。"
             }
           ],
           "readingPrompts": [
@@ -756,6 +820,36 @@
                 "https://claude.dev/blog/solving-code-review-at-anthropic/"
               ],
               "next": "比較導入前後每份 PR 的審查與修復工時，並按風險級別看回退和事故。"
+            },
+            {
+              "id": "fde-reuse-why-evals",
+              "question": "第一隊成功後，為什麼第二隊仍需要自己的評測？",
+              "answer": "OpenAI 說共用架構可保留技能與工具，但第二隊的資料連線和工作要求不同，仍需新評測。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://openai.com/index/forward-deployed-engineering-means/"
+              ],
+              "next": "收集第二隊的真實案例、例外和人工驗收標準。"
+            },
+            {
+              "id": "fde-speed-proof",
+              "question": "第二隊部署從兩個月變一天，能否證明成效也保留？",
+              "answer": "原文提供一個擴隊時間例子及約 90% 客製程式碼減量，未公開跨隊品質、返工或維護成本。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://openai.com/index/forward-deployed-engineering-means/"
+              ],
+              "next": "比較兩隊上線後的通過率、人工修正和維護工時。"
+            },
+            {
+              "id": "fde-gap-before-rollout",
+              "question": "模型在真實任務不達標時，團隊如何決定暫不上線？",
+              "answer": "OpenAI 的語音客服案在起始關鍵評測約 60% 時，先與客戶及研究團隊改進；六個月後評測超過 90% 才達部署門檻。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://openai.com/index/forward-deployed-engineering-means/"
+              ],
+              "next": "查門檻如何由客戶的錯誤成本與人工接手條件決定。"
             }
           ]
         },
@@ -6571,7 +6665,8 @@
     "team-scale": [
       "https://www.anthropic.com/engineering/redesigning-source-control",
       "https://www.uber.com/gb/en/blog/efficient-software-factory/",
-      "https://claude.dev/blog/solving-code-review-at-anthropic/"
+      "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "https://openai.com/index/forward-deployed-engineering-means/"
     ],
     "learn-data": [
       "https://temporal.io/resources/case-studies/stack-ai"
@@ -6596,10 +6691,14 @@
       "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day"
     ],
     "market-search": [
-      "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web"
+      "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web",
+      "https://blog.cloudflare.com/webmcp-commerce/"
     ],
     "workflow-agent-split": [
       "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+    ],
+    "cost-unit": [
+      "https://blog.cloudflare.com/obsessive-inference-optimization/"
     ]
   },
   "gaps": [
@@ -6704,6 +6803,22 @@
       "sourceLabel": "Terminal X 投資評測案例",
       "sourceUrl": "https://openai.com/index/terminal-x/",
       "reason": "原文有現場收集判斷規則、54 項逐筆評測、人工修正回寫與 500 項內部測試；一致率、實際判斷品質和維護成本仍需分開查。"
+    },
+    {
+      "id": "cloudflare-review-cost-quality-20261019",
+      "questionId": "cost-unit",
+      "title": "AI 審查費用降下來後，怎麼知道沒有漏掉重要問題？",
+      "sourceLabel": "Cloudflare 程式審查成本與品質",
+      "sourceUrl": "https://blog.cloudflare.com/obsessive-inference-optimization/",
+      "reason": "原文同時公布每次成本、快取機制、審查時間與分項品質檢查；效能審查的漏判提醒團隊在降本時設定不同護欄。"
+    },
+    {
+      "id": "fde-second-team-reuse-20261022",
+      "questionId": "team-scale",
+      "title": "第一隊的 AI 試點可用，第二隊哪些工作仍要重做？",
+      "sourceLabel": "OpenAI 現場工程擴隊案例",
+      "sourceUrl": "https://openai.com/index/forward-deployed-engineering-means/",
+      "reason": "作者交代客戶現場評測、共用執行架構與第二隊部署時間，可追問資料、權限、評測和維護責任如何跨部門重設。"
     }
   ]
 }
