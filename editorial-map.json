@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T09:36:39+08:00",
+  "updatedAt": "2026-10-24T09:35:37+08:00",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -872,6 +872,58 @@
             "prompt-library",
             "skill-instructions-model-upgrades",
             "agent-skills-concept"
+          ],
+          "scenarioOptions": [
+            {
+              "label": "出勤前找資料",
+              "scenario": "維修員要進場處理異常，手冊、感測器訊號和前次紀錄分散，無法先確認設備位置與要帶的工具。",
+              "decision": "決定哪些資料要在出勤前呈現、如何標示來源與最後更新時間。",
+              "scope": "先談現場資料整合與維修員判斷；不推論修復時間已縮短。"
+            },
+            {
+              "label": "完工後留經驗",
+              "scenario": "資深維修員知道故障線索，完工後卻只留下短短一行工單，下一位同事無法還原判斷。",
+              "decision": "挑出要追問並保存的故障現象、排除步驟與例外，指定誰檢查口述紀錄。",
+              "scope": "以案例的語音回報流程討論知識交接；效果仍需看後續工單是否真的重用。"
+            },
+            {
+              "label": "跨地區擴大",
+              "scenario": "營運中心想讓其他區域維修員參考已保存的經驗，卻遇到不同設備型號與服務歷史。",
+              "decision": "分開管理通用手冊、特定設備紀錄和現場建議，再設定過期與錯誤回報機制。",
+              "scope": "案例描述全球規模，沒有提供跨區擴張的品質或成本數據。"
+            }
+          ],
+          "readingPrompts": [
+            {
+              "id": "tke-context",
+              "question": "出勤前的 AI 提示，為什麼不能只靠設備手冊？",
+              "answer": "同型設備在不同建築有不同使用與維修史；現場還需知道設備位置、故障訊號和前次處理紀錄。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/"
+              ],
+              "next": "核對提示引用哪份手冊與服務紀錄，過期時由誰修正。"
+            },
+            {
+              "id": "tke-feedback",
+              "question": "完工口述如何幫下一位維修員？",
+              "answer": "語音 Agent 追問工作細節並保存口述紀錄，營運中心可利用現場回饋修正日後排查；原文沒有量化知識重用效果。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/"
+              ],
+              "next": "抽查後續工單有沒有引用前次紀錄，並記錄錯誤建議。"
+            },
+            {
+              "id": "tke-outcome",
+              "question": "維修速度或設備妥善率改善了嗎？",
+              "answer": "原文沒有公布同類工單的前後比較或對照組。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/"
+              ],
+              "next": "按設備類型比較修復時間、再次出勤、人工查資料時間和停機時長。"
+            }
           ]
         }
       ]
@@ -6463,6 +6515,36 @@
       "summary": "主要回答：企業在什麼情況下需要培訓、評估或顧問陪跑？",
       "dateSensitive": false,
       "id": "article-7b973003f078"
+    },
+    {
+      "id": "article-8a3b5f935d05",
+      "date": "2026-10-14",
+      "slug": "/blog_ai-roi-learning-loop/",
+      "title": "微軟的 AI 轉型啟示：AI 用量增加，為什麼工作成效未必提升？",
+      "url": "https://aiworks.tw/blog_ai-roi-learning-loop/",
+      "contentStatus": "unreviewed",
+      "answers": [],
+      "summary": "新增文章，正文尚未對照。"
+    },
+    {
+      "id": "article-6e4b7147bc09",
+      "date": "2026-10-16",
+      "slug": "/blog_chatgpt-dots-cloud-collaboration/",
+      "title": "ChatGPT Dots 是什麼？雲端 Agent 與團隊協作更新解析",
+      "url": "https://aiworks.tw/blog_chatgpt-dots-cloud-collaboration/",
+      "contentStatus": "unreviewed",
+      "answers": [],
+      "summary": "新增文章，正文尚未對照。"
+    },
+    {
+      "id": "article-1ee2b51beeb0",
+      "date": "2026-10-21",
+      "slug": "/blog_ai-benefits-workflow-redesign/",
+      "title": "AI 能力持續進步，企業為什麼需要重新設計流程？",
+      "url": "https://aiworks.tw/blog_ai-benefits-workflow-redesign/",
+      "contentStatus": "unreviewed",
+      "answers": [],
+      "summary": "新增文章，正文尚未對照。"
     }
   ],
   "articleMatching": "已讀取官網正文與章節，區分主要回答、部分回答與原文無法讀取。",
@@ -6699,6 +6781,9 @@
     ],
     "cost-unit": [
       "https://blog.cloudflare.com/obsessive-inference-optimization/"
+    ],
+    "team-owner": [
+      "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/"
     ]
   },
   "gaps": [
@@ -6819,6 +6904,14 @@
       "sourceLabel": "OpenAI 現場工程擴隊案例",
       "sourceUrl": "https://openai.com/index/forward-deployed-engineering-means/",
       "reason": "作者交代客戶現場評測、共用執行架構與第二隊部署時間，可追問資料、權限、評測和維護責任如何跨部門重設。"
+    },
+    {
+      "id": "tke-field-knowledge-handoff-20261022",
+      "questionId": "team-owner",
+      "title": "現場師傅的經驗，怎麼留給下一次維修？",
+      "sourceLabel": "TK Elevator 現場維修流程",
+      "sourceUrl": "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/",
+      "reason": "案例說清楚出勤前資料準備、現場判斷與完工語音回報；公開資料尚無同類工單的時間與品質比較。"
     }
   ]
 }
