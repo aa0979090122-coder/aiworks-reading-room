@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-24T09:35:37+08:00",
+  "updatedAt": "2026-10-25T13:34:14+08:00",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -89,6 +89,68 @@
           "articleHints": [
             "tokenmaxxing",
             "enterprise-ai-top-line-growth"
+          ],
+          "scenarioOptions": [
+            {
+              "label": "主管整理前線資訊",
+              "scenario": "救護服務主管要把營運報告和全國指引整理給前線，資料分散且時效短。",
+              "decision": "決定哪些資料能交由 AI 起草、由誰查來源和修改，再記錄資訊送達時間。",
+              "scope": "先談行政資訊流與人工覆核；不延伸成臨床建議。"
+            },
+            {
+              "label": "試用後回報成效",
+              "scenario": "員工說每天少花時間寫報告，管理者需要判斷服務是否真的改善。",
+              "decision": "分開記文書時間、人工修訂、前線可用性與照護流程，不把自述省時直接換算成患者效益。",
+              "scope": "以 NHS 試用自述作線索；約克郡救護服務沒有對照數字。"
+            },
+            {
+              "label": "跨單位擴大",
+              "scenario": "一個單位的行政助手獲得好評，其他團隊想用在更接近病患的工作。",
+              "decision": "逐項辨認行政與臨床任務邊界，設定審核、資料權限與停止條件。",
+              "scope": "討論導入範圍與管理問題；不推測工具可作臨床判斷。"
+            }
+          ],
+          "readingPrompts": [
+            {
+              "id": "nhs-admin-start",
+              "question": "為什麼先處理報告和前線通知？",
+              "answer": "受訪營運主管需要把多份資料變成可查、可修改的草稿，再由熟悉現場的人複核。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care"
+              ],
+              "next": "找出審稿者、來源更新頻率和現場收件人。"
+            },
+            {
+              "id": "nhs-time-scope",
+              "question": "每天節省 43 分鐘可以代表約克郡救護服務嗎？",
+              "answer": "不能。該數字出自 NHS England 先前較大範圍的試用者自述，文章未提供約克郡的獨立測量。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care"
+              ],
+              "next": "取得同一單位、同一工作類型的前後資料。"
+            },
+            {
+              "id": "nhs-care-outcome",
+              "question": "文書省時後，患者照護有改善嗎？",
+              "answer": "公開採訪沒有呈現照護流程或病患結果的前後比較。",
+              "status": "open",
+              "evidenceUrls": [
+                "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care"
+              ],
+              "next": "查看候診、轉介、再次求助及員工照護時間，並分開分析其他改革影響。"
+            },
+            {
+              "id": "nhs-boundary-next",
+              "question": "若要把助手擴到下一項工作，該先檢查什麼？",
+              "answer": "NHS England 目前限定 Copilot 處理行政工作。下一項任務需要重新界定資料、審核人和臨床風險；公開來源未列完整上線門檻。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care"
+              ],
+              "next": "查 NHS 的實際使用規範與臨床安全評估。"
+            }
           ]
         },
         {
@@ -6784,6 +6846,9 @@
     ],
     "team-owner": [
       "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/"
+    ],
+    "value-time": [
+      "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care"
     ]
   },
   "gaps": [
@@ -6912,6 +6977,14 @@
       "sourceLabel": "TK Elevator 現場維修流程",
       "sourceUrl": "https://news.microsoft.com/source/emea/features/data-and-ai-agents-give-a-lift-to-tk-elevator-service-technicians/",
       "reason": "案例說清楚出勤前資料準備、現場判斷與完工語音回報；公開資料尚無同類工單的時間與品質比較。"
+    },
+    {
+      "id": "nhs-admin-time-to-care-20261021",
+      "questionId": "value-time",
+      "title": "醫療行政省下時間後，怎麼知道前線真的受益？",
+      "sourceLabel": "NHS 救護服務行政流程",
+      "sourceUrl": "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care",
+      "reason": "訪談交代資料整理與人工複核，也明確限制 AI 的臨床用途；先前試用的省時數字和照護成果仍需分開驗證。"
     }
   ]
 }
