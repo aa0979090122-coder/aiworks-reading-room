@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-24",
+  "editionDate": "2026-10-25",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1118,6 +1118,180 @@
     }
   ],
   "news": [
+    {
+      "type": "企業現場案例 · 行政工作與照護邊界",
+      "sourceDate": "2026-10-21",
+      "date": "2026-10-21",
+      "title": "NHS 救護服務：AI 先整理營運資料，臨床判斷仍由人負責",
+      "lead": "約克郡救護服務的主管用 Copilot 整理報告、起草給前線的資訊，再由熟悉現場的人檢查與修改。NHS England 限定工具處理行政工作。",
+      "takeaways": [
+        "營運主管要整合前線資料、排班和重大事件資訊；Copilot 把長報告整理成可追問的草稿，主管再依工作經驗檢查。",
+        "NHS England 曾讓約三萬名員工試用，受試者回報平均每日節省 43 分鐘；這是較大範圍的試用回報，不能視為約克郡救護服務的個別成效。",
+        "NHS England 說 Copilot 目前只用於行政工作，不處理臨床判斷；公開文章尚未證明省下的文書時間轉為照護時間或改善病患結果。"
+      ],
+      "angle": "若要評估行政助手，先分開追蹤文書時間、人工修改量、資訊送達前線的速度，以及實際照護結果。",
+      "caveat": "這是微軟對客戶的採訪；43 分鐘是先前試用者自述平均值。文章沒有提供約克郡的前後對照、臨床結果或因果歸因。",
+      "url": "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care",
+      "sources": [
+        {
+          "label": "Microsoft／Yorkshire Ambulance Service 原始採訪",
+          "url": "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care"
+        }
+      ],
+      "source": "Microsoft／NHS England",
+      "author": "Catherine Bolgar／Microsoft",
+      "originalTitle": "Before the ambulance arrives: How AI is helping the NHS rethink patient care",
+      "englishSummary": "Yorkshire Ambulance Service managers use Copilot to draft and organize operational information, then review it themselves. NHS England restricts Copilot to administrative work. A separate staff trial reported time saved, but the article does not measure patient outcomes at Yorkshire.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "governance"
+        ],
+        "concepts": [
+          "行政與臨床邊界",
+          "人工覆核",
+          "省時歸因"
+        ],
+        "outcome": "case"
+      },
+      "followupQuestions": [
+        {
+          "id": "nhs-work-boundary",
+          "question": "為什麼先讓 AI 整理行政資訊？",
+          "answer": "救護服務主管須彙整多份營運報告與前線通知，受訪主管說由 Copilot 先排成可檢查的格式，自己再複核。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care"
+          ],
+          "next": "辨認哪些行政任務有明確輸入、審稿者和交付對象。"
+        },
+        {
+          "id": "nhs-clinical-boundary",
+          "question": "行政草稿與臨床判斷的界線在哪裡？",
+          "answer": "NHS England 的受訪主管說目前工具只用於行政工作；臨床決策未納入此用途。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care"
+          ],
+          "next": "檢查各院內使用規範如何界定行政與臨床資料。"
+        },
+        {
+          "id": "nhs-time-to-care",
+          "question": "省下的文書時間真的轉成照護時間嗎？",
+          "answer": "先前試用者自述平均每天省 43 分鐘；公開資料沒有約克郡的相同工作前後比較，也沒有照護結果。",
+          "status": "open",
+          "evidenceUrls": [
+            "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care"
+          ],
+          "next": "分別量測文書時數、人工返工、前線資訊送達和患者流程。"
+        }
+      ],
+      "topic": "case",
+      "checkedAt": "2026-10-25",
+      "dailyBackfillAt": "2026-10-25T13:34:14+08:00",
+      "researchQuestions": [
+        "value-time",
+        "governance-agent"
+      ]
+    },
+    {
+      "type": "功能更新 · 工作流程分類",
+      "sourceDate": "2026-10-22",
+      "date": "2026-10-22",
+      "title": "OpenAI Decisions API 正式提供：先定義問題和選項，再決定分流",
+      "lead": "Decisions API 從公開預覽進入正式提供。開發者可用固定選項、機率或分數，處理客服分流、文件分類與 Agent 的下一步。",
+      "takeaways": [
+        "輸入可含文字、圖片與 JSON；開發者先寫問題和允許答案，API 回傳選項、機率或分數。",
+        "OpenAI 增加提示快取、GPT-Live 整合及單次最多 400 題。Box 自述 30 份保險證明文件的路由測試約快五倍，準確率與原本 Responses API 相同。",
+        "這是供應商公告與客戶測試，未提供跨企業的錯誤率、人工覆核成本或長期維護資料。"
+      ],
+      "angle": "適合先試固定答案、量大且可人工抽查的分流工作；上線前建立錯分成本與低信心轉人工的門檻。",
+      "caveat": "速度與成本數字分屬 OpenAI 和受訪客戶的測試情境，不能當作所有任務的保證；這項更新不代表自由形式的判斷可直接交給 API。",
+      "url": "https://openai.com/index/decisions-api/",
+      "sources": [
+        {
+          "label": "OpenAI 原始公告",
+          "url": "https://openai.com/index/decisions-api/"
+        }
+      ],
+      "source": "OpenAI",
+      "author": "OpenAI",
+      "originalTitle": "Build more responsive apps with the Decisions API",
+      "englishSummary": "OpenAI made the Decisions API generally available on October 22. It returns bounded choices, probabilities or scores for classification and routing. Box reports a small document-routing evaluation; broader outcome and review costs are not published.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "cost"
+        ],
+        "concepts": [
+          "固定選項分流",
+          "低信心轉人工",
+          "分類評測"
+        ],
+        "outcome": "feature"
+      },
+      "topic": "product",
+      "checkedAt": "2026-10-25",
+      "dailyBackfillAt": "2026-10-25T13:34:14+08:00",
+      "researchQuestions": [
+        "change-feature",
+        "value-quality"
+      ]
+    },
+    {
+      "type": "企業安全流程 · 漏洞分級與人工審查",
+      "sourceDate": "2026-10-21",
+      "date": "2026-10-21",
+      "title": "Cloudflare：把程式漏洞和線上流量對照後，再決定先修哪個",
+      "lead": "Cloudflare 把客戶授權的程式碼、實際路由流量與 WAF 訊號連在一起，產生可供安全團隊檢查的漏洞優先順序、修補建議與邊緣防護規則。",
+      "takeaways": [
+        "先確認程式弱點是否位於正在使用的路由，再看流量、攻擊跡象及現有保護；單靠程式碼掃描無法回答暴露程度。",
+        "模型提出的漏洞須有原始程式碼證據，修補與 WAF 規則先經自動檢查和 Cloudflare 團隊覆核，再交客戶決定。",
+        "Cloudflare 的技術說明早在 9 月 3 日發布；10 月 21 日 OpenAI 客戶故事再次介紹此服務，沒有提供客戶端的漏判率或實際修補成效。"
+      ],
+      "angle": "安全團隊可把「找到漏洞」、「暴露於真實流量」、「需要先處置」分成三個可核對的判斷，避免只按嚴重度清單排隊。",
+      "caveat": "服務仍屬早期存取；流程與效益由供應商自述。10 月 21 日是新客戶故事日期，技術流程首見於 9 月 3 日，不能當成今天的新功能。",
+      "url": "https://openai.com/index/cloudflare-cyber/",
+      "sources": [
+        {
+          "label": "OpenAI 10/21 客戶故事",
+          "url": "https://openai.com/index/cloudflare-cyber/"
+        },
+        {
+          "label": "Cloudflare 9/3 技術說明",
+          "url": "https://blog.cloudflare.com/vulnerability-discovery-remediation/"
+        }
+      ],
+      "source": "OpenAI／Cloudflare",
+      "author": "OpenAI；Ken Sanderson 等／Cloudflare",
+      "originalTitle": "Cloudflare links vulnerability discovery to defense with OpenAI",
+      "englishSummary": "Cloudflare relates code findings to live routes, traffic and WAF signals. Proposed patches and narrowly scoped mitigations receive automated and team review; customers retain control. The detailed process was first published by Cloudflare in September.",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance",
+          "evaluation",
+          "workflow"
+        ],
+        "concepts": [
+          "漏洞證據分級",
+          "線上暴露",
+          "人工核准"
+        ],
+        "outcome": "case"
+      },
+      "topic": "case",
+      "checkedAt": "2026-10-25",
+      "dailyBackfillAt": "2026-10-25T13:34:14+08:00",
+      "researchQuestions": [
+        "governance-agent",
+        "governance-failure"
+      ]
+    },
     {
       "type": "企業現場案例 · 維修知識交接",
       "sourceDate": "2026-10-22",
@@ -5641,7 +5815,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-24T09:35:37+08:00",
+    "checkedAt": "2026-10-25T13:34:14+08:00",
     "points": []
   },
   "knowledgeLibrary": [
