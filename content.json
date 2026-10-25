@@ -1119,6 +1119,90 @@
   ],
   "news": [
     {
+      "type": "企業工程實作 · Agent 驗證與人工覆核",
+      "sourceDate": "2026-10-15",
+      "date": "2026-10-15",
+      "title": "Meta Forum：讓 Agent 自行測試，工程師憑證據驗收",
+      "lead": "Meta 的小團隊用 Agent 開發 Forum App，發現只看程式能否編譯會把錯誤推到人工審查。團隊把自動測試、畫面核對與真實操作模擬放進開發循環。",
+      "takeaways": [
+        "Agent 曾找錯 App 畫面，改到不相關頁面。團隊補上可讀模擬器畫面結構和定位工具，讓它在編輯前先核對目前狀態。",
+        "每次變更先經建置、單元測試和畫面檢查，再附測試紀錄交工程師審核；工程師仍決定產品目標、架構和是否接受變更。",
+        "團隊以固定的捲動、切換和載入情境做壓力測試，找出記憶體問題並重測修正。Meta 自述八週完成主要功能；沒有公開對照團隊或完整開發成本。"
+      ],
+      "angle": "團隊若讓 Agent 連續修改程式，可先提供它核對畫面與檔案狀態的工具，再定義哪些測試證據足夠讓工程師快速驗收。",
+      "caveat": "這是 Meta 自家新 App 的工程經驗；「八週完成」不能歸因於 Agent 單一因素，文中也說全流程自主運作仍是目標而非現況。",
+      "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
+      "sources": [
+        {
+          "label": "Meta Engineering 原始工程文章",
+          "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/"
+        }
+      ],
+      "source": "Meta Engineering",
+      "author": "Shengbo Guo 等九位作者／Meta",
+      "originalTitle": "How Meta Built Forum With AI-Native Engineering",
+      "englishSummary": "Meta reports moving build, tests and visual checks into the agent loop while retaining engineer sign-off. A simulator view-hierarchy tool reduced edits to the wrong screen, and repeatable stress tests found a memory bug. The eight-week delivery is a company account, not a controlled agent-effect estimate.",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow",
+          "governance"
+        ],
+        "concepts": [
+          "畫面狀態核對",
+          "自動驗證循環",
+          "工程師簽核"
+        ],
+        "outcome": "case"
+      },
+      "related": [
+        {
+          "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/",
+          "reason": "兩篇都處理 Agent 在正式開發環境的錯誤；Forum 針對畫面定位與驗收，Thin Orchestrator 針對跨系統規則混用。"
+        }
+      ],
+      "followupQuestions": [
+        {
+          "id": "forum-wrong-screen",
+          "question": "Agent 為什麼會修改錯畫面？",
+          "answer": "團隊觀察到它會猜測目前所在頁面和座標；提供模擬器的即時畫面結構與元素清單後，才有編輯前可查的狀態。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/"
+          ],
+          "next": "記錄錯畫面編輯次數與工具查詢覆蓋率。"
+        },
+        {
+          "id": "forum-verification",
+          "question": "程式能編譯後，為什麼還不算完成？",
+          "answer": "Meta 要求建置、測試和視覺檢查通過，變更附驗證紀錄，再由工程師核准。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/"
+          ],
+          "next": "按變更類型記錄漏測、返工和審稿時間。"
+        },
+        {
+          "id": "forum-speed-attribution",
+          "question": "八週交付能歸因於 Agent 嗎？",
+          "answer": "原文沒有對照組，團隊同時重做程式架構、測試與工具；無法單獨估算 Agent 的貢獻。",
+          "status": "open",
+          "evidenceUrls": [
+            "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/"
+          ],
+          "next": "比較同類功能的交付時長、返工和人工投入。"
+        }
+      ],
+      "topic": "case",
+      "checkedAt": "2026-10-25",
+      "dailyBackfillAt": "2026-10-25T13:39:00+08:00",
+      "researchQuestions": [
+        "value-quality",
+        "team-scale"
+      ]
+    },
+    {
       "type": "企業現場案例 · 行政工作與照護邊界",
       "sourceDate": "2026-10-21",
       "date": "2026-10-21",
