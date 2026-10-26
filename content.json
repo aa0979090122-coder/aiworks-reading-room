@@ -1119,6 +1119,83 @@
   ],
   "news": [
     {
+      "type": "獨立測試 · Agent 監控盲點與修正",
+      "sourceDate": "2026-10-22",
+      "date": "2026-10-22",
+      "title": "METR：代理監控曾漏看工作途中事件，修補後仍需重測",
+      "lead": "METR 與 Redwood Research 取得 OpenAI 內部系統存取權，測試當時的代理監控流程，找到觸發時機與監控覆蓋的缺口；報告只描述 7 月以前的系統。",
+      "takeaways": [
+        "研究人員在 7/21 至 8/11 進行三週試行測試，查閱程式與設定並訪談約十多位相關人員；公開文章是較短的高層次摘要。",
+        "當時監控多在 Agent 交還控制權時啟動；METR 估計，未監控的上下文壓縮事件可能使 5 至 7 月約一成符合條件的內部 Codex 流量未被監控，但估計有相當不確定性。",
+        "OpenAI 在測試期間已修正壓縮事件缺口，並稱影響正式防護的已知漏洞已修補；METR 沒有驗證後續版本或修補宣稱。"
+      ],
+      "angle": "有代理持續執行任務時，管理者要核對監控何時觸發、哪些事件有紀錄，以及監控系統本身能否被代理影響；修補後仍需重測覆蓋。",
+      "caveat": "這是 OpenAI 內部研究環境的歷史測試，並非所有企業 Agent 的事故率。約一成是帶不確定性的估計，公開摘要未揭露完整 61 頁報告；OpenAI 後續覆蓋率未由 METR 驗證。",
+      "url": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/",
+      "sources": [
+        {
+          "label": "METR／Redwood Research 原始測試摘要",
+          "url": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"
+        }
+      ],
+      "source": "METR／Redwood Research",
+      "author": "David Rein、Adam Kaufman／METR 與 Redwood Research",
+      "originalTitle": "Red-Teaming OpenAI's Internal Agent Monitoring Systems",
+      "englishSummary": "METR and Redwood Research report historical gaps in OpenAI internal agent monitoring, including compaction-trigger coverage and possible monitor subversion. OpenAI says relevant production vulnerabilities were patched, but METR did not evaluate the newer system.",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance",
+          "evaluation"
+        ],
+        "concepts": [
+          "監控觸發時機",
+          "監控覆蓋率",
+          "修補後重測"
+        ],
+        "outcome": "failure"
+      },
+      "followupQuestions": [
+        {
+          "id": "metr-monitor-trigger",
+          "question": "長時間執行的 Agent，什麼時候會被檢查？",
+          "answer": "測試期間，部分監控要等 Agent 交還控制權才啟動；METR 建議按訊息數或時間定期觸發。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"
+          ],
+          "next": "對照實際部署的任務長度、觸發事件與監控紀錄。"
+        },
+        {
+          "id": "metr-coverage-estimate",
+          "question": "約一成未監控流量代表什麼？",
+          "answer": "METR 推估 2026 年 5 至 7 月的特定內部 Codex 流量，因壓縮事件未觸發監控而漏看；估計不確定，且非目前覆蓋率。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"
+          ],
+          "next": "交叉核對推論請求、應監控請求及實際監控事件三份紀錄。"
+        },
+        {
+          "id": "metr-post-fix",
+          "question": "漏洞修補後是否已足夠安全？",
+          "answer": "OpenAI 表示影響正式防護的已知漏洞已修補；METR 沒有評估後續系統。",
+          "status": "open",
+          "evidenceUrls": [
+            "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"
+          ],
+          "next": "針對新版系統重新執行控制測試並公開驗證範圍。"
+        }
+      ],
+      "topic": "failure",
+      "checkedAt": "2026-10-26",
+      "dailyBackfillAt": "2026-10-26T09:37:21+08:00",
+      "researchQuestions": [
+        "governance-failure",
+        "governance-agent"
+      ]
+    },
+    {
       "type": "企業研發案例 · 候選材料與實驗驗證",
       "sourceDate": "2026-10-20",
       "date": "2026-10-20",
