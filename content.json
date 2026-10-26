@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-25",
+  "editionDate": "2026-10-26",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1118,6 +1118,83 @@
     }
   ],
   "news": [
+    {
+      "type": "企業研發案例 · 候選材料與實驗驗證",
+      "sourceDate": "2026-10-20",
+      "date": "2026-10-20",
+      "title": "Saint-Gobain：AI 縮短材料搜尋，實驗仍要驗證候選配方",
+      "lead": "Saint-Gobain 的研發團隊用 Microsoft Discovery 整理專利與論文摘要，縮小水泥添加劑的候選範圍；新分子仍在實驗室檢查。",
+      "takeaways": [
+        "團隊為尋找低碳、較低成本的水泥添加劑，彙集 6.2 萬件專利與 4.4 萬篇摘要，再跨領域篩選可能的化學組合。",
+        "專案負責人自述，建立知識庫由估計一年的人工工作縮到數小時，約六週提出幾個值得測試的假設；原文沒有獨立的工時對照。",
+        "研究員正在測試候選分子的化學行為；若符合條件，還要交由開發團隊做實體條件測試。文章未宣稱已找到可量產的新添加劑。"
+      ],
+      "angle": "研發主管可把資料搜尋、提出假設、實驗驗證和進入開發分開追蹤，避免把前段縮時當成材料成果。",
+      "caveat": "這是 Microsoft 對合作客戶的採訪。文中另提石膏板裁切配送改善 30%，屬另一項數位流程，不應歸因於 Discovery 的材料研究。",
+      "url": "https://news.microsoft.com/source/emea/features/a-concrete-vision-saint-gobain-and-microsoft-discovery-build-for-the-future/",
+      "sources": [
+        {
+          "label": "Microsoft／Saint-Gobain 原始採訪",
+          "url": "https://news.microsoft.com/source/emea/features/a-concrete-vision-saint-gobain-and-microsoft-discovery-build-for-the-future/"
+        }
+      ],
+      "source": "Microsoft／Saint-Gobain",
+      "author": "Chris Welsch／Microsoft；受訪者 Mojdeh Rastgoo-Lemaitre 等 Saint-Gobain 主管",
+      "originalTitle": "A concrete vision: Saint-Gobain and Microsoft Discovery build for the future",
+      "englishSummary": "Saint-Gobain says Discovery helped its scientists assemble patent and abstract evidence and identify cement-additive hypotheses faster. Molecules are still under laboratory testing; the story does not establish a validated new material or a controlled productivity gain.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "研究假設與實驗驗證",
+          "資料搜尋範圍",
+          "研發成果歸因"
+        ],
+        "outcome": "case"
+      },
+      "followupQuestions": [
+        {
+          "id": "saint-search-time",
+          "question": "研究工作究竟縮短了哪一段？",
+          "answer": "受訪經理比較的是建立專利與摘要知識庫的估計時間，並表示六週內提出候選假設；原文未提供完整前後測設計。",
+          "status": "partial",
+          "evidenceUrls": [
+            "https://news.microsoft.com/source/emea/features/a-concrete-vision-saint-gobain-and-microsoft-discovery-build-for-the-future/"
+          ],
+          "next": "記錄資料蒐集、篩選、實驗與開發各階段的實際工時。"
+        },
+        {
+          "id": "saint-hypothesis-gate",
+          "question": "找到候選分子後，何時才算研發有成果？",
+          "answer": "研究員仍在測試分子行為與化學性質；通過後才交給開發團隊做實體條件測試。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://news.microsoft.com/source/emea/features/a-concrete-vision-saint-gobain-and-microsoft-discovery-build-for-the-future/"
+          ],
+          "next": "取得實驗通過率、性能、成本和後續開發門檻。"
+        },
+        {
+          "id": "saint-carbon-outcome",
+          "question": "這次 AI 搜尋已降低水泥排放嗎？",
+          "answer": "原文沒有新配方的實測排放量或量產結果；既有 EnviroAdd 產品的數字不能算到本次搜尋。",
+          "status": "open",
+          "evidenceUrls": [
+            "https://news.microsoft.com/source/emea/features/a-concrete-vision-saint-gobain-and-microsoft-discovery-build-for-the-future/"
+          ],
+          "next": "等待可重複的材料試驗及實際製程比較。"
+        }
+      ],
+      "topic": "case",
+      "checkedAt": "2026-10-26",
+      "dailyBackfillAt": "2026-10-26T09:33:44+08:00",
+      "researchQuestions": [
+        "task-research",
+        "value-quality"
+      ]
+    },
     {
       "type": "企業工程實作 · Agent 驗證與人工覆核",
       "sourceDate": "2026-10-15",
@@ -5899,7 +5976,7 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-25T13:34:14+08:00",
+    "checkedAt": "2026-10-26T09:33:44+08:00",
     "points": []
   },
   "knowledgeLibrary": [
