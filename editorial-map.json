@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-25T13:34:14+08:00",
+  "updatedAt": "2026-10-26T09:33:44+08:00",
   "profileStatus": "待討論的讀者輪廓",
   "stages": [
     {
@@ -1423,7 +1423,69 @@
             "排程",
             "營運"
           ],
-          "articleHints": []
+          "articleHints": [],
+          "scenarioOptions": [
+            {
+              "label": "研究主管決定下一輪實驗",
+              "scenario": "團隊很快整理大量專利並提出候選分子，實驗室資源卻只能測少數方案。",
+              "decision": "按性能、成本與可製造性決定先測哪些假設，保留淘汰理由。",
+              "scope": "先談假設到實驗的交接；不宣稱已有新材料。"
+            },
+            {
+              "label": "向主管回報研發進度",
+              "scenario": "管理者看到資料整理由數月縮到數小時，想知道專案是否真的提前。",
+              "decision": "分開量測資料搜尋、候選篩選、實驗與開發階段，查每階段的等待和返工。",
+              "scope": "來源只有當事人的估計與訪談，尚無可歸因的完整前後測。"
+            },
+            {
+              "label": "跨領域找新線索",
+              "scenario": "研究員希望從建材以外的化學領域找材料線索，但要判斷哪些可進入現有製程。",
+              "decision": "記錄跨領域候選的來源、化學條件和實驗通過率，再決定搜尋要不要擴大。",
+              "scope": "討論搜尋範圍與驗證門檻；不把跨領域搜尋等同商業化。"
+            }
+          ],
+          "readingPrompts": [
+            {
+              "id": "saint-rd-search",
+              "question": "為什麼需要先整理專利與摘要？",
+              "answer": "團隊要在大量既有材料知識中找低碳、較低成本的添加劑線索，受訪者說先建立知識庫，再縮小候選並提出假設。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://news.microsoft.com/source/emea/features/a-concrete-vision-saint-gobain-and-microsoft-discovery-build-for-the-future/"
+              ],
+              "next": "查各類來源如何去重、更新與標記可信度。"
+            },
+            {
+              "id": "saint-rd-time",
+              "question": "省下的資料搜尋時間，是否也讓產品提早上市？",
+              "answer": "受訪者只比較知識庫建立的估計時間，並說約六週提出候選；分子仍在測試，尚無上市時程或完整對照。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://news.microsoft.com/source/emea/features/a-concrete-vision-saint-gobain-and-microsoft-discovery-build-for-the-future/"
+              ],
+              "next": "追蹤實驗、開發、量產每階段的進度與人力。"
+            },
+            {
+              "id": "saint-rd-proof",
+              "question": "候選配方需要什麼證據才能進入開發？",
+              "answer": "研究員正在檢查分子的行為和化學性質，通過後才做實體條件測試；具體門檻沒有公開。",
+              "status": "partial",
+              "evidenceUrls": [
+                "https://news.microsoft.com/source/emea/features/a-concrete-vision-saint-gobain-and-microsoft-discovery-build-for-the-future/"
+              ],
+              "next": "取得性能、強度、排放、成本與製程穩定性的驗收值。"
+            },
+            {
+              "id": "saint-rd-attribution",
+              "question": "另項石膏板配送改善能算本次 AI 研究成效嗎？",
+              "answer": "不能。訪談把石膏板裁切配送列為另一項數位流程，沒有說它由 Discovery 材料研究造成。",
+              "status": "supported",
+              "evidenceUrls": [
+                "https://news.microsoft.com/source/emea/features/a-concrete-vision-saint-gobain-and-microsoft-discovery-build-for-the-future/"
+              ],
+              "next": "個別記錄不同專案的投入、方法和成果。"
+            }
+          ]
         }
       ]
     },
@@ -6849,6 +6911,9 @@
     ],
     "value-time": [
       "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care"
+    ],
+    "task-research": [
+      "https://news.microsoft.com/source/emea/features/a-concrete-vision-saint-gobain-and-microsoft-discovery-build-for-the-future/"
     ]
   },
   "gaps": [
@@ -6985,6 +7050,14 @@
       "sourceLabel": "NHS 救護服務行政流程",
       "sourceUrl": "https://news.microsoft.com/source/emea/features/before-the-ambulance-arrives-how-ai-is-helping-the-nhs-rethink-patient-care",
       "reason": "訪談交代資料整理與人工複核，也明確限制 AI 的臨床用途；先前試用的省時數字和照護成果仍需分開驗證。"
+    },
+    {
+      "id": "saint-gobain-rd-hypothesis-gate-20261020",
+      "questionId": "task-research",
+      "title": "AI 幫研發找到候選材料後，何時算完成一段工作？",
+      "sourceLabel": "Saint-Gobain 材料研究流程",
+      "sourceUrl": "https://news.microsoft.com/source/emea/features/a-concrete-vision-saint-gobain-and-microsoft-discovery-build-for-the-future/",
+      "reason": "原始採訪清楚區分資料搜尋、候選假設與後續實驗，能追問主管如何驗收研發進度；尚無新材料的實測成果。"
     }
   ]
 }
