@@ -2,6 +2,94 @@
   "editionDate": "2026-10-27",
   "posts": [
     {
+      "url": "https://x.com/celestepoasts/status/2103232383139057950",
+      "title": "更早背景：Celeste 的 Claude 比較圖",
+      "source": "X 原始圖",
+      "sourceDate": "2026-09-25",
+      "lead": "9/25 的原始圖是 10/2 轉貼的來源；保留原日期。",
+      "topic": "trend",
+      "checkedAt": "2026-10-27",
+      "caveat": "熱度為 10/27 可見原貼數字，非全站排名。核對三則回覆：Frank Chen 詢問是否理解圖像、Karpathy 補充文字輸入說明、Paul Calcraft 引用另一模型結果；未將這些樣本當整體立場。重現結果來自作者，本次未獨立執行。",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation"
+        ],
+        "concepts": [
+          "地理知識測試"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-09-25",
+      "author": "Celeste",
+      "handle": "@celestepoasts",
+      "zh": "9/25 的原始圖是 10/2 轉貼的來源；保留原日期。",
+      "highLevel": true,
+      "publishedAt": "2026-09-24T21:17:30.965000Z"
+    },
+    {
+      "url": "https://x.com/karpathy/status/2105912048668590090",
+      "title": "Karpathy 補充：這次輸入與輸出都是文字",
+      "source": "作者回覆",
+      "sourceDate": "2026-10-02",
+      "lead": "可核對作者對文字資料與空間知識的解釋；不當作所有模型訓練細節的證明。",
+      "topic": "trend",
+      "checkedAt": "2026-10-27",
+      "caveat": "熱度為 10/27 可見原貼數字，非全站排名。核對三則回覆：Frank Chen 詢問是否理解圖像、Karpathy 補充文字輸入說明、Paul Calcraft 引用另一模型結果；未將這些樣本當整體立場。重現結果來自作者，本次未獨立執行。",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation"
+        ],
+        "concepts": [
+          "地理知識測試"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-10-02",
+      "author": "Andrej Karpathy",
+      "handle": "@karpathy",
+      "zh": "可核對作者對文字資料與空間知識的解釋；不當作所有模型訓練細節的證明。",
+      "highLevel": true,
+      "publishedAt": "2026-10-02T06:45:33.013000Z"
+    },
+    {
+      "url": "https://x.com/karpathy/status/2105909609487872075",
+      "title": "先看：Karpathy 的世界地圖實驗",
+      "source": "X 原貼",
+      "sourceDate": "2026-10-02",
+      "lead": "先看原貼與引用的圖，理解 16,200 次簡單回答怎麼拼成地圖。",
+      "topic": "trend",
+      "checkedAt": "2026-10-27",
+      "caveat": "熱度為 10/27 可見原貼數字，非全站排名。核對三則回覆：Frank Chen 詢問是否理解圖像、Karpathy 補充文字輸入說明、Paul Calcraft 引用另一模型結果；未將這些樣本當整體立場。重現結果來自作者，本次未獨立執行。",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation"
+        ],
+        "concepts": [
+          "地理知識測試"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-10-02",
+      "author": "Andrej Karpathy",
+      "handle": "@karpathy",
+      "zh": "Karpathy 分享以 16,200 組經緯度詢問陸地或水，再拼回地圖的實驗。10/27 核對時可見約 1.9 萬讚、149 萬次瀏覽。這能引出模型地理知識與測試方法的問題，但不能單憑地圖證明知識的內部機制。",
+      "highLevel": true,
+      "publishedAt": "2026-10-02T06:35:51.467000Z",
+      "replyObservation": {
+        "count": 3,
+        "summary": "核對 Frank Chen、Karpathy 與 Paul Calcraft 三則回覆，分別詢問圖像理解、補充文字輸入說明、引用其他模型結果；僅為局部樣本。",
+        "checkedAt": "2026-10-27",
+        "urls": [
+          "https://x.com/francchen/status/2105909857677455460",
+          "https://x.com/karpathy/status/2105912048668590090",
+          "https://x.com/paul_cal/status/2105916964228993315"
+        ]
+      }
+    },
+    {
       "url": "https://x.com/seflless/status/2107860983498817689",
       "title": "X：另一種工具在手勢辨識的比較",
       "lead": "作者回報自己的示範更準、更快，提供反例線索，未獨立重跑。",
@@ -1332,6 +1420,47 @@
     }
   ],
   "news": [
+    {
+      "url": "https://ai.thesatyajit.com/articles/llm-land-or-water",
+      "title": "想深入：把公開地圖重新計分",
+      "source": "原始分析",
+      "sourceDate": "2026-10-06",
+      "lead": "作者自行數位化地圖、比對資料；提供方法限制，未等於重跑所有原模型。",
+      "topic": "trend",
+      "checkedAt": "2026-10-27",
+      "caveat": "熱度為 10/27 可見原貼數字，非全站排名。核對三則回覆：Frank Chen 詢問是否理解圖像、Karpathy 補充文字輸入說明、Paul Calcraft 引用另一模型結果；未將這些樣本當整體立場。重現結果來自作者，本次未獨立執行。",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation"
+        ],
+        "concepts": [
+          "地理知識測試"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-10-06"
+    },
+    {
+      "url": "https://github.com/FavioVazquez/land-or-water",
+      "title": "接著看：公開重現結果",
+      "source": "實作者資料與原始結果",
+      "sourceDate": "2026-10；發布日未單獨核定",
+      "lead": "先讀 What we found 和 Limits，看看漂亮輪廓背後的基準、錯誤與測試條件。",
+      "topic": "trend",
+      "checkedAt": "2026-10-27",
+      "caveat": "熱度為 10/27 可見原貼數字，非全站排名。核對三則回覆：Frank Chen 詢問是否理解圖像、Karpathy 補充文字輸入說明、Paul Calcraft 引用另一模型結果；未將這些樣本當整體立場。重現結果來自作者，本次未獨立執行。",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation"
+        ],
+        "concepts": [
+          "地理知識測試"
+        ],
+        "outcome": "perspective"
+      }
+    },
     {
       "url": "https://typesafe.ai/blog/jev-1-14",
       "title": "Jev 1.14 官方更新",
@@ -6763,6 +6892,676 @@
         "id": "php2shell",
         "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
         "lane": "event",
+        "priority": 4,
+        "revision": "2026-10-27-php-1",
+        "updatedAt": "2026-10-27",
+        "title": "PHP 這次出了什麼事？為什麼以前沒人發現，現在卻能被攻擊？",
+        "intro": "PHP 是許多網站背後用來處理請求的程式語言。10 月 21 日，官方修補兩項可讓攻擊者在特定條件下控制伺服器的漏洞。這次引人注意的，是 AI 協助研究者找出可利用的路徑，也讓舊問題、修補速度與實際影響一起被拿出來討論。",
+        "trigger": {
+          "date": "10/25",
+          "text": "Unit 42 撤回先前把一起政府機構入侵歸因於 PHP2Shell 的說法。這讓「有漏洞、有攻擊嘗試、真的因此遭駭」的差別更值得追問。",
+          "urls": [
+            "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "old-clues",
+            "question": "以前真的沒人發現嗎？",
+            "answer": "2024 年稽核已出現相關線索，當時未找到具體的遠端執行路徑。2026 年研究者證明可利用後，風險才更明確；基金會也承認，修補曾卡在相容性取捨、決策流程與人力。",
+            "urls": [
+              "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+              "https://calif.io/php2shell/"
+            ],
+            "status": "supported",
+            "next": "什麼證據會讓一個已知問題，從可以稍後處理變成必須立刻修？"
+          },
+          {
+            "id": "ai-role",
+            "question": "AI 到底多做了什麼？現在為什麼能攻擊？",
+            "answer": "Calif 的 Ryan Austin 表示，對 PHP 歷史漏洞的理解幫他引導 AI 找路徑，初始發現使用一般可取得的模型。漏洞本來就存在；研究把它變成可運作的驗證，並確認不同部署方式的條件。單靠模型名稱無法解釋整個成果。",
+            "urls": [
+              "https://calif.io/php2shell/",
+              "https://www.php.net/archive/2026.php"
+            ],
+            "status": "supported",
+            "next": "熟悉系統的專家，和只拿到程式碼的人，用 AI 會得到多大的差別？"
+          },
+          {
+            "id": "reactions",
+            "question": "大家是在擔心什麼，又在爭什麼？",
+            "answer": "已讀的 X 回覆有人追問研究者與公司的歸功方式；Hacker News 抽讀留言則談修補時間、揭露協調，也質疑社群把風險說成已發生的大規模入侵。這些是局部討論，沒有統計全體立場。",
+            "urls": [
+              "https://x.com/calif_io/status/2112914613297668583",
+              "https://news.ycombinator.com/item?id=50180836"
+            ],
+            "status": "partial",
+            "next": "各方是在談漏洞的技術風險，還是在談發布與宣傳造成的信任問題？"
+          },
+          {
+            "id": "impact",
+            "question": "影響到底有多大？看到攻擊就代表網站已被攻破嗎？",
+            "answer": "AWS 感測器記錄到攻擊嘗試，但原文說明無法確定那些嘗試能否在真實系統成功。Unit 42 在 10/25 撤回一項入侵歸因。風險確實需要處理，受影響部署數、嘗試次數與已確認受害者仍要分開核對；目前未取得完整損失統計。",
+            "urls": [
+              "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+              "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+              "https://www.php.net/archive/2026.php"
+            ],
+            "status": "partial",
+            "next": "有沒有能回查的受害者、利用條件與事故證據，而不只是流傳的總數？"
+          },
+          {
+            "id": "next-wave",
+            "question": "以後會更常發生嗎？AI 找得快，修得也會一樣快？",
+            "answer": "AWS 判斷 AI 輔助分析正降低利用漏洞的門檻；PHP 的經驗則顯示驗證與修補仍受人力和系統限制。這支持應變時間可能縮短的判斷，還不足以預測未來每年會增加多少事故。",
+            "urls": [
+              "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+              "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/"
+            ],
+            "status": "analysis",
+            "next": "哪些工作能交給 AI 加速，哪些修補決策仍得有人負責？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+            "label": "先讀：PHP 基金會的事件回顧",
+            "reason": "最能回答「以前為什麼沒處理完」；先看稽核線索、修補取捨與人力限制的段落。",
+            "date": "2026-10-21",
+            "kind": "當事方回顧",
+            "recommended": true
+          },
+          {
+            "url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+            "label": "接著讀：Unit 42 的 10/25 更正",
+            "reason": "看開頭的更新就能理解，為什麼一則遭駭消息需要重新核對歸因。",
+            "date": "10/25 更新",
+            "kind": "資安團隊更正",
+            "recommended": true
+          },
+          {
+            "url": "https://calif.io/php2shell/",
+            "label": "想懂 AI 如何參與：研究者原始說明",
+            "reason": "可以先跳到發現方法與時間線，暫時略過程式細節。",
+            "date": "2026-10-21",
+            "kind": "研究者第一手資料",
+            "recommended": false
+          },
+          {
+            "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+            "label": "想知道攻擊情況：AWS 的觀測",
+            "reason": "把感測器看到的嘗試，和成功入侵真實系統的證據分開讀。",
+            "date": "2026-10-21",
+            "kind": "廠商威脅情報",
+            "recommended": false
+          },
+          {
+            "url": "https://www.php.net/archive/2026.php",
+            "label": "PHP 官方安全公告",
+            "reason": "核對漏洞條件與修補資訊。",
+            "date": "2026-10-21",
+            "kind": "官方公告",
+            "recommended": false
+          },
+          {
+            "url": "https://x.com/calif_io/status/2112914613297668583",
+            "label": "X：Calif 與研究歸功討論",
+            "reason": "核對原貼及三則可見回覆；局部樣本以貢獻歸屬為主。",
+            "date": "2026-10-21",
+            "kind": "X 原貼與回覆",
+            "recommended": false
+          },
+          {
+            "url": "https://news.ycombinator.com/item?id=50180836",
+            "label": "Hacker News：同一事件的不同疑問",
+            "reason": "找揭露時間、修補與實際影響的爭點；留言推測仍須查證。",
+            "date": "2026-10-21",
+            "kind": "討論串抽讀",
+            "recommended": false
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2024",
+            "text": "稽核留下相關問題線索，尚未證明具體利用路徑。",
+            "urls": [
+              "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/"
+            ]
+          },
+          {
+            "date": "8/11",
+            "text": "Calif 向 PHP 通報；8/14 提供可運作的驗證。",
+            "urls": [
+              "https://calif.io/php2shell/"
+            ]
+          },
+          {
+            "date": "10/21",
+            "text": "PHP 發布修補，研究者與防守方陸續公開說明。",
+            "urls": [
+              "https://www.php.net/archive/2026.php"
+            ]
+          },
+          {
+            "date": "10/25",
+            "text": "Unit 42 更正一起入侵的歸因。",
+            "urls": [
+              "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/"
+            ]
+          }
+        ],
+        "limit": "核對至 2026-10-27。原始通報、利用驗證與已確認事故分開看；X 回覆只核對三則，HN 為局部抽讀，不代表整體風向。"
+      },
+      {
+        "id": "jev",
+        "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+        "lane": "feature",
+        "priority": 5,
+        "revision": "2026-10-27-jev-1",
+        "updatedAt": "2026-10-27",
+        "title": "Jev 到底是什麼？一個專門做判斷的 AI，為什麼會紅？",
+        "intro": "Jev 是 TypeSafe AI 推出的決策模型。你把情境和可選答案交給它，它回傳選項、分數或機率，方便程式直接接著做事。聊天模型常花時間生成文字；Jev 把重點放在快速完成一個範圍明確的判斷，例如把客戶訊息分到對的類別。",
+        "trigger": {
+          "date": "10/27",
+          "text": "Firecrawl 在 X 展示把公司資料交給 Jev 分類，延續了這波「讓模型直接做選擇」的實作討論。示範效果屬發文者自述。",
+          "urls": [
+            "https://x.com/firecrawl/status/2114761999003340852"
+          ]
+        },
+        "questions": [
+          {
+            "id": "what-is-it",
+            "question": "它到底做什麼？可以用一個日常例子解釋嗎？",
+            "answer": "例如收到一則客戶訊息，你先定義「帳務、技術、其他」三個選項，讓 Jev 選擇並回傳機率，再由系統決定分流。選項與接下來的動作仍要由應用程式設計；要寫一封完整回信，仍需要能生成文字的模型。",
+            "urls": [
+              "https://vercel.com/i/what-is-jev"
+            ],
+            "status": "supported",
+            "next": "哪些工作其實只需要選對下一步，用聊天回答反而多了一層處理？"
+          },
+          {
+            "id": "name",
+            "question": "為什麼叫 Jev？和傑文斯悖論有關嗎？",
+            "answer": "官方說名字來自 William Stanley Jevons，借用效率提高後需求可能增加的想法：如果機器判斷變便宜，可能會出現更多使用情境。System One 這個類別名則受《快思慢想》的快、慢思考區分啟發。",
+            "urls": [
+              "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+            ],
+            "status": "supported",
+            "next": "每次判斷變便宜，總成本會下降，還是因為判斷做得更多而增加？"
+          },
+          {
+            "id": "why-viral",
+            "question": "它為什麼紅？大家缺的是更會聊天，還是更快做決定？",
+            "answer": "Vercel 10/15 的平台報告說，Jev 上架後前兩週觸及 35.3% 的付費團隊，為該平台歷來最快採用。低延遲、少量結構化輸出和容易串接，提供了可試作的用途；哪些因素造成傳播，仍需更多使用者證據，不能用採用數直接證明。",
+            "urls": [
+              "https://vercel.com/blog/ai-gateway-production-index-october-2026",
+              "https://vercel.com/i/what-is-jev"
+            ],
+            "status": "partial",
+            "next": "大家試完後留下來做了什麼？哪些示範後來變成持續使用？"
+          },
+          {
+            "id": "classification",
+            "question": "這和以前的分類器、讓 LLM 做選擇，有什麼不同？",
+            "answer": "先從使用方式看：Jev 接收自然語言情境與指定答案，回傳判斷，省去解析生成文字的步驟。官方主張模型和訓練方式不同，但「新類別」是否在你的任務有優勢，還要拿相同資料、準確度與延遲比較。X 也有作者回報另一個 API 在自己的手勢示範更好；那是個別測試。",
+            "urls": [
+              "https://vercel.com/i/what-is-jev",
+              "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+              "https://x.com/seflless/status/2107860983498817689"
+            ],
+            "status": "partial",
+            "next": "如果把同一批真實訊息交給三種方法，差別會落在速度、錯誤還是設定成本？"
+          },
+          {
+            "id": "wrong-answer",
+            "question": "只回傳選項，就真的不會判斷錯嗎？",
+            "answer": "輸出格式正確，仍可能選錯。10/14 的 Jev 偏誤研究預印本指出，無關數字與選項順序可能影響判斷；10/4 的資安研究也測試到決策受惡意輸入影響。兩者都有特定任務與版本條件，尚不能推論所有應用都會同樣出錯。",
+            "urls": [
+              "https://arxiv.org/abs/2610.19619",
+              "https://arxiv.org/abs/2610.04985"
+            ],
+            "status": "supported",
+            "next": "什麼信心程度該轉人工？換個問法或順序後，選擇是否一致？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://vercel.com/i/what-is-jev",
+            "label": "先讀：用白話認識 Jev",
+            "reason": "弄懂輸入、選項、機率與能力邊界，先不必看程式碼。",
+            "date": "2026-09-18；含後續更新",
+            "kind": "平台解說",
+            "recommended": true
+          },
+          {
+            "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+            "label": "接著讀：創辦人的發布文與 FAQ",
+            "reason": "直接找命名由來與使用情境；效能主張保留官方自述的前提。",
+            "date": "2026-09-15",
+            "kind": "官方發布",
+            "recommended": true
+          },
+          {
+            "url": "https://vercel.com/blog/ai-gateway-production-index-october-2026",
+            "label": "Jev 為什麼紅：Vercel 平台資料",
+            "reason": "可核對採用現象；平台客群不代表所有 AI 使用者。",
+            "date": "2026-10-15",
+            "kind": "平台使用統計",
+            "recommended": false
+          },
+          {
+            "url": "https://x.com/firecrawl/status/2114761999003340852",
+            "label": "X：Jev 搭配公司資料分類",
+            "reason": "新近示範提供具體用途；未獨立重現速度與品質，也未核對回覆。",
+            "date": "2026-10-27",
+            "kind": "供應商示範",
+            "recommended": false
+          },
+          {
+            "url": "https://x.com/seflless/status/2107860983498817689",
+            "label": "X：另一種工具在手勢辨識的比較",
+            "reason": "作者回報自己的示範更準、更快，提供反例線索，未獨立重跑。",
+            "date": "2026-10-07",
+            "kind": "實作者個別經驗",
+            "recommended": false
+          },
+          {
+            "url": "https://arxiv.org/abs/2610.19619",
+            "label": "進一步：Jev 判斷偏誤研究",
+            "reason": "只讀過摘要；選項順序與表述是否影響結果，值得後續查全文。",
+            "date": "2026-10-14",
+            "kind": "研究預印本摘要",
+            "recommended": false
+          },
+          {
+            "url": "https://arxiv.org/abs/2610.04985",
+            "label": "進一步：Jev 的安全與隱私研究",
+            "reason": "只讀過摘要；有興趣再追決策模型可能受到哪些輸入操控。",
+            "date": "2026-10-04",
+            "kind": "研究預印本摘要",
+            "recommended": false
+          },
+          {
+            "url": "https://typesafe.ai/blog/jev-1-14",
+            "label": "Jev 1.14 官方更新",
+            "reason": "查影像、較長情境等實驗功能的官方範圍。",
+            "date": "2026-10-14",
+            "kind": "官方更新",
+            "recommended": false
+          }
+        ],
+        "timeline": [
+          {
+            "date": "9/15",
+            "text": "TypeSafe AI 發布 Jev，說明命名和結構化決策介面。",
+            "urls": [
+              "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+            ]
+          },
+          {
+            "date": "9/17",
+            "text": "依 Vercel 平台報告，Jev 進入 AI Gateway。",
+            "urls": [
+              "https://vercel.com/blog/ai-gateway-production-index-october-2026"
+            ]
+          },
+          {
+            "date": "10/4、10/14",
+            "text": "研究預印本開始檢查安全、隱私與判斷偏誤。",
+            "urls": [
+              "https://arxiv.org/abs/2610.04985",
+              "https://arxiv.org/abs/2610.19619"
+            ]
+          },
+          {
+            "date": "10/15",
+            "text": "Vercel 公布九月採用資料，提供爆紅現象的量化線索。",
+            "urls": [
+              "https://vercel.com/blog/ai-gateway-production-index-october-2026"
+            ]
+          },
+          {
+            "date": "10/27",
+            "text": "X 出現結合公司資料分類的示範。",
+            "urls": [
+              "https://x.com/firecrawl/status/2114761999003340852"
+            ]
+          }
+        ],
+        "limit": "核對至 2026-10-27。效能與架構為官方主張；平台數據僅涵蓋 Vercel 客群。X 為兩則原貼，未抽樣回覆；研究只讀摘要，未獨立重現。"
+      },
+      {
+        "id": "land-or-water",
+        "url": "https://x.com/karpathy/status/2105909609487872075",
+        "lane": "discussion",
+        "priority": 1,
+        "revision": "2026-10-27-map-1",
+        "updatedAt": "2026-10-27",
+        "title": "只給經緯度，AI 為什麼能拼出世界地圖？它到底記住了什麼？",
+        "intro": "把全球切成格子，每次只丟一組經緯度，問 AI「陸地還是水？」再把答案排回圖上，竟然能出現大陸輪廓。這個小實驗直覺又好玩：模型沒有在這次提問看到地圖，為什麼仍知道那個地方在哪裡？",
+        "trigger": {
+          "date": "10/2",
+          "text": "Karpathy 分享這個實驗。10/27 核對時，原貼可見約 1.9 萬讚、149 萬次瀏覽；是本月有明顯擴散的討論，這裡補讀並接上後續重算結果。",
+          "urls": [
+            "https://x.com/karpathy/status/2105909609487872075",
+            "https://ai.thesatyajit.com/articles/llm-land-or-water"
+          ]
+        },
+        "questions": [
+          {
+            "id": "where-map",
+            "question": "地圖真的「藏在」模型裡嗎？還是它只是背了很多地名？",
+            "answer": "原貼展示的是由座標到陸地／水的回答，可以測出部分地理知識；它沒有直接證明知識以什麼形式存在。這次提問沒附地圖，也不代表所有受測模型在訓練時都沒看過圖片。Karpathy 的文字知識解釋，應和模型訓練資料的證據分開。",
+            "urls": [
+              "https://x.com/karpathy/status/2105909609487872075",
+              "https://x.com/karpathy/status/2105912048668590090"
+            ],
+            "status": "partial",
+            "next": "換成偏僻地點、改寫座標後，模型是否仍能穩定回答？"
+          },
+          {
+            "id": "looks-right",
+            "question": "拼出來看起來很像，就代表它真的答得很好嗎？",
+            "answer": "後續重現專案把每個答案和陸地資料比對，也放入「永遠回答水」的基準。某些圖看得出大陸，整體準確度仍不如這個簡單基準；海洋占比較大，所以圖像直覺與統計分數可能說不同的事。",
+            "urls": [
+              "https://github.com/FavioVazquez/land-or-water"
+            ],
+            "status": "supported",
+            "next": "我們看到漂亮的 AI 展示時，是被視覺說服，還是確實知道它在哪些地方答錯？"
+          },
+          {
+            "id": "same-question",
+            "question": "同一個地點，換個問法就會改答案嗎？",
+            "answer": "重現者記錄，座標寫法、提示與模型的對話格式都會影響結果，也保留一次實作錯誤與修正。這提供一個很具體的追問：看到能力展示後，要先排除哪些測試設定的影響？本次未自行重跑。",
+            "urls": [
+              "https://github.com/FavioVazquez/land-or-water",
+              "https://ai.thesatyajit.com/articles/llm-land-or-water"
+            ],
+            "status": "supported",
+            "next": "在日常分類或查詢裡，我們會不會也把問法造成的差異，誤認成模型能力差異？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://x.com/karpathy/status/2105909609487872075",
+            "label": "先看：Karpathy 的世界地圖實驗",
+            "reason": "先看原貼與引用的圖，理解 16,200 次簡單回答怎麼拼成地圖。",
+            "date": "2026-10-02",
+            "kind": "X 原貼",
+            "recommended": true
+          },
+          {
+            "url": "https://github.com/FavioVazquez/land-or-water",
+            "label": "接著看：公開重現結果",
+            "reason": "先讀 What we found 和 Limits，看看漂亮輪廓背後的基準、錯誤與測試條件。",
+            "date": "2026-10；發布日未單獨核定",
+            "kind": "實作者資料與原始結果",
+            "recommended": true
+          },
+          {
+            "url": "https://ai.thesatyajit.com/articles/llm-land-or-water",
+            "label": "想深入：把公開地圖重新計分",
+            "reason": "作者自行數位化地圖、比對資料；提供方法限制，未等於重跑所有原模型。",
+            "date": "2026-10-06",
+            "kind": "原始分析",
+            "recommended": false
+          },
+          {
+            "url": "https://x.com/karpathy/status/2105912048668590090",
+            "label": "Karpathy 補充：這次輸入與輸出都是文字",
+            "reason": "可核對作者對文字資料與空間知識的解釋；不當作所有模型訓練細節的證明。",
+            "date": "2026-10-02",
+            "kind": "作者回覆",
+            "recommended": false
+          },
+          {
+            "url": "https://x.com/celestepoasts/status/2103232383139057950",
+            "label": "更早背景：Celeste 的 Claude 比較圖",
+            "reason": "9/25 的原始圖是 10/2 轉貼的來源；保留原日期。",
+            "date": "2026-09-25",
+            "kind": "X 原始圖",
+            "recommended": false
+          }
+        ],
+        "timeline": [
+          {
+            "date": "9/25",
+            "text": "Celeste 發表多個 Claude 模型的結果圖。",
+            "urls": [
+              "https://x.com/celestepoasts/status/2103232383139057950"
+            ]
+          },
+          {
+            "date": "10/2",
+            "text": "Karpathy 分享並解釋這個測試。",
+            "urls": [
+              "https://x.com/karpathy/status/2105909609487872075"
+            ]
+          },
+          {
+            "date": "10/6",
+            "text": "有分析者將公開結果重新計分，追查海岸錯誤與評分方法。",
+            "urls": [
+              "https://ai.thesatyajit.com/articles/llm-land-or-water"
+            ]
+          },
+          {
+            "date": "10/27",
+            "text": "本次回看原貼及三則可見回覆，串起原始結果與重現資料。",
+            "urls": [
+              "https://x.com/karpathy/status/2105909609487872075",
+              "https://x.com/karpathy/status/2105912048668590090"
+            ]
+          }
+        ],
+        "limit": "熱度為 10/27 可見原貼數字，非全站排名。核對三則回覆：Frank Chen 詢問是否理解圖像、Karpathy 補充文字輸入說明、Paul Calcraft 引用另一模型結果；未將這些樣本當整體立場。重現結果來自作者，本次未獨立執行。"
+      },
+      {
+        "id": "review-loop",
+        "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+        "lane": "case",
+        "priority": 2,
+        "revision": "2026-10-27-review-1",
+        "updatedAt": "2026-10-27",
+        "title": "讓兩個 AI 互相挑錯，為什麼會整晚改超過 50 輪？",
+        "intro": "一個 AI 負責寫，另一個負責審，看起來很適合自動把工作做好。Claude Code 團隊卻分享過一份變更整晚來回超過 50 輪，最後由人叫停。這段失敗很值得看：每一輪都在做事，整件工作卻可能一直結束不了。",
+        "trigger": {
+          "date": "10/26",
+          "text": "Addy Osmani 在 X 分享審查長文。10/27 核對時約 1 萬讚、177 萬次瀏覽；團隊原文另交代反覆審查的原因與修正。",
+          "urls": [
+            "https://x.com/addyosmani/status/2114604912520921136",
+            "https://claude.dev/blog/solving-code-review-at-anthropic/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "why-loop",
+            "question": "它們是在找到新錯誤，還是一直換地方挑毛病？",
+            "answer": "團隊回查後說，審查器持續標出的內容約 59% 從第一輪就已存在。它每輪又找出一些舊問題，寫作方再改、再觸發審查，讓循環拖長。這是該次團隊經驗，不能當所有雙 Agent 流程的失敗率。",
+            "urls": [
+              "https://claude.dev/blog/solving-code-review-at-anthropic/"
+            ],
+            "status": "supported",
+            "next": "如果每次都允許重審整份成果，工作範圍是否就永遠收不住？"
+          },
+          {
+            "id": "how-stop",
+            "question": "後來怎麼讓它停下來，又不放過重要錯誤？",
+            "answer": "團隊增加輪次上限，幾輪後改看新差異、避免重報已知發現，並一次指出一類問題。這把「繼續找得到問題」和「這次改動是否能完成」分開處理。高風險改動仍需更嚴格檢查。",
+            "urls": [
+              "https://claude.dev/blog/solving-code-review-at-anthropic/"
+            ],
+            "status": "supported",
+            "next": "文章、簡報或資料報告讓 AI 互相審稿時，也需要事先定義什麼叫完成嗎？"
+          },
+          {
+            "id": "transfer",
+            "question": "多找幾個 AI 幫忙，什麼時候反而增加工作？",
+            "answer": "這個案例指出一種可能：每個建議都會帶來修改與重審成本。要判斷是否划算，得連同返工、人員等待、事故與回退看，單看 Agent 做了幾輪還不夠。能否套用到非工程工作，仍需要具體流程驗證。",
+            "urls": [
+              "https://claude.dev/blog/solving-code-review-at-anthropic/",
+              "https://x.com/thorstenball/status/2114386050638336082"
+            ],
+            "status": "analysis",
+            "next": "你的工作中，有哪些建議看起來合理，卻不值得為這一次交付再改？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+            "label": "先讀：團隊怎麼處理審查循環",
+            "reason": "可以先跳到 Review has to converge，直接讀 50 輪、原因與四項修正。",
+            "date": "2026-10-15",
+            "kind": "團隊第一手工程復盤",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/addyosmani/status/2114604912520921136",
+            "label": "接著看：X 上引起關注的長文",
+            "reason": "理解文章怎麼談大量 AI 產出與審查；本次未抽讀這串回覆。",
+            "date": "2026-10-26",
+            "kind": "作者 X 長文",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/thorstenball/status/2114386050638336082",
+            "label": "對照：Thorsten Ball 如何驗收 Agent",
+            "reason": "另一位實作者主張要求完成證據、集中審查高影響改動；屬個人方法。",
+            "date": "2026-10-25",
+            "kind": "實作者經驗",
+            "recommended": false
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/15",
+            "text": "團隊工程原文說明審查流程、失敗與修正。",
+            "urls": [
+              "https://claude.dev/blog/solving-code-review-at-anthropic/"
+            ]
+          },
+          {
+            "date": "10/25",
+            "text": "Thorsten Ball 分享要求結果證據的工作方法。",
+            "urls": [
+              "https://x.com/thorstenball/status/2114386050638336082"
+            ]
+          },
+          {
+            "date": "10/26",
+            "text": "X 長文擴散審查方式的討論。",
+            "urls": [
+              "https://x.com/addyosmani/status/2114604912520921136"
+            ]
+          }
+        ],
+        "limit": "團隊自述與實作者方法，沒有獨立對照；50 輪為個別事件。X 熱度為 10/27 核對時的近似數字，尚未抽樣回覆，不宣稱社群共識。"
+      },
+      {
+        "id": "attention-bottleneck",
+        "url": "https://www.anthropic.com/research/employment-at-anthropic",
+        "lane": "case",
+        "priority": 3,
+        "revision": "2026-10-27-attention-1",
+        "updatedAt": "2026-10-27",
+        "title": "AI 已經幫你做很多，為什麼你反而忙著看它做的東西？",
+        "intro": "Anthropic 在 10 月公布自家工作研究：Agent 產出增加後，人逐漸成為等候、判斷與驗收的一環。研究估計，即使非技術員工要讀完互動式 Agent 的全部產出，也可能占去半個工作週。這和「資訊整理得越多，卻越沒空看」很接近。",
+        "trigger": {
+          "date": "10/16",
+          "text": "這份研究結合內部工作資料與 17 位員工訪談，適合追問 AI 把時間省在哪裡，又把工作移到哪裡。它是本月的深入研究，並非已確認的 X 熱門排名。",
+          "urls": [
+            "https://www.anthropic.com/research/employment-at-anthropic"
+          ]
+        },
+        "questions": [
+          {
+            "id": "half-week",
+            "question": "半個工作週真的都在讀 AI 嗎？這個數字怎麼算？",
+            "answer": "作者把互動工作階段的輸出 token 換算成字數，再用一般閱讀速度估計需要多久。它描述的是「如果全部讀完」的負荷，沒有直接測出員工真的花了半週逐字閱讀。",
+            "urls": [
+              "https://www.anthropic.com/research/employment-at-anthropic"
+            ],
+            "status": "supported",
+            "next": "如果很多輸出根本沒人需要讀，應該增加摘要，還是先減少不必要的產出？"
+          },
+          {
+            "id": "work-shift",
+            "question": "AI 接走工作後，人新增加了哪些工作？",
+            "answer": "研究訪談描述員工開始建立監看、分流與管理 Agent 的工具。產出增加和人的注意力有限同時發生；團隊得重新決定哪些交付要看、哪些只看例外。這是特殊公司的自家資料，不能直接當所有企業的結果。",
+            "urls": [
+              "https://www.anthropic.com/research/employment-at-anthropic"
+            ],
+            "status": "supported",
+            "next": "省下的執行時間，有多少又花在交代、等待、核對與修正？"
+          },
+          {
+            "id": "junior-work",
+            "question": "初階工作交給 AI，新人還怎麼學會判斷？",
+            "answer": "報告也觀察到初階技術職的新聘占比下降，但公司技術人數仍增加，不能直接寫成裁員。新人少了哪些練習機會、能用什麼方式補回，原研究留下了值得繼續查的問題。",
+            "urls": [
+              "https://www.anthropic.com/research/employment-at-anthropic"
+            ],
+            "status": "partial",
+            "next": "如果判斷能力要靠做過工作累積，組織應該保留哪些練習，而不是只要求驗收 AI？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.anthropic.com/research/employment-at-anthropic",
+            "label": "先讀：Anthropic 內部工作研究",
+            "reason": "先看 Human attention 與輸出負荷的計算，再讀訪談；把自述、觀察與因果分開。",
+            "date": "2026-10-16",
+            "kind": "公司原始研究",
+            "recommended": true
+          },
+          {
+            "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+            "label": "接著讀：一個處理審查負荷的具體例子",
+            "reason": "對照哪些檢查交給機器、哪些留給人，以及如何避免審查循環。",
+            "date": "2026-10-15",
+            "kind": "團隊工程實作",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/thorstenball/status/2114386050638336082",
+            "label": "另一個實作者怎麼調整工作方式",
+            "reason": "可讀「要求證據」與「非同步工作」的做法，仍需評估適用環境。",
+            "date": "2026-10-25",
+            "kind": "實作者觀點",
+            "recommended": false
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/15",
+            "text": "工程團隊公布自動審查與人工注意力分配的做法。",
+            "urls": [
+              "https://claude.dev/blog/solving-code-review-at-anthropic/"
+            ]
+          },
+          {
+            "date": "10/16",
+            "text": "內部研究將工作產出、員工資料與訪談放在一起分析。",
+            "urls": [
+              "https://www.anthropic.com/research/employment-at-anthropic"
+            ]
+          },
+          {
+            "date": "10/25",
+            "text": "實作者的工作方法提供可比較的做法，不能直接當成效證據。",
+            "urls": [
+              "https://x.com/thorstenball/status/2114386050638336082"
+            ]
+          }
+        ],
+        "limit": "這是 Anthropic 對自身高速成長組織的研究，採用並非隨機。半個工作週是閱讀負荷估計，不是實測工時；未宣稱為 X 爆紅話題。"
+      }
+    ],
+    "history": [
+      {
+        "id": "php2shell",
+        "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+        "lane": "event",
         "priority": 1,
         "revision": "2026-10-27-php-1",
         "updatedAt": "2026-10-27",
@@ -7102,6 +7901,6 @@
         "limit": "核對至 2026-10-27。效能與架構為官方主張；平台數據僅涵蓋 Vercel 客群。X 為兩則原貼，未抽樣回覆；研究只讀摘要，未獨立重現。"
       }
     ],
-    "history": []
+    "maxVisible": 3
   }
 }

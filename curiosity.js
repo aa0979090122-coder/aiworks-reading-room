@@ -24,7 +24,7 @@ export function curiosityCard(topic,feedback){
 }
 export function renderCuriosity(host,topics,feedback,filters){
  const opened=new Set([...host.querySelectorAll('details[open][data-curiosity-detail]')].map(x=>x.dataset.curiosityDetail));const focus=document.activeElement;const focusKey=focus?.dataset?.question||focus?.dataset?.briefRead||focus?.dataset?.sourceRead||focus?.dataset?.topic;
- const items=selectCuriosity(topics,feedback,filters);host.innerHTML=items.map(t=>curiosityCard(t,feedback)).join('')||'<p class="empty-state">這裡目前沒有符合條件的主題。可以切回「最近整理」。</p>';
+ const matches=selectCuriosity(topics,feedback,filters),items=filters.view==='latest'&&filters.lane==='all'?matches.slice(0,3):matches;host.innerHTML=(items.map(t=>curiosityCard(t,feedback)).join('')||'<p class="empty-state">這裡目前沒有符合條件的主題。可以切回「最近整理」。</p>')+(matches.length>items.length?`<button class="text-button" data-curiosity-show-all>查看全部 ${matches.length} 個話題（含先前整理） →</button>`:'');
  host.querySelectorAll('details[data-curiosity-detail]').forEach(x=>{if(opened.has(x.dataset.curiosityDetail))x.open=true});
  if(focusKey){[...host.querySelectorAll('button,input')].find(x=>(x.dataset.question||x.dataset.briefRead||x.dataset.sourceRead||x.dataset.topic)===focusKey)?.focus({preventScroll:true});}
 }
