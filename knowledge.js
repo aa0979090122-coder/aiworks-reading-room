@@ -78,7 +78,10 @@ export function mergeBackup(current,incoming) {
   for(const [url,s] of Object.entries(incoming.items)){
     if(!/^https?:\/\//.test(url)||!s||typeof s!=='object'||Array.isArray(s))continue;
     const old=merged.items[url];
-    if(!old||(s.updatedAt||'')>(old.updatedAt||''))merged.items[url]={...s,note:typeof s.note==='string'?s.note:''};
+    const newer=!old||(s.updatedAt||'')>(old.updatedAt||'');
+    const record=newer?{...old,...s,note:typeof s.note==='string'?s.note:(old?.note||'')}:{...old};
+    for(const key of ['briefReadRevisions','curiosityQuestions']){const entries={...(old?.[key]||{})};for(const [id,value] of Object.entries(s[key]||{})){if(value&&typeof value==='object'&&(!entries[id]||(value.updatedAt||'')>(entries[id].updatedAt||'')))entries[id]=value;}if(Object.keys(entries).length)record[key]=entries;}
+    merged.items[url]=record;
   }
   if(!merged.generalNote&&typeof incoming.generalNote==='string')merged.generalNote=incoming.generalNote;
   for(const [id,note] of Object.entries(incoming.chapterNotes||{}))if(!merged.chapterNotes[id]&&typeof note==='string')merged.chapterNotes[id]=note;

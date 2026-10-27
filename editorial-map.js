@@ -1,4 +1,4 @@
-import {allItems,itemTitle,classify,noteFor} from './knowledge.js?v=20261003-5';
+import {allItems,itemTitle,classify,noteFor} from './knowledge.js?v=20261027-2';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const external=(url,label)=>/^https?:\/\//i.test(url)?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>`:'';
 const stateKey='aiworks-editorial-thinking-v1';

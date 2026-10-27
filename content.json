@@ -2,6 +2,220 @@
   "editionDate": "2026-10-27",
   "posts": [
     {
+      "url": "https://x.com/seflless/status/2107860983498817689",
+      "title": "X：另一種工具在手勢辨識的比較",
+      "lead": "作者回報自己的示範更準、更快，提供反例線索，未獨立重跑。",
+      "source": "實作者個別經驗",
+      "sourceDate": "2026-10-07",
+      "checkedAt": "2026-10-27",
+      "topic": "trend",
+      "caveat": "核對至 2026-10-27。效能與架構為官方主張；平台數據僅涵蓋 Vercel 客群。X 為兩則原貼，未抽樣回覆；研究只讀摘要，未獨立重現。",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow"
+        ],
+        "concepts": [
+          "Jev"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-10-07",
+      "author": "Francois Laberge",
+      "handle": "@seflless",
+      "zh": "Francois Laberge 回報自己的手勢辨識示範改用另一個 Decisions API 後，準確度與速度優於先前的 Jev 版本。這是單一實作者比較，未獨立重跑，也不足以判定所有任務的優劣。",
+      "highLevel": true,
+      "publishedAt": "2026-10-07T15:49:55.286000Z"
+    },
+    {
+      "url": "https://x.com/firecrawl/status/2114761999003340852",
+      "title": "X：Jev 搭配公司資料分類",
+      "lead": "新近示範提供具體用途；未獨立重現速度與品質，也未核對回覆。",
+      "source": "供應商示範",
+      "sourceDate": "2026-10-27",
+      "checkedAt": "2026-10-27",
+      "topic": "trend",
+      "caveat": "核對至 2026-10-27。效能與架構為官方主張；平台數據僅涵蓋 Vercel 客群。X 為兩則原貼，未抽樣回覆；研究只讀摘要，未獨立重現。",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow"
+        ],
+        "concepts": [
+          "Jev"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-10-27",
+      "author": "Firecrawl",
+      "handle": "@firecrawl",
+      "zh": "Firecrawl 展示把公司資料交給 Jev 做分類，並自述處理 146 家新創花了 2.2 秒。這是供應商示範，未獨立重現速度與分類品質；本次也未抽讀回覆。",
+      "highLevel": true,
+      "publishedAt": "2026-10-26T16:52:05.597000Z"
+    },
+    {
+      "url": "https://x.com/calif_io/status/2112914613297668583",
+      "author": "Calif",
+      "handle": "@calif_io",
+      "title": "PHP2Shell：研究者、AI 與漏洞發現的貢獻如何歸屬？",
+      "zh": "Calif 的 10/21 貼文強調研究者 Ryan Austin 的發現、可運作的利用方式與修補驗證貢獻。可見回覆出現對 Wiz 歸功方式的追問；判斷發現先後與各方貢獻，仍須對照原始時間線。",
+      "englishSummary": "Calif credits Ryan Austin for discovery, exploit development and patch testing. Attribution questions appear in visible replies.",
+      "date": "2026-10-21",
+      "publishedAt": "2026-10-21T14:31:14.522Z",
+      "topic": "trend",
+      "highLevel": true,
+      "checkedAt": "2026-10-27",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance"
+        ],
+        "concepts": [
+          "AI 漏洞研究",
+          "貢獻歸屬"
+        ],
+        "outcome": "perspective"
+      },
+      "evidenceUrl": "https://calif.io/php2shell/",
+      "evidenceLabel": "研究者原始說明",
+      "replyObservation": {
+        "count": 3,
+        "summary": "核對三則回覆：Migel Tissera 詢問 Wiz 與研究者的關係；Faucet 強調研究者應獲歸功；s1r1us 向研究者致意。這是此串局部樣本，無法代表資安社群共識。",
+        "checkedAt": "2026-10-27",
+        "urls": [
+          "https://x.com/migtissera/status/2113000470574993807",
+          "https://x.com/SkkrSKktt/status/2112922246620529028",
+          "https://x.com/S1r1u5_/status/2112924853087117431"
+        ]
+      },
+      "caveat": "研究者貢獻與 AI 的作用須分開核對，不以廠商品牌歸屬取代研究時間線。"
+    },
+    {
+      "url": "https://x.com/thorstenball/status/2114386050638336082",
+      "author": "Thorsten Ball",
+      "handle": "@thorstenball",
+      "title": "Agent 工作方法：交代成果、開放觀測，再要求完成證據",
+      "zh": "Ball 在 10/25 分享自己的 Agent 工作方式：描述想要的結果、讓 Agent 能執行與觀察工具，並要求測試、示範或前後數據。他也主張把人工審查集中在影響範圍大的改動。這些是個人實務主張，須連同權限、環境與錯誤成本評估。",
+      "englishSummary": "Ball describes outcome-oriented instructions, observable tools, evidence of completion and risk-based human review.",
+      "date": "2026-10-25",
+      "publishedAt": "2026-10-25T15:58:12.522Z",
+      "topic": "trend",
+      "highLevel": true,
+      "checkedAt": "2026-10-27",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow"
+        ],
+        "concepts": [
+          "完成證據",
+          "Agent 授權",
+          "風險分級"
+        ],
+        "outcome": "perspective"
+      },
+      "caveat": "已讀 X 長文；尚未抽樣核對此串回覆，不宣稱讀者普遍支持，也不把個人方法當成通用成效。"
+    },
+    {
+      "url": "https://x.com/addyosmani/status/2114604912520921136",
+      "author": "Addy Osmani",
+      "handle": "@addyosmani",
+      "title": "AI 寫得更快後，誰來審查、驗收與承擔錯誤？",
+      "zh": "Osmani 於 10/26 在 X 發表長文，討論 Claude Code 團隊如何處理 AI 帶來的審查量：自動檢查、依風險分配人工注意力、以事故與回退檢查品質。可與團隊原始工程文章對照，也可接著問非工程工作的審核如何安排。",
+      "englishSummary": "Osmani discusses automated checks, risk-based approvals and rollback as code production increases.",
+      "date": "2026-10-26",
+      "publishedAt": "2026-10-26T06:27:53.261Z",
+      "topic": "trend",
+      "highLevel": true,
+      "checkedAt": "2026-10-27",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation"
+        ],
+        "concepts": [
+          "審查瓶頸",
+          "返工成本",
+          "風險分級"
+        ],
+        "outcome": "perspective"
+      },
+      "evidenceUrl": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "evidenceLabel": "Claude Code 團隊工程文章",
+      "caveat": "已讀 X 長文與工程原文，未抽樣此串回覆；團隊成效屬內部自述。"
+    },
+    {
+      "url": "https://x.com/emollick/status/2106914993526747224",
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "title": "會用 AI 的人取代你？Mollick 把焦點轉向組織系統",
+      "zh": "Mollick 在 10/5 回應 Mark Cuban 對 AI 與工作的說法，主張個人熟練度、組織瓶頸與整類工作的變化應分開看。他的後續回覆強調職場系統應如何增強人的能力。可見回覆也反駁「AI 已更容易上手」，指出有效使用仍有門檻。",
+      "englishSummary": "Mollick challenges an individual-skills account of job replacement and highlights organizational systems and uncertain job-category effects.",
+      "date": "2026-10-05",
+      "publishedAt": "2026-10-05T01:10:53.701Z",
+      "topic": "trend",
+      "highLevel": true,
+      "checkedAt": "2026-10-27",
+      "knowledge": {
+        "primary": "adoption",
+        "themes": [
+          "adoption"
+        ],
+        "concepts": [
+          "AI 工作變化",
+          "個人能力與組織瓶頸"
+        ],
+        "outcome": "perspective"
+      },
+      "replyObservation": {
+        "count": 3,
+        "summary": "核對作者的一則補充與兩則他人回覆：作者強調增強人的工作系統；Nick Dobos 質疑有效使用所需能力已下降；Gotspidercat 以組織導入經驗指出學會用好仍不容易。樣本呈現分歧，不推估整體比例。",
+        "checkedAt": "2026-10-27",
+        "urls": [
+          "https://x.com/emollick/status/2106915444162535803",
+          "https://x.com/NickADobos/status/2106965160900575295",
+          "https://x.com/jason4l5k/status/2106916923032170723"
+        ]
+      },
+      "caveat": "原貼與回覆是觀點及經驗，不能證明淨就業效果；10/5 是原始討論日，本次為補讀。"
+    },
+    {
+      "url": "https://x.com/emollick/status/2110875851600633956",
+      "author": "Ethan Mollick",
+      "handle": "@emollick",
+      "title": "排行榜快滿分了，企業還能用它判斷 AI 能力嗎？",
+      "zh": "Mollick 在 10/16 將多項評測的高分視為能力變化訊號。可見回覆提醒要固定測試外層工具與流程，也有人指出題目容易驗證、資訊完整，和現場工作的條件可能不同。可延伸追問：企業應如何建立自己的任務驗收，而非直接沿用排行榜名次。",
+      "englishSummary": "Mollick discusses benchmark saturation; visible replies question harness comparability and transfer to less verifiable work.",
+      "date": "2026-10-16",
+      "publishedAt": "2026-10-15T23:29:55.855Z",
+      "topic": "trend",
+      "highLevel": true,
+      "checkedAt": "2026-10-27",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation"
+        ],
+        "concepts": [
+          "評測飽和",
+          "測試條件",
+          "工作驗收"
+        ],
+        "outcome": "perspective"
+      },
+      "replyObservation": {
+        "count": 3,
+        "summary": "核對三則回覆：davidk 要求排行榜固定測試流程；FriMikAnik 提醒題目多易於驗證且資訊完整；shmam 引用另一組遊戲評測作為能力仍有落差的線索。第三則引用的評測結果尚未另行驗證。",
+        "checkedAt": "2026-10-27",
+        "urls": [
+          "https://x.com/dcalderonia/status/2110908395469590948",
+          "https://x.com/FriMikAnik/status/2111201104365314516",
+          "https://x.com/shmameron/status/2111130315137982588"
+        ]
+      },
+      "caveat": "不把作者的評測飽和判斷當成所有任務已解決；本次未重跑排行榜或核對所有分數。"
+    },
+    {
       "author": "Ethan Mollick",
       "handle": "@emollick",
       "date": "2026-10-01",
@@ -1118,6 +1332,279 @@
     }
   ],
   "news": [
+    {
+      "url": "https://typesafe.ai/blog/jev-1-14",
+      "title": "Jev 1.14 官方更新",
+      "lead": "查影像、較長情境等實驗功能的官方範圍。",
+      "source": "官方更新",
+      "sourceDate": "2026-10-14",
+      "checkedAt": "2026-10-27",
+      "topic": "trend",
+      "caveat": "核對至 2026-10-27。效能與架構為官方主張；平台數據僅涵蓋 Vercel 客群。X 為兩則原貼，未抽樣回覆；研究只讀摘要，未獨立重現。",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow"
+        ],
+        "concepts": [
+          "Jev"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-10-14"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.04985",
+      "title": "進一步：Jev 的安全與隱私研究",
+      "lead": "只讀過摘要；有興趣再追決策模型可能受到哪些輸入操控。",
+      "source": "研究預印本摘要",
+      "sourceDate": "2026-10-04",
+      "checkedAt": "2026-10-27",
+      "topic": "trend",
+      "caveat": "核對至 2026-10-27。效能與架構為官方主張；平台數據僅涵蓋 Vercel 客群。X 為兩則原貼，未抽樣回覆；研究只讀摘要，未獨立重現。",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow"
+        ],
+        "concepts": [
+          "Jev"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-10-04"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.19619",
+      "title": "進一步：Jev 判斷偏誤研究",
+      "lead": "只讀過摘要；選項順序與表述是否影響結果，值得後續查全文。",
+      "source": "研究預印本摘要",
+      "sourceDate": "2026-10-14",
+      "checkedAt": "2026-10-27",
+      "topic": "trend",
+      "caveat": "核對至 2026-10-27。效能與架構為官方主張；平台數據僅涵蓋 Vercel 客群。X 為兩則原貼，未抽樣回覆；研究只讀摘要，未獨立重現。",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow"
+        ],
+        "concepts": [
+          "Jev"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-10-14"
+    },
+    {
+      "url": "https://vercel.com/blog/ai-gateway-production-index-october-2026",
+      "title": "Jev 為什麼紅：Vercel 平台資料",
+      "lead": "可核對採用現象；平台客群不代表所有 AI 使用者。",
+      "source": "平台使用統計",
+      "sourceDate": "2026-10-15",
+      "checkedAt": "2026-10-27",
+      "topic": "trend",
+      "caveat": "核對至 2026-10-27。效能與架構為官方主張；平台數據僅涵蓋 Vercel 客群。X 為兩則原貼，未抽樣回覆；研究只讀摘要，未獨立重現。",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow"
+        ],
+        "concepts": [
+          "Jev"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-10-15"
+    },
+    {
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "title": "接著讀：創辦人的發布文與 FAQ",
+      "lead": "直接找命名由來與使用情境；效能主張保留官方自述的前提。",
+      "source": "官方發布",
+      "sourceDate": "2026-09-15",
+      "checkedAt": "2026-10-27",
+      "topic": "trend",
+      "caveat": "核對至 2026-10-27。效能與架構為官方主張；平台數據僅涵蓋 Vercel 客群。X 為兩則原貼，未抽樣回覆；研究只讀摘要，未獨立重現。",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow"
+        ],
+        "concepts": [
+          "Jev"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-09-15"
+    },
+    {
+      "url": "https://vercel.com/i/what-is-jev",
+      "title": "先讀：用白話認識 Jev",
+      "lead": "弄懂輸入、選項、機率與能力邊界，先不必看程式碼。",
+      "source": "平台解說",
+      "sourceDate": "2026-09-18；含後續更新",
+      "checkedAt": "2026-10-27",
+      "topic": "trend",
+      "caveat": "核對至 2026-10-27。效能與架構為官方主張；平台數據僅涵蓋 Vercel 客群。X 為兩則原貼，未抽樣回覆；研究只讀摘要，未獨立重現。",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow"
+        ],
+        "concepts": [
+          "Jev"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-09-18"
+    },
+    {
+      "url": "https://www.php.net/archive/2026.php",
+      "title": "PHP 官方安全公告",
+      "lead": "核對漏洞條件與修補資訊。",
+      "source": "官方公告",
+      "sourceDate": "2026-10-21",
+      "checkedAt": "2026-10-27",
+      "topic": "trend",
+      "caveat": "核對至 2026-10-27。原始通報、利用驗證與已確認事故分開看；X 回覆只核對三則，HN 為局部抽讀，不代表整體風向。",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance"
+        ],
+        "concepts": [
+          "PHP2Shell"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-10-21"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+      "title": "想知道攻擊情況：AWS 的觀測",
+      "lead": "把感測器看到的嘗試，和成功入侵真實系統的證據分開讀。",
+      "source": "廠商威脅情報",
+      "sourceDate": "2026-10-21",
+      "checkedAt": "2026-10-27",
+      "topic": "trend",
+      "caveat": "核對至 2026-10-27。原始通報、利用驗證與已確認事故分開看；X 回覆只核對三則，HN 為局部抽讀，不代表整體風向。",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance"
+        ],
+        "concepts": [
+          "PHP2Shell"
+        ],
+        "outcome": "perspective"
+      },
+      "date": "2026-10-21"
+    },
+    {
+      "url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+      "title": "接著讀：Unit 42 的 10/25 更正",
+      "lead": "看開頭的更新就能理解，為什麼一則遭駭消息需要重新核對歸因。",
+      "source": "資安團隊更正",
+      "sourceDate": "10/25 更新",
+      "checkedAt": "2026-10-27",
+      "topic": "trend",
+      "caveat": "核對至 2026-10-27。原始通報、利用驗證與已確認事故分開看；X 回覆只核對三則，HN 為局部抽讀，不代表整體風向。",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance"
+        ],
+        "concepts": [
+          "PHP2Shell"
+        ],
+        "outcome": "perspective"
+      }
+    },
+    {
+      "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+      "date": "2026-10-21",
+      "sourceDate": "2026-10-21",
+      "source": "The PHP Foundation",
+      "author": "The PHP Foundation",
+      "title": "PHP2Shell：AI 加快發現後，修補決策與資源如何跟上？",
+      "lead": "PHP 基金會 10/21 說明兩項嚴重漏洞與修補過程，承認早期修補曾受相容性取捨、決策方式及人力限制拖延。AI 輔助研究增加通報量後，驗證、修補與發布協調仍需要有經驗的人員。",
+      "takeaways": [
+        "官方說明兩項漏洞在特定條件下可讓未驗證的攻擊者執行程式碼；受影響條件需看 PHP 部署方式與應用路徑。",
+        "基金會說明修補延誤的結構因素，以及提前流出的資訊如何打亂協調發布。"
+      ],
+      "angle": "可寫：企業增加 AI 資安掃描後，誰負責驗證、排優先序與完成修補？",
+      "caveat": "依基金會自述整理；漏洞存在不等於所有 PHP 網站都已遭入侵，受影響範圍和攻擊狀況須另查。",
+      "englishSummary": "The PHP Foundation describes critical fixes and the staffing, compatibility and disclosure-coordination constraints behind remediation.",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance",
+          "workflow"
+        ],
+        "concepts": [
+          "修補瓶頸",
+          "協調揭露",
+          "AI 漏洞通報"
+        ],
+        "outcome": "failure"
+      },
+      "topic": "trend",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "url": "https://calif.io/php2shell/",
+      "date": "2026-10-21",
+      "sourceDate": "2026-10-21",
+      "source": "Calif Research",
+      "author": "Ryan Austin",
+      "title": "PHP2Shell 研究者：熟悉歷史漏洞，才能引導 AI 找到可利用路徑",
+      "lead": "Ryan Austin 在原始研究中說明，初始發現未使用特別的外層系統或非公開模型；研究者對目標與歷史漏洞的理解，仍決定探索方向。文章提供發現、通報與驗證時間線，可用來檢查社群將成果全歸給模型的敘事。",
+      "takeaways": [
+        "研究者強調對目標與歷史漏洞的了解，並提醒簡單提示無法挖出所有漏洞。",
+        "時間線分開記錄發現、向 PHP 通報、提供可運作驗證，以及修補版發布。"
+      ],
+      "caveat": "研究者第一手自述，尚未獨立重現；對模型的作用不能直接推論所有資安工作都可自動化。",
+      "englishSummary": "Austin describes target knowledge and vulnerability history as guides for AI-assisted research, with a disclosure timeline.",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "governance"
+        ],
+        "concepts": [
+          "專業判斷",
+          "AI 漏洞研究"
+        ],
+        "outcome": "perspective"
+      },
+      "topic": "trend",
+      "checkedAt": "2026-10-27"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50180836",
+      "date": "2026-10-21",
+      "source": "Hacker News",
+      "title": "PHP2Shell 討論串：研究歸功、揭露時間與實際影響的爭論",
+      "lead": "此串可見留言追問發現先後、為何修補耗時，以及提前揭露是否增加風險；另有回覆質疑社群對實際遭駭範圍的誇大。這些爭點可作為查證問題，結論仍須回到 PHP 基金會與研究者原文。",
+      "takeaways": [
+        "討論混合技術解釋、疑問與推測；不能把留言推測當作事故事實。"
+      ],
+      "caveat": "抽讀公開串的部分留言，未逐則統計，不能代表社群整體立場。",
+      "englishSummary": "Visible HN comments debate attribution, disclosure timing and claims about real-world impact.",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance"
+        ],
+        "concepts": [
+          "社群爭論",
+          "事實查核"
+        ],
+        "outcome": "perspective"
+      },
+      "topic": "trend",
+      "checkedAt": "2026-10-27"
+    },
     {
       "type": "公司申報資料 · 企業採用與衡量界線",
       "sourceDate": "2026-10-26",
@@ -6029,6 +6516,49 @@
   ],
   "readingSets": [
     {
+      "id": "social-php2shell",
+      "title": "AI 找到漏洞之後，修補與責任誰來接？",
+      "summary": "PHP2Shell 把兩個問題帶進討論：AI 與研究者各做了什麼，以及發現增加後，修補決策、人力與揭露協調是否跟得上。X 出現貢獻歸屬追問，Hacker News 也有人質疑影響範圍的說法。 文章切角：AI 加快找到問題後，企業的處理能力跟得上嗎？可從漏洞驗證、修補排序與外部維護責任切入。 核對限制：X 核對 3 則回覆；HN 為局部抽讀。未統計全站聲量，也未確認所有流傳的攻擊說法。",
+      "urls": [
+        "https://x.com/calif_io/status/2112914613297668583",
+        "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+        "https://calif.io/php2shell/",
+        "https://news.ycombinator.com/item?id=50180836"
+      ],
+      "origin": "social-discussion"
+    },
+    {
+      "id": "social-agent-review",
+      "title": "Agent 做得越多，人要檢查什麼、憑什麼放手？",
+      "summary": "Thorsten Ball 主張交代成果、讓 Agent 使用工具並拿出完成證據；Addy Osmani 的長文則討論審查分級與快速回退。共同問題是產出增加後，如何安排人的注意力與錯誤責任。 文章切角：AI 省下的時間，會不會轉成主管的審核負擔？先界定哪些結果能用證據驗收，哪些仍需要人的判斷。 核對限制：這組是兩篇實務主張與一份團隊原文的對照；尚未核對兩串回覆，不能稱為社群共識。",
+      "urls": [
+        "https://x.com/thorstenball/status/2114386050638336082",
+        "https://x.com/addyosmani/status/2114604912520921136",
+        "https://claude.dev/blog/solving-code-review-at-anthropic/"
+      ],
+      "origin": "social-discussion"
+    },
+    {
+      "id": "social-work-replacement",
+      "title": "工作被取代，關鍵在個人能力還是組織怎麼改？",
+      "summary": "Mollick 回應 Mark Cuban 的說法，把焦點放到組織系統與整類工作的變化。回覆中也有人反駁「AI 更容易用」的前提，認為用好的能力門檻仍高。 文章切角：公司要求員工學 AI 後，哪些流程、權限與交接仍然卡住？可從員工已會用工具、團隊卻沒有改善的情境起稿。 核對限制：核對作者補充與 2 則他人回覆；屬局部觀點，沒有足夠資料判斷淨就業影響。",
+      "urls": [
+        "https://x.com/emollick/status/2106914993526747224",
+        "https://www.anthropic.com/research/ai-expectations-gap"
+      ],
+      "origin": "social-discussion"
+    },
+    {
+      "id": "social-benchmark-transfer",
+      "title": "AI 排行榜越來越高分，為什麼工作還是要自己驗？",
+      "summary": "Mollick 提出評測逐漸飽和的判斷；回覆追問測試流程是否一致，以及可驗證、資訊完整的題目能否代表真實工作。這提供了一個比較模型展示與現場驗收的切角。 文章切角：主管如何驗收 AI 完成的工作？用資料缺漏、例外處理與可追查證據設計任務測試。 核對限制：X 核對 3 則回覆，未重跑評測；搭配 METR 的監控研究只用於比較任務條件，不能把不同測試視為同一指標。",
+      "urls": [
+        "https://x.com/emollick/status/2110875851600633956",
+        "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"
+      ],
+      "origin": "social-discussion"
+    },
+    {
       "title": "AI 價值怎麼量？先對照指標，再看討論與反例",
       "summary": "對照企業主管、研究者與實務工作者的資料。OpenAI 的歐洲報告補上代理產品使用量，但仍需另查工作品質、返工與企業成果；不同指標不能直接互換。",
       "urls": [
@@ -6166,5 +6696,412 @@
       "savedAt": "",
       "markdownFile": "notes/note-wa3b7k.md"
     }
-  ]
+  ],
+  "socialTrends": {
+    "checkedAt": "2026-10-27",
+    "windowStart": "2026-10-01",
+    "windowEnd": "2026-10-27",
+    "scope": "X 原貼、局部回覆與原始資料的議題整理；非全站熱度排名。",
+    "items": [
+      {
+        "id": "php2shell",
+        "title": "AI 找到漏洞之後，修補與責任誰來接？",
+        "period": "10/21–10/27 核對",
+        "summary": "PHP2Shell 把兩個問題帶進討論：AI 與研究者各做了什麼，以及發現增加後，修補決策、人力與揭露協調是否跟得上。X 出現貢獻歸屬追問，Hacker News 也有人質疑影響範圍的說法。",
+        "angle": "AI 加快找到問題後，企業的處理能力跟得上嗎？可從漏洞驗證、修補排序與外部維護責任切入。",
+        "limit": "X 核對 3 則回覆；HN 為局部抽讀。未統計全站聲量，也未確認所有流傳的攻擊說法。",
+        "urls": [
+          "https://x.com/calif_io/status/2112914613297668583",
+          "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+          "https://calif.io/php2shell/",
+          "https://news.ycombinator.com/item?id=50180836"
+        ]
+      },
+      {
+        "id": "agent-review",
+        "title": "Agent 做得越多，人要檢查什麼、憑什麼放手？",
+        "period": "10/25–10/27 核對",
+        "summary": "Thorsten Ball 主張交代成果、讓 Agent 使用工具並拿出完成證據；Addy Osmani 的長文則討論審查分級與快速回退。共同問題是產出增加後，如何安排人的注意力與錯誤責任。",
+        "angle": "AI 省下的時間，會不會轉成主管的審核負擔？先界定哪些結果能用證據驗收，哪些仍需要人的判斷。",
+        "limit": "這組是兩篇實務主張與一份團隊原文的對照；尚未核對兩串回覆，不能稱為社群共識。",
+        "urls": [
+          "https://x.com/thorstenball/status/2114386050638336082",
+          "https://x.com/addyosmani/status/2114604912520921136",
+          "https://claude.dev/blog/solving-code-review-at-anthropic/"
+        ]
+      },
+      {
+        "id": "work-replacement",
+        "title": "工作被取代，關鍵在個人能力還是組織怎麼改？",
+        "period": "10/5 討論 · 10/27 補讀",
+        "summary": "Mollick 回應 Mark Cuban 的說法，把焦點放到組織系統與整類工作的變化。回覆中也有人反駁「AI 更容易用」的前提，認為用好的能力門檻仍高。",
+        "angle": "公司要求員工學 AI 後，哪些流程、權限與交接仍然卡住？可從員工已會用工具、團隊卻沒有改善的情境起稿。",
+        "limit": "核對作者補充與 2 則他人回覆；屬局部觀點，沒有足夠資料判斷淨就業影響。",
+        "urls": [
+          "https://x.com/emollick/status/2106914993526747224",
+          "https://www.anthropic.com/research/ai-expectations-gap"
+        ]
+      },
+      {
+        "id": "benchmark-transfer",
+        "title": "AI 排行榜越來越高分，為什麼工作還是要自己驗？",
+        "period": "10/16 討論 · 10/27 補讀",
+        "summary": "Mollick 提出評測逐漸飽和的判斷；回覆追問測試流程是否一致，以及可驗證、資訊完整的題目能否代表真實工作。這提供了一個比較模型展示與現場驗收的切角。",
+        "angle": "主管如何驗收 AI 完成的工作？用資料缺漏、例外處理與可追查證據設計任務測試。",
+        "limit": "X 核對 3 則回覆，未重跑評測；搭配 METR 的監控研究只用於比較任務條件，不能把不同測試視為同一指標。",
+        "urls": [
+          "https://x.com/emollick/status/2110875851600633956",
+          "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"
+        ]
+      }
+    ]
+  },
+  "curiosity": {
+    "checkedAt": "2026-10-27",
+    "topics": [
+      {
+        "id": "php2shell",
+        "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+        "lane": "event",
+        "priority": 1,
+        "revision": "2026-10-27-php-1",
+        "updatedAt": "2026-10-27",
+        "title": "PHP 這次出了什麼事？為什麼以前沒人發現，現在卻能被攻擊？",
+        "intro": "PHP 是許多網站背後用來處理請求的程式語言。10 月 21 日，官方修補兩項可讓攻擊者在特定條件下控制伺服器的漏洞。這次引人注意的，是 AI 協助研究者找出可利用的路徑，也讓舊問題、修補速度與實際影響一起被拿出來討論。",
+        "trigger": {
+          "date": "10/25",
+          "text": "Unit 42 撤回先前把一起政府機構入侵歸因於 PHP2Shell 的說法。這讓「有漏洞、有攻擊嘗試、真的因此遭駭」的差別更值得追問。",
+          "urls": [
+            "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "old-clues",
+            "question": "以前真的沒人發現嗎？",
+            "answer": "2024 年稽核已出現相關線索，當時未找到具體的遠端執行路徑。2026 年研究者證明可利用後，風險才更明確；基金會也承認，修補曾卡在相容性取捨、決策流程與人力。",
+            "urls": [
+              "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+              "https://calif.io/php2shell/"
+            ],
+            "status": "supported",
+            "next": "什麼證據會讓一個已知問題，從可以稍後處理變成必須立刻修？"
+          },
+          {
+            "id": "ai-role",
+            "question": "AI 到底多做了什麼？現在為什麼能攻擊？",
+            "answer": "Calif 的 Ryan Austin 表示，對 PHP 歷史漏洞的理解幫他引導 AI 找路徑，初始發現使用一般可取得的模型。漏洞本來就存在；研究把它變成可運作的驗證，並確認不同部署方式的條件。單靠模型名稱無法解釋整個成果。",
+            "urls": [
+              "https://calif.io/php2shell/",
+              "https://www.php.net/archive/2026.php"
+            ],
+            "status": "supported",
+            "next": "熟悉系統的專家，和只拿到程式碼的人，用 AI 會得到多大的差別？"
+          },
+          {
+            "id": "reactions",
+            "question": "大家是在擔心什麼，又在爭什麼？",
+            "answer": "已讀的 X 回覆有人追問研究者與公司的歸功方式；Hacker News 抽讀留言則談修補時間、揭露協調，也質疑社群把風險說成已發生的大規模入侵。這些是局部討論，沒有統計全體立場。",
+            "urls": [
+              "https://x.com/calif_io/status/2112914613297668583",
+              "https://news.ycombinator.com/item?id=50180836"
+            ],
+            "status": "partial",
+            "next": "各方是在談漏洞的技術風險，還是在談發布與宣傳造成的信任問題？"
+          },
+          {
+            "id": "impact",
+            "question": "影響到底有多大？看到攻擊就代表網站已被攻破嗎？",
+            "answer": "AWS 感測器記錄到攻擊嘗試，但原文說明無法確定那些嘗試能否在真實系統成功。Unit 42 在 10/25 撤回一項入侵歸因。風險確實需要處理，受影響部署數、嘗試次數與已確認受害者仍要分開核對；目前未取得完整損失統計。",
+            "urls": [
+              "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+              "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+              "https://www.php.net/archive/2026.php"
+            ],
+            "status": "partial",
+            "next": "有沒有能回查的受害者、利用條件與事故證據，而不只是流傳的總數？"
+          },
+          {
+            "id": "next-wave",
+            "question": "以後會更常發生嗎？AI 找得快，修得也會一樣快？",
+            "answer": "AWS 判斷 AI 輔助分析正降低利用漏洞的門檻；PHP 的經驗則顯示驗證與修補仍受人力和系統限制。這支持應變時間可能縮短的判斷，還不足以預測未來每年會增加多少事故。",
+            "urls": [
+              "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+              "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/"
+            ],
+            "status": "analysis",
+            "next": "哪些工作能交給 AI 加速，哪些修補決策仍得有人負責？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+            "label": "先讀：PHP 基金會的事件回顧",
+            "reason": "最能回答「以前為什麼沒處理完」；先看稽核線索、修補取捨與人力限制的段落。",
+            "date": "2026-10-21",
+            "kind": "當事方回顧",
+            "recommended": true
+          },
+          {
+            "url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+            "label": "接著讀：Unit 42 的 10/25 更正",
+            "reason": "看開頭的更新就能理解，為什麼一則遭駭消息需要重新核對歸因。",
+            "date": "10/25 更新",
+            "kind": "資安團隊更正",
+            "recommended": true
+          },
+          {
+            "url": "https://calif.io/php2shell/",
+            "label": "想懂 AI 如何參與：研究者原始說明",
+            "reason": "可以先跳到發現方法與時間線，暫時略過程式細節。",
+            "date": "2026-10-21",
+            "kind": "研究者第一手資料",
+            "recommended": false
+          },
+          {
+            "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+            "label": "想知道攻擊情況：AWS 的觀測",
+            "reason": "把感測器看到的嘗試，和成功入侵真實系統的證據分開讀。",
+            "date": "2026-10-21",
+            "kind": "廠商威脅情報",
+            "recommended": false
+          },
+          {
+            "url": "https://www.php.net/archive/2026.php",
+            "label": "PHP 官方安全公告",
+            "reason": "核對漏洞條件與修補資訊。",
+            "date": "2026-10-21",
+            "kind": "官方公告",
+            "recommended": false
+          },
+          {
+            "url": "https://x.com/calif_io/status/2112914613297668583",
+            "label": "X：Calif 與研究歸功討論",
+            "reason": "核對原貼及三則可見回覆；局部樣本以貢獻歸屬為主。",
+            "date": "2026-10-21",
+            "kind": "X 原貼與回覆",
+            "recommended": false
+          },
+          {
+            "url": "https://news.ycombinator.com/item?id=50180836",
+            "label": "Hacker News：同一事件的不同疑問",
+            "reason": "找揭露時間、修補與實際影響的爭點；留言推測仍須查證。",
+            "date": "2026-10-21",
+            "kind": "討論串抽讀",
+            "recommended": false
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2024",
+            "text": "稽核留下相關問題線索，尚未證明具體利用路徑。",
+            "urls": [
+              "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/"
+            ]
+          },
+          {
+            "date": "8/11",
+            "text": "Calif 向 PHP 通報；8/14 提供可運作的驗證。",
+            "urls": [
+              "https://calif.io/php2shell/"
+            ]
+          },
+          {
+            "date": "10/21",
+            "text": "PHP 發布修補，研究者與防守方陸續公開說明。",
+            "urls": [
+              "https://www.php.net/archive/2026.php"
+            ]
+          },
+          {
+            "date": "10/25",
+            "text": "Unit 42 更正一起入侵的歸因。",
+            "urls": [
+              "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/"
+            ]
+          }
+        ],
+        "limit": "核對至 2026-10-27。原始通報、利用驗證與已確認事故分開看；X 回覆只核對三則，HN 為局部抽讀，不代表整體風向。"
+      },
+      {
+        "id": "jev",
+        "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+        "lane": "feature",
+        "priority": 2,
+        "revision": "2026-10-27-jev-1",
+        "updatedAt": "2026-10-27",
+        "title": "Jev 到底是什麼？一個專門做判斷的 AI，為什麼會紅？",
+        "intro": "Jev 是 TypeSafe AI 推出的決策模型。你把情境和可選答案交給它，它回傳選項、分數或機率，方便程式直接接著做事。聊天模型常花時間生成文字；Jev 把重點放在快速完成一個範圍明確的判斷，例如把客戶訊息分到對的類別。",
+        "trigger": {
+          "date": "10/27",
+          "text": "Firecrawl 在 X 展示把公司資料交給 Jev 分類，延續了這波「讓模型直接做選擇」的實作討論。示範效果屬發文者自述。",
+          "urls": [
+            "https://x.com/firecrawl/status/2114761999003340852"
+          ]
+        },
+        "questions": [
+          {
+            "id": "what-is-it",
+            "question": "它到底做什麼？可以用一個日常例子解釋嗎？",
+            "answer": "例如收到一則客戶訊息，你先定義「帳務、技術、其他」三個選項，讓 Jev 選擇並回傳機率，再由系統決定分流。選項與接下來的動作仍要由應用程式設計；要寫一封完整回信，仍需要能生成文字的模型。",
+            "urls": [
+              "https://vercel.com/i/what-is-jev"
+            ],
+            "status": "supported",
+            "next": "哪些工作其實只需要選對下一步，用聊天回答反而多了一層處理？"
+          },
+          {
+            "id": "name",
+            "question": "為什麼叫 Jev？和傑文斯悖論有關嗎？",
+            "answer": "官方說名字來自 William Stanley Jevons，借用效率提高後需求可能增加的想法：如果機器判斷變便宜，可能會出現更多使用情境。System One 這個類別名則受《快思慢想》的快、慢思考區分啟發。",
+            "urls": [
+              "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+            ],
+            "status": "supported",
+            "next": "每次判斷變便宜，總成本會下降，還是因為判斷做得更多而增加？"
+          },
+          {
+            "id": "why-viral",
+            "question": "它為什麼紅？大家缺的是更會聊天，還是更快做決定？",
+            "answer": "Vercel 10/15 的平台報告說，Jev 上架後前兩週觸及 35.3% 的付費團隊，為該平台歷來最快採用。低延遲、少量結構化輸出和容易串接，提供了可試作的用途；哪些因素造成傳播，仍需更多使用者證據，不能用採用數直接證明。",
+            "urls": [
+              "https://vercel.com/blog/ai-gateway-production-index-october-2026",
+              "https://vercel.com/i/what-is-jev"
+            ],
+            "status": "partial",
+            "next": "大家試完後留下來做了什麼？哪些示範後來變成持續使用？"
+          },
+          {
+            "id": "classification",
+            "question": "這和以前的分類器、讓 LLM 做選擇，有什麼不同？",
+            "answer": "先從使用方式看：Jev 接收自然語言情境與指定答案，回傳判斷，省去解析生成文字的步驟。官方主張模型和訓練方式不同，但「新類別」是否在你的任務有優勢，還要拿相同資料、準確度與延遲比較。X 也有作者回報另一個 API 在自己的手勢示範更好；那是個別測試。",
+            "urls": [
+              "https://vercel.com/i/what-is-jev",
+              "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+              "https://x.com/seflless/status/2107860983498817689"
+            ],
+            "status": "partial",
+            "next": "如果把同一批真實訊息交給三種方法，差別會落在速度、錯誤還是設定成本？"
+          },
+          {
+            "id": "wrong-answer",
+            "question": "只回傳選項，就真的不會判斷錯嗎？",
+            "answer": "輸出格式正確，仍可能選錯。10/14 的 Jev 偏誤研究預印本指出，無關數字與選項順序可能影響判斷；10/4 的資安研究也測試到決策受惡意輸入影響。兩者都有特定任務與版本條件，尚不能推論所有應用都會同樣出錯。",
+            "urls": [
+              "https://arxiv.org/abs/2610.19619",
+              "https://arxiv.org/abs/2610.04985"
+            ],
+            "status": "supported",
+            "next": "什麼信心程度該轉人工？換個問法或順序後，選擇是否一致？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://vercel.com/i/what-is-jev",
+            "label": "先讀：用白話認識 Jev",
+            "reason": "弄懂輸入、選項、機率與能力邊界，先不必看程式碼。",
+            "date": "2026-09-18；含後續更新",
+            "kind": "平台解說",
+            "recommended": true
+          },
+          {
+            "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+            "label": "接著讀：創辦人的發布文與 FAQ",
+            "reason": "直接找命名由來與使用情境；效能主張保留官方自述的前提。",
+            "date": "2026-09-15",
+            "kind": "官方發布",
+            "recommended": true
+          },
+          {
+            "url": "https://vercel.com/blog/ai-gateway-production-index-october-2026",
+            "label": "Jev 為什麼紅：Vercel 平台資料",
+            "reason": "可核對採用現象；平台客群不代表所有 AI 使用者。",
+            "date": "2026-10-15",
+            "kind": "平台使用統計",
+            "recommended": false
+          },
+          {
+            "url": "https://x.com/firecrawl/status/2114761999003340852",
+            "label": "X：Jev 搭配公司資料分類",
+            "reason": "新近示範提供具體用途；未獨立重現速度與品質，也未核對回覆。",
+            "date": "2026-10-27",
+            "kind": "供應商示範",
+            "recommended": false
+          },
+          {
+            "url": "https://x.com/seflless/status/2107860983498817689",
+            "label": "X：另一種工具在手勢辨識的比較",
+            "reason": "作者回報自己的示範更準、更快，提供反例線索，未獨立重跑。",
+            "date": "2026-10-07",
+            "kind": "實作者個別經驗",
+            "recommended": false
+          },
+          {
+            "url": "https://arxiv.org/abs/2610.19619",
+            "label": "進一步：Jev 判斷偏誤研究",
+            "reason": "只讀過摘要；選項順序與表述是否影響結果，值得後續查全文。",
+            "date": "2026-10-14",
+            "kind": "研究預印本摘要",
+            "recommended": false
+          },
+          {
+            "url": "https://arxiv.org/abs/2610.04985",
+            "label": "進一步：Jev 的安全與隱私研究",
+            "reason": "只讀過摘要；有興趣再追決策模型可能受到哪些輸入操控。",
+            "date": "2026-10-04",
+            "kind": "研究預印本摘要",
+            "recommended": false
+          },
+          {
+            "url": "https://typesafe.ai/blog/jev-1-14",
+            "label": "Jev 1.14 官方更新",
+            "reason": "查影像、較長情境等實驗功能的官方範圍。",
+            "date": "2026-10-14",
+            "kind": "官方更新",
+            "recommended": false
+          }
+        ],
+        "timeline": [
+          {
+            "date": "9/15",
+            "text": "TypeSafe AI 發布 Jev，說明命名和結構化決策介面。",
+            "urls": [
+              "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+            ]
+          },
+          {
+            "date": "9/17",
+            "text": "依 Vercel 平台報告，Jev 進入 AI Gateway。",
+            "urls": [
+              "https://vercel.com/blog/ai-gateway-production-index-october-2026"
+            ]
+          },
+          {
+            "date": "10/4、10/14",
+            "text": "研究預印本開始檢查安全、隱私與判斷偏誤。",
+            "urls": [
+              "https://arxiv.org/abs/2610.04985",
+              "https://arxiv.org/abs/2610.19619"
+            ]
+          },
+          {
+            "date": "10/15",
+            "text": "Vercel 公布九月採用資料，提供爆紅現象的量化線索。",
+            "urls": [
+              "https://vercel.com/blog/ai-gateway-production-index-october-2026"
+            ]
+          },
+          {
+            "date": "10/27",
+            "text": "X 出現結合公司資料分類的示範。",
+            "urls": [
+              "https://x.com/firecrawl/status/2114761999003340852"
+            ]
+          }
+        ],
+        "limit": "核對至 2026-10-27。效能與架構為官方主張；平台數據僅涵蓋 Vercel 客群。X 為兩則原貼，未抽樣回覆；研究只讀摘要，未獨立重現。"
+      }
+    ],
+    "history": []
+  }
 }

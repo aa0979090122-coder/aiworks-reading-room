@@ -6,28 +6,30 @@
 <title>SEO 文章思考</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css?v=20261003-5"><link rel="stylesheet" href="./editorial-map.css?v=20261013-3"><script type="module" src="./main.js?v=20261013-3"></script>
+<link rel="stylesheet" href="./styles.css?v=20261027-2"><link rel="stylesheet" href="./editorial-map.css?v=20261013-3"><script type="module" src="./main.js?v=20261027-2"></script>
 </head>
 <body>
 <header class="site-header" id="top"><div class="header-inner"><h1>SEO 文章思考</h1><time id="edition-date"></time><button id="connect-local" hidden class="text-button">本機版 ↗</button><span id="local-status" hidden role="status"></span></div></header>
 <main>
 <div class="tabs-shell"><nav class="tabs wrap" aria-label="內容分類">
-<button id="tab-reader-map" aria-pressed="true" aria-controls="reader-map" data-tab="reader-map">文章總覽</button>
+<button id="tab-curiosity" aria-pressed="true" aria-controls="curiosity" data-tab="curiosity">最近有什麼</button>
+<button id="tab-reader-map" aria-pressed="false" aria-controls="reader-map" data-tab="reader-map">文章總覽</button>
 <button id="tab-deep-dives" aria-pressed="false" aria-controls="deep-dives" data-tab="deep-dives">深度閱讀 <span id="deep-count"></span></button>
 <button id="tab-materials" aria-pressed="false" aria-controls="materials" data-tab="materials">全部素材 <span id="material-count"></span></button>
 <button id="tab-knowledge" aria-pressed="false" aria-controls="knowledge" data-tab="knowledge">我的知識庫 <span id="knowledge-count"></span></button>
 </nav></div>
 <div id="reading-status" class="reading-status wrap" role="status" aria-live="polite"></div>
 <div class="content wrap">
-<section id="reader-map" class="panel" aria-labelledby="tab-reader-map"></section>
+<section id="curiosity" class="panel" aria-labelledby="tab-curiosity"><div class="curiosity-heading"><h2>最近有什麼讓你好奇？</h2><p>先看簡介，挑一個想追的問題。看過和有興趣，分開記。</p></div><div class="curiosity-toolbar"><div class="curiosity-lanes" aria-label="話題類型"><button data-curiosity-lane="all" aria-pressed="true">全部</button><button data-curiosity-lane="event" aria-pressed="false">新聞與事件</button><button data-curiosity-lane="feature" aria-pressed="false">功能與工具</button><button data-curiosity-lane="case" aria-pressed="false">導入案例</button><button data-curiosity-lane="discussion" aria-pressed="false">社群在聊什麼</button></div><label>顯示 <select id="curiosity-view"><option value="latest">最近整理</option><option value="interested">有興趣追的</option><option value="read">看過的簡介</option></select></label></div><div id="curiosity-list"></div><p class="curiosity-storage" id="curiosity-save-status" role="status">閱讀與興趣記在這個瀏覽器；可從「我的知識庫」備份，連到本機後供後續研究參考。</p></section>
+<section id="reader-map" hidden class="panel" aria-labelledby="tab-reader-map"></section>
 <section id="materials" class="panel" aria-labelledby="tab-materials" hidden>
 <details class="source-navigation wrap"><summary>依來源閱讀</summary><div><button data-tab="materials">全部素材</button>
 <button id="tab-x-posts" aria-pressed="false" aria-controls="x-posts" data-tab="x-posts">社群貼文 <span id="x-count"></span></button>
 <button id="tab-podcasts" aria-pressed="false" aria-controls="podcasts" data-tab="podcasts">Podcast <span id="podcast-count"></span></button>
 <button id="tab-news" aria-pressed="false" aria-controls="news" data-tab="news">新聞 <span id="news-count"></span></button>
-</div></details><div id="material-research-target"></div><div id="material-unified"><div class="material-heading"><h2>按問題找素材，也能回查來源</h2><button class="text-button" id="openai-materials">查看 OpenAI 官網素材</button></div>
+</div></details><div id="material-research-target"></div><div id="material-unified"><section id="material-social-trends" aria-label="社群最近在討論什麼"></section><div class="material-heading"><h2>按問題找素材，也能回查來源</h2><button class="text-button" id="openai-materials">查看 OpenAI 官網素材</button></div>
 <div class="material-toolbar"><input id="material-search" type="search" placeholder="搜尋問題、概念或文章" aria-label="搜尋全部素材"><select id="material-provider" aria-label="篩選素材來源"><option value="all">全部來源</option></select><select id="material-type" aria-label="篩選素材面向"><option value="all">全部面向</option><option value="case">實作案例</option><option value="failure">失敗與修正</option><option value="research">研究報告</option><option value="product">功能更新</option><option value="perspective">觀點與討論</option></select><select id="material-sort" aria-label="素材排序"><option value="priority">優先閱讀</option><option value="newest">日期排序</option></select></div><p class="material-count" id="material-result-count"></p><div id="all-materials"></div></div>
-<section id="x-posts" hidden class="panel" aria-labelledby="tab-x-posts"><section id="daily-digest" class="daily-digest" aria-label="過去24小時摘要"></section><div class="list-toolbar"><label class="search-label"><input id="social-search" type="search" placeholder="搜尋貼文" aria-label="搜尋社群貼文"></label><button class="text-button" data-view="x-posts">已讀與歷史</button></div><div id="posts-list" class="posts-list"></div></section>
+<section id="x-posts" hidden class="panel" aria-labelledby="tab-x-posts"><section id="social-trends" aria-label="社群最近在討論什麼"></section><section id="daily-digest" class="daily-digest" aria-label="過去24小時摘要"></section><div class="list-toolbar"><label class="search-label"><input id="social-search" type="search" placeholder="搜尋貼文" aria-label="搜尋社群貼文"></label><button class="text-button" data-view="x-posts">已讀與歷史</button></div><div id="posts-list" class="posts-list"></div></section>
 <section id="podcasts" class="panel" aria-labelledby="tab-podcasts" hidden><div class="list-toolbar"><span></span><button class="text-button" data-view="podcasts">已讀與歷史</button></div><div id="podcasts-list" class="podcasts-list"></div></section>
 <section id="news" class="panel" aria-labelledby="tab-news" hidden><div class="list-toolbar"><span></span><button class="text-button" data-view="news">已讀與歷史</button></div><div id="news-list" class="news-list"></div></section>
 </section>
