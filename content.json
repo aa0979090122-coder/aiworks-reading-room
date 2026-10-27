@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-26",
+  "editionDate": "2026-10-27",
   "posts": [
     {
       "author": "Ethan Mollick",
@@ -1118,6 +1118,73 @@
     }
   ],
   "news": [
+    {
+      "type": "公司申報資料 · 企業採用與衡量界線",
+      "sourceDate": "2026-10-26",
+      "date": "2026-10-26",
+      "title": "Anthropic S-1：高額客戶增加，支出擴張仍不等於工作成效",
+      "lead": "Anthropic 10/26 公開的 S-1 用過去 12 個月支出衡量企業採用，並揭露既有客戶支出擴張；申報數字沒有直接衡量客戶的省時、品質或投資報酬。",
+      "takeaways": [
+        "截至 9/30，Anthropic 申報過去 12 個月收入達 10 萬美元的客戶超過 11,900 家；該門檻用來代理衡量企業採用，並非按企業規模定義的客戶數。",
+        "公司申報 9/30 的淨收入留存率約 900%，衡量既有合格客戶的支出變化，不能直接解讀為工作效率或客戶投資報酬。",
+        "前五大客戶占 2026 年前九個月收入約 25%；採購方若評估供應商穩定性，還須分開看使用擴張、客戶集中與自身任務的成果。"
+      ],
+      "angle": "企業採購與導入主管可把供應商公布的客戶支出指標，和自身流程完成率、品質、單次任務成本分開追蹤。",
+      "caveat": "S-1 是 Anthropic 的公開申報，仍屬初版；客戶門檻與淨收入留存率依公司定義，不能推論所有企業已部署 Agent，或已取得可歸因的營運效益。",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "sources": [
+        {
+          "label": "Anthropic 向 SEC 提交的 S-1 原始文件",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+        },
+        {
+          "label": "Anthropic 10/26 官方公告",
+          "url": "https://www.anthropic.com/news/s1-sec"
+        }
+      ],
+      "source": "Anthropic／SEC",
+      "author": "Anthropic, PBC；美國證券交易委員會公開申報",
+      "originalTitle": "Anthropic, PBC Form S-1 Registration Statement",
+      "englishSummary": "Anthropic reports more than 11,900 customers with at least $100,000 in trailing twelve-month revenue, about 900% net revenue retention, and roughly 25% of nine-month revenue from its top five customers. These are company-defined spending metrics, not measured customer productivity or ROI.",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "cost",
+          "governance"
+        ],
+        "concepts": [
+          "採用指標與工作成果",
+          "客戶集中風險",
+          "淨收入留存率"
+        ],
+        "outcome": "research"
+      },
+      "followupQuestions": [
+        {
+          "id": "anthropic-s1-enterprise-proxy",
+          "question": "為什麼用 10 萬美元年支出衡量企業採用？",
+          "answer": "S-1 說公司不另按 enterprise 類別內部分群，因此以過去 12 個月收入達 10 萬美元的客戶作為代理指標。",
+          "status": "supported",
+          "evidenceUrls": [
+            "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+          ],
+          "next": "核對採購組織、使用人數與實際部署流程，避免把支出門檻當作成效。"
+        },
+        {
+          "id": "anthropic-s1-roi-gap",
+          "question": "客戶支出快速增加，能證明 AI 帶來效益嗎？",
+          "answer": "申報呈現支出擴張，未提供客戶端流程品質、節省工時或可歸因收益的對照資料。",
+          "status": "open",
+          "evidenceUrls": [
+            "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+          ],
+          "next": "找具名客戶的任務、基準線、成本與結果資料，再判斷擴張是否伴隨工作改善。"
+        }
+      ],
+      "topic": "report",
+      "checkedAt": "2026-10-27"
+    },
     {
       "type": "獨立測試 · Agent 監控盲點與修正",
       "sourceDate": "2026-10-22",
@@ -6053,8 +6120,14 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-26T09:33:44+08:00",
-    "points": []
+    "checkedAt": "2026-10-27T10:13:29+08:00",
+    "points": [
+      {
+        "text": "Anthropic 10/26 公開 S-1：高額客戶與支出擴張可核對；申報未證明客戶工作成效。",
+        "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+        "label": "查看申報摘要"
+      }
+    ]
   },
   "knowledgeLibrary": [
     {
