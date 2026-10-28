@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-27",
+  "editionDate": "2026-10-28",
   "posts": [
     {
       "url": "https://x.com/celestepoasts/status/2103232383139057950",
@@ -1420,6 +1420,78 @@
     }
   ],
   "news": [
+    {
+      "type": "研究與實驗",
+      "sourceDate": "2026-10-27",
+      "date": "2026-10-27",
+      "title": "AI 提出分析方向後，專家會跟著改判斷嗎？",
+      "lead": "Anthropic 讓 50 名專業分析師用 Claude Code 分析虛構的農業資料，暗中隨機指定 Agent 在四項分析選擇上的傾向。",
+      "takeaways": [
+        "分析師在四項選擇中有 86% 跟隨 Agent 的傾向；事後說明時，77% 至少一次沿用 Agent 的論點，只有 15% 提及論點來自 Agent。",
+        "研究刻意加強 Agent 的傾向，以便測量影響。任務只有一種、約一小時，結果不能直接套用到真實決策。",
+        "11 名未使用 Agent 的分析師與使用者背景不同，不能拿兩組錯誤率直接推論 Agent 提升了工作品質。"
+      ],
+      "caveat": "已讀 Anthropic 研究說明；尚未逐頁核對完整論文。數據是隨機化實驗中的觀察，不是所有專家使用 AI 的比例。",
+      "url": "https://www.anthropic.com/research/agents-judgment-calls",
+      "source": "Anthropic Research",
+      "author": "Amaç Herdağdelen、Hailey Joren、Alex Tamkin",
+      "originalTitle": "How AI agents shape experts’ judgment calls",
+      "englishSummary": "In a randomized study with 50 professional analysts using Claude Code, agent lean shifted analytical choices. The experiment deliberately strengthened those leans and used one task and model.",
+      "topic": "trend",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow"
+        ],
+        "concepts": [
+          "專家判斷",
+          "Agent 建議"
+        ],
+        "outcome": "research"
+      },
+      "checkedAt": "2026-10-28",
+      "followupQuestions": [
+        "若 Agent 先說出自己的偏好，專家還能獨立比較其他合理選項嗎？",
+        "在真實工作中，哪些選擇應先由人定義，再讓 Agent 執行？"
+      ]
+    },
+    {
+      "type": "功能與工具",
+      "sourceDate": "2026-10-26",
+      "date": "2026-10-26",
+      "title": "GPT-6.1 Terra 主打視覺理解與電腦操作",
+      "lead": "OpenAI 發布 GPT-6.1 Terra，定位在較快、較低成本的視覺理解與電腦操作任務，已供 ChatGPT Work、Codex 與 API 使用。",
+      "takeaways": [
+        "官方測試稱，在 Agents’ Last Exam 的中等推理設定下，Terra 比 GPT-5.6 Terra 高 15 個百分點，單次任務成本約為三分之一。",
+        "標準 API 價格為每百萬輸入 token 1 美元、輸出 token 5 美元；官方稱比 GPT-5.6 Terra 與 GPT-6.1 Sol 的標準價格低 50%。",
+        "這些是官方測試與價格，未證明每種網站、表單或企業流程都能穩定完成；複雜程式任務仍需按工作類型比較。"
+      ],
+      "caveat": "只核對官方發布與 API 文件；未進行獨立任務測試，亦未核對 X 的使用者回覆。",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "source": "OpenAI",
+      "author": "OpenAI",
+      "originalTitle": "Introducing GPT-6.1 Terra",
+      "englishSummary": "GPT-6.1 Terra targets visual reasoning and computer use with lower standard API pricing. Reported benchmark gains are OpenAI evaluations, not independent production results.",
+      "topic": "feature",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "電腦操作",
+          "模型成本"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-28",
+      "followupQuestions": [
+        "官方電腦操作測試測了哪些工作，哪些網站或步驟最容易出錯？",
+        "實際工作選 Terra、Sol 或 Luna 時，該比較完成率還是單次價格？"
+      ]
+    },
     {
       "url": "https://ai.thesatyajit.com/articles/llm-land-or-water",
       "title": "想深入：把公開地圖重新計分",
@@ -6779,14 +6851,9 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-27T10:13:29+08:00",
-    "points": [
-      {
-        "text": "Anthropic 10/26 公開 S-1：高額客戶與支出擴張可核對；申報未證明客戶工作成效。",
-        "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
-        "label": "查看申報摘要"
-      }
-    ]
+    "checkedAt": "2026-10-28T10:00:00+08:00",
+    "points": [],
+    "emptyMessage": "本次可核對來源尚無能確認落在過去 24 小時內的消息；X 動態未完成核對。"
   },
   "knowledgeLibrary": [
     {
@@ -6886,7 +6953,7 @@
     ]
   },
   "curiosity": {
-    "checkedAt": "2026-10-27",
+    "checkedAt": "2026-10-28T10:00:00+08:00",
     "topics": [
       {
         "id": "php2shell",
@@ -7555,6 +7622,144 @@
           }
         ],
         "limit": "這是 Anthropic 對自身高速成長組織的研究，採用並非隨機。半個工作週是閱讀負荷估計，不是實測工時；未宣稱為 X 爆紅話題。"
+      },
+      {
+        "id": "agent-judgment",
+        "url": "https://www.anthropic.com/research/agents-judgment-calls",
+        "lane": "news",
+        "priority": 0,
+        "revision": "2026-10-28-judgment-1",
+        "updatedAt": "2026-10-28",
+        "title": "專家自己做決定，為什麼最後常跟著 AI 的偏好走？",
+        "intro": "Anthropic 找 50 名專業分析師做一份農業資料分析，暗中讓每人的 AI 隨機偏向不同答案。分析師仍能自己決定，四項分析選擇卻有 86% 跟著 AI 的傾向。這個實驗想問的是：人保有最後簽名權時，判斷到底由誰形成？",
+        "trigger": {
+          "date": "10/27",
+          "text": "Anthropic 公布隨機化實驗。研究把 Agent 的偏好刻意說得較明顯；目前看到的是實驗室任務，不是真實企業決策的普遍比例。",
+          "urls": [
+            "https://www.anthropic.com/research/agents-judgment-calls"
+          ]
+        },
+        "questions": [
+          {
+            "id": "four-choices",
+            "question": "AI 影響的是最後建議，還是更早的分析選擇？",
+            "answer": "分析師先要決定用每公頃產量或每單位成本產量、如何比較農場、涵蓋哪些農場，以及如何加權。Agent 對這四項的偏好由抽籤決定；每項都可能改變最後估計。四項合計有 86% 跟著 Agent 的方向。",
+            "urls": [
+              "https://www.anthropic.com/research/agents-judgment-calls"
+            ],
+            "status": "supported",
+            "next": "如果把不同合理算法同時攤開，分析師的選擇還會一樣嗎？"
+          },
+          {
+            "id": "noticed-influence",
+            "question": "分析師知道自己受 AI 影響嗎？",
+            "answer": "事後有 77% 的人至少一次沿用 Agent 的說法，只有 15% 提到論點來自 Agent。不過這只能顯示在本實驗裡不容易辨認影響，不能推斷每位分析師都毫無察覺。",
+            "urls": [
+              "https://www.anthropic.com/research/agents-judgment-calls"
+            ],
+            "status": "partial",
+            "next": "真實工作要怎麼記錄哪些判斷先由人提出、哪些來自 AI？"
+          },
+          {
+            "id": "real-world",
+            "question": "這代表日常專業工作也會有 86% 跟著 AI 嗎？",
+            "answer": "還不能。研究只測一種約一小時的統計任務、一個模型，並特意強化 Agent 的傾向。現場專家可能有更強的既有觀點，也能詢問利害關係人。",
+            "urls": [
+              "https://www.anthropic.com/research/agents-judgment-calls"
+            ],
+            "status": "supported",
+            "next": "換成醫療、法務或產品分析時，哪些選擇仍有多種合理答案？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.anthropic.com/research/agents-judgment-calls",
+            "label": "先讀：Anthropic 的實驗方法與結果",
+            "reason": "直接看隨機指定偏好、50 名使用者的結果，以及作者列出的適用限制。",
+            "date": "2026-10-27",
+            "kind": "原始研究說明",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/27",
+            "text": "研究公布 50 名使用 Agent 分析師的實驗；另 11 人選擇不用 Agent，兩組背景不同。",
+            "urls": [
+              "https://www.anthropic.com/research/agents-judgment-calls"
+            ]
+          }
+        ],
+        "limit": "已讀官方研究說明，尚未逐頁核對論文。實驗刻意放大 Agent 傾向；86% 不能外推為所有專家的日常比例。"
+      },
+      {
+        "id": "terra-computer-use",
+        "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+        "lane": "feature",
+        "priority": 0.5,
+        "revision": "2026-10-28-terra-1",
+        "updatedAt": "2026-10-28",
+        "title": "GPT-6.1 Terra 會操作電腦，它和一般模型差在哪？",
+        "intro": "OpenAI 10/26 推出 GPT-6.1 Terra，把視覺理解和電腦操作當成重點：讀畫面、點介面、處理文件與表單。它已進入 ChatGPT Work、Codex 和 API。官方說它比上一代 Terra 更快，也更省；實際使用時，還是得看任務能否完成。",
+        "trigger": {
+          "date": "10/26",
+          "text": "新模型與 API 同日上線。OpenAI 公布電腦操作測試與價格；目前沒有把官方基準分數當成真實工作完成率。",
+          "urls": [
+            "https://openai.com/index/introducing-gpt-6-1-terra/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "what-changed",
+            "question": "它只是換了名字，還是真的比較會用畫面？",
+            "answer": "OpenAI 在 Agents’ Last Exam 報告：中等推理設定下，比 GPT-5.6 Terra 高 15 個百分點，單次任務成本約三分之一。測試含圖面轉 3D 模型等專業任務；這是官方基準，尚未逐項檢查每類工作的失敗率。",
+            "urls": [
+              "https://openai.com/index/introducing-gpt-6-1-terra/"
+            ],
+            "status": "partial",
+            "next": "在表單、文件、影片等不同工作中，哪一類改進最明顯？"
+          },
+          {
+            "id": "cost",
+            "question": "說它更省，是每次工作更便宜嗎？",
+            "answer": "標準 API 定價是每百萬輸入 token 1 美元、輸出 token 5 美元。OpenAI 也報告特定基準的單次任務成本降低；實際帳單仍取決於推理設定、步數、工具費和是否重試。",
+            "urls": [
+              "https://openai.com/index/introducing-gpt-6-1-terra/"
+            ],
+            "status": "supported",
+            "next": "同一份工作以相同完成標準測試，總成本差多少？"
+          },
+          {
+            "id": "choose-model",
+            "question": "既然比較快，複雜工作也都該改用它嗎？",
+            "answer": "官方在程式任務段落仍把最複雜的工作交給 Sol 或 Astra。對需要操作介面的任務，可先用熟悉流程比較成功率、人工修正次數與總成本，再決定模型。後半句是編輯提出的測法，尚未做本站實測。",
+            "urls": [
+              "https://openai.com/index/introducing-gpt-6-1-terra/"
+            ],
+            "status": "partial",
+            "next": "同一個真實流程，Terra 能否一次完成，卡在哪一步？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+            "label": "先讀：OpenAI 的發布與基準說明",
+            "reason": "先看電腦操作測試、使用範圍和官方自述的價格；留意基準與現場工作不同。",
+            "date": "2026-10-26",
+            "kind": "官方發布",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/26",
+            "text": "OpenAI 公布 GPT-6.1 Terra，並開放 ChatGPT Work、Codex 與 API 使用。",
+            "urls": [
+              "https://openai.com/index/introducing-gpt-6-1-terra/"
+            ]
+          }
+        ],
+        "limit": "價格與分數來自官方資料；本站未進行獨立實測，X 原貼與使用者回覆也未核對。"
       }
     ],
     "history": [
