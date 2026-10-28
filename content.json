@@ -1421,6 +1421,42 @@
   ],
   "news": [
     {
+      "type": "功能與工具",
+      "sourceDate": "2026-10-27",
+      "date": "2026-10-27",
+      "title": "Genie 4：用文字改變可探索的模擬世界",
+      "lead": "Google DeepMind 10/27 發表 Genie 4。使用者可以用鍵盤探索生成的場景，途中再用文字改變天氣、鏡頭或角色；畫面、環境聲與對話會跟著更新。",
+      "takeaways": [
+        "官方示範以即時生成的場景呈現移動、角色反應與聲音，並讓 Gemini 模型在背後規劃事件與檢查進展。",
+        "目前是向受邀測試者開放的研究預覽。官方提到影視預覽、遊戲原型與機器人訓練情境，但沒有公開可歸因的工作成效。",
+        "場景持續較久或多次修改後，物件、空間和細節仍可能漂移；複雜物理互動、文字可讀性及聲音準確度也仍待改善。"
+      ],
+      "caveat": "已讀 Google DeepMind 官方發布；示範與測試者回饋屬官方材料，本站未操作模型，也未核對 X 原貼及逐則回覆。",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "source": "Google DeepMind",
+      "author": "Raia Hadsell、Diego Rivas、Hang Qi",
+      "originalTitle": "Genie 4: A new generation of world simulation",
+      "englishSummary": "Google DeepMind presents a research preview of Genie 4, an interactive world model with real-time scene steering, audio and dialogue. Longer sessions and repeated edits can still cause visual and spatial drift.",
+      "topic": "feature",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "互動式世界模型",
+          "情境模擬"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-28",
+      "followupQuestions": [
+        "在同一個場景反覆修改後，哪些物件或行為最先失去一致性？",
+        "受邀測試者如何衡量模擬對原型設計或訓練是否有幫助？"
+      ]
+    },
+    {
       "type": "研究與實驗",
       "sourceDate": "2026-10-27",
       "date": "2026-10-27",
@@ -6990,7 +7026,7 @@
     ]
   },
   "curiosity": {
-    "checkedAt": "2026-10-28T10:00:00+08:00",
+    "checkedAt": "2026-10-28T21:40:00+08:00",
     "topics": [
       {
         "id": "php2shell",
@@ -7867,6 +7903,75 @@
           }
         ],
         "limit": "單一公司與臨床計畫，原始紀錄不公開；報告作者為系統開發者。CDP 是人工審查的輔助工具，尚未完成 GMP 電腦系統驗證。"
+      },
+      {
+        "id": "genie-4",
+        "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "lane": "feature",
+        "priority": 0.1,
+        "revision": "2026-10-28-genie4-1",
+        "updatedAt": "2026-10-28",
+        "title": "Genie 4 生成一個能走進去的世界，能拿來做什麼？",
+        "intro": "Google DeepMind 10/27 展示 Genie 4：輸入場景後，可以用鍵盤在生成的世界裡移動，途中還能用文字改變天氣或加入角色。畫面、聲音與對話會即時跟著變。它目前只開放受邀測試，長時間遊玩時場景仍可能變形。",
+        "trigger": {
+          "date": "10/27",
+          "text": "Google DeepMind 發布 Genie 4 官方示範與受邀測試者用途；X 的熱門話題提供發現線索，本站尚未核對相關原貼和回覆。",
+          "urls": [
+            "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "what-is-world-model",
+            "question": "它生成的是影片，還是一個可以互動的場景？",
+            "answer": "官方示範可用鍵盤移動視角，也能在探索中輸入文字改變天氣、鏡頭或角色。Genie 4 持續生成下一段畫面與聲音，Gemini 模型在背後規劃事件；目前看到的是官方錄製的即時互動示範，本站未親自操作。",
+            "urls": [
+              "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+            ],
+            "status": "supported",
+            "next": "同一個場景持續探索十分鐘，物件和人物還能保持一致嗎？"
+          },
+          {
+            "id": "uses",
+            "question": "除了好玩，誰真的會用它？",
+            "answer": "Google DeepMind 說受邀測試者正在試影視分鏡預覽、遊戲原型和模擬情境；企業夥伴也在評估情境生成。官方沒有公布這些工作的完成時間或品質對照，因此目前只能說用途正在試。",
+            "urls": [
+              "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+            ],
+            "status": "partial",
+            "next": "和既有 3D 工具相比，做出可用原型要花多少時間、需要修正幾次？"
+          },
+          {
+            "id": "limits",
+            "question": "如果世界會一直生成，為什麼還不能拿來做精準訓練？",
+            "answer": "官方列出物件持續存在、空間準確度、複雜物理互動及長時間一致性等限制。場景拖長或反覆修改後，細節可能漂移；要用於訓練，仍需驗證模擬是否足以代表真實環境。後一句是編輯提出的檢查方向。",
+            "urls": [
+              "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+            ],
+            "status": "partial",
+            "next": "哪些任務只需快速想像場景，哪些任務必須有可重現的物理結果？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+            "label": "先讀：Google DeepMind 的發布與限制",
+            "reason": "先看互動示範，再看受邀測試者用途和官方列出的漂移問題。",
+            "date": "2026-10-27",
+            "kind": "官方研究預覽",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/27",
+            "text": "Google DeepMind 發表 Genie 4，先向受邀測試者開放研究預覽。",
+            "urls": [
+              "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+            ]
+          }
+        ],
+        "limit": "只核對官方發布，沒有獨立實測或第三方成效研究；X 熱門話題與留言尚未逐則核對，不能據此描述社群風向。"
       }
     ],
     "history": [
