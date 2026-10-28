@@ -7626,7 +7626,7 @@
       {
         "id": "agent-judgment",
         "url": "https://www.anthropic.com/research/agents-judgment-calls",
-        "lane": "news",
+        "lane": "event",
         "priority": 0,
         "revision": "2026-10-28-judgment-1",
         "updatedAt": "2026-10-28",
@@ -8104,6 +8104,75 @@
           }
         ],
         "limit": "核對至 2026-10-27。效能與架構為官方主張；平台數據僅涵蓋 Vercel 客群。X 為兩則原貼，未抽樣回覆；研究只讀摘要，未獨立重現。"
+      },
+      {
+        "id": "agent-judgment",
+        "url": "https://www.anthropic.com/research/agents-judgment-calls",
+        "lane": "news",
+        "priority": 0,
+        "revision": "2026-10-28-judgment-1",
+        "updatedAt": "2026-10-28",
+        "title": "專家自己做決定，為什麼最後常跟著 AI 的偏好走？",
+        "intro": "Anthropic 找 50 名專業分析師做一份農業資料分析，暗中讓每人的 AI 隨機偏向不同答案。分析師仍能自己決定，四項分析選擇卻有 86% 跟著 AI 的傾向。這個實驗想問的是：人保有最後簽名權時，判斷到底由誰形成？",
+        "trigger": {
+          "date": "10/27",
+          "text": "Anthropic 公布隨機化實驗。研究把 Agent 的偏好刻意說得較明顯；目前看到的是實驗室任務，不是真實企業決策的普遍比例。",
+          "urls": [
+            "https://www.anthropic.com/research/agents-judgment-calls"
+          ]
+        },
+        "questions": [
+          {
+            "id": "four-choices",
+            "question": "AI 影響的是最後建議，還是更早的分析選擇？",
+            "answer": "分析師先要決定用每公頃產量或每單位成本產量、如何比較農場、涵蓋哪些農場，以及如何加權。Agent 對這四項的偏好由抽籤決定；每項都可能改變最後估計。四項合計有 86% 跟著 Agent 的方向。",
+            "urls": [
+              "https://www.anthropic.com/research/agents-judgment-calls"
+            ],
+            "status": "supported",
+            "next": "如果把不同合理算法同時攤開，分析師的選擇還會一樣嗎？"
+          },
+          {
+            "id": "noticed-influence",
+            "question": "分析師知道自己受 AI 影響嗎？",
+            "answer": "事後有 77% 的人至少一次沿用 Agent 的說法，只有 15% 提到論點來自 Agent。不過這只能顯示在本實驗裡不容易辨認影響，不能推斷每位分析師都毫無察覺。",
+            "urls": [
+              "https://www.anthropic.com/research/agents-judgment-calls"
+            ],
+            "status": "partial",
+            "next": "真實工作要怎麼記錄哪些判斷先由人提出、哪些來自 AI？"
+          },
+          {
+            "id": "real-world",
+            "question": "這代表日常專業工作也會有 86% 跟著 AI 嗎？",
+            "answer": "還不能。研究只測一種約一小時的統計任務、一個模型，並特意強化 Agent 的傾向。現場專家可能有更強的既有觀點，也能詢問利害關係人。",
+            "urls": [
+              "https://www.anthropic.com/research/agents-judgment-calls"
+            ],
+            "status": "supported",
+            "next": "換成醫療、法務或產品分析時，哪些選擇仍有多種合理答案？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.anthropic.com/research/agents-judgment-calls",
+            "label": "先讀：Anthropic 的實驗方法與結果",
+            "reason": "直接看隨機指定偏好、50 名使用者的結果，以及作者列出的適用限制。",
+            "date": "2026-10-27",
+            "kind": "原始研究說明",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/27",
+            "text": "研究公布 50 名使用 Agent 分析師的實驗；另 11 人選擇不用 Agent，兩組背景不同。",
+            "urls": [
+              "https://www.anthropic.com/research/agents-judgment-calls"
+            ]
+          }
+        ],
+        "limit": "已讀官方研究說明，尚未逐頁核對論文。實驗刻意放大 Agent 傾向；86% 不能外推為所有專家的日常比例。"
       }
     ],
     "maxVisible": 3
