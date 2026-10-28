@@ -1493,6 +1493,43 @@
       ]
     },
     {
+      "type": "導入案例與技術報告",
+      "sourceDate": "2026-10-27",
+      "date": "2026-10-27",
+      "title": "1,061 頁藥品製造紀錄，AI 怎麼協助品質審查？",
+      "lead": "Enveda 公開自建系統 CDP 的測試：把藥品製造紀錄逐頁交給 Claude 檢查，結果以附頁碼的註解交給品質人員判斷。",
+      "takeaways": [
+        "同一項臨床計畫的四份批次紀錄共 1,061 頁。CDP 在至少一次執行中找出人工審查提出的 11 項可處理問題，另提出七項人工未指出的問題。",
+        "系統先找對應的作業標準，記錄每頁是否讀取；模型只能寫旁註，不能改原始紀錄或放行批次。品質人員仍逐項判斷。",
+        "含 AI 處理與人工複核的計時為 166 分鐘；純人工審查為 1,553 分鐘。這是單一公司、單一臨床計畫的測試，不能外推為一般藥廠的速度。"
+      ],
+      "caveat": "已讀 Enveda 技術報告與 Anthropic 總覽。原始紀錄因涉及專有資料未公開；研究者均為開發 CDP 的 Enveda 員工。報告稱系統尚未完成 GMP 電腦系統驗證，結果只供品質人員參考。",
+      "url": "https://enveda.com/CMC-Document-Processor/",
+      "source": "Enveda",
+      "author": "Andrew Martin、Brandy Schenck、Daniel H. Wee、Viswa Colluru",
+      "originalTitle": "CDP: a language-model system for quality review of executed pharmaceutical batch records",
+      "englishSummary": "Enveda evaluated its advisory record-review system on four Phase 2 batch records, totaling 1,061 scanned pages. It matched all 11 human actionable findings in at least one run and shortened measured review time in this single-campaign study.",
+      "topic": "case",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "批次紀錄審查",
+          "逐頁覆蓋",
+          "人工品質放行"
+        ],
+        "outcome": "case"
+      },
+      "checkedAt": "2026-10-28",
+      "followupQuestions": [
+        "換成另一個藥廠的文件與作業標準，系統還能完整辨識每一頁嗎？",
+        "持續使用後，人工複核是否仍能發現模型漏掉的問題？"
+      ]
+    },
+    {
       "url": "https://ai.thesatyajit.com/articles/llm-land-or-water",
       "title": "想深入：把公開地圖重新計分",
       "source": "原始分析",
@@ -7760,6 +7797,76 @@
           }
         ],
         "limit": "價格與分數來自官方資料；本站未進行獨立實測，X 原貼與使用者回覆也未核對。"
+      },
+      {
+        "id": "drug-record-review",
+        "url": "https://enveda.com/CMC-Document-Processor/",
+        "lane": "case",
+        "priority": 0.25,
+        "revision": "2026-10-28-cdp-1",
+        "updatedAt": "2026-10-28",
+        "title": "AI 讀完千頁藥品紀錄，誰決定這批藥能不能放行？",
+        "intro": "Enveda 10/27 公開一項測試：讓 Claude 協助審查超過千頁、許多由手寫掃描的藥品製造紀錄。它找出原本由人工提出的 11 項可處理問題，還多指出七項。真正有趣的是它怎麼確認沒有漏頁，以及最後由誰決定哪些問題需要處理。",
+        "trigger": {
+          "date": "10/27",
+          "text": "Enveda 發布 CDP 技術報告，交代四份紀錄、1,061 頁的測試方法與品質人員的審查權限。",
+          "urls": [
+            "https://enveda.com/CMC-Document-Processor/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "read-every-page",
+            "question": "文件超過千頁，怎麼知道 AI 沒漏看？",
+            "answer": "CDP 把掃描頁面分批交給模型，程式記下每一頁分到哪次呼叫。失敗或未評估的頁面會顯示給人看；模型仍可能漏報已讀頁面的問題，頁面覆蓋不等於審查完整。",
+            "urls": [
+              "https://enveda.com/CMC-Document-Processor/"
+            ],
+            "status": "supported",
+            "next": "面對表格、手寫更正和圖表，哪些內容最容易被看錯？"
+          },
+          {
+            "id": "who-decides",
+            "question": "AI 找到問題後，可以直接決定放行嗎？",
+            "answer": "不能。CDP 只在原檔旁寫附頁碼的建議，不能修改原始紀錄；具名品質人員逐項判斷，批次放行仍由品質單位決定。報告也說這個系統尚未完成 GMP 電腦系統驗證。",
+            "urls": [
+              "https://enveda.com/CMC-Document-Processor/"
+            ],
+            "status": "supported",
+            "next": "品質人員如何檢查 AI 未提出的問題，而不只審核它指出的項目？"
+          },
+          {
+            "id": "speed-generalize",
+            "question": "審查快了約九倍，別家公司也能這樣嗎？",
+            "answer": "這項計時只涵蓋 Enveda 一個臨床計畫的四份紀錄：含 AI 處理和人工複核 166 分鐘，純人工 1,553 分鐘。原始文件不公開，開發者也是報告作者；其他文件類型、規模與審查團隊尚待測試。",
+            "urls": [
+              "https://enveda.com/CMC-Document-Processor/"
+            ],
+            "status": "partial",
+            "next": "跨不同藥品、廠商和批次重複測試，速度與漏報率會怎麼變？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://enveda.com/CMC-Document-Processor/",
+            "label": "先讀：Enveda 的測試方法與限制",
+            "reason": "直接看逐頁覆蓋、人工審查流程、四份紀錄的結果與報告限制。",
+            "date": "2026-10-27",
+            "kind": "原始技術報告",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/27",
+            "text": "Enveda 與 Anthropic 公開四份批次紀錄的 CDP 測試；藥品原始紀錄未公開。",
+            "urls": [
+              "https://enveda.com/CMC-Document-Processor/",
+              "https://www.anthropic.com/research/early-progress-drug-development"
+            ]
+          }
+        ],
+        "limit": "單一公司與臨床計畫，原始紀錄不公開；報告作者為系統開發者。CDP 是人工審查的輔助工具，尚未完成 GMP 電腦系統驗證。"
       }
     ],
     "history": [
