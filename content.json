@@ -1,6 +1,164 @@
 {
-  "editionDate": "2026-10-28",
+  "editionDate": "2026-10-29",
   "posts": [
+    {
+      "url": "https://x.com/sundarpichai/status/2115489219804352921",
+      "title": "Sundar Pichai 公布 Gemini 4 Carbon",
+      "sourceDate": "2026-10-29",
+      "date": "2026-10-29",
+      "publishedAt": "2026-10-28T17:01:48.547Z",
+      "author": "Sundar Pichai",
+      "handle": "@sundarpichai",
+      "excerpt": "introducing Gemini 4 Carbon, our next frontier model.",
+      "zh": "Pichai 在 X 公布 Carbon 的資安評測和分階段開放安排；原貼顯示 10/29 台北時間 01:01。",
+      "topic": "feature",
+      "highLevel": true,
+      "checkedAt": "2026-10-29",
+      "caveat": "10/29 約 09:40 台北時間核對原貼，可見約 342 萬觀看、1,582 則回覆。僅抽查三則實質回覆：一人質疑幻覺率，一人詢問 API 價格，一人抱怨既有 Argon 配額。樣本不代表所有回覆。",
+      "replyObservation": {
+        "count": 3,
+        "checkedAt": "2026-10-29",
+        "urls": [
+          "https://x.com/MichaelM_117/status/2115492850494566757",
+          "https://x.com/LoganB254/status/2115504448734662721",
+          "https://x.com/sarick/status/2115536578688975029"
+        ]
+      },
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "security"
+        ],
+        "concepts": [
+          "資安評測",
+          "模型可用性"
+        ],
+        "outcome": "perspective"
+      }
+    },
+    {
+      "url": "https://x.com/trq212/status/2115544056038350960",
+      "title": "寫程式的人與非工程師，為何都覺得自己缺一塊？",
+      "sourceDate": "2026-10-29",
+      "date": "2026-10-29",
+      "publishedAt": "2026-10-28T20:39:42.524Z",
+      "author": "Thariq",
+      "handle": "@trq212",
+      "excerpt": "technical people are sad, they think their skills are now useless",
+      "zh": "Thariq 觀察：部分技術人員擔心原有技能被代理削弱，非技術使用者卻希望更懂技術，才能善用代理。這是作者觀點，不是職涯調查。",
+      "topic": "trend",
+      "highLevel": true,
+      "checkedAt": "2026-10-29",
+      "caveat": "10/29 約 09:45 台北時間核對原貼，可見約 43.9 萬觀看、796 則回覆。抽查三則直接回覆，分別談產品經驗、維護與安全、技術通才的壓力；未統計所有回覆。",
+      "replyObservation": {
+        "count": 3,
+        "checkedAt": "2026-10-29",
+        "urls": [
+          "https://x.com/hnshah/status/2115544675373507044",
+          "https://x.com/souravbhar871/status/2115586452704886899",
+          "https://x.com/srpattison/status/2115590859835973689"
+        ]
+      },
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "organization"
+        ],
+        "concepts": [
+          "技術心智模型",
+          "代理工作分工"
+        ],
+        "outcome": "perspective"
+      }
+    },
+    {
+      "url": "https://x.com/Prathkum/status/2115557536510492845",
+      "title": "打字變容易後，軟體心智模型更重要嗎？",
+      "sourceDate": "2026-10-29",
+      "date": "2026-10-29",
+      "publishedAt": "2026-10-28T21:33:16.519Z",
+      "author": "Pratham",
+      "handle": "@Prathkum",
+      "excerpt": "The typing was the least interesting part of the job.",
+      "zh": "Pratham 引用 Thariq，將技術能力分為輸入程式、理解軟體如何組合、判斷該做什麼；他認為代理降低第一項成本，後兩項更重要。",
+      "topic": "trend",
+      "highLevel": true,
+      "checkedAt": "2026-10-29",
+      "caveat": "個人觀點；直接回覆有人追問：新手如果不再親手寫程式，心智模型要如何形成。未核對該問句的實證答案。",
+      "replyObservation": {
+        "count": 1,
+        "checkedAt": "2026-10-29",
+        "urls": [
+          "https://x.com/dusangran/status/2115558642950819947"
+        ]
+      },
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "education"
+        ],
+        "concepts": [
+          "技術心智模型"
+        ],
+        "outcome": "perspective"
+      }
+    },
+    {
+      "url": "https://x.com/Root_Logic_0/status/2115552794187055305",
+      "title": "讓不熟悉檔案與權限的人指揮代理，會發生什麼？",
+      "sourceDate": "2026-10-29",
+      "date": "2026-10-29",
+      "publishedAt": "2026-10-28T21:14:25.861Z",
+      "author": "Root Logic",
+      "handle": "@Root_Logic_0",
+      "excerpt": "Giving them an agent doesn’t magically promote them into the first.",
+      "zh": "Root Logic 引用 Thariq，提醒「不寫程式」仍可能懂檔案、權限、狀態與錯誤；若連這些概念也不熟，讓代理操作電腦會暴露新的監督落差。",
+      "topic": "trend",
+      "highLevel": true,
+      "checkedAt": "2026-10-29",
+      "caveat": "作者對使用能力的推論，未附使用者樣本或成效研究；10/29 原貼可見約 4,183 次觀看。",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "代理監督",
+          "技術心智模型"
+        ],
+        "outcome": "perspective"
+      }
+    },
+    {
+      "url": "https://x.com/dusangran/status/2115558642950819947",
+      "title": "新手不寫程式，如何建立軟體心智模型？",
+      "sourceDate": "2026-10-29",
+      "date": "2026-10-29",
+      "publishedAt": "2026-10-28T21:37:40.315Z",
+      "author": "Dusan",
+      "handle": "@dusangran",
+      "excerpt": "how does someone new build that mental model now",
+      "zh": "Dusan 回覆 Pratham：新手若不再親手寫程式，要如何建立辨識系統錯誤的心智模型？這是待研究的問題，貼文沒有方法或測試結果。",
+      "topic": "trend",
+      "highLevel": true,
+      "checkedAt": "2026-10-29",
+      "caveat": "只核對一則直接回覆；不將問句當成已驗證的教育研究。",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "education"
+        ],
+        "concepts": [
+          "技術心智模型"
+        ],
+        "outcome": "perspective"
+      }
+    },
     {
       "url": "https://x.com/celestepoasts/status/2103232383139057950",
       "title": "更早背景：Celeste 的 Claude 比較圖",
@@ -1420,6 +1578,113 @@
     }
   ],
   "news": [
+    {
+      "type": "功能與工具",
+      "sourceDate": "2026-10-28",
+      "date": "2026-10-28",
+      "title": "Gemini 4 Carbon 先向資安防禦者開放",
+      "lead": "Google 10/28 公布 Gemini 4 Carbon，強調長流程工程工作及找漏洞、驗證、修補的能力；本週先給少數受信任的資安防禦者測試，開發者與一般使用者尚未開放。",
+      "takeaways": [
+        "Google 公布 Carbon 在 SEC-bench Pro、ExploitGym 和 CWE-bench 的成績，分別對應找漏洞、驗證可利用性與修補。這些是不同測試，不能合成真實企業的修補成功率。",
+        "Google 稱內部團隊看到長時間工程任務與安全程式碼生成進步；未公布可供外部複查的完整內部工作樣本。",
+        "X 原貼及三則實質回覆可見：有人追問幻覺率、API 價格和既有 Argon 的使用限制。這些是局部反應，Carbon 尚未廣泛開放，沒有獨立使用成效。"
+      ],
+      "caveat": "已讀 Google 官方發布與 Sundar Pichai 原貼，抽查三則可見回覆；評測數字來自發布方，未重跑測試，也未推論全站討論風向。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "source": "Google",
+      "author": "Koray Kavukcuoglu",
+      "originalTitle": "Gemini 4 Carbon: our next frontier model",
+      "englishSummary": "Google announced Gemini 4 Carbon with stronger long-horizon engineering and cybersecurity benchmark scores. Access starts with selected cyber defenders; broader availability remains forthcoming.",
+      "topic": "feature",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "security"
+        ],
+        "concepts": [
+          "資安評測",
+          "長流程工程"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-29",
+      "followupQuestions": [
+        "受邀防禦者在真實程式庫找到的問題，有多少能通過人工驗證並修好？",
+        "官方評測與公開使用後的幻覺、誤報及修補品質會差多少？"
+      ]
+    },
+    {
+      "type": "功能與工具",
+      "sourceDate": "2026-10-28",
+      "date": "2026-10-28",
+      "title": "Google 開放 Connected Apps 開發者預覽",
+      "lead": "Google 10/28 推出 Connected Apps Platform 預覽，讓開發者將服務接進 Gemini 與 Google Search，並在送審前選擇要出現的產品。",
+      "takeaways": [
+        "開發者可用雲端 MCP server 或 Android MCP 的 AppFunctions 介接，再透過 Google Connected Console 註冊、測試與送審。",
+        "上線後可看流量、延遲和錯誤率；這是開發者管理資訊，不代表使用者已能在所有市場使用。",
+        "Google 表示目前 Search 與 Gemini 合計已有超過 50 個 Connected Apps，擴大開發者與市場仍分階段進行。"
+      ],
+      "caveat": "已讀 Google 原始公告；目前是分階段開放的預覽，本站未申請或測試接入，也沒有公開轉換成效。",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+      "source": "Google",
+      "author": "Chips Mistry、Mai Lowe",
+      "originalTitle": "Build and manage Connected Apps in one place",
+      "englishSummary": "Google introduced a preview platform for developers to build, test and submit apps for Search or Gemini. It supports cloud MCP and Android AppFunctions, with staged access and post-launch metrics.",
+      "topic": "feature",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow"
+        ],
+        "concepts": [
+          "Connected Apps",
+          "MCP 服務介接"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-29",
+      "followupQuestions": [
+        "開發者要怎麼讓一個服務同時接入 Search 與 Gemini？",
+        "使用者看到 App 並完成任務，平台能提供哪些可核對數據？"
+      ]
+    },
+    {
+      "type": "新聞與事件",
+      "sourceDate": "2026-10-26",
+      "date": "2026-10-26",
+      "title": "Cloudflare 復盤 AI 回覆混入其他客戶資料",
+      "lead": "Cloudflare 10/26 公布 GLM-5.3 Workers AI 的跨請求資料暴露事件：8/27 至 9/9 間，過長提示的 155 則回覆含有其他客戶請求內容。公司已在 9/9 修正並恢復服務。",
+      "takeaways": [
+        "模型宣稱可處理 1,048,576 tokens，當時的 prefill KV cache 池實際只能容納 681,280 tokens。超過容量的請求本應報錯，卻進入另一節點並讀到前次請求留下的快取頁。",
+        "Cloudflare 關閉模型後擴大快取池、修正被拒請求的處理流程，並用研究者的重現腳本與 canary 測試確認；後續與 SGLang 維護者合作上游修補。",
+        "Cloudflare 稱只有 GLM-5.3 受影響，未找到蓄意利用證據；155 是其識別到的受影響回覆數，不等於所有模型或客戶都外洩。"
+      ],
+      "caveat": "已讀 Cloudflare 事件復盤；影響範圍、修復與未見蓄意利用均為其調查結論，本站未獨立稽核客戶資料或重跑事故。原始事故發生於 8/27 至 9/9，10/26 是公開日期，本次 10/29 補讀。",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "source": "Cloudflare",
+      "author": "Kevin Flansburg、Michelle Chen",
+      "originalTitle": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+      "englishSummary": "Cloudflare disclosed that an undersized KV cache pool and an SGLang rejected-request bug caused 155 GLM-5.3 responses to include data from other requests between August 27 and September 9. The service was restored after configuration and engine fixes.",
+      "topic": "event",
+      "knowledge": {
+        "primary": "security",
+        "themes": [
+          "security",
+          "workflow"
+        ],
+        "concepts": [
+          "KV cache 隔離",
+          "跨請求資料暴露"
+        ],
+        "outcome": "failure"
+      },
+      "checkedAt": "2026-10-29",
+      "followupQuestions": [
+        "模型長上下文設定與實際快取容量為何沒有在上線前一起檢查？",
+        "修補後如何持續驗證不同客戶請求不會共享殘留資料？"
+      ]
+    },
     {
       "type": "功能與工具",
       "sourceDate": "2026-10-27",
@@ -6924,9 +7189,20 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-28T10:00:00+08:00",
-    "points": [],
-    "emptyMessage": "本次可核對來源尚無能確認落在過去 24 小時內的消息；X 動態未完成核對。"
+    "checkedAt": "2026-10-29T09:36:58+08:00",
+    "points": [
+      {
+        "text": "Thariq 在 X 提出技術人員與非技術使用者對代理的相反焦慮；已核對原貼、三則直接回覆與兩則引用。",
+        "url": "https://x.com/trq212/status/2115544056038350960",
+        "label": "查看原貼與回覆"
+      },
+      {
+        "text": "Google 公布 Gemini 4 Carbon，先向少數資安防禦者開放；X 原貼與局部回覆已核對。",
+        "url": "https://x.com/sundarpichai/status/2115489219804352921",
+        "label": "查看發布原貼"
+      }
+    ],
+    "emptyMessage": "目前沒有其他已核對的過去 24 小時社群消息。"
   },
   "knowledgeLibrary": [
     {
@@ -6967,10 +7243,10 @@
     }
   ],
   "socialTrends": {
-    "checkedAt": "2026-10-27",
+    "checkedAt": "2026-10-29",
     "windowStart": "2026-10-01",
-    "windowEnd": "2026-10-27",
-    "scope": "X 原貼、局部回覆與原始資料的議題整理；非全站熱度排名。",
+    "windowEnd": "2026-10-29",
+    "scope": "X 已登入頁的原貼、三則直接回覆、兩則引用及局部延伸追問；非全站聲量排名。原有歷史議題保留。",
     "items": [
       {
         "id": "php2shell",
@@ -7021,6 +7297,20 @@
         "urls": [
           "https://x.com/emollick/status/2110875851600633956",
           "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"
+        ]
+      },
+      {
+        "id": "coding-skill-gap",
+        "title": "代理讓寫程式更容易，軟體判斷能力怎麼學？",
+        "period": "10/29 台北時間核對",
+        "summary": "Thariq 提出技術與非技術使用者各有焦慮；Pratham 認為系統理解與選題判斷更重要，Root Logic 提醒代理操作電腦仍需監督檔案、權限和錯誤。直接回覆有人追問新手如何建立心智模型。",
+        "angle": "從具體工作問：誰提出需求、辨識錯誤、維護與驗收代理做出的工具？",
+        "limit": "原貼可見約 43.9 萬觀看、796 則回覆（10/29 約 09:45 台北時間）；本站只核對三則直接回覆、兩則引用及一則延伸追問。不能推論就業趨勢或全站立場。",
+        "urls": [
+          "https://x.com/trq212/status/2115544056038350960",
+          "https://x.com/Prathkum/status/2115557536510492845",
+          "https://x.com/Root_Logic_0/status/2115552794187055305",
+          "https://x.com/dusangran/status/2115558642950819947"
         ]
       }
     ]
@@ -7972,6 +8262,343 @@
           }
         ],
         "limit": "只核對官方發布，沒有獨立實測或第三方成效研究；X 熱門話題與留言尚未逐則核對，不能據此描述社群風向。"
+      },
+      {
+        "id": "gemini-carbon",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "lane": "feature",
+        "priority": -3,
+        "revision": "2026-10-29-carbon-1",
+        "updatedAt": "2026-10-29",
+        "title": "Gemini 4 Carbon 排名很高，為什麼現在還不能直接用？",
+        "intro": "Google 10/28 發表 Gemini 4 Carbon，展示長流程工程及資安評測成績；本週先向少數資安防禦者開放。X 上有人追問幻覺、價格和實際可用性。",
+        "trigger": {
+          "date": "10/28 發布・10/29 台北時間討論",
+          "text": "Google 官方公布 Carbon，Pichai 原貼在台北時間 10/29 凌晨發布；尚無廣泛使用後的獨立結果。",
+          "urls": [
+            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+            "https://x.com/sundarpichai/status/2115489219804352921"
+          ]
+        },
+        "questions": [
+          {
+            "id": "who-can-use",
+            "question": "都發布了，為什麼我現在還不能試？",
+            "answer": "Google 本週先給少數資安防禦者測試，再逐步擴到受信任夥伴。開發者、企業與一般使用者的開放時間只說「盡快」，沒有確定日期。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+            ],
+            "status": "supported",
+            "next": "受邀防禦者開始使用後，會公開哪些真實任務結果？"
+          },
+          {
+            "id": "what-tested",
+            "question": "那些資安分數到底測了什麼？",
+            "answer": "Google 列出三種測試：SEC-bench Pro 找漏洞 88.2%、ExploitGym 驗證可利用性 54.8%、CWE-bench 修補 71.0%。測試任務和評分各異；Google 的內部安全程式碼結果也尚未提供可獨立複查的完整樣本。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+            ],
+            "status": "partial",
+            "next": "在同一批實際漏洞上，從發現到修補有多少結果經人工驗證？"
+          },
+          {
+            "id": "benchmark-vs-use",
+            "question": "排名第一，使用時就不會亂說或修錯嗎？",
+            "answer": "目前不能這樣推論。Google 公布排行榜與內部測試，X 可見回覆有人質疑幻覺和既有模型配額；那是局部使用者疑慮。Carbon 尚未廣泛開放，缺少獨立的公開使用結果。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+              "https://x.com/sundarpichai/status/2115489219804352921"
+            ],
+            "status": "partial",
+            "next": "開放後能否用相同任務同時檢查正確率、誤報與修補後的回歸問題？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+            "label": "先讀：Google 的發布、評測與開放範圍",
+            "reason": "先分清楚測試成績、內部自述和目前誰能使用。",
+            "date": "2026-10-28",
+            "kind": "官方發布",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/sundarpichai/status/2115489219804352921",
+            "label": "再看：Pichai 原貼與局部回覆",
+            "reason": "看發布當下的說法，以及三則關於幻覺、價格和配額的追問；只代表抽查樣本。",
+            "date": "2026-10-29",
+            "kind": "X 原貼與局部回覆",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/28",
+            "text": "Google 發表 Carbon 與評測，先向選定資安防禦者開放。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+            ]
+          },
+          {
+            "date": "10/29 台北時間",
+            "text": "Pichai 在 X 發文；本站抽查三則實質回覆。",
+            "urls": [
+              "https://x.com/sundarpichai/status/2115489219804352921"
+            ]
+          }
+        ],
+        "limit": "評測與內部工作表現主要由 Google 公布；未取得 Carbon 廣泛使用後的獨立實測。X 僅抽查三則回覆，不代表全站立場。"
+      },
+      {
+        "id": "coding-skill-gap",
+        "url": "https://x.com/trq212/status/2115544056038350960",
+        "lane": "discussion",
+        "priority": -2,
+        "revision": "2026-10-29-coding-skills-1",
+        "updatedAt": "2026-10-29",
+        "title": "AI 會寫程式後，為什麼會寫與不會寫的人都焦慮？",
+        "intro": "Thariq 10/29 在 X 提出一個反差：技術人員擔心原有能力被代理削弱，非技術使用者卻希望自己更懂技術，好指揮代理。後續引用與回覆把問題推向軟體心智模型、維護與監督。",
+        "trigger": {
+          "date": "10/29 台北時間",
+          "text": "Thariq 原貼引出技術能力如何變化的討論；本站核對原貼、三則直接回覆與兩則引用，未以平台自動摘要代替原文。",
+          "urls": [
+            "https://x.com/trq212/status/2115544056038350960",
+            "https://x.com/Prathkum/status/2115557536510492845",
+            "https://x.com/Root_Logic_0/status/2115552794187055305"
+          ]
+        },
+        "questions": [
+          {
+            "id": "what-changes",
+            "question": "AI 會輸入程式後，工程師原本的本事還剩什麼？",
+            "answer": "Pratham 將技術工作拆成寫出程式、理解系統如何組合、判斷值得做什麼；他認為後兩項會更重要。這是作者的分析，尚無資料證明各類工程師的工作量或職位因此如何變化。",
+            "urls": [
+              "https://x.com/trq212/status/2115544056038350960",
+              "https://x.com/Prathkum/status/2115557536510492845"
+            ],
+            "status": "partial",
+            "next": "實際團隊中，需求定義、測試與維護的時間是否上升？"
+          },
+          {
+            "id": "nontechnical-gap",
+            "question": "不會寫程式的人，靠代理就能做出可維護的工具嗎？",
+            "answer": "Root Logic 指出，不寫程式的人仍需要理解檔案、權限、狀態與錯誤，才能監督會操作電腦的代理。Thariq 串內的直接回覆也提到產品經驗和後續維護；這些是局部經驗與推論。",
+            "urls": [
+              "https://x.com/trq212/status/2115544056038350960",
+              "https://x.com/Root_Logic_0/status/2115552794187055305"
+            ],
+            "status": "partial",
+            "next": "哪些非技術背景的團隊真的交付並維護了代理製作的工具？"
+          },
+          {
+            "id": "learning-model",
+            "question": "如果新手少寫程式，要怎麼建立判斷錯誤的能力？",
+            "answer": "Pratham 的直接回覆有人提出這個問題；目前讀到的貼文沒有提供經驗研究或可驗證的訓練方法。先保留為待查，不能把某種學習路徑當成已證實答案。",
+            "urls": [
+              "https://x.com/Prathkum/status/2115557536510492845"
+            ],
+            "status": "open",
+            "next": "找有任務、學習期間與成果評量的教學或團隊實驗。"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://x.com/trq212/status/2115544056038350960",
+            "label": "先讀：Thariq 提出的反差",
+            "reason": "先看討論起點及原作者補充，再把情緒觀察與職涯事實分開。",
+            "date": "2026-10-29",
+            "kind": "X 原貼與三則直接回覆",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/Prathkum/status/2115557536510492845",
+            "label": "再讀：Pratham 怎麼拆技術能力",
+            "reason": "把「會寫程式」拆成輸入、系統理解和選題判斷，並看新手學習的追問。",
+            "date": "2026-10-29",
+            "kind": "X 引用觀點",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/Root_Logic_0/status/2115552794187055305",
+            "label": "最後看：Root Logic 的監督提醒",
+            "reason": "補上非工程師使用代理時，對檔案、權限與錯誤的理解門檻。",
+            "date": "2026-10-29",
+            "kind": "X 引用觀點",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/dusangran/status/2115558642950819947",
+            "label": "延伸追問：新手怎麼養成心智模型",
+            "reason": "問題已由直接回覆提出，目前沒有可驗證的答案。",
+            "date": "2026-10-29",
+            "kind": "X 直接回覆",
+            "recommended": false
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/29 台北時間",
+            "text": "Thariq 發文；本站核對三則直接回覆及兩則引用，分開記錄觀點。",
+            "urls": [
+              "https://x.com/trq212/status/2115544056038350960",
+              "https://x.com/Prathkum/status/2115557536510492845",
+              "https://x.com/Root_Logic_0/status/2115552794187055305"
+            ]
+          }
+        ],
+        "limit": "僅核對指定原貼、三則直接回覆、兩則引用與一則追問；未做職涯調查，也不把局部討論當成整體就業趨勢。"
+      },
+      {
+        "id": "google-connected-apps",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+        "lane": "feature",
+        "priority": -1,
+        "revision": "2026-10-29-connected-apps-1",
+        "updatedAt": "2026-10-29",
+        "title": "Google Search 和 Gemini 都能接 App，開發者要怎麼加入？",
+        "intro": "Google 10/28 推出 Connected Apps Platform 預覽。開發者可把服務做成 Search 或 Gemini 裡可呼叫的 App，先經註冊、測試與審查；目前分階段開放。",
+        "trigger": {
+          "date": "10/28",
+          "text": "Google 公布單一開發者平台與分階段預覽，Search 與 Gemini 的 App 連接方式有新入口。",
+          "urls": [
+            "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "how-to-connect",
+            "question": "App 要怎麼進入 Google Search 或 Gemini？",
+            "answer": "開發者先整合雲端 MCP server，或透過 Android MCP 的 AppFunctions，接著在 Google Connected Console 註冊、測試、送審，並選擇 Search、Gemini 或兩者。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/"
+            ],
+            "status": "supported",
+            "next": "送審實際要求與可用市場會如何擴大？"
+          },
+          {
+            "id": "what-visible",
+            "question": "App 上線後，開發者能知道使用者真的做了什麼嗎？",
+            "answer": "Google 說 Console 可追蹤流量、延遲和錯誤率，也能管理品牌識別與登入帳號；公告未公開完整歸因或成交資料，不能把它當作新的 SEO 成效指標。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/"
+            ],
+            "status": "partial",
+            "next": "哪些互動、完成事件與轉換資料會提供給開發者？"
+          },
+          {
+            "id": "availability",
+            "question": "現在所有開發者都能上架嗎？",
+            "answer": "Google 說預覽先分階段開放，開發者可申請加入；更多開發者、市場與 Google 產品會逐步擴大。公告沒有各市場完整時間表。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/"
+            ],
+            "status": "supported",
+            "next": "台灣開發者何時可加入，Search 與 Gemini 的審查條件是否相同？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+            "label": "先讀：Google 官方開發者預覽公告",
+            "reason": "直接看介接方式、審查流程、可見指標與開放限制。",
+            "date": "2026-10-28",
+            "kind": "官方產品公告",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/28",
+            "text": "Google 公布 Connected Apps Platform 預覽。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/"
+            ]
+          }
+        ],
+        "limit": "只核對官方公告，本站未申請預覽或測試 App；尚無可歸因的第三方使用成效。"
+      },
+      {
+        "id": "cloudflare-kv-cache",
+        "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+        "lane": "event",
+        "priority": -1.5,
+        "revision": "2026-10-29-kv-cache-1",
+        "updatedAt": "2026-10-29",
+        "title": "AI 回覆混入別人的資料，是哪一段出錯？",
+        "intro": "Cloudflare 10/26 復盤 GLM-5.3 Workers AI 事故：8/27 至 9/9 間有 155 則長提示回覆混入其他客戶的內容。問題出在模型服務的快取容量設定與拒絕請求流程；9/9 已修復。",
+        "trigger": {
+          "date": "10/26 公開・10/29 補讀",
+          "text": "Cloudflare 公開事故機制、時間線和修補；原始暴露期間仍是 8/27 至 9/9。",
+          "urls": [
+            "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "how-leak",
+            "question": "明明是不同客戶的請求，資料怎麼會混進同一則回答？",
+            "answer": "Cloudflare 設定的模型上下文上限高於 prefill KV cache 池容量。超過容量的請求本應被拒絕，SGLang 的處理流程卻送出部分快取；decode 節點因此讀到其他請求留下的頁面，還回傳成功狀態。",
+            "urls": [
+              "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+            ],
+            "status": "supported",
+            "next": "其他分離式推論架構是否也有相同的拒絕流程？"
+          },
+          {
+            "id": "scope",
+            "question": "有多少人受影響，其他模型也有問題嗎？",
+            "answer": "Cloudflare 調查指出 GLM-5.3 在 8/27 至 9/9 間有 155 則受影響回覆，均涉及超過 681,280 tokens 的長提示；其稱其他 Workers AI 模型沒有觸及同一條失敗路徑，也未見蓄意利用證據。這是 Cloudflare 自行核查的範圍。",
+            "urls": [
+              "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+            ],
+            "status": "partial",
+            "next": "受影響客戶是否收到具體通知，以及獨立調查是否確認範圍？"
+          },
+          {
+            "id": "fix",
+            "question": "把快取池加大就夠了嗎？",
+            "answer": "Cloudflare 同時擴大池容量、修改被拒請求的流程，讓錯誤在快取轉移前終止；也與 SGLang 維護者做上游修補，並加入部署檢查。報告列出以研究者腳本和 canary 測試驗證當次修復。",
+            "urls": [
+              "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+            ],
+            "status": "supported",
+            "next": "容量、轉移完整性和跨租戶隔離測試能否在每次部署自動執行？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+            "label": "先讀：Cloudflare 的事故復盤與時間線",
+            "reason": "直接看錯誤落在哪段推論流程、識別到的範圍和修補驗證。",
+            "date": "2026-10-26",
+            "kind": "當事方技術復盤",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "8/27–9/9",
+            "text": "GLM-5.3 的部分長提示回覆混入其他客戶請求內容。",
+            "urls": [
+              "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+            ]
+          },
+          {
+            "date": "9/9",
+            "text": "Cloudflare 停用、修正設定與引擎，驗證後恢復服務。",
+            "urls": [
+              "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+            ]
+          },
+          {
+            "date": "10/26",
+            "text": "Cloudflare 與 SGLang 協調公開事故報告。",
+            "urls": [
+              "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+            ]
+          }
+        ],
+        "limit": "影響範圍與修補效果來自 Cloudflare 的事件調查；本站未取得客戶端獨立稽核。本次是補讀 10/26 公開報告，不列為 10/29 新發生的資料外洩。"
       }
     ],
     "history": [
