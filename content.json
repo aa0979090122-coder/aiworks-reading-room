@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-29",
+  "editionDate": "2026-10-30",
   "posts": [
     {
       "url": "https://x.com/sundarpichai/status/2115489219804352921",
@@ -1580,6 +1580,79 @@
   "news": [
     {
       "type": "功能與工具",
+      "sourceDate": "2026-10-29",
+      "date": "2026-10-29",
+      "title": "Gemini 現在能在聊天中直接編修文件",
+      "lead": "Google 10/29 讓使用者在 Gemini 對話中建立、預覽與編修文件。PDF 可在網頁和手機操作；Google 文件、試算表、簡報、Markdown、文字與程式碼目前限網頁版。",
+      "takeaways": [
+        "使用者可開啟全螢幕編輯器自行修改，也能選取部分內容，請 Gemini 只調整那一段。",
+        "Google 表示功能已在 Gemini App 可用的語言與地區向所有使用者開放；公告沒有逐項說明各格式的匯出、版本紀錄或協作差異。",
+        "官方示範用手寫課堂筆記製作 PDF 學習指南，屬產品操作示例，尚不足以判斷複雜文件的修改可靠度。"
+      ],
+      "caveat": "已讀 Google 官方公告；本站未實測各種檔案格式，也沒有將示範當作獨立成效。",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+      "source": "Google",
+      "author": "Google",
+      "originalTitle": "You can now generate, preview, and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini.",
+      "englishSummary": "Google introduced in-chat creation, preview and editing for files in Gemini. PDFs work on web and mobile; other listed formats currently work on web.",
+      "topic": "feature",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "文件編修",
+          "局部修改"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-30",
+      "followupQuestions": [
+        "局部選取修改時，其他段落與版面會不會受到影響？",
+        "不同檔案格式的匯出、版本紀錄與協作能力有哪些差異？"
+      ]
+    },
+    {
+      "type": "功能與工具",
+      "sourceDate": "2026-10-29",
+      "date": "2026-10-29",
+      "title": "Mistral Large 4 釋出可下載權重",
+      "lead": "Mistral 10/6 先開放 Large 4 API 預覽，10/29 釋出追加訓練後的模型權重。開發者可自行部署與調整模型，與只透過 API 使用相比，多了選擇運行環境的空間。",
+      "takeaways": [
+        "Mistral 稱新版在 Terminal-Bench 4.0 達 41%，比預覽版提高 13 個百分點；Artificial Analysis Coding Agent Index 為 48%，平均每題使用的 token 比其比較對象 GLM-5.3 少 47%。這些是指定評測，不等於實際團隊交付率。",
+        "官方提供模型權重、模型卡與自架選項；授權允許一般使用、修改與商用，但提供 Model-as-a-Service 的業者須另取得商業授權。",
+        "Booz Allen 等夥伴提供早期測試評語；完整技術報告仍待發布，本站沒有重跑評測或驗證夥伴部署成效。"
+      ],
+      "caveat": "10/29 是權重發布日，10/6 是預覽日。效能與夥伴經驗依 Mistral 公告；未把產品評測推成普遍企業成效。",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "source": "Mistral",
+      "author": "Mistral",
+      "originalTitle": "Mistral Large 4 (Le Chonk) is now open weight",
+      "englishSummary": "Mistral released updated Large 4 weights after an earlier API preview, with self-hosting options and reported coding and cybersecurity benchmark gains.",
+      "topic": "feature",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "開放權重",
+          "自行部署",
+          "模型評測"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-30",
+      "followupQuestions": [
+        "開放權重和可自行部署，對實際團隊的成本與維運工作改變多少？",
+        "官方評測之外，有沒有同任務的獨立測試與失敗案例？"
+      ]
+    },
+    {
+      "type": "功能與工具",
       "sourceDate": "2026-10-28",
       "date": "2026-10-28",
       "title": "Gemini 4 Carbon 先向資安防禦者開放",
@@ -1828,6 +1901,40 @@
       "followupQuestions": [
         "換成另一個藥廠的文件與作業標準，系統還能完整辨識每一頁嗎？",
         "持續使用後，人工複核是否仍能發現模型漏掉的問題？"
+      ]
+    },
+    {
+      "type": "功能與工具",
+      "sourceDate": "2026-10-06",
+      "date": "2026-10-06",
+      "title": "Mistral Large 4 先開放 API 預覽",
+      "lead": "Mistral 10/6 公布 Large 4 的 API 預覽版，當時預告月底釋出模型權重。此筆是 10/30 補讀的背景，原始發布日仍為 10/6。",
+      "takeaways": [
+        "預覽版可透過 Mistral Studio API 試用；可下載的新版權重於 10/29 另行發布。",
+        "官方公布程式、資安與企業任務評測；模型部署與實際工作結果仍須分開檢查。"
+      ],
+      "caveat": "此處只用於比較預覽與權重釋出的差別，不能列為 10/30 新消息。",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "source": "Mistral",
+      "author": "Mistral",
+      "originalTitle": "Introducing Mistral Large 4",
+      "englishSummary": "Mistral opened an API preview on October 6 and said it planned to release model weights later in the month.",
+      "topic": "feature",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "模型預覽",
+          "開放權重"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-30",
+      "followupQuestions": [
+        "10/29 權重釋出後，與預覽版有哪幾項實際差異？"
       ]
     },
     {
@@ -7189,20 +7296,9 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-29T09:36:58+08:00",
-    "points": [
-      {
-        "text": "Thariq 在 X 提出技術人員與非技術使用者對代理的相反焦慮；已核對原貼、三則直接回覆與兩則引用。",
-        "url": "https://x.com/trq212/status/2115544056038350960",
-        "label": "查看原貼與回覆"
-      },
-      {
-        "text": "Google 公布 Gemini 4 Carbon，先向少數資安防禦者開放；X 原貼與局部回覆已核對。",
-        "url": "https://x.com/sundarpichai/status/2115489219804352921",
-        "label": "查看發布原貼"
-      }
-    ],
-    "emptyMessage": "目前沒有其他已核對的過去 24 小時社群消息。"
+    "checkedAt": "2026-10-30T09:40:00+08:00",
+    "points": [],
+    "emptyMessage": "過去 24 小時的 X 追蹤動態只讀到局部樣本，尚未完成原貼與回覆核對；此處暫不列社群消息。"
   },
   "knowledgeLibrary": [
     {
@@ -7316,7 +7412,7 @@
     ]
   },
   "curiosity": {
-    "checkedAt": "2026-10-28T21:40:00+08:00",
+    "checkedAt": "2026-10-30",
     "topics": [
       {
         "id": "php2shell",
@@ -8599,6 +8695,161 @@
           }
         ],
         "limit": "影響範圍與修補效果來自 Cloudflare 的事件調查；本站未取得客戶端獨立稽核。本次是補讀 10/26 公開報告，不列為 10/29 新發生的資料外洩。"
+      },
+      {
+        "id": "gemini-file-editing",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+        "lane": "feature",
+        "priority": -4,
+        "revision": "2026-10-30-gemini-files-1",
+        "updatedAt": "2026-10-30",
+        "title": "Gemini 能直接改文件了，選一段修改會動到其他地方嗎？",
+        "intro": "Google 10/29 在 Gemini 加入檔案編輯器，能在聊天中建立、預覽和手動修改文件，也能選取一段請 AI 調整。PDF 支援網頁與手機，其他公告列出的格式目前限網頁版。",
+        "trigger": {
+          "date": "10/29 發布",
+          "text": "Google 開放對話內編修檔案，並示範選取局部內容後要求修改；實際複雜文件表現仍待測。",
+          "urls": [
+            "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "what-edit",
+            "question": "它可以改哪些檔案？",
+            "answer": "Google 列出 PDF、Google 文件、試算表、簡報、Markdown、TXT 和程式碼。PDF 預覽與編修可在網頁和手機使用，其他格式目前只在網頁版開放。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/"
+            ],
+            "status": "supported",
+            "next": "同一份檔案在手機與網頁間，能保留哪些編輯狀態？"
+          },
+          {
+            "id": "selected-change",
+            "question": "選取一小段請 AI 修改，其他內容會保持原樣嗎？",
+            "answer": "公告說可以反白文字，要求 Gemini 調整選取內容或視覺元素；沒有公布跨格式的局部修改測試結果。現在能確認的是操作方式，不能保證版面和其他段落完全不變。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/"
+            ],
+            "status": "partial",
+            "next": "用多頁 PDF、簡報和含公式的試算表，各做局部修改與版本比對。"
+          },
+          {
+            "id": "who-can-use",
+            "question": "需要付費或等候名額嗎？",
+            "answer": "Google 公告稱，凡 Gemini App 已提供服務的語言與地區，這些功能已向所有使用者開放；仍須依裝置與檔案格式看能否編修。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/"
+            ],
+            "status": "supported",
+            "next": "各格式的大小限制、匯出與協作規則是否相同？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+            "label": "先讀：Google 的功能與格式說明",
+            "reason": "直接核對支援格式、裝置差異及官方示範；尚未回答的可靠度留待實測。",
+            "date": "2026-10-29",
+            "kind": "官方產品公告",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/29",
+            "text": "Google 公告 Gemini 對話內檔案編修，PDF 與其他格式的裝置支援不同。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/"
+            ]
+          }
+        ],
+        "limit": "本站只核對官方公告，未登入實測；沒有將示範視為複雜文件局部修改的可靠度證據。"
+      },
+      {
+        "id": "mistral-large-4-weights",
+        "url": "https://mistral.ai/news/mistral-large-4-oss/",
+        "lane": "feature",
+        "priority": -3.5,
+        "revision": "2026-10-30-ml4-1",
+        "updatedAt": "2026-10-30",
+        "title": "Mistral Large 4 的權重開放了，現在能自己部署什麼？",
+        "intro": "Mistral 在 10/6 先開放 Large 4 API 預覽，10/29 釋出追加訓練後的模型權重。團隊現在能下載、調整並部署模型；官方也公布新版程式與資安評測。",
+        "trigger": {
+          "date": "10/29 權重釋出",
+          "text": "可下載權重與新版評測公開；10/6 的 API 預覽是較早的背景，不能當成今天的新發布。",
+          "urls": [
+            "https://mistral.ai/news/mistral-large-4-oss/",
+            "https://mistral.ai/news/mistral-large-4/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "what-changed",
+            "question": "10/6 已經發布，這次到底多了什麼？",
+            "answer": "10/6 可透過 API 試用預覽版；這次釋出追加訓練後的權重，可自行部署與調整。Mistral 另加入三種推理模式，讓使用者按任務在速度、成本與表現間選擇。",
+            "urls": [
+              "https://mistral.ai/news/mistral-large-4-oss/",
+              "https://mistral.ai/news/mistral-large-4/"
+            ],
+            "status": "supported",
+            "next": "不同模式在同一批實務任務的成本與品質差多少？"
+          },
+          {
+            "id": "really-open",
+            "question": "開放權重，任何商業服務都能直接用嗎？",
+            "answer": "官方說授權允許使用、修改、微調與一般商用，也可在自有基礎設施部署；若企業經營 Model-as-a-Service 服務，商用前須另取得 Mistral 授權。",
+            "urls": [
+              "https://mistral.ai/news/mistral-large-4-oss/"
+            ],
+            "status": "supported",
+            "next": "不同部署服務的商業模式，授權條件如何判定？"
+          },
+          {
+            "id": "benchmarks",
+            "question": "評測進步了，實際寫程式和找漏洞也會更好嗎？",
+            "answer": "Mistral 公布 Terminal-Bench 4.0 達 41%、比預覽版高 13 個百分點，並列出程式與資安測試。這些結果對應特定題組；夥伴提供初期測試評語，尚無足夠資料推算一般團隊的成功率。",
+            "urls": [
+              "https://mistral.ai/news/mistral-large-4-oss/"
+            ],
+            "status": "partial",
+            "next": "獨立團隊在相同程式庫上，能否複現品質、誤報與成本差異？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://mistral.ai/news/mistral-large-4-oss/",
+            "label": "先讀：Mistral 的權重發布與限制",
+            "reason": "核對新增的下載、自行部署、評測與授權條件。",
+            "date": "2026-10-29",
+            "kind": "官方發布",
+            "recommended": true
+          },
+          {
+            "url": "https://mistral.ai/news/mistral-large-4/",
+            "label": "再看：10/6 的預覽說明",
+            "reason": "比較預覽時已開放的功能，避免把舊能力誤寫成這次新增。",
+            "date": "2026-10-06",
+            "kind": "官方背景",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/6",
+            "text": "Mistral Large 4 開放 API 預覽，當時預告月底釋出權重。",
+            "urls": [
+              "https://mistral.ai/news/mistral-large-4/"
+            ]
+          },
+          {
+            "date": "10/29",
+            "text": "Mistral 釋出追加訓練後的權重、部署方式與新版評測。",
+            "urls": [
+              "https://mistral.ai/news/mistral-large-4-oss/"
+            ]
+          }
+        ],
+        "limit": "效能數字由 Mistral 發布，完整技術報告仍待公開；夥伴評語不能當成獨立部署成效。"
       }
     ],
     "history": [
