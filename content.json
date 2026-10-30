@@ -2,6 +2,32 @@
   "editionDate": "2026-10-30",
   "posts": [
     {
+      "url": "https://x.com/arena/status/2115495002998751262",
+      "title": "Arena 公布 Gemini 4 Carbon 的當次榜單排名",
+      "sourceDate": "2026-10-29",
+      "date": "2026-10-29",
+      "publishedAt": "2026-10-28T17:24:47.368Z",
+      "author": "Arena",
+      "handle": "@arena",
+      "excerpt": "Gemini 4 Carbon (High) ... #1 in Text Arena, #2 in Agent Arena, and #4 in Code Arena: WebDev.",
+      "zh": "Arena 10/29 台北時間在 X 公布 Carbon（High）當時的三榜名次；這是榜單快照，不代表一般使用時的錯誤率。",
+      "topic": "feature",
+      "highLevel": true,
+      "checkedAt": "2026-10-30",
+      "caveat": "13:40 左右在登入的 X 追蹤動態核對原貼摘要，當時可見 81 則回覆、約 25.7 萬觀看；未逐則核對回覆，也未將數字視為全站熱度排名。",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation"
+        ],
+        "concepts": [
+          "公開榜單",
+          "模型排名"
+        ],
+        "outcome": "update"
+      }
+    },
+    {
       "url": "https://x.com/sundarpichai/status/2115489219804352921",
       "title": "Sundar Pichai 公布 Gemini 4 Carbon",
       "sourceDate": "2026-10-29",
@@ -1685,6 +1711,49 @@
       "followupQuestions": [
         "受邀防禦者在真實程式庫找到的問題，有多少能通過人工驗證並修好？",
         "官方評測與公開使用後的幻覺、誤報及修補品質會差多少？"
+      ]
+    },
+    {
+      "type": "功能與工具 · 評測後續",
+      "sourceDate": "2026-10-28",
+      "date": "2026-10-28",
+      "title": "Arena 公布 Gemini 4 Carbon 的公開榜單結果",
+      "lead": "Arena 在 10/28 將 Carbon（High）加入文字、Agent 與網頁開發榜單；10/29 的原貼列出當時分別為第 1、2、4 名。",
+      "takeaways": [
+        "Carbon（High）進入文字、Agent 與網頁開發榜單；Arena 的 10/29 台北時間原貼分別報告第 1、2、4 名。",
+        "三個榜單測不同任務，名次會隨後續評測變動；它們無法直接回答幻覺率、資安修補品質或一般使用者何時能試用。"
+      ],
+      "caveat": "已讀 Arena 官方更新紀錄及登入 X 追蹤動態中的原貼；原貼回覆未逐則核對。當次排名是變動中的榜單快照。",
+      "url": "https://arena.ai/company/leaderboard-changelog",
+      "source": "Arena",
+      "author": "Arena",
+      "originalTitle": "Leaderboard Changelog",
+      "englishSummary": "Arena added Gemini 4 Carbon (High) to its Text, Agent and Code Arena WebDev leaderboards on October 28. Its October 29 Taipei-time post reported ranks of first, second and fourth at that moment.",
+      "topic": "feature",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation"
+        ],
+        "concepts": [
+          "公開榜單",
+          "排名不確定性"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-30",
+      "followupQuestions": [
+        "Carbon 廣泛開放後，公開榜單名次與實際任務錯誤率是否一致？"
+      ],
+      "sources": [
+        {
+          "label": "Arena 榜單更新紀錄",
+          "url": "https://arena.ai/company/leaderboard-changelog"
+        },
+        {
+          "label": "Arena X 原貼",
+          "url": "https://x.com/arena/status/2115495002998751262"
+        }
       ]
     },
     {
@@ -7412,7 +7481,7 @@
     ]
   },
   "curiosity": {
-    "checkedAt": "2026-10-30",
+    "checkedAt": "2026-10-30T13:48:00+08:00",
     "topics": [
       {
         "id": "php2shell",
@@ -8364,16 +8433,16 @@
         "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
         "lane": "feature",
         "priority": -3,
-        "revision": "2026-10-29-carbon-1",
-        "updatedAt": "2026-10-29",
+        "revision": "2026-10-30-carbon-2",
+        "updatedAt": "2026-10-30",
         "title": "Gemini 4 Carbon 排名很高，為什麼現在還不能直接用？",
         "intro": "Google 10/28 發表 Gemini 4 Carbon，展示長流程工程及資安評測成績；本週先向少數資安防禦者開放。X 上有人追問幻覺、價格和實際可用性。",
         "trigger": {
-          "date": "10/28 發布・10/29 台北時間討論",
-          "text": "Google 官方公布 Carbon，Pichai 原貼在台北時間 10/29 凌晨發布；尚無廣泛使用後的獨立結果。",
+          "date": "10/28 發表・10/29 台北時間榜單後續",
+          "text": "Google 先公布 Carbon 與分階段開放；Arena 隨後加入三個公開榜單。文字榜單當次排名仍標為初步結果。",
           "urls": [
             "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-            "https://x.com/sundarpichai/status/2115489219804352921"
+            "https://arena.ai/company/leaderboard-changelog"
           ]
         },
         "questions": [
@@ -8400,13 +8469,14 @@
           {
             "id": "benchmark-vs-use",
             "question": "排名第一，使用時就不會亂說或修錯嗎？",
-            "answer": "目前不能這樣推論。Google 公布排行榜與內部測試，X 可見回覆有人質疑幻覺和既有模型配額；那是局部使用者疑慮。Carbon 尚未廣泛開放，缺少獨立的公開使用結果。",
+            "answer": "Arena 10/28 將 Carbon（High）加入三個公開榜單，10/29 台北時間的原貼報告當時在文字、Agent、網頁開發榜單分別為第 1、2、4 名。這是不同任務的榜單快照；Carbon 尚未廣泛開放，無法據此判定日常使用會不會亂說或修錯。",
             "urls": [
               "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-              "https://x.com/sundarpichai/status/2115489219804352921"
+              "https://x.com/arena/status/2115495002998751262",
+              "https://arena.ai/company/leaderboard-changelog"
             ],
             "status": "partial",
-            "next": "開放後能否用相同任務同時檢查正確率、誤報與修補後的回歸問題？"
+            "next": "開放後能否用同一批任務同時檢查正確率、誤報與修補後的回歸問題？"
           }
         ],
         "sources": [
@@ -8419,8 +8489,24 @@
             "recommended": true
           },
           {
+            "url": "https://x.com/arena/status/2115495002998751262",
+            "label": "再看：Arena 當次榜單排名",
+            "reason": "看到三種任務的當時名次，並留意名次會隨評測更新。",
+            "date": "2026-10-29",
+            "kind": "評測平台 X 原貼",
+            "recommended": true
+          },
+          {
+            "url": "https://arena.ai/company/leaderboard-changelog",
+            "label": "其他來源：Arena 榜單更新紀錄",
+            "reason": "核對 Carbon 何時進入三個榜單。",
+            "date": "2026-10-28",
+            "kind": "評測平台更新紀錄",
+            "recommended": false
+          },
+          {
             "url": "https://x.com/sundarpichai/status/2115489219804352921",
-            "label": "再看：Pichai 原貼與局部回覆",
+            "label": "接著看：Pichai 原貼與局部回覆",
             "reason": "看發布當下的說法，以及三則關於幻覺、價格和配額的追問；只代表抽查樣本。",
             "date": "2026-10-29",
             "kind": "X 原貼與局部回覆",
@@ -8441,9 +8527,17 @@
             "urls": [
               "https://x.com/sundarpichai/status/2115489219804352921"
             ]
+          },
+          {
+            "date": "10/28–10/29",
+            "text": "Arena 加入三個榜單；10/29 台北時間的原貼報告當時排名，文字榜單仍屬初步結果。",
+            "urls": [
+              "https://arena.ai/company/leaderboard-changelog",
+              "https://x.com/arena/status/2115495002998751262"
+            ]
           }
         ],
-        "limit": "評測與內部工作表現主要由 Google 公布；未取得 Carbon 廣泛使用後的獨立實測。X 僅抽查三則回覆，不代表全站立場。"
+        "limit": "Google 內部測試與 Arena 公開榜單衡量的任務不同。Arena 名次會隨樣本更新；尚無 Carbon 廣泛使用後的獨立實測。Pichai 原貼只抽查三則回覆，Arena 原貼回覆尚未核對。"
       },
       {
         "id": "coding-skill-gap",
@@ -9263,6 +9357,92 @@
           }
         ],
         "limit": "已讀官方研究說明，尚未逐頁核對論文。實驗刻意放大 Agent 傾向；86% 不能外推為所有專家的日常比例。"
+      },
+      {
+        "id": "gemini-carbon",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "lane": "feature",
+        "priority": -3,
+        "revision": "2026-10-29-carbon-1",
+        "updatedAt": "2026-10-29",
+        "title": "Gemini 4 Carbon 排名很高，為什麼現在還不能直接用？",
+        "intro": "Google 10/28 發表 Gemini 4 Carbon，展示長流程工程及資安評測成績；本週先向少數資安防禦者開放。X 上有人追問幻覺、價格和實際可用性。",
+        "trigger": {
+          "date": "10/28 發布・10/29 台北時間討論",
+          "text": "Google 官方公布 Carbon，Pichai 原貼在台北時間 10/29 凌晨發布；尚無廣泛使用後的獨立結果。",
+          "urls": [
+            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+            "https://x.com/sundarpichai/status/2115489219804352921"
+          ]
+        },
+        "questions": [
+          {
+            "id": "who-can-use",
+            "question": "都發布了，為什麼我現在還不能試？",
+            "answer": "Google 本週先給少數資安防禦者測試，再逐步擴到受信任夥伴。開發者、企業與一般使用者的開放時間只說「盡快」，沒有確定日期。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+            ],
+            "status": "supported",
+            "next": "受邀防禦者開始使用後，會公開哪些真實任務結果？"
+          },
+          {
+            "id": "what-tested",
+            "question": "那些資安分數到底測了什麼？",
+            "answer": "Google 列出三種測試：SEC-bench Pro 找漏洞 88.2%、ExploitGym 驗證可利用性 54.8%、CWE-bench 修補 71.0%。測試任務和評分各異；Google 的內部安全程式碼結果也尚未提供可獨立複查的完整樣本。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+            ],
+            "status": "partial",
+            "next": "在同一批實際漏洞上，從發現到修補有多少結果經人工驗證？"
+          },
+          {
+            "id": "benchmark-vs-use",
+            "question": "排名第一，使用時就不會亂說或修錯嗎？",
+            "answer": "目前不能這樣推論。Google 公布排行榜與內部測試，X 可見回覆有人質疑幻覺和既有模型配額；那是局部使用者疑慮。Carbon 尚未廣泛開放，缺少獨立的公開使用結果。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+              "https://x.com/sundarpichai/status/2115489219804352921"
+            ],
+            "status": "partial",
+            "next": "開放後能否用相同任務同時檢查正確率、誤報與修補後的回歸問題？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+            "label": "先讀：Google 的發布、評測與開放範圍",
+            "reason": "先分清楚測試成績、內部自述和目前誰能使用。",
+            "date": "2026-10-28",
+            "kind": "官方發布",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/sundarpichai/status/2115489219804352921",
+            "label": "再看：Pichai 原貼與局部回覆",
+            "reason": "看發布當下的說法，以及三則關於幻覺、價格和配額的追問；只代表抽查樣本。",
+            "date": "2026-10-29",
+            "kind": "X 原貼與局部回覆",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/28",
+            "text": "Google 發表 Carbon 與評測，先向選定資安防禦者開放。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+            ]
+          },
+          {
+            "date": "10/29 台北時間",
+            "text": "Pichai 在 X 發文；本站抽查三則實質回覆。",
+            "urls": [
+              "https://x.com/sundarpichai/status/2115489219804352921"
+            ]
+          }
+        ],
+        "limit": "評測與內部工作表現主要由 Google 公布；未取得 Carbon 廣泛使用後的獨立實測。X 僅抽查三則回覆，不代表全站立場。"
       }
     ],
     "maxVisible": 3
