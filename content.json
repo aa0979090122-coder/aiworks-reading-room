@@ -2,6 +2,45 @@
   "editionDate": "2026-10-30",
   "posts": [
     {
+      "url": "https://x.com/MistralAI/status/2115443720371814478",
+      "title": "Mistral 開放 Responses API 公測，代理的工具呼叫可逐項處理",
+      "sourceDate": "2026-10-28",
+      "date": "2026-10-28",
+      "publishedAt": "2026-10-28T14:01:00Z",
+      "author": "Mistral AI",
+      "handle": "@MistralAI",
+      "excerpt": "Today, we’re introducing the Responses API in public preview, made for building agents on Mistral.",
+      "zh": "Mistral 10/28 開放 Responses API 公測，沿用 OpenAI Responses 格式，把回答、推理與工具呼叫分成獨立項目。官方文件說明可輸入文字、圖片和檔案，也支援函式呼叫與串流；目前每次請求仍要由應用程式重送所需的對話歷史。",
+      "topic": "feature",
+      "checkedAt": "2026-10-30",
+      "evidenceUrl": "https://docs.mistral.ai/studio/conversations/responses",
+      "evidenceLabel": "Mistral Responses API 官方文件",
+      "caveat": "10/30 晚間在登入的 X 核對原貼，當時可見 137 則回覆、約 4.99 萬次觀看；僅抽查三則實質回覆，不能推論整體反應。官方文件說明格式與支援功能，本站沒有測試既有程式的移轉成本。",
+      "replyObservation": {
+        "count": 3,
+        "checkedAt": "2026-10-30",
+        "summary": "可見回覆分別追問現有代理程式的相容程度、工具呼叫的串流時機，以及重送歷史可能增加的成本；都尚未提供可核對的移轉或費用測試。",
+        "urls": [
+          "https://x.com/Soup_Oracle/status/2115452667237392822",
+          "https://x.com/hyperkrypt/status/2115447345387081999",
+          "https://x.com/CodeByNZ/status/2115448508538900674"
+        ]
+      },
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "Responses API",
+          "工具呼叫",
+          "對話歷史"
+        ],
+        "outcome": "update"
+      }
+    },
+    {
       "url": "https://x.com/arena/status/2115495002998751262",
       "title": "Arena 公布 Gemini 4 Carbon 的當次榜單排名",
       "sourceDate": "2026-10-29",
@@ -7481,7 +7520,7 @@
     ]
   },
   "curiosity": {
-    "checkedAt": "2026-10-30T13:43:00+08:00",
+    "checkedAt": "2026-10-30T18:39:49+08:00",
     "topics": [
       {
         "id": "php2shell",
@@ -8944,6 +8983,82 @@
           }
         ],
         "limit": "效能數字由 Mistral 發布，完整技術報告仍待公開；夥伴評語不能當成獨立部署成效。"
+      },
+      {
+        "id": "mistral-responses-api",
+        "url": "https://x.com/MistralAI/status/2115443720371814478",
+        "lane": "feature",
+        "priority": -3.6,
+        "revision": "2026-10-30-responses-1",
+        "updatedAt": "2026-10-30",
+        "title": "Mistral 的 Responses API 能讓現有 Agent 直接換模型嗎？",
+        "intro": "Mistral 10/28 開放 Responses API 公測，沿用 OpenAI Responses 格式。回答、推理與工具呼叫會分成獨立項目；現有代理程式能否順利轉接，還要看它用了哪些欄位和對話保存方式。",
+        "trigger": {
+          "date": "10/28 公測公告",
+          "text": "Mistral 公布新的 API 格式和官方文件。這是 10/30 補讀的消息，原始發布日仍是 10/28。",
+          "urls": [
+            "https://x.com/MistralAI/status/2115443720371814478"
+          ]
+        },
+        "questions": [
+          {
+            "id": "migration",
+            "question": "既有 Agent 只換 API 網址，就能接上嗎？",
+            "answer": "Mistral 官方文件說它採用 OpenAI Responses 格式，支援文字、圖片、檔案、結構化輸出、串流與函式呼叫。但預覽版只支援部分欄位，對話歷史仍由應用程式自行保存；現有程式能否直接移轉，須逐項核對使用的參數和工具流程。",
+            "urls": [
+              "https://x.com/MistralAI/status/2115443720371814478"
+            ],
+            "status": "partial",
+            "next": "有哪些現成的 Agent 專案公開了轉接測試與需要改寫的程式碼？"
+          },
+          {
+            "id": "separate-items",
+            "question": "回答和工具呼叫拆開，實際有什麼用？",
+            "answer": "官方格式把模型回覆、推理和函式呼叫列成不同輸出項目，應用程式可分別處理。可見回覆有人認為這有助於追查代理在哪一步出錯；這是開發者推論，本站沒有測試除錯時間。",
+            "urls": [
+              "https://x.com/MistralAI/status/2115443720371814478"
+            ],
+            "status": "partial",
+            "next": "同一個失敗任務改用新格式後，查出錯誤的時間是否真的縮短？"
+          },
+          {
+            "id": "stateless-cost",
+            "question": "每次都重送對話，費用會不會增加？",
+            "answer": "官方文件明說預覽版無狀態；應用程式要把先前訊息與輸出項目放回下一次請求。X 上有人擔心 token 用量，卻沒有提供同任務的費用比較。成本仍須看歷史長度、模型價格與實際請求。",
+            "urls": [
+              "https://x.com/MistralAI/status/2115443720371814478"
+            ],
+            "status": "partial",
+            "next": "長對話與多次工具呼叫下，每項任務實際送出多少 token？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://x.com/MistralAI/status/2115443720371814478",
+            "label": "先讀：Mistral 10/28 原貼與官方文件",
+            "reason": "看公測公告，再從素材裡的官方文件核對支援欄位與無狀態限制；回覆只取三則局部樣本。",
+            "date": "2026-10-28",
+            "kind": "X 官方原貼與技術文件",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/28",
+            "text": "Mistral 在 X 公布 Responses API 公測，並連到官方文件。",
+            "urls": [
+              "https://x.com/MistralAI/status/2115443720371814478"
+            ]
+          },
+          {
+            "date": "10/30 核對",
+            "text": "本站抽查三則原貼回覆，問題集中在移轉相容、工具串流與歷史用量；尚無可核對的效能測試。",
+            "urls": [
+              "https://x.com/MistralAI/status/2115443720371814478"
+            ]
+          }
+        ],
+        "limit": "API 仍在公測；官方文件可核對格式與目前支援範圍，沒有實測移轉成本。X 只抽查三則實質回覆，不代表全部討論。"
       }
     ],
     "history": [
