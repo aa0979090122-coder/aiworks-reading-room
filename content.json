@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-10-30",
+  "editionDate": "2026-10-31",
   "posts": [
     {
       "url": "https://x.com/MistralAI/status/2115443720371814478",
@@ -1643,6 +1643,138 @@
     }
   ],
   "news": [
+    {
+      "type": "新聞與事件",
+      "sourceDate": "2026-10-30",
+      "date": "2026-10-30",
+      "title": "共同 AI 訓練偏好訊號仍是 IETF 個人草案",
+      "lead": "草案建議網站在 robots.txt 用 __usage_ai-training 指定哪些路徑可供生成式 AI 訓練。這是 10/30 提交的個人草案，尚非標準。",
+      "takeaways": [
+        "草案沿用 Allow 和 Disallow；訓練偏好與爬蟲能否讀取是兩件事。"
+      ],
+      "caveat": "10/31 補讀原始文件；保留 10/30 原始日期，不把計畫寫成已實作。",
+      "url": "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+      "source": "IETF Datatracker",
+      "author": "Kevin Kelley（Anthropic）",
+      "originalTitle": "Machine-Readable Training Preference Signal",
+      "englishSummary": "The individual Internet-Draft proposes a shared robots.txt policy token for AI training preferences. It has no formal IETF standing.",
+      "topic": "event",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "market"
+        ],
+        "concepts": [
+          "AI 訓練偏好",
+          "robots.txt"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-31",
+      "followupQuestions": [
+        "共同訊號實際上線後，網站如何核對各業者的處理方式？"
+      ]
+    },
+    {
+      "type": "新聞與事件",
+      "sourceDate": "2026-10-30",
+      "date": "2026-10-30",
+      "title": "OpenAI 計畫支援共同 AI 訓練偏好訊號",
+      "lead": "OpenAI 10/30 表示會支援共同 robots.txt 訊號，預計未來數月實作，既有爬蟲控制仍會保留。",
+      "takeaways": [
+        "公告沒有確切實作日期；目前不能視為已全面生效。"
+      ],
+      "caveat": "10/31 補讀原始文件；保留 10/30 原始日期，不把計畫寫成已實作。",
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+      "source": "OpenAI",
+      "author": "OpenAI",
+      "originalTitle": "Making it easier for websites to express AI training preferences",
+      "englishSummary": "OpenAI plans to honor the shared training preference in the coming months while retaining existing crawler controls.",
+      "topic": "event",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "market"
+        ],
+        "concepts": [
+          "AI 訓練偏好",
+          "robots.txt"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-31",
+      "followupQuestions": [
+        "共同訊號實際上線後，網站如何核對各業者的處理方式？"
+      ]
+    },
+    {
+      "type": "新聞與事件",
+      "sourceDate": "2026-10-30",
+      "date": "2026-10-30",
+      "title": "Google 計畫在 2027 年支援共同 AI 訓練偏好",
+      "lead": "Google 說共同訊號會與 Google-Extended 並行；若未明訂 Google-Extended，計畫把共同的拒絕訓練偏好視同封鎖 Google-Extended。",
+      "takeaways": [
+        "這是預計行為，還沒有實際上線結果。"
+      ],
+      "caveat": "10/31 補讀原始文件；保留 10/30 原始日期，不把計畫寫成已實作。",
+      "url": "https://developers.google.cn/search/blog/2026/10/ai-training-control",
+      "source": "Google Search Central",
+      "author": "John Mueller",
+      "originalTitle": "Supporting a shared AI training control for websites",
+      "englishSummary": "Google plans support in 2027 and describes how the new signal will interact with Google-Extended.",
+      "topic": "event",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "market"
+        ],
+        "concepts": [
+          "AI 訓練偏好",
+          "robots.txt"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-31",
+      "followupQuestions": [
+        "共同訊號實際上線後，網站如何核對各業者的處理方式？"
+      ]
+    },
+    {
+      "type": "新聞與事件",
+      "sourceDate": "2026-10-30",
+      "date": "2026-10-30",
+      "title": "Microsoft 將 AI 訓練與回答引用分開設定",
+      "lead": "Microsoft 10/30 宣布支援共同訓練偏好，另提供逐頁的 AI 回答引用偏好；預計 2027/2/1 起隨爬取生效。",
+      "takeaways": [
+        "設定不保證曝光、流量或付款；實際生效仍待爬取。"
+      ],
+      "caveat": "10/31 補讀原始文件；保留 10/30 原始日期，不把計畫寫成已實作。",
+      "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+      "source": "Microsoft Bing Blog",
+      "author": "Krishna Madhavan",
+      "originalTitle": "Your content, your choice: clearer preferences for training and grounding",
+      "englishSummary": "Microsoft separates AI training and grounding preferences and plans to honor the new controls from February 1, 2027 as it recrawls pages.",
+      "topic": "event",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "market"
+        ],
+        "concepts": [
+          "AI 訓練偏好",
+          "robots.txt"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-31",
+      "followupQuestions": [
+        "共同訊號實際上線後，網站如何核對各業者的處理方式？"
+      ]
+    },
     {
       "type": "功能與工具",
       "sourceDate": "2026-10-29",
@@ -7404,9 +7536,9 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-30T09:36:08+08:00",
+    "checkedAt": "2026-10-31T15:00:18+08:00",
     "points": [],
-    "emptyMessage": "過去 24 小時的 X 追蹤動態只讀到局部樣本，尚未完成原貼與回覆核對；此處暫不列社群消息。"
+    "emptyMessage": "X 追蹤動態與回覆尚未完成核對，本期暫不列社群即時消息；10/30 的網站偏好公告依原始日期列於新聞。"
   },
   "knowledgeLibrary": [
     {
@@ -9059,6 +9191,119 @@
           }
         ],
         "limit": "API 仍在公測；官方文件可核對格式與目前支援範圍，沒有實測移轉成本。X 只抽查三則實質回覆，不代表全部討論。"
+      },
+      {
+        "id": "ai-training-preferences",
+        "url": "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+        "lane": "event",
+        "priority": -4.2,
+        "revision": "2026-10-31-training-preference-1",
+        "updatedAt": "2026-10-31",
+        "title": "網站寫一次 robots.txt，AI 公司就都不拿來訓練嗎？",
+        "intro": "10/30 出現一份共同的 AI 訓練偏好草案；OpenAI、Google 和 Microsoft 同日公布支援計畫。網站可用 robots.txt 表達哪些頁面不供生成式 AI 訓練。草案尚非標準，業者也還未全面實作。",
+        "trigger": {
+          "date": "10/30 草案與三家公告",
+          "text": "IETF 個人草案與三家公司的原始公告同日發布；本站 10/31 補讀。",
+          "urls": [
+            "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+            "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+            "https://developers.google.cn/search/blog/2026/10/ai-training-control",
+            "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "scope",
+            "question": "這個訊號會阻止爬蟲讀網頁嗎？",
+            "answer": "草案用 __usage_ai-training 表達內容是否可用於生成式 AI 訓練，與爬蟲讀取規則分開；尚未採用的業者也不受這個訊號約束。",
+            "status": "supported",
+            "urls": [
+              "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/"
+            ],
+            "next": "各業者實際上線後，如何核對它們是否遵循？"
+          },
+          {
+            "id": "timing",
+            "question": "三家公司現在都已經照做了嗎？",
+            "answer": "OpenAI 說未來數月實作，Google 以 2027 年為目標，Microsoft 計畫 2027/2/1 起隨爬取套用。這些是公告與計畫，還不是全面生效的功能。",
+            "status": "supported",
+            "urls": [
+              "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+              "https://developers.google.cn/search/blog/2026/10/ai-training-control",
+              "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/"
+            ],
+            "next": "實際上線日期與技術細節會怎麼公布？"
+          },
+          {
+            "id": "discovery",
+            "question": "不給訓練，還能出現在搜尋和 AI 回答嗎？",
+            "answer": "草案把訓練偏好與爬取分開。Microsoft 另有逐頁的回答引用設定，並說傳統 Bing 搜尋資格不因訓練偏好改變；Google 的共同訊號可能連動 Google-Extended。不同產品需分別核對，實際流量影響仍待查。",
+            "status": "partial",
+            "urls": [
+              "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+              "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+              "https://developers.google.cn/search/blog/2026/10/ai-training-control"
+            ],
+            "next": "採用設定後，各平台的搜尋收錄和 AI 回答引用有何可量測變化？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+            "label": "先讀：IETF 草案",
+            "reason": "釐清訊號做什麼，以及草案目前的地位。",
+            "date": "2026-10-30",
+            "kind": "IETF 個人草案",
+            "recommended": true
+          },
+          {
+            "url": "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/",
+            "label": "接著讀：Microsoft 實作計畫",
+            "reason": "對照訓練與回答引用兩種偏好及生效時間。",
+            "date": "2026-10-30",
+            "kind": "公司原始公告",
+            "recommended": true
+          },
+          {
+            "url": "https://developers.google.cn/search/blog/2026/10/ai-training-control",
+            "label": "最後讀：Google 的現有控制",
+            "reason": "看共同訊號與 Google-Extended 如何並行。",
+            "date": "2026-10-30",
+            "kind": "公司原始公告",
+            "recommended": true
+          },
+          {
+            "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+            "label": "其他來源：OpenAI 公告",
+            "reason": "核對其承諾與尚未公布的實作日期。",
+            "date": "2026-10-30",
+            "kind": "公司原始公告",
+            "recommended": false
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/30",
+            "text": "IETF 收錄個人草案，三家公司分別公布支援計畫。",
+            "urls": [
+              "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+              "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+              "https://developers.google.cn/search/blog/2026/10/ai-training-control",
+              "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/"
+            ]
+          },
+          {
+            "date": "10/31 核對",
+            "text": "本站補讀原始文件；尚未驗證任何業者的實際實作。",
+            "urls": [
+              "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/",
+              "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+              "https://developers.google.cn/search/blog/2026/10/ai-training-control",
+              "https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/"
+            ]
+          }
+        ],
+        "limit": "原始文件可核對提案與計畫；草案可能更動，實際遵循、搜尋與流量影響仍待查。未核對 X 或 LinkedIn 回覆。"
       }
     ],
     "history": [
