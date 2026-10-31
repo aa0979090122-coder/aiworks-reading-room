@@ -2,6 +2,105 @@
   "editionDate": "2026-10-31",
   "posts": [
     {
+      "url": "https://x.com/cursor_ai/status/2116074289053175808",
+      "title": "Cursor 通報 Claude Code 擴充功能遭竄改",
+      "sourceDate": "2026-10-30",
+      "date": "2026-10-30",
+      "publishedAt": "2026-10-30T07:46:39Z",
+      "author": "Cursor",
+      "handle": "@cursor_ai",
+      "excerpt": "We identified a security incident affecting a modified Claude Code VS Code extension.",
+      "zh": "Cursor 表示，其 VS Code 擴充功能市集曾提供遭竄改的 Claude Code 擴充功能，估計最多 5,000 名使用者可能接觸。市集已暫停、檢查其他套件並恢復；受影響者仍需依官方說明檢查主機，單純更新擴充功能可能無法移除持續執行的程式。",
+      "topic": "event",
+      "highLevel": true,
+      "checkedAt": "2026-10-31",
+      "evidenceUrl": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "evidenceLabel": "Cursor 事件說明與處置步驟",
+      "caveat": "10/31 約 18:35 台北時間，原貼可見約 504 則回覆、118 萬觀看。本站抽查四則實質回覆，主要追問發布權限、影響範圍及擴充功能市集檢查；這是局部樣本，不能推論全站看法。",
+      "replyObservation": {
+        "count": 4,
+        "checkedAt": "2026-10-31",
+        "summary": "兩則追問竄改版如何出現在官方名稱下，一則問是否只影響 Cursor 使用者，一則主張市集應強化套件審查；最後一則是評論，未提供獨立事故證據。",
+        "urls": [
+          "https://x.com/FrankDNYC77/status/2116134362236248523",
+          "https://x.com/indie_alx/status/2116079269768208845",
+          "https://x.com/janushelgi/status/2116106468546036170",
+          "https://x.com/teedubya/status/2116111555259727885"
+        ]
+      },
+      "knowledge": {
+        "primary": "risk",
+        "themes": [
+          "risk",
+          "workflow"
+        ],
+        "concepts": [
+          "擴充功能市集",
+          "供應鏈攻擊",
+          "持續性程式"
+        ],
+        "outcome": "incident"
+      }
+    },
+    {
+      "url": "https://x.com/felixrieseberg/status/2116170451466543578",
+      "title": "Anthropic 人員釐清 Cursor 擴充功能事件的受影響範圍",
+      "sourceDate": "2026-10-30",
+      "date": "2026-10-30",
+      "publishedAt": "2026-10-30T14:08:46Z",
+      "author": "Felix Rieseberg",
+      "handle": "@felixrieseberg",
+      "excerpt": "It wasn’t a compromise of Anthropic’s systems or employee laptops.",
+      "zh": "Anthropic 人員表示，攻擊者使用 Cursor 市集的存取權發布竄改版擴充功能；Anthropic 的系統、員工電腦與官方發行管道未受這起事件影響。這是當事方說明，市集存取權如何遭利用仍待查。",
+      "topic": "event",
+      "highLevel": true,
+      "checkedAt": "2026-10-31",
+      "evidenceUrl": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "evidenceLabel": "Cursor 事件說明",
+      "caveat": "在登入 X 的追蹤動態核對原貼摘要；事件原因與受影響裝置數量仍以後續調查為準。",
+      "knowledge": {
+        "primary": "risk",
+        "themes": [
+          "risk",
+          "workflow"
+        ],
+        "concepts": [
+          "擴充功能市集",
+          "供應鏈攻擊"
+        ],
+        "outcome": "incident"
+      }
+    },
+    {
+      "url": "https://x.com/mercor/status/2116226723968872959",
+      "title": "Mercor 公布 Carbon 在 APEX-Agents 的當次成績",
+      "sourceDate": "2026-10-31",
+      "date": "2026-10-31",
+      "publishedAt": "2026-10-30T17:52:23Z",
+      "author": "Mercor",
+      "handle": "@mercor",
+      "excerpt": "Gemini 4 Carbon debuts at #1 on APEX-Agents.",
+      "zh": "Mercor 在 10/31 台北時間公布 Carbon 的 APEX-Agents 成績：單次完整通過率 84.2%，平均評分 90.4%。這份測試涵蓋投資銀行、管理顧問與公司法律工作的多步驟任務；分數不能直接代表一般公司的實際交付品質。",
+      "topic": "research",
+      "highLevel": true,
+      "checkedAt": "2026-10-31",
+      "evidenceUrl": "https://mercor.com/apex/apex-agents-leaderboard/",
+      "evidenceLabel": "Mercor APEX-Agents 榜單與方法",
+      "caveat": "10/31 約 18:35 台北時間在登入 X 核對原貼，當時可見 14 則回覆、約 3.1 萬觀看；未核對一般使用者回覆。Mercor 榜單列出 31 個情境與 240 項任務，採專家規則與語言模型評分；完整題組未公開。",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation"
+        ],
+        "concepts": [
+          "APEX-Agents",
+          "Pass@1",
+          "長流程任務"
+        ],
+        "outcome": "update"
+      }
+    },
+    {
       "url": "https://x.com/MistralAI/status/2115443720371814478",
       "title": "Mistral 開放 Responses API 公測，代理的工具呼叫可逐項處理",
       "sourceDate": "2026-10-28",
@@ -1643,6 +1742,73 @@
     }
   ],
   "news": [
+    {
+      "type": "研究與評測",
+      "sourceDate": "2026-10-31",
+      "date": "2026-10-31",
+      "title": "Mercor APEX-Agents 榜單列出 Carbon 的長流程任務成績",
+      "lead": "Mercor 榜單目前列出 Gemini 4 Carbon 在 APEX-Agents 單次完整通過率 84.2%。評測包含 31 個情境、240 項跨應用任務，涵蓋投資銀行、顧問與公司法律工作。",
+      "takeaways": [
+        "Pass@1 是單次嘗試完成整項任務的比例；平均評分按各題評分規則計算，兩個數字不可混用。",
+        "部分資料與執行程式公開，完整題組維持私有；這是評測結果，不等於企業正式部署成效。"
+      ],
+      "caveat": "10/31 核對動態榜單與方法頁；此處日期是 Mercor 原貼日期，榜單可能隨後更新。",
+      "url": "https://mercor.com/apex/apex-agents-leaderboard/",
+      "source": "Mercor",
+      "author": "Mercor",
+      "originalTitle": "The AI Productivity Index for Agents",
+      "englishSummary": "The live APEX-Agents leaderboard reports task scores and explains its 31 worlds, 240 tasks, rubric-based grading, and public-data limits.",
+      "topic": "research",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation"
+        ],
+        "concepts": [
+          "APEX-Agents",
+          "Pass@1"
+        ],
+        "outcome": "update"
+      },
+      "checkedAt": "2026-10-31",
+      "followupQuestions": [
+        "榜單成績能否預測企業實際工作中的可靠度？"
+      ]
+    },
+    {
+      "type": "新聞與事件",
+      "sourceDate": "2026-10-29",
+      "date": "2026-10-29",
+      "title": "Cursor 說明遭竄改的 Claude Code 擴充功能與處置方法",
+      "lead": "Cursor 的擴充功能市集在 10/29 美國太平洋時間約 02:27 至 13:35，提供遭竄改的 Anthropic.claude-code 2.1.312 與 2.1.313。惡意程式會回傳主機資訊，並嘗試建立持續性的 SSH 存取。",
+      "takeaways": [
+        "Cursor 移除套件、暫停市集、檢查其他擴充功能、輪換金鑰後恢復服務。",
+        "官方要求受影響者檢查主機並清除殘留程式；單純解除安裝擴充功能可能不足。"
+      ],
+      "caveat": "Cursor 自述最多 5,000 人可能受影響，尚無獨立核實的實際受害數。文末 10/30 更新受影響版本及辨識資訊；本次 10/31 補讀不改原始發布日。",
+      "url": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "source": "Cursor",
+      "author": "Cursor Team",
+      "originalTitle": "Security notice — malicious version of Anthropic.claude-code identified in the Cursor VS Code Extension Marketplace",
+      "englishSummary": "Cursor documents the affected extension versions, exposure window, attempted persistence, marketplace response, and remediation steps.",
+      "topic": "event",
+      "knowledge": {
+        "primary": "risk",
+        "themes": [
+          "risk",
+          "workflow"
+        ],
+        "concepts": [
+          "擴充功能市集",
+          "供應鏈攻擊"
+        ],
+        "outcome": "incident"
+      },
+      "checkedAt": "2026-10-31",
+      "followupQuestions": [
+        "攻擊者如何取得市集發布權限？實際受影響主機有多少？"
+      ]
+    },
     {
       "type": "新聞與事件",
       "sourceDate": "2026-10-30",
@@ -7536,9 +7702,15 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-10-31T15:00:18+08:00",
-    "points": [],
-    "emptyMessage": "X 追蹤動態與回覆尚未完成核對，本期暫不列社群即時消息；10/30 的網站偏好公告依原始日期列於新聞。"
+    "checkedAt": "2026-10-31T18:45:00+08:00",
+    "points": [
+      {
+        "text": "Mercor 10/31 台北時間公布 Carbon 在 APEX-Agents 的當次成績；先看榜單方法與題組限制。",
+        "url": "https://x.com/mercor/status/2116226723968872959",
+        "label": "查看 Mercor 原貼"
+      }
+    ],
+    "emptyMessage": "這次未找到其他已核對的 24 小時社群消息。"
   },
   "knowledgeLibrary": [
     {
@@ -7579,10 +7751,10 @@
     }
   ],
   "socialTrends": {
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-31",
     "windowStart": "2026-10-01",
-    "windowEnd": "2026-10-29",
-    "scope": "X 已登入頁的原貼、三則直接回覆、兩則引用及局部延伸追問；非全站聲量排名。原有歷史議題保留。",
+    "windowEnd": "2026-10-31",
+    "scope": "登入 X 追蹤動態核對 Cursor、Mercor 原貼與局部回覆；本次數字為可見樣本，非全站排名。既有歷史議題保留。",
     "items": [
       {
         "id": "php2shell",
@@ -7648,11 +7820,28 @@
           "https://x.com/Root_Logic_0/status/2115552794187055305",
           "https://x.com/dusangran/status/2115558642950819947"
         ]
+      },
+      {
+        "id": "cursor-extension-incident",
+        "title": "擴充功能被竄改後，市集與使用者各要處理什麼？",
+        "period": "10/29 事件・10/31 補讀",
+        "summary": "Cursor 公布受影響版本、時段及處置方法；Anthropic 人員釐清官方管道未受影響。四則可見回覆追問套件如何被上架、誰需要檢查電腦，以及市集審查。",
+        "angle": "先釐清市集發布與使用者電腦清理兩個環節，再等後續調查說明發布權限如何被利用。",
+        "limit": "X 原貼可見約 504 則回覆、118 萬觀看（10/31 約 18:35 台北時間）；本站核對四則實質回覆。不能推論整體看法或實際受害數。",
+        "urls": [
+          "https://x.com/cursor_ai/status/2116074289053175808",
+          "https://x.com/felixrieseberg/status/2116170451466543578",
+          "https://cursor.com/blog/claude-code-extension-security-notice",
+          "https://x.com/FrankDNYC77/status/2116134362236248523",
+          "https://x.com/indie_alx/status/2116079269768208845",
+          "https://x.com/janushelgi/status/2116106468546036170",
+          "https://x.com/teedubya/status/2116111555259727885"
+        ]
       }
     ]
   },
   "curiosity": {
-    "checkedAt": "2026-10-30T18:39:49+08:00",
+    "checkedAt": "2026-10-31T18:45:00+08:00",
     "topics": [
       {
         "id": "php2shell",
@@ -8604,16 +8793,16 @@
         "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
         "lane": "feature",
         "priority": -3,
-        "revision": "2026-10-30-carbon-2",
-        "updatedAt": "2026-10-30",
+        "revision": "2026-10-31-carbon-3",
+        "updatedAt": "2026-10-31",
         "title": "Gemini 4 Carbon 排名很高，為什麼現在還不能直接用？",
         "intro": "Google 10/28 發表 Gemini 4 Carbon，展示長流程工程及資安評測成績；本週先向少數資安防禦者開放。X 上有人追問幻覺、價格和實際可用性。",
         "trigger": {
-          "date": "10/28 發表・10/29 台北時間榜單後續",
-          "text": "Google 先公布 Carbon 與分階段開放；Arena 隨後加入三個公開榜單。文字榜單當次排名仍標為初步結果。",
+          "date": "10/28 發表・10/31 Mercor 評測後續",
+          "text": "Mercor 將 Carbon 加入 APEX-Agents，公布長流程專業任務的當次分數；這補充了 Arena 的偏好榜單，仍需看各榜測的是什麼。",
           "urls": [
-            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-            "https://arena.ai/company/leaderboard-changelog"
+            "https://x.com/mercor/status/2116226723968872959",
+            "https://mercor.com/apex/apex-agents-leaderboard/"
           ]
         },
         "questions": [
@@ -8648,6 +8837,17 @@
             ],
             "status": "partial",
             "next": "開放後能否用同一批任務同時檢查正確率、誤報與修補後的回歸問題？"
+          },
+          {
+            "id": "apex-work",
+            "question": "Carbon 在專業工作評測拿高分，代表它能替我完成工作嗎？",
+            "answer": "Mercor 的 APEX-Agents 涵蓋 31 個情境、240 項任務，Carbon 當次單次完整通過率為 84.2%，平均評分為 90.4%。任務由專家設計、按規則評分，完整題組沒有公開；這能補充長流程能力的證據，還不能保證你公司的資料、交接與例外情況也能完成。",
+            "urls": [
+              "https://x.com/mercor/status/2116226723968872959",
+              "https://mercor.com/apex/apex-agents-leaderboard/"
+            ],
+            "status": "partial",
+            "next": "在自家工作中，哪些步驟要由人複查，哪些錯誤會造成實際損失？"
           }
         ],
         "sources": [
@@ -8657,6 +8857,14 @@
             "reason": "先分清楚測試成績、內部自述和目前誰能使用。",
             "date": "2026-10-28",
             "kind": "官方發布",
+            "recommended": true
+          },
+          {
+            "url": "https://mercor.com/apex/apex-agents-leaderboard/",
+            "label": "再看：Mercor 的長流程任務評測",
+            "reason": "看 31 個情境、240 項任務與 Pass@1 定義，分清榜單成績和現場交付。",
+            "date": "2026-10-31 當次核對",
+            "kind": "評測平台方法與榜單",
             "recommended": true
           },
           {
@@ -8681,7 +8889,15 @@
             "reason": "看發布當下的說法，以及三則關於幻覺、價格和配額的追問；只代表抽查樣本。",
             "date": "2026-10-29",
             "kind": "X 原貼與局部回覆",
-            "recommended": true
+            "recommended": false
+          },
+          {
+            "url": "https://x.com/mercor/status/2116226723968872959",
+            "label": "其他來源：Mercor 10/31 原貼",
+            "reason": "核對新增榜單時公布的單次通過率與平均評分。",
+            "date": "2026-10-31 台北時間",
+            "kind": "評測平台 X 原貼",
+            "recommended": false
           }
         ],
         "timeline": [
@@ -8706,9 +8922,17 @@
               "https://arena.ai/company/leaderboard-changelog",
               "https://x.com/arena/status/2115495002998751262"
             ]
+          },
+          {
+            "date": "10/31 台北時間",
+            "text": "Mercor 公布 Carbon 在 APEX-Agents 的當次分數；本站核對榜單方法與範圍。",
+            "urls": [
+              "https://x.com/mercor/status/2116226723968872959",
+              "https://mercor.com/apex/apex-agents-leaderboard/"
+            ]
           }
         ],
-        "limit": "Google 內部測試與 Arena 公開榜單衡量的任務不同。Arena 名次會隨樣本更新；尚無 Carbon 廣泛使用後的獨立實測。Pichai 原貼只抽查三則回覆，Arena 原貼回覆尚未核對。"
+        "limit": "Google 內部測試與 Arena 公開榜單衡量的任務不同。Arena 名次會隨樣本更新；尚無 Carbon 廣泛使用後的獨立實測。Pichai 原貼只抽查三則回覆，Arena 原貼回覆尚未核對。 Mercor 的完整題組維持私有，分數由評分規則與語言模型判定；尚無本地任務實測。"
       },
       {
         "id": "coding-skill-gap",
@@ -9304,6 +9528,105 @@
           }
         ],
         "limit": "原始文件可核對提案與計畫；草案可能更動，實際遵循、搜尋與流量影響仍待查。未核對 X 或 LinkedIn 回覆。"
+      },
+      {
+        "id": "cursor-extension-marketplace",
+        "url": "https://cursor.com/blog/claude-code-extension-security-notice",
+        "lane": "event",
+        "priority": -5,
+        "revision": "2026-10-31-cursor-1",
+        "updatedAt": "2026-10-31",
+        "title": "Cursor 的 Claude Code 擴充功能為什麼會被換成惡意版本？",
+        "intro": "10/29，美國太平洋時間的 Cursor 擴充功能市集曾提供遭竄改的 Claude Code 套件。Cursor 已移除並恢復市集，受影響者仍需檢查電腦。事件讓人想知道：攻擊者從哪個環節進入，哪些使用者需要處理？",
+        "trigger": {
+          "date": "10/29 事件・10/30 官方說明",
+          "text": "Cursor 公布受影響版本與時段；Anthropic 人員釐清官方發行管道未受影響。市集發布權限如何遭利用，仍未公開完整原因。",
+          "urls": [
+            "https://cursor.com/blog/claude-code-extension-security-notice",
+            "https://x.com/cursor_ai/status/2116074289053175808",
+            "https://x.com/felixrieseberg/status/2116170451466543578"
+          ]
+        },
+        "questions": [
+          {
+            "id": "how-published",
+            "question": "它怎麼會出現在看起來是官方的套件位置？",
+            "answer": "Cursor 確認惡意版本出現在自己的擴充功能市集，Anthropic 人員說攻擊者利用的是 Cursor 市集存取權。官方目前沒有交代這項存取權如何落入攻擊者手中；可見回覆中有兩人直接追問這一點。",
+            "urls": [
+              "https://cursor.com/blog/claude-code-extension-security-notice",
+              "https://x.com/felixrieseberg/status/2116170451466543578"
+            ],
+            "status": "partial",
+            "next": "後續調查會公布市集帳號、上架流程或審查機制的哪個環節失守嗎？"
+          },
+          {
+            "id": "who-affected",
+            "question": "所有 Claude Code 使用者都受影響嗎？",
+            "answer": "Cursor 列出的範圍是 10/29 特定時段，從其市集取得 macOS 或 Windows 版 Anthropic.claude-code 2.1.312、2.1.313 的使用者。Anthropic 表示官方發行管道未受這起事件影響。Cursor 的「最多 5,000 人」是可能接觸人數，實際執行惡意程式的裝置數還沒有獨立核實。",
+            "urls": [
+              "https://cursor.com/blog/claude-code-extension-security-notice",
+              "https://x.com/cursor_ai/status/2116074289053175808",
+              "https://x.com/felixrieseberg/status/2116170451466543578"
+            ],
+            "status": "partial",
+            "next": "哪些已安裝裝置真的執行了惡意程式，是否有確認的後續入侵？"
+          },
+          {
+            "id": "what-fixed",
+            "question": "市集恢復了，受影響電腦就安全了嗎？",
+            "answer": "Cursor 移除惡意套件、檢查其他擴充功能、輪換金鑰並讓攻擊者伺服器下線；這些處置限制後續散布。它也提醒惡意程式可能另外留下 SSH 金鑰與持續執行的檔案，因此受影響者需按官方步驟檢查和清除。",
+            "urls": [
+              "https://cursor.com/blog/claude-code-extension-security-notice"
+            ],
+            "status": "supported",
+            "next": "市集日後會如何驗證上架套件與原廠版本一致？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://cursor.com/blog/claude-code-extension-security-notice",
+            "label": "先讀：Cursor 的事件說明與處置方法",
+            "reason": "核對版本、暴露時段、惡意行為與檢查步驟。",
+            "date": "2026-10-29；10/30 更新",
+            "kind": "當事方事件說明",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/cursor_ai/status/2116074289053175808",
+            "label": "再看：Cursor 公告及局部回覆",
+            "reason": "看對外通知與四則可追溯回覆提出的疑問。",
+            "date": "2026-10-30",
+            "kind": "X 原貼與回覆",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/felixrieseberg/status/2116170451466543578",
+            "label": "接著看：Anthropic 人員釐清範圍",
+            "reason": "分清 Cursor 市集套件與 Anthropic 官方發行管道。",
+            "date": "2026-10-30",
+            "kind": "當事方 X 說明",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/29 美國太平洋時間",
+            "text": "約 02:27 至 13:35，遭竄改版本在 Cursor 市集可取得。",
+            "urls": [
+              "https://cursor.com/blog/claude-code-extension-security-notice"
+            ]
+          },
+          {
+            "date": "10/30",
+            "text": "Cursor 發布對外說明並更新受影響版本；Anthropic 人員說明官方管道未受影響。",
+            "urls": [
+              "https://x.com/cursor_ai/status/2116074289053175808",
+              "https://cursor.com/blog/claude-code-extension-security-notice",
+              "https://x.com/felixrieseberg/status/2116170451466543578"
+            ]
+          }
+        ],
+        "limit": "目前依 Cursor 事件說明、Anthropic 人員原貼與四則 X 回覆整理。最多 5,000 人是 Cursor 估計的可能接觸範圍；實際執行數與市集權限遭利用的過程仍待查。四則回覆僅是可見樣本。"
       }
     ],
     "history": [
@@ -9803,6 +10126,117 @@
           }
         ],
         "limit": "評測與內部工作表現主要由 Google 公布；未取得 Carbon 廣泛使用後的獨立實測。X 僅抽查三則回覆，不代表全站立場。"
+      },
+      {
+        "id": "gemini-carbon",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "lane": "feature",
+        "priority": -3,
+        "revision": "2026-10-30-carbon-2",
+        "updatedAt": "2026-10-30",
+        "title": "Gemini 4 Carbon 排名很高，為什麼現在還不能直接用？",
+        "intro": "Google 10/28 發表 Gemini 4 Carbon，展示長流程工程及資安評測成績；本週先向少數資安防禦者開放。X 上有人追問幻覺、價格和實際可用性。",
+        "trigger": {
+          "date": "10/28 發表・10/29 台北時間榜單後續",
+          "text": "Google 先公布 Carbon 與分階段開放；Arena 隨後加入三個公開榜單。文字榜單當次排名仍標為初步結果。",
+          "urls": [
+            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+            "https://arena.ai/company/leaderboard-changelog"
+          ]
+        },
+        "questions": [
+          {
+            "id": "who-can-use",
+            "question": "都發布了，為什麼我現在還不能試？",
+            "answer": "Google 本週先給少數資安防禦者測試，再逐步擴到受信任夥伴。開發者、企業與一般使用者的開放時間只說「盡快」，沒有確定日期。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+            ],
+            "status": "supported",
+            "next": "受邀防禦者開始使用後，會公開哪些真實任務結果？"
+          },
+          {
+            "id": "what-tested",
+            "question": "那些資安分數到底測了什麼？",
+            "answer": "Google 列出三種測試：SEC-bench Pro 找漏洞 88.2%、ExploitGym 驗證可利用性 54.8%、CWE-bench 修補 71.0%。測試任務和評分各異；Google 的內部安全程式碼結果也尚未提供可獨立複查的完整樣本。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+            ],
+            "status": "partial",
+            "next": "在同一批實際漏洞上，從發現到修補有多少結果經人工驗證？"
+          },
+          {
+            "id": "benchmark-vs-use",
+            "question": "排名第一，使用時就不會亂說或修錯嗎？",
+            "answer": "Arena 10/28 將 Carbon（High）加入三個公開榜單，10/29 台北時間的原貼報告當時在文字、Agent、網頁開發榜單分別為第 1、2、4 名。這是不同任務的榜單快照；Carbon 尚未廣泛開放，無法據此判定日常使用會不會亂說或修錯。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+              "https://x.com/arena/status/2115495002998751262",
+              "https://arena.ai/company/leaderboard-changelog"
+            ],
+            "status": "partial",
+            "next": "開放後能否用同一批任務同時檢查正確率、誤報與修補後的回歸問題？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+            "label": "先讀：Google 的發布、評測與開放範圍",
+            "reason": "先分清楚測試成績、內部自述和目前誰能使用。",
+            "date": "2026-10-28",
+            "kind": "官方發布",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/arena/status/2115495002998751262",
+            "label": "再看：Arena 當次榜單排名",
+            "reason": "看到三種任務的當時名次，並留意名次會隨評測更新。",
+            "date": "2026-10-29",
+            "kind": "評測平台 X 原貼",
+            "recommended": true
+          },
+          {
+            "url": "https://arena.ai/company/leaderboard-changelog",
+            "label": "其他來源：Arena 榜單更新紀錄",
+            "reason": "核對 Carbon 何時進入三個榜單。",
+            "date": "2026-10-28",
+            "kind": "評測平台更新紀錄",
+            "recommended": false
+          },
+          {
+            "url": "https://x.com/sundarpichai/status/2115489219804352921",
+            "label": "接著看：Pichai 原貼與局部回覆",
+            "reason": "看發布當下的說法，以及三則關於幻覺、價格和配額的追問；只代表抽查樣本。",
+            "date": "2026-10-29",
+            "kind": "X 原貼與局部回覆",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/28",
+            "text": "Google 發表 Carbon 與評測，先向選定資安防禦者開放。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+            ]
+          },
+          {
+            "date": "10/29 台北時間",
+            "text": "Pichai 在 X 發文；本站抽查三則實質回覆。",
+            "urls": [
+              "https://x.com/sundarpichai/status/2115489219804352921"
+            ]
+          },
+          {
+            "date": "10/28–10/29",
+            "text": "Arena 加入三個榜單；10/29 台北時間的原貼報告當時排名，文字榜單仍屬初步結果。",
+            "urls": [
+              "https://arena.ai/company/leaderboard-changelog",
+              "https://x.com/arena/status/2115495002998751262"
+            ]
+          }
+        ],
+        "limit": "Google 內部測試與 Arena 公開榜單衡量的任務不同。Arena 名次會隨樣本更新；尚無 Carbon 廣泛使用後的獨立實測。Pichai 原貼只抽查三則回覆，Arena 原貼回覆尚未核對。"
       }
     ],
     "maxVisible": 3
