@@ -1,6 +1,46 @@
 {
-  "editionDate": "2026-10-31",
+  "editionDate": "2026-11-01",
   "posts": [
+    {
+      "url": "https://x.com/ctatedev/status/2116323148706771302",
+      "title": "Vercel Labs 展示 agent-desktop 的桌面操作方式",
+      "sourceDate": "2026-10-31",
+      "date": "2026-10-31",
+      "publishedAt": "2026-10-31T00:15:32Z",
+      "author": "Chris Tate",
+      "handle": "@ctatedev",
+      "excerpt": "Introducing agent-desktop. Computer Use for any coding agent.",
+      "zh": "Chris Tate 10/31 展示 agent-desktop：讓程式代理透過作業系統的輔助使用樹讀取桌面應用程式，再以元素參照操作。專案文件說明預設透過輔助使用 API 在背景執行；需要實體滑鼠與鍵盤輸入時則使用 headed 模式。這是工具發布與設計主張，本站未實測。",
+      "topic": "feature",
+      "highLevel": true,
+      "checkedAt": "2026-11-01",
+      "evidenceUrl": "https://github.com/vercel-labs/agent-desktop",
+      "evidenceLabel": "Vercel Labs 專案文件",
+      "caveat": "11/01 約 14:10 台北時間，原貼可見約 447 則回覆、61.7 萬觀看。抽讀三則有 URL 的回覆，分別詢問能否和 agent-browser 配合、視窗最小化後能否運作，以及關注平行游標。這是局部樣本；沒有據此推論整體評價。",
+      "replyObservation": {
+        "count": 3,
+        "checkedAt": "2026-11-01",
+        "summary": "一則問是否能與 agent-browser 配合，作者回覆可以；一則問視窗最小化後是否仍能運作，抽讀時未見可核對回答；另一則稱讚平行游標。",
+        "urls": [
+          "https://x.com/edgarasben/status/2116323407755186481",
+          "https://x.com/KyrelleBuckley/status/2116325642073751983",
+          "https://x.com/PavitraGolchha/status/2116405385498435654"
+        ]
+      },
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "risk"
+        ],
+        "concepts": [
+          "桌面代理",
+          "輔助使用樹",
+          "背景操作"
+        ],
+        "outcome": "release"
+      }
+    },
     {
       "url": "https://x.com/cursor_ai/status/2116074289053175808",
       "title": "Cursor 通報 Claude Code 擴充功能遭竄改",
@@ -1742,6 +1782,76 @@
     }
   ],
   "news": [
+    {
+      "type": "功能與工具",
+      "sourceDate": "2026-10-30",
+      "date": "2026-10-30",
+      "title": "agent-desktop 1.0.2 發布，桌面代理改用元素參照操作",
+      "lead": "Vercel Labs 的 agent-desktop 是支援 macOS、Windows、Linux 的開源命令列工具。代理先讀取應用程式的輔助使用樹，取得可操作元素的參照，再操作並重新擷取狀態確認。",
+      "takeaways": [
+        "專案文件稱預設背景操作不移動游標或搶焦點；headed 模式允許實體輸入，兩者不能混為一談。",
+        "macOS 需要輔助使用權限；快照、截圖與剪貼簿可能含私人內容，是否授權操作仍要由使用者決定。"
+      ],
+      "caveat": "v1.0.2 於 10/30 UTC 發布，10/31 有作者 X 公告。本文根據官方文件與版本頁整理，未自行安裝或測試。",
+      "url": "https://github.com/vercel-labs/agent-desktop/releases/tag/v1.0.2",
+      "source": "Vercel Labs／GitHub",
+      "author": "Vercel Labs",
+      "originalTitle": "v1.0.2",
+      "englishSummary": "The v1.0.2 release accompanies a cross-platform CLI that reads OS accessibility trees and acts on snapshot-bound refs. Headless ref actions and physical input have different behavior.",
+      "topic": "feature",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "risk"
+        ],
+        "concepts": [
+          "agent-desktop",
+          "輔助使用樹",
+          "授權邊界"
+        ],
+        "outcome": "release"
+      },
+      "checkedAt": "2026-11-01",
+      "followupQuestions": [
+        "背景模式是否能完成真實工作？哪些操作需要改用會影響使用者畫面的輸入？"
+      ]
+    },
+    {
+      "type": "功能與工具",
+      "sourceDate": "2026-10-31",
+      "date": "2026-10-31",
+      "title": "agent-desktop 專案文件說明背景操作與權限限制",
+      "lead": "Vercel Labs 的 README 說明，工具預設透過輔助使用 API 讀取和操作桌面元素，參照綁定當次快照，操作後需重新核對。",
+      "takeaways": [
+        "背景參照操作與 headed 模式的實體輸入不同；不能只憑「在背景跑」推定任何任務都不會影響使用者畫面。",
+        "macOS 需要輔助使用權限；快照、截圖與剪貼簿可能含私人資料。"
+      ],
+      "caveat": "10/31 公告後核對目前 README；專案文件是設計與使用說明，本站未跨應用程式實測。",
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "source": "Vercel Labs／GitHub",
+      "author": "Vercel Labs",
+      "originalTitle": "agent-desktop",
+      "englishSummary": "The project describes snapshot-bound accessibility refs, headless ref actions, headed physical input, platform permissions, and privacy considerations.",
+      "topic": "feature",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "risk"
+        ],
+        "concepts": [
+          "agent-desktop",
+          "輔助使用樹",
+          "背景操作"
+        ],
+        "outcome": "release"
+      },
+      "checkedAt": "2026-11-01",
+      "followupQuestions": [
+        "哪些桌面操作能在背景模式可靠完成？"
+      ]
+    },
     {
       "type": "研究與評測",
       "sourceDate": "2026-10-31",
@@ -7841,7 +7951,7 @@
     ]
   },
   "curiosity": {
-    "checkedAt": "2026-10-31T18:45:00+08:00",
+    "checkedAt": "2026-11-01T14:07:05+08:00",
     "topics": [
       {
         "id": "php2shell",
@@ -9627,6 +9737,108 @@
           }
         ],
         "limit": "目前依 Cursor 事件說明、Anthropic 人員原貼與四則 X 回覆整理。最多 5,000 人是 Cursor 估計的可能接觸範圍；實際執行數與市集權限遭利用的過程仍待查。四則回覆僅是可見樣本。"
+      },
+      {
+        "id": "agent-desktop",
+        "url": "https://github.com/vercel-labs/agent-desktop",
+        "lane": "feature",
+        "priority": -6,
+        "revision": "2026-11-01-agent-desktop-1",
+        "updatedAt": "2026-11-01",
+        "title": "agent-desktop 是什麼？AI 能在背景操作電腦嗎？",
+        "intro": "10/31，Vercel Labs 成員展示 agent-desktop。它讓程式代理讀取桌面應用程式的輔助使用樹，拿到可操作元素的參照，再執行並確認結果。它的賣點是少猜畫面座標；實際能否在背景完成任務，仍取決於應用程式、操作方式和授權。",
+        "trigger": {
+          "date": "10/30 版本發布・10/31 X 展示",
+          "text": "v1.0.2 版本頁與作者原貼讓這項工具受到注意。先看它如何找到按鈕，再看背景操作有哪些條件。",
+          "urls": [
+            "https://github.com/vercel-labs/agent-desktop/releases/tag/v1.0.2",
+            "https://x.com/ctatedev/status/2116323148706771302"
+          ]
+        },
+        "questions": [
+          {
+            "id": "how-it-works",
+            "question": "它怎麼找到要按的地方？",
+            "answer": "工具讀取作業系統提供的輔助使用樹，把可操作元素標成與當次快照綁定的參照。代理依參照操作，再擷取新快照核對；介面變動時舊參照可能失效，不能直接沿用。這是專案文件描述的工作方式。",
+            "urls": [
+              "https://github.com/vercel-labs/agent-desktop"
+            ],
+            "status": "supported",
+            "next": "遇到沒有提供完整輔助使用資訊的應用程式，還能做多少事？"
+          },
+          {
+            "id": "background",
+            "question": "它真的不會搶滑鼠或切走我正在看的視窗嗎？",
+            "answer": "專案文件稱預設的輔助使用參照操作不移動游標或取得焦點；需要實體滑鼠、鍵盤輸入時可用 headed 模式，行為不同。作者原貼宣稱可平行運作，但本站未在不同應用程式實測，也不能把工具能力當成任何代理都已獲准碰使用者畫面。",
+            "urls": [
+              "https://github.com/vercel-labs/agent-desktop",
+              "https://x.com/ctatedev/status/2116323148706771302"
+            ],
+            "status": "partial",
+            "next": "常用應用程式的哪些操作可維持背景模式，哪些必須進入實體輸入模式？"
+          },
+          {
+            "id": "permission",
+            "question": "誰決定代理能讀到什麼？",
+            "answer": "macOS 使用時需要授予輔助使用權限。專案提醒，快照、截圖與剪貼簿可能含私人桌面內容；工具本身不會替使用者決定哪些資料與畫面可以交給代理。",
+            "urls": [
+              "https://github.com/vercel-labs/agent-desktop"
+            ],
+            "status": "supported",
+            "next": "如何把可操作的應用程式與資料範圍限制在使用者同意的任務內？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://github.com/vercel-labs/agent-desktop",
+            "label": "先讀：專案 README",
+            "reason": "看快照、元素參照、背景與實體輸入的差別，也留意資料與權限提醒。",
+            "date": "2026-10-31 核對",
+            "kind": "官方專案文件",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/ctatedev/status/2116323148706771302",
+            "label": "再看：Chris Tate 的展示與局部回覆",
+            "reason": "理解發布時強調的使用情境；三則抽讀回覆只提供個別疑問。",
+            "date": "2026-10-31",
+            "kind": "X 原貼與回覆",
+            "recommended": true
+          },
+          {
+            "url": "https://github.com/vercel-labs/agent-desktop/releases/tag/v1.0.2",
+            "label": "版本紀錄：v1.0.2",
+            "reason": "核對發布時間與本次修正範圍，避免把既有功能全算成這次新增。",
+            "date": "2026-10-30 UTC",
+            "kind": "官方版本頁",
+            "recommended": false
+          }
+        ],
+        "timeline": [
+          {
+            "date": "10/27",
+            "text": "專案的 1.0.0 版加入 Linux 支援。",
+            "urls": [
+              "https://github.com/vercel-labs/agent-desktop"
+            ]
+          },
+          {
+            "date": "10/30 UTC",
+            "text": "v1.0.2 發布，包含權限指引與文件修正。",
+            "urls": [
+              "https://github.com/vercel-labs/agent-desktop/releases/tag/v1.0.2"
+            ]
+          },
+          {
+            "date": "10/31",
+            "text": "Chris Tate 在 X 展示 agent-desktop，並連結 Vercel Labs 專案。",
+            "urls": [
+              "https://x.com/ctatedev/status/2116323148706771302",
+              "https://x.com/ctatedev/status/2116323151697121498"
+            ]
+          }
+        ],
+        "limit": "目前根據官方 README、版本頁、X 原貼與三則可見回覆整理；沒有安裝、跨平台實測或統計全部留言。背景操作的效果是專案文件主張，不能取代使用者對操作範圍的授權。"
       }
     ],
     "history": [
