@@ -1,0 +1,28 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {calendarDay,sourceDay,windowStart,inRecentWindow,topicDate,selectCuriosity,selectMaterials,setRemoved,isRemoved,curiosityCard} from '../curiosity.js';
+import {mergeBackup,allItems} from '../knowledge.js';
+const now=new Date('2026-11-02T00:30:00+08:00');
+assert.equal(calendarDay(now),'2026-11-02');assert.equal(windowStart(now),'2026-10-20');
+assert(inRecentWindow('2026-10-20',now));assert(inRecentWindow('2026-11-02',now));assert(!inRecentWindow('2026-10-19',now));assert(!inRecentWindow('2026-11-03',now));
+assert.equal(sourceDay({publishedAt:'2026-10-19T17:00:00Z'}),'2026-10-20');
+assert.equal(sourceDay({sourceDate:'2026 年 10 月 21 日'}),'2026-10-21');
+const old={url:'https://example.org/old',date:'2026-10-19',dailyBackfillAt:'2026-11-02',highLevel:true,kind:'podcasts'};
+const recent={url:'https://example.org/recent',date:'2026-10-20',kind:'news',title:'中文標題',lead:'摘要'};
+const feedback={items:{[recent.url]:{saved:true,note:'人工筆記',interested:true,curiosityQuestions:{q:{interested:true}},chapter:'workflow'}}};
+assert.deepEqual(selectMaterials([old,recent],feedback,{now}).map(x=>x.url),[recent.url]);
+setRemoved(feedback,recent.url,true,'2026-11-02T01:00:00Z');
+assert(isRemoved(feedback,recent.url));assert.equal(selectMaterials([recent],feedback,{now}).length,0);
+assert.equal(selectMaterials([recent],feedback,{now,view:'removed'}).length,1);
+const incoming=mergeBackup({items:{}},JSON.parse(JSON.stringify(feedback)));assert(isRemoved(incoming,recent.url));
+setRemoved(incoming,recent.url,false,'2026-11-02T02:00:00Z');
+const restored=mergeBackup(feedback,incoming);assert(!isRemoved(restored,recent.url));assert(restored.items[recent.url].saved);assert.equal(restored.items[recent.url].note,'人工筆記');assert(restored.items[recent.url].curiosityQuestions.q.interested);
+const topic={id:'test',url:recent.url,revision:'r1',updatedAt:'2026-11-02',intro:'中文摘要',title:'測試',trigger:{date:'10/19',text:'舊事件'},sources:[{url:old.url,date:'2026-09-01',label:'舊背景',recommended:true}],questions:[]};
+assert.equal(topicDate(topic),'2026-10-19');assert.equal(selectCuriosity([topic],{items:{}},{now}).length,0);
+const fresh={...topic,trigger:{date:'10/30 發表・10/31 後續',text:'更新'}};assert.equal(topicDate(fresh),'2026-10-31');
+setRemoved(feedback,fresh.url,true);assert.equal(selectCuriosity([fresh],feedback,{now}).length,0);
+// Removing a row never mutates its source list or related background material.
+const links=JSON.stringify(fresh.sources);curiosityCard(fresh,feedback);assert.equal(JSON.stringify(fresh.sources),links);assert(curiosityCard(fresh,feedback).includes(old.url));
+const content=JSON.parse(await readFile(new URL('../content.json',import.meta.url)));
+assert(allItems(content).length>0);
+console.log('Passed: Taipei calendar window, exact boundaries, no backfill/medium exceptions, deletion and restore across backups, notes preserved, original event dates and extension links retained.');
