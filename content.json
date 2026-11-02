@@ -1,6 +1,104 @@
 {
-  "editionDate": "2026-11-01",
+  "editionDate": "2026-11-02",
   "posts": [
+    {
+      "url": "https://x.com/karpathy/status/2116957135661945283",
+      "title": "Karpathy 公開 HackerTube：從 Hacker News 的影片推薦重新整理 YouTube",
+      "sourceDate": "2026-11-02",
+      "date": "2026-11-02",
+      "publishedAt": "2026-11-01T18:14:46Z",
+      "author": "Andrej Karpathy",
+      "handle": "@karpathy",
+      "excerpt": "Weekend hack: HackerTube.",
+      "zh": "Karpathy 11/02 公開 HackerTube。他表示，因為不滿 YouTube 的推薦，請 Claude 從 Hacker News 約 4,300 萬則歷史留言中找出反覆被推薦的影片，最後整理出 6,454 部。他自述用約兩小時完成網站，另外親手建立 YouTube API 金鑰、準備伺服器並購買網域。這是作者的製作紀錄，耗時與觀看體驗沒有獨立測試。",
+      "topic": "feature",
+      "highLevel": true,
+      "checkedAt": "2026-11-02",
+      "evidenceUrl": "https://hackertube.org/about",
+      "evidenceLabel": "HackerTube 方法與資料說明",
+      "caveat": "11/02 約 11:15 台北時間，原貼可見 1,296 則回覆、約 241.7 萬觀看。本站逐一核對四則可追溯回覆：作者補充前處理與 Sonnet 分工，一人反映搜尋較慢，一人分享類似個人 AI 廣播，另有人追問 token 成本。這是局部樣本，不能推論整體評價。",
+      "replyObservation": {
+        "count": 4,
+        "checkedAt": "2026-11-02",
+        "summary": "作者說大量留言先經網址、規則與垃圾內容過濾，剩餘才交給 Sonnet 分類；另有搜尋速度、token 成本與個人化媒體的個別討論。",
+        "urls": [
+          "https://x.com/karpathy/status/2116970707867566106",
+          "https://x.com/yachty66/status/2116962863713784178",
+          "https://x.com/martinvars/status/2117044941129973878",
+          "https://x.com/kevinyangkuan/status/2117072644701094341"
+        ]
+      },
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "market"
+        ],
+        "concepts": [
+          "HackerTube",
+          "Hacker News 推薦",
+          "個人化影片目錄"
+        ],
+        "outcome": "release"
+      }
+    },
+    {
+      "url": "https://x.com/karpathy/status/2116970707867566106",
+      "title": "Karpathy 補充 HackerTube 的留言前處理",
+      "sourceDate": "2026-11-02",
+      "date": "2026-11-02",
+      "publishedAt": "2026-11-01T19:08:42Z",
+      "author": "Andrej Karpathy",
+      "handle": "@karpathy",
+      "excerpt": "Claude filtered it down a lot.",
+      "zh": "Karpathy 回覆說，4,300 萬則 Hacker News 留言先經網址、規則與垃圾內容過濾，剩下的留言才由 Sonnet 在 Claude Code 流程中判讀。這釐清了完整掃描量與模型實際處理量的差別；細部成本仍未公開。",
+      "topic": "feature",
+      "highLevel": true,
+      "checkedAt": "2026-11-02",
+      "evidenceUrl": "https://hackertube.org/about",
+      "evidenceLabel": "HackerTube 資料流程說明",
+      "caveat": "11/02 約 11:20 台北時間在原貼對話核對作者回覆；具體計算費用未見原始數據。",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow"
+        ],
+        "concepts": [
+          "HackerTube",
+          "資料前處理",
+          "模型分類"
+        ],
+        "outcome": "clarification"
+      }
+    },
+    {
+      "url": "https://x.com/yachty66/status/2116962863713784178",
+      "title": "HackerTube 使用者回覆：搜尋速度偏慢",
+      "sourceDate": "2026-11-02",
+      "date": "2026-11-02",
+      "publishedAt": "2026-11-01T18:37:32Z",
+      "author": "Max Hager",
+      "handle": "@yachty66",
+      "excerpt": "Search takes a bit long.",
+      "zh": "Max Hager 在 HackerTube 原貼下說，他找到幾部 Karpathy 的影片，但搜尋等候時間偏長，並詢問能否改善。這是單一使用者的公開回覆，沒有測試環境、查詢條件或速度數字。",
+      "topic": "feature",
+      "highLevel": true,
+      "checkedAt": "2026-11-02",
+      "evidenceUrl": "https://hackertube.org/about",
+      "evidenceLabel": "HackerTube 功能與方法說明",
+      "caveat": "11/02 約 11:20 台北時間從作者原貼下方逐則核對；當時可見 2 則回覆、14 個喜歡、7,789 次觀看。沒有核對其他使用者是否遇到相同問題。",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow"
+        ],
+        "concepts": [
+          "HackerTube",
+          "搜尋速度"
+        ],
+        "outcome": "perspective"
+      }
+    },
     {
       "url": "https://x.com/ctatedev/status/2116323148706771302",
       "title": "Vercel Labs 展示 agent-desktop 的桌面操作方式",
@@ -1782,6 +1880,42 @@
     }
   ],
   "news": [
+    {
+      "type": "功能與工具",
+      "sourceDate": "2026-11-02",
+      "date": "2026-11-02",
+      "title": "HackerTube 公開篩選方法：反覆被 Hacker News 推薦的 6,454 部影片",
+      "lead": "HackerTube 將 Hacker News 多年來散落在留言中的 YouTube 推薦整理成可搜尋的影片目錄。網站方法頁說明，先掃描 2007 至 2026 年的留言找影片連結，再留下至少三人、跨三個月份提到的影片。",
+      "takeaways": [
+        "網站列出 39,834 則經模型標註的留言；作者所說約 4,300 萬則是先掃描的完整留言範圍，兩個數字代表不同步驟。",
+        "模型判斷留言是在推薦、引用、開玩笑或批評，再寫影片卡片；排序重視跨月份反覆推薦。",
+        "網站不用帳號，喜好與觀看紀錄留在使用者瀏覽器。這套目錄反映 Hacker News 社群的長期偏好，尚無與 YouTube 推薦品質的獨立比較。"
+      ],
+      "caveat": "方法頁本身沒有標示發布日；11/02 以作者公開原貼作為這次網站發布日期。篩選與標註結果依專案自述整理，本站未重新執行資料流程，也未逐筆驗證影片分類。",
+      "url": "https://hackertube.org/about",
+      "source": "HackerTube",
+      "author": "Andrej Karpathy／HackerTube",
+      "originalTitle": "About HackerTube",
+      "englishSummary": "The project documents its Hacker News link scan, repeat recommendation threshold, Claude labeling, 6,454 video catalog, and local browser preferences.",
+      "topic": "feature",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "market"
+        ],
+        "concepts": [
+          "HackerTube",
+          "推薦排序",
+          "模型分類"
+        ],
+        "outcome": "release"
+      },
+      "checkedAt": "2026-11-02",
+      "followupQuestions": [
+        "跨月份推薦能否改善實際觀看體驗？模型如何處理反諷或引用而非推薦的留言？"
+      ]
+    },
     {
       "type": "功能與工具",
       "sourceDate": "2026-10-30",
@@ -7812,9 +7946,15 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-11-01T14:09:47+08:00",
-    "points": [],
-    "emptyMessage": "過去 24 小時沒有已核對且達到收錄門檻的社群新消息。"
+    "checkedAt": "2026-11-02T12:08:10+08:00",
+    "points": [
+      {
+        "text": "Karpathy 11/02 公開 HackerTube；原貼、網站方法頁及四則可追溯回覆已核對。",
+        "url": "https://x.com/karpathy/status/2116957135661945283",
+        "label": "查看原貼與回覆"
+      }
+    ],
+    "emptyMessage": "目前沒有其他已核對的過去 24 小時社群消息。"
   },
   "knowledgeLibrary": [
     {
@@ -7945,7 +8085,7 @@
     ]
   },
   "curiosity": {
-    "checkedAt": "2026-11-01T14:07:05+08:00",
+    "checkedAt": "2026-11-02T12:08:10+08:00",
     "topics": [
       {
         "id": "php2shell",
@@ -9833,6 +9973,111 @@
           }
         ],
         "limit": "目前根據官方 README、版本頁、X 原貼與三則可見回覆整理；沒有安裝、跨平台實測或統計全部留言。背景操作的效果是專案文件主張，不能取代使用者對操作範圍的授權。"
+      },
+      {
+        "id": "hackertube",
+        "url": "https://hackertube.org/about",
+        "lane": "feature",
+        "priority": -7,
+        "revision": "2026-11-02-hackertube-1",
+        "updatedAt": "2026-11-02",
+        "title": "HackerTube 是什麼？為什麼有人想重做 YouTube 推薦？",
+        "intro": "11/02，Andrej Karpathy 公開 HackerTube。它把 Hacker News 多年來反覆推薦的 YouTube 影片整理成可搜尋的目錄，讓人依主題找影片。Karpathy 說自己受夠了 YouTube 的推薦，用 Claude 協助完成資料整理和網站；目前的體驗好壞仍是作者主觀感受。",
+        "trigger": {
+          "date": "11/02 作者公開網站",
+          "text": "作者原貼、補充回覆及網站方法頁，讓「4,300 萬則留言怎麼變成 6,454 部影片」可以逐步查核。",
+          "urls": [
+            "https://x.com/karpathy/status/2116957135661945283",
+            "https://hackertube.org/about"
+          ]
+        },
+        "questions": [
+          {
+            "id": "why-this-list",
+            "question": "為什麼不直接看 YouTube，還要做另一份片單？",
+            "answer": "Karpathy 說他不滿 YouTube 的推薦；HackerTube 改以 Hacker News 留言中跨月份反覆出現的推薦排序。這能找出該社群長期討論的影片，但會帶入 Hacker News 的興趣偏向；目前沒有對照測試證明一般人會看得更滿意。",
+            "urls": [
+              "https://x.com/karpathy/status/2116957135661945283",
+              "https://hackertube.org/about"
+            ],
+            "status": "partial",
+            "next": "不同主題的使用者實際看過後，會更容易找到想看的影片嗎？"
+          },
+          {
+            "id": "selection",
+            "question": "4,300 萬則留言怎麼篩到 6,454 部影片？",
+            "answer": "網站說先掃描 2007 至 2026 年的 Hacker News 留言找 YouTube 連結，留下至少三個不同的人、跨三個月份提及且有實質評論的影片，再讓 Claude 判斷 39,834 則留下的留言是在推薦、引用、開玩笑還是批評。作者補充，大量網址與垃圾內容先用規則過濾，剩餘才交給 Sonnet。6,454 部是最後的目錄數，不能把 4,300 萬則都說成逐則交給模型閱讀。",
+            "urls": [
+              "https://hackertube.org/about",
+              "https://x.com/karpathy/status/2116970707867566106"
+            ],
+            "status": "supported",
+            "next": "模型把反諷或批評誤判成推薦的比例有多少？"
+          },
+          {
+            "id": "two-hours",
+            "question": "兩小時真的能把整個網站做完嗎？",
+            "answer": "Karpathy 自述約兩小時用 Claude Code 與 Opus 5.5 完成，仍親手建立 YouTube API 金鑰、開伺服器並買網域。網站公開資料流程與可下載資料，但沒有獨立的工時、token 成本或後續維護紀錄；可見回覆也有人追問成本，另有人提到搜尋速度。",
+            "urls": [
+              "https://x.com/karpathy/status/2116957135661945283",
+              "https://hackertube.org/about",
+              "https://x.com/yachty66/status/2116962863713784178"
+            ],
+            "status": "partial",
+            "next": "初次完成後，維護影片資料、搜尋與分類需要多少人工與運算成本？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://hackertube.org/about",
+            "label": "先讀：HackerTube 的篩選方法",
+            "reason": "看三人、三個月份的門檻，分清完整掃描範圍與模型標註的留言數。",
+            "date": "2026-11-02 網站公開；頁面未標日期",
+            "kind": "專案方法說明",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/karpathy/status/2116957135661945283",
+            "label": "再看：Karpathy 的公開原貼與局部回覆",
+            "reason": "了解他為什麼做、親手處理哪些步驟，以及作者對前處理的補充。",
+            "date": "2026-11-02",
+            "kind": "作者 X 原貼與回覆",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/yachty66/status/2116962863713784178",
+            "label": "其他來源：搜尋速度的個別回饋",
+            "reason": "一則實際使用者說搜尋偏慢；這是單人觀察，還不能推論整站表現。",
+            "date": "2026-11-02",
+            "kind": "X 個別回覆",
+            "recommended": false
+          },
+          {
+            "url": "https://x.com/karpathy/status/2116970707867566106",
+            "label": "其他來源：作者補充前處理",
+            "reason": "釐清 4,300 萬則掃描量與交由模型判讀的留言不是同一範圍。",
+            "date": "2026-11-02",
+            "kind": "作者 X 回覆",
+            "recommended": false
+          }
+        ],
+        "timeline": [
+          {
+            "date": "11/02 02:14 台北時間",
+            "text": "Karpathy 公開 HackerTube，說明選片來源與製作過程。",
+            "urls": [
+              "https://x.com/karpathy/status/2116957135661945283"
+            ]
+          },
+          {
+            "date": "11/02 後續回覆",
+            "text": "Karpathy 說明先用網址、規則與垃圾內容過濾，再讓 Sonnet 判讀剩餘留言。",
+            "urls": [
+              "https://x.com/karpathy/status/2116970707867566106"
+            ]
+          }
+        ],
+        "limit": "核對至 2026-11-02 約 11:20 台北時間。資料流程與製作時間是作者及網站自述；沒有獨立重跑分類、比較觀看品質或查得維護成本。只抽讀四則具網址的 X 回覆，不代表整體討論。"
       }
     ],
     "history": [
