@@ -2,6 +2,47 @@
   "editionDate": "2026-11-03",
   "posts": [
     {
+      "url": "https://x.com/OpenAIDevs/status/2117408792346509663",
+      "title": "OpenAI Developers 說明 Pando：代理工作量讓 Git 後端需要擴充",
+      "sourceDate": "2026-11-03",
+      "date": "2026-11-03",
+      "publishedAt": "2026-11-03T00:09:30Z",
+      "author": "OpenAI Developers",
+      "handle": "@OpenAIDevs",
+      "excerpt": "We built Pando, a new Git backend for our monorepo.",
+      "zh": "OpenAI Developers 11/03 上午貼出 Pando 工程文章，稱新後端在不改變 Git 使用方式下，因應更多代理與工程師同時推送、下載的工作量；約 80% 的推送延遲下降及每日近 1 PB 資料服務量，是 OpenAI 內部自述。官方串文另補充：同一分支依序更新，不同分支可並行，但跨分支讀取不一定是同一時間點。",
+      "topic": "feature",
+      "highLevel": true,
+      "checkedAt": "2026-11-03",
+      "evidenceUrl": "https://openai.com/index/scaling-git-at-openai/",
+      "evidenceLabel": "OpenAI 工程文章",
+      "caveat": "11/03 約 09:47 台北時間抽讀原貼與三則具原始連結的回覆。兩則詢問是否開源或供外部使用，一則注意到跨分支時間差；僅為局部樣本，不代表 X 整體觀點。",
+      "replyObservation": {
+        "count": 3,
+        "checkedAt": "2026-11-03",
+        "summary": "兩則回覆詢問能否開源或供外部使用；另一則注意到跨分支讀取可能來自不同時間。",
+        "urls": [
+          "https://x.com/shorttimelines/status/2117408985028653208",
+          "https://x.com/Kenwy05Kenwy/status/2117426455349268638",
+          "https://x.com/Cydr4l/status/2117418288091381896"
+        ]
+      },
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "adoption"
+        ],
+        "concepts": [
+          "Pando",
+          "Git 後端",
+          "代理寫程式",
+          "分支並行"
+        ],
+        "outcome": "release"
+      }
+    },
+    {
       "url": "https://x.com/karpathy/status/2116957135661945283",
       "title": "Karpathy 公開 HackerTube：從 Hacker News 的影片推薦重新整理 YouTube",
       "sourceDate": "2026-11-02",
@@ -8018,9 +8059,17 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-11-03T09:45:00+08:00",
-    "points": [],
-    "emptyMessage": "目前沒有已核對精確發布時間的過去 24 小時 AI 社群消息；11/02 兩篇官方文章依原始日期列在素材中。"
+    "checkedAt": "2026-11-03T09:47:00+08:00",
+    "points": [
+      {
+        "url": "https://x.com/OpenAIDevs/status/2117408792346509663",
+        "title": "OpenAI Developers 發布 Pando 官方串文",
+        "publishedAt": "2026-11-03T00:09:30Z",
+        "sourceDate": "2026-11-03",
+        "summary": "介紹 Git 後端 Pando；效能與流量數字為內部自述，詳見 11/02 工程文章。"
+      }
+    ],
+    "emptyMessage": ""
   },
   "knowledgeLibrary": [
     {
@@ -10150,14 +10199,15 @@
         "url": "https://openai.com/index/scaling-git-at-openai/",
         "lane": "feature",
         "priority": -8,
-        "revision": "2026-11-03-pando-1",
+        "revision": "2026-11-03-pando-2",
         "updatedAt": "2026-11-03",
         "title": "Pando 是什麼？為什麼 AI 寫程式變多，Git 也得跟著改？",
-        "intro": "11/02，OpenAI 公開自建 Git 後端 Pando。Codex 讓更多變更同時進行，也讓推送、合併和 CI 下載一起增加；原本服務單一儲存庫的系統一度慢到影響工作。Pando 保留工程師熟悉的 Git 操作，改變伺服器處理分支與下載的方式。",
+        "intro": "OpenAI 11/02 公開自建 Git 後端 Pando，11/03 又在 X 說明其用途。Codex 讓更多變更同時進行，也讓推送、合併和 CI 下載一起增加；原本服務單一儲存庫的系統一度慢到影響工作。Pando 保留熟悉的 Git 操作，改變伺服器處理分支與下載的方式。",
         "trigger": {
-          "date": "11/02 官方工程文章",
-          "text": "OpenAI 第一次完整說明 Pando 的原因、設計取捨、移轉過程與內部結果。",
+          "date": "11/03 官方 X 貼文・11/02 工程文章",
+          "text": "OpenAI Developers 11/03 發布 Pando 原貼與技術串文；前一天的工程文章交代瓶頸、設計取捨、移轉過程及內部結果。",
           "urls": [
+            "https://x.com/OpenAIDevs/status/2117408792346509663",
             "https://openai.com/index/scaling-git-at-openai/"
           ]
         },
@@ -10185,9 +10235,10 @@
           {
             "id": "available",
             "question": "其他公司現在也能用 Pando 嗎？",
-            "answer": "OpenAI 說已將部分 Git 客戶端改進貢獻上游並公開自己的 Git 版本；Pando 後端目前用於其內部，文章只說正在探索如何分享相關技術。不能把公開 Git 改進視為 Pando 已對外發布。",
+            "answer": "OpenAI 說已將部分 Git 客戶端改進貢獻上游並公開自己的 Git 版本；Pando 後端目前用於其內部，文章只說正在探索如何分享相關技術。不能把公開 Git 改進視為 Pando 已對外發布。 11/03 抽讀的兩則個別回覆也詢問能否開源或供外部使用；目前未見官方承諾日期。",
             "urls": [
-              "https://openai.com/index/scaling-git-at-openai/"
+              "https://openai.com/index/scaling-git-at-openai/",
+              "https://x.com/OpenAIDevs/status/2117408792346509663"
             ],
             "status": "partial",
             "next": "OpenAI 是否提供可供外部部署的 Pando 版本或獨立評測？"
@@ -10201,6 +10252,14 @@
             "date": "2026-11-02",
             "kind": "官方工程文章",
             "recommended": true
+          },
+          {
+            "url": "https://x.com/OpenAIDevs/status/2117408792346509663",
+            "label": "接著讀：OpenAI Developers 的 Pando 原貼與串文",
+            "reason": "看官方如何把工程文章的關鍵限制說清楚，再對照可追溯的個別回覆提出的開源疑問。",
+            "date": "2026-11-03",
+            "kind": "官方 X 貼文",
+            "recommended": true
           }
         ],
         "timeline": [
@@ -10210,9 +10269,16 @@
             "urls": [
               "https://openai.com/index/scaling-git-at-openai/"
             ]
+          },
+          {
+            "date": "11/03",
+            "text": "OpenAI Developers 發布原貼；可見回覆詢問開源及跨分支一致性，尚非外部部署證據。",
+            "urls": [
+              "https://x.com/OpenAIDevs/status/2117408792346509663"
+            ]
           }
         ],
-        "limit": "截至 11/03 核對官方文章。推送延遲、可靠度與傳輸量是 OpenAI 內部自述；1,000 寫入者比較是模擬。沒有外部重跑或證據支持所有團隊都需要同一架構。"
+        "limit": "截至 11/03 核對官方文章、原貼及三則可追溯回覆。推送延遲、可靠度與傳輸量是 OpenAI 內部自述；1,000 寫入者比較是模擬。回覆僅是局部樣本，尚無外部重跑或證據支持所有團隊都需要同一架構。"
       },
       {
         "id": "lifeval",
@@ -10892,6 +10958,75 @@
           }
         ],
         "limit": "Google 內部測試與 Arena 公開榜單衡量的任務不同。Arena 名次會隨樣本更新；尚無 Carbon 廣泛使用後的獨立實測。Pichai 原貼只抽查三則回覆，Arena 原貼回覆尚未核對。"
+      },
+      {
+        "id": "openai-pando",
+        "url": "https://openai.com/index/scaling-git-at-openai/",
+        "lane": "feature",
+        "priority": -8,
+        "revision": "2026-11-03-pando-1",
+        "updatedAt": "2026-11-03",
+        "title": "Pando 是什麼？為什麼 AI 寫程式變多，Git 也得跟著改？",
+        "intro": "11/02，OpenAI 公開自建 Git 後端 Pando。Codex 讓更多變更同時進行，也讓推送、合併和 CI 下載一起增加；原本服務單一儲存庫的系統一度慢到影響工作。Pando 保留工程師熟悉的 Git 操作，改變伺服器處理分支與下載的方式。",
+        "trigger": {
+          "date": "11/02 官方工程文章",
+          "text": "OpenAI 第一次完整說明 Pando 的原因、設計取捨、移轉過程與內部結果。",
+          "urls": [
+            "https://openai.com/index/scaling-git-at-openai/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "why-git",
+            "question": "代理只是多寫一些程式，為什麼會卡到 Git？",
+            "answer": "OpenAI 說同一位工程師可同時準備多個變更，每次推送又會引發 CI 等系統抓取相同版本，於是分支、推送、合併與下載一起放大。原後端曾有慢速與合併失敗，可靠度有時低於 90%；這是 OpenAI 對自身儲存庫的描述。",
+            "urls": [
+              "https://openai.com/index/scaling-git-at-openai/"
+            ],
+            "status": "supported",
+            "next": "其他採用大量代理的團隊，是否也出現相同瓶頸？"
+          },
+          {
+            "id": "how-pando",
+            "question": "Pando 改了什麼？使用者要換掉 Git 嗎？",
+            "answer": "它保留 Git 協定與客戶端，把不同分支的更新分開協調，並重用推送時收到的 packfile 供後續下載。使用者不必換掉 Git；代價是跨多個分支讀取時，不保證得到全庫同一時間點的快照。",
+            "urls": [
+              "https://openai.com/index/scaling-git-at-openai/"
+            ],
+            "status": "supported",
+            "next": "哪些跨分支工作真的需要嚴格的全庫一致快照？"
+          },
+          {
+            "id": "available",
+            "question": "其他公司現在也能用 Pando 嗎？",
+            "answer": "OpenAI 說已將部分 Git 客戶端改進貢獻上游並公開自己的 Git 版本；Pando 後端目前用於其內部，文章只說正在探索如何分享相關技術。不能把公開 Git 改進視為 Pando 已對外發布。",
+            "urls": [
+              "https://openai.com/index/scaling-git-at-openai/"
+            ],
+            "status": "partial",
+            "next": "OpenAI 是否提供可供外部部署的 Pando 版本或獨立評測？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://openai.com/index/scaling-git-at-openai/",
+            "label": "先讀：OpenAI 的 Pando 工程說明",
+            "reason": "從原有瓶頸、設計取捨與分階段移轉，看內部成效有哪些前提。",
+            "date": "2026-11-02",
+            "kind": "官方工程文章",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "11/02",
+            "text": "OpenAI 公開 Pando 設計與在其單一儲存庫的使用情況。",
+            "urls": [
+              "https://openai.com/index/scaling-git-at-openai/"
+            ]
+          }
+        ],
+        "limit": "截至 11/03 核對官方文章。推送延遲、可靠度與傳輸量是 OpenAI 內部自述；1,000 寫入者比較是模擬。沒有外部重跑或證據支持所有團隊都需要同一架構。"
       }
     ],
     "maxVisible": 3
