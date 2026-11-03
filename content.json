@@ -1,5 +1,5 @@
 {
-  "editionDate": "2026-11-02",
+  "editionDate": "2026-11-03",
   "posts": [
     {
       "url": "https://x.com/karpathy/status/2116957135661945283",
@@ -1880,6 +1880,78 @@
     }
   ],
   "news": [
+    {
+      "type": "研究與評測",
+      "sourceDate": "2026-11-02",
+      "date": "2026-11-02",
+      "title": "LifeVal 用日常任務評測 AI；高分仍需看任務定義與實際完成情況",
+      "lead": "OpenAI 11/02 公開 LifeVal，從時間使用調查與 3,995 人的補充問卷挑出育兒、購物、家務、財務與政府服務等日常任務，評估 AI 助理能否幫人處理具體事情。",
+      "takeaways": [
+        "它先參考美國與跨國時間使用調查，再問 3,995 位受訪者哪些生活工作最希望 AI 幫忙；這是選任務的方法，不是產品實際使用成效。",
+        "網站列出 GPT-6 Astra 在部分任務的最佳紀錄分數，例子包括選幼兒園與整理志工安排；表格沒有提供所有任務的完整成功率與現場長期追蹤。",
+        "示例多停在準備清單、草稿或待使用者確認的步驟。分數高不等於已替人完成付款、申請或其他外部動作。"
+      ],
+      "caveat": "讀取了 OpenAI 11/02 官方文章與可展開的任務結果表；未取得可重跑的完整評測題目、評分細則與獨立驗證。分數是其公開的最佳紀錄，不能直接推論真實生活完成率。",
+      "url": "https://openai.com/index/lifeval/",
+      "source": "OpenAI Research",
+      "author": "OpenAI",
+      "originalTitle": "LifeVal",
+      "englishSummary": "OpenAI describes a life-task evaluation informed by time-use data and a 3,995-person survey; its page displays selected best-recorded task scores.",
+      "topic": "research",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow"
+        ],
+        "concepts": [
+          "LifeVal",
+          "日常任務評測",
+          "最佳紀錄分數"
+        ],
+        "outcome": "research"
+      },
+      "checkedAt": "2026-11-03",
+      "followupQuestions": [
+        "LifeVal 的評分規則與完整任務分布是否公開？準備好待確認的結果與真正完成外部動作如何區分？"
+      ]
+    },
+    {
+      "type": "工程與工具",
+      "sourceDate": "2026-11-02",
+      "date": "2026-11-02",
+      "title": "OpenAI 公開 Pando：讓大量代理並行寫程式時，Git 推送與下載跟得上",
+      "lead": "OpenAI 11/02 說明自建 Git 後端 Pando。Codex 增加同時開發、推送與 CI 下載，原有單一儲存庫服務一度出現慢速與合併失敗；Pando 保留 Git 用法，改變後端如何處理不同分支與封裝檔。",
+      "takeaways": [
+        "各分支的更新可獨立進行，減少互不相關的推送互相等待；代價是讀取多個分支時，未必看到整個儲存庫同一時點的快照。",
+        "接收推送時保存可重用的 Git packfile，之後讓多個下載者透過快取取得；OpenAI 自述正式環境的推送中位延遲近乎縮短五倍。",
+        "團隊先把 Pando 當舊系統的讀寫代理，分階段移轉整合；其內部成效不保證其他規模或工作型態會得到相同改善。"
+      ],
+      "caveat": "資料與成效來自 OpenAI 官方工程文章；模擬採 1,000 個寫入者、各用不同分支。正式環境數字屬 OpenAI 單一儲存庫的自述，尚無外部重跑。",
+      "url": "https://openai.com/index/scaling-git-at-openai/",
+      "source": "OpenAI Engineering",
+      "author": "Aaron Friel、Taylor Blau、Ted Nyman",
+      "originalTitle": "Scaling Git at OpenAI",
+      "englishSummary": "OpenAI describes Pando, a Git-compatible backend using per-ref coordination and reusable packfiles to support parallel agent development.",
+      "topic": "feature",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "Pando",
+          "Git 並行推送",
+          "packfile 快取"
+        ],
+        "outcome": "case"
+      },
+      "checkedAt": "2026-11-03",
+      "followupQuestions": [
+        "哪些 Git 一致性假設被放寬？其他團隊能否使用 Pando 或其上游 Git 改進？"
+      ]
+    },
     {
       "type": "功能與工具",
       "sourceDate": "2026-11-02",
@@ -7946,15 +8018,9 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-11-02T12:08:10+08:00",
-    "points": [
-      {
-        "text": "Karpathy 11/02 公開 HackerTube；原貼、網站方法頁及四則可追溯回覆已核對。",
-        "url": "https://x.com/karpathy/status/2116957135661945283",
-        "label": "查看原貼與回覆"
-      }
-    ],
-    "emptyMessage": "目前沒有其他已核對的過去 24 小時社群消息。"
+    "checkedAt": "2026-11-03T09:45:00+08:00",
+    "points": [],
+    "emptyMessage": "目前沒有已核對精確發布時間的過去 24 小時 AI 社群消息；11/02 兩篇官方文章依原始日期列在素材中。"
   },
   "knowledgeLibrary": [
     {
@@ -8085,7 +8151,7 @@
     ]
   },
   "curiosity": {
-    "checkedAt": "2026-11-02T12:08:10+08:00",
+    "checkedAt": "2026-11-03T09:45:00+08:00",
     "topics": [
       {
         "id": "php2shell",
@@ -10078,6 +10144,144 @@
           }
         ],
         "limit": "核對至 2026-11-02 約 11:20 台北時間。資料流程與製作時間是作者及網站自述；沒有獨立重跑分類、比較觀看品質或查得維護成本。只抽讀四則具網址的 X 回覆，不代表整體討論。"
+      },
+      {
+        "id": "openai-pando",
+        "url": "https://openai.com/index/scaling-git-at-openai/",
+        "lane": "feature",
+        "priority": -8,
+        "revision": "2026-11-03-pando-1",
+        "updatedAt": "2026-11-03",
+        "title": "Pando 是什麼？為什麼 AI 寫程式變多，Git 也得跟著改？",
+        "intro": "11/02，OpenAI 公開自建 Git 後端 Pando。Codex 讓更多變更同時進行，也讓推送、合併和 CI 下載一起增加；原本服務單一儲存庫的系統一度慢到影響工作。Pando 保留工程師熟悉的 Git 操作，改變伺服器處理分支與下載的方式。",
+        "trigger": {
+          "date": "11/02 官方工程文章",
+          "text": "OpenAI 第一次完整說明 Pando 的原因、設計取捨、移轉過程與內部結果。",
+          "urls": [
+            "https://openai.com/index/scaling-git-at-openai/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "why-git",
+            "question": "代理只是多寫一些程式，為什麼會卡到 Git？",
+            "answer": "OpenAI 說同一位工程師可同時準備多個變更，每次推送又會引發 CI 等系統抓取相同版本，於是分支、推送、合併與下載一起放大。原後端曾有慢速與合併失敗，可靠度有時低於 90%；這是 OpenAI 對自身儲存庫的描述。",
+            "urls": [
+              "https://openai.com/index/scaling-git-at-openai/"
+            ],
+            "status": "supported",
+            "next": "其他採用大量代理的團隊，是否也出現相同瓶頸？"
+          },
+          {
+            "id": "how-pando",
+            "question": "Pando 改了什麼？使用者要換掉 Git 嗎？",
+            "answer": "它保留 Git 協定與客戶端，把不同分支的更新分開協調，並重用推送時收到的 packfile 供後續下載。使用者不必換掉 Git；代價是跨多個分支讀取時，不保證得到全庫同一時間點的快照。",
+            "urls": [
+              "https://openai.com/index/scaling-git-at-openai/"
+            ],
+            "status": "supported",
+            "next": "哪些跨分支工作真的需要嚴格的全庫一致快照？"
+          },
+          {
+            "id": "available",
+            "question": "其他公司現在也能用 Pando 嗎？",
+            "answer": "OpenAI 說已將部分 Git 客戶端改進貢獻上游並公開自己的 Git 版本；Pando 後端目前用於其內部，文章只說正在探索如何分享相關技術。不能把公開 Git 改進視為 Pando 已對外發布。",
+            "urls": [
+              "https://openai.com/index/scaling-git-at-openai/"
+            ],
+            "status": "partial",
+            "next": "OpenAI 是否提供可供外部部署的 Pando 版本或獨立評測？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://openai.com/index/scaling-git-at-openai/",
+            "label": "先讀：OpenAI 的 Pando 工程說明",
+            "reason": "從原有瓶頸、設計取捨與分階段移轉，看內部成效有哪些前提。",
+            "date": "2026-11-02",
+            "kind": "官方工程文章",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "11/02",
+            "text": "OpenAI 公開 Pando 設計與在其單一儲存庫的使用情況。",
+            "urls": [
+              "https://openai.com/index/scaling-git-at-openai/"
+            ]
+          }
+        ],
+        "limit": "截至 11/03 核對官方文章。推送延遲、可靠度與傳輸量是 OpenAI 內部自述；1,000 寫入者比較是模擬。沒有外部重跑或證據支持所有團隊都需要同一架構。"
+      },
+      {
+        "id": "lifeval",
+        "url": "https://openai.com/index/lifeval/",
+        "lane": "research",
+        "priority": -9,
+        "revision": "2026-11-03-lifeval-1",
+        "updatedAt": "2026-11-03",
+        "title": "LifeVal 的高分，代表 AI 已能幫人完成日常瑣事嗎？",
+        "intro": "11/02，OpenAI 發表 LifeVal，想用找托育、買菜、準備申請資料等日常任務評估 AI 助理。題目參考時間使用調查，再用 3,995 人的問卷找大家希望獲得幫忙的事。公開的高分示例值得看，但分數和實際生活中把事情辦完仍有距離。",
+        "trigger": {
+          "date": "11/02 研究公開",
+          "text": "OpenAI 公開選題來源、部分任務結果與示例，讓「AI 幫忙做事」可以進一步問如何計分。",
+          "urls": [
+            "https://openai.com/index/lifeval/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "why-everyday",
+            "question": "為什麼評測題目是買菜、找學校，而非一般考試題？",
+            "answer": "OpenAI 想測量使用者在生活中會請助理幫忙的事，先參考美國與跨國時間使用調查，再問 3,995 位受訪者最想在哪些工作得到協助。這能讓題目更貼近日常需求，但問卷偏好本身不能證明 AI 已做好。",
+            "urls": [
+              "https://openai.com/index/lifeval/"
+            ],
+            "status": "supported",
+            "next": "受訪者如何選出、各地生活任務差異如何處理？"
+          },
+          {
+            "id": "scores",
+            "question": "表格上的 100%，是 AI 自己把事情辦完了嗎？",
+            "answer": "公開表格標示的是 GPT-6 Astra 在列出任務的最佳紀錄分數；示例常把清單或草稿準備好，留待人確認。原頁未展示完整題庫與每次嘗試的分布，不能把個別最佳分數說成真實環境的完成率。",
+            "urls": [
+              "https://openai.com/index/lifeval/"
+            ],
+            "status": "partial",
+            "next": "評分細則如何區分建議、待確認的準備工作與完成外部動作？"
+          },
+          {
+            "id": "real-world",
+            "question": "它能證明 AI 在真實生活裡可靠嗎？",
+            "answer": "目前只能確認官方展示的題目來源與部分最佳結果；沒有從公開頁找到獨立重跑、長期追蹤或完整失敗分布。因此真實使用時的可靠度仍待查。",
+            "urls": [
+              "https://openai.com/index/lifeval/"
+            ],
+            "status": "partial",
+            "next": "是否會公布完整任務、失敗案例與第三方評估？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://openai.com/index/lifeval/",
+            "label": "先讀：OpenAI 的 LifeVal 方法與任務示例",
+            "reason": "核對 3,995 人問卷的用途、任務範圍，以及表格標示的最佳紀錄分數。",
+            "date": "2026-11-02",
+            "kind": "官方研究介紹與部分結果",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "11/02",
+            "text": "OpenAI 發表 LifeVal，公開日常任務的選題來源與部分示例。",
+            "urls": [
+              "https://openai.com/index/lifeval/"
+            ]
+          }
+        ],
+        "limit": "截至 11/03 只讀官方公開頁與展開的任務表；未取得完整題庫、評分協定、每次嘗試的分布或獨立驗證。3,995 是問卷受訪者數，不是模型任務測試數。"
       }
     ],
     "history": [
