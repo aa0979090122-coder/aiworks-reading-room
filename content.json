@@ -1,6 +1,46 @@
 {
-  "editionDate": "2026-11-03",
+  "editionDate": "2026-11-04",
   "posts": [
+    {
+      "url": "https://x.com/OpenAI/status/2117692475775258785",
+      "title": "OpenAI 展示 AI 參與實體工程，社群追問 CAD 操作與審查",
+      "sourceDate": "2026-11-04",
+      "date": "2026-11-04",
+      "publishedAt": "2026-11-03T18:56:45.705Z",
+      "author": "OpenAI",
+      "handle": "@OpenAI",
+      "excerpt": "ChatGPT and Codex are helping engineers build for the physical world.",
+      "zh": "OpenAI 11/04 台北時間貼出實體工程展示，說明模型參與機械、電路與模擬設計。後續串文承認原型製造仍需多輪人工審查，也說 Chip Ganassi Racing 與 Mazda 的合作仍在測試。",
+      "topic": "research",
+      "highLevel": true,
+      "checkedAt": "2026-11-04",
+      "evidenceUrl": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+      "evidenceLabel": "OpenAI 研究文章",
+      "caveat": "11/04 約 09:37 台北時間核對原貼及三則具網址的可見回覆；有人追問 CAD 檔是直接讀取或透過腳本、電路板由誰佈局，也有人提醒簽核可能比設計更慢。這只是局部樣本，不代表全站風向。",
+      "replyObservation": {
+        "count": 3,
+        "checkedAt": "2026-11-04",
+        "summary": "兩則追問 CAD 與電路板的實際操作範圍；一則提醒設計迭代後仍有簽核時間。",
+        "urls": [
+          "https://x.com/parzival1213/status/2117693298017968592",
+          "https://x.com/aapakari/status/2117694818583548024",
+          "https://x.com/MiclauMarius/status/2117713609312838134"
+        ]
+      },
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "實體工程",
+          "CAD",
+          "製造審查"
+        ],
+        "outcome": "discussion"
+      }
+    },
     {
       "url": "https://x.com/OpenAIDevs/status/2117408792346509663",
       "title": "OpenAI Developers 說明 Pando：代理工作量讓 Git 後端需要擴充",
@@ -1921,6 +1961,43 @@
     }
   ],
   "news": [
+    {
+      "type": "研究與實作",
+      "sourceDate": "2026-11-03",
+      "date": "2026-11-03",
+      "title": "OpenAI 展示 AI 協助實體產品設計；原型仍需人工審查製造條件",
+      "lead": "OpenAI 11/03 公開機械、電路與模擬工作的早期實驗。兩名成員用 Astra 設計可與 Codex 對話的裝置原型，代工廠在一個月內做出小批樣品。",
+      "takeaways": [
+        "Astra 產出外殼、電路板、介面與軟體設計；準備製造時，團隊仍反覆檢查生產限制、公差與組裝細節。",
+        "OpenAI 的硬體團隊用模型協助 CAD、製造圖與模擬；自 2 月起 token 用量增加 23 倍，這是使用量，不是產能或品質提升幅度。",
+        "Chip Ganassi Racing 正測試把零件掃描轉成可編輯 CAD，Mazda 正探索空氣力學與撞擊模擬；文章尚未提供兩項合作的量化成果。"
+      ],
+      "caveat": "原型與團隊用量是 OpenAI 自述。BenchCAD 2.0 的 0.875 與 0.594 是內部模型評測，不能直接代表量產成功率；合作仍由工程師檢查輸出。",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+      "source": "OpenAI Research",
+      "author": "OpenAI",
+      "originalTitle": "Accelerating engineering for the physical world",
+      "englishSummary": "OpenAI describes early CAD, electronics, and simulation workflows, a prototype device, and industry collaborations, while noting manufacturing review and unresolved limitations.",
+      "topic": "research",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "CAD",
+          "實體工程",
+          "製造審查",
+          "BenchCAD 2.0"
+        ],
+        "outcome": "research"
+      },
+      "checkedAt": "2026-11-04",
+      "followupQuestions": [
+        "哪些設計可以直接交給模型生成？製造審查與安全驗證各需要哪些人與資料？"
+      ]
+    },
     {
       "type": "研究與評測",
       "sourceDate": "2026-11-02",
@@ -8059,14 +8136,14 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-11-03T09:47:00+08:00",
+    "checkedAt": "2026-11-04T09:37:00+08:00",
     "points": [
       {
-        "url": "https://x.com/OpenAIDevs/status/2117408792346509663",
-        "title": "OpenAI Developers 發布 Pando 官方串文",
-        "publishedAt": "2026-11-03T00:09:30Z",
-        "sourceDate": "2026-11-03",
-        "summary": "介紹 Git 後端 Pando；效能與流量數字為內部自述，詳見 11/02 工程文章。"
+        "url": "https://x.com/OpenAI/status/2117692475775258785",
+        "title": "OpenAI 發布 AI 實體工程展示",
+        "publishedAt": "2026-11-03T18:56:45.705Z",
+        "sourceDate": "2026-11-04",
+        "summary": "裝置原型與 CAD、電路和模擬合作仍在早期；製造審查限制詳見 11/03 原文。"
       }
     ],
     "emptyMessage": ""
@@ -8200,7 +8277,7 @@
     ]
   },
   "curiosity": {
-    "checkedAt": "2026-11-03T09:45:00+08:00",
+    "checkedAt": "2026-11-04T09:37:00+08:00",
     "topics": [
       {
         "id": "php2shell",
@@ -10348,6 +10425,92 @@
           }
         ],
         "limit": "截至 11/03 只讀官方公開頁與展開的任務表；未取得完整題庫、評分協定、每次嘗試的分布或獨立驗證。3,995 是問卷受訪者數，不是模型任務測試數。"
+      },
+      {
+        "id": "ai-physical-engineering",
+        "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+        "lane": "event",
+        "priority": -10,
+        "revision": "2026-11-04-physical-engineering-1",
+        "updatedAt": "2026-11-04",
+        "title": "AI 能設計實體產品了？做出原型後還卡在哪裡？",
+        "intro": "OpenAI 11/03 展示 AI 協助設計一台可與 Codex 對話的裝置，從外殼、電路板到軟體都有模型參與。兩名成員不到一週做出設計，代工廠接著製作小批原型；進入製造前，工程師仍得反覆檢查公差、組裝與生產限制。",
+        "trigger": {
+          "date": "11/03 研究公開・11/04 台北時間官方 X 展示",
+          "text": "官方文章交代原型與製造上的缺口；X 串文帶出 CAD、電路板究竟由模型做到哪一步的疑問。",
+          "urls": [
+            "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+            "https://x.com/OpenAI/status/2117692475775258785"
+          ]
+        },
+        "questions": [
+          {
+            "id": "what-designed",
+            "question": "AI 到底設計了什麼？原型是它自己做出來的嗎？",
+            "answer": "OpenAI 說 Astra 產出裝置外殼、電路板、介面與連接 Codex 的軟體設計；兩名成員一起完成測試，代工廠再製作小批樣品。文章寫明準備製造時仍要多輪人工審查，模型沒有穩定處理公差和組裝細節。",
+            "urls": [
+              "https://openai.com/index/accelerating-engineering-for-the-physical-world/"
+            ],
+            "status": "supported",
+            "next": "設計文件進入代工廠前，哪些條件最常需要工程師補查？"
+          },
+          {
+            "id": "usage-vs-result",
+            "question": "硬體團隊的 AI 用量成長 23 倍，代表產品做得更快嗎？",
+            "answer": "23 倍是 OpenAI 自 2 月起的 token 用量變化。文章有工程師描述 CAD、圖面與模擬的工作速度，但沒有提供團隊整體交付時間、瑕疵率或量產結果的前後比較。",
+            "urls": [
+              "https://openai.com/index/accelerating-engineering-for-the-physical-world/"
+            ],
+            "status": "partial",
+            "next": "同一類零件從設計到審核完成，所需時間與返工次數有沒有變？"
+          },
+          {
+            "id": "partner-stage",
+            "question": "Mazda 和賽車團隊已經把它用在正式產品嗎？",
+            "answer": "OpenAI 說 Chip Ganassi Racing 正測試把零件掃描轉成 CAD 與製造圖；Mazda 正探索新車外型的氣流與撞擊模擬。兩者仍由工程師檢查輸出，公開文章尚未提供量產採用或可歸因的效益數字。",
+            "urls": [
+              "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+              "https://x.com/OpenAI/status/2117692475775258785"
+            ],
+            "status": "partial",
+            "next": "合作團隊接下來會公開哪些設計驗證、返工或製造結果？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+            "label": "先讀：OpenAI 的實體工程研究",
+            "reason": "先看裝置原型怎麼設計，再讀公差、組裝與合作測試的限制。",
+            "date": "2026-11-03",
+            "kind": "官方研究與早期實作",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/OpenAI/status/2117692475775258785",
+            "label": "接著看：OpenAI 的展示與局部回覆",
+            "reason": "核對官方對原型及合作階段的說法，並看看三則具網址回覆追問了什麼。",
+            "date": "2026-11-04 台北時間",
+            "kind": "官方 X 原貼與局部回覆",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "11/03",
+            "text": "OpenAI 公開裝置原型、內部硬體工作與兩項合作測試。",
+            "urls": [
+              "https://openai.com/index/accelerating-engineering-for-the-physical-world/"
+            ]
+          },
+          {
+            "date": "11/04 02:56 台北時間",
+            "text": "OpenAI 發布 X 展示與後續串文；可見回覆追問 CAD 操作範圍和人工簽核。",
+            "urls": [
+              "https://x.com/OpenAI/status/2117692475775258785"
+            ]
+          }
+        ],
+        "limit": "截至 11/04 約 09:37 台北時間，裝置與團隊用量是 OpenAI 自述；BenchCAD 為內部評測，合作尚未公布量化成果。只抽讀三則具網址的 X 回覆，不代表整體討論。"
       }
     ],
     "history": [
