@@ -1,6 +1,77 @@
 {
-  "editionDate": "2026-11-04",
+  "editionDate": "2026-11-05",
   "posts": [
+    {
+      "url": "https://x.com/ClaudeDevs/status/2118063143167693011",
+      "title": "Claude Code 背景子代理的狀態更新改用短筆記；用量節省需分開看",
+      "sourceDate": "2026-11-05",
+      "date": "2026-11-05",
+      "publishedAt": "2026-11-04T19:29:39.698Z",
+      "author": "Claude Developers",
+      "handle": "@ClaudeDevs",
+      "excerpt": "Background subagents in Claude Code now use less of your usage limit.",
+      "zh": "官方說背景子代理每 30 秒寫一次狀態列。原本每次重讀對話，現在改由 Haiku 5.5 根據短筆記產生；單次更新成本約降 99%。後續貼文說有背景子代理的整段工作階段約少用 5% 額度，子代理本身仍使用原設定模型。",
+      "topic": "feature",
+      "highLevel": true,
+      "checkedAt": "2026-11-05",
+      "evidenceUrl": "https://x.com/ClaudeDevs/status/2118063144572772627",
+      "evidenceLabel": "Claude Developers 後續說明",
+      "caveat": "11/05 約 11:25 台北時間核對官方原貼、後續貼文及四則具原始網址的回覆。99% 是單次狀態列更新的成本變化；5% 是官方對有背景子代理工作階段的用量估計，非所有任務的降幅。回覆只代表局部樣本。",
+      "replyObservation": {
+        "count": 4,
+        "checkedAt": "2026-11-05",
+        "summary": "四則回覆質疑原本消耗額度的設計，或詢問是否補回額度；尚未看到官方承諾補償。",
+        "urls": [
+          "https://x.com/JinjingLiang/status/2118146998843187397",
+          "https://x.com/masongeloso/status/2118098450499928133",
+          "https://x.com/petekp/status/2118073052101755286",
+          "https://x.com/HashimTheArab/status/2118088376435806608"
+        ]
+      },
+      "knowledge": {
+        "primary": "scaling",
+        "themes": [
+          "scaling",
+          "workflow",
+          "evaluation"
+        ],
+        "concepts": [
+          "背景子代理",
+          "狀態列更新",
+          "用量額度"
+        ],
+        "outcome": "release"
+      }
+    },
+    {
+      "url": "https://x.com/ClaudeDevs/status/2118063144572772627",
+      "title": "Claude Developers 補充：整段背景子代理工作約少用 5% 額度",
+      "sourceDate": "2026-11-05",
+      "date": "2026-11-05",
+      "publishedAt": "2026-11-04T19:29:40.033Z",
+      "author": "Claude Developers",
+      "handle": "@ClaudeDevs",
+      "excerpt": "Sessions with background subagents used about 5% less of the limit.",
+      "zh": "官方補充：子代理本身仍使用原設定模型；有背景子代理的工作階段約少用 5% 額度，相同額度約能多發 6% 提示。多數 Pro、Max、Ultra 與全部 Team、Enterprise 使用者更新至 v2.1.316 以上可使用。",
+      "topic": "feature",
+      "highLevel": true,
+      "checkedAt": "2026-11-05",
+      "evidenceUrl": "https://x.com/ClaudeDevs/status/2118063143167693011",
+      "evidenceLabel": "Claude Developers 原貼",
+      "caveat": "5% 為官方工作階段估計，沒有公開跨任務獨立測試；不應套用在沒有背景子代理的工作。",
+      "knowledge": {
+        "primary": "scaling",
+        "themes": [
+          "scaling",
+          "evaluation"
+        ],
+        "concepts": [
+          "背景子代理",
+          "用量額度"
+        ],
+        "outcome": "release"
+      }
+    },
     {
       "url": "https://x.com/OpenAI/status/2117692475775258785",
       "title": "OpenAI 展示 AI 參與實體工程，社群追問 CAD 操作與審查",
@@ -1961,6 +2032,72 @@
     }
   ],
   "news": [
+    {
+      "type": "公司動態 · 開發工具",
+      "sourceDate": "2026-11-04",
+      "date": "2026-11-04",
+      "title": "OpenAI 宣布擬收購 Pierre；Codex 已使用其檔案與差異檢視元件",
+      "lead": "OpenAI 11/04 宣布擬收購 Pierre Computer Company。Codex 應用程式現已使用 Pierre 的 Trees 和 Diffs；交易完成後才規劃進一步整合 Code Storage。",
+      "takeaways": [
+        "Pierre 開發 Code Storage，以及 Trees、Diffs、Highlights 等開源開發工具；Codex 目前已用 Trees 和 Diffs。",
+        "OpenAI 把這項收購和本週公開的 Pando 放在同一條 Git 工作流程脈絡，但沒有宣布 Pando 對外發布。",
+        "OpenAI 表示 Pierre 開源專案會保持開源；Code Storage 客戶在交易完成後可繼續使用，並計畫逐步整合至 Codex。"
+      ],
+      "caveat": "收購仍須符合交割條件，包括監管核准；交割前兩家公司獨立營運。公告未提供 Codex 整合時程或 Pando 對外可用日期。",
+      "url": "https://openai.com/index/openai-to-acquire-pierre/",
+      "source": "OpenAI",
+      "author": "OpenAI",
+      "originalTitle": "OpenAI to acquire Pierre Computer Company, Inc.",
+      "englishSummary": "OpenAI announced a proposed acquisition of Pierre. Codex already uses Pierre’s Trees and Diffs libraries; future Code Storage integration depends on closing and has no announced date.",
+      "topic": "feature",
+      "checkedAt": "2026-11-05",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "market"
+        ],
+        "concepts": [
+          "Codex",
+          "Pierre",
+          "Git 工具"
+        ],
+        "outcome": "announcement"
+      }
+    },
+    {
+      "type": "產品功能 · 代理存取",
+      "sourceDate": "2026-11-04",
+      "date": "2026-11-04",
+      "title": "Cloudflare 讓網站辨識個人代理流量，並可對支援的代理分別設存取政策",
+      "lead": "Cloudflare 11/04 新增個人代理流量分類與請求明細，網站可看代理走到哪些頁面，再為支援的代理設定允許或阻擋。",
+      "takeaways": [
+        "Security Analytics 新增 Personal Assistants 類別，列出代理、請求數、路徑、狀態碼與來源網路。",
+        "採用 Account Abuse Protection 早期版本的網站，可把代理請求連到其代表的帳戶，供詐欺調查使用。",
+        "站主可在總體 Agents 政策之外，對支援的個人代理選擇允許、阻擋廣告頁或全面阻擋。"
+      ],
+      "caveat": "功能與可見資料由 Cloudflare 自述；Account Abuse Protection 仍為 early access。文章未提供辨識準確率，也未證明網站能知道使用者究竟授權代理做了什麼。",
+      "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+      "source": "Cloudflare Blog",
+      "author": "Marina Elmore、Nicole Justus",
+      "originalTitle": "See the agents, set the terms: new visibility and control for personal agents",
+      "englishSummary": "Cloudflare introduced analytics for personal-agent traffic and per-agent access policies for supported agents. Account-level views require Account Abuse Protection early access; user authorization context remains future work.",
+      "topic": "feature",
+      "checkedAt": "2026-11-05",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance",
+          "workflow"
+        ],
+        "concepts": [
+          "個人代理",
+          "流量辨識",
+          "網站存取政策"
+        ],
+        "outcome": "release"
+      }
+    },
     {
       "type": "研究與實作",
       "sourceDate": "2026-11-03",
@@ -8136,14 +8273,14 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-11-04T09:37:00+08:00",
+    "checkedAt": "2026-11-05T11:30:00+08:00",
     "points": [
       {
-        "url": "https://x.com/OpenAI/status/2117692475775258785",
-        "title": "OpenAI 發布 AI 實體工程展示",
-        "publishedAt": "2026-11-03T18:56:45.705Z",
-        "sourceDate": "2026-11-04",
-        "summary": "裝置原型與 CAD、電路和模擬合作仍在早期；製造審查限制詳見 11/03 原文。"
+        "url": "https://x.com/ClaudeDevs/status/2118063143167693011",
+        "title": "Claude Code 降低背景子代理狀態列更新成本",
+        "publishedAt": "2026-11-04T19:29:39.698Z",
+        "sourceDate": "2026-11-05",
+        "summary": "單次狀態更新約省 99%；有背景子代理的工作階段用量，官方估計約少 5%。"
       }
     ],
     "emptyMessage": ""
@@ -8277,7 +8414,7 @@
     ]
   },
   "curiosity": {
-    "checkedAt": "2026-11-04T09:37:00+08:00",
+    "checkedAt": "2026-11-05T11:30:00+08:00",
     "topics": [
       {
         "id": "php2shell",
@@ -10275,16 +10412,16 @@
         "id": "openai-pando",
         "url": "https://openai.com/index/scaling-git-at-openai/",
         "lane": "feature",
-        "priority": -8,
-        "revision": "2026-11-03-pando-2",
-        "updatedAt": "2026-11-03",
+        "priority": -12,
+        "revision": "2026-11-05-pando-3",
+        "updatedAt": "2026-11-05",
         "title": "Pando 是什麼？為什麼 AI 寫程式變多，Git 也得跟著改？",
-        "intro": "OpenAI 11/02 公開自建 Git 後端 Pando，11/03 又在 X 說明其用途。Codex 讓更多變更同時進行，也讓推送、合併和 CI 下載一起增加；原本服務單一儲存庫的系統一度慢到影響工作。Pando 保留熟悉的 Git 操作，改變伺服器處理分支與下載的方式。",
+        "intro": "OpenAI 11/02 公開自建 Git 後端 Pando，11/04 又宣布擬收購開發工具公司 Pierre。兩者都和大量代理協作時的程式碼工作有關，但 Pando 仍是 OpenAI 內部後端；Pierre 的 Trees 和 Diffs 則已用於 Codex 的檔案與差異檢視。",
         "trigger": {
-          "date": "11/03 官方 X 貼文・11/02 工程文章",
-          "text": "OpenAI Developers 11/03 發布 Pando 原貼與技術串文；前一天的工程文章交代瓶頸、設計取捨、移轉過程及內部結果。",
+          "date": "11/04 收購公告・11/02 Pando 工程文章",
+          "text": "OpenAI 宣布擬收購 Pierre，說明 Codex 已使用其檢視元件，並計畫在交易完成後整合 Code Storage；公告沒有說 Pando 已對外開放。",
           "urls": [
-            "https://x.com/OpenAIDevs/status/2117408792346509663",
+            "https://openai.com/index/openai-to-acquire-pierre/",
             "https://openai.com/index/scaling-git-at-openai/"
           ]
         },
@@ -10312,19 +10449,27 @@
           {
             "id": "available",
             "question": "其他公司現在也能用 Pando 嗎？",
-            "answer": "OpenAI 說已將部分 Git 客戶端改進貢獻上游並公開自己的 Git 版本；Pando 後端目前用於其內部，文章只說正在探索如何分享相關技術。不能把公開 Git 改進視為 Pando 已對外發布。 11/03 抽讀的兩則個別回覆也詢問能否開源或供外部使用；目前未見官方承諾日期。",
+            "answer": "Pando 目前仍是 OpenAI 內部 Git 後端。11/04 的 Pierre 收購公告提到 Code Storage 未來會整合進 Codex，也說 Codex 已使用 Pierre 的 Trees 和 Diffs；這不等於 Pando 已公開或可由其他公司部署。交易仍待交割，整合時程未公布。",
             "urls": [
               "https://openai.com/index/scaling-git-at-openai/",
-              "https://x.com/OpenAIDevs/status/2117408792346509663"
+              "https://openai.com/index/openai-to-acquire-pierre/"
             ],
             "status": "partial",
-            "next": "OpenAI 是否提供可供外部部署的 Pando 版本或獨立評測？"
+            "next": "交易完成後，Codex 會提供哪一種外部可用的儲存服務？Pando 是否另有發布計畫？"
           }
         ],
         "sources": [
           {
+            "url": "https://openai.com/index/openai-to-acquire-pierre/",
+            "label": "先看：OpenAI 的 Pierre 收購公告",
+            "reason": "釐清 Codex 已使用的元件、擬整合的 Code Storage，以及交易尚未完成的邊界。",
+            "date": "2026-11-04",
+            "kind": "官方公司公告",
+            "recommended": true
+          },
+          {
             "url": "https://openai.com/index/scaling-git-at-openai/",
-            "label": "先讀：OpenAI 的 Pando 工程說明",
+            "label": "接著讀：Pando 的工程說明",
             "reason": "從原有瓶頸、設計取捨與分階段移轉，看內部成效有哪些前提。",
             "date": "2026-11-02",
             "kind": "官方工程文章",
@@ -10336,7 +10481,7 @@
             "reason": "看官方如何把工程文章的關鍵限制說清楚，再對照可追溯的個別回覆提出的開源疑問。",
             "date": "2026-11-03",
             "kind": "官方 X 貼文",
-            "recommended": true
+            "recommended": false
           }
         ],
         "timeline": [
@@ -10353,9 +10498,16 @@
             "urls": [
               "https://x.com/OpenAIDevs/status/2117408792346509663"
             ]
+          },
+          {
+            "date": "11/04",
+            "text": "OpenAI 宣布擬收購 Pierre；Codex 已使用其 Trees 和 Diffs，Code Storage 整合仍待交易完成。",
+            "urls": [
+              "https://openai.com/index/openai-to-acquire-pierre/"
+            ]
           }
         ],
-        "limit": "截至 11/03 核對官方文章、原貼及三則可追溯回覆。推送延遲、可靠度與傳輸量是 OpenAI 內部自述；1,000 寫入者比較是模擬。回覆僅是局部樣本，尚無外部重跑或證據支持所有團隊都需要同一架構。"
+        "limit": "截至 11/03 核對官方文章、原貼及三則可追溯回覆。推送延遲、可靠度與傳輸量是 OpenAI 內部自述；1,000 寫入者比較是模擬。回覆僅是局部樣本，尚無外部重跑或證據支持所有團隊都需要同一架構。 11/05 補查 11/04 官方收購公告；交易尚未交割，沒有 Pando 對外發布或 Codex 整合完成的證據。"
       },
       {
         "id": "lifeval",
@@ -10511,6 +10663,154 @@
           }
         ],
         "limit": "截至 11/04 約 09:37 台北時間，裝置與團隊用量是 OpenAI 自述；BenchCAD 為內部評測，合作尚未公布量化成果。只抽讀三則具網址的 X 回覆，不代表整體討論。"
+      },
+      {
+        "id": "cloudflare-personal-agent-controls",
+        "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+        "lane": "feature",
+        "priority": -11,
+        "revision": "2026-11-05-cloudflare-personal-agents-1",
+        "updatedAt": "2026-11-05",
+        "title": "網站怎麼分辨幫人辦事的 AI 代理？它能知道使用者授權了什麼嗎？",
+        "intro": "11/04，Cloudflare 讓網站在安全分析中辨識「個人代理」流量，查看哪些代理進站、請求哪些路徑，並為支援的代理分別選擇允許或阻擋。這讓站主多了觀察與設定工具，但代理代表誰、被授權做什麼，仍有尚未解決的部分。",
+        "trigger": {
+          "date": "11/04 Cloudflare 官方公告",
+          "text": "新流量分類與逐代理政策公開，讓網站能把個人代理從一般自動化流量中分開觀察。",
+          "urls": [
+            "https://blog.cloudflare.com/personal-agents-visibility-control/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "what-visible",
+            "question": "站主現在能看到代理做了哪些事？",
+            "answer": "Cloudflare 說安全分析會顯示個人代理類別、各代理的請求數、路徑、狀態碼與來源網路。若網站使用仍在 early access 的 Account Abuse Protection，還能查代理與帳戶的關聯及登入事件。這是網站端請求紀錄，不等於讀到代理完整任務。",
+            "urls": [
+              "https://blog.cloudflare.com/personal-agents-visibility-control/"
+            ],
+            "status": "supported",
+            "next": "哪些代理能被可靠辨識，哪些請求仍會落入其他自動化分類？"
+          },
+          {
+            "id": "how-control",
+            "question": "網站能讓某些代理進來、擋住另一些嗎？",
+            "answer": "對 Cloudflare 支援的個人代理，站主可在總體 Agents 政策外，分別選 Allow、Block on pages with ads 或 Block。文章未列出所有支援代理及辨識誤差，因此不能推成任何 AI 代理都能逐一管理。",
+            "urls": [
+              "https://blog.cloudflare.com/personal-agents-visibility-control/"
+            ],
+            "status": "supported",
+            "next": "實際設定後，對登入、購物與客服頁的誤擋情況如何？"
+          },
+          {
+            "id": "user-context",
+            "question": "認出代理後，網站就知道使用者准它做什麼嗎？",
+            "answer": "還不知道。Cloudflare 明說，網站可能認得代理，卻缺少使用者是否已有帳戶、授權範圍或訂閱資格等脈絡；讓這些資訊以保護隱私的方式傳遞，是接下來要研究的方向。",
+            "urls": [
+              "https://blog.cloudflare.com/personal-agents-visibility-control/"
+            ],
+            "status": "supported",
+            "next": "代理、網站與使用者之間，會用什麼方式傳遞可驗證的授權？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+            "label": "先讀：Cloudflare 的功能與限制說明",
+            "reason": "先看新分析欄位與逐代理政策，再讀官方承認仍缺少的使用者授權脈絡。",
+            "date": "2026-11-04",
+            "kind": "官方產品公告",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "11/04",
+            "text": "Cloudflare 公開個人代理流量辨識與支援代理的存取設定。",
+            "urls": [
+              "https://blog.cloudflare.com/personal-agents-visibility-control/"
+            ]
+          }
+        ],
+        "limit": "截至 11/05 讀官方原文；沒有獨立辨識準確率或不同網站的實測結果。Account Abuse Protection 為 early access；使用者授權脈絡仍屬未來工作。"
+      },
+      {
+        "id": "claude-background-subagent-status",
+        "url": "https://x.com/ClaudeDevs/status/2118063143167693011",
+        "lane": "feature",
+        "priority": -13,
+        "revision": "2026-11-05-claude-subagent-status-1",
+        "updatedAt": "2026-11-05",
+        "title": "Claude Code 說狀態更新便宜 99%，整段工作也省 99% 嗎？",
+        "intro": "11/05 台北時間，Claude Developers 說背景子代理每 30 秒產生的狀態列，現在改由 Haiku 5.5 根據短筆記撰寫，不再重讀整段對話。官方稱單次狀態更新成本約降 99%；整段有背景子代理的工作階段，額度用量約降 5%。兩個數字衡量的範圍不同。",
+        "trigger": {
+          "date": "11/05 台北時間官方 X 串文",
+          "text": "官方公開狀態列成本調整、整段工作階段的額度估計與版本適用範圍；可見回覆質疑原先設計。",
+          "urls": [
+            "https://x.com/ClaudeDevs/status/2118063143167693011",
+            "https://x.com/ClaudeDevs/status/2118063144572772627"
+          ]
+        },
+        "questions": [
+          {
+            "id": "why-cost",
+            "question": "三到五個字的狀態，為什麼原本會耗那麼多額度？",
+            "answer": "官方說執行中的背景子代理約每 30 秒更新狀態列，以前每次都重讀整段對話；現在改用短筆記交給 Haiku 5.5 產生。99% 指這一次狀態更新的成本變化，不是整個子代理任務。",
+            "urls": [
+              "https://x.com/ClaudeDevs/status/2118063143167693011"
+            ],
+            "status": "supported",
+            "next": "不同任務長度與背景子代理數量下，原本狀態更新佔多少額度？"
+          },
+          {
+            "id": "session-saving",
+            "question": "整段工作實際少用多少？",
+            "answer": "官方後續貼文估計：有背景子代理的工作階段約少用 5% 額度，換算成相同額度約能多發 6% 提示。這是官方估計，不是公開的跨任務獨立測試；沒有使用背景子代理的工作不應套用。",
+            "urls": [
+              "https://x.com/ClaudeDevs/status/2118063144572772627"
+            ],
+            "status": "partial",
+            "next": "能否用同一批工作、相同子代理數量，比較更新前後的總 token 與結果？"
+          },
+          {
+            "id": "model-and-availability",
+            "question": "子代理本身也被換成 Haiku 了嗎？誰能用到？",
+            "answer": "官方說只有狀態列改由 Haiku 5.5 撰寫，子代理本身保留原設定模型。這項更新已提供多數 Pro、Max、Ultra 使用者，以及 Team、Enterprise 使用者；需更新至 v2.1.316 或更新版本。",
+            "urls": [
+              "https://x.com/ClaudeDevs/status/2118063144572772627"
+            ],
+            "status": "supported",
+            "next": "不同方案或模型供應商是否有相同的狀態列行為？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://x.com/ClaudeDevs/status/2118063143167693011",
+            "label": "先看：Claude Developers 的原貼",
+            "reason": "看每 30 秒更新狀態列的舊流程、新流程，以及 99% 的計算對象。",
+            "date": "2026-11-05 台北時間",
+            "kind": "官方 X 原貼",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/ClaudeDevs/status/2118063144572772627",
+            "label": "接著看：官方對整段額度的補充",
+            "reason": "分清子代理模型、整段工作階段約 5% 的估計與版本適用範圍。",
+            "date": "2026-11-05 台北時間",
+            "kind": "官方 X 後續貼文",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "11/05 03:29 台北時間",
+            "text": "Claude Developers 發布原貼與後續說明；可見四則回覆質疑原有用量與是否補償。",
+            "urls": [
+              "https://x.com/ClaudeDevs/status/2118063143167693011",
+              "https://x.com/ClaudeDevs/status/2118063144572772627"
+            ]
+          }
+        ],
+        "limit": "11/05 約 11:25 台北時間核對兩則官方貼文與四則具網址回覆。15,465 次按讚、約 105 萬次瀏覽僅為當時原貼可見數字；四則回覆不代表全站觀點。5% 為官方對有背景子代理工作階段的估計，尚無獨立重跑。"
       }
     ],
     "history": [
@@ -11190,6 +11490,92 @@
           }
         ],
         "limit": "截至 11/03 核對官方文章。推送延遲、可靠度與傳輸量是 OpenAI 內部自述；1,000 寫入者比較是模擬。沒有外部重跑或證據支持所有團隊都需要同一架構。"
+      },
+      {
+        "id": "openai-pando",
+        "url": "https://openai.com/index/scaling-git-at-openai/",
+        "lane": "feature",
+        "priority": -8,
+        "revision": "2026-11-03-pando-2",
+        "updatedAt": "2026-11-03",
+        "title": "Pando 是什麼？為什麼 AI 寫程式變多，Git 也得跟著改？",
+        "intro": "OpenAI 11/02 公開自建 Git 後端 Pando，11/03 又在 X 說明其用途。Codex 讓更多變更同時進行，也讓推送、合併和 CI 下載一起增加；原本服務單一儲存庫的系統一度慢到影響工作。Pando 保留熟悉的 Git 操作，改變伺服器處理分支與下載的方式。",
+        "trigger": {
+          "date": "11/03 官方 X 貼文・11/02 工程文章",
+          "text": "OpenAI Developers 11/03 發布 Pando 原貼與技術串文；前一天的工程文章交代瓶頸、設計取捨、移轉過程及內部結果。",
+          "urls": [
+            "https://x.com/OpenAIDevs/status/2117408792346509663",
+            "https://openai.com/index/scaling-git-at-openai/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "why-git",
+            "question": "代理只是多寫一些程式，為什麼會卡到 Git？",
+            "answer": "OpenAI 說同一位工程師可同時準備多個變更，每次推送又會引發 CI 等系統抓取相同版本，於是分支、推送、合併與下載一起放大。原後端曾有慢速與合併失敗，可靠度有時低於 90%；這是 OpenAI 對自身儲存庫的描述。",
+            "urls": [
+              "https://openai.com/index/scaling-git-at-openai/"
+            ],
+            "status": "supported",
+            "next": "其他採用大量代理的團隊，是否也出現相同瓶頸？"
+          },
+          {
+            "id": "how-pando",
+            "question": "Pando 改了什麼？使用者要換掉 Git 嗎？",
+            "answer": "它保留 Git 協定與客戶端，把不同分支的更新分開協調，並重用推送時收到的 packfile 供後續下載。使用者不必換掉 Git；代價是跨多個分支讀取時，不保證得到全庫同一時間點的快照。",
+            "urls": [
+              "https://openai.com/index/scaling-git-at-openai/"
+            ],
+            "status": "supported",
+            "next": "哪些跨分支工作真的需要嚴格的全庫一致快照？"
+          },
+          {
+            "id": "available",
+            "question": "其他公司現在也能用 Pando 嗎？",
+            "answer": "OpenAI 說已將部分 Git 客戶端改進貢獻上游並公開自己的 Git 版本；Pando 後端目前用於其內部，文章只說正在探索如何分享相關技術。不能把公開 Git 改進視為 Pando 已對外發布。 11/03 抽讀的兩則個別回覆也詢問能否開源或供外部使用；目前未見官方承諾日期。",
+            "urls": [
+              "https://openai.com/index/scaling-git-at-openai/",
+              "https://x.com/OpenAIDevs/status/2117408792346509663"
+            ],
+            "status": "partial",
+            "next": "OpenAI 是否提供可供外部部署的 Pando 版本或獨立評測？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://openai.com/index/scaling-git-at-openai/",
+            "label": "先讀：OpenAI 的 Pando 工程說明",
+            "reason": "從原有瓶頸、設計取捨與分階段移轉，看內部成效有哪些前提。",
+            "date": "2026-11-02",
+            "kind": "官方工程文章",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/OpenAIDevs/status/2117408792346509663",
+            "label": "接著讀：OpenAI Developers 的 Pando 原貼與串文",
+            "reason": "看官方如何把工程文章的關鍵限制說清楚，再對照可追溯的個別回覆提出的開源疑問。",
+            "date": "2026-11-03",
+            "kind": "官方 X 貼文",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "11/02",
+            "text": "OpenAI 公開 Pando 設計與在其單一儲存庫的使用情況。",
+            "urls": [
+              "https://openai.com/index/scaling-git-at-openai/"
+            ]
+          },
+          {
+            "date": "11/03",
+            "text": "OpenAI Developers 發布原貼；可見回覆詢問開源及跨分支一致性，尚非外部部署證據。",
+            "urls": [
+              "https://x.com/OpenAIDevs/status/2117408792346509663"
+            ]
+          }
+        ],
+        "limit": "截至 11/03 核對官方文章、原貼及三則可追溯回覆。推送延遲、可靠度與傳輸量是 OpenAI 內部自述；1,000 寫入者比較是模擬。回覆僅是局部樣本，尚無外部重跑或證據支持所有團隊都需要同一架構。"
       }
     ],
     "maxVisible": 3
