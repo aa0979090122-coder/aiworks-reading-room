@@ -1,6 +1,44 @@
 {
-  "editionDate": "2026-11-05",
+  "editionDate": "2026-11-06",
   "posts": [
+    {
+      "url": "https://x.com/OpenAI/status/2118390190246879554",
+      "title": "OpenAI 在 X 公布 GPT-6 Cyber，留言追問誰能使用",
+      "sourceDate": "2026-11-06",
+      "date": "2026-11-06",
+      "publishedAt": "2026-11-05T17:09:13.798Z",
+      "author": "OpenAI",
+      "handle": "@OpenAI",
+      "excerpt": "Official launch post describes a restricted cybersecurity model and current security-team use.",
+      "zh": "OpenAI 台北時間 11/06 發布原貼，說 GPT-6 Cyber 已用於 Linux 核心研究，並由部分資安團隊使用；目前限核准的 Daybreak Red 客戶。可見一則具網址的回覆質疑存取範圍。",
+      "topic": "security",
+      "highLevel": true,
+      "checkedAt": "2026-11-06",
+      "evidenceUrl": "https://openai.com/index/introducing-gpt-6-cyber/",
+      "evidenceLabel": "OpenAI 產品公告",
+      "caveat": "11/06 約 09:35 台北時間核對官方原貼、串文及一則具網址的實質回覆。原貼當時約 170 萬次觀看；這是該貼可見數字，不是 X 全站排名。",
+      "replyObservation": {
+        "count": 1,
+        "checkedAt": "2026-11-06",
+        "summary": "一則可見回覆質疑一般使用者無法取得模型；不代表留言整體意見。",
+        "urls": [
+          "https://x.com/atharvabuilds/status/2118393933235667062"
+        ]
+      },
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance",
+          "evaluation"
+        ],
+        "concepts": [
+          "GPT-6 Cyber",
+          "Daybreak Red",
+          "授權資安研究"
+        ],
+        "outcome": "release"
+      }
+    },
     {
       "url": "https://x.com/ClaudeDevs/status/2118063143167693011",
       "title": "Claude Code 背景子代理的狀態更新改用短筆記；用量節省需分開看",
@@ -2032,6 +2070,208 @@
     }
   ],
   "news": [
+    {
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available",
+      "type": "影片模型 · 商用範圍",
+      "sourceDate": "2026-11-06",
+      "date": "2026-11-06",
+      "title": "Google Cloud 說 Omni 1.2 Flash 已正式供 API 與商用工具使用",
+      "lead": "Google Cloud 11/06 說 Gemini Omni 1.2 Flash 已正式上線，可供開發者透過 API 使用，也進入 Gemini for business 與 Google Vids。",
+      "takeaways": [
+        "Google Cloud 重申 720p 每秒 0.07 美元、最長 15 秒與對既有影片繼續修改的功能。",
+        "文章列出 Artlist、Photoroom、QuickFrame 等業者引述，說明影片廣告或商品圖轉影片的使用情境；沒有提供可歸因的成效比較。",
+        "Google Cloud 註明音訊參考仍需列入允許名單；產品頁另說複雜物理與快速動作仍在改進。"
+      ],
+      "caveat": "客戶引述是合作方自述，不代表獨立評測。Cloud API、Google Vids 與 Gemini App 的可用性不同，音訊參考另有限制。",
+      "source": "Google Cloud Blog",
+      "author": "John Nack",
+      "originalTitle": "Gemini Omni 1.2 Flash: Fast, cost-effective, and reliable video generation and editing now generally available",
+      "englishSummary": "Google Cloud confirms GA via API and business tools, lists workflow examples and notes that audio references are allowlisted.",
+      "topic": "feature",
+      "checkedAt": "2026-11-06",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "cost"
+        ],
+        "concepts": [
+          "Gemini Omni 1.2 Flash",
+          "影片廣告",
+          "API 開放"
+        ],
+        "outcome": "release"
+      }
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "type": "影片模型 · 產品功能",
+      "sourceDate": "2026-11-05",
+      "date": "2026-11-05",
+      "title": "Gemini Omni 1.2 Flash 支援 15 秒影片與多輪修改",
+      "lead": "Google 11/05 介紹 Gemini Omni 1.2 Flash，影片最長由 10 秒增至 15 秒，可用後續指令修改同一段影片，並提供參考圖、短影片與音訊線索。",
+      "takeaways": [
+        "官方定價 720p 每秒 0.07 美元，宣稱比 Omni 1.1 Flash 低 30%；輸出可先低解析度試作，再升至 1080p 或 4K。",
+        "Google 示範替換背景或產品、保留角色與服飾細節；這些是廠商示範，文章沒有公布獨立跨題材成功率。",
+        "可經 Gemini API、Google Cloud 與部分 Google 產品使用；Gemini App 的 15 秒生成正向 AI Ultra 使用者推出。"
+      ],
+      "caveat": "一致性與速度為 Google 自述；官方仍列出快速運動、快速換台詞及複雜物理為待改善項。不同產品的開放範圍與價格不可混為一談。",
+      "source": "Google Blog",
+      "author": "Anish Nangia",
+      "originalTitle": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "englishSummary": "Google describes 15-second generation, conversational edits, reference following and a lower 720p price, while listing remaining weaknesses and product-specific availability.",
+      "topic": "feature",
+      "checkedAt": "2026-11-06",
+      "knowledge": {
+        "primary": "workflow",
+        "themes": [
+          "workflow",
+          "evaluation",
+          "cost"
+        ],
+        "concepts": [
+          "影片生成",
+          "多輪修改",
+          "參考一致性"
+        ],
+        "outcome": "release"
+      }
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+      "type": "資安模型 · 產品發布",
+      "sourceDate": "2026-11-05",
+      "date": "2026-11-05",
+      "title": "OpenAI 發布 GPT-6 Cyber，存取限核准的資安研究者",
+      "lead": "OpenAI 11/05 推出專為授權資安工作訓練的 GPT-6 Cyber，涵蓋漏洞發現、利用驗證與候選修補。存取先限 Daybreak Red 核准使用者與組織。",
+      "takeaways": [
+        "官方系統卡的 ExploitGym 指定漏洞遠端利用測試成功率為 48.45%；近期 V8／Chrome 漏洞的內部測試為 42%，評測條件不同。",
+        "OpenAI 說模型協助找出 Linux 核心 948 個不同的本機權限提升漏洞，及 Firefox 81 個此前未知的高嚴重度漏洞；Mozilla 已修補其中多項。",
+        "官方要求授權範圍與隔離環境，並限制 Daybreak Red 申請與存取；研究結果不代表一般使用者目前可使用。"
+      ],
+      "caveat": "能力與漏洞數字是 OpenAI 的官方研究與系統卡，缺少獨立重跑。歷史漏洞基準可能受訓練資料污染；Linux 漏洞並非全部已修補。",
+      "source": "OpenAI",
+      "author": "OpenAI",
+      "originalTitle": "GPT-6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "englishSummary": "OpenAI launched a restricted cybersecurity model and reports stronger exploit evaluations and bounded-use training. Its published system card details benchmarks, access controls and limitations.",
+      "topic": "security",
+      "checkedAt": "2026-11-06",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "governance",
+          "workflow"
+        ],
+        "concepts": [
+          "GPT-6 Cyber",
+          "漏洞研究",
+          "授權範圍"
+        ],
+        "outcome": "release"
+      }
+    },
+    {
+      "url": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "type": "模型評測 · 系統卡",
+      "sourceDate": "2026-11-05",
+      "date": "2026-11-05",
+      "title": "GPT-6 Cyber 系統卡列出資安評測與授權範圍限制",
+      "lead": "OpenAI 的系統卡說明 GPT-6 Cyber 的訓練、資安能力評測、越界測試與 Daybreak Red 存取條件。",
+      "takeaways": [
+        "ExploitGym 指定漏洞遠端利用成功率為 48.45%；近期 V8／Chrome 漏洞的內部利用測試為 42%。兩者任務與資料不同。",
+        "歷史漏洞 ExploitBench 得分可能受訓練資料污染；系統卡也呈現部分任務仍會失敗。",
+        "Daybreak Red 限核准的資安研究用途，要求身分與安全措施驗證；OpenAI 建議隔離執行並明確限制目標與權限。"
+      ],
+      "caveat": "評測由 OpenAI 公布，與獨立、跨環境的部署成效不同。越界測試結果只適用於該評測設定，不能保證所有真實工作不越界。",
+      "source": "OpenAI Deployment Safety Hub",
+      "author": "OpenAI",
+      "originalTitle": "GPT-6 Cyber System Card",
+      "englishSummary": "The official system card gives benchmark methods, access controls and known limitations, including contamination risk in historical-vulnerability testing.",
+      "topic": "research",
+      "checkedAt": "2026-11-06",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "governance"
+        ],
+        "concepts": [
+          "GPT-6 Cyber",
+          "資安評測",
+          "授權範圍"
+        ],
+        "outcome": "research"
+      }
+    },
+    {
+      "url": "https://blog.cloudflare.com/trusted-agent-delegation/",
+      "type": "觀點與標準 · 代理授權",
+      "sourceDate": "2026-11-05",
+      "date": "2026-11-05",
+      "title": "Cloudflare 提議讓網站辨識代理背後的使用者與授權",
+      "lead": "Cloudflare 11/05 發文指出：雲端代理替多人造訪網站時，網站可能只看得到代理。它宣布成立 Trusted Agent Delegation 合作討論，想讓網站取得所需的身分、信譽與責任資訊。",
+      "takeaways": [
+        "Cloudflare 區分代理身分與使用者身分；Web Bot Auth 可驗證代理，仍不能單靠它知道代理代表哪位使用者。",
+        "文章討論會話、帳戶到唯一身分等不同資訊需求，也提到 MOLE、OAuth 等現有或開發中的方式；尚未提出通用的已部署授權協定。",
+        "Cloudflare 說網站現在可看個人代理流量、設定逐代理政策；Account Abuse Protection 早期版本能把登入事件連到帳戶，適用範圍有限。"
+      ],
+      "caveat": "這是 Cloudflare 的問題分析與標準提案，並非跨網站實測成果。文章主要談由業者代管的雲端代理；本機代理不在其初期焦點。",
+      "source": "Cloudflare Blog",
+      "author": "Bryan Becker",
+      "originalTitle": "Agents aren’t humans (but they kinda are)",
+      "englishSummary": "Cloudflare proposes interoperable ways for sites to recognize agents, users and accountability. Its current analytics and early-access account protection solve only parts of the problem.",
+      "topic": "governance",
+      "checkedAt": "2026-11-06",
+      "knowledge": {
+        "primary": "governance",
+        "themes": [
+          "governance",
+          "workflow"
+        ],
+        "concepts": [
+          "代理身分",
+          "使用者授權",
+          "網站存取政策"
+        ],
+        "outcome": "proposal"
+      }
+    },
+    {
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+      "type": "資安研究 · Linux 核心",
+      "sourceDate": "2026-11-04",
+      "date": "2026-11-04",
+      "title": "OpenAI 用多階段代理流程查 Linux 漏洞，驗證與修補仍需人工審查",
+      "lead": "OpenAI 公開一套掃描 Linux 核心的研究原型：先找安全相關程式碼，再於隔離環境重現、測試可利用性，產生候選修補程式交給研究員審查。",
+      "takeaways": [
+        "10 月中旬一次掃描選出 5,034 個目標、約占程式碼 7%；2,308 個疑似漏洞中動態重現 1,724 個。",
+        "原型產生 948 個不同本機權限提升漏洞的可用利用程式；完整執行耗用約 121 萬美元 API 點數。這是指定核心版本與測試環境下的結果。",
+        "早期有 20 個結果靠另一處漏洞取得 root，團隊後來加入獨立檢查；通報與候選修補程式也須由研究員與維護者審查。"
+      ],
+      "caveat": "數字由 OpenAI 自述，針對 2026 年 10 月中旬的 Linux 核心及指定環境；不能視為所有漏洞已完成修補，也不能把假設漏洞獎金當成實際收入。",
+      "source": "OpenAI Research",
+      "author": "OpenAI",
+      "originalTitle": "A thousand fewer paths to root",
+      "englishSummary": "OpenAI reports a staged Linux-kernel research run that reproduced 1,724 candidate bugs and produced exploits for 948 distinct local privilege-escalation flaws, with human review before disclosure.",
+      "topic": "research",
+      "checkedAt": "2026-11-06",
+      "knowledge": {
+        "primary": "evaluation",
+        "themes": [
+          "evaluation",
+          "workflow",
+          "governance"
+        ],
+        "concepts": [
+          "Linux 核心",
+          "漏洞驗證",
+          "人工審查"
+        ],
+        "outcome": "research"
+      }
+    },
     {
       "type": "公司動態 · 開發工具",
       "sourceDate": "2026-11-04",
@@ -8273,14 +8513,14 @@
     }
   ],
   "digest": {
-    "checkedAt": "2026-11-05T11:30:00+08:00",
+    "checkedAt": "2026-11-06T09:41:05+08:00",
     "points": [
       {
-        "url": "https://x.com/ClaudeDevs/status/2118063143167693011",
-        "title": "Claude Code 降低背景子代理狀態列更新成本",
-        "publishedAt": "2026-11-04T19:29:39.698Z",
-        "sourceDate": "2026-11-05",
-        "summary": "單次狀態更新約省 99%；有背景子代理的工作階段用量，官方估計約少 5%。"
+        "url": "https://x.com/OpenAI/status/2118390190246879554",
+        "title": "OpenAI 公布 GPT-6 Cyber，存取先限核准資安研究者",
+        "publishedAt": "2026-11-05T17:09:13.798Z",
+        "sourceDate": "2026-11-06",
+        "summary": "官方發表資安模型及 Linux 研究成果；Daybreak Red 核准使用者與組織先行使用。"
       }
     ],
     "emptyMessage": ""
@@ -8414,7 +8654,7 @@
     ]
   },
   "curiosity": {
-    "checkedAt": "2026-11-05T11:30:00+08:00",
+    "checkedAt": "2026-11-06T09:41:05+08:00",
     "topics": [
       {
         "id": "php2shell",
@@ -10668,15 +10908,16 @@
         "id": "cloudflare-personal-agent-controls",
         "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
         "lane": "feature",
-        "priority": -11,
-        "revision": "2026-11-05-cloudflare-personal-agents-1",
-        "updatedAt": "2026-11-05",
-        "title": "網站怎麼分辨幫人辦事的 AI 代理？它能知道使用者授權了什麼嗎？",
-        "intro": "11/04，Cloudflare 讓網站在安全分析中辨識「個人代理」流量，查看哪些代理進站、請求哪些路徑，並為支援的代理分別選擇允許或阻擋。這讓站主多了觀察與設定工具，但代理代表誰、被授權做什麼，仍有尚未解決的部分。",
+        "priority": -15,
+        "revision": "2026-11-06-cloudflare-personal-agents-2",
+        "updatedAt": "2026-11-06",
+        "title": "網站認得 AI 代理後，怎麼知道它代表誰、能做什麼？",
+        "intro": "Cloudflare 11/04 開放網站辨識個人代理流量，11/05 又提出下一層問題：雲端代理可能替多人造訪，網站看得見代理，卻不一定知道背後是哪位使用者、誰同意了交易或存取。它宣布成立 Trusted Agent Delegation 討論，通用做法仍在形成。",
         "trigger": {
-          "date": "11/04 Cloudflare 官方公告",
-          "text": "新流量分類與逐代理政策公開，讓網站能把個人代理從一般自動化流量中分開觀察。",
+          "date": "11/05 Cloudflare 授權提案・11/04 產品公告",
+          "text": "新文章把代理身分、使用者身分與責任分開討論；前一天的流量分析與逐代理政策已上線，但沒有一併解決所有授權問題。",
           "urls": [
+            "https://blog.cloudflare.com/trusted-agent-delegation/",
             "https://blog.cloudflare.com/personal-agents-visibility-control/"
           ]
         },
@@ -10704,19 +10945,28 @@
           {
             "id": "user-context",
             "question": "認出代理後，網站就知道使用者准它做什麼嗎？",
-            "answer": "還不知道。Cloudflare 明說，網站可能認得代理，卻缺少使用者是否已有帳戶、授權範圍或訂閱資格等脈絡；讓這些資訊以保護隱私的方式傳遞，是接下來要研究的方向。",
+            "answer": "Cloudflare 說 Web Bot Auth 可讓網站驗證代理及營運者，仍無法單靠代理身分判斷它代表哪位使用者、是否有帳戶或付款授權。11/05 文章把會話、帳戶與更強身分資訊列成不同需求，並宣布 Trusted Agent Delegation 合作討論；目前沒有通用的已部署授權協定。",
             "urls": [
+              "https://blog.cloudflare.com/trusted-agent-delegation/",
               "https://blog.cloudflare.com/personal-agents-visibility-control/"
             ],
             "status": "supported",
-            "next": "代理、網站與使用者之間，會用什麼方式傳遞可驗證的授權？"
+            "next": "哪些網站動作只要會話資訊，哪些必須查證帳戶或付款責任？"
           }
         ],
         "sources": [
           {
+            "url": "https://blog.cloudflare.com/trusted-agent-delegation/",
+            "label": "先讀：Cloudflare 的代理授權問題分析",
+            "reason": "釐清網站為何需要辨識使用者，以及哪些資訊與協定還在討論。",
+            "date": "2026-11-05",
+            "kind": "官方分析與提案",
+            "recommended": true
+          },
+          {
             "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
-            "label": "先讀：Cloudflare 的功能與限制說明",
-            "reason": "先看新分析欄位與逐代理政策，再讀官方承認仍缺少的使用者授權脈絡。",
+            "label": "接著看：已上線的流量分析與政策",
+            "reason": "對照網站現在能看見及設定的部分，避免把提案當成現成產品。",
             "date": "2026-11-04",
             "kind": "官方產品公告",
             "recommended": true
@@ -10729,9 +10979,16 @@
             "urls": [
               "https://blog.cloudflare.com/personal-agents-visibility-control/"
             ]
+          },
+          {
+            "date": "11/05",
+            "text": "Cloudflare 發表代理與使用者身分分析，宣布 Trusted Agent Delegation 合作討論。",
+            "urls": [
+              "https://blog.cloudflare.com/trusted-agent-delegation/"
+            ]
           }
         ],
-        "limit": "截至 11/05 讀官方原文；沒有獨立辨識準確率或不同網站的實測結果。Account Abuse Protection 為 early access；使用者授權脈絡仍屬未來工作。"
+        "limit": "截至 11/06 讀兩篇 Cloudflare 官方原文。11/05 文章是供討論的方案，主要談雲端代管代理；本機代理不在初期焦點。Account Abuse Protection 為 early access，沒有跨網站通用授權協定或獨立實測。"
       },
       {
         "id": "claude-background-subagent-status",
@@ -10811,6 +11068,198 @@
           }
         ],
         "limit": "11/05 約 11:25 台北時間核對兩則官方貼文與四則具網址回覆。15,465 次按讚、約 105 萬次瀏覽僅為當時原貼可見數字；四則回覆不代表全站觀點。5% 為官方對有背景子代理工作階段的估計，尚無獨立重跑。"
+      },
+      {
+        "id": "gpt-6-cyber",
+        "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+        "lane": "news",
+        "priority": -17,
+        "revision": "2026-11-06-gpt-6-cyber-1",
+        "updatedAt": "2026-11-06",
+        "title": "GPT-6 Cyber 找到近千個 Linux 漏洞，這些數字代表什麼？",
+        "intro": "OpenAI 11/05 發布專為資安研究訓練的 GPT-6 Cyber。它能協助找漏洞、驗證是否可利用並產生候選修補程式。OpenAI 公布 Linux 核心一次研究找到 948 個不同的本機權限提升漏洞；這項成果包含隔離測試、研究員審查與後續通報。",
+        "trigger": {
+          "date": "11/05 模型發布・11/06 台北時間官方 X 公告",
+          "text": "OpenAI 發布模型與系統卡，X 原貼引出「誰能用」的問題；11/04 Linux 研究先公布了具體流程。",
+          "urls": [
+            "https://openai.com/index/introducing-gpt-6-cyber/",
+            "https://x.com/OpenAI/status/2118390190246879554",
+            "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "what-did-model-do",
+            "question": "948 個漏洞是模型自己找出並修好嗎？",
+            "answer": "OpenAI 的原型先掃描約 7% 的 Linux 核心程式碼，將 2,308 個疑似問題交給隔離環境驗證，重現 1,724 個；其中 948 個不同的本機權限提升漏洞有可用利用程式與候選修補程式。研究員審查後才逐步通報維護者，官方沒有說 948 個都已完成修補。",
+            "urls": [
+              "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+            ],
+            "status": "supported",
+            "next": "維護者最後接受了多少份修補？哪些報告被合併或判定重複？"
+          },
+          {
+            "id": "how-reliable",
+            "question": "成功找到漏洞，怎麼確認它用的是指定那一個？",
+            "answer": "OpenAI 說早期一次執行有 20 個結果，代理是靠另一處零日漏洞取得 root。團隊後來收緊任務限制，加入獨立檢查；官方系統卡也說歷史漏洞評測可能受資料污染，近期漏洞測試仍有難度。",
+            "urls": [
+              "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+              "https://deploymentsafety.openai.com/gpt-6-cyber"
+            ],
+            "status": "supported",
+            "next": "第三方能否在相同目標與限制下重跑完整流程？"
+          },
+          {
+            "id": "who-can-use",
+            "question": "一般使用者現在能用 GPT-6 Cyber 嗎？",
+            "answer": "目前只有通過 Daybreak Red 核准的使用者與組織能存取，需完成身分、用途與安全措施審查。OpenAI 說會擴大提供給防禦者，但沒有公布一般開放日期。",
+            "urls": [
+              "https://openai.com/index/introducing-gpt-6-cyber/",
+              "https://deploymentsafety.openai.com/gpt-6-cyber"
+            ],
+            "status": "supported",
+            "next": "獨立研究者與開源維護者的實際申請條件是否改變？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+            "label": "先讀：OpenAI 的模型發布說明",
+            "reason": "認識模型定位、已公布成果與目前存取範圍。",
+            "date": "2026-11-05",
+            "kind": "官方產品公告",
+            "recommended": true
+          },
+          {
+            "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+            "label": "再看：Linux 漏洞研究流程",
+            "reason": "沿著掃描、重現、利用與人工審查理解 948 的意義。",
+            "date": "2026-11-04",
+            "kind": "官方研究實作",
+            "recommended": true
+          },
+          {
+            "url": "https://deploymentsafety.openai.com/gpt-6-cyber",
+            "label": "最後查：系統卡與評測限制",
+            "reason": "看 ExploitGym、近期漏洞測試和存取安全措施的條件。",
+            "date": "2026-11-05",
+            "kind": "官方系統卡",
+            "recommended": true
+          },
+          {
+            "url": "https://x.com/OpenAI/status/2118390190246879554",
+            "label": "其他來源：OpenAI 的 X 原貼",
+            "reason": "補看台北時間 11/06 的公告與一則可追溯的存取疑問。",
+            "date": "2026-11-06",
+            "kind": "官方 X 貼文",
+            "recommended": false
+          }
+        ],
+        "timeline": [
+          {
+            "date": "11/04",
+            "text": "OpenAI 公開 10 月 Linux 核心漏洞研究流程。",
+            "urls": [
+              "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+            ]
+          },
+          {
+            "date": "11/05",
+            "text": "GPT-6 Cyber 與系統卡公布；台北時間 11/06 發布官方 X 貼文。",
+            "urls": [
+              "https://openai.com/index/introducing-gpt-6-cyber/",
+              "https://x.com/OpenAI/status/2118390190246879554"
+            ]
+          }
+        ],
+        "limit": "OpenAI 自述的 Linux 與 Firefox 發現，並非獨立重跑；Mozilla 公告能確認 Firefox 159 有高嚴重度修補，不能由此推出 81 項都已修補。歷史漏洞評測可能受資料污染；X 只核對一則實質回覆，不代表整體討論。"
+      },
+      {
+        "id": "gemini-omni-1-2-flash",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+        "lane": "feature",
+        "priority": -16,
+        "revision": "2026-11-06-gemini-omni-1-2-1",
+        "updatedAt": "2026-11-06",
+        "title": "Gemini Omni 1.2 Flash 可改同一段影片，能少重做幾次嗎？",
+        "intro": "Google 11/05 公布 Gemini Omni 1.2 Flash，影片最長 15 秒，能在同一段影片上繼續要求換背景、調光線或改產品。Google Cloud 11/06 說模型已正式供 API 與商用工具使用；這些功能的成功率，官方示範還無法回答。",
+        "trigger": {
+          "date": "11/06 Google Cloud 正式上線・11/05 產品說明",
+          "text": "Google 公開 15 秒影片、多輪修改與定價，並說明 API 與產品的不同開放範圍。",
+          "urls": [
+            "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available",
+            "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "what-changed",
+            "question": "這次多了什麼？每支影片都能做 15 秒嗎？",
+            "answer": "Google 說生成與修改的單段影片上限由 10 秒增至 15 秒，可指定 3 到 15 秒、以一秒為單位。這是單段上限，並不保證每種場景都能維持人物與物件一致。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+            ],
+            "status": "supported",
+            "next": "快速運動、密集換鏡與多人口型的實際失敗率是多少？"
+          },
+          {
+            "id": "edit-instead-of-regenerate",
+            "question": "改背景或產品時，真的不用整段重做？",
+            "answer": "官方提供多輪修改同一段影片的功能與示範，可依後續指令換背景、產品或光線。Google 沒有公布獨立跨題材測試，也明列快速動作、快速換台詞與複雜物理仍待改善；能少重做幾次尚待實測。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+              "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available"
+            ],
+            "status": "partial",
+            "next": "同一段商品影片連續改三次時，哪些細節最容易跑掉？"
+          },
+          {
+            "id": "cost-and-access",
+            "question": "價格降 30%，現在誰可以用？",
+            "answer": "Google 公布 720p 每秒 0.07 美元，較 Omni 1.1 Flash 低 30%；這是指定解析度的 API 價格。Google Cloud 說 API 與商用工具已正式上線，Gemini App 的 15 秒功能則正向 AI Ultra 用戶推出；音訊參考需列入允許名單。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+              "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available"
+            ],
+            "status": "supported",
+            "next": "不同解析度與連續修改的實際總成本如何計算？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+            "label": "先讀：Google 的功能與示範",
+            "reason": "看 15 秒上限、多輪修改、定價與官方列出的未解問題。",
+            "date": "2026-11-05",
+            "kind": "官方產品說明",
+            "recommended": true
+          },
+          {
+            "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available",
+            "label": "接著看：Google Cloud 商用範圍",
+            "reason": "核對 API 上線、合作業者自述與音訊參考限制。",
+            "date": "2026-11-06",
+            "kind": "官方商用公告",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "11/05",
+            "text": "Google 介紹 Omni 1.2 Flash 的 15 秒生成與多輪修改。",
+            "urls": [
+              "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+            ]
+          },
+          {
+            "date": "11/06",
+            "text": "Google Cloud 公告 API 與商用工具正式上線。",
+            "urls": [
+              "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available"
+            ]
+          }
+        ],
+        "limit": "截至 11/06 讀 Google Blog 與 Google Cloud 原文；影片一致性、速度與客戶成效是廠商示範或合作業者引述。沒有獨立跨題材成功率；Google App 與 Cloud API 開放範圍不同。"
       }
     ],
     "history": [
@@ -11576,6 +12025,75 @@
           }
         ],
         "limit": "截至 11/03 核對官方文章、原貼及三則可追溯回覆。推送延遲、可靠度與傳輸量是 OpenAI 內部自述；1,000 寫入者比較是模擬。回覆僅是局部樣本，尚無外部重跑或證據支持所有團隊都需要同一架構。"
+      },
+      {
+        "id": "cloudflare-personal-agent-controls",
+        "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+        "lane": "feature",
+        "priority": -11,
+        "revision": "2026-11-05-cloudflare-personal-agents-1",
+        "updatedAt": "2026-11-05",
+        "title": "網站怎麼分辨幫人辦事的 AI 代理？它能知道使用者授權了什麼嗎？",
+        "intro": "11/04，Cloudflare 讓網站在安全分析中辨識「個人代理」流量，查看哪些代理進站、請求哪些路徑，並為支援的代理分別選擇允許或阻擋。這讓站主多了觀察與設定工具，但代理代表誰、被授權做什麼，仍有尚未解決的部分。",
+        "trigger": {
+          "date": "11/04 Cloudflare 官方公告",
+          "text": "新流量分類與逐代理政策公開，讓網站能把個人代理從一般自動化流量中分開觀察。",
+          "urls": [
+            "https://blog.cloudflare.com/personal-agents-visibility-control/"
+          ]
+        },
+        "questions": [
+          {
+            "id": "what-visible",
+            "question": "站主現在能看到代理做了哪些事？",
+            "answer": "Cloudflare 說安全分析會顯示個人代理類別、各代理的請求數、路徑、狀態碼與來源網路。若網站使用仍在 early access 的 Account Abuse Protection，還能查代理與帳戶的關聯及登入事件。這是網站端請求紀錄，不等於讀到代理完整任務。",
+            "urls": [
+              "https://blog.cloudflare.com/personal-agents-visibility-control/"
+            ],
+            "status": "supported",
+            "next": "哪些代理能被可靠辨識，哪些請求仍會落入其他自動化分類？"
+          },
+          {
+            "id": "how-control",
+            "question": "網站能讓某些代理進來、擋住另一些嗎？",
+            "answer": "對 Cloudflare 支援的個人代理，站主可在總體 Agents 政策外，分別選 Allow、Block on pages with ads 或 Block。文章未列出所有支援代理及辨識誤差，因此不能推成任何 AI 代理都能逐一管理。",
+            "urls": [
+              "https://blog.cloudflare.com/personal-agents-visibility-control/"
+            ],
+            "status": "supported",
+            "next": "實際設定後，對登入、購物與客服頁的誤擋情況如何？"
+          },
+          {
+            "id": "user-context",
+            "question": "認出代理後，網站就知道使用者准它做什麼嗎？",
+            "answer": "還不知道。Cloudflare 明說，網站可能認得代理，卻缺少使用者是否已有帳戶、授權範圍或訂閱資格等脈絡；讓這些資訊以保護隱私的方式傳遞，是接下來要研究的方向。",
+            "urls": [
+              "https://blog.cloudflare.com/personal-agents-visibility-control/"
+            ],
+            "status": "supported",
+            "next": "代理、網站與使用者之間，會用什麼方式傳遞可驗證的授權？"
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+            "label": "先讀：Cloudflare 的功能與限制說明",
+            "reason": "先看新分析欄位與逐代理政策，再讀官方承認仍缺少的使用者授權脈絡。",
+            "date": "2026-11-04",
+            "kind": "官方產品公告",
+            "recommended": true
+          }
+        ],
+        "timeline": [
+          {
+            "date": "11/04",
+            "text": "Cloudflare 公開個人代理流量辨識與支援代理的存取設定。",
+            "urls": [
+              "https://blog.cloudflare.com/personal-agents-visibility-control/"
+            ]
+          }
+        ],
+        "limit": "截至 11/05 讀官方原文；沒有獨立辨識準確率或不同網站的實測結果。Account Abuse Protection 為 early access；使用者授權脈絡仍屬未來工作。"
       }
     ],
     "maxVisible": 3
