@@ -11072,7 +11072,7 @@
       {
         "id": "gpt-6-cyber",
         "url": "https://openai.com/index/introducing-gpt-6-cyber/",
-        "lane": "news",
+        "lane": "event",
         "priority": -17,
         "revision": "2026-11-06-gpt-6-cyber-1",
         "updatedAt": "2026-11-06",
